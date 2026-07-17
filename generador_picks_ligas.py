@@ -149,8 +149,8 @@ def seleccionar_premium(todos, mercados_excluidos):
     # Picks con prob alta y cuota baja — candidatos para combinada
     candidatos = sorted(
         [pk for pk in todos
-         if pk['prob'] >= 62
-         and 1.20 <= pk['cuota'] <= 1.80
+         if pk['prob'] >= 60
+         and 1.20 <= pk['cuota'] <= 2.00
          and pk['mercado'] not in mercados_excluidos
          and pk['ev'] > -0.05],  # solo picks con valor razonable
         key=lambda x: x['prob'], reverse=True
@@ -186,7 +186,7 @@ def seleccionar_premium(todos, mercados_excluidos):
                     continue
                 prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
                 # Solo combinar si la prob combinada es >= 52%
-                if prob_combo < 48:
+                if prob_combo < 40:
                     continue
                 if prob_combo > mejor_prob:
                     mejor_prob = prob_combo
@@ -230,7 +230,7 @@ def seleccionar_premium(todos, mercados_excluidos):
                 if cuota_combo < CUOTA_MIN_PREMIUM:
                     continue
                 prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
-                if prob_combo < 44:
+                if prob_combo < 40:
                     continue
                 if prob_combo > mejor_prob:
                     mejor_prob = prob_combo
