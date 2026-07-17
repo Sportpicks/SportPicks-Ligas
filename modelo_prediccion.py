@@ -62,7 +62,8 @@ def calcular_stats_equipo(df, equipo, n_partidos=8):
             goles_contra.append(int(p['goles_l']))
 
     if not goles_favor:
-        return {'ataque': 1.2, 'defensa': 1.2, 'partidos': 0}
+        # Default conservador para equipos sin historial
+        return {'ataque': 1.0, 'defensa': 1.0, 'partidos': 0}
 
     return {
         'ataque':   round(np.mean(goles_favor), 3),
@@ -92,8 +93,8 @@ def dixon_coles_xg(ataque_l, defensa_l, ataque_v, defensa_v,
     xg_v = ataque_v * defensa_l * (1/factor_local) * media_goles_liga * factor_fase
 
     # Límites razonables
-    xg_l = max(0.30, min(xg_l, 3.50))
-    xg_v = max(0.20, min(xg_v, 3.00))
+    xg_l = max(0.30, min(xg_l, 2.50))
+    xg_v = max(0.20, min(xg_v, 2.20))
 
     return round(xg_l, 3), round(xg_v, 3)
 
@@ -141,9 +142,15 @@ def predecir_partido(local, visitante, df_historico, liga_key,
     if len(df_liga) > 10:
         media_goles = (pd.to_numeric(df_liga['goles_l'], errors='coerce').mean() +
                        pd.to_numeric(df_liga['goles_v'], errors='coerce').mean())
-        media_goles = max(1.0, min(media_goles, 2.8))
+        media_goles = max(0.8, min(media_goles, 2.5))
     else:
-        media_goles = 1.35
+        # Defaults por liga
+        media_defaults = {
+            'BSA': 2.50, 'MLS': 2.80, 'UCL': 2.70,
+            'CLB': 2.30, 'CSU': 2.20, 'LP1': 2.10,
+        }
+        liga_key_local = df_hist['liga'].iloc[0] if len(df_hist) > 0 else ''
+        media_goles = media_defaults.get(liga_key_local, 2.50)
 
     # xG Dixon-Coles
     xg_l, xg_v = dixon_coles_xg(
