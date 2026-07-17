@@ -182,7 +182,7 @@ def seleccionar_premium(todos, mercados_excluidos):
                     continue
                 prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
                 # Solo combinar si la prob combinada es >= 52%
-                if prob_combo < 52:
+                if prob_combo < 48:
                     continue
                 if prob_combo > mejor_prob:
                     mejor_prob = prob_combo
@@ -226,7 +226,7 @@ def seleccionar_premium(todos, mercados_excluidos):
                 if cuota_combo < CUOTA_MIN_PREMIUM:
                     continue
                 prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
-                if prob_combo < 52:
+                if prob_combo < 44:
                     continue
                 if prob_combo > mejor_prob:
                     mejor_prob = prob_combo
@@ -257,11 +257,18 @@ def seleccionar_premium(todos, mercados_excluidos):
                         ]
                     }
 
-    # Paso 3: pick individual premium
+    # Paso 3: pick individual premium — cualquier pick con buena prob y cuota >= 1.60
     if not mejor:
-        for pk in sorted(todos, key=lambda x: x['prob'], reverse=True):
-            if (pk['prob'] >= PROB_MIN_PREMIUM
+        for pk in sorted(todos, key=lambda x: (x['prob'], x['ev']), reverse=True):
+            if (pk['prob'] >= 65
                 and pk['cuota'] >= CUOTA_MIN_PREMIUM
+                and pk['mercado'] not in mercados_excluidos):
+                pk['tipo'] = 'premium'
+                return [pk]
+        # Último recurso — mejor pick disponible con cuota >= 1.50
+        for pk in sorted(todos, key=lambda x: x['prob'], reverse=True):
+            if (pk['prob'] >= 62
+                and pk['cuota'] >= 1.50
                 and pk['mercado'] not in mercados_excluidos):
                 pk['tipo'] = 'premium'
                 return [pk]
