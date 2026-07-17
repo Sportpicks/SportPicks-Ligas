@@ -181,8 +181,8 @@ def seleccionar_premium(todos, mercados_excluidos):
                 if cuota_combo < CUOTA_MIN_PREMIUM:
                     continue
                 prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
-                # Solo combinar si la prob combinada es >= 55%
-                if prob_combo < 55:
+                # Solo combinar si la prob combinada es >= 52%
+                if prob_combo < 52:
                     continue
                 if prob_combo > mejor_prob:
                     mejor_prob = prob_combo
