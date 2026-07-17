@@ -120,7 +120,7 @@ NOMBRES_ES = {
     'Coquimbo Unido':             'CD Coquimbo Unido',
     'Independiente Rivadavia':    'Independiente Rivadavia',
     'Universidad Católica (CHI)': 'CD Universidad Católica',
-    'Caracas FC':                 'Carabobo FC',
+    'Caracas FC':                 'Caracas FC',
     'Club Cienciano':             'Club Cienciano',
     'Grêmio':                     'Grêmio FBPA',
     # CSU adicionales
