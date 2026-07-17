@@ -146,20 +146,22 @@ def predecir_partido(local, visitante, df_historico, liga_key,
     stats_l = calcular_stats_equipo(df_historico, local)
     stats_v = calcular_stats_equipo(df_historico, visitante)
 
-    # Media de goles de la liga
+    # Media de goles de la liga (promedio por EQUIPO, no total del partido)
+    media_defaults = {
+        'BSA': 1.25, 'MLS': 1.40, 'UCL': 1.35,
+        'CLB': 1.15, 'CSU': 1.10, 'LP1': 1.05,
+    }
     df_liga = df_historico[df_historico['liga'] == liga_key].copy()
-    df_liga = df_liga[df_liga['goles_l'].apply(lambda x: str(x).isdigit())]
-    if len(df_liga) > 10:
-        media_goles = (pd.to_numeric(df_liga['goles_l'], errors='coerce').mean() +
-                       pd.to_numeric(df_liga['goles_v'], errors='coerce').mean())
-        media_goles = max(0.8, min(media_goles, 2.5))
-    else:
-        # Defaults por liga
-        media_defaults = {
-            'BSA': 2.50, 'MLS': 2.80, 'UCL': 2.70,
-            'CLB': 2.30, 'CSU': 2.20, 'LP1': 2.10,
-        }
-        media_goles = media_defaults.get(liga_key, 2.50)
+    try:
+        gl = pd.to_numeric(df_liga['goles_l'], errors='coerce').dropna()
+        gv = pd.to_numeric(df_liga['goles_v'], errors='coerce').dropna()
+        if len(gl) > 20:
+            media_goles = round((gl.mean() + gv.mean()) / 2, 3)
+            media_goles = max(0.70, min(media_goles, 1.80))
+        else:
+            media_goles = media_defaults.get(liga_key, 1.25)
+    except:
+        media_goles = media_defaults.get(liga_key, 1.25)
 
     # xG Dixon-Coles
     xg_l, xg_v = dixon_coles_xg(
