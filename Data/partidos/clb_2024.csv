@@ -1,0 +1,156 @@
+liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente
+CLB,Copa Libertadores,2024-02-07,,Academia Puerto Cabello,Defensor SC,3,2,3-2,FINISHED,1.0,ROUND_1,football-data
+CLB,Copa Libertadores,2024-02-08,,Club Aurora,FBC Melgar,1,0,1-0,FINISHED,1.0,ROUND_1,football-data
+CLB,Copa Libertadores,2024-02-09,,SD Aucas,Club Nacional,1,0,1-0,FINISHED,1.0,ROUND_1,football-data
+CLB,Copa Libertadores,2024-02-14,,Defensor SC,Academia Puerto Cabello,2,4,2-4,FINISHED,2.0,ROUND_1,football-data
+CLB,Copa Libertadores,2024-02-15,,FBC Melgar,Club Aurora,1,1,1-1,FINISHED,2.0,ROUND_1,football-data
+CLB,Copa Libertadores,2024-02-16,,Club Nacional,SD Aucas,3,0,3-0,FINISHED,2.0,ROUND_1,football-data
+CLB,Copa Libertadores,2024-02-20,,Portuguesa FC,CD Palestino,1,2,1-2,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-21,,Rionegro Águilas,RB Bragantino,0,0,0-0,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-21,,Club Always Ready,CS Cristal,6,1,6-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-21,,Academia Puerto Cabello,Club Nacional de Football,0,2,0-2,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-22,,Club Nacional,CDC Atlético Nacional,1,0,1-0,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-22,,Club Aurora,Botafogo FR,1,1,1-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-22,,Sportivo Trinidense,CSCyD El Nacional,1,1,1-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-23,,CD Godoy Cruz Antonio Tomba,CSD Colo-Colo,0,1,0-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-27,,CD Palestino,Portuguesa FC,2,1,2-1,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-28,,RB Bragantino,Rionegro Águilas,4,3,4-3,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-28,,CS Cristal,Club Always Ready,3,1,3-1,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-28,,Club Nacional de Football,Academia Puerto Cabello,2,0,2-0,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-29,,CDC Atlético Nacional,Club Nacional,0,3,0-3,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-29,,Botafogo FR,Club Aurora,6,0,6-0,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-02-29,,CSCyD El Nacional,Sportivo Trinidense,0,1,0-1,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-03-01,,CSD Colo-Colo,CD Godoy Cruz Antonio Tomba,0,0,0-0,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2024-03-06,,Club Nacional,CD Palestino,0,2,0-2,FINISHED,1.0,ROUND_3,football-data
+CLB,Copa Libertadores,2024-03-07,,Botafogo FR,RB Bragantino,2,1,2-1,FINISHED,1.0,ROUND_3,football-data
+CLB,Copa Libertadores,2024-03-07,,Sportivo Trinidense,CSD Colo-Colo,1,1,1-1,FINISHED,1.0,ROUND_3,football-data
+CLB,Copa Libertadores,2024-03-08,,Club Always Ready,Club Nacional de Football,1,0,1-0,FINISHED,1.0,ROUND_3,football-data
+CLB,Copa Libertadores,2024-03-13,,CD Palestino,Club Nacional,3,1,3-1,FINISHED,2.0,ROUND_3,football-data
+CLB,Copa Libertadores,2024-03-14,,RB Bragantino,Botafogo FR,1,1,1-1,FINISHED,2.0,ROUND_3,football-data
+CLB,Copa Libertadores,2024-03-14,,CSD Colo-Colo,Sportivo Trinidense,2,1,2-1,FINISHED,2.0,ROUND_3,football-data
+CLB,Copa Libertadores,2024-03-15,,Club Nacional de Football,Club Always Ready,5,4,5-4,FINISHED,2.0,ROUND_3,football-data
+CLB,Copa Libertadores,2024-04-02,,CD Cobresal,Barcelona SC,1,1,1-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-02,,Millonarios FC,CR Flamengo,1,1,1-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-03,,Club The Strongest,Grêmio FBPA,2,0,2-0,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-03,,Deportivo Táchira FC,CA River Plate,0,2,0-2,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-03,,Club Universitario de Deportes,LDU de Quito,2,1,2-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-03,,Club Nacional de Football,Club Libertad Asuncion,2,0,2-0,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-03,,CD Huachipato,Estudiantes de La Plata,1,1,1-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-03,,Botafogo FR,CDP Junior FC,1,3,1-3,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-04,,CSD Colo-Colo,Club Cerro Porteño,1,0,1-0,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-04,,CA San Lorenzo de Almagro,SE Palmeiras,1,1,1-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-04,,Club Alianza Lima,Fluminense FC,1,1,1-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-04,,Caracas FC,CA Mineiro,1,4,1-4,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-04,,CA Rosario Central,CA Peñarol,1,0,1-0,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-05,,Liverpool FC,CAR Independiente del Valle,1,1,1-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-05,,CA Talleres,São Paulo FC,2,1,2-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-05,,CD Palestino,Club Bolívar,0,4,0-4,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-09,,Estudiantes de La Plata,Club The Strongest,2,1,2-1,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-09,,Grêmio FBPA,CD Huachipato,0,2,0-2,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-10,,Club Libertad Asuncion,Deportivo Táchira FC,3,0,3-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-10,,Fluminense FC,CSD Colo-Colo,2,1,2-1,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-10,,CDP Junior FC,Club Universitario de Deportes,1,1,1-1,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-10,,CAR Independiente del Valle,CA San Lorenzo de Almagro,2,0,2-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-10,,CA Mineiro,CA Rosario Central,2,1,2-1,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-10,,Club Cerro Porteño,Club Alianza Lima,1,0,1-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-11,,CA Peñarol,Caracas FC,5,0,5-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-11,,São Paulo FC,CD Cobresal,2,0,2-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-11,,CR Flamengo,CD Palestino,2,0,2-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-11,,Barcelona SC,CA Talleres,2,2,2-2,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-11,,LDU de Quito,Botafogo FR,1,0,1-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-11,,Club Bolívar,Millonarios FC,3,2,3-2,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-12,,SE Palmeiras,Liverpool FC,3,1,3-1,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-12,,CA River Plate,Club Nacional de Football,2,0,2-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-23,,Caracas FC,CA Rosario Central,1,1,1-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-23,,Estudiantes de La Plata,Grêmio FBPA,0,1,0-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-24,,Liverpool FC,CA San Lorenzo de Almagro,1,0,1-0,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-24,,CA Mineiro,CA Peñarol,3,2,3-2,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-24,,CSD Colo-Colo,Club Alianza Lima,0,0,0-0,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-24,,CDP Junior FC,LDU de Quito,1,1,1-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-24,,Club Nacional de Football,Deportivo Táchira FC,2,1,2-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-24,,CD Huachipato,Club The Strongest,0,0,0-0,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-24,,Botafogo FR,Club Universitario de Deportes,3,1,3-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-25,,CAR Independiente del Valle,SE Palmeiras,2,3,2-3,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-25,,Club Libertad Asuncion,CA River Plate,1,2,1-2,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-25,,Club Bolívar,CR Flamengo,2,1,2-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-25,,Club Cerro Porteño,Fluminense FC,0,0,0-0,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-25,,CD Cobresal,CA Talleres,0,2,0-2,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-26,,CD Palestino,Millonarios FC,3,1,3-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-04-26,,Barcelona SC,São Paulo FC,0,2,0-2,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-07,,CA Rosario Central,CA Mineiro,0,1,0-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-07,,Caracas FC,CA Peñarol,0,1,0-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-08,,CD Palestino,CR Flamengo,1,0,1-0,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-08,,Deportivo Táchira FC,Club Libertad Asuncion,1,1,1-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-08,,Club Nacional de Football,CA River Plate,2,2,2-2,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-08,,Club Universitario de Deportes,CDP Junior FC,1,1,1-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-08,,CA Talleres,Barcelona SC,3,1,3-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-09,,Club Alianza Lima,Club Cerro Porteño,1,1,1-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-09,,CD Cobresal,São Paulo FC,1,3,1-3,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-09,,Botafogo FR,LDU de Quito,2,1,2-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-09,,Millonarios FC,Club Bolívar,1,1,1-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-09,,CA San Lorenzo de Almagro,CAR Independiente del Valle,2,0,2-0,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-09,,Liverpool FC,SE Palmeiras,0,5,0-5,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-10,,CSD Colo-Colo,Fluminense FC,0,1,0-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-10,,Club The Strongest,Estudiantes de La Plata,1,0,1-0,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-14,,CA Peñarol,CA Mineiro,2,0,2-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-14,,CA Talleres,CD Cobresal,1,0,1-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-14,,LDU de Quito,CDP Junior FC,0,1,0-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-15,,CA River Plate,Club Libertad Asuncion,2,0,2-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-15,,Millonarios FC,CD Palestino,1,1,1-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-15,,Deportivo Táchira FC,Club Nacional de Football,0,1,0-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-15,,Club The Strongest,CD Huachipato,4,0,4-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-16,,Club Alianza Lima,CSD Colo-Colo,1,1,1-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-16,,CR Flamengo,Club Bolívar,4,0,4-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-16,,SE Palmeiras,CAR Independiente del Valle,2,1,2-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-16,,CA Rosario Central,Caracas FC,4,1,4-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-16,,Fluminense FC,Club Cerro Porteño,2,1,2-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-16,,Club Universitario de Deportes,Botafogo FR,0,1,0-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-17,,CA San Lorenzo de Almagro,Liverpool FC,3,2,3-2,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-17,,São Paulo FC,Barcelona SC,0,0,0-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-28,,CA Mineiro,Caracas FC,4,0,4-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-28,,CA Peñarol,CA Rosario Central,2,1,2-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-28,,CDP Junior FC,Botafogo FR,0,0,0-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-28,,LDU de Quito,Club Universitario de Deportes,2,0,2-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-29,,Club Bolívar,CD Palestino,3,1,3-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-29,,CR Flamengo,Millonarios FC,3,0,3-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-29,,Estudiantes de La Plata,CD Huachipato,3,4,3-4,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-29,,Grêmio FBPA,Club The Strongest,4,0,4-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-30,,Fluminense FC,Club Alianza Lima,3,2,3-2,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-30,,Club Cerro Porteño,CSD Colo-Colo,1,1,1-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-30,,Barcelona SC,CD Cobresal,2,1,2-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-30,,São Paulo FC,CA Talleres,2,0,2-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-30,,CAR Independiente del Valle,Liverpool FC,2,1,2-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-30,,SE Palmeiras,CA San Lorenzo de Almagro,0,0,0-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-31,,CA River Plate,Deportivo Táchira FC,2,0,2-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-05-31,,Club Libertad Asuncion,Club Nacional de Football,2,1,2-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-06-05,,CD Huachipato,Grêmio FBPA,0,1,0-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-06-08,,Grêmio FBPA,Estudiantes de La Plata,1,1,1-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2024-08-13,,Grêmio FBPA,Fluminense FC,2,1,2-1,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-14,,CA San Lorenzo de Almagro,CA Mineiro,1,1,1-1,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-14,,CSD Colo-Colo,CDP Junior FC,1,0,1-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-14,,CA Peñarol,Club The Strongest,4,0,4-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-15,,CA Talleres,CA River Plate,0,1,0-1,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-15,,Botafogo FR,SE Palmeiras,2,1,2-1,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-15,,Club Nacional de Football,São Paulo FC,0,0,0-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-16,,CR Flamengo,Club Bolívar,2,0,2-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-20,,Fluminense FC,Grêmio FBPA,4,2,4-2,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-21,,CA Mineiro,CA San Lorenzo de Almagro,1,0,1-0,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-21,,CDP Junior FC,CSD Colo-Colo,1,2,1-2,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-21,,Club The Strongest,CA Peñarol,1,0,1-0,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-22,,CA River Plate,CA Talleres,2,1,2-1,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-22,,SE Palmeiras,Botafogo FR,2,2,2-2,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-22,,São Paulo FC,Club Nacional de Football,2,0,2-0,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-08-23,,Club Bolívar,CR Flamengo,1,0,1-0,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2024-09-18,,CSD Colo-Colo,CA River Plate,1,1,1-1,FINISHED,1.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2024-09-18,,Fluminense FC,CA Mineiro,1,0,1-0,FINISHED,1.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2024-09-19,,Botafogo FR,São Paulo FC,0,0,0-0,FINISHED,1.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2024-09-19,,CR Flamengo,CA Peñarol,0,1,0-1,FINISHED,1.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2024-09-25,,CA River Plate,CSD Colo-Colo,1,0,1-0,FINISHED,2.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2024-09-25,,CA Mineiro,Fluminense FC,2,0,2-0,FINISHED,2.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2024-09-26,,São Paulo FC,Botafogo FR,4,5,4-5,FINISHED,2.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2024-09-26,,CA Peñarol,CR Flamengo,0,0,0-0,FINISHED,2.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2024-10-23,,CA Mineiro,CA River Plate,3,0,3-0,FINISHED,1.0,SEMI_FINALS,football-data
+CLB,Copa Libertadores,2024-10-24,,Botafogo FR,CA Peñarol,5,0,5-0,FINISHED,1.0,SEMI_FINALS,football-data
+CLB,Copa Libertadores,2024-10-30,,CA River Plate,CA Mineiro,0,0,0-0,FINISHED,2.0,SEMI_FINALS,football-data
+CLB,Copa Libertadores,2024-10-31,,CA Peñarol,Botafogo FR,3,1,3-1,FINISHED,2.0,SEMI_FINALS,football-data
+CLB,Copa Libertadores,2024-11-30,,CA Mineiro,Botafogo FR,1,3,1-3,FINISHED,,FINAL,football-data
