@@ -108,15 +108,25 @@ def dixon_coles_xg(ataque_l, defensa_l, ataque_v, defensa_v,
 
     return round(xg_l, 3), round(xg_v, 3)
 
-def monte_carlo_partido(xg_l, xg_v, n=10000):
-    """Simula N partidos con distribución Poisson"""
+def monte_carlo_partido(xg_l, xg_v, n=10000, shrinkage=0.10):
+    """
+    Simula N partidos con distribución Poisson
+    shrinkage: reduce sobreconfianza — empuja probs hacia 33% (baseline)
+    Calibrado con retrodicción: modelo sobreestima en rango 50-70%
+    """
     np.random.seed(42)
     goles_l = np.random.poisson(xg_l, n)
     goles_v = np.random.poisson(xg_v, n)
 
-    p1 = round((goles_l > goles_v).mean() * 100, 1)
-    px = round((goles_l == goles_v).mean() * 100, 1)
-    p2 = round((goles_l < goles_v).mean() * 100, 1)
+    p1_raw = (goles_l > goles_v).mean()
+    px_raw = (goles_l == goles_v).mean()
+    p2_raw = (goles_l < goles_v).mean()
+
+    # Shrinkage hacia baseline (33%) para corregir sobreconfianza
+    baseline = 1/3
+    p1 = round((p1_raw * (1 - shrinkage) + baseline * shrinkage) * 100, 1)
+    px = round((px_raw * (1 - shrinkage) + baseline * shrinkage) * 100, 1)
+    p2 = round((p2_raw * (1 - shrinkage) + baseline * shrinkage) * 100, 1)
 
     totales = goles_l + goles_v
     over15 = round((totales > 1.5).mean() * 100, 1)
@@ -147,9 +157,11 @@ def predecir_partido(local, visitante, df_historico, liga_key,
     stats_v = calcular_stats_equipo(df_historico, visitante)
 
     # Media de goles de la liga (promedio por EQUIPO, no total del partido)
+    # Medias calibradas con retrodicción histórica
+    # BSA sesgo -0.079 (ok), MLS sesgo -0.107, CLB sesgo -0.336
     media_defaults = {
-        'BSA': 1.25, 'MLS': 1.40, 'UCL': 1.35,
-        'CLB': 1.15, 'CSU': 1.10, 'LP1': 1.05,
+        'BSA': 1.28, 'MLS': 1.52, 'UCL': 1.38,
+        'CLB': 1.38, 'CSU': 1.22, 'LP1': 1.10,
     }
     df_liga = df_historico[df_historico['liga'] == liga_key].copy()
     try:
