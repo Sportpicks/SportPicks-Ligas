@@ -1,0 +1,1237 @@
+liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente
+UCL,UEFA Champions League,2025-09-16,11:45,Athletic Club,Arsenal FC,0,2,0-2,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-16,11:45,PSV,Royale Union Saint-Gilloise,1,3,1-3,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-16,14:00,Juventus FC,Borussia Dortmund,4,4,4-4,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-16,14:00,Sport Lisboa e Benfica,Qarabağ Ağdam FK,2,3,2-3,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-16,14:00,Tottenham Hotspur FC,Villarreal CF,1,0,1-0,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-16,14:00,Real Madrid CF,Olympique de Marseille,2,1,2-1,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-17,11:45,SK Slavia Praha,FK Bodø/Glimt,2,2,2-2,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-17,11:45,PAE Olympiakos SFP,Paphos FC,0,0,0-0,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-17,14:00,AFC Ajax,FC Internazionale Milano,0,2,0-2,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-17,14:00,Liverpool FC,Club Atlético de Madrid,3,2,3-2,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-17,14:00,Paris Saint-Germain FC,Atalanta BC,4,0,4-0,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-17,14:00,FC Bayern München,Chelsea FC,3,1,3-1,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-18,11:45,FC København,Bayer 04 Leverkusen,2,2,2-2,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-18,11:45,Club Brugge KV,AS Monaco FC,4,1,4-1,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-18,14:00,Newcastle United FC,FC Barcelona,1,2,1-2,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-18,14:00,Manchester City FC,SSC Napoli,2,0,2-0,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-18,14:00,Eintracht Frankfurt,Galatasaray SK,5,1,5-1,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-18,14:00,Sporting Clube de Portugal,FK Kairat,4,1,4-1,FINISHED,1.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,11:45,Atalanta BC,Club Brugge KV,2,1,2-1,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,11:45,FK Kairat,Real Madrid CF,0,5,0-5,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,14:00,Galatasaray SK,Liverpool FC,1,0,1-0,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,14:00,Club Atlético de Madrid,Eintracht Frankfurt,5,1,5-1,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,14:00,Olympique de Marseille,AFC Ajax,4,0,4-0,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,14:00,FK Bodø/Glimt,Tottenham Hotspur FC,2,2,2-2,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,14:00,Paphos FC,FC Bayern München,1,5,1-5,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,14:00,Chelsea FC,Sport Lisboa e Benfica,1,0,1-0,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-09-30,14:00,FC Internazionale Milano,SK Slavia Praha,3,0,3-0,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,11:45,Qarabağ Ağdam FK,FC København,2,0,2-0,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,11:45,Royale Union Saint-Gilloise,Newcastle United FC,0,4,0-4,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,14:00,Borussia Dortmund,Athletic Club,4,1,4-1,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,14:00,FC Barcelona,Paris Saint-Germain FC,1,2,1-2,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,14:00,AS Monaco FC,Manchester City FC,2,2,2-2,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,14:00,Bayer 04 Leverkusen,PSV,1,1,1-1,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,14:00,Arsenal FC,PAE Olympiakos SFP,2,0,2-0,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,14:00,Villarreal CF,Juventus FC,2,2,2-2,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-01,14:00,SSC Napoli,Sporting Clube de Portugal,2,1,2-1,FINISHED,2.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,11:45,FC Barcelona,PAE Olympiakos SFP,6,1,6-1,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,11:45,FK Kairat,Paphos FC,0,0,0-0,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,14:00,Royale Union Saint-Gilloise,FC Internazionale Milano,0,4,0-4,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,14:00,FC København,Borussia Dortmund,2,4,2-4,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,14:00,Bayer 04 Leverkusen,Paris Saint-Germain FC,2,7,2-7,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,14:00,Villarreal CF,Manchester City FC,0,2,0-2,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,14:00,Arsenal FC,Club Atlético de Madrid,4,0,4-0,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,14:00,Newcastle United FC,Sport Lisboa e Benfica,3,0,3-0,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-21,14:00,PSV,SSC Napoli,6,2,6-2,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,11:45,Galatasaray SK,FK Bodø/Glimt,3,1,3-1,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,11:45,Athletic Club,Qarabağ Ağdam FK,3,1,3-1,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,14:00,Eintracht Frankfurt,Liverpool FC,1,5,1-5,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,14:00,Atalanta BC,SK Slavia Praha,0,0,0-0,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,14:00,Sporting Clube de Portugal,Olympique de Marseille,2,1,2-1,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,14:00,AS Monaco FC,Tottenham Hotspur FC,0,0,0-0,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,14:00,FC Bayern München,Club Brugge KV,4,0,4-0,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,14:00,Chelsea FC,AFC Ajax,5,1,5-1,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-10-22,14:00,Real Madrid CF,Juventus FC,1,0,1-0,FINISHED,3.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,12:45,SK Slavia Praha,Arsenal FC,0,3,0-3,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,12:45,SSC Napoli,Eintracht Frankfurt,0,0,0-0,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,15:00,Juventus FC,Sporting Clube de Portugal,1,1,1-1,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,15:00,Club Atlético de Madrid,Royale Union Saint-Gilloise,3,1,3-1,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,15:00,Tottenham Hotspur FC,FC København,4,0,4-0,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,15:00,FK Bodø/Glimt,AS Monaco FC,0,1,0-1,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,15:00,PAE Olympiakos SFP,PSV,1,1,1-1,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,15:00,Paris Saint-Germain FC,FC Bayern München,1,2,1-2,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-04,15:00,Liverpool FC,Real Madrid CF,1,0,1-0,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,12:45,Paphos FC,Villarreal CF,1,0,1-0,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,12:45,Qarabağ Ağdam FK,Chelsea FC,2,2,2-2,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,15:00,FC Internazionale Milano,FK Kairat,2,1,2-1,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,15:00,Manchester City FC,Borussia Dortmund,4,1,4-1,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,15:00,Club Brugge KV,FC Barcelona,3,3,3-3,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,15:00,Sport Lisboa e Benfica,Bayer 04 Leverkusen,0,1,0-1,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,15:00,Olympique de Marseille,Atalanta BC,0,1,0-1,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,15:00,AFC Ajax,Galatasaray SK,0,3,0-3,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-05,15:00,Newcastle United FC,Athletic Club,2,0,2-0,FINISHED,4.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,12:45,AFC Ajax,Sport Lisboa e Benfica,0,2,0-2,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,12:45,Galatasaray SK,Royale Union Saint-Gilloise,0,1,0-1,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,15:00,Borussia Dortmund,Villarreal CF,4,0,4-0,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,15:00,Manchester City FC,Bayer 04 Leverkusen,0,2,0-2,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,15:00,FK Bodø/Glimt,Juventus FC,2,3,2-3,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,15:00,Olympique de Marseille,Newcastle United FC,2,1,2-1,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,15:00,SK Slavia Praha,Athletic Club,0,0,0-0,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,15:00,SSC Napoli,Qarabağ Ağdam FK,2,0,2-0,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-25,15:00,Chelsea FC,FC Barcelona,3,0,3-0,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,12:45,Paphos FC,AS Monaco FC,2,2,2-2,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,12:45,FC København,FK Kairat,3,2,3-2,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,15:00,Liverpool FC,PSV,1,4,1-4,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,15:00,Paris Saint-Germain FC,Tottenham Hotspur FC,5,3,5-3,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,15:00,Eintracht Frankfurt,Atalanta BC,0,3,0-3,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,15:00,Sporting Clube de Portugal,Club Brugge KV,3,0,3-0,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,15:00,Arsenal FC,FC Bayern München,3,1,3-1,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,15:00,PAE Olympiakos SFP,Real Madrid CF,3,4,3-4,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-11-26,15:00,Club Atlético de Madrid,FC Internazionale Milano,2,1,2-1,FINISHED,5.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,10:30,FK Kairat,PAE Olympiakos SFP,0,1,0-1,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,12:45,FC Bayern München,Sporting Clube de Portugal,3,1,3-1,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,15:00,FC Barcelona,Eintracht Frankfurt,2,1,2-1,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,15:00,PSV,Club Atlético de Madrid,2,3,2-3,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,15:00,Royale Union Saint-Gilloise,Olympique de Marseille,2,3,2-3,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,15:00,Tottenham Hotspur FC,SK Slavia Praha,3,0,3-0,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,15:00,AS Monaco FC,Galatasaray SK,1,0,1-0,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,15:00,Atalanta BC,Chelsea FC,2,1,2-1,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-09,15:00,FC Internazionale Milano,Liverpool FC,0,1,0-1,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,12:45,Villarreal CF,FC København,2,3,2-3,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,12:45,Qarabağ Ağdam FK,AFC Ajax,2,4,2-4,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,15:00,Borussia Dortmund,FK Bodø/Glimt,2,2,2-2,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,15:00,Athletic Club,Paris Saint-Germain FC,0,0,0-0,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,15:00,Bayer 04 Leverkusen,Newcastle United FC,2,2,2-2,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,15:00,Club Brugge KV,Arsenal FC,0,3,0-3,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,15:00,Sport Lisboa e Benfica,SSC Napoli,2,0,2-0,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,15:00,Juventus FC,Paphos FC,2,0,2-0,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2025-12-10,15:00,Real Madrid CF,Manchester City FC,1,2,1-2,FINISHED,6.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,10:30,FK Kairat,Club Brugge KV,1,4,1-4,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,12:45,FK Bodø/Glimt,Manchester City FC,3,1,3-1,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,15:00,Tottenham Hotspur FC,Borussia Dortmund,2,0,2-0,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,15:00,Sporting Clube de Portugal,Paris Saint-Germain FC,2,1,2-1,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,15:00,PAE Olympiakos SFP,Bayer 04 Leverkusen,2,0,2-0,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,15:00,Villarreal CF,AFC Ajax,1,2,1-2,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,15:00,FC København,SSC Napoli,1,1,1-1,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,15:00,Real Madrid CF,AS Monaco FC,6,1,6-1,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-20,15:00,FC Internazionale Milano,Arsenal FC,1,3,1-3,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,12:45,Qarabağ Ağdam FK,Eintracht Frankfurt,3,2,3-2,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,12:45,Galatasaray SK,Club Atlético de Madrid,1,1,1-1,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,15:00,Olympique de Marseille,Liverpool FC,0,3,0-3,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,15:00,SK Slavia Praha,FC Barcelona,2,4,2-4,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,15:00,Atalanta BC,Athletic Club,2,3,2-3,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,15:00,Juventus FC,Sport Lisboa e Benfica,2,0,2-0,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,15:00,Newcastle United FC,PSV,3,0,3-0,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,15:00,FC Bayern München,Royale Union Saint-Gilloise,2,0,2-0,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-21,15:00,Chelsea FC,Paphos FC,1,0,1-0,FINISHED,7.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Liverpool FC,Qarabağ Ağdam FK,6,0,6-0,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,FC Barcelona,FC København,4,1,4-1,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Manchester City FC,Galatasaray SK,2,0,2-0,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Bayer 04 Leverkusen,Villarreal CF,3,0,3-0,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Arsenal FC,FK Kairat,3,2,3-2,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Royale Union Saint-Gilloise,Atalanta BC,1,0,1-0,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Club Brugge KV,Olympique de Marseille,3,0,3-0,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Eintracht Frankfurt,Tottenham Hotspur FC,0,2,0-2,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,AS Monaco FC,Juventus FC,0,0,0-0,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Club Atlético de Madrid,FK Bodø/Glimt,1,2,1-2,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Athletic Club,Sporting Clube de Portugal,2,3,2-3,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,AFC Ajax,PAE Olympiakos SFP,1,2,1-2,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Paris Saint-Germain FC,Newcastle United FC,1,1,1-1,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Paphos FC,SK Slavia Praha,4,1,4-1,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,PSV,FC Bayern München,1,2,1-2,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,SSC Napoli,Chelsea FC,2,3,2-3,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Sport Lisboa e Benfica,Real Madrid CF,4,2,4-2,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-01-28,15:00,Borussia Dortmund,FC Internazionale Milano,0,2,0-2,FINISHED,8.0,LEAGUE_STAGE,football-data
+UCL,UEFA Champions League,2026-02-17,12:45,Galatasaray SK,Juventus FC,5,2,5-2,FINISHED,1.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-17,15:00,Sport Lisboa e Benfica,Real Madrid CF,0,1,0-1,FINISHED,1.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-17,15:00,AS Monaco FC,Paris Saint-Germain FC,2,3,2-3,FINISHED,1.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-17,15:15,Borussia Dortmund,Atalanta BC,2,0,2-0,FINISHED,1.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-18,12:45,Qarabağ Ağdam FK,Newcastle United FC,1,6,1-6,FINISHED,1.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-18,15:00,Club Brugge KV,Club Atlético de Madrid,3,3,3-3,FINISHED,1.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-18,15:00,PAE Olympiakos SFP,Bayer 04 Leverkusen,0,2,0-2,FINISHED,1.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-18,15:00,FK Bodø/Glimt,FC Internazionale Milano,3,1,3-1,FINISHED,1.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-24,12:45,Club Atlético de Madrid,Club Brugge KV,4,1,4-1,FINISHED,2.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-24,15:00,Newcastle United FC,Qarabağ Ağdam FK,3,2,3-2,FINISHED,2.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-24,15:00,Bayer 04 Leverkusen,PAE Olympiakos SFP,0,0,0-0,FINISHED,2.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-24,15:00,FC Internazionale Milano,FK Bodø/Glimt,1,2,1-2,FINISHED,2.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-25,12:45,Atalanta BC,Borussia Dortmund,4,1,4-1,FINISHED,2.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-25,15:00,Real Madrid CF,Sport Lisboa e Benfica,2,1,2-1,FINISHED,2.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-25,15:00,Paris Saint-Germain FC,AS Monaco FC,2,2,2-2,FINISHED,2.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-02-25,15:00,Juventus FC,Galatasaray SK,3,2,3-2,FINISHED,2.0,PLAYOFFS,football-data
+UCL,UEFA Champions League,2026-03-10,12:45,Galatasaray SK,Liverpool FC,1,0,1-0,FINISHED,1.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-10,15:00,Atalanta BC,FC Bayern München,1,6,1-6,FINISHED,1.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-10,15:00,Newcastle United FC,FC Barcelona,1,1,1-1,FINISHED,1.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-10,15:00,Club Atlético de Madrid,Tottenham Hotspur FC,5,2,5-2,FINISHED,1.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-11,12:45,Bayer 04 Leverkusen,Arsenal FC,1,1,1-1,FINISHED,1.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-11,15:00,Paris Saint-Germain FC,Chelsea FC,5,2,5-2,FINISHED,1.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-11,15:00,Real Madrid CF,Manchester City FC,3,0,3-0,FINISHED,1.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-11,15:00,FK Bodø/Glimt,Sporting Clube de Portugal,3,0,3-0,FINISHED,1.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-17,12:45,Sporting Clube de Portugal,FK Bodø/Glimt,5,0,5-0,FINISHED,2.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-17,15:00,Chelsea FC,Paris Saint-Germain FC,0,3,0-3,FINISHED,2.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-17,15:00,Manchester City FC,Real Madrid CF,1,2,1-2,FINISHED,2.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-17,15:00,Arsenal FC,Bayer 04 Leverkusen,2,0,2-0,FINISHED,2.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-18,12:45,FC Barcelona,Newcastle United FC,7,2,7-2,FINISHED,2.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-18,15:00,Liverpool FC,Galatasaray SK,4,0,4-0,FINISHED,2.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-18,15:00,FC Bayern München,Atalanta BC,4,1,4-1,FINISHED,2.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-03-18,15:00,Tottenham Hotspur FC,Club Atlético de Madrid,3,2,3-2,FINISHED,2.0,LAST_16,football-data
+UCL,UEFA Champions League,2026-04-07,14:00,Real Madrid CF,FC Bayern München,1,2,1-2,FINISHED,1.0,QUARTER_FINALS,football-data
+UCL,UEFA Champions League,2026-04-07,14:00,Sporting Clube de Portugal,Arsenal FC,0,1,0-1,FINISHED,1.0,QUARTER_FINALS,football-data
+UCL,UEFA Champions League,2026-04-08,14:00,Paris Saint-Germain FC,Liverpool FC,2,0,2-0,FINISHED,1.0,QUARTER_FINALS,football-data
+UCL,UEFA Champions League,2026-04-08,14:00,FC Barcelona,Club Atlético de Madrid,0,2,0-2,FINISHED,1.0,QUARTER_FINALS,football-data
+UCL,UEFA Champions League,2026-04-14,14:00,Liverpool FC,Paris Saint-Germain FC,0,2,0-2,FINISHED,2.0,QUARTER_FINALS,football-data
+UCL,UEFA Champions League,2026-04-14,14:00,Club Atlético de Madrid,FC Barcelona,1,2,1-2,FINISHED,2.0,QUARTER_FINALS,football-data
+UCL,UEFA Champions League,2026-04-15,14:00,FC Bayern München,Real Madrid CF,4,3,4-3,FINISHED,2.0,QUARTER_FINALS,football-data
+UCL,UEFA Champions League,2026-04-15,14:00,Arsenal FC,Sporting Clube de Portugal,0,0,0-0,FINISHED,2.0,QUARTER_FINALS,football-data
+UCL,UEFA Champions League,2026-04-28,14:00,Paris Saint-Germain FC,FC Bayern München,5,4,5-4,FINISHED,1.0,SEMI_FINALS,football-data
+UCL,UEFA Champions League,2026-04-29,14:00,Club Atlético de Madrid,Arsenal FC,1,1,1-1,FINISHED,1.0,SEMI_FINALS,football-data
+UCL,UEFA Champions League,2026-05-05,14:00,Arsenal FC,Club Atlético de Madrid,1,0,1-0,FINISHED,2.0,SEMI_FINALS,football-data
+UCL,UEFA Champions League,2026-05-06,14:00,FC Bayern München,Paris Saint-Germain FC,1,1,1-1,FINISHED,2.0,SEMI_FINALS,football-data
+UCL,UEFA Champions League,2026-05-30,11:00,Paris Saint-Germain FC,Arsenal FC,5,4,5-4,FINISHED,,FINAL,football-data
+CLB,Copa Libertadores,2025-02-05,19:30,Monagas SC,Defensor SC,2,0,2-0,FINISHED,1.0,ROUND_1,football-data
+CLB,Copa Libertadores,2025-02-06,19:30,Club Nacional,Club Alianza Lima,1,1,1-1,FINISHED,1.0,ROUND_1,football-data
+CLB,Copa Libertadores,2025-02-07,19:30,CD Blooming,CSCyD El Nacional,3,2,3-2,FINISHED,1.0,ROUND_1,football-data
+CLB,Copa Libertadores,2025-02-12,19:30,Defensor SC,Monagas SC,0,2,0-2,FINISHED,2.0,ROUND_1,football-data
+CLB,Copa Libertadores,2025-02-13,19:30,Club Alianza Lima,Club Nacional,3,1,3-1,FINISHED,2.0,ROUND_1,football-data
+CLB,Copa Libertadores,2025-02-14,19:30,CSCyD El Nacional,CD Blooming,6,4,6-4,FINISHED,2.0,ROUND_1,football-data
+CLB,Copa Libertadores,2025-02-18,17:00,CD Iquique,Independiente Santa Fe,2,1,2-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-19,19:30,Club Alianza Lima,CA Boca Juniors,1,0,1-0,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-19,19:30,Club The Strongest,EC Bahia,1,1,1-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-19,17:00,CA Boston River,CD Nublense,1,0,1-0,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-20,19:30,CSCyD El Nacional,Barcelona SC,0,1,0-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-20,19:30,Universidad Central de Venezuela FC,SC Corinthians Paulista,1,1,1-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-20,17:00,Monagas SC,Club Cerro Porteño,0,4,0-4,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-21,19:30,CD Tolima,FBC Melgar,0,1,0-1,FINISHED,1.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-25,17:00,Independiente Santa Fe,CD Iquique,3,3,3-3,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-26,19:30,CA Boca Juniors,Club Alianza Lima,6,6,6-6,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-26,19:30,EC Bahia,Club The Strongest,3,0,3-0,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-26,17:00,CD Nublense,CA Boston River,1,1,1-1,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-27,19:30,Barcelona SC,CSCyD El Nacional,1,1,1-1,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-27,19:30,SC Corinthians Paulista,Universidad Central de Venezuela FC,3,2,3-2,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-27,17:00,Club Cerro Porteño,Monagas SC,3,1,3-1,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-02-28,19:30,FBC Melgar,CD Tolima,1,0,1-0,FINISHED,2.0,ROUND_2,football-data
+CLB,Copa Libertadores,2025-03-04,17:00,CD Iquique,Club Alianza Lima,1,2,1-2,FINISHED,1.0,ROUND_3,football-data
+CLB,Copa Libertadores,2025-03-05,17:00,FBC Melgar,Club Cerro Porteño,0,1,0-1,FINISHED,1.0,ROUND_3,football-data
+CLB,Copa Libertadores,2025-03-06,19:30,Barcelona SC,SC Corinthians Paulista,3,0,3-0,FINISHED,1.0,ROUND_3,football-data
+CLB,Copa Libertadores,2025-03-07,19:30,CA Boston River,EC Bahia,0,0,0-0,FINISHED,1.0,ROUND_3,football-data
+CLB,Copa Libertadores,2025-03-11,17:00,Club Alianza Lima,CD Iquique,1,1,1-1,FINISHED,2.0,ROUND_3,football-data
+CLB,Copa Libertadores,2025-03-12,17:00,Club Cerro Porteño,FBC Melgar,4,2,4-2,FINISHED,2.0,ROUND_3,football-data
+CLB,Copa Libertadores,2025-03-13,19:30,SC Corinthians Paulista,Barcelona SC,2,0,2-0,FINISHED,2.0,ROUND_3,football-data
+CLB,Copa Libertadores,2025-03-14,19:30,EC Bahia,CA Boston River,1,0,1-0,FINISHED,2.0,ROUND_3,football-data
+CLB,Copa Libertadores,2025-04-01,17:00,Carabobo FC,Estudiantes de La Plata,0,2,0-2,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-01,17:00,Club Cerro Porteño,Club Bolívar,4,2,4-2,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-02,19:30,CA Bucaramanga,CSD Colo-Colo,3,3,3-3,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-02,19:30,Fortaleza EC,Racing Club,0,3,0-3,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-02,21:00,Barcelona SC,CAR Independiente del Valle,1,0,1-0,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-02,21:00,Club Alianza Lima,Club Libertad Asuncion,0,1,0-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-02,17:00,San Antonio Bulo Bulo,Olimpia Asuncion,3,2,3-2,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-02,17:00,CA Vélez Sarsfield,CA Peñarol,2,1,2-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-03,19:30,CF Universidad de Chile,Botafogo FR,1,0,1-0,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-03,19:30,Club Universitario de Deportes,CA River Plate,0,1,0-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-03,19:30,CA Talleres,São Paulo FC,0,1,0-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-03,21:00,CDC Atlético Nacional,Club Nacional de Football,3,0,3-0,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-03,17:00,CA Central Córdoba,LDU de Quito,0,0,0-0,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-03,17:00,EC Bahia,SC Internacional,1,1,1-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-03,17:00,CS Cristal,SE Palmeiras,2,3,2-3,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-04,19:30,Deportivo Táchira FC,CR Flamengo,0,1,0-1,FINISHED,1.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-08,17:00,Botafogo FR,Carabobo FC,2,0,2-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-08,17:00,Club Libertad Asuncion,CA Talleres,2,0,2-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-09,19:00,CA Peñarol,San Antonio Bulo Bulo,2,0,2-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-09,19:30,Estudiantes de La Plata,CF Universidad de Chile,1,2,1-2,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-09,19:30,CA River Plate,Barcelona SC,0,0,0-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-09,21:00,CAR Independiente del Valle,Club Universitario de Deportes,1,0,1-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-09,17:00,Club Nacional de Football,EC Bahia,0,1,0-1,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-09,17:00,Olimpia Asuncion,CA Vélez Sarsfield,0,4,0-4,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-10,19:30,CR Flamengo,CA Central Córdoba,1,2,1-2,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-10,19:30,Club Bolívar,CS Cristal,3,0,3-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-10,19:30,SE Palmeiras,Club Cerro Porteño,1,0,1-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-10,21:00,LDU de Quito,Deportivo Táchira FC,2,0,2-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-10,17:00,Racing Club,CA Bucaramanga,1,2,1-2,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-10,17:00,SC Internacional,CDC Atlético Nacional,3,0,3-0,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-11,19:00,CSD Colo-Colo,Fortaleza EC,0,0,0-0,POSTPONED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-11,19:30,São Paulo FC,Club Alianza Lima,2,2,2-2,FINISHED,2.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-22,17:00,LDU de Quito,CR Flamengo,0,0,0-0,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-22,17:00,Club Alianza Lima,CA Talleres,3,2,3-2,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-22,18:00,Carabobo FC,CF Universidad de Chile,1,1,1-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-23,19:30,CSD Colo-Colo,Racing Club,1,1,1-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-23,19:30,SC Internacional,Club Nacional de Football,3,3,3-3,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-23,21:00,Barcelona SC,Club Universitario de Deportes,0,1,0-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-23,17:00,Olimpia Asuncion,CA Peñarol,0,0,0-0,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-23,17:00,San Antonio Bulo Bulo,CA Vélez Sarsfield,2,1,2-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-24,19:30,Estudiantes de La Plata,Botafogo FR,1,0,1-0,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-24,19:30,CAR Independiente del Valle,CA River Plate,2,2,2-2,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-24,19:30,Club Libertad Asuncion,São Paulo FC,0,2,0-2,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-24,21:00,CA Bucaramanga,Fortaleza EC,1,1,1-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-24,17:00,CA Central Córdoba,Deportivo Táchira FC,2,1,2-1,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-24,17:00,Club Bolívar,SE Palmeiras,2,3,2-3,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-25,19:00,EC Bahia,CDC Atlético Nacional,1,0,1-0,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-04-25,19:30,Club Cerro Porteño,CS Cristal,2,2,2-2,FINISHED,3.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-06,17:00,Carabobo FC,Botafogo FR,1,2,1-2,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-06,17:00,Club Alianza Lima,São Paulo FC,0,2,0-2,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-06,17:00,CA Bucaramanga,Racing Club,0,4,0-4,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-07,19:30,Fortaleza EC,CSD Colo-Colo,4,0,4-0,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-07,21:00,San Antonio Bulo Bulo,CA Peñarol,0,3,0-3,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-07,17:00,Deportivo Táchira FC,LDU de Quito,2,3,2-3,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-07,17:00,EC Bahia,Club Nacional de Football,1,3,1-3,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-08,19:00,CF Universidad de Chile,Estudiantes de La Plata,0,3,0-3,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-08,19:30,CA Central Córdoba,CR Flamengo,1,1,1-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-08,19:30,Club Cerro Porteño,SE Palmeiras,0,2,0-2,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-08,21:00,CS Cristal,Club Bolívar,2,1,2-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-08,17:00,CA Talleres,Club Libertad Asuncion,0,0,0-0,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-08,17:00,CA Vélez Sarsfield,Olimpia Asuncion,1,1,1-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-09,19:30,Barcelona SC,CA River Plate,2,3,2-3,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-09,19:30,CDC Atlético Nacional,SC Internacional,3,1,3-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-09,21:00,Club Universitario de Deportes,CAR Independiente del Valle,1,1,1-1,FINISHED,4.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-13,17:00,Deportivo Táchira FC,CA Central Córdoba,1,2,1-2,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-14,19:30,CF Universidad de Chile,Carabobo FC,4,0,4-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-14,19:30,Fortaleza EC,CA Bucaramanga,0,0,0-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-14,19:30,CS Cristal,Club Cerro Porteño,0,1,0-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-14,17:00,CDC Atlético Nacional,EC Bahia,1,0,1-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-14,17:00,CA Peñarol,Olimpia Asuncion,3,2,3-2,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-14,17:00,CA Vélez Sarsfield,San Antonio Bulo Bulo,3,0,3-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-15,19:30,Botafogo FR,Estudiantes de La Plata,3,2,3-2,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-15,19:30,São Paulo FC,Club Libertad Asuncion,1,1,1-1,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-15,19:30,Racing Club,CSD Colo-Colo,4,0,4-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-15,21:00,Club Universitario de Deportes,Barcelona SC,1,0,1-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-15,17:00,CA Talleres,Club Alianza Lima,2,0,2-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-15,17:00,Club Nacional de Football,SC Internacional,0,2,0-2,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-15,17:00,SE Palmeiras,Club Bolívar,2,0,2-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-16,19:30,CA River Plate,CAR Independiente del Valle,6,2,6-2,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-16,19:30,CR Flamengo,LDU de Quito,2,0,2-0,FINISHED,5.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-27,17:00,São Paulo FC,CA Talleres,2,1,2-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-27,17:30,Club Libertad Asuncion,Club Alianza Lima,2,2,2-2,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-28,19:30,Botafogo FR,CF Universidad de Chile,1,0,1-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-28,19:30,Estudiantes de La Plata,Carabobo FC,2,0,2-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-28,19:30,CA River Plate,Club Universitario de Deportes,1,1,1-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-28,19:30,CAR Independiente del Valle,Barcelona SC,2,1,2-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-28,17:00,Club Nacional de Football,CDC Atlético Nacional,1,0,1-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-28,17:00,SC Internacional,EC Bahia,2,1,2-1,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-29,19:30,CR Flamengo,Deportivo Táchira FC,1,0,1-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-29,19:30,LDU de Quito,CA Central Córdoba,3,0,3-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-29,19:30,SE Palmeiras,CS Cristal,6,0,6-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-29,19:30,Club Bolívar,Club Cerro Porteño,4,0,4-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-29,17:00,CA Peñarol,CA Vélez Sarsfield,0,0,0-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-29,17:00,Olimpia Asuncion,San Antonio Bulo Bulo,4,0,4-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-30,19:30,Racing Club,Fortaleza EC,1,0,1-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-05-30,19:30,CSD Colo-Colo,CA Bucaramanga,1,0,1-0,FINISHED,6.0,GROUP_STAGE,football-data
+CLB,Copa Libertadores,2025-08-12,17:00,Fortaleza EC,CA Vélez Sarsfield,0,0,0-0,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-13,19:30,CDC Atlético Nacional,São Paulo FC,0,0,0-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-13,19:30,CA Peñarol,Racing Club,1,0,1-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-13,17:00,Club Cerro Porteño,Estudiantes de La Plata,0,1,0-1,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-14,19:30,CR Flamengo,SC Internacional,1,0,1-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-14,17:00,Botafogo FR,LDU de Quito,1,0,1-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-15,19:30,Club Universitario de Deportes,SE Palmeiras,0,4,0-4,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-15,19:30,Club Libertad Asuncion,CA River Plate,0,0,0-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-19,17:00,CA Vélez Sarsfield,Fortaleza EC,2,0,2-0,FINISHED,1.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-20,19:30,São Paulo FC,CDC Atlético Nacional,5,4,5-4,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-20,19:30,Racing Club,CA Peñarol,3,1,3-1,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-20,17:00,Estudiantes de La Plata,Club Cerro Porteño,0,0,0-0,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-21,19:30,SC Internacional,CR Flamengo,0,2,0-2,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-21,17:00,LDU de Quito,Botafogo FR,2,0,2-0,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-22,19:30,SE Palmeiras,Club Universitario de Deportes,0,0,0-0,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-08-22,19:30,CA River Plate,Club Libertad Asuncion,4,2,4-2,FINISHED,2.0,LAST_16,football-data
+CLB,Copa Libertadores,2025-09-16,17:00,CA Vélez Sarsfield,Racing Club,0,1,0-1,FINISHED,1.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2025-09-18,19:30,CA River Plate,SE Palmeiras,1,2,1-2,FINISHED,1.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2025-09-18,17:00,LDU de Quito,São Paulo FC,2,0,2-0,FINISHED,1.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2025-09-19,19:30,CR Flamengo,Estudiantes de La Plata,2,1,2-1,FINISHED,1.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2025-09-23,17:00,Racing Club,CA Vélez Sarsfield,1,0,1-0,FINISHED,2.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2025-09-25,19:30,SE Palmeiras,CA River Plate,3,1,3-1,FINISHED,2.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2025-09-25,17:00,São Paulo FC,LDU de Quito,0,1,0-1,FINISHED,2.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2025-09-26,19:30,Estudiantes de La Plata,CR Flamengo,3,4,3-4,FINISHED,2.0,QUARTER_FINALS,football-data
+CLB,Copa Libertadores,2025-10-23,19:30,CR Flamengo,Racing Club,1,0,1-0,FINISHED,1.0,SEMI_FINALS,football-data
+CLB,Copa Libertadores,2025-10-24,19:30,LDU de Quito,SE Palmeiras,3,0,3-0,FINISHED,1.0,SEMI_FINALS,football-data
+CLB,Copa Libertadores,2025-10-30,19:50,Racing Club,CR Flamengo,0,0,0-0,FINISHED,2.0,SEMI_FINALS,football-data
+CLB,Copa Libertadores,2025-10-31,19:30,SE Palmeiras,LDU de Quito,4,0,4-0,FINISHED,2.0,SEMI_FINALS,football-data
+CLB,Copa Libertadores,2025-11-29,16:15,SE Palmeiras,CR Flamengo,0,1,0-1,FINISHED,,FINAL,football-data
+BSA,Brasileirao Serie A,2025-03-29,16:30,São Paulo FC,SC Recife,0,0,0-0,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-29,16:30,Cruzeiro EC,Mirassol FC,2,1,2-1,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-29,16:30,Grêmio FBPA,CA Mineiro,2,1,2-1,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-29,16:30,Fortaleza EC,Fluminense FC,2,0,2-0,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-29,16:30,EC Juventude,EC Vitória,2,0,2-0,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-30,19:00,CR Flamengo,SC Internacional,1,1,1-1,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-30,14:00,SE Palmeiras,Botafogo FR,0,0,0-0,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-30,16:30,CR Vasco da Gama,Santos FC,2,1,2-1,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-30,18:00,EC Bahia,SC Corinthians Paulista,1,1,1-1,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-03-31,18:00,RB Bragantino,Ceará SC,2,2,2-2,FINISHED,1.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-05,16:30,SC Corinthians Paulista,CR Vasco da Gama,3,0,3-0,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-05,16:30,Ceará SC,Grêmio FBPA,2,0,2-0,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-06,19:00,Botafogo FR,EC Juventude,2,0,2-0,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-06,14:00,Fluminense FC,RB Bragantino,2,1,2-1,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-06,14:00,CA Mineiro,São Paulo FC,0,0,0-0,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-06,16:30,Mirassol FC,Fortaleza EC,1,1,1-1,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-06,16:30,SC Internacional,Cruzeiro EC,3,0,3-0,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-06,16:30,EC Vitória,CR Flamengo,1,2,1-2,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-06,16:30,SC Recife,SE Palmeiras,1,2,1-2,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-06,18:30,Santos FC,EC Bahia,2,2,2-2,FINISHED,2.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-12,14:00,RB Bragantino,Botafogo FR,1,0,1-0,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-12,14:00,EC Juventude,Ceará SC,2,1,2-1,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-12,16:30,SE Palmeiras,SC Corinthians Paulista,2,0,2-0,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-13,19:00,CR Vasco da Gama,SC Recife,3,1,3-1,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-13,14:00,EC Bahia,Mirassol FC,1,1,1-1,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-13,15:30,São Paulo FC,Cruzeiro EC,1,1,1-1,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-13,15:30,Grêmio FBPA,CR Flamengo,0,2,0-2,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-13,17:30,Fluminense FC,Santos FC,1,0,1-0,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-13,18:00,Fortaleza EC,SC Internacional,0,0,0-0,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-13,18:30,CA Mineiro,EC Vitória,2,2,2-2,FINISHED,3.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-16,19:30,Ceará SC,CR Vasco da Gama,2,1,2-1,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-16,16:30,Botafogo FR,São Paulo FC,2,2,2-2,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-16,17:00,Mirassol FC,Grêmio FBPA,4,1,4-1,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-16,17:00,SC Recife,RB Bragantino,0,1,0-1,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-16,17:30,SC Corinthians Paulista,Fluminense FC,0,2,0-2,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-16,17:30,SC Internacional,SE Palmeiras,0,1,0-1,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-17,19:30,CR Flamengo,EC Juventude,6,0,6-0,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-17,19:30,Santos FC,CA Mineiro,2,0,2-0,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-17,19:30,EC Vitória,Fortaleza EC,2,1,2-1,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-18,19:30,Cruzeiro EC,EC Bahia,3,0,3-0,FINISHED,4.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-19,14:00,SC Corinthians Paulista,SC Recife,2,1,2-1,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-19,16:30,CR Vasco da Gama,CR Flamengo,0,0,0-0,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-20,19:00,Grêmio FBPA,SC Internacional,1,1,1-1,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-20,09:00,EC Juventude,Mirassol FC,2,2,2-2,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-20,14:00,São Paulo FC,Santos FC,2,1,2-1,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-20,14:00,CA Mineiro,Botafogo FR,1,0,1-0,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-20,16:30,Fluminense FC,EC Vitória,1,1,1-1,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-20,16:30,Fortaleza EC,SE Palmeiras,1,2,1-2,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-20,18:30,RB Bragantino,Cruzeiro EC,1,0,1-0,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-21,18:00,EC Bahia,Ceará SC,1,0,1-0,FINISHED,5.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-26,14:00,SC Internacional,EC Juventude,3,1,3-1,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-26,16:30,Mirassol FC,CA Mineiro,2,2,2-2,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-26,16:30,Ceará SC,São Paulo FC,1,1,1-1,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-26,18:00,SC Recife,Fortaleza EC,0,0,0-0,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-27,19:00,Botafogo FR,Fluminense FC,2,0,2-0,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-27,14:00,CR Flamengo,SC Corinthians Paulista,4,0,4-0,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-27,16:30,SE Palmeiras,EC Bahia,0,1,0-1,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-27,16:30,Cruzeiro EC,CR Vasco da Gama,1,0,1-0,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-27,16:30,EC Vitória,Grêmio FBPA,1,1,1-1,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-04-27,18:30,Santos FC,RB Bragantino,1,2,1-2,FINISHED,6.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-03,19:30,São Paulo FC,Fortaleza EC,0,0,0-0,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-03,16:30,Fluminense FC,SC Recife,2,1,2-1,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-03,16:30,SC Corinthians Paulista,SC Internacional,4,2,4-2,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-03,16:30,Ceará SC,EC Vitória,1,0,1-0,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-04,19:00,EC Bahia,Botafogo FR,1,0,1-0,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-04,14:00,CR Vasco da Gama,SE Palmeiras,0,1,0-1,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-04,14:00,Grêmio FBPA,Santos FC,1,0,1-0,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-04,16:30,Cruzeiro EC,CR Flamengo,2,1,2-1,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-05,17:00,RB Bragantino,Mirassol FC,1,0,1-0,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-05,18:00,EC Juventude,CA Mineiro,0,1,0-1,FINISHED,7.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-10,14:00,Fortaleza EC,EC Juventude,5,0,5-0,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-10,16:30,Mirassol FC,SC Corinthians Paulista,2,1,2-1,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-10,16:30,Grêmio FBPA,RB Bragantino,1,1,1-1,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-10,16:30,EC Vitória,CR Vasco da Gama,2,1,2-1,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-11,19:00,CR Flamengo,EC Bahia,1,0,1-0,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-11,14:00,SC Recife,Cruzeiro EC,0,4,0-4,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-11,15:30,SE Palmeiras,São Paulo FC,1,0,1-0,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-11,15:30,CA Mineiro,Fluminense FC,3,2,3-2,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-11,18:00,Botafogo FR,SC Internacional,4,0,4-0,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-12,18:00,Santos FC,Ceará SC,0,0,0-0,FINISHED,8.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-17,14:00,Ceará SC,SC Recife,2,0,2-0,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-17,16:30,CR Vasco da Gama,Fortaleza EC,3,0,3-0,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-18,19:00,São Paulo FC,Grêmio FBPA,2,1,2-1,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-18,14:00,SC Corinthians Paulista,Santos FC,1,0,1-0,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-18,14:00,EC Bahia,EC Vitória,2,1,2-1,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-18,14:00,EC Juventude,Fluminense FC,1,1,1-1,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-18,16:30,CR Flamengo,Botafogo FR,0,0,0-0,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-18,16:30,RB Bragantino,SE Palmeiras,1,2,1-2,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-18,18:30,Cruzeiro EC,CA Mineiro,0,0,0-0,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-18,18:30,SC Internacional,Mirassol FC,1,1,1-1,FINISHED,9.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-24,16:30,Fluminense FC,CR Vasco da Gama,2,1,2-1,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-24,16:30,São Paulo FC,Mirassol FC,0,2,0-2,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-25,19:00,CA Mineiro,SC Corinthians Paulista,0,0,0-0,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-25,09:00,Grêmio FBPA,EC Bahia,1,0,1-0,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-25,14:00,SE Palmeiras,CR Flamengo,0,2,0-2,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-25,14:00,SC Recife,SC Internacional,1,1,1-1,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-25,16:30,EC Vitória,Santos FC,0,1,0-1,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-25,18:30,Fortaleza EC,Cruzeiro EC,0,2,0-2,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-26,18:00,RB Bragantino,EC Juventude,1,0,1-0,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-05-31,16:30,EC Bahia,São Paulo FC,2,1,2-1,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,19:00,CR Vasco da Gama,RB Bragantino,0,2,0-2,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,09:00,Mirassol FC,SC Recife,1,0,1-0,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,14:00,EC Juventude,Grêmio FBPA,0,2,0-2,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,14:00,Santos FC,Botafogo FR,0,1,0-1,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,16:30,Ceará SC,CA Mineiro,0,1,0-1,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,16:30,CR Flamengo,Fortaleza EC,5,0,5-0,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,16:30,SC Corinthians Paulista,EC Vitória,0,0,0-0,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,17:30,Cruzeiro EC,SE Palmeiras,2,1,2-1,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-01,18:30,SC Internacional,Fluminense FC,0,2,0-2,FINISHED,11.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-04,18:00,Botafogo FR,Ceará SC,3,2,3-2,FINISHED,10.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-12,17:00,RB Bragantino,EC Bahia,0,3,0-3,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-12,17:00,EC Vitória,Cruzeiro EC,0,0,0-0,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-12,17:30,Fortaleza EC,Santos FC,2,3,2-3,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-12,18:00,Grêmio FBPA,SC Corinthians Paulista,1,1,1-1,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-13,19:30,São Paulo FC,CR Vasco da Gama,1,3,1-3,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-06-13,19:30,CA Mineiro,SC Internacional,2,0,2-0,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-12,14:30,CR Flamengo,São Paulo FC,2,0,2-0,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-12,14:30,SC Internacional,EC Vitória,1,0,1-0,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-12,16:30,CR Vasco da Gama,Botafogo FR,0,2,0-2,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-13,19:00,EC Bahia,CA Mineiro,2,1,2-1,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-13,17:00,SC Corinthians Paulista,RB Bragantino,1,2,1-2,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-13,18:30,Cruzeiro EC,Grêmio FBPA,4,1,4-1,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-13,18:30,Fortaleza EC,Ceará SC,0,1,0-1,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-14,18:00,EC Juventude,SC Recife,2,0,2-0,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-16,17:00,SE Palmeiras,Mirassol FC,1,1,1-1,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-16,17:30,Ceará SC,SC Corinthians Paulista,0,1,0-1,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-16,18:00,Santos FC,CR Flamengo,1,0,1-0,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-17,19:30,Botafogo FR,EC Vitória,0,0,0-0,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-17,19:30,RB Bragantino,São Paulo FC,2,2,2-2,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-17,17:30,Fluminense FC,Cruzeiro EC,0,2,0-2,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-19,14:00,Fortaleza EC,EC Bahia,1,1,1-1,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-19,15:30,CR Vasco da Gama,Grêmio FBPA,1,1,1-1,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-19,16:30,Mirassol FC,Santos FC,3,0,3-0,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-20,19:00,São Paulo FC,SC Corinthians Paulista,2,0,2-0,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-20,09:00,SC Internacional,Ceará SC,1,0,1-0,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-20,14:00,Cruzeiro EC,EC Juventude,4,0,4-0,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-20,14:00,EC Vitória,RB Bragantino,1,0,1-0,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-20,15:30,SE Palmeiras,CA Mineiro,3,2,3-2,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-20,15:30,SC Recife,Botafogo FR,0,1,0-1,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-20,17:30,CR Flamengo,Fluminense FC,1,0,1-0,FINISHED,15.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-23,17:00,Fluminense FC,SE Palmeiras,1,2,1-2,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-23,17:00,Ceará SC,Mirassol FC,0,2,0-2,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-23,17:30,SC Corinthians Paulista,Cruzeiro EC,0,0,0-0,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-24,19:30,Santos FC,SC Internacional,1,2,1-2,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-24,19:30,RB Bragantino,CR Flamengo,1,2,1-2,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-24,19:30,EC Vitória,SC Recife,2,2,2-2,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-24,17:00,EC Juventude,São Paulo FC,0,1,0-1,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-26,16:30,Botafogo FR,SC Corinthians Paulista,1,1,1-1,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-26,16:30,Mirassol FC,EC Vitória,1,1,1-1,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-26,16:30,Fortaleza EC,RB Bragantino,3,1,3-1,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-26,16:30,SC Recife,Santos FC,2,2,2-2,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-27,19:00,SE Palmeiras,Grêmio FBPA,1,0,1-0,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-27,14:00,São Paulo FC,Fluminense FC,3,1,3-1,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-27,14:00,Cruzeiro EC,Ceará SC,1,2,1-2,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-27,16:30,SC Internacional,CR Vasco da Gama,1,1,1-1,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-27,16:30,EC Bahia,EC Juventude,3,0,3-0,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-27,18:30,CR Flamengo,CA Mineiro,1,0,1-0,FINISHED,17.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-07-29,18:30,Grêmio FBPA,Fortaleza EC,2,1,2-1,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-02,14:00,SC Recife,EC Bahia,0,0,0-0,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-02,16:30,Mirassol FC,CR Vasco da Gama,3,2,3-2,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-03,19:00,Fluminense FC,Grêmio FBPA,1,0,1-0,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-03,14:00,Botafogo FR,Cruzeiro EC,0,2,0-2,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-03,14:00,SC Corinthians Paulista,Fortaleza EC,1,1,1-1,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-03,16:30,CA Mineiro,RB Bragantino,2,1,2-1,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-03,16:30,Ceará SC,CR Flamengo,1,1,1-1,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-03,17:30,EC Vitória,SE Palmeiras,2,2,2-2,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-03,18:30,SC Internacional,São Paulo FC,1,2,1-2,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-04,18:00,Santos FC,EC Juventude,3,1,3-1,FINISHED,18.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-09,16:30,CR Flamengo,Mirassol FC,2,1,2-1,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-09,16:30,São Paulo FC,EC Vitória,2,0,2-0,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-09,16:30,RB Bragantino,SC Internacional,1,3,1-3,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-09,18:30,Fortaleza EC,Botafogo FR,0,5,0-5,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-10,19:00,EC Bahia,Fluminense FC,3,3,3-3,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-10,14:00,CR Vasco da Gama,CA Mineiro,1,1,1-1,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-10,14:00,SE Palmeiras,Ceará SC,2,1,2-1,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-10,16:30,Cruzeiro EC,Santos FC,1,2,1-2,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-10,18:30,Grêmio FBPA,SC Recife,0,1,0-1,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-11,18:00,EC Juventude,SC Corinthians Paulista,2,1,2-1,FINISHED,19.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-16,14:00,Fluminense FC,Fortaleza EC,2,1,2-1,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-16,14:00,Ceará SC,RB Bragantino,1,0,1-0,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-16,16:30,EC Vitória,EC Juventude,2,2,2-2,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-16,16:30,SC Recife,São Paulo FC,2,2,2-2,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-17,19:00,SC Corinthians Paulista,EC Bahia,1,2,1-2,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-17,14:00,Santos FC,CR Vasco da Gama,0,6,0-6,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-17,14:00,CA Mineiro,Grêmio FBPA,1,3,1-3,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-17,16:30,SC Internacional,CR Flamengo,1,3,1-3,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-17,18:30,Botafogo FR,SE Palmeiras,0,1,0-1,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-18,18:00,Mirassol FC,Cruzeiro EC,1,1,1-1,FINISHED,20.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-20,17:00,EC Juventude,CR Vasco da Gama,2,0,2-0,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-23,14:00,RB Bragantino,Fluminense FC,4,2,4-2,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-23,16:30,Cruzeiro EC,SC Internacional,2,1,2-1,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-24,19:00,Grêmio FBPA,Ceará SC,0,0,0-0,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-24,14:00,CR Vasco da Gama,SC Corinthians Paulista,2,3,2-3,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-24,14:00,EC Bahia,Santos FC,2,0,2-0,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-24,16:30,Fortaleza EC,Mirassol FC,0,1,0-1,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-24,16:30,EC Juventude,Botafogo FR,1,3,1-3,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-24,18:30,São Paulo FC,CA Mineiro,2,0,2-0,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-25,17:00,SE Palmeiras,SC Recife,3,0,3-0,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-26,19:00,CR Flamengo,EC Vitória,8,0,8-0,FINISHED,21.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-30,14:00,Ceará SC,EC Juventude,0,1,0-1,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-30,16:30,Botafogo FR,RB Bragantino,4,1,4-1,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-31,19:00,Cruzeiro EC,São Paulo FC,1,0,1-0,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-31,14:00,CR Flamengo,Grêmio FBPA,1,1,1-1,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-31,14:00,Santos FC,Fluminense FC,0,0,0-0,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-31,16:30,SC Corinthians Paulista,SE Palmeiras,1,1,1-1,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-31,16:30,Mirassol FC,EC Bahia,5,1,5-1,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-31,16:30,EC Vitória,CA Mineiro,1,0,1-0,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-31,18:30,SC Internacional,Fortaleza EC,2,1,2-1,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-08-31,18:30,SC Recife,CR Vasco da Gama,2,3,2-3,FINISHED,22.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-13,14:00,Grêmio FBPA,Mirassol FC,0,1,0-1,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-13,14:00,Fortaleza EC,EC Vitória,2,0,2-0,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-13,16:30,SE Palmeiras,SC Internacional,4,1,4-1,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-14,19:00,Fluminense FC,SC Corinthians Paulista,0,1,0-1,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-14,09:00,RB Bragantino,SC Recife,1,1,1-1,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-14,14:00,CA Mineiro,Santos FC,1,1,1-1,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-14,14:00,EC Juventude,CR Flamengo,0,2,0-2,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-14,15:30,São Paulo FC,Botafogo FR,1,0,1-0,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-14,18:30,CR Vasco da Gama,Ceará SC,2,2,2-2,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-15,18:00,EC Bahia,Cruzeiro EC,1,2,1-2,FINISHED,23.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-17,17:30,Botafogo FR,Mirassol FC,3,3,3-3,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-20,14:00,EC Vitória,Fluminense FC,0,1,0-1,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-20,16:30,Botafogo FR,CA Mineiro,1,0,1-0,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-20,16:30,Ceará SC,EC Bahia,1,1,1-1,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-21,19:00,SE Palmeiras,Fortaleza EC,4,1,4-1,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-21,14:00,Mirassol FC,EC Juventude,2,0,2-0,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-21,15:30,CR Flamengo,CR Vasco da Gama,1,1,1-1,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-21,15:30,SC Internacional,Grêmio FBPA,2,3,2-3,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-21,15:30,SC Recife,SC Corinthians Paulista,1,0,1-0,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-21,18:30,Santos FC,São Paulo FC,1,0,1-0,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-21,18:30,Cruzeiro EC,RB Bragantino,2,1,2-1,FINISHED,24.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-24,17:30,CR Vasco da Gama,EC Bahia,3,1,3-1,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-24,17:30,Grêmio FBPA,Botafogo FR,1,1,1-1,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-27,14:00,Fortaleza EC,SC Recife,1,0,1-0,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-27,16:30,CR Vasco da Gama,Cruzeiro EC,2,0,2-0,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-27,16:30,EC Juventude,SC Internacional,1,1,1-1,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-28,19:00,CA Mineiro,Mirassol FC,1,0,1-0,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-28,09:00,Grêmio FBPA,EC Vitória,3,1,3-1,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-28,14:00,Fluminense FC,Botafogo FR,2,0,2-0,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-28,14:00,EC Bahia,SE Palmeiras,1,0,1-0,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-28,16:30,RB Bragantino,Santos FC,2,2,2-2,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-28,18:30,SC Corinthians Paulista,CR Flamengo,1,2,1-2,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-09-29,18:00,São Paulo FC,Ceará SC,0,1,0-1,FINISHED,25.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-01,19:30,CA Mineiro,EC Juventude,0,0,0-0,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-01,17:00,SE Palmeiras,CR Vasco da Gama,3,0,3-0,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-01,17:00,Mirassol FC,RB Bragantino,1,1,1-1,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-01,17:00,SC Recife,Fluminense FC,2,2,2-2,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-01,17:30,SC Internacional,SC Corinthians Paulista,1,1,1-1,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-02,19:30,Botafogo FR,EC Bahia,2,1,2-1,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-02,19:30,Santos FC,Grêmio FBPA,1,1,1-1,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-02,17:00,EC Vitória,Ceará SC,1,0,1-0,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-02,17:30,Fortaleza EC,São Paulo FC,0,2,0-2,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-02,18:30,CR Flamengo,Cruzeiro EC,0,0,0-0,FINISHED,26.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-04,16:30,Fluminense FC,CA Mineiro,3,0,3-0,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-04,16:30,RB Bragantino,Grêmio FBPA,1,0,1-0,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-04,16:30,SC Internacional,Botafogo FR,2,0,2-0,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-05,19:00,SC Corinthians Paulista,Mirassol FC,3,0,3-0,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-05,14:00,CR Vasco da Gama,EC Vitória,4,3,4-3,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-05,14:00,São Paulo FC,SE Palmeiras,2,3,2-3,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-05,16:30,EC Bahia,CR Flamengo,1,0,1-0,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-05,16:30,EC Juventude,Fortaleza EC,1,2,1-2,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-05,18:30,Cruzeiro EC,SC Recife,1,1,1-1,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-05,18:30,Ceará SC,Santos FC,3,0,3-0,FINISHED,27.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-08,17:00,CA Mineiro,SC Recife,3,1,3-1,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-09,19:00,Mirassol FC,Fluminense FC,2,1,2-1,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-11,17:00,SE Palmeiras,EC Juventude,4,1,4-1,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-15,17:00,SE Palmeiras,RB Bragantino,5,1,5-1,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-15,17:30,Botafogo FR,CR Flamengo,0,3,0-3,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-15,18:00,Mirassol FC,SC Internacional,3,1,3-1,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-15,18:00,SC Recife,Ceará SC,1,1,1-1,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-16,19:30,Santos FC,SC Corinthians Paulista,3,1,3-1,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-16,19:30,CA Mineiro,Cruzeiro EC,1,1,1-1,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-16,19:30,Fortaleza EC,CR Vasco da Gama,0,2,0-2,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-16,17:00,Grêmio FBPA,São Paulo FC,2,0,2-0,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-17,19:30,Fluminense FC,EC Juventude,1,0,1-0,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-17,19:30,EC Vitória,EC Bahia,2,1,2-1,FINISHED,28.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-18,16:30,SC Corinthians Paulista,CA Mineiro,1,0,1-0,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-19,19:00,Cruzeiro EC,Fortaleza EC,1,0,1-0,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-19,14:00,CR Flamengo,SE Palmeiras,3,2,3-2,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-19,16:30,Mirassol FC,São Paulo FC,3,0,3-0,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-19,16:30,SC Internacional,SC Recife,2,0,2-0,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-19,16:30,Ceará SC,Botafogo FR,0,2,0-2,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-19,18:30,EC Bahia,Grêmio FBPA,4,0,4-0,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-20,17:00,EC Juventude,RB Bragantino,1,0,1-0,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-20,17:30,CR Vasco da Gama,Fluminense FC,2,0,2-0,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-21,19:30,Santos FC,EC Vitória,0,1,0-1,FINISHED,29.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-22,17:00,EC Bahia,SC Internacional,1,0,1-0,FINISHED,14.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-25,14:00,CA Mineiro,Ceará SC,1,0,1-0,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-25,14:00,EC Vitória,SC Corinthians Paulista,0,1,0-1,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-25,15:30,Fluminense FC,SC Internacional,1,0,1-0,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-25,16:30,SC Recife,Mirassol FC,1,2,1-2,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-25,17:30,Fortaleza EC,CR Flamengo,1,0,1-0,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-26,20:30,São Paulo FC,EC Bahia,2,0,2-0,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-26,14:00,Botafogo FR,Santos FC,2,2,2-2,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-26,14:00,Grêmio FBPA,EC Juventude,3,1,3-1,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-26,16:30,RB Bragantino,CR Vasco da Gama,0,3,0-3,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-26,18:30,SE Palmeiras,Cruzeiro EC,0,0,0-0,FINISHED,30.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-10-29,17:00,Fluminense FC,Ceará SC,1,0,1-0,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-01,14:00,Santos FC,Fortaleza EC,1,1,1-1,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-01,14:00,Cruzeiro EC,EC Vitória,3,1,3-1,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-01,16:00,Mirassol FC,Botafogo FR,0,0,0-0,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-02,19:00,CR Flamengo,SC Recife,3,0,3-0,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-02,14:00,SC Corinthians Paulista,Grêmio FBPA,2,0,2-0,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-02,14:00,EC Bahia,RB Bragantino,2,1,2-1,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-02,14:00,Ceará SC,Fluminense FC,2,0,2-0,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-02,16:30,SC Internacional,CA Mineiro,0,0,0-0,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-02,16:30,EC Juventude,SE Palmeiras,0,2,0-2,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-02,18:30,CR Vasco da Gama,São Paulo FC,0,2,0-2,FINISHED,31.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-05,17:00,RB Bragantino,SC Corinthians Paulista,2,1,2-1,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-05,17:00,EC Vitória,SC Internacional,1,0,1-0,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-05,17:00,SC Recife,EC Juventude,0,2,0-2,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-05,17:30,Botafogo FR,CR Vasco da Gama,3,0,3-0,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-05,18:00,CA Mineiro,EC Bahia,3,0,3-0,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-05,18:00,Grêmio FBPA,Cruzeiro EC,0,1,0-1,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-06,19:30,São Paulo FC,CR Flamengo,2,2,2-2,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-06,17:30,Fluminense FC,Mirassol FC,1,0,1-0,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-06,18:00,Ceará SC,Fortaleza EC,1,1,1-1,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-07,19:30,SE Palmeiras,Santos FC,2,0,2-0,FINISHED,32.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-08,14:00,SC Recife,CA Mineiro,2,4,2-4,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-08,16:00,CR Vasco da Gama,EC Juventude,1,3,1-3,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-08,16:30,SC Internacional,EC Bahia,2,2,2-2,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-09,19:00,São Paulo FC,RB Bragantino,0,1,0-1,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-09,14:00,SC Corinthians Paulista,Ceará SC,0,1,0-1,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-09,14:00,Cruzeiro EC,Fluminense FC,0,0,0-0,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-09,14:00,EC Vitória,Botafogo FR,0,0,0-0,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-09,16:30,CR Flamengo,Santos FC,3,2,3-2,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-09,18:30,Mirassol FC,SE Palmeiras,2,1,2-1,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-09,18:30,Fortaleza EC,Grêmio FBPA,2,2,2-2,FINISHED,33.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-12,18:30,CA Mineiro,Fortaleza EC,3,3,3-3,FINISHED,16.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-15,16:30,SC Recife,CR Flamengo,1,5,1-5,FINISHED,12.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-16,19:00,Santos FC,SE Palmeiras,1,0,1-0,FINISHED,13.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-16,17:00,RB Bragantino,CA Mineiro,2,0,2-0,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-18,18:30,Botafogo FR,SC Recife,3,2,3-2,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-19,17:30,SE Palmeiras,EC Vitória,0,0,0-0,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-20,19:30,Fluminense FC,CR Flamengo,2,1,2-1,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-20,19:30,Santos FC,Mirassol FC,1,1,1-1,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-20,19:30,Grêmio FBPA,CR Vasco da Gama,2,0,2-0,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-20,14:00,EC Juventude,Cruzeiro EC,3,3,3-3,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-20,16:00,EC Bahia,Fortaleza EC,2,3,2-3,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-20,17:30,SC Corinthians Paulista,São Paulo FC,3,1,3-1,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-21,19:30,Ceará SC,SC Internacional,1,2,1-2,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-22,17:30,Botafogo FR,Grêmio FBPA,3,2,3-2,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-23,19:30,CR Flamengo,RB Bragantino,3,0,3-0,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-23,19:30,SE Palmeiras,Fluminense FC,0,0,0-0,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-23,14:00,São Paulo FC,EC Juventude,2,1,2-1,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-23,14:00,EC Bahia,CR Vasco da Gama,1,0,1-0,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-23,16:30,SC Recife,EC Vitória,1,3,1-3,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-23,18:30,Cruzeiro EC,SC Corinthians Paulista,3,0,3-0,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-24,17:00,Mirassol FC,Ceará SC,3,0,3-0,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-25,19:00,SC Internacional,Santos FC,1,1,1-1,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-26,19:30,CA Mineiro,CR Flamengo,1,1,1-1,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-26,19:30,Grêmio FBPA,SE Palmeiras,3,2,3-2,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-26,17:00,RB Bragantino,Fortaleza EC,0,1,0-1,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-27,18:30,Fluminense FC,São Paulo FC,6,0,6-0,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-28,17:00,EC Juventude,EC Bahia,1,1,1-1,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-28,17:30,CR Vasco da Gama,SC Internacional,5,1,5-1,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-29,19:30,Santos FC,SC Recife,3,0,3-0,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-29,14:00,EC Vitória,Mirassol FC,2,0,2-0,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-30,19:00,Ceará SC,Cruzeiro EC,1,1,1-1,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-30,14:00,SC Corinthians Paulista,Botafogo FR,2,2,2-2,FINISHED,36.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-11-30,16:30,Fortaleza EC,CA Mineiro,1,0,1-0,FINISHED,35.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-02,17:00,CR Vasco da Gama,Mirassol FC,0,2,0-2,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-03,19:30,Grêmio FBPA,Fluminense FC,1,2,1-2,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-03,17:00,Fortaleza EC,SC Corinthians Paulista,2,1,2-1,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-03,17:00,RB Bragantino,EC Vitória,4,0,4-0,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-03,17:30,EC Juventude,Santos FC,0,3,0-3,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-03,18:00,São Paulo FC,SC Internacional,3,0,3-0,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-03,18:00,EC Bahia,SC Recife,2,0,2-0,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-04,19:30,CA Mineiro,SE Palmeiras,0,3,0-3,FINISHED,34.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-04,19:30,CR Flamengo,Ceará SC,1,0,1-0,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-04,17:30,Cruzeiro EC,Botafogo FR,2,2,2-2,FINISHED,37.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-06,16:30,Mirassol FC,CR Flamengo,3,3,3-3,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,Fluminense FC,EC Bahia,2,0,2-0,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,Botafogo FR,Fortaleza EC,4,2,4-2,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,SC Corinthians Paulista,EC Juventude,1,1,1-1,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,Santos FC,Cruzeiro EC,3,0,3-0,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,CA Mineiro,CR Vasco da Gama,5,0,5-0,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,SC Internacional,RB Bragantino,3,1,3-1,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,EC Vitória,São Paulo FC,1,0,1-0,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,Ceará SC,SE Palmeiras,1,3,1-3,FINISHED,38.0,REGULAR_SEASON,football-data
+BSA,Brasileirao Serie A,2025-12-07,14:00,SC Recife,Grêmio FBPA,0,4,0-4,FINISHED,38.0,REGULAR_SEASON,football-data
+MLS,MLS Major League Soccer,2024-02-22,,Inter Miami,Real Salt Lake,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-24,,Columbus Crew,Atlanta United FC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-24,,Los Angeles FC,Seattle Sounders,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-24,,Nashville SC,New York Red Bulls,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,Orlando City SC,CF Montreal,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,Philadelphia Union,Chicago Fire,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,DC United,New England Revolution,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,Charlotte,New York City FC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,FC Dallas,San Jose Earthquakes,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,Houston Dynamo,Sporting Kansas City,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,Austin,Minnesota United FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,St. Louis City,Real Salt Lake,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,Portland Timbers,Colorado Rapids,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-25,,FC Cincinnati,Toronto FC,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-02-26,,Los Angeles Galaxy,Inter Miami,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-02,,Real Salt Lake,Los Angeles FC,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-02,,Minnesota United FC,Columbus Crew,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-02,,Inter Miami,Orlando City SC,5,0,5-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,Vancouver Whitecaps,Charlotte,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,FC Dallas,CF Montreal,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,Houston Dynamo,New York Red Bulls,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,Chicago Fire,FC Cincinnati,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,Sporting Kansas City,Philadelphia Union,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,St. Louis City,New York City FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,Colorado Rapids,Nashville SC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,Seattle Sounders,Austin,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,San Jose Earthquakes,Los Angeles Galaxy,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,Portland Timbers,DC United,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-03,,New England Revolution,Toronto FC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-09,,Toronto FC,Charlotte,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-09,,New York City FC,Portland Timbers,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,Orlando City SC,Minnesota United FC,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,New York Red Bulls,FC Dallas,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,Atlanta United FC,New England Revolution,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,Columbus Crew,Chicago Fire,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,Austin,St. Louis City,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,Real Salt Lake,Colorado Rapids,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,San Jose Earthquakes,Vancouver Whitecaps,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,Los Angeles FC,Sporting Kansas City,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,FC Cincinnati,DC United,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,Nashville SC,Los Angeles Galaxy,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-10,,Inter Miami,CF Montreal,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-16,,Chicago Fire,CF Montreal,4,3,4-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-16,,DC United,Inter Miami,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-16,,Seattle Sounders,Colorado Rapids,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-16,,New York City FC,Toronto FC,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-16,,Columbus Crew,New York Red Bulls,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,FC Dallas,Vancouver Whitecaps,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,Houston Dynamo,Portland Timbers,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,Sporting Kansas City,San Jose Earthquakes,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,Minnesota United FC,Los Angeles FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,Nashville SC,Charlotte,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,Austin,Philadelphia Union,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,Los Angeles Galaxy,St. Louis City,3,3,3-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,New England Revolution,FC Cincinnati,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-17,,Atlanta United FC,Orlando City SC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-23,,New York Red Bulls,Inter Miami,4,0,4-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-23,,New England Revolution,Chicago Fire,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-23,,Orlando City SC,Austin,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-23,,Toronto FC,Atlanta United FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-23,,Vancouver Whitecaps,Real Salt Lake,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-23,,FC Cincinnati,New York City FC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-23,,Charlotte,Columbus Crew,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-24,,Sporting Kansas City,Los Angeles Galaxy,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-24,,St. Louis City,DC United,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-24,,Colorado Rapids,Houston Dynamo,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-24,,San Jose Earthquakes,Seattle Sounders,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-24,,Los Angeles FC,Nashville SC,5,0,5-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-24,,Portland Timbers,Philadelphia Union,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-30,,Philadelphia Union,Minnesota United FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-30,,Colorado Rapids,Los Angeles FC,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-30,,Orlando City SC,New York Red Bulls,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-30,,Toronto FC,Sporting Kansas City,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-30,,DC United,CF Montreal,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-30,,Inter Miami,New York City FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-30,,Charlotte,FC Cincinnati,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-31,,Houston Dynamo,San Jose Earthquakes,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-31,,Nashville SC,Columbus Crew,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-31,,Austin,FC Dallas,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-31,,Real Salt Lake,St. Louis City,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-31,,Vancouver Whitecaps,Portland Timbers,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-31,,Los Angeles Galaxy,Seattle Sounders,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-03-31,,Atlanta United FC,Chicago Fire,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-06,,Vancouver Whitecaps,Toronto FC,4,0,4-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-06,,New York City FC,Atlanta United FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-06,,New England Revolution,Charlotte,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-06,,Columbus Crew,DC United,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-06,,FC Cincinnati,New York Red Bulls,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-06,,Inter Miami,Colorado Rapids,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-06,,Los Angeles FC,Los Angeles Galaxy,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-07,,Chicago Fire,Houston Dynamo,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-07,,Minnesota United FC,Real Salt Lake,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-07,,Nashville SC,Philadelphia Union,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-07,,Austin,San Jose Earthquakes,4,3,4-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-07,,St. Louis City,FC Dallas,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-07,,Seattle Sounders,CF Montreal,5,0,5-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-07,,Sporting Kansas City,Portland Timbers,3,3,3-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-13,,Portland Timbers,Los Angeles FC,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-13,,New York Red Bulls,Chicago Fire,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-13,,New York City FC,New England Revolution,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-13,,CF Montreal,FC Cincinnati,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-13,,DC United,Orlando City SC,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-13,,Charlotte,Toronto FC,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-14,,FC Dallas,Seattle Sounders,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-14,,Sporting Kansas City,Inter Miami,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-14,,Minnesota United FC,Houston Dynamo,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-14,,Real Salt Lake,Columbus Crew,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-14,,San Jose Earthquakes,Colorado Rapids,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-14,,Vancouver Whitecaps,Los Angeles Galaxy,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-14,,Atlanta United FC,Philadelphia Union,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-14,,St. Louis City,Austin,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-20,,Toronto FC,New England Revolution,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-20,,New York City FC,DC United,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-20,,Atlanta United FC,FC Cincinnati,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-20,,Columbus Crew,Portland Timbers,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-20,,CF Montreal,Orlando City SC,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-20,,Inter Miami,Nashville SC,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-21,,Houston Dynamo,Austin,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-21,,Chicago Fire,Real Salt Lake,0,4,0-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-21,,Sporting Kansas City,St. Louis City,3,3,3-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-21,,Colorado Rapids,FC Dallas,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-21,,Seattle Sounders,Vancouver Whitecaps,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-21,,Los Angeles FC,New York Red Bulls,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-21,,Charlotte,Minnesota United FC,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-22,,Los Angeles Galaxy,San Jose Earthquakes,4,3,4-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,Austin,Los Angeles Galaxy,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,Orlando City SC,Toronto FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,Philadelphia Union,Real Salt Lake,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,New York Red Bulls,Vancouver Whitecaps,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,New York City FC,Charlotte,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,New England Revolution,Inter Miami,1,4,1-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,Columbus Crew,CF Montreal,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,DC United,Seattle Sounders,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-27,,FC Cincinnati,Colorado Rapids,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-28,,FC Dallas,Houston Dynamo,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-28,,Chicago Fire,Atlanta United FC,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-28,,Minnesota United FC,Sporting Kansas City,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-28,,Nashville SC,San Jose Earthquakes,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-04-28,,Los Angeles FC,Portland Timbers,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-01,,Philadelphia Union,Seattle Sounders,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-04,,San Jose Earthquakes,Los Angeles FC,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-04,,Orlando City SC,FC Cincinnati,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-04,,Toronto FC,FC Dallas,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-04,,Atlanta United FC,Minnesota United FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-04,,DC United,Philadelphia Union,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-04,,Inter Miami,New York Red Bulls,6,2,6-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-04,,Charlotte,Portland Timbers,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-05,,Houston Dynamo,St. Louis City,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-05,,Chicago Fire,New England Revolution,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-05,,Nashville SC,CF Montreal,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-05,,Real Salt Lake,Sporting Kansas City,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-05,,Vancouver Whitecaps,Austin,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-05,,New York City FC,Colorado Rapids,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-05,,Seattle Sounders,Los Angeles Galaxy,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-11,,Philadelphia Union,Orlando City SC,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-11,,Toronto FC,New York City FC,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-11,,New York Red Bulls,New England Revolution,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-11,,Atlanta United FC,DC United,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-11,,CF Montreal,Inter Miami,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-11,,Charlotte,Nashville SC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-11,,Columbus Crew,FC Cincinnati,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-12,,FC Dallas,Austin,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-12,,Sporting Kansas City,Houston Dynamo,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-12,,St. Louis City,Chicago Fire,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-12,,Colorado Rapids,San Jose Earthquakes,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-12,,Los Angeles Galaxy,Real Salt Lake,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-12,,Los Angeles FC,Vancouver Whitecaps,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-12,,Portland Timbers,Seattle Sounders,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-15,,Orlando City SC,Inter Miami,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-15,,Philadelphia Union,New York City FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-15,,CF Montreal,Columbus Crew,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-15,,DC United,New York Red Bulls,1,4,1-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-15,,FC Cincinnati,Atlanta United FC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-16,,Chicago Fire,Charlotte,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-16,,Minnesota United FC,Los Angeles Galaxy,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-16,,Nashville SC,Toronto FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-16,,Austin,Houston Dynamo,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-16,,St. Louis City,Los Angeles FC,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-16,,Real Salt Lake,Seattle Sounders,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-16,,Colorado Rapids,Vancouver Whitecaps,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-16,,Portland Timbers,San Jose Earthquakes,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-18,,Nashville SC,Atlanta United FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-18,,Toronto FC,CF Montreal,5,1,5-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-18,,New York City FC,New York Red Bulls,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-18,,New England Revolution,Philadelphia Union,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-18,,FC Cincinnati,St. Louis City,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-18,,Inter Miami,DC United,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-18,,Charlotte,Los Angeles Galaxy,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-19,,Houston Dynamo,FC Dallas,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-19,,Chicago Fire,Columbus Crew,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-19,,Minnesota United FC,Portland Timbers,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-19,,Austin,Sporting Kansas City,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-19,,Real Salt Lake,Colorado Rapids,5,3,5-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-19,,Seattle Sounders,Vancouver Whitecaps,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-19,,San Jose Earthquakes,Orlando City SC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-25,,Orlando City SC,Columbus Crew,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-25,,Toronto FC,FC Cincinnati,3,4,3-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-25,,Atlanta United FC,Los Angeles FC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-25,,New England Revolution,New York City FC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-25,,CF Montreal,Nashville SC,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-25,,DC United,Chicago Fire,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-25,,Charlotte,Philadelphia Union,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-26,,FC Dallas,Real Salt Lake,3,3,3-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-26,,St. Louis City,Seattle Sounders,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-26,,Colorado Rapids,Minnesota United FC,3,3,3-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-26,,San Jose Earthquakes,Austin,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-26,,Vancouver Whitecaps,Inter Miami,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-26,,Los Angeles Galaxy,Houston Dynamo,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-26,,Portland Timbers,Sporting Kansas City,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-29,,Philadelphia Union,Toronto FC,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-29,,New York Red Bulls,Charlotte,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-29,,CF Montreal,DC United,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-29,,FC Cincinnati,Nashville SC,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-29,,Inter Miami,Atlanta United FC,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-30,,Houston Dynamo,Colorado Rapids,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-30,,Chicago Fire,Orlando City SC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-30,,Sporting Kansas City,Vancouver Whitecaps,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-30,,Austin,Portland Timbers,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-30,,Seattle Sounders,Real Salt Lake,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-30,,Los Angeles Galaxy,FC Dallas,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-30,,Los Angeles FC,Minnesota United FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-05-31,,New York City FC,San Jose Earthquakes,5,1,5-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-01,,Philadelphia Union,CF Montreal,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-01,,New York Red Bulls,Orlando City SC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-01,,DC United,Toronto FC,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-01,,Inter Miami,St. Louis City,3,3,3-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-02,,Chicago Fire,Los Angeles Galaxy,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-02,,Minnesota United FC,Sporting Kansas City,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-02,,Nashville SC,New England Revolution,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-02,,Real Salt Lake,Austin,5,1,5-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-02,,Vancouver Whitecaps,Colorado Rapids,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-02,,Los Angeles FC,FC Dallas,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-02,,Portland Timbers,Houston Dynamo,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-02,,Atlanta United FC,Charlotte,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-08,,New England Revolution,New York Red Bulls,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-09,,Sporting Kansas City,Seattle Sounders,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-09,,Minnesota United FC,FC Dallas,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-09,,St. Louis City,Portland Timbers,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-14,,New York City FC,Columbus Crew,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-15,,Orlando City SC,Los Angeles FC,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-15,,Philadelphia Union,Inter Miami,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-15,,Toronto FC,Chicago Fire,1,4,1-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-15,,New York Red Bulls,Nashville SC,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-15,,Atlanta United FC,Houston Dynamo,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-15,,New England Revolution,Vancouver Whitecaps,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-15,,CF Montreal,Real Salt Lake,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-15,,Charlotte,DC United,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-16,,FC Dallas,St. Louis City,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-16,,Colorado Rapids,Austin,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-16,,Seattle Sounders,Minnesota United FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-16,,San Jose Earthquakes,FC Cincinnati,2,4,2-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-16,,Los Angeles Galaxy,Sporting Kansas City,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-19,,Toronto FC,Nashville SC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-19,,CF Montreal,New York Red Bulls,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-19,,DC United,Atlanta United FC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-19,,Inter Miami,Columbus Crew,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-19,,Charlotte,Orlando City SC,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-19,,FC Cincinnati,Philadelphia Union,4,3,4-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-20,,FC Dallas,Minnesota United FC,5,3,5-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-20,,Houston Dynamo,Seattle Sounders,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-20,,Sporting Kansas City,Real Salt Lake,3,4,3-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-20,,Austin,Los Angeles FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-20,,St. Louis City,Colorado Rapids,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-20,,San Jose Earthquakes,Portland Timbers,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-20,,Los Angeles Galaxy,New York City FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-22,,Orlando City SC,Chicago Fire,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-22,,Philadelphia Union,Charlotte,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-22,,New York Red Bulls,Toronto FC,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-22,,Columbus Crew,Sporting Kansas City,4,0,4-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-22,,DC United,Houston Dynamo,1,4,1-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-22,,FC Cincinnati,New England Revolution,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-23,,Minnesota United FC,Austin,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-23,,Nashville SC,New York City FC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-23,,St. Louis City,Atlanta United FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-23,,Real Salt Lake,Los Angeles Galaxy,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-23,,Colorado Rapids,CF Montreal,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-23,,Seattle Sounders,FC Dallas,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-23,,Los Angeles FC,San Jose Earthquakes,6,2,6-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-23,,Portland Timbers,Vancouver Whitecaps,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-28,,New York City FC,Orlando City SC,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-29,,New York Red Bulls,DC United,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-29,,Atlanta United FC,Toronto FC,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-29,,New England Revolution,Columbus Crew,1,5,1-5,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-29,,CF Montreal,Philadelphia Union,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,FC Dallas,FC Cincinnati,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,Houston Dynamo,Charlotte,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,Sporting Kansas City,Austin,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,Nashville SC,Inter Miami,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,Seattle Sounders,Chicago Fire,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,San Jose Earthquakes,Los Angeles Galaxy,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,Vancouver Whitecaps,St. Louis City,4,3,4-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,Los Angeles FC,Colorado Rapids,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-06-30,,Portland Timbers,Minnesota United FC,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-03,,Columbus Crew,Nashville SC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-03,,Toronto FC,Orlando City SC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-03,,New York City FC,CF Montreal,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-03,,DC United,FC Cincinnati,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-03,,Charlotte,Inter Miami,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-03,,New England Revolution,Atlanta United FC,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-04,,Chicago Fire,Philadelphia Union,4,3,4-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-04,,Minnesota United FC,Vancouver Whitecaps,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-04,,St. Louis City,San Jose Earthquakes,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-04,,Real Salt Lake,Houston Dynamo,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-05,,FC Dallas,Portland Timbers,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-05,,Colorado Rapids,Sporting Kansas City,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-05,,Los Angeles Galaxy,Los Angeles FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-06,,Orlando City SC,DC United,5,0,5-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-06,,Philadelphia Union,New York Red Bulls,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-06,,Columbus Crew,Toronto FC,4,0,4-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-06,,CF Montreal,Vancouver Whitecaps,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-06,,FC Cincinnati,Inter Miami,6,1,6-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-07,,Austin,New York City FC,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-07,,Real Salt Lake,Atlanta United FC,5,2,5-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-07,,Seattle Sounders,New England Revolution,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-08,,San Jose Earthquakes,Chicago Fire,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-08,,Sporting Kansas City,FC Dallas,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-08,,Colorado Rapids,St. Louis City,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-08,,Los Angeles Galaxy,Minnesota United FC,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-08,,Portland Timbers,Nashville SC,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-13,,Toronto FC,Philadelphia Union,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-13,,New England Revolution,Orlando City SC,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-13,,CF Montreal,Atlanta United FC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-13,,DC United,Nashville SC,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-13,,FC Cincinnati,Charlotte,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,FC Dallas,Los Angeles Galaxy,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,Houston Dynamo,Minnesota United FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,Chicago Fire,New York City FC,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,Austin,Seattle Sounders,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,St. Louis City,Vancouver Whitecaps,1,4,1-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,Colorado Rapids,New York Red Bulls,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,Portland Timbers,Real Salt Lake,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,San Jose Earthquakes,Sporting Kansas City,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-14,,Los Angeles FC,Columbus Crew,1,5,1-5,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-17,,Philadelphia Union,New England Revolution,5,1,5-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-17,,New York Red Bulls,CF Montreal,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-17,,Atlanta United FC,New York City FC,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-17,,Columbus Crew,Charlotte,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-17,,FC Cincinnati,Chicago Fire,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-17,,Inter Miami,Toronto FC,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-18,,FC Dallas,Austin,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-18,,Minnesota United FC,DC United,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-18,,Nashville SC,Orlando City SC,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-18,,Seattle Sounders,St. Louis City,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-18,,San Jose Earthquakes,Houston Dynamo,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-18,,Vancouver Whitecaps,Sporting Kansas City,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-18,,Los Angeles Galaxy,Colorado Rapids,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-18,,Los Angeles FC,Real Salt Lake,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-20,,Orlando City SC,New York City FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-20,,Philadelphia Union,Nashville SC,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-20,,New York Red Bulls,FC Cincinnati,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-20,,Atlanta United FC,Columbus Crew,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-20,,New England Revolution,FC Dallas,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-20,,CF Montreal,Toronto FC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-20,,Inter Miami,Chicago Fire,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-21,,Sporting Kansas City,St. Louis City,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-21,,Minnesota United FC,San Jose Earthquakes,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-21,,Austin,Charlotte,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-21,,Colorado Rapids,Real Salt Lake,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-21,,Seattle Sounders,Los Angeles FC,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-21,,Vancouver Whitecaps,Houston Dynamo,3,4,3-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-07-21,,Los Angeles Galaxy,Portland Timbers,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-24,,Minnesota United FC,Seattle Sounders,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-24,,New York City FC,Chicago Fire,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-24,,CF Montreal,New England Revolution,0,5,0-5,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-24,,DC United,FC Dallas,3,4,3-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-24,,Inter Miami,FC Cincinnati,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-24,,Charlotte,New York Red Bulls,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-25,,Houston Dynamo,Toronto FC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-25,,Sporting Kansas City,Orlando City SC,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-25,,Nashville SC,Austin,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-25,,Real Salt Lake,San Jose Earthquakes,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-25,,Los Angeles Galaxy,Atlanta United FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-25,,Portland Timbers,St. Louis City,4,4,4-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-28,,Philadelphia Union,Columbus Crew,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-31,,Orlando City SC,Nashville SC,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-31,,Toronto FC,DC United,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-31,,New York Red Bulls,Philadelphia Union,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-31,,Columbus Crew,New York City FC,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-31,,FC Cincinnati,CF Montreal,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-08-31,,Charlotte,Atlanta United FC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-01,,FC Dallas,Colorado Rapids,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-01,,Chicago Fire,Inter Miami,1,4,1-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-01,,Austin,Vancouver Whitecaps,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-01,,Real Salt Lake,New England Revolution,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-01,,San Jose Earthquakes,Minnesota United FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-01,,Los Angeles FC,Houston Dynamo,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-01,,Portland Timbers,Seattle Sounders,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-01,,St. Louis City,Los Angeles Galaxy,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-07,,New York Red Bulls,Sporting Kansas City,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-07,,New England Revolution,St. Louis City,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-07,,Columbus Crew,Seattle Sounders,0,4,0-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-08,,Houston Dynamo,Los Angeles FC,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-08,,Chicago Fire,DC United,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-08,,Vancouver Whitecaps,FC Dallas,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-14,,Orlando City SC,New England Revolution,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-14,,Toronto FC,Austin,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-14,,Atlanta United FC,Nashville SC,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-14,,CF Montreal,Charlotte,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-14,,DC United,New York City FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-14,,FC Cincinnati,Columbus Crew,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-14,,Inter Miami,Philadelphia Union,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-15,,Houston Dynamo,Real Salt Lake,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-15,,Chicago Fire,New York Red Bulls,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-15,,St. Louis City,Minnesota United FC,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-15,,Colorado Rapids,Portland Timbers,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-15,,Vancouver Whitecaps,San Jose Earthquakes,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-15,,Los Angeles Galaxy,Los Angeles FC,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-15,,Seattle Sounders,Sporting Kansas City,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-18,,Toronto FC,Columbus Crew,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-18,,New York City FC,Philadelphia Union,1,5,1-5,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-18,,Atlanta United FC,Inter Miami,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-18,,New England Revolution,CF Montreal,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Orlando City SC,Charlotte,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Houston Dynamo,Vancouver Whitecaps,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Sporting Kansas City,Colorado Rapids,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Minnesota United FC,FC Cincinnati,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Nashville SC,Chicago Fire,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Real Salt Lake,FC Dallas,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Seattle Sounders,San Jose Earthquakes,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Los Angeles FC,Austin,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-19,,Portland Timbers,Los Angeles Galaxy,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-21,,New York City FC,Inter Miami,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-21,,Charlotte,New England Revolution,4,0,4-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-21,,New York Red Bulls,Atlanta United FC,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-21,,Columbus Crew,Orlando City SC,4,3,4-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-21,,CF Montreal,Chicago Fire,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,FC Dallas,Los Angeles FC,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,Sporting Kansas City,Minnesota United FC,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,Nashville SC,FC Cincinnati,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,Austin,Houston Dynamo,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,Real Salt Lake,Portland Timbers,3,3,3-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,Colorado Rapids,Toronto FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,San Jose Earthquakes,St. Louis City,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,Los Angeles Galaxy,Vancouver Whitecaps,4,2,4-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-22,,Philadelphia Union,DC United,4,0,4-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-28,,Philadelphia Union,Atlanta United FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-28,,New York Red Bulls,New York City FC,1,5,1-5,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-28,,New England Revolution,Nashville SC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-28,,CF Montreal,San Jose Earthquakes,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-28,,DC United,Columbus Crew,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-28,,FC Cincinnati,Los Angeles FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-28,,Inter Miami,Charlotte,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-29,,FC Dallas,Orlando City SC,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-29,,Chicago Fire,Toronto FC,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-29,,Minnesota United FC,Colorado Rapids,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-29,,Austin,Real Salt Lake,2,2,2-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-29,,St. Louis City,Sporting Kansas City,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-29,,Seattle Sounders,Houston Dynamo,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-09-29,,Vancouver Whitecaps,Portland Timbers,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-02,,Orlando City SC,Philadelphia Union,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-02,,Toronto FC,New York Red Bulls,1,4,1-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-02,,New York City FC,FC Cincinnati,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-02,,Atlanta United FC,CF Montreal,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-02,,Charlotte,Chicago Fire,4,3,4-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-02,,Columbus Crew,Inter Miami,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-03,,Houston Dynamo,New England Revolution,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-03,,Nashville SC,DC United,3,4,3-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-03,,Real Salt Lake,Minnesota United FC,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-03,,Colorado Rapids,Los Angeles Galaxy,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-03,,San Jose Earthquakes,FC Dallas,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-03,,Vancouver Whitecaps,Seattle Sounders,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-03,,Los Angeles FC,St. Louis City,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-03,,Portland Timbers,Austin,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-05,,Toronto FC,Inter Miami,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-05,,Vancouver Whitecaps,Minnesota United FC,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-05,,Atlanta United FC,New York Red Bulls,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-05,,New England Revolution,DC United,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-05,,Columbus Crew,Philadelphia Union,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-05,,FC Cincinnati,Orlando City SC,1,3,1-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-05,,Charlotte,CF Montreal,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-06,,Sporting Kansas City,Los Angeles FC,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-06,,St. Louis City,Houston Dynamo,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-06,,Colorado Rapids,Seattle Sounders,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-06,,San Jose Earthquakes,Real Salt Lake,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-06,,Los Angeles Galaxy,Austin,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-06,,New York City FC,Nashville SC,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-06,,Portland Timbers,FC Dallas,0,0,0-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-12,,Columbus Crew,New England Revolution,4,0,4-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-13,,Vancouver Whitecaps,Los Angeles FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Seattle Sounders,Portland Timbers,1,1,1-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,FC Dallas,Sporting Kansas City,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Houston Dynamo,Los Angeles Galaxy,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Real Salt Lake,Vancouver Whitecaps,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Minnesota United FC,St. Louis City,4,1,4-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Los Angeles FC,San Jose Earthquakes,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Austin,Colorado Rapids,3,2,3-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Orlando City SC,Atlanta United FC,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Philadelphia Union,FC Cincinnati,1,2,1-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,New York Red Bulls,Columbus Crew,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Chicago Fire,Nashville SC,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,CF Montreal,New York City FC,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,DC United,Charlotte,0,3,0-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-20,,Inter Miami,New England Revolution,6,2,6-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-24,,Vancouver Whitecaps,Portland Timbers,5,0,5-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-26,,Inter Miami,Atlanta United FC,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-27,,Los Angeles Galaxy,Colorado Rapids,5,0,5-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-27,,Orlando City SC,Charlotte,2,0,2-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-28,,Los Angeles FC,Vancouver Whitecaps,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-28,,FC Cincinnati,New York City FC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-10-29,,Columbus Crew,New York Red Bulls,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-02,,Colorado Rapids,Los Angeles Galaxy,1,4,1-4,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-02,,New York City FC,FC Cincinnati,3,1,3-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-02,,Atlanta United FC,Inter Miami,2,1,2-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-04,,Vancouver Whitecaps,Los Angeles FC,3,0,3-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-09,,Los Angeles FC,Vancouver Whitecaps,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-10,,Inter Miami,Atlanta United FC,2,3,2-3,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-23,,New York City FC,New York Red Bulls,0,2,0-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-24,,Orlando City SC,Atlanta United FC,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-11-24,,Los Angeles Galaxy,Minnesota United FC,6,2,6-2,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-12-01,,Orlando City SC,New York Red Bulls,0,1,0-1,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-12-01,,Los Angeles Galaxy,Seattle Sounders,1,0,1-0,FINISHED,,regular,api-football
+MLS,MLS Major League Soccer,2024-12-07,,Los Angeles Galaxy,New York Red Bulls,2,1,2-1,FINISHED,,regular,api-football
