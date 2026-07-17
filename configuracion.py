@@ -54,27 +54,78 @@ LIGAS = {
     },
 }
 
-# ── Nombres en español ──
+# ── Nombres en español / normalización ──
+# Clave: nombre de la Odds API → valor: nombre del histórico (football-data.org)
 NOMBRES_ES = {
-    # Champions
-    'Real Madrid': 'Real Madrid', 'Barcelona': 'Barcelona',
-    'Manchester City': 'Manchester City', 'Arsenal': 'Arsenal',
-    'Bayern Munich': 'Bayern Múnich', 'Borussia Dortmund': 'Dortmund',
-    'Paris Saint-Germain FC': 'PSG', 'Juventus': 'Juventus',
-    'Inter Milan': 'Inter', 'AC Milan': 'AC Milan',
-    'Liverpool FC': 'Liverpool', 'Chelsea FC': 'Chelsea',
-    'Atletico Madrid': 'Atlético Madrid', 'Sevilla FC': 'Sevilla',
-    # Copa Lib / Sud
-    'Flamengo': 'Flamengo', 'River Plate': 'River Plate',
-    'Boca Juniors': 'Boca Juniors', 'Palmeiras': 'Palmeiras',
-    'Fluminense': 'Fluminense', 'São Paulo': 'São Paulo',
+    # Champions League
+    'Real Madrid': 'Real Madrid', 'Barcelona': 'FC Barcelona',
+    'Manchester City': 'Manchester City FC', 'Arsenal': 'Arsenal FC',
+    'Bayern Munich': 'FC Bayern München', 'Borussia Dortmund': 'Borussia Dortmund',
+    'Paris Saint-Germain FC': 'Paris Saint-Germain FC',
+    'Juventus': 'Juventus FC', 'Inter Milan': 'FC Internazionale Milano',
+    'AC Milan': 'AC Milan', 'Liverpool FC': 'Liverpool FC',
+    'Chelsea FC': 'Chelsea FC', 'Atletico Madrid': 'Club Atlético de Madrid',
+
+    # Brasileirao — Odds API → football-data.org
+    'Flamengo':          'CR Flamengo',
+    'Fluminense':        'Fluminense FC',
+    'Botafogo':          'Botafogo FR',
+    'Palmeiras':         'SE Palmeiras',
+    'Corinthians':       'SC Corinthians Paulista',
+    'Sao Paulo':         'São Paulo FC',
+    'Internacional':     'SC Internacional',
+    'Grêmio':            'Grêmio FBPA',
+    'Atletico Mineiro':  'CA Mineiro',
+    'Bragantino-SP':     'RB Bragantino',
+    'Cruzeiro':          'Cruzeiro EC',
+    'Bahia':             'EC Bahia',
+    'Vitoria':           'EC Vitória',
+    'Mirassol':          'Mirassol FC',
+    'Atletico Paranaense': 'Club Athletico Paranaense',
+    'Chapecoense':       'Chapecoense',
+    'Coritiba':          'Coritiba FC',
+    'Remo':              'Clube do Remo',
+
+    # Copa Libertadores / Sudamericana
+    'River Plate':       'River Plate',
+    'Boca Juniors':      'Boca Juniors',
+    'Racing Club':       'Racing Club',
+    'Estudiantes':       'Estudiantes de La Plata',
+    'Nacional de Montevideo': 'Nacional',
+    'CA Tigre BA':       'CA Tigre',
+    'UCV FC':            'Universidad César Vallejo',
+    'Santos':            'Santos FC',
+
     # MLS
-    'LA Galaxy': 'LA Galaxy', 'LAFC': 'LAFC',
-    'Atlanta United': 'Atlanta United', 'Seattle Sounders': 'Seattle Sounders',
-    # Liga 1
-    'Alianza Lima': 'Alianza Lima', 'Universitario': 'Universitario',
-    'Sporting Cristal': 'Sporting Cristal', 'Melgar': 'Melgar',
+    'LA Galaxy':                  'LA Galaxy',
+    'Los Angeles FC':             'LAFC',
+    'Seattle Sounders FC':        'Seattle Sounders FC',
+    'Portland Timbers':           'Portland Timbers',
+    'Atlanta United FC':          'Atlanta United FC',
+    'Nashville SC':               'Nashville SC',
+    'Columbus Crew SC':           'Columbus Crew SC',
+    'New York City FC':           'New York City FC',
+    'New England Revolution':     'New England Revolution',
+    'Charlotte FC':               'Charlotte FC',
+    'CF Montreal':                'CF Montréal',
+    'Toronto FC':                 'Toronto FC',
+    'Chicago Fire':               'Chicago Fire FC',
+    'Vancouver Whitecaps FC':     'Vancouver Whitecaps FC',
+    'St. Louis City SC':          'St. Louis City SC',
+    'Sporting Kansas City':       'Sporting Kansas City',
+
+    # Liga 1 Perú
+    'Alianza Lima':      'Alianza Lima',
+    'Universitario':     'Universitario de Deportes',
+    'Sporting Cristal':  'Sporting Cristal',
+    'Melgar':            'FBC Melgar',
+    'Cienciano':         'Cienciano',
+    'Cesar Vallejo':     'Universidad César Vallejo',
 }
+
+# Mapa inverso: histórico → normalizado (para buscar stats)
+NOMBRES_HIST = {v: v for v in NOMBRES_ES.values()}
+NOMBRES_HIST.update({v: k for k, v in NOMBRES_ES.items()})
 
 # ── Zonas horarias ──
 ZONA_PERU = -5  # UTC-5
