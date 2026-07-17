@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 os.chdir(RAIZ)
 sys.path.insert(0, RAIZ)
-from configuracion import ZONA_PERU
+from configuracion import ZONA_PERU, NOMBRES_ES
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
 
@@ -33,10 +33,20 @@ def prob_over(lam, linea):
 def prob_under(lam, linea):
     return round(100 - prob_over(lam, linea), 1)
 
+def normalizar_nombre(nombre):
+    """Convierte nombre de Odds API al nombre del histórico"""
+    return NOMBRES_ES.get(nombre, nombre)
+
 def calcular_stats_equipo(df, equipo, n_partidos=8):
     """Calcula stats promedio de un equipo en sus últimos N partidos"""
-    como_local = df[df['local'] == equipo].tail(n_partidos)
-    como_visita = df[df['visitante'] == equipo].tail(n_partidos)
+    # Intentar con nombre original y normalizado
+    nombre_hist = normalizar_nombre(equipo)
+    
+    for nom in [equipo, nombre_hist]:
+        como_local = df[df['local'] == nom].tail(n_partidos)
+        como_visita = df[df['visitante'] == nom].tail(n_partidos)
+        if len(como_local) + len(como_visita) > 0:
+            break
 
     goles_favor = []
     goles_contra = []
@@ -209,7 +219,12 @@ def predecir_jornada(fecha=None):
         # Determinar fase
         fase = 'eliminatoria' if liga in ['UCL', 'CLB', 'CSU'] else 'regular'
 
-        pred = predecir_partido(local, visitante, df_hist, liga, cuotas, fase)
+        # Normalizar nombres para buscar en histórico
+        local_hist = normalizar_nombre(local)
+        visit_hist = normalizar_nombre(visitante)
+        pred = predecir_partido(local_hist, visit_hist, df_hist, liga, cuotas, fase)
+        pred['local'] = local
+        pred['visitante'] = visitante
         pred['fecha'] = p['fecha']
         pred['hora'] = p.get('hora_peru', '')
         pred['liga_nombre'] = p.get('liga_nombre', liga)
