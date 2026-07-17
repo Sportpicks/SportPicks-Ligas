@@ -157,11 +157,18 @@ def predecir_partido(local, visitante, df_historico, liga_key,
     stats_v = calcular_stats_equipo(df_historico, visitante)
 
     # Media de goles de la liga (promedio por EQUIPO, no total del partido)
-    # Medias calibradas con retrodicción histórica
-    # BSA sesgo -0.079 (ok), MLS sesgo -0.107, CLB sesgo -0.336
+    # Medias por liga — representan goles promedio POR EQUIPO
+    # NO modificar para calibrar — usar factor_escala en dixon_coles_xg
     media_defaults = {
-        'BSA': 1.28, 'MLS': 1.52, 'UCL': 1.38,
-        'CLB': 1.38, 'CSU': 1.22, 'LP1': 1.10,
+        'BSA': 1.25, 'MLS': 1.40, 'UCL': 1.35,
+        'CLB': 1.15, 'CSU': 1.10, 'LP1': 1.05,
+    }
+    # Factor de escala por liga — calibrado con retrodicción histórica
+    # Corrige subestimación sin afectar la distribución 1X2
+    # BSA sesgo -0.079 → +6%, MLS sesgo -0.107 → +8%, CLB sesgo -0.336 → +20%
+    factor_escala_liga = {
+        'BSA': 1.06, 'MLS': 1.08, 'UCL': 1.05,
+        'CLB': 1.20, 'CSU': 1.15, 'LP1': 1.10,
     }
     df_liga = df_historico[df_historico['liga'] == liga_key].copy()
     try:
@@ -182,16 +189,29 @@ def predecir_partido(local, visitante, df_historico, liga_key,
         media_goles_liga=media_goles,
         fase=fase
     )
+    # Aplicar factor de escala por liga para corregir subestimación de goles
+    # Se aplica DESPUÉS de calcular probs 1X2 para no afectar calibración
+    escala = factor_escala_liga.get(liga_key, 1.0)
+    xg_l_scaled = round(xg_l * escala, 3)
+    xg_v_scaled = round(xg_v * escala, 3)
 
-    # Simulación Monte Carlo
+    # Simulación Monte Carlo — usar xG original para probs 1X2
     sim = monte_carlo_partido(xg_l, xg_v)
+    # Recalcular Over/Under y BTTS con xG escalado (más preciso para goles)
+    sim_scaled = monte_carlo_partido(xg_l_scaled, xg_v_scaled)
+    sim['over_1.5']  = sim_scaled['over_1.5']
+    sim['over_2.5']  = sim_scaled['over_2.5']
+    sim['over_3.5']  = sim_scaled['over_3.5']
+    sim['under_2.5'] = sim_scaled['under_2.5']
+    sim['btts_si']   = sim_scaled['btts_si']
+    sim['btts_no']   = sim_scaled['btts_no']
 
     resultado = {
         'local': local,
         'visitante': visitante,
         'liga': liga_key,
-        'xg_l': xg_l,
-        'xg_v': xg_v,
+        'xg_l': xg_l_scaled,
+        'xg_v': xg_v_scaled,
         'fase': fase,
         **sim,
         'stats_l': stats_l,
