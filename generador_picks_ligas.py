@@ -150,9 +150,8 @@ def seleccionar_premium(todos, mercados_excluidos):
     candidatos = sorted(
         [pk for pk in todos
          if pk['prob'] >= 60
-         and 1.20 <= pk['cuota'] <= 2.00
-         and pk['mercado'] not in mercados_excluidos
-         and pk['ev'] > -0.05],  # solo picks con valor razonable
+         and 1.20 <= pk['cuota'] <= 3.00
+         and pk['mercado'] not in mercados_excluidos],
         key=lambda x: x['prob'], reverse=True
     )
 
