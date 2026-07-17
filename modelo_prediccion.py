@@ -51,15 +51,22 @@ def calcular_stats_equipo(df, equipo, n_partidos=8):
     goles_favor = []
     goles_contra = []
 
+    def es_valido(val):
+        try:
+            if val is None or val == '': return False
+            float(val)
+            return True
+        except: return False
+
     for _, p in como_local.iterrows():
-        if p['goles_l'] != '' and str(p['goles_l']).isdigit():
-            goles_favor.append(int(p['goles_l']))
-            goles_contra.append(int(p['goles_v']))
+        if es_valido(p['goles_l']) and es_valido(p['goles_v']):
+            goles_favor.append(int(float(p['goles_l'])))
+            goles_contra.append(int(float(p['goles_v'])))
 
     for _, p in como_visita.iterrows():
-        if p['goles_v'] != '' and str(p['goles_v']).isdigit():
-            goles_favor.append(int(p['goles_v']))
-            goles_contra.append(int(p['goles_l']))
+        if es_valido(p['goles_v']) and es_valido(p['goles_l']):
+            goles_favor.append(int(float(p['goles_v'])))
+            goles_contra.append(int(float(p['goles_l'])))
 
     if not goles_favor:
         # Default conservador para equipos sin historial
