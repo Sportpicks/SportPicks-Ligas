@@ -120,8 +120,8 @@ def seleccionar_picks(todos, max_publico=3):
         partido = pk['partido']
         cat = pk['categoria']
 
-        # Max 2 picks por partido en público
-        if partidos_usados.get(partido, 0) >= 2:
+        # Max 1 pick por partido — diversidad de ligas y partidos
+        if partidos_usados.get(partido, 0) >= 1:
             continue
         # Max 2 picks de misma categoría
         if categorias_usadas.get(cat, 0) >= 2:
