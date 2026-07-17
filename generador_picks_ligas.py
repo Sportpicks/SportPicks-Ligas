@@ -145,9 +145,10 @@ def seleccionar_premium(todos, mercados_excluidos):
     # Picks con prob alta y cuota baja — candidatos para combinada
     candidatos = sorted(
         [pk for pk in todos
-         if pk['prob'] >= 65
-         and 1.20 <= pk['cuota'] <= 1.70
-         and pk['mercado'] not in mercados_excluidos],
+         if pk['prob'] >= 62
+         and 1.20 <= pk['cuota'] <= 1.80
+         and pk['mercado'] not in mercados_excluidos
+         and pk['ev'] > -0.05],  # solo picks con valor razonable
         key=lambda x: x['prob'], reverse=True
     )
 
@@ -162,15 +163,27 @@ def seleccionar_premium(todos, mercados_excluidos):
             for pk2 in pks[i+1:]:
                 m1 = pk1['mercado'].lower()
                 m2 = pk2['mercado'].lower()
-                # Evitar contradictorios
+                # Evitar contradictorios y correlacionados
                 if ('más de' in m1 and 'menos de' in m2) or ('menos de' in m1 and 'más de' in m2):
                     continue
                 if m1 == m2:
+                    continue
+                # Evitar picks muy correlacionados
+                if 'menos de 2.5' in m1 and 'ambos anotan - no' in m2:
+                    continue
+                if 'menos de 2.5' in m2 and 'ambos anotan - no' in m1:
+                    continue
+                if 'más de 2.5' in m1 and 'ambos anotan - sí' in m2:
+                    continue
+                if 'más de 2.5' in m2 and 'ambos anotan - sí' in m1:
                     continue
                 cuota_combo = round(pk1['cuota'] * pk2['cuota'], 2)
                 if cuota_combo < CUOTA_MIN_PREMIUM:
                     continue
                 prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
+                # Solo combinar si la prob combinada es >= 55%
+                if prob_combo < 55:
+                    continue
                 if prob_combo > mejor_prob:
                     mejor_prob = prob_combo
                     mejor = {
@@ -211,7 +224,7 @@ def seleccionar_premium(todos, mercados_excluidos):
 
     return [mejor] if mejor else []
 
-def main(fecha=None):
+def main(fecha=None, dias=2):
     if fecha is None:
         fecha = hoy_peru()
 
@@ -220,8 +233,18 @@ def main(fecha=None):
     print(f'  Fecha: {fecha}')
     print(f'{"="*60}')
 
+    # Obtener predicciones solo para hoy y mañana
+    from datetime import datetime, timedelta
+    fecha_dt = datetime.strptime(fecha, '%Y-%m-%d')
+    fecha_fin = (fecha_dt + timedelta(days=dias)).strftime('%Y-%m-%d')
+    print(f'  Rango: {fecha} → {fecha_fin}')
+
     # Obtener predicciones
     predicciones = predecir_jornada(fecha)
+    # Filtrar solo partidos en el rango
+    predicciones = [p for p in predicciones
+                   if fecha <= p.get('fecha', '') <= fecha_fin]
+    print(f'  Partidos en rango: {len(predicciones)}')
 
     if not predicciones:
         print('❌ Sin predicciones disponibles')
