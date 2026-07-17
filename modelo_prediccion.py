@@ -81,27 +81,30 @@ def calcular_stats_equipo(df, equipo, n_partidos=8):
     }
 
 def dixon_coles_xg(ataque_l, defensa_l, ataque_v, defensa_v,
-                    media_goles_liga=1.35, factor_local=1.20, fase='regular'):
+                    media_goles_liga=1.35, factor_local=1.10, fase='regular'):
     """
-    Calcula xG esperado usando Dixon-Coles
-    - factor_local: ventaja de local
+    Calcula xG esperado usando Dixon-Coles corregido
+    - ataque/defensa ya están en escala de goles reales por partido
+    - Formula: xG_l = (atq_l/media) * (def_v/media) * media * factor_local
+    - factor_local: ventaja de jugar en casa
     - fase: 'regular', 'playoffs', 'eliminatoria'
     """
     # Factor de ajuste por fase
     factor_fase = {
-        'regular':     1.00,
-        'playoffs':    0.85,
-        'eliminatoria': 0.80,
-        'grupos':      0.90,
+        'regular':      1.00,
+        'playoffs':     0.90,
+        'eliminatoria': 0.85,
+        'grupos':       0.95,
     }.get(fase, 1.00)
 
-    # xG local y visitante
-    xg_l = ataque_l * defensa_v * factor_local * media_goles_liga * factor_fase
-    xg_v = ataque_v * defensa_l * (1/factor_local) * media_goles_liga * factor_fase
+    # Fórmula correcta Dixon-Coles normalizada por media de liga
+    m = max(media_goles_liga, 0.80)
+    xg_l = (ataque_l / m) * (defensa_v / m) * m * factor_local * factor_fase
+    xg_v = (ataque_v / m) * (defensa_l / m) * m / factor_local * factor_fase
 
     # Límites razonables
-    xg_l = max(0.30, min(xg_l, 2.50))
-    xg_v = max(0.20, min(xg_v, 2.20))
+    xg_l = max(0.30, min(xg_l, 3.00))
+    xg_v = max(0.20, min(xg_v, 2.80))
 
     return round(xg_l, 3), round(xg_v, 3)
 
