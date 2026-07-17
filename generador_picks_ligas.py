@@ -213,7 +213,51 @@ def seleccionar_premium(todos, mercados_excluidos):
                         ]
                     }
 
-    # Si no hay combinada, pick individual premium
+    # Paso 2: si no hay combinada del mismo partido, buscar combinada multi-partido
+    if not mejor:
+        pks_multi = [pk for pk in candidatos if pk['mercado'] not in mercados_excluidos]
+        for i, pk1 in enumerate(pks_multi):
+            for pk2 in pks_multi[i+1:]:
+                if pk1['partido'] == pk2['partido']:
+                    continue  # ya probamos mismo partido arriba
+                m1 = pk1['mercado'].lower()
+                m2 = pk2['mercado'].lower()
+                cuota_combo = round(pk1['cuota'] * pk2['cuota'], 2)
+                if cuota_combo < CUOTA_MIN_PREMIUM:
+                    continue
+                prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
+                if prob_combo < 52:
+                    continue
+                if prob_combo > mejor_prob:
+                    mejor_prob = prob_combo
+                    mejor = {
+                        'partido': f"{pk1['partido']} + {pk2['partido']}",
+                        'local': pk1['local'],
+                        'visitante': pk1['visitante'],
+                        'liga': pk1['liga'],
+                        'liga_nombre': 'Multi-liga',
+                        'fecha': pk1['fecha'],
+                        'hora': pk1['hora'],
+                        'mercado': f"Combinada: {pk1['mercado']} ({pk1['partido'].split(' vs ')[0]}) + {pk2['mercado']} ({pk2['partido'].split(' vs ')[0]})",
+                        'prob': prob_combo,
+                        'cuota': cuota_combo,
+                        'cuota_display': cuota_combo,
+                        'ev': round((prob_combo/100) * cuota_combo - 1, 3),
+                        'emoji': '🎯',
+                        'categoria': 'Combinada',
+                        'descripcion': f"{pk1['mercado']} @{pk1['cuota']} × {pk2['mercado']} @{pk2['cuota']}",
+                        'fuente': 'real',
+                        'tipo': 'premium',
+                        'estado': 'Pendiente',
+                        'ganancia': 0,
+                        'stake': 0,
+                        'picks_combo': [
+                            {'partido': pk1['partido'], 'mercado': pk1['mercado'], 'cuota': pk1['cuota']},
+                            {'partido': pk2['partido'], 'mercado': pk2['mercado'], 'cuota': pk2['cuota']},
+                        ]
+                    }
+
+    # Paso 3: pick individual premium
     if not mejor:
         for pk in sorted(todos, key=lambda x: x['prob'], reverse=True):
             if (pk['prob'] >= PROB_MIN_PREMIUM
