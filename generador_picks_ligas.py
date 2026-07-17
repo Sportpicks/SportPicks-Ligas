@@ -109,7 +109,12 @@ def seleccionar_picks(todos, max_publico=3):
     # Ordenar por EV
     validos.sort(key=lambda x: (x['prob'], x['ev']), reverse=True)
 
-    # Panel público — max 3, diversidad de partidos
+    # PREMIUM PRIMERO — seleccionar antes que el público
+    premium = seleccionar_premium(todos, [])
+    mercados_premium = set(pk['mercado'] for pk in premium)
+    partidos_premium = set(pk['partido'].split(' + ')[0] for pk in premium)
+
+    # Panel público — max 3, diversidad, excluir mercados del premium
     publicos = []
     partidos_usados = {}
     categorias_usadas = {}
@@ -120,23 +125,22 @@ def seleccionar_picks(todos, max_publico=3):
         partido = pk['partido']
         cat = pk['categoria']
 
-        # Max 1 pick por partido — diversidad de ligas y partidos
+        # No usar el mercado exacto del premium
+        if pk['mercado'] in mercados_premium:
+            continue
+        # Max 1 pick por partido
         if partidos_usados.get(partido, 0) >= 1:
             continue
         # Max 2 picks de misma categoría
         if categorias_usadas.get(cat, 0) >= 2:
             continue
         # No duplicar mercado
-        mercados_pub = [p['mercado'] for p in publicos]
-        if pk['mercado'] in mercados_pub:
+        if pk['mercado'] in [p['mercado'] for p in publicos]:
             continue
 
         publicos.append(pk)
         partidos_usados[partido] = partidos_usados.get(partido, 0) + 1
         categorias_usadas[cat] = categorias_usadas.get(cat, 0) + 1
-
-    # Panel premium — mejor combinada automática
-    premium = seleccionar_premium(todos, [pk['mercado'] for pk in publicos])
 
     return publicos, premium
 
