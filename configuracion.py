@@ -169,7 +169,6 @@ NOMBRES_ES = {
     # Liga 1 Perú
     'Alianza Lima':      'Alianza Lima',
     'Universitario':     'Universitario de Deportes',
-    'Sporting Cristal':  'Sporting Cristal',
     'Melgar':            'FBC Melgar',
     'Cienciano':         'Cienciano',
     'Cesar Vallejo':     'Universidad César Vallejo',
