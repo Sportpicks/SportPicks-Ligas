@@ -149,8 +149,7 @@ def predecir_partido(local, visitante, df_historico, liga_key,
             'BSA': 2.50, 'MLS': 2.80, 'UCL': 2.70,
             'CLB': 2.30, 'CSU': 2.20, 'LP1': 2.10,
         }
-        liga_key_local = df_hist['liga'].iloc[0] if len(df_hist) > 0 else ''
-        media_goles = media_defaults.get(liga_key_local, 2.50)
+        media_goles = media_defaults.get(liga_key, 2.50)
 
     # xG Dixon-Coles
     xg_l, xg_v = dixon_coles_xg(
