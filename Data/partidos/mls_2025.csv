@@ -1,0 +1,15 @@
+liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente
+MLS,MLS Major League Soccer,2025-12-06,,Inter Miami,Vancouver Whitecaps,3,1,3-1,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-20,,Inter Miami,New York City FC,5,1,5-1,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-21,,Vancouver Whitecaps,San Diego FC,3,1,3-1,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-06,,Inter Miami,Los Angeles FC,2,0,2-0,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-07,,New York City FC,Seattle Sounders,1,0,1-0,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-08,,Vancouver Whitecaps,Columbus Crew,2,1,2-1,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-09,,San Diego FC,St. Louis City,3,2,3-2,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2026-02-10,,Seattle Sounders,Colorado Rapids,2,0,2-0,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2026-02-10,,Los Angeles Galaxy,New York City FC,1,1,1-1,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2026-02-11,,San Diego FC,CF Montreal,5,0,5-0,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2026-02-11,,Los Angeles FC,Inter Miami,3,0,3-0,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,Seattle Sounders,Portland Timbers,1,5,1-5,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,St. Louis City,Sporting Kansas City,3,2,3-2,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,CF Montreal,Toronto FC,0,0,0-0,FINISHED,,regular,manual
