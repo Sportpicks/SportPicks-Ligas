@@ -4,6 +4,7 @@ Sistema de predicciones deportivas con IA para múltiples ligas internacionales.
 
 ## Ligas cubiertas
 - 🇪🇺 UEFA Champions League
+- 🇪🇺 UEFA Europa League
 - 🏆 Copa Libertadores (CONMEBOL)
 - 🏆 Copa Sudamericana (CONMEBOL)
 - 🇧🇷 Brasileirao Serie A

@@ -351,7 +351,7 @@ def main(fecha=None, dias=3):
     # Mostrar panel
     print(f'\n📋 PANEL PÚBLICO ({len(publicos)} picks):')
     for i, pk in enumerate(publicos, 1):
-        liga_emoji = {'BSA':'🇧🇷','MLS':'🇺🇸','CSU':'🏆','CLB':'🏆','UCL':'🇪🇺','LP1':'🇵🇪'}.get(pk['liga'],'⚽')
+        liga_emoji = {'BSA':'🇧🇷','MLS':'🇺🇸','CSU':'🏆','CLB':'🏆','UCL':'🇪🇺','LP1':'🇵🇪','UEL':'🇪🇺'}.get(pk['liga'],'⚽')
         print(f'   #{i} {liga_emoji} [{pk["categoria"]}] {pk["mercado"]}')
         print(f'      {pk["partido"]} | {pk["prob"]:.1f}% | @{pk["cuota"]:.2f} EV:{pk["ev"]:+.1%}')
 

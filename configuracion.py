@@ -52,6 +52,13 @@ LIGAS = {
         'odds_key':  'soccer_peru_primera_division',
         'activa':    True,
     },
+    'UEL': {
+        'nombre':    'UEFA Europa League',
+        'emoji':     '🇪🇺',
+        'fd_id':     None,
+        'odds_key':  'soccer_uefa_europa_league',
+        'activa':    True,
+    },
 }
 
 # ── Nombres en español / normalización ──

@@ -21,6 +21,7 @@ LIGA_COLOR = {
     'BSA': '#34d399',
     'MLS': '#a78bfa',
     'LP1': '#fb7185',
+    'UEL': '#f472b6',
 }
 LIGA_EMOJI = {k: v['emoji'] for k, v in LIGAS.items()}
 LIGA_NOMBRE = {k: v['nombre'] for k, v in LIGAS.items()}
