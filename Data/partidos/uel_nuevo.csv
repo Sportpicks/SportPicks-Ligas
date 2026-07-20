@@ -1,0 +1,854 @@
+liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente
+UEL,UEFA Europa League,2024-07-10,,Velež,Inter Club d'Escaldes,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-10,,Auda,B36 Torshavn,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,FK Liepaja,Vikingur Gota,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Šiauliai,FC Levadia Tallinn,0,2,0-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Aktobe,FK Sarajevo,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,FC Noah,Shkendija,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Bravo,GAP Connah S Quay FC,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Magpies,Derry City,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Atlètic Club d'Escaldes,F91 Dudelange,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Tallinna Kalev,FC Urartu,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Torpedo Zhodino,Milsami Orhei,2,4,2-4,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,VPS,FK Zalgiris Vilnius,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Torpedo Kutaisi,Tirana,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,UNA Strassen,KuPS,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Floriana,Tre Penne,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Caernarfon Town,Crusaders FC,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Partizani,Marsaxlokk,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Tikveš,Breidablik,3,2,3-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,La Fiorita,FC Isloch Minsk R.,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Mornar,Dinamo Tbilisi,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Shelbourne,St Joseph S Fc,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Valur Reykjavik,Vllaznia Shkodër,2,2,2-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-11,,Stjarnan,Linfield,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-17,,Crusaders FC,Caernarfon Town,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,KuPS,UNA Strassen,5,0,5-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,FC Urartu,Tallinna Kalev,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,FK Zalgiris Vilnius,VPS,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Milsami Orhei,Torpedo Zhodino,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,St Joseph S Fc,Shelbourne,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,FC Levadia Tallinn,Šiauliai,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Inter Club d'Escaldes,Velež,5,1,5-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Paide,Bala Town,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,F91 Dudelange,Atlètic Club d'Escaldes,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Dinamo Tbilisi,Mornar,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Marsaxlokk,Partizani,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,GAP Connah S Quay FC,Bravo,0,2,0-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,FC Isloch Minsk R.,La Fiorita,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Shkendija,FC Noah,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Tirana,Torpedo Kutaisi,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Vllaznia Shkodër,Valur Reykjavik,0,4,0-4,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Linfield,Stjarnan,3,2,3-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Derry City,Magpies,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Tre Penne,Floriana,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Buducnost Podgorica,Malisheva,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,FK Sarajevo,Aktobe,2,3,2-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-18,,Breidablik,Tikveš,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-07-23,,FC Differdange 03,Ordabasy,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-23,,Virtus,Flora Tallinn,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-24,,Struga,Pyunik Yerevan,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-24,,Riga,Slask Wroclaw,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-24,,Dinamo Batumi,Dečić,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-24,,AEK Athens FC,Inter Club d'Escaldes,4,3,4-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-24,,Cliftonville FC,Auda,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,KuPS,Tromso,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,FK Zalgiris Vilnius,Pafos,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Mlada Boleslav,TransINVEST Vilnius,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Milsami Orhei,FC Astana,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Ilves,Austria Vienna,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Saburtalo,Partizani,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,FC Noah,Sliema Wanderers,7,0,7-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Sumqayıt,Fehérvár FC,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Magpies,FC Copenhagen,0,3,0-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,GO Ahead Eagles,Brann,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Zira,Dunajska Streda,4,0,4-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Omonia Nicosia,Torpedo Kutaisi,3,1,3-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Zimbru,Ararat-Armenia,0,3,0-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Djurgardens IF,Progres Niederkorn,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Brondby,Llapi,6,0,6-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Hapoel Beer Sheva,Cherno More Varna,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,F91 Dudelange,BK Hacken,2,6,2-6,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Olimpija Ljubljana,Polessya,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,FC Zurich,Shelbourne,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Dnipro-1,Puskas Academy,0,3,0-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Baník Ostrava,FC Urartu,5,1,5-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Floriana,Guimaraes,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Maccabi Haifa,Sabah FA,0,3,0-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,CSKA 1948,Buducnost Podgorica,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,CFR 1907 Cluj,Neman,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Başakşehir,La Fiorita,6,1,6-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,NK Osijek,FC Levadia Tallinn,5,1,5-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Gent,Vikingur Gota,4,1,4-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,FC ST. Gallen,FK Tobol Kostanay,4,1,4-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Paks,AEK Larnaca,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Radnicki 1923,Mornar,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Maribor,CS Universitatea Craiova,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Valur Reykjavik,ST Mirren,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Vikingur Reykjavik,Egnatia Rrogozhinë,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Legia Warszawa,Caernarfon Town,6,0,6-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,St Patrick's Athl.,FC Vaduz,3,1,3-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Stjarnan,Paide,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Zrinjski,Bravo,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,HNK Hajduk Split,HB Torshavn,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,FK Sarajevo,Spartak Trnava,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-25,,Breidablik,Drita,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-30,,Flora Tallinn,Virtus,5,2,5-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-30,,Pyunik Yerevan,Struga,3,1,3-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-30,,Hamrun Spartans,Ballkani,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-30,,Dečić,Dinamo Batumi,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-31,,Auda,Cliftonville FC,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-31,,BK Hacken,F91 Dudelange,6,1,6-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-31,,Fehérvár FC,Sumqayıt,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-31,,Austria Vienna,Ilves,4,3,4-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-31,,Spartak Trnava,FK Sarajevo,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-07-31,,Mornar,Radnicki 1923,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,FC Astana,Milsami Orhei,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Ordabasy,FC Differdange 03,4,3,4-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,FC Urartu,Baník Ostrava,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Ararat-Armenia,Zimbru,3,1,3-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Bravo,Zrinjski,1,3,1-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,AEK Larnaca,Paks,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,FK Tobol Kostanay,FC ST. Gallen,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,FC Levadia Tallinn,NK Osijek,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Pafos,FK Zalgiris Vilnius,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Polessya,Olimpija Ljubljana,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Sabah FA,Maccabi Haifa,3,6,3-6,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,TransINVEST Vilnius,Mlada Boleslav,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Inter Club d'Escaldes,AEK Athens FC,0,4,0-4,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Paide,Stjarnan,4,0,4-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Brann,GO Ahead Eagles,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Tromso,KuPS,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Caernarfon Town,Legia Warszawa,0,5,0-5,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,FC Copenhagen,Magpies,5,1,5-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,CS Universitatea Craiova,Maribor,3,2,3-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Progres Niederkorn,Djurgardens IF,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Torpedo Kutaisi,Omonia Nicosia,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Sliema Wanderers,FC Noah,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,FC Vaduz,St Patrick's Athl.,2,2,2-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Cherno More Varna,Hapoel Beer Sheva,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Neman,CFR 1907 Cluj,0,5,0-5,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Partizani,Saburtalo,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Egnatia Rrogozhinë,Vikingur Reykjavik,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Slask Wroclaw,Riga,3,1,3-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Dunajska Streda,Zira,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,ST Mirren,Valur Reykjavik,4,1,4-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,La Fiorita,Başakşehir,0,4,0-4,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Shelbourne,FC Zurich,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Buducnost Podgorica,CSKA 1948,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Puskas Academy,Dnipro-1,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-01,,Guimaraes,Floriana,4,0,4-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-08-06,,FC Noah,AEK Athens FC,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-07,,BK Hacken,Paide,6,1,6-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-07,,FC Copenhagen,Baník Ostrava,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-07,,Paks,Mornar,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-07,,FC ST. Gallen,Slask Wroclaw,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Ordabasy,Pyunik Yerevan,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Ararat-Armenia,Puskas Academy,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Auda,Drita,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Mlada Boleslav,Hapoel Beer Sheva,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,HJK Helsinki,Dečić,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Ilves,Djurgardens IF,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Saburtalo,Başakşehir,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Silkeborg,Gent,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Ružomberok,HNK Hajduk Split,0,0,0-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Brondby,Legia Warszawa,2,3,2-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Olimpija Ljubljana,Sheriff Tiraspol,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,FC Zurich,Guimaraes,0,3,0-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Omonia Nicosia,Fehérvár FC,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,CSKA 1948,Pafos,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Kilmarnock,Tromso,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,NK Osijek,Zira,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Botev Plovdiv,Zrinjski,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Maccabi Petah Tikva,CFR 1907 Cluj,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Ballkani,Larne,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Corvinul Hunedoara,FC Astana,1,2,1-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Vikingur Reykjavik,Flora Tallinn,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Maribor,Vojvodina,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,Spartak Trnava,Wisla Krakow,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,ST Mirren,Brann,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-08,,St Patrick's Athl.,Sabah FA,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-13,,Paide,BK Hacken,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-13,,Mornar,Paks,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-14,,FC Astana,Corvinul Hunedoara,6,1,6-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-14,,Fehérvár FC,Omonia Nicosia,0,2,0-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Legia Warszawa,Brondby,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Flora Tallinn,Vikingur Reykjavik,1,2,1-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Pyunik Yerevan,Ordabasy,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Sabah FA,St Patrick's Athl.,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Zira,NK Osijek,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Brann,ST Mirren,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Tromso,Kilmarnock,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Djurgardens IF,Ilves,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Hapoel Beer Sheva,Mlada Boleslav,2,4,2-4,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Sheriff Tiraspol,Olimpija Ljubljana,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,CFR 1907 Cluj,Maccabi Petah Tikva,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Pafos,CSKA 1948,4,0,4-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Baník Ostrava,FC Copenhagen,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,AEK Athens FC,FC Noah,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Başakşehir,Saburtalo,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Zrinjski,Botev Plovdiv,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Vojvodina,Maribor,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Drita,Auda,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Slask Wroclaw,FC ST. Gallen,3,2,3-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Wisla Krakow,Spartak Trnava,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Gent,Silkeborg,3,2,3-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,HNK Hajduk Split,Ružomberok,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Puskas Academy,Ararat-Armenia,3,3,3-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Dečić,HJK Helsinki,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Larne,Ballkani,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-15,,Guimaraes,FC Zurich,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-08-20,,FC Noah,Ružomberok,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-21,,Guimaraes,Zrinjski,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Legia Warszawa,Drita,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Mlada Boleslav,Paks,2,2,2-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Pyunik Yerevan,Celje,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Panevėžys,The New Saints,0,3,0-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Brann,FC Astana,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Djurgardens IF,Maribor,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,BK Hacken,1. FC Heidenheim,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,FC Copenhagen,Kilmarnock,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Omonia Nicosia,Zira,6,0,6-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,CFR 1907 Cluj,Pafos,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Vikingur Reykjavik,UE Santa Coloma,5,0,5-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Fiorentina,Puskas Academy,3,3,3-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,HNK Rijeka,Olimpija Ljubljana,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Kryvbas KR,Real Betis,0,2,0-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,FK Partizan,Gent,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Wisla Krakow,Cercle Brugge,1,6,1-6,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,St Patrick's Athl.,Başakşehir,0,0,0-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Chelsea,Servette FC,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Lens,Panathinaikos,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,Lincoln Red Imps FC,Larne,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-22,,FC ST. Gallen,Trabzonspor,0,0,0-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-28,,Başakşehir,St Patrick's Athl.,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-28,,Gent,FK Partizan,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,FC Astana,Brann,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Zira,Omonia Nicosia,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,HJK Helsinki,KI Klaksvik,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Ružomberok,FC Noah,3,1,3-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Olimpija Ljubljana,HNK Rijeka,5,0,5-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Trabzonspor,FC ST. Gallen,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Paks,Mlada Boleslav,0,3,0-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Pafos,CFR 1907 Cluj,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Kilmarnock,FC Copenhagen,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Zrinjski,Guimaraes,0,4,0-4,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Panathinaikos,Lens,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,UE Santa Coloma,Vikingur Reykjavik,0,0,0-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Cercle Brugge,Wisla Krakow,1,4,1-4,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Drita,Legia Warszawa,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Maribor,Djurgardens IF,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Celje,Pyunik Yerevan,4,1,4-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,1. FC Heidenheim,BK Hacken,3,2,3-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Servette FC,Chelsea,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Real Betis,Kryvbas KR,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Puskas Academy,Fiorentina,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-08-29,,Larne,Lincoln Red Imps FC,3,1,3-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2024-10-02,,Guimaraes,Celje,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-02,,Başakşehir,Rapid Vienna,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,1. FC Heidenheim,Olimpija Ljubljana,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Molde,Larne,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Legia Warszawa,Real Betis,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Dinamo Minsk,Heart Of Midlothian,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,FC Astana,TSC Backa Topola,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Cercle Brugge,FC ST. Gallen,6,2,6-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Omonia Nicosia,Vikingur Reykjavik,4,0,4-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,FC Noah,Mlada Boleslav,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Chelsea,Gent,4,2,4-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,FC Copenhagen,Jagiellonia,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Fiorentina,The New Saints,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,FC Lugano,HJK Helsinki,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Shamrock Rovers,Apoel Nicosia,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Lask Linz,Djurgardens IF,2,2,2-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Petrocub,Pafos,1,4,1-4,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-03,,Borac Banja Luka,Panathinaikos,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Vikingur Reykjavik,Cercle Brugge,3,1,3-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Heart Of Midlothian,Omonia Nicosia,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Jagiellonia,Petrocub,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Djurgardens IF,Guimaraes,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Panathinaikos,Chelsea,1,4,1-4,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Gent,Molde,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Rapid Vienna,FC Noah,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,FC ST. Gallen,Fiorentina,2,4,2-4,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Apoel Nicosia,Borac Banja Luka,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Celje,Başakşehir,5,1,5-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Larne,Shamrock Rovers,1,4,1-4,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Real Betis,FC Copenhagen,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Mlada Boleslav,FC Lugano,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,HJK Helsinki,Dinamo Minsk,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Olimpija Ljubljana,Lask Linz,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,TSC Backa Topola,Legia Warszawa,0,3,0-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-10-24,,Pafos,1. FC Heidenheim,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Vikingur Reykjavik,Borac Banja Luka,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Legia Warszawa,Dinamo Minsk,4,0,4-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Gent,Omonia Nicosia,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,HJK Helsinki,Olimpija Ljubljana,0,2,0-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Shamrock Rovers,The New Saints,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Petrocub,Rapid Vienna,0,3,0-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,TSC Backa Topola,FC Lugano,4,1,4-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Pafos,FC Astana,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Chelsea,FC Noah,8,0,8-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Guimaraes,Mlada Boleslav,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Heart Of Midlothian,1. FC Heidenheim,0,2,0-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Jagiellonia,Molde,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Djurgardens IF,Panathinaikos,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,FC Copenhagen,Başakşehir,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Real Betis,Celje,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Lask Linz,Cercle Brugge,0,0,0-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Apoel Nicosia,Fiorentina,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-07,,Larne,FC ST. Gallen,1,2,1-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2024-11-27,,Başakşehir,Petrocub,1,1,1-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,FC Astana,Guimaraes,1,1,1-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,1. FC Heidenheim,Chelsea,0,2,0-2,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Molde,Apoel Nicosia,0,1,0-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Dinamo Minsk,FC Copenhagen,1,2,1-2,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Panathinaikos,HJK Helsinki,1,0,1-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Cercle Brugge,Heart Of Midlothian,2,0,2-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,FC ST. Gallen,TSC Backa Topola,2,2,2-2,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Borac Banja Luka,Lask Linz,2,1,2-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,FC Noah,Vikingur Reykjavik,0,0,0-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Celje,Jagiellonia,3,3,3-3,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Fiorentina,Pafos,3,2,3-2,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,FC Lugano,Gent,2,0,2-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Mlada Boleslav,Real Betis,2,1,2-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Olimpija Ljubljana,Larne,1,0,1-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Rapid Vienna,Shamrock Rovers,1,1,1-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-11-28,,Omonia Nicosia,Legia Warszawa,0,3,0-3,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Vikingur Reykjavik,Djurgardens IF,1,2,1-2,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,FC Astana,Chelsea,1,3,1-3,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Legia Warszawa,FC Lugano,1,2,1-2,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Dinamo Minsk,Larne,2,0,2-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,FC Copenhagen,Heart Of Midlothian,2,0,2-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Fiorentina,Lask Linz,7,0,7-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Başakşehir,1. FC Heidenheim,3,1,3-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,HJK Helsinki,Molde,2,2,2-2,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Olimpija Ljubljana,Cercle Brugge,1,4,1-4,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Petrocub,Real Betis,0,1,0-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,FC Noah,Apoel Nicosia,1,3,1-3,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Gent,TSC Backa Topola,3,0,3-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Mlada Boleslav,Jagiellonia,1,0,1-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Shamrock Rovers,Borac Banja Luka,3,0,3-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,FC ST. Gallen,Guimaraes,1,4,1-4,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Omonia Nicosia,Rapid Vienna,3,1,3-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-12,,Pafos,Celje,2,0,2-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Chelsea,Shamrock Rovers,5,1,5-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,1. FC Heidenheim,FC ST. Gallen,1,1,1-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Guimaraes,Fiorentina,1,1,1-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Heart Of Midlothian,Petrocub,2,2,2-2,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Molde,Mlada Boleslav,4,3,4-3,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Jagiellonia,Olimpija Ljubljana,0,0,0-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Djurgardens IF,Legia Warszawa,3,1,3-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Real Betis,HJK Helsinki,1,0,1-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,FC Lugano,Pafos,2,2,2-2,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Panathinaikos,Dinamo Minsk,4,0,4-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Cercle Brugge,Başakşehir,1,1,1-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Rapid Vienna,FC Copenhagen,3,0,3-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Lask Linz,Vikingur Reykjavik,1,1,1-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Apoel Nicosia,FC Astana,1,1,1-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,TSC Backa Topola,FC Noah,4,3,4-3,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Borac Banja Luka,Omonia Nicosia,0,0,0-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Celje,The New Saints,3,2,3-2,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2024-12-19,,Larne,Gent,1,0,1-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-02-13,,Vikingur Reykjavik,Panathinaikos,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-13,,Molde,Shamrock Rovers,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-13,,TSC Backa Topola,Jagiellonia,1,3,1-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-13,,Celje,Apoel Nicosia,2,2,2-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-13,,FC Copenhagen,1. FC Heidenheim,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-13,,Gent,Real Betis,0,3,0-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-13,,Borac Banja Luka,Olimpija Ljubljana,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-13,,Omonia Nicosia,Pafos,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-20,,1. FC Heidenheim,FC Copenhagen,1,3,1-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-20,,Real Betis,Gent,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-20,,Olimpija Ljubljana,Borac Banja Luka,0,0,0-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-20,,Pafos,Omonia Nicosia,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-20,,Jagiellonia,TSC Backa Topola,3,1,3-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-20,,Panathinaikos,Vikingur Reykjavik,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-20,,Shamrock Rovers,Molde,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-02-20,,Apoel Nicosia,Celje,0,2,0-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-03-06,,Molde,Legia Warszawa,3,2,3-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-06,,FC Copenhagen,Chelsea,1,2,1-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-06,,Real Betis,Guimaraes,2,2,2-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-06,,Panathinaikos,Fiorentina,3,2,3-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-06,,Jagiellonia,Cercle Brugge,3,0,3-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-06,,Borac Banja Luka,Rapid Vienna,1,1,1-1,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-06,,Pafos,Djurgardens IF,1,0,1-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-06,,Celje,FC Lugano,1,0,1-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-13,,Djurgardens IF,Pafos,3,0,3-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-13,,FC Lugano,Celje,5,4,5-4,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-13,,Cercle Brugge,Jagiellonia,2,0,2-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-13,,Rapid Vienna,Borac Banja Luka,2,1,2-1,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-13,,Chelsea,FC Copenhagen,1,0,1-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-13,,Guimaraes,Real Betis,0,4,0-4,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-13,,Legia Warszawa,Molde,2,0,2-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-03-13,,Fiorentina,Panathinaikos,3,1,3-1,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2025-04-10,,Legia Warszawa,Chelsea,0,3,0-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-04-10,,Djurgardens IF,Rapid Vienna,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-04-10,,Real Betis,Jagiellonia,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-04-10,,Celje,Fiorentina,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-04-17,,Jagiellonia,Real Betis,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-04-17,,Fiorentina,Celje,2,2,2-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-04-17,,Chelsea,Legia Warszawa,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-04-17,,Rapid Vienna,Djurgardens IF,1,4,1-4,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-05-01,,Djurgardens IF,Chelsea,1,4,1-4,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-05-01,,Real Betis,Fiorentina,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-05-08,,Chelsea,Djurgardens IF,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-05-08,,Fiorentina,Real Betis,2,2,2-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-05-28,,Real Betis,Chelsea,1,4,1-4,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-07-08,,St Joseph S Fc,Cliftonville FC,2,2,2-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-08,,Floriana,Haverfordwest County AFC,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Atlètic Club d'Escaldes,F91 Dudelange,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Magpies,Paide,2,3,2-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Torpedo Kutaisi,Ordabasy,4,3,4-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,SJK,KI Klaksvik,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Kauno Žalgiris,Penybont,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Racing FC Union Luxembourg,Dila,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,FC Urartu,Neman,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Kalju Nomme,Partizani,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Torpedo Zhodino,FK Rabotnicki,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Birkirkara,Petrocub,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Vllaznia Shkodër,BFC Daugavpils,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Dečić,Sileks,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Malisheva,Vikingur Reykjavik,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Vardar Skopje,La Fiorita,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Zeljeznicar Sarajevo,Koper,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Sutjeska,Dinamo Brest,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,St Patrick's Athl.,Hegelmann Litauen,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Tre Fiori,Pyunik Yerevan,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Borac Banja Luka,FC Santa Coloma,1,4,1-4,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Larne,Auda,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-10,,Valur Reykjavik,Flora Tallinn,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-16,,Auda,Larne,2,2,2-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,BFC Daugavpils,Vllaznia Shkodër,2,4,2-4,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,FC Santa Coloma,Borac Banja Luka,0,2,0-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,HJK Helsinki,NSI Runavik,5,0,5-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,FK Rabotnicki,Torpedo Zhodino,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Flora Tallinn,Valur Reykjavik,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Ordabasy,Torpedo Kutaisi,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Pyunik Yerevan,Tre Fiori,5,0,5-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Dila,Racing FC Union Luxembourg,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Hegelmann Litauen,St Patrick's Athl.,0,2,0-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Paide,Magpies,4,1,4-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,F91 Dudelange,Atlètic Club d'Escaldes,2,3,2-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Penybont,Kauno Žalgiris,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Haverfordwest County AFC,Floriana,2,3,2-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Petrocub,Birkirkara,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Sileks,Dečić,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Koper,Zeljeznicar Sarajevo,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Neman,FC Urartu,4,0,4-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Partizani,Kalju Nomme,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Dinamo Brest,Sutjeska,0,2,0-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Vikingur Reykjavik,Malisheva,8,0,8-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,Cliftonville FC,St Joseph S Fc,2,3,2-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-17,,La Fiorita,Vardar Skopje,2,2,2-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-07-22,,Ballkani,Floriana,4,2,4-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-23,,Zira,HNK Hajduk Split,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-23,,FC Levadia Tallinn,Saburtalo,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-23,,Silkeborg,KA Akureyri,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-23,,The New Saints,FC Differdange 03,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-23,,Olimpija Ljubljana,Inter Club d'Escaldes,4,2,4-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-23,,Buducnost Podgorica,Milsami Orhei,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,FC Astana,Zimbru,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Atlètic Club d'Escaldes,Dinamo Tirana,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Paide,AIK Stockholm,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Rosenborg,Banga,5,0,5-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,FK Zalgiris Vilnius,Linfield,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,St Joseph S Fc,Shamrock Rovers,0,4,0-4,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Pyunik Yerevan,Gyori ETO FC,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Ilves,AZ Alkmaar,4,3,4-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Arda Kardzhali,HJK Helsinki,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Aris,Puskas Academy,3,2,3-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Ararat-Armenia,Universitatea Cluj,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Kauno Žalgiris,Valur Reykjavik,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Hibernians,Spartak Trnava,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Aktobe,Sparta Praha,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Araz,Aris Thessalonikis,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Hammarby FF,Charleroi,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Viking,Koper,7,0,7-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Cherno More Varna,Başakşehir,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Petrocub,Sabah FA,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Novi Pazar,Jagiellonia,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Omonia Nicosia,Torpedo Kutaisi,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Oleksandria,FK Partizan,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Polessya,FC Santa Coloma,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Riga,Dila,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,FC Vaduz,Dungannon Swifts,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Torpedo Zhodino,Maccabi Haifa,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,AEK Athens FC,Hapoel Beer Sheva,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,NK Varazdin,Santa Clara,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Paks,Maribor,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Radnicki 1923,KI Klaksvik,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,FK Košice,Neman,2,3,2-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Vardar Skopje,Lausanne,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Austria Vienna,Spaeri,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Sutjeska,Beitar Jerusalem,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Vllaznia Shkodër,Vikingur Reykjavik,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Dinamo Minsk,Egnatia Rrogozhinë,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Dundee Utd,UNA Strassen,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,St Patrick's Athl.,Kalju Nomme,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,HB Torshavn,Brondby,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,FK Sarajevo,CS Universitatea Craiova,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Raków Częstochowa,Žilina,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Dečić,Rapid Vienna,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-24,,Larne,Prishtina,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-29,,Saburtalo,FC Levadia Tallinn,2,2,2-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-29,,FC Differdange 03,The New Saints,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-29,,Inter Club d'Escaldes,Olimpija Ljubljana,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Spartak Trnava,Hibernians,5,1,5-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,FC Santa Coloma,Polessya,1,4,1-4,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,HJK Helsinki,Arda Kardzhali,2,2,2-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Gyori ETO FC,Pyunik Yerevan,3,1,3-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Dila,Riga,3,3,3-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Banga,Rosenborg,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Sabah FA,Petrocub,4,1,4-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Spaeri,Austria Vienna,0,5,0-5,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,AZ Alkmaar,Ilves,5,0,5-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Kalju Nomme,St Patrick's Athl.,2,2,2-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,AIK Stockholm,Paide,6,0,6-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Torpedo Kutaisi,Omonia Nicosia,0,4,0-4,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Milsami Orhei,Buducnost Podgorica,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,UNA Strassen,Dundee Utd,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Universitatea Cluj,Ararat-Armenia,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Zimbru,FC Astana,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Brondby,HB Torshavn,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,CS Universitatea Craiova,FK Sarajevo,4,0,4-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Beitar Jerusalem,Sutjeska,5,2,5-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Başakşehir,Cherno More Varna,4,0,4-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Santa Clara,NK Varazdin,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,KA Akureyri,Silkeborg,2,3,2-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Neman,FK Košice,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Maribor,Paks,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Hapoel Beer Sheva,AEK Athens FC,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Sparta Praha,Aktobe,4,0,4-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Prishtina,Larne,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Charleroi,Hammarby FF,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Puskas Academy,Aris,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Maccabi Haifa,Torpedo Zhodino,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Koper,Viking,3,5,3-5,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Jagiellonia,Novi Pazar,3,1,3-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Lausanne,Vardar Skopje,5,0,5-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Aris Thessalonikis,Araz,2,2,2-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Valur Reykjavik,Kauno Žalgiris,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Rapid Vienna,Dečić,4,2,4-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Žilina,Raków Częstochowa,1,3,1-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Vikingur Reykjavik,Vllaznia Shkodër,4,2,4-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Linfield,FK Zalgiris Vilnius,2,0,2-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Dinamo Tirana,Atlètic Club d'Escaldes,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Floriana,Ballkani,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Dungannon Swifts,FC Vaduz,0,3,0-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,FK Partizan,Oleksandria,4,0,4-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,HNK Hajduk Split,Zira,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Shamrock Rovers,St Joseph S Fc,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-07-31,,Egnatia Rrogozhinë,Dinamo Minsk,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-08-05,,KI Klaksvik,Neman,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Rosenborg,Hammarby FF,0,0,0-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Milsami Orhei,Virtus,3,2,3-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Aris,AEK Athens FC,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Kauno Žalgiris,Arda Kardzhali,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Araz,Omonia Nicosia,0,4,0-4,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Baník Ostrava,Austria Vienna,4,3,4-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,AIK Stockholm,Gyori ETO FC,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Viking,Başakşehir,1,3,1-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Silkeborg,Jagiellonia,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Riga,Beitar Jerusalem,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,AZ Alkmaar,FC Vaduz,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Anderlecht,Sheriff Tiraspol,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Vikingur Gota,Linfield,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Sparta Praha,Ararat-Armenia,4,1,4-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Levski Sofia,Sabah FA,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Olimpija Ljubljana,Egnatia Rrogozhinë,0,0,0-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,FC Differdange 03,FC Levadia Tallinn,2,3,2-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Polessya,Paks,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Lausanne,FC Astana,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,FC Lugano,Celje,0,5,0-5,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,CS Universitatea Craiova,Spartak Trnava,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Ballkani,Shamrock Rovers,1,0,1-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Vikingur Reykjavik,Brondby,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,St Patrick's Athl.,Beşiktaş,1,4,1-4,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,FK Partizan,Hibernian,0,2,0-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,HNK Hajduk Split,Dinamo Tirana,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Rapid Vienna,Dundee Utd,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Raków Częstochowa,Maccabi Haifa,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-07,,Larne,Santa Clara,0,3,0-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-13,,Başakşehir,Viking,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,FC Astana,Lausanne,0,2,0-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Ararat-Armenia,Sparta Praha,1,2,1-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Sabah FA,Levski Sofia,0,2,0-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,FC Levadia Tallinn,FC Differdange 03,1,3,1-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Hammarby FF,Rosenborg,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Sheriff Tiraspol,Anderlecht,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Paks,Polessya,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Gyori ETO FC,AIK Stockholm,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Omonia Nicosia,Araz,5,0,5-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Brondby,Vikingur Reykjavik,4,0,4-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Beitar Jerusalem,Riga,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,FC Vaduz,AZ Alkmaar,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Arda Kardzhali,Kauno Žalgiris,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Neman,KI Klaksvik,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Beşiktaş,St Patrick's Athl.,3,2,3-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,AEK Athens FC,Aris,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Maccabi Haifa,Raków Częstochowa,0,2,0-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Celje,FC Lugano,2,4,2-4,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Jagiellonia,Silkeborg,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Spartak Trnava,CS Universitatea Craiova,4,3,4-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Linfield,Vikingur Gota,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Dundee Utd,Rapid Vienna,2,2,2-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Dinamo Tirana,HNK Hajduk Split,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Santa Clara,Larne,0,0,0-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Hibernian,FK Partizan,2,3,2-3,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Austria Vienna,Baník Ostrava,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Shamrock Rovers,Ballkani,4,0,4-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Egnatia Rrogozhinë,Olimpija Ljubljana,2,4,2-4,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-14,,Virtus,Milsami Orhei,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Rosenborg,FSV Mainz 05,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,BK Hacken,CFR 1907 Cluj,7,2,7-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Wolfsberger AC,Omonia Nicosia,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Gyori ETO FC,Rapid Vienna,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Hamrun Spartans,Rīgas FS,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Başakşehir,CS Universitatea Craiova,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Strasbourg,Brondby,0,0,0-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Breidablik,Virtus,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Neman,Rayo Vallecano,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Shakhtar Donetsk,Servette FC,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Anderlecht,AEK Athens FC,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Sparta Praha,Riga,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Levski Sofia,AZ Alkmaar,0,2,0-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Olimpija Ljubljana,FC Noah,1,4,1-4,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Celje,Baník Ostrava,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Polessya,Fiorentina,0,3,0-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Drita,FC Differdange 03,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Jagiellonia,Dinamo Tirana,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Lausanne,Beşiktaş,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Shelbourne,Linfield,3,1,3-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Crystal Palace,Fredrikstad,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Santa Clara,Shamrock Rovers,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Hibernian,Legia Warszawa,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-21,,Raków Częstochowa,Arda Kardzhali,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-27,,Riga,Sparta Praha,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Fredrikstad,Crystal Palace,0,0,0-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Omonia Nicosia,Wolfsberger AC,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,FC Noah,Olimpija Ljubljana,3,2,3-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Beşiktaş,Lausanne,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Rapid Vienna,Gyori ETO FC,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Rīgas FS,Hamrun Spartans,2,2,2-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,AZ Alkmaar,Levski Sofia,4,1,4-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,CS Universitatea Craiova,Başakşehir,3,1,3-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,CFR 1907 Cluj,BK Hacken,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Brondby,Strasbourg,2,3,2-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Fiorentina,Polessya,3,2,3-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,AEK Athens FC,Anderlecht,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,FC Differdange 03,Drita,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Rayo Vallecano,Neman,4,0,4-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Arda Kardzhali,Raków Częstochowa,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Baník Ostrava,Celje,0,2,0-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Linfield,Shelbourne,0,2,0-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Dinamo Tirana,Jagiellonia,1,1,1-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,FSV Mainz 05,Rosenborg,4,1,4-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Legia Warszawa,Hibernian,3,3,3-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Shamrock Rovers,Santa Clara,0,0,0-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Servette FC,Shakhtar Donetsk,1,2,1-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-08-28,,Virtus,Breidablik,1,3,1-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Jagiellonia,Hamrun Spartans,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Lech Poznan,Rapid Vienna,4,1,4-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Dynamo Kyiv,Crystal Palace,0,2,0-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Zrinjski,Lincoln Red Imps FC,5,0,5-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Rayo Vallecano,Shkendija,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Lausanne,Breidablik,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,KuPS,Drita,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Omonia Nicosia,FSV Mainz 05,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,FC Noah,HNK Rijeka,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Aberdeen,Shakhtar Donetsk,2,3,2-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Legia Warszawa,Samsunspor,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Fiorentina,Sigma Olomouc,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,AEK Larnaca,AZ Alkmaar,4,0,4-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Sparta Praha,Shamrock Rovers,4,1,4-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Slovan Bratislava,Strasbourg,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Raków Częstochowa,CS Universitatea Craiova,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Shelbourne,BK Hacken,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-02,,Celje,AEK Athens FC,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Strasbourg,Jagiellonia,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,AZ Alkmaar,Slovan Bratislava,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Breidablik,KuPS,0,0,0-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,BK Hacken,Rayo Vallecano,2,2,2-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Shakhtar Donetsk,Legia Warszawa,1,2,1-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,AEK Athens FC,Aberdeen,6,0,6-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Shkendija,Shelbourne,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Rapid Vienna,Fiorentina,0,3,0-3,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Drita,Omonia Nicosia,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Crystal Palace,AEK Larnaca,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,FSV Mainz 05,Zrinjski,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,CS Universitatea Craiova,FC Noah,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Shamrock Rovers,Celje,0,2,0-2,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Lincoln Red Imps FC,Lech Poznan,2,1,2-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Sigma Olomouc,Raków Częstochowa,1,1,1-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Samsunspor,Dynamo Kyiv,3,0,3-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-23,,Hamrun Spartans,Lausanne,0,1,0-1,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-10-24,,HNK Rijeka,Sparta Praha,1,0,1-0,FINISHED,2,regular,manual
+UEL,UEFA Europa League,2025-11-06,,FSV Mainz 05,Fiorentina,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Shakhtar Donetsk,Breidablik,2,0,2-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,AEK Athens FC,Shamrock Rovers,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,AEK Larnaca,Aberdeen,0,0,0-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Sparta Praha,Raków Częstochowa,0,0,0-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,KuPS,Slovan Bratislava,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Samsunspor,Hamrun Spartans,3,0,3-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,FC Noah,Sigma Olomouc,1,2,1-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Celje,Legia Warszawa,2,1,2-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Crystal Palace,AZ Alkmaar,3,1,3-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,BK Hacken,Strasbourg,1,2,1-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Dynamo Kyiv,Zrinjski,6,0,6-0,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Shkendija,Jagiellonia,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Lincoln Red Imps FC,HNK Rijeka,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Rayo Vallecano,Lech Poznan,3,2,3-2,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Rapid Vienna,CS Universitatea Craiova,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Lausanne,Omonia Nicosia,1,1,1-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-06,,Shelbourne,Drita,0,1,0-1,FINISHED,3,regular,manual
+UEL,UEFA Europa League,2025-11-27,,AZ Alkmaar,Shelbourne,2,0,2-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Lech Poznan,Lausanne,2,0,2-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Zrinjski,BK Hacken,2,1,2-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,CS Universitatea Craiova,FSV Mainz 05,1,0,1-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Slovan Bratislava,Rayo Vallecano,2,1,2-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Sigma Olomouc,Celje,2,1,2-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Omonia Nicosia,Dynamo Kyiv,2,0,2-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Raków Częstochowa,Rapid Vienna,4,1,4-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Hamrun Spartans,Lincoln Red Imps FC,3,1,3-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Strasbourg,Crystal Palace,2,1,2-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Aberdeen,FC Noah,1,1,1-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Breidablik,Samsunspor,2,2,2-2,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Jagiellonia,KuPS,1,0,1-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Legia Warszawa,Sparta Praha,0,1,0-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Fiorentina,AEK Athens FC,0,1,0-1,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,HNK Rijeka,AEK Larnaca,0,0,0-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Shamrock Rovers,Shakhtar Donetsk,1,2,1-2,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-11-27,,Drita,Shkendija,1,0,1-0,FINISHED,4,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Breidablik,Shamrock Rovers,3,1,3-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Jagiellonia,Rayo Vallecano,1,2,1-2,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,BK Hacken,AEK Larnaca,1,1,1-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Fiorentina,Dynamo Kyiv,2,1,2-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Shkendija,Slovan Bratislava,2,0,2-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,CS Universitatea Craiova,Sparta Praha,1,2,1-2,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Samsunspor,AEK Athens FC,1,2,1-2,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,FC Noah,Legia Warszawa,2,1,2-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Drita,AZ Alkmaar,0,3,0-3,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Aberdeen,Strasbourg,0,1,0-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Lech Poznan,FSV Mainz 05,1,1,1-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,HNK Rijeka,Celje,3,0,3-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Lincoln Red Imps FC,Sigma Olomouc,2,1,2-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Rapid Vienna,Omonia Nicosia,0,1,0-1,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,KuPS,Lausanne,0,0,0-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Raków Częstochowa,Zrinjski,1,0,1-0,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Shelbourne,Crystal Palace,0,3,0-3,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-11,,Hamrun Spartans,Shakhtar Donetsk,0,2,0-2,FINISHED,5,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Crystal Palace,KuPS,2,2,2-2,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Strasbourg,Breidablik,3,1,3-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,FSV Mainz 05,Samsunspor,2,0,2-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,AZ Alkmaar,Jagiellonia,0,0,0-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Legia Warszawa,Lincoln Red Imps FC,4,1,4-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Shakhtar Donetsk,HNK Rijeka,0,0,0-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Dynamo Kyiv,FC Noah,2,0,2-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,AEK Athens FC,CS Universitatea Craiova,3,2,3-2,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Zrinjski,Rapid Vienna,1,1,1-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,AEK Larnaca,Shkendija,1,0,1-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Sparta Praha,Aberdeen,3,0,3-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Shamrock Rovers,Hamrun Spartans,3,1,3-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Slovan Bratislava,BK Hacken,1,0,1-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Rayo Vallecano,Drita,3,0,3-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Lausanne,Fiorentina,1,0,1-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Sigma Olomouc,Lech Poznan,1,2,1-2,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Omonia Nicosia,Raków Częstochowa,0,1,0-1,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2025-12-18,,Celje,Shelbourne,0,0,0-0,FINISHED,6,regular,manual
+UEL,UEFA Europa League,2026-02-19,,Zrinjski,Crystal Palace,1,1,1-1,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-19,,KuPS,Lech Poznan,0,2,0-2,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-19,,Sigma Olomouc,Lausanne,1,1,1-1,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-19,,FC Noah,AZ Alkmaar,1,0,1-0,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-19,,Jagiellonia,Fiorentina,0,3,0-3,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-19,,Shkendija,Samsunspor,0,1,0-1,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-19,,Omonia Nicosia,HNK Rijeka,0,1,0-1,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-19,,Drita,Celje,2,3,2-3,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-26,,Fiorentina,Jagiellonia,2,4,2-4,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-26,,HNK Rijeka,Omonia Nicosia,3,1,3-1,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-26,,Samsunspor,Shkendija,4,0,4-0,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-26,,Celje,Drita,3,2,3-2,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-26,,Crystal Palace,Zrinjski,2,0,2-0,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-26,,AZ Alkmaar,FC Noah,4,0,4-0,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-26,,Lech Poznan,KuPS,1,0,1-0,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-02-26,,Lausanne,Sigma Olomouc,1,2,1-2,FINISHED,32,regular,manual
+UEL,UEFA Europa League,2026-03-12,,AZ Alkmaar,Sparta Praha,2,1,2-1,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-12,,Lech Poznan,Shakhtar Donetsk,1,3,1-3,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-12,,HNK Rijeka,Strasbourg,1,2,1-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-12,,Samsunspor,Rayo Vallecano,1,3,1-3,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-12,,Crystal Palace,AEK Larnaca,0,0,0-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-12,,Fiorentina,Raków Częstochowa,2,1,2-1,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-12,,Sigma Olomouc,FSV Mainz 05,0,0,0-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-12,,Celje,AEK Athens FC,0,4,0-4,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-19,,FSV Mainz 05,Sigma Olomouc,2,0,2-0,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-19,,AEK Athens FC,Celje,0,2,0-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-19,,AEK Larnaca,Crystal Palace,1,2,1-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-19,,Raków Częstochowa,Fiorentina,1,2,1-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-19,,Strasbourg,HNK Rijeka,1,1,1-1,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-19,,Shakhtar Donetsk,Lech Poznan,1,2,1-2,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-19,,Sparta Praha,AZ Alkmaar,0,4,0-4,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-03-19,,Rayo Vallecano,Samsunspor,0,1,0-1,FINISHED,16,regular,manual
+UEL,UEFA Europa League,2026-04-09,,Rayo Vallecano,AEK Athens FC,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-09,,Crystal Palace,Fiorentina,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-09,,FSV Mainz 05,Strasbourg,2,0,2-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-09,,Shakhtar Donetsk,AZ Alkmaar,3,0,3-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-16,,AZ Alkmaar,Shakhtar Donetsk,2,2,2-2,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-16,,Strasbourg,FSV Mainz 05,4,0,4-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-16,,Fiorentina,Crystal Palace,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-16,,AEK Athens FC,Rayo Vallecano,3,1,3-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-30,,Shakhtar Donetsk,Crystal Palace,1,3,1-3,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-04-30,,Rayo Vallecano,Strasbourg,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-05-07,,Crystal Palace,Shakhtar Donetsk,2,1,2-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-05-07,,Strasbourg,Rayo Vallecano,0,1,0-1,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-05-27,,Crystal Palace,Rayo Vallecano,1,0,1-0,FINISHED,,regular,manual
+UEL,UEFA Europa League,2026-07-07,,UNA Strassen,La Fiorita,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-07,,AF Elbasani,Bate Borisov,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-08,,Zira,Torpedo Kutaisi,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-08,,GAP Connah S Quay FC,Ballkani,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-08,,FC Differdange 03,Ilves,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Atlètic Club d'Escaldes,Mornar,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Alashkert,Yelimay Semey,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,FK Liepaja,Dečić,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Kalju Nomme,Linfield,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Dila,Virtus,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Hegelmann Litauen,Paide,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Dinamo Minsk,Sileks,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Velež,Milsami Orhei,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Bohemians,St Joseph S Fc,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Marsaxlokk,Pyunik Yerevan,0,3,0-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,US Mondorf-les-bains,Dinamo Tbilisi,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Caernarfon Town,FC Levadia Tallinn,0,5,0-5,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Europa,Shkendija,0,5,0-5,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Vllaznia Shkodër,Malisheva,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Glentoran,Rīgas FS,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,NSI Runavik,Hamrun Spartans,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Penybont,FC Santa Coloma,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Petrovac,FK Zalgiris Vilnius,1,3,1-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Stjarnan,Vikingur Gota,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,FK Sarajevo,Inter Turku,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-09,,Dinamo Tirana,FC Astana,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-14,,La Fiorita,UNA Strassen,0,2,0-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-15,,Malisheva,Vllaznia Shkodër,5,0,5-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-15,,Dečić,FK Liepaja,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,FC Astana,Dinamo Tirana,1,4,1-4,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Inter Turku,FK Sarajevo,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Yelimay Semey,Alashkert,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Torpedo Kutaisi,Zira,0,3,0-3,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,St Joseph S Fc,Bohemians,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Pyunik Yerevan,Marsaxlokk,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Ilves,FC Differdange 03,3,1,3-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Paide,Hegelmann Litauen,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,FC Levadia Tallinn,Caernarfon Town,5,0,5-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Rīgas FS,Glentoran,2,0,2-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Bate Borisov,AF Elbasani,0,0,0-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Vikingur Gota,Stjarnan,2,2,2-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,FK Zalgiris Vilnius,Petrovac,2,1,2-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,FC Santa Coloma,Penybont,3,0,3-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Milsami Orhei,Velež,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Dinamo Tbilisi,US Mondorf-les-bains,1,1,1-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Hamrun Spartans,NSI Runavik,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Shkendija,Europa,1,0,1-0,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Sileks,Dinamo Minsk,0,1,0-1,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Ballkani,GAP Connah S Quay FC,3,2,3-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Linfield,Kalju Nomme,2,2,2-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Mornar,Atlètic Club d'Escaldes,1,2,1-2,FINISHED,1,regular,manual
+UEL,UEFA Europa League,2026-07-16,,Virtus,Dila,1,0,1-0,FINISHED,1,regular,manual
