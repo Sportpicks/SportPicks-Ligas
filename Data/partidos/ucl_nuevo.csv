@@ -1,0 +1,583 @@
+liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente
+UCL,UEFA Champions League,2024-07-09,,Panevėžys,HJK Helsinki,3,0,3-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-09,,Hamrun Spartans,Lincoln Red Imps FC,0,1,0-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-09,,UE Santa Coloma,Ballkani,1,2,1-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-09,,Vikingur Reykjavik,Shamrock Rovers,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-09,,Virtus,FCSB,1,7,1-7,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-10,,Ordabasy,Petrocub,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-10,,Flora Tallinn,Celje,0,5,0-5,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-10,,Slovan Bratislava,Struga,4,2,4-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-10,,Rīgas FS,Larne,3,0,3-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-10,,Ludogorets,Dinamo Batumi,3,1,3-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-10,,Dinamo Minsk,Pyunik Yerevan,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-10,,Borac Banja Luka,Egnatia Rrogozhinë,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-16,,HJK Helsinki,Panevėžys,1,1,1-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-16,,Lincoln Red Imps FC,Hamrun Spartans,0,1,0-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-16,,Pyunik Yerevan,Dinamo Minsk,0,1,0-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-16,,Celje,Flora Tallinn,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-16,,FCSB,Virtus,4,0,4-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-16,,Shamrock Rovers,Vikingur Reykjavik,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-16,,Dečić,The New Saints,1,1,1-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-17,,Struga,Slovan Bratislava,1,2,1-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-17,,FC Differdange 03,KI Klaksvik,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-17,,Dinamo Batumi,Ludogorets,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-17,,Petrocub,Ordabasy,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-17,,Egnatia Rrogozhinë,Borac Banja Luka,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-17,,Larne,Rīgas FS,0,4,0-4,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-07-23,,Bodo/Glimt,Rīgas FS,4,0,4-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,Panevėžys,Jagiellonia,0,4,0-4,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,Lincoln Red Imps FC,Qarabag,0,2,0-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,Malmo FF,KI Klaksvik,4,1,4-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,Apoel Nicosia,Petrocub,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,FCSB,Maccabi Tel Aviv,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,Dynamo Kyiv,FK Partizan,6,2,6-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,Ferencvarosi TC,The New Saints,5,0,5-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,UE Santa Coloma,FC Midtjylland,0,3,0-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,FC Lugano,Fenerbahçe,3,4,3-4,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-23,,Shamrock Rovers,Sparta Praha,0,2,0-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-24,,PAOK,Borac Banja Luka,3,2,3-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-24,,Ludogorets,Dinamo Minsk,2,0,2-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-24,,Celje,Slovan Bratislava,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-30,,Qarabag,Lincoln Red Imps FC,5,0,5-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-30,,Fenerbahçe,FC Lugano,2,1,2-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-30,,Sparta Praha,Shamrock Rovers,4,2,4-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-30,,Petrocub,Apoel Nicosia,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-30,,Slovan Bratislava,Celje,5,0,5-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-31,,Rīgas FS,Bodo/Glimt,1,3,1-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-31,,FC Midtjylland,UE Santa Coloma,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-31,,FK Partizan,Dynamo Kyiv,0,3,0-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-31,,Maccabi Tel Aviv,FCSB,0,1,0-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-31,,Jagiellonia,Panevėžys,3,1,3-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-31,,Dinamo Minsk,Ludogorets,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-07-31,,Borac Banja Luka,PAOK,0,1,0-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-08-06,,Qarabag,Ludogorets,1,2,1-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-06,,Malmo FF,PAOK,2,2,2-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-06,,FC Midtjylland,Ferencvarosi TC,2,0,2-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-06,,Dynamo Kyiv,Rangers,1,1,1-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-06,,Sparta Praha,FCSB,1,1,1-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-06,,Lille,Fenerbahçe,2,1,2-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-06,,Red Bull Salzburg,Twente,2,1,2-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-07,,Slavia Praha,Union St. Gilloise,3,1,3-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-07,,Slovan Bratislava,Apoel Nicosia,2,0,2-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-07,,Jagiellonia,Bodo/Glimt,0,1,0-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,Bodo/Glimt,Jagiellonia,4,1,4-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,Twente,Red Bull Salzburg,3,3,3-3,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,Fenerbahçe,Lille,1,1,1-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,Apoel Nicosia,Slovan Bratislava,0,0,0-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,PAOK,Malmo FF,3,4,3-4,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,Ludogorets,Qarabag,2,7,2-7,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,Ferencvarosi TC,FC Midtjylland,1,1,1-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,FCSB,Sparta Praha,2,3,2-3,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,Union St. Gilloise,Slavia Praha,0,1,0-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-13,,Rangers,Dynamo Kyiv,0,2,0-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-08-20,,Lille,Slavia Praha,2,0,2-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-20,,Bodo/Glimt,FK Crvena Zvezda,2,1,2-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-20,,Dinamo Zagreb,Qarabag,3,0,3-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-21,,Malmo FF,Sparta Praha,0,2,0-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-21,,FC Midtjylland,Slovan Bratislava,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-21,,BSC Young Boys,Galatasaray,3,2,3-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-21,,Dynamo Kyiv,Red Bull Salzburg,0,2,0-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-27,,Red Bull Salzburg,Dynamo Kyiv,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-27,,Sparta Praha,Malmo FF,2,0,2-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-27,,Galatasaray,BSC Young Boys,0,1,0-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-28,,Qarabag,Dinamo Zagreb,0,2,0-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-28,,Slavia Praha,Lille,2,1,2-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-28,,FK Crvena Zvezda,Bodo/Glimt,2,0,2-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-08-28,,Slovan Bratislava,FC Midtjylland,3,2,3-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2024-09-17,,Juventus,PSV Eindhoven,3,1,3-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-17,,BSC Young Boys,Aston Villa,0,3,0-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-17,,Bayern München,Dinamo Zagreb,9,2,9-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-17,,Sporting CP,Lille,2,0,2-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-17,,AC Milan,Liverpool,1,3,1-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-17,,Real Madrid,VfB Stuttgart,3,1,3-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-18,,Bologna,Shakhtar Donetsk,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-18,,Sparta Praha,Red Bull Salzburg,3,0,3-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-18,,Manchester City,Inter,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-18,,Paris Saint Germain,Girona,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-18,,Celtic,Slovan Bratislava,5,1,5-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-18,,Club Brugge KV,Borussia Dortmund,0,3,0-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-19,,Feyenoord,Bayer Leverkusen,0,4,0-4,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-19,,FK Crvena Zvezda,Benfica,1,2,1-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-19,,Monaco,Barcelona,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-19,,Stade Brestois 29,Sturm Graz,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-19,,Atalanta,Arsenal,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-09-19,,Atletico Madrid,RB Leipzig,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2024-10-01,,VfB Stuttgart,Sparta Praha,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-01,,Red Bull Salzburg,Stade Brestois 29,0,4,0-4,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-01,,Arsenal,Paris Saint Germain,2,0,2-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-01,,Borussia Dortmund,Celtic,7,1,7-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-01,,Bayer Leverkusen,AC Milan,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-01,,PSV Eindhoven,Sporting CP,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-01,,Inter,FK Crvena Zvezda,4,0,4-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-01,,Barcelona,BSC Young Boys,5,0,5-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-01,,Slovan Bratislava,Manchester City,0,4,0-4,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,Girona,Feyenoord,2,3,2-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,Shakhtar Donetsk,Atalanta,0,3,0-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,Liverpool,Bologna,2,0,2-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,Aston Villa,Bayern München,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,Lille,Real Madrid,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,RB Leipzig,Juventus,2,3,2-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,Benfica,Atletico Madrid,4,0,4-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,Dinamo Zagreb,Monaco,2,2,2-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-02,,Sturm Graz,Club Brugge KV,0,1,0-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2024-10-22,,Monaco,FK Crvena Zvezda,5,1,5-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-22,,AC Milan,Club Brugge KV,3,1,3-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-22,,Arsenal,Shakhtar Donetsk,1,0,1-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-22,,Aston Villa,Bologna,2,0,2-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-22,,Paris Saint Germain,PSV Eindhoven,1,1,1-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-22,,Juventus,VfB Stuttgart,0,1,0-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-22,,Real Madrid,Borussia Dortmund,5,2,5-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-22,,Girona,Slovan Bratislava,2,0,2-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-22,,Sturm Graz,Sporting CP,0,2,0-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,Stade Brestois 29,Bayer Leverkusen,1,1,1-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,Atalanta,Celtic,0,0,0-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,Manchester City,Sparta Praha,5,0,5-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,RB Leipzig,Liverpool,0,1,0-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,Benfica,Feyenoord,1,3,1-3,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,Barcelona,Bayern München,4,1,4-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,Atletico Madrid,Lille,1,3,1-3,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,BSC Young Boys,Inter,0,1,0-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-10-23,,Red Bull Salzburg,Dinamo Zagreb,0,2,0-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2024-11-05,,PSV Eindhoven,Girona,4,0,4-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-05,,Slovan Bratislava,Dinamo Zagreb,1,4,1-4,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-05,,Liverpool,Bayer Leverkusen,4,0,4-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-05,,Lille,Juventus,1,1,1-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-05,,Borussia Dortmund,Sturm Graz,1,0,1-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-05,,Sporting CP,Manchester City,4,1,4-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-05,,Celtic,RB Leipzig,3,1,3-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-05,,Bologna,Monaco,0,1,0-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-05,,Real Madrid,AC Milan,1,3,1-3,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,Shakhtar Donetsk,BSC Young Boys,2,1,2-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,Club Brugge KV,Aston Villa,1,0,1-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,Paris Saint Germain,Atletico Madrid,1,2,1-2,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,Bayern München,Benfica,1,0,1-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,VfB Stuttgart,Atalanta,0,2,0-2,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,Feyenoord,Red Bull Salzburg,1,3,1-3,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,Inter,Arsenal,1,0,1-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,FK Crvena Zvezda,Barcelona,2,5,2-5,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-06,,Sparta Praha,Stade Brestois 29,1,2,1-2,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2024-11-26,,Sparta Praha,Atletico Madrid,0,6,0-6,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-26,,Slovan Bratislava,AC Milan,2,3,2-3,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-26,,Manchester City,Feyenoord,3,3,3-3,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-26,,Bayern München,Paris Saint Germain,1,0,1-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-26,,Bayer Leverkusen,Red Bull Salzburg,5,0,5-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-26,,Sporting CP,Arsenal,1,5,1-5,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-26,,Inter,RB Leipzig,1,0,1-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-26,,Barcelona,Stade Brestois 29,3,0,3-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-26,,BSC Young Boys,Atalanta,1,6,1-6,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,FK Crvena Zvezda,VfB Stuttgart,5,1,5-1,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,Sturm Graz,Girona,1,0,1-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,Liverpool,Real Madrid,2,0,2-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,Aston Villa,Juventus,0,0,0-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,Monaco,Benfica,2,3,2-3,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,PSV Eindhoven,Shakhtar Donetsk,3,2,3-2,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,Celtic,Club Brugge KV,1,1,1-1,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,Bologna,Lille,1,2,1-2,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-11-27,,Dinamo Zagreb,Borussia Dortmund,0,3,0-3,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2024-12-10,,Girona,Liverpool,0,1,0-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-10,,Dinamo Zagreb,Celtic,0,0,0-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-10,,Stade Brestois 29,PSV Eindhoven,1,0,1-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-10,,Bayer Leverkusen,Inter,1,0,1-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-10,,RB Leipzig,Aston Villa,2,3,2-3,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-10,,Atalanta,Real Madrid,2,3,2-3,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-10,,Shakhtar Donetsk,Bayern München,1,5,1-5,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-10,,Club Brugge KV,Sporting CP,2,1,2-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-10,,Red Bull Salzburg,Paris Saint Germain,0,3,0-3,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,Lille,Sturm Graz,3,2,3-2,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,Atletico Madrid,Slovan Bratislava,3,1,3-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,Arsenal,Monaco,3,0,3-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,Borussia Dortmund,Barcelona,2,3,2-3,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,VfB Stuttgart,BSC Young Boys,5,1,5-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,Feyenoord,Sparta Praha,4,2,4-2,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,Benfica,Bologna,0,0,0-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,AC Milan,FK Crvena Zvezda,2,1,2-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2024-12-11,,Juventus,Manchester City,2,0,2-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-01-21,,Monaco,Aston Villa,1,0,1-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-21,,Atalanta,Sturm Graz,5,0,5-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-21,,Liverpool,Lille,2,1,2-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-21,,Benfica,Barcelona,4,5,4-5,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-21,,Bologna,Borussia Dortmund,2,1,2-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-21,,Atletico Madrid,Bayer Leverkusen,2,1,2-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-21,,Club Brugge KV,Juventus,0,0,0-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-21,,FK Crvena Zvezda,PSV Eindhoven,2,3,2-3,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-21,,Slovan Bratislava,VfB Stuttgart,1,3,1-3,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,RB Leipzig,Sporting CP,2,1,2-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,Shakhtar Donetsk,Stade Brestois 29,2,0,2-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,Arsenal,Dinamo Zagreb,3,0,3-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,Paris Saint Germain,Manchester City,4,2,4-2,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,Feyenoord,Bayern München,3,0,3-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,Celtic,BSC Young Boys,1,0,1-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,AC Milan,Girona,1,0,1-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,Real Madrid,Red Bull Salzburg,5,1,5-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-22,,Sparta Praha,Inter,0,1,0-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Manchester City,Club Brugge KV,3,1,3-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Aston Villa,Celtic,4,2,4-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Lille,Feyenoord,6,1,6-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Stade Brestois 29,Real Madrid,0,3,0-3,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Bayern München,Slovan Bratislava,3,1,3-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Borussia Dortmund,Shakhtar Donetsk,3,1,3-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Bayer Leverkusen,Sparta Praha,2,0,2-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,VfB Stuttgart,Paris Saint Germain,1,4,1-4,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,PSV Eindhoven,Liverpool,3,2,3-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Sporting CP,Bologna,1,1,1-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Juventus,Benfica,0,2,0-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Inter,Monaco,3,0,3-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Barcelona,Atalanta,2,2,2-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Girona,Arsenal,1,2,1-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,BSC Young Boys,FK Crvena Zvezda,0,1,0-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Red Bull Salzburg,Atletico Madrid,1,4,1-4,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Dinamo Zagreb,AC Milan,2,1,2-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-01-29,,Sturm Graz,RB Leipzig,1,0,1-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2025-02-11,,Stade Brestois 29,Paris Saint Germain,0,3,0-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-11,,Manchester City,Real Madrid,2,3,2-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-11,,Sporting CP,Borussia Dortmund,0,3,0-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-11,,Juventus,PSV Eindhoven,2,1,2-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-12,,Club Brugge KV,Atalanta,2,1,2-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-12,,Monaco,Benfica,0,1,0-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-12,,Feyenoord,AC Milan,1,0,1-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-12,,Celtic,Bayern München,1,2,1-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-18,,AC Milan,Feyenoord,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-18,,Bayern München,Celtic,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-18,,Benfica,Monaco,3,3,3-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-18,,Atalanta,Club Brugge KV,1,3,1-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-19,,Borussia Dortmund,Sporting CP,0,0,0-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-19,,Paris Saint Germain,Stade Brestois 29,7,0,7-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-19,,PSV Eindhoven,Juventus,3,1,3-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-02-19,,Real Madrid,Manchester City,3,1,3-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-03-04,,Club Brugge KV,Aston Villa,1,3,1-3,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-04,,Borussia Dortmund,Lille,1,1,1-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-04,,PSV Eindhoven,Arsenal,1,7,1-7,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-04,,Real Madrid,Atletico Madrid,2,1,2-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-05,,Feyenoord,Inter,0,2,0-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-05,,Paris Saint Germain,Liverpool,0,1,0-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-05,,Bayern München,Bayer Leverkusen,3,0,3-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-05,,Benfica,Barcelona,0,1,0-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-11,,Barcelona,Benfica,3,1,3-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-11,,Liverpool,Paris Saint Germain,0,1,0-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-11,,Bayer Leverkusen,Bayern München,0,2,0-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-11,,Inter,Feyenoord,2,1,2-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-12,,Lille,Borussia Dortmund,1,2,1-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-12,,Arsenal,PSV Eindhoven,2,2,2-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-12,,Aston Villa,Club Brugge KV,3,0,3-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-03-12,,Atletico Madrid,Real Madrid,1,0,1-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2025-04-08,,Arsenal,Real Madrid,3,0,3-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-08,,Bayern München,Inter,1,2,1-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-09,,Paris Saint Germain,Aston Villa,3,1,3-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-09,,Barcelona,Borussia Dortmund,4,0,4-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-15,,Aston Villa,Paris Saint Germain,3,2,3-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-15,,Borussia Dortmund,Barcelona,3,1,3-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-16,,Inter,Bayern München,2,2,2-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-16,,Real Madrid,Arsenal,1,2,1-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-29,,Arsenal,Paris Saint Germain,0,1,0-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-04-30,,Barcelona,Inter,3,3,3-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-05-06,,Inter,Barcelona,4,3,4-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-05-07,,Paris Saint Germain,Arsenal,2,1,2-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-05-31,,Paris Saint Germain,Inter,5,0,5-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-07-08,,KuPS,Milsami Orhei,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-08,,Saburtalo,Malmo FF,1,3,1-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-08,,FC Noah,Buducnost Podgorica,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-08,,FC Levadia Tallinn,Rīgas FS,0,1,0-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-08,,Olimpija Ljubljana,Kairat Almaty,1,1,1-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-08,,The New Saints,Shkendija,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-08,,Drita,FC Differdange 03,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-08,,Egnatia Rrogozhinë,Breidablik,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-08,,Virtus,Zrinjski,0,2,0-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-09,,FK Zalgiris Vilnius,Hamrun Spartans,2,0,2-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-09,,FCSB,Inter Club d'Escaldes,3,1,3-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-09,,Ludogorets,Dinamo Minsk,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-09,,Shelbourne,Linfield,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Kairat Almaty,Olimpija Ljubljana,2,0,2-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Lincoln Red Imps FC,Vikingur Gota,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Malmo FF,Saburtalo,3,1,3-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Milsami Orhei,KuPS,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Rīgas FS,FC Levadia Tallinn,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Hamrun Spartans,FK Zalgiris Vilnius,2,0,2-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Shkendija,The New Saints,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,FC Differdange 03,Drita,2,3,2-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Inter Club d'Escaldes,FCSB,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Breidablik,Egnatia Rrogozhinë,5,0,5-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Buducnost Podgorica,FC Noah,2,2,2-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-15,,Zrinjski,Virtus,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-16,,Dinamo Minsk,Ludogorets,2,2,2-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-16,,Linfield,Shelbourne,1,1,1-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-07-22,,KuPS,Kairat Almaty,2,0,2-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Lincoln Red Imps FC,FK Crvena Zvezda,0,1,0-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,FC Noah,Ferencvarosi TC,1,2,1-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,FC Copenhagen,Drita,2,0,2-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Plzen,Servette FC,0,1,0-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Pafos,Maccabi Tel Aviv,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Rīgas FS,Malmo FF,1,4,1-4,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Hamrun Spartans,Dynamo Kyiv,0,3,0-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Shkendija,FCSB,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Slovan Bratislava,Zrinjski,4,0,4-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Lech Poznan,Breidablik,7,1,7-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,Rangers,Panathinaikos,2,0,2-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-22,,HNK Rijeka,Ludogorets,0,0,0-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-23,,Brann,Red Bull Salzburg,1,4,1-4,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-23,,Shelbourne,Qarabag,0,3,0-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-29,,Kairat Almaty,KuPS,3,0,3-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-29,,Dynamo Kyiv,Hamrun Spartans,3,0,3-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-29,,Drita,FC Copenhagen,0,1,0-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-29,,Zrinjski,Slovan Bratislava,2,2,2-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-29,,FK Crvena Zvezda,Lincoln Red Imps FC,5,1,5-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Qarabag,Shelbourne,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Malmo FF,Rīgas FS,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,FCSB,Shkendija,1,2,1-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Ludogorets,HNK Rijeka,3,1,3-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Maccabi Tel Aviv,Pafos,0,1,0-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Panathinaikos,Rangers,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Ferencvarosi TC,FC Noah,4,3,4-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Breidablik,Lech Poznan,0,1,0-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Red Bull Salzburg,Brann,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-07-30,,Servette FC,Plzen,1,3,1-3,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-08-05,,Malmo FF,FC Copenhagen,0,0,0-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-05,,Dynamo Kyiv,Pafos,0,1,0-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-05,,Shkendija,Qarabag,0,1,0-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-05,,Rangers,Plzen,3,0,3-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-06,,Kairat Almaty,Slovan Bratislava,1,0,1-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-06,,Red Bull Salzburg,Club Brugge KV,0,1,0-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-06,,Ludogorets,Ferencvarosi TC,0,0,0-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-06,,Lech Poznan,FK Crvena Zvezda,1,3,1-3,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-06,,Nice,Benfica,0,2,0-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-06,,Feyenoord,Fenerbahçe,2,1,2-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,Qarabag,Shkendija,5,1,5-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,FC Copenhagen,Malmo FF,5,0,5-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,Plzen,Rangers,2,1,2-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,Fenerbahçe,Feyenoord,5,2,5-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,Pafos,Dynamo Kyiv,2,0,2-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,Club Brugge KV,Red Bull Salzburg,3,2,3-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,Ferencvarosi TC,Ludogorets,3,0,3-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,Slovan Bratislava,Kairat Almaty,1,0,1-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,Benfica,Nice,2,0,2-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-12,,FK Crvena Zvezda,Lech Poznan,1,1,1-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-08-19,,Rangers,Club Brugge KV,1,3,1-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-19,,FK Crvena Zvezda,Pafos,1,2,1-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-19,,Ferencvarosi TC,Qarabag,1,3,1-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-20,,Celtic,Kairat Almaty,0,0,0-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-20,,Bodo/Glimt,Sturm Graz,5,0,5-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-20,,FC Basel 1893,FC Copenhagen,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-20,,Fenerbahçe,Benfica,0,0,0-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-26,,Kairat Almaty,Celtic,0,0,0-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-26,,Sturm Graz,Bodo/Glimt,2,1,2-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-26,,Pafos,FK Crvena Zvezda,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-27,,Qarabag,Ferencvarosi TC,2,3,2-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-27,,Benfica,Fenerbahçe,1,0,1-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-27,,FC Copenhagen,FC Basel 1893,2,0,2-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-08-27,,Club Brugge KV,Rangers,6,0,6-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2025-09-16,,PSV Eindhoven,Union St. Gilloise,1,3,1-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-16,,Athletic Club,Arsenal,0,2,0-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-16,,Tottenham,Villarreal,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-16,,Benfica,Qarabag,2,3,2-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-16,,Juventus,Borussia Dortmund,4,4,4-4,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-16,,Real Madrid,Marseille,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-17,,Olympiakos Piraeus,Pafos,0,0,0-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-17,,Slavia Praha,Bodo/Glimt,2,2,2-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-17,,Liverpool,Atletico Madrid,3,2,3-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-17,,Paris Saint Germain,Atalanta,4,0,4-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-17,,Bayern München,Chelsea,3,1,3-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-17,,Ajax,Inter,0,2,0-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-18,,FC Copenhagen,Bayer Leverkusen,2,2,2-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-18,,Club Brugge KV,Monaco,4,1,4-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-18,,Newcastle,Barcelona,1,2,1-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-18,,Manchester City,Napoli,2,0,2-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-18,,Eintracht Frankfurt,Galatasaray,5,1,5-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-18,,Sporting CP,Kairat Almaty,4,1,4-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Atalanta,Club Brugge KV,2,1,2-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Kairat Almaty,Real Madrid,0,5,0-5,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Chelsea,Benfica,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Marseille,Ajax,4,0,4-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Bodo/Glimt,Tottenham,2,2,2-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Inter,Slavia Praha,3,0,3-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Atletico Madrid,Eintracht Frankfurt,5,1,5-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Galatasaray,Liverpool,1,0,1-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-09-30,,Pafos,Bayern München,1,5,1-5,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Qarabag,FC Copenhagen,2,0,2-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Union St. Gilloise,Newcastle,0,4,0-4,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Arsenal,Olympiakos Piraeus,2,0,2-0,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Monaco,Manchester City,2,2,2-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Borussia Dortmund,Athletic Club,4,1,4-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Bayer Leverkusen,PSV Eindhoven,1,1,1-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Napoli,Sporting CP,2,1,2-1,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Barcelona,Paris Saint Germain,1,2,1-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-01,,Villarreal,Juventus,2,2,2-2,FINISHED,2,regular,manual
+UCL,UEFA Champions League,2025-10-21,,Barcelona,Olympiakos Piraeus,6,1,6-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-21,,Kairat Almaty,Pafos,0,0,0-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-21,,Newcastle,Benfica,3,0,3-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-21,,Arsenal,Atletico Madrid,4,0,4-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-21,,Bayer Leverkusen,Paris Saint Germain,2,7,2-7,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-21,,PSV Eindhoven,Napoli,6,2,6-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-21,,FC Copenhagen,Borussia Dortmund,2,4,2-4,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-21,,Villarreal,Manchester City,0,2,0-2,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-21,,Union St. Gilloise,Inter,0,4,0-4,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Athletic Club,Qarabag,3,1,3-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Galatasaray,Bodo/Glimt,3,1,3-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Chelsea,Ajax,5,1,5-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Monaco,Tottenham,0,0,0-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Bayern München,Club Brugge KV,4,0,4-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Eintracht Frankfurt,Liverpool,1,5,1-5,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Sporting CP,Marseille,2,1,2-1,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Atalanta,Slavia Praha,0,0,0-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-10-22,,Real Madrid,Juventus,1,0,1-0,FINISHED,3,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Napoli,Eintracht Frankfurt,0,0,0-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Slavia Praha,Arsenal,0,3,0-3,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Liverpool,Real Madrid,1,0,1-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Tottenham,FC Copenhagen,4,0,4-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Paris Saint Germain,Bayern München,1,2,1-2,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Bodo/Glimt,Monaco,0,1,0-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Juventus,Sporting CP,1,1,1-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Atletico Madrid,Union St. Gilloise,3,1,3-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-04,,Olympiakos Piraeus,PSV Eindhoven,1,1,1-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Qarabag,Chelsea,2,2,2-2,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Pafos,Villarreal,1,0,1-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Newcastle,Athletic Club,2,0,2-0,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Manchester City,Borussia Dortmund,4,1,4-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Marseille,Atalanta,0,1,0-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Ajax,Galatasaray,0,3,0-3,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Benfica,Bayer Leverkusen,0,1,0-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Inter,Kairat Almaty,2,1,2-1,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-05,,Club Brugge KV,Barcelona,3,3,3-3,FINISHED,4,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Ajax,Benfica,0,2,0-2,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Galatasaray,Union St. Gilloise,0,1,0-1,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Chelsea,Barcelona,3,0,3-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Manchester City,Bayer Leverkusen,0,2,0-2,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Marseille,Newcastle,2,1,2-1,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Borussia Dortmund,Villarreal,4,0,4-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Bodo/Glimt,Juventus,2,3,2-3,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Napoli,Qarabag,2,0,2-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-25,,Slavia Praha,Athletic Club,0,0,0-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,FC Copenhagen,Kairat Almaty,3,2,3-2,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,Pafos,Monaco,2,2,2-2,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,Liverpool,PSV Eindhoven,1,4,1-4,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,Arsenal,Bayern München,3,1,3-1,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,Paris Saint Germain,Tottenham,5,3,5-3,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,Eintracht Frankfurt,Atalanta,0,3,0-3,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,Sporting CP,Club Brugge KV,3,0,3-0,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,Atletico Madrid,Inter,2,1,2-1,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-11-26,,Olympiakos Piraeus,Real Madrid,3,4,3-4,FINISHED,5,regular,manual
+UCL,UEFA Champions League,2025-12-09,,Kairat Almaty,Olympiakos Piraeus,0,1,0-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-09,,Bayern München,Sporting CP,3,1,3-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-09,,Tottenham,Slavia Praha,3,0,3-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-09,,Monaco,Galatasaray,1,0,1-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-09,,PSV Eindhoven,Atletico Madrid,2,3,2-3,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-09,,Atalanta,Chelsea,2,1,2-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-09,,Inter,Liverpool,0,1,0-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-09,,Barcelona,Eintracht Frankfurt,2,1,2-1,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-09,,Union St. Gilloise,Marseille,2,3,2-3,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Villarreal,FC Copenhagen,2,3,2-3,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Qarabag,Ajax,2,4,2-4,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Borussia Dortmund,Bodo/Glimt,2,2,2-2,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Bayer Leverkusen,Newcastle,2,2,2-2,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Benfica,Napoli,2,0,2-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Juventus,Pafos,2,0,2-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Athletic Club,Paris Saint Germain,0,0,0-0,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Real Madrid,Manchester City,1,2,1-2,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2025-12-10,,Club Brugge KV,Arsenal,0,3,0-3,FINISHED,6,regular,manual
+UCL,UEFA Champions League,2026-01-20,,Kairat Almaty,Club Brugge KV,1,4,1-4,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-20,,Bodo/Glimt,Manchester City,3,1,3-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-20,,Tottenham,Borussia Dortmund,2,0,2-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-20,,Sporting CP,Paris Saint Germain,2,1,2-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-20,,FC Copenhagen,Napoli,1,1,1-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-20,,Inter,Arsenal,1,3,1-3,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-20,,Villarreal,Ajax,1,2,1-2,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-20,,Real Madrid,Monaco,6,1,6-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-20,,Olympiakos Piraeus,Bayer Leverkusen,2,0,2-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Qarabag,Eintracht Frankfurt,3,2,3-2,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Galatasaray,Atletico Madrid,1,1,1-1,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Newcastle,PSV Eindhoven,3,0,3-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Chelsea,Pafos,1,0,1-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Marseille,Liverpool,0,3,0-3,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Bayern München,Union St. Gilloise,2,0,2-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Juventus,Benfica,2,0,2-0,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Atalanta,Athletic Club,2,3,2-3,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-21,,Slavia Praha,Barcelona,2,4,2-4,FINISHED,7,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Liverpool,Qarabag,6,0,6-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Arsenal,Kairat Almaty,3,2,3-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Manchester City,Galatasaray,2,0,2-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Paris Saint Germain,Newcastle,1,1,1-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Monaco,Juventus,0,0,0-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Borussia Dortmund,Inter,0,2,0-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Bayer Leverkusen,Villarreal,3,0,3-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Eintracht Frankfurt,Tottenham,0,2,0-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Ajax,Olympiakos Piraeus,1,2,1-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,PSV Eindhoven,Bayern München,1,2,1-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Benfica,Real Madrid,4,2,4-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Napoli,Chelsea,2,3,2-3,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Barcelona,FC Copenhagen,4,1,4-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Atletico Madrid,Bodo/Glimt,1,2,1-2,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Athletic Club,Sporting CP,2,3,2-3,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Club Brugge KV,Marseille,3,0,3-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Union St. Gilloise,Atalanta,1,0,1-0,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-01-28,,Pafos,Slavia Praha,4,1,4-1,FINISHED,8,regular,manual
+UCL,UEFA Champions League,2026-02-17,,Galatasaray,Juventus,5,2,5-2,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-17,,Monaco,Paris Saint Germain,2,3,2-3,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-17,,Borussia Dortmund,Atalanta,2,0,2-0,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-17,,Benfica,Real Madrid,0,1,0-1,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-18,,Qarabag,Newcastle,1,6,1-6,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-18,,Bodo/Glimt,Inter,3,1,3-1,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-18,,Olympiakos Piraeus,Bayer Leverkusen,0,2,0-2,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-18,,Club Brugge KV,Atletico Madrid,3,3,3-3,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-24,,Atletico Madrid,Club Brugge KV,4,1,4-1,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-24,,Newcastle,Qarabag,3,2,3-2,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-24,,Bayer Leverkusen,Olympiakos Piraeus,0,0,0-0,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-24,,Inter,Bodo/Glimt,1,2,1-2,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-25,,Atalanta,Borussia Dortmund,4,1,4-1,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-25,,Paris Saint Germain,Monaco,2,2,2-2,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-25,,Juventus,Galatasaray,3,2,3-2,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-02-25,,Real Madrid,Benfica,2,1,2-1,FINISHED,32,regular,manual
+UCL,UEFA Champions League,2026-03-10,,Galatasaray,Liverpool,1,0,1-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-10,,Newcastle,Barcelona,1,1,1-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-10,,Atalanta,Bayern München,1,6,1-6,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-10,,Atletico Madrid,Tottenham,5,2,5-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-11,,Bayer Leverkusen,Arsenal,1,1,1-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-11,,Paris Saint Germain,Chelsea,5,2,5-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-11,,Bodo/Glimt,Sporting CP,3,0,3-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-11,,Real Madrid,Manchester City,3,0,3-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-17,,Sporting CP,Bodo/Glimt,5,0,5-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-17,,Arsenal,Bayer Leverkusen,2,0,2-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-17,,Chelsea,Paris Saint Germain,0,3,0-3,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-17,,Manchester City,Real Madrid,1,2,1-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-18,,Barcelona,Newcastle,7,2,7-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-18,,Liverpool,Galatasaray,4,0,4-0,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-18,,Tottenham,Atletico Madrid,3,2,3-2,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-03-18,,Bayern München,Atalanta,4,1,4-1,FINISHED,16,regular,manual
+UCL,UEFA Champions League,2026-04-07,,Sporting CP,Arsenal,0,1,0-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-07,,Real Madrid,Bayern München,1,2,1-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-08,,Paris Saint Germain,Liverpool,2,0,2-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-08,,Barcelona,Atletico Madrid,0,2,0-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-14,,Liverpool,Paris Saint Germain,0,2,0-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-14,,Atletico Madrid,Barcelona,1,2,1-2,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-15,,Arsenal,Sporting CP,0,0,0-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-15,,Bayern München,Real Madrid,4,3,4-3,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-28,,Paris Saint Germain,Bayern München,5,4,5-4,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-04-29,,Atletico Madrid,Arsenal,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-05-05,,Arsenal,Atletico Madrid,1,0,1-0,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-05-06,,Bayern München,Paris Saint Germain,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-05-30,,Paris Saint Germain,Arsenal,1,1,1-1,FINISHED,,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Lincoln Red Imps FC,Inter Club d'Escaldes,3,1,3-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Ararat-Armenia,Riga,2,0,2-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Kauno Žalgiris,Drita,1,1,1-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Sabah FA,The New Saints,2,0,2-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Vardar Skopje,KuPS,0,2,0-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Floriana,Shamrock Rovers,2,0,2-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Tre Fiori,Larne,0,1,0-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Borac Banja Luka,Levski Sofia,1,1,1-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,KI Klaksvik,Atert Bissen,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-07,,Vikingur Reykjavik,Gyori ETO FC,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-08,,Kairat Almaty,Sutjeska,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-08,,Flora Tallinn,Saburtalo,2,3,2-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-08,,Petrocub,Egnatia Rrogozhinë,1,1,1-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-08,,ML Vitebsk,Universitatea Craiova,1,4,1-4,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,KuPS,Vardar Skopje,2,3,2-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,Inter Club d'Escaldes,Lincoln Red Imps FC,1,1,1-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,Saburtalo,Flora Tallinn,2,2,2-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,Gyori ETO FC,Vikingur Reykjavik,2,2,2-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,Riga,Ararat-Armenia,3,2,3-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,The New Saints,Sabah FA,1,2,1-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,Levski Sofia,Borac Banja Luka,4,0,4-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,Drita,Kauno Žalgiris,2,3,2-3,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,Shamrock Rovers,Floriana,5,1,5-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-14,,Larne,Tre Fiori,2,1,2-1,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-15,,Universitatea Craiova,ML Vitebsk,1,0,1-0,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-15,,Atert Bissen,KI Klaksvik,1,2,1-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-15,,Sutjeska,Kairat Almaty,0,2,0-2,FINISHED,1,regular,manual
+UCL,UEFA Champions League,2026-07-15,,Egnatia Rrogozhinë,Petrocub,6,1,6-1,FINISHED,1,regular,manual
