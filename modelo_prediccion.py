@@ -249,7 +249,7 @@ def predecir_jornada(fecha=None):
         return []
 
     # Filtrar partidos del día
-    partidos_hoy = df_prox[df_prox['fecha'] >= fecha].sort_values('fecha').head(20)
+    partidos_hoy = df_prox[df_prox['fecha'] >= fecha].sort_values('fecha').head(100)
 
     predicciones = []
 
