@@ -1,0 +1,281 @@
+liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente
+CLB,Copa Libertadores,2025-02-04,,Monagas SC,Defensor Sporting,2,0,2-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-02-05,,Nacional Asuncion,Alianza Lima,1,1,1-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-02-06,,Blooming,El Nacional,3,2,3-2,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-02-11,,Defensor Sporting,Monagas SC,0,2,0-2,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-02-12,,Alianza Lima,Nacional Asuncion,3,1,3-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-02-13,,El Nacional,Blooming,2,1,2-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-02-18,,Deportes Iquique,Santa Fe,2,1,2-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-18,,Alianza Lima,Boca Juniors,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-18,,The Strongest,Bahia,1,1,1-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-19,,Boston River,Nublense,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-19,,El Nacional,Barcelona SC,0,1,0-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-19,,UCV,Corinthians,1,1,1-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-20,,Monagas SC,Cerro Porteno,0,4,0-4,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-20,,Deportes Tolima,FBC Melgar,0,1,0-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-25,,Bahia,The Strongest,3,0,3-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-25,,Boca Juniors,Alianza Lima,2,1,2-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-26,,Nublense,Boston River,1,1,1-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-26,,Corinthians,UCV,3,2,3-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-26,,Barcelona SC,El Nacional,1,1,1-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-27,,Cerro Porteno,Monagas SC,3,1,3-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-02-27,,FBC Melgar,Deportes Tolima,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-03-04,,Deportes Iquique,Alianza Lima,1,2,1-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-03-05,,FBC Melgar,Cerro Porteno,0,1,0-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-03-05,,Barcelona SC,Corinthians,3,0,3-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-03-06,,Boston River,Bahia,0,0,0-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-03-11,,Alianza Lima,Deportes Iquique,1,1,1-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-03-12,,Cerro Porteno,FBC Melgar,4,2,4-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-03-12,,Corinthians,Barcelona SC,2,0,2-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-03-13,,Bahia,Boston River,1,0,1-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-01,,Cerro Porteno,Bolívar,4,2,4-2,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-01,,Carabobo FC,Estudiantes L.P.,0,2,0-2,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-01,,Fortaleza EC,Racing Club,0,3,0-3,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-01,,Bucaramanga,Colo Colo,3,3,3-3,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-01,,Barcelona SC,Independiente del Valle,1,0,1-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-01,,Alianza Lima,Libertad Asuncion,0,1,0-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-02,,Velez Sarsfield,Penarol,2,1,2-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-02,,San Antonio Bulo Bulo,Olimpia,3,2,3-2,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-02,,Talleres Cordoba,Sao Paulo,0,1,0-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-02,,Universidad de Chile,Botafogo,1,0,1-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-02,,Universitario,River Plate,0,1,0-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-02,,Atletico Nacional,Club Nacional,3,0,3-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-03,,Bahia,Internacional,1,1,1-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-03,,Central Cordoba de Santiago,LDU de Quito,0,0,0-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-03,,Sporting Cristal,Palmeiras,2,3,2-3,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-03,,Deportivo Tachira FC,Flamengo,0,1,0-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2025-04-08,,Botafogo,Carabobo FC,2,0,2-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-08,,Libertad Asuncion,Talleres Cordoba,2,0,2-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-08,,Penarol,San Antonio Bulo Bulo,2,0,2-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-08,,River Plate,Barcelona SC,0,0,0-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-08,,Estudiantes L.P.,Universidad de Chile,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-08,,Independiente del Valle,Universitario,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-09,,Olimpia,Velez Sarsfield,0,4,0-4,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-09,,Club Nacional,Bahia,0,1,0-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-09,,Palmeiras,Cerro Porteno,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-09,,Flamengo,Central Cordoba de Santiago,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-09,,Bolívar,Sporting Cristal,3,0,3-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-09,,LDU de Quito,Deportivo Tachira FC,2,0,2-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-10,,Internacional,Atletico Nacional,3,0,3-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-10,,Racing Club,Bucaramanga,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-10,,Colo Colo,Fortaleza EC,0,3,0-3,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-10,,Sao Paulo,Alianza Lima,2,2,2-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2025-04-22,,LDU de Quito,Flamengo,0,0,0-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-22,,Alianza Lima,Talleres Cordoba,3,2,3-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-22,,Carabobo FC,Universidad de Chile,1,1,1-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-22,,Internacional,Club Nacional,3,3,3-3,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-22,,Colo Colo,Racing Club,1,1,1-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-22,,Barcelona SC,Universitario,0,1,0-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-23,,Olimpia,Penarol,0,0,0-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-23,,San Antonio Bulo Bulo,Velez Sarsfield,2,1,2-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-23,,Estudiantes L.P.,Botafogo,1,0,1-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-23,,Independiente del Valle,River Plate,2,2,2-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-23,,Libertad Asuncion,Sao Paulo,0,2,0-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-23,,Bucaramanga,Fortaleza EC,1,1,1-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-24,,Central Cordoba de Santiago,Deportivo Tachira FC,2,1,2-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-24,,Bolívar,Palmeiras,2,3,2-3,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-24,,Bahia,Atletico Nacional,1,0,1-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-04-24,,Cerro Porteno,Sporting Cristal,2,2,2-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2025-05-06,,Bucaramanga,Racing Club,0,4,0-4,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-06,,Alianza Lima,Sao Paulo,0,2,0-2,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-06,,Carabobo FC,Botafogo,1,2,1-2,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-06,,Fortaleza EC,Colo Colo,4,0,4-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-06,,San Antonio Bulo Bulo,Penarol,0,3,0-3,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-07,,Bahia,Club Nacional,1,3,1-3,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-07,,Deportivo Tachira FC,LDU de Quito,2,3,2-3,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-07,,Universidad de Chile,Estudiantes L.P.,0,3,0-3,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-07,,Central Cordoba de Santiago,Flamengo,1,1,1-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-07,,Cerro Porteno,Palmeiras,0,2,0-2,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-07,,Sporting Cristal,Bolívar,2,1,2-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-08,,Velez Sarsfield,Olimpia,1,1,1-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-08,,Talleres Cordoba,Libertad Asuncion,0,0,0-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-08,,Atletico Nacional,Internacional,3,1,3-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-08,,Barcelona SC,River Plate,2,3,2-3,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-08,,Universitario,Independiente del Valle,1,1,1-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2025-05-13,,Deportivo Tachira FC,Central Cordoba de Santiago,1,2,1-2,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-13,,Fortaleza EC,Bucaramanga,0,0,0-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-13,,Universidad de Chile,Carabobo FC,4,0,4-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-13,,Sporting Cristal,Cerro Porteno,0,1,0-1,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-14,,Velez Sarsfield,San Antonio Bulo Bulo,3,0,3-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-14,,Atletico Nacional,Bahia,1,0,1-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-14,,Penarol,Olimpia,3,2,3-2,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-14,,Botafogo,Estudiantes L.P.,3,2,3-2,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-14,,Sao Paulo,Libertad Asuncion,1,1,1-1,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-14,,Racing Club,Colo Colo,4,0,4-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-14,,Universitario,Barcelona SC,1,0,1-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-15,,Palmeiras,Bolívar,2,0,2-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-15,,Talleres Cordoba,Alianza Lima,2,0,2-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-15,,Club Nacional,Internacional,0,2,0-2,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-15,,Flamengo,LDU de Quito,2,0,2-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-15,,River Plate,Independiente del Valle,6,2,6-2,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2025-05-27,,Sao Paulo,Talleres Cordoba,2,1,2-1,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-27,,Libertad Asuncion,Alianza Lima,2,2,2-2,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-27,,Botafogo,Universidad de Chile,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-27,,River Plate,Universitario,1,1,1-1,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-27,,Estudiantes L.P.,Carabobo FC,2,0,2-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-27,,Independiente del Valle,Barcelona SC,2,1,2-1,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-28,,Internacional,Bahia,2,1,2-1,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-28,,Club Nacional,Atletico Nacional,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-28,,Palmeiras,Sporting Cristal,6,0,6-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-28,,Flamengo,Deportivo Tachira FC,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-28,,LDU de Quito,Central Cordoba de Santiago,3,0,3-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-28,,Bolívar,Cerro Porteno,4,0,4-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-29,,Olimpia,San Antonio Bulo Bulo,4,0,4-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-29,,Penarol,Velez Sarsfield,0,0,0-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-29,,Racing Club,Fortaleza EC,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-05-29,,Colo Colo,Bucaramanga,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2025-08-12,,Fortaleza EC,Velez Sarsfield,0,0,0-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-12,,Atletico Nacional,Sao Paulo,0,0,0-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-12,,Penarol,Racing Club,1,0,1-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-13,,Cerro Porteno,Estudiantes L.P.,0,1,0-1,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-13,,Flamengo,Internacional,1,0,1-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-14,,Botafogo,LDU de Quito,1,0,1-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-14,,Libertad Asuncion,River Plate,0,0,0-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-14,,Universitario,Palmeiras,0,4,0-4,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-19,,Velez Sarsfield,Fortaleza EC,2,0,2-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-19,,Sao Paulo,Atletico Nacional,1,1,1-1,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-19,,Racing Club,Penarol,3,1,3-1,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-20,,Estudiantes L.P.,Cerro Porteno,0,0,0-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-20,,Internacional,Flamengo,0,2,0-2,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-21,,LDU de Quito,Botafogo,2,0,2-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-21,,Palmeiras,Universitario,0,0,0-0,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-08-21,,River Plate,Libertad Asuncion,1,1,1-1,FINISHED,16,regular,manual
+CLB,Copa Libertadores,2025-09-16,,Velez Sarsfield,Racing Club,0,1,0-1,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-09-17,,River Plate,Palmeiras,1,2,1-2,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-09-18,,LDU de Quito,Sao Paulo,2,0,2-0,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-09-18,,Flamengo,Estudiantes L.P.,2,1,2-1,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-09-23,,Racing Club,Velez Sarsfield,1,0,1-0,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-09-24,,Palmeiras,River Plate,3,1,3-1,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-09-25,,Sao Paulo,LDU de Quito,0,1,0-1,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-09-25,,Estudiantes L.P.,Flamengo,1,0,1-0,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-10-22,,Flamengo,Racing Club,1,0,1-0,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-10-23,,LDU de Quito,Palmeiras,3,0,3-0,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-10-29,,Racing Club,Flamengo,0,0,0-0,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-10-30,,Palmeiras,LDU de Quito,4,0,4-0,FINISHED,,regular,manual
+CLB,Copa Libertadores,2025-11-29,,Palmeiras,Flamengo,0,1,0-1,FINISHED,,regular,manual
+CLB,Copa Libertadores,2026-02-03,,The Strongest,Deportivo Tachira FC,2,1,2-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-02-04,,2 de Mayo,Alianza Lima,1,0,1-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-02-05,,Juventud,Universidad Catolica,0,1,0-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-02-10,,Deportivo Tachira FC,The Strongest,1,0,1-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-02-11,,Alianza Lima,2 de Mayo,1,1,1-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-02-12,,Universidad Catolica,Juventud,3,4,3-4,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-02-17,,Carabobo FC,Huachipato,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-17,,Liverpool Montevideo,Independiente Medellin,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-17,,2 de Mayo,Sporting Cristal,2,2,2-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-18,,O'Higgins,Bahia,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-18,,Barcelona SC,Argentinos JRS,0,1,0-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-18,,Nacional Potosí,Botafogo,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-19,,Juventud,Club Guarani,0,0,0-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-19,,Deportivo Tachira FC,Deportes Tolima,0,1,0-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-24,,Huachipato,Carabobo FC,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-24,,Independiente Medellin,Liverpool Montevideo,0,0,0-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-24,,Sporting Cristal,2 de Mayo,0,0,0-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-25,,Bahia,O'Higgins,2,1,2-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-25,,Botafogo,Nacional Potosí,2,0,2-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-25,,Argentinos JRS,Barcelona SC,0,1,0-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-26,,Club Guarani,Juventud,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-02-26,,Deportes Tolima,Deportivo Tachira FC,0,1,0-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-03-03,,Barcelona SC,Botafogo,1,1,1-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-03-04,,Carabobo FC,Sporting Cristal,0,1,0-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-03-04,,O'Higgins,Deportes Tolima,1,0,1-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-03-05,,Juventud,Independiente Medellin,1,1,1-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-03-10,,Botafogo,Barcelona SC,0,1,0-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-03-11,,Sporting Cristal,Carabobo FC,1,2,1-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-03-11,,Deportes Tolima,O'Higgins,2,0,2-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-03-12,,Independiente Medellin,Juventud,2,1,2-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-07,,Independ. Rivadavia,Bolívar,1,0,1-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-07,,Deportivo La Guaira,Fluminense,0,0,0-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-07,,Barcelona SC,Cruzeiro,0,1,0-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-07,,Always Ready,LDU de Quito,0,1,0-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-07,,U. Catolica,Boca Juniors,1,2,1-2,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-07,,Deportes Tolima,Universitario,0,0,0-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-08,,Coquimbo Unido,Club Nacional,1,1,1-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-08,,Mirassol,Lanus,1,0,1-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-08,,Independiente Medellin,Estudiantes L.P.,1,1,1-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-08,,Junior,Palmeiras,1,1,1-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-08,,Cusco,Flamengo,0,2,0-2,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-08,,Sporting Cristal,Cerro Porteno,1,0,1-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-09,,Rosario Central,Independiente del Valle,0,0,0-0,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-09,,UCV,Libertad Asuncion,3,1,3-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-09,,Platense,Corinthians,0,2,0-2,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-09,,Santa Fe,Penarol,1,1,1-1,FINISHED,1,regular,manual
+CLB,Copa Libertadores,2026-04-14,,Estudiantes L.P.,Cusco,2,1,2-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-14,,Cerro Porteno,Junior,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-14,,Club Nacional,Deportes Tolima,3,1,3-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-14,,Boca Juniors,Barcelona SC,3,0,3-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-14,,Bolívar,Deportivo La Guaira,1,1,1-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-14,,LDU de Quito,Mirassol,2,0,2-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-14,,Universitario,Coquimbo Unido,0,2,0-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-15,,Cruzeiro,U. Catolica,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-15,,Libertad Asuncion,Rosario Central,0,1,0-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-15,,Fluminense,Independ. Rivadavia,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-15,,Corinthians,Santa Fe,2,0,2-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-15,,Independiente del Valle,UCV,3,1,3-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-16,,Palmeiras,Sporting Cristal,2,1,2-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-16,,Lanus,Always Ready,1,0,1-0,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-16,,Flamengo,Independiente Medellin,4,1,4-1,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-16,,Penarol,Platense,1,2,1-2,FINISHED,2,regular,manual
+CLB,Copa Libertadores,2026-04-28,,Lanus,LDU de Quito,1,0,1-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-28,,Libertad Asuncion,Independiente del Valle,2,3,2-3,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-28,,UCV,Rosario Central,0,3,0-3,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-28,,Cruzeiro,Boca Juniors,1,0,1-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-28,,Deportes Tolima,Coquimbo Unido,3,0,3-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-28,,Sporting Cristal,Junior,2,0,2-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-29,,Platense,Santa Fe,2,1,2-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-29,,Mirassol,Always Ready,2,0,2-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-29,,Barcelona SC,U. Catolica,1,2,1-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-29,,Estudiantes L.P.,Flamengo,1,1,1-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-29,,Cerro Porteno,Palmeiras,1,1,1-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-29,,Universitario,Club Nacional,4,2,4-2,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-30,,Independ. Rivadavia,Deportivo La Guaira,4,1,4-1,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-30,,Bolívar,Fluminense,2,0,2-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-30,,Corinthians,Penarol,2,0,2-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-04-30,,Independiente Medellin,Cusco,1,0,1-0,FINISHED,3,regular,manual
+CLB,Copa Libertadores,2026-05-05,,Rosario Central,Libertad Asuncion,1,0,1-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-05,,Sporting Cristal,Palmeiras,0,2,0-2,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-05,,Barcelona SC,Boca Juniors,1,0,1-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-05,,UCV,Independiente del Valle,2,0,2-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-05,,Always Ready,Lanus,4,0,4-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-06,,Deportivo La Guaira,Bolívar,1,1,1-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-06,,Cusco,Estudiantes L.P.,1,1,1-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-06,,Independ. Rivadavia,Fluminense,1,1,1-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-06,,Santa Fe,Corinthians,1,1,1-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-06,,Deportes Tolima,Club Nacional,3,0,3-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-06,,U. Catolica,Cruzeiro,0,0,0-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-07,,Platense,Penarol,1,1,1-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-07,,Mirassol,LDU de Quito,2,0,2-0,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-07,,Coquimbo Unido,Universitario,2,1,2-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-07,,Independiente Medellin,Flamengo,0,3,0-3,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-07,,Junior,Cerro Porteno,0,1,0-1,FINISHED,4,regular,manual
+CLB,Copa Libertadores,2026-05-19,,Fluminense,Bolívar,2,1,2-1,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-19,,Rosario Central,UCV,4,0,4-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-19,,Coquimbo Unido,Deportes Tolima,3,0,3-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-19,,Santa Fe,Platense,2,1,2-1,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-19,,Always Ready,Mirassol,1,2,1-2,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-19,,Boca Juniors,Cruzeiro,1,1,1-1,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-19,,Independiente del Valle,Libertad Asuncion,4,1,4-1,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-20,,Club Nacional,Universitario,0,0,0-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-20,,Palmeiras,Cerro Porteno,0,1,0-1,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-20,,Flamengo,Estudiantes L.P.,1,0,1-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-20,,LDU de Quito,Lanus,2,0,2-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-20,,Junior,Sporting Cristal,3,2,3-2,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-20,,Cusco,Independiente Medellin,2,3,2-3,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-21,,Deportivo La Guaira,Independ. Rivadavia,2,4,2-4,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-21,,Penarol,Corinthians,1,1,1-1,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-21,,U. Catolica,Barcelona SC,2,0,2-0,FINISHED,5,regular,manual
+CLB,Copa Libertadores,2026-05-26,,Lanus,Mirassol,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-26,,LDU de Quito,Always Ready,3,2,3-2,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-26,,Flamengo,Cusco,3,0,3-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-26,,Estudiantes L.P.,Independiente Medellin,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-26,,Club Nacional,Coquimbo Unido,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-26,,Universitario,Deportes Tolima,0,0,0-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-27,,Independiente del Valle,Rosario Central,1,0,1-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-27,,Libertad Asuncion,UCV,0,1,0-1,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-27,,Fluminense,Deportivo La Guaira,3,1,3-1,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-27,,Corinthians,Platense,0,2,0-2,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-27,,Penarol,Santa Fe,0,1,0-1,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-27,,Bolívar,Independ. Rivadavia,1,3,1-3,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-28,,Palmeiras,Junior,4,1,4-1,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-28,,Cerro Porteno,Sporting Cristal,2,0,2-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-28,,Cruzeiro,Barcelona SC,4,0,4-0,FINISHED,6,regular,manual
+CLB,Copa Libertadores,2026-05-28,,Boca Juniors,U. Catolica,0,1,0-1,FINISHED,6,regular,manual
