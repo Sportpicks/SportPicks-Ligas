@@ -3,64 +3,44 @@
 configuracion.py
 Configuración central de SportPicks-Ligas
 """
+import os
+import csv
+
+RAIZ = os.path.dirname(os.path.abspath(__file__))
 
 # ── APIs ──
-API_FOOTBALL_DATA = 'cce6c60e411047abb142e005de2d957a'
-API_ODDS          = '622b4b772a4d155e032de1c17a83e41a'
-API_THESTATS      = 'fapi_xsedmwUExuZrMwSQnNXUS790890Bxbvp'
+API_THESTATS = 'fapi_xsedmwUExuZrMwSQnNXUS790890Bxbvp'
 
 # ── Ligas configuradas ──
-LIGAS = {
-    'UCL': {
-        'nombre':    'UEFA Champions League',
-        'emoji':     '🇪🇺',
-        'fd_id':     2001,
-        'odds_key':  'soccer_uefa_champions_league',
-        'activa':    True,
-    },
-    'CSU': {
-        'nombre':    'Copa Sudamericana',
-        'emoji':     '🏆',
-        'fd_id':     None,
-        'odds_key':  'soccer_conmebol_copa_sudamericana',
-        'activa':    True,
-    },
-    'CLB': {
-        'nombre':    'Copa Libertadores',
-        'emoji':     '🏆',
-        'fd_id':     2152,
-        'odds_key':  'soccer_conmebol_copa_libertadores',
-        'activa':    True,
-    },
-    'BSA': {
-        'nombre':    'Brasileirao Serie A',
-        'emoji':     '🇧🇷',
-        'fd_id':     2013,
-        'odds_key':  'soccer_brazil_campeonato',
-        'activa':    True,
-    },
-    'MLS': {
-        'nombre':    'MLS Major League Soccer',
-        'emoji':     '🇺🇸',
-        'fd_id':     None,
-        'odds_key':  'soccer_usa_mls',
-        'activa':    True,
-    },
-    'LP1': {
-        'nombre':    'Liga 1 Clausura Peru',
-        'emoji':     '🇵🇪',
-        'fd_id':     None,
-        'odds_key':  'soccer_peru_primera_division',
-        'activa':    True,
-    },
-    'UEL': {
-        'nombre':    'UEFA Europa League',
-        'emoji':     '🇪🇺',
-        'fd_id':     None,
-        'odds_key':  'soccer_uefa_europa_league',
-        'activa':    True,
-    },
-}
+# Se cargan dinamicamente desde Data/thestats_ligas.csv (generado por
+# descargar_thestats_ligas.py). Clave: id de competicion de TheStatsAPI
+# (p.ej. 'comp_9799'). Todas las ligas del CSV se consideran activas.
+def _cargar_ligas():
+    ruta = os.path.join(RAIZ, 'Data', 'thestats_ligas.csv')
+    ligas = {}
+    if not os.path.exists(ruta):
+        return ligas
+
+    def _bool(v):
+        return str(v).strip().lower() == 'true'
+
+    with open(ruta, encoding='utf-8') as f:
+        for row in csv.DictReader(f):
+            ligas[row['id']] = {
+                'nombre':              row['name'],
+                'pais':                row['country'] or None,
+                'confederacion':       row['confederation'] or None,
+                'tipo':                row['type'],
+                'has_team_stats':      _bool(row['has_team_stats']),
+                'has_player_stats':    _bool(row['has_player_stats']),
+                'xg_available':        _bool(row['xg_available']),
+                'odds_available':      _bool(row['odds_available']),
+                'live_odds_available': _bool(row['live_odds_available']),
+                'activa':              True,
+            }
+    return ligas
+
+LIGAS = _cargar_ligas()
 
 # ── Nombres en español / normalización ──
 # Clave: nombre de la Odds API → valor: nombre del histórico (football-data.org)
