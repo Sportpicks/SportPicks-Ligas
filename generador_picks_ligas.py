@@ -278,7 +278,7 @@ def seleccionar_premium(todos, mercados_excluidos):
 
     return [mejor] if mejor else []
 
-def main(fecha=None, dias=2):
+def main(fecha=None, dias=3):
     if fecha is None:
         fecha = hoy_peru()
 
