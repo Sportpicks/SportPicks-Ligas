@@ -3,10 +3,10 @@ CSU,Copa Sudamericana,2026-07-21,17:00,Club Nacional de Football,CA Tigre,,,,SCH
 CSU,Copa Sudamericana,2026-07-21,19:30,Club Universitario de Deportes,Santos FC,,,,SCHEDULED,4.17,3.39,1.85,2.07,1.72,odds-api
 CSU,Copa Sudamericana,2026-07-22,17:00,CDC Atlético Nacional,CR Vasco da Gama,,,,SCHEDULED,2.27,3.18,3.06,2.12,1.65,odds-api
 CSU,Copa Sudamericana,2026-07-22,19:30,CS Cristal,RB Bragantino,,,,SCHEDULED,3.31,3.33,2.11,1.96,1.77,odds-api
-CSU,Copa Sudamericana,2026-07-22,19:30,CA Lanus,Club Cienciano,,,,SCHEDULED,1.29,4.54,8.25,1.8,1.98,odds-api
-CSU,Copa Sudamericana,2026-07-23,17:00,Club Bolívar,Grêmio FBPA,,,,SCHEDULED,1.67,3.91,4.53,1.73,2.04,odds-api
-CSU,Copa Sudamericana,2026-07-23,19:30,CA Boca Juniors,CD O'Higgins,,,,SCHEDULED,1.25,5.16,11.8,1.83,1.94,odds-api
-CSU,Copa Sudamericana,2026-07-23,19:30,Independiente Santa Fe,Caracas FC,,,,SCHEDULED,1.41,4.14,8.68,2.19,1.64,odds-api
+CSU,Copa Sudamericana,2026-07-22,19:30,CA Lanus,Club Cienciano,,,,SCHEDULED,1.32,4.9,8.84,1.8,1.98,odds-api
+CSU,Copa Sudamericana,2026-07-23,17:00,Club Bolívar,Grêmio FBPA,,,,SCHEDULED,1.67,3.91,4.52,1.73,2.04,odds-api
+CSU,Copa Sudamericana,2026-07-23,19:30,CA Boca Juniors,CD O'Higgins,,,,SCHEDULED,1.25,5.15,11.67,1.83,1.94,odds-api
+CSU,Copa Sudamericana,2026-07-23,19:30,Independiente Santa Fe,Caracas FC,,,,SCHEDULED,1.41,4.14,8.63,2.19,1.64,odds-api
 CLB,Copa Libertadores,2026-08-11,17:00,Fluminense FC,Independiente Rivadavia,,,,SCHEDULED,1.52,4.11,5.21,1.91,1.83,odds-api
 CLB,Copa Libertadores,2026-08-11,19:00,CA Rosario Central,SC Corinthians Paulista,,,,SCHEDULED,2.17,3.22,3.22,2.19,1.54,odds-api
 CLB,Copa Libertadores,2026-08-11,19:30,CD Tolima,CAR Independiente del Valle,,,,SCHEDULED,2.48,3.17,2.65,1.94,1.79,odds-api
@@ -19,9 +19,9 @@ CLB,Copa Libertadores,2026-08-13,19:30,CA Rosario Central,SC Corinthians Paulist
 BSA,Brasileirao Serie A,2026-07-21,17:30,CA Mineiro,EC Bahia,,,,SCHEDULED,2.08,3.28,3.47,1.88,1.87,odds-api
 BSA,Brasileirao Serie A,2026-07-22,17:30,Coritiba FC,SE Palmeiras,,,,SCHEDULED,3.9,3.21,1.96,2.14,1.66,odds-api
 BSA,Brasileirao Serie A,2026-07-22,19:30,São Paulo FC,Club Athletico Paranaense,,,,SCHEDULED,1.97,3.19,3.88,2.17,1.64,odds-api
-BSA,Brasileirao Serie A,2026-07-22,19:30,Chapecoense,CR Flamengo,,,,SCHEDULED,7.02,4.29,1.43,1.82,1.92,odds-api
+BSA,Brasileirao Serie A,2026-07-22,19:30,Chapecoense,CR Flamengo,,,,SCHEDULED,7.02,4.27,1.43,1.82,1.92,odds-api
 BSA,Brasileirao Serie A,2026-07-22,19:30,SC Internacional,Cruzeiro EC,,,,SCHEDULED,2.18,3.21,3.23,2.02,1.73,odds-api
-BSA,Brasileirao Serie A,2026-07-23,17:30,Botafogo FR,EC Vitória,,,,SCHEDULED,1.69,3.59,4.74,1.76,1.99,odds-api
+BSA,Brasileirao Serie A,2026-07-23,17:30,Botafogo FR,EC Vitória,,,,SCHEDULED,1.69,3.59,4.74,1.76,2.0,odds-api
 BSA,Brasileirao Serie A,2026-07-23,17:30,SC Corinthians Paulista,Clube do Remo,,,,SCHEDULED,1.49,3.97,6.38,1.92,1.81,odds-api
 BSA,Brasileirao Serie A,2026-07-23,19:30,Coritiba FC,SE Palmeiras,,,,SCHEDULED,4.18,3.29,1.97,0.0,0.0,odds-api
 BSA,Brasileirao Serie A,2026-07-25,16:30,Club Athletico Paranaense,SC Internacional,,,,SCHEDULED,1.93,3.16,3.93,2.31,1.55,odds-api
@@ -37,7 +37,7 @@ BSA,Brasileirao Serie A,2026-07-26,17:30,Clube do Remo,EC Vitória,,,,SCHEDULED,
 BSA,Brasileirao Serie A,2026-07-28,19:00,Botafogo FR,Grêmio FBPA,,,,SCHEDULED,1.69,3.63,4.19,1.68,2.06,odds-api
 BSA,Brasileirao Serie A,2026-07-28,19:00,Chapecoense,CR Vasco da Gama,,,,SCHEDULED,2.61,3.35,2.35,1.72,1.99,odds-api
 BSA,Brasileirao Serie A,2026-07-29,19:30,Fluminense FC,EC Bahia,,,,SCHEDULED,1.78,3.49,3.84,1.74,1.97,odds-api
-MLS,MLS Major League Soccer,2026-07-22,18:30,Inter Miami,Chicago Fire,,,,SCHEDULED,2.02,4.07,3.0,1.32,3.2,odds-api
+MLS,MLS Major League Soccer,2026-07-22,18:30,Inter Miami,Chicago Fire,,,,SCHEDULED,2.02,4.07,2.99,1.32,3.2,odds-api
 MLS,MLS Major League Soccer,2026-07-22,18:30,Columbus Crew,New York City FC,,,,SCHEDULED,1.93,3.61,3.55,1.68,2.13,odds-api
 MLS,MLS Major League Soccer,2026-07-22,18:30,FC Cincinnati,Vancouver Whitecaps,,,,SCHEDULED,3.75,4.04,1.78,1.39,2.88,odds-api
 MLS,MLS Major League Soccer,2026-07-22,18:30,New England Revolution,Toronto FC,,,,SCHEDULED,1.86,3.68,3.72,1.72,2.06,odds-api
@@ -45,7 +45,7 @@ MLS,MLS Major League Soccer,2026-07-22,18:30,Philadelphia Union,New York Red Bul
 MLS,MLS Major League Soccer,2026-07-22,19:15,Charlotte,Atlanta United FC,,,,SCHEDULED,1.82,3.64,3.95,1.66,2.12,odds-api
 MLS,MLS Major League Soccer,2026-07-22,19:30,Austin,Seattle Sounders,,,,SCHEDULED,3.35,3.57,2.0,1.64,2.17,odds-api
 MLS,MLS Major League Soccer,2026-07-22,19:30,Nashville SC,CF Montreal,,,,SCHEDULED,1.44,4.48,6.34,1.56,2.31,odds-api
-MLS,MLS Major League Soccer,2026-07-22,19:30,Houston Dynamo,DC United,,,,SCHEDULED,1.75,3.7,4.24,1.74,2.03,odds-api
+MLS,MLS Major League Soccer,2026-07-22,19:30,Houston Dynamo,DC United,,,,SCHEDULED,1.75,3.7,4.24,1.75,2.02,odds-api
 MLS,MLS Major League Soccer,2026-07-22,19:30,Sporting Kansas City,Minnesota United FC,,,,SCHEDULED,3.54,3.75,1.9,1.53,2.42,odds-api
 MLS,MLS Major League Soccer,2026-07-22,20:30,Colorado Rapids,San Diego FC,,,,SCHEDULED,2.05,3.82,3.04,1.41,2.8,odds-api
 MLS,MLS Major League Soccer,2026-07-22,21:30,Portland Timbers,FC Dallas,,,,SCHEDULED,2.35,3.64,2.65,1.48,2.56,odds-api
@@ -54,7 +54,7 @@ MLS,MLS Major League Soccer,2026-07-22,21:30,Los Angeles FC,Real Salt Lake,,,,SC
 MLS,MLS Major League Soccer,2026-07-22,21:30,San Jose Earthquakes,Orlando City SC,,,,SCHEDULED,1.47,4.88,5.18,1.31,3.33,odds-api
 MLS,MLS Major League Soccer,2026-07-25,17:30,New York Red Bulls,Charlotte,,,,SCHEDULED,2.08,3.5,2.73,1.52,2.45,odds-api
 MLS,MLS Major League Soccer,2026-07-25,18:00,Columbus Crew,FC Cincinnati,,,,SCHEDULED,1.68,3.82,3.7,1.35,3.1,odds-api
-MLS,MLS Major League Soccer,2026-07-25,18:30,New England Revolution,Atlanta United FC,,,,SCHEDULED,1.85,3.31,3.4,1.79,2.0,odds-api
+MLS,MLS Major League Soccer,2026-07-25,18:30,New England Revolution,Atlanta United FC,,,,SCHEDULED,1.85,3.31,3.4,1.8,1.99,odds-api
 MLS,MLS Major League Soccer,2026-07-25,18:30,CF Montreal,Inter Miami,,,,SCHEDULED,2.94,3.73,1.93,1.38,2.97,odds-api
 MLS,MLS Major League Soccer,2026-07-25,18:30,New York City FC,Chicago Fire,,,,SCHEDULED,2.21,3.4,2.53,1.63,2.26,odds-api
 MLS,MLS Major League Soccer,2026-07-25,18:30,DC United,Toronto FC,,,,SCHEDULED,1.81,3.36,3.55,1.74,2.05,odds-api

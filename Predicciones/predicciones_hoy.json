@@ -199,7 +199,7 @@
       "goles_contra_prom": 1.06
     },
     "ev_1": 0.123,
-    "ev_x": 0.05,
+    "ev_x": 0.049,
     "ev_2": -0.247,
     "ev_over25": -0.125,
     "ev_under25": 0.055,
@@ -370,30 +370,30 @@
     "local": "Los Angeles Galaxy",
     "visitante": "St. Louis City",
     "liga": "MLS",
-    "xg_l": 1.639,
-    "xg_v": 1.109,
+    "xg_l": 1.575,
+    "xg_v": 1.293,
     "fase": "regular",
-    "p1": 48.2,
-    "px": 26.1,
-    "p2": 25.7,
-    "over_1.5": 76.2,
-    "over_2.5": 51.6,
-    "over_3.5": 29.3,
-    "under_2.5": 48.4,
-    "btts_si": 53.4,
-    "btts_no": 46.6,
+    "p1": 42.7,
+    "px": 26.6,
+    "p2": 30.6,
+    "over_1.5": 78.5,
+    "over_2.5": 54.6,
+    "over_3.5": 31.8,
+    "under_2.5": 45.4,
+    "btts_si": 57.4,
+    "btts_no": 42.6,
     "marcador_prob": [
       {
-        "marcador": "1-0",
-        "prob": 12.7
+        "marcador": "1-1",
+        "prob": 12.0
       },
       {
-        "marcador": "1-1",
-        "prob": 11.6
+        "marcador": "1-0",
+        "prob": 10.4
       },
       {
         "marcador": "2-1",
-        "prob": 9.6
+        "prob": 8.9
       }
     ],
     "stats_l": {
@@ -404,17 +404,17 @@
       "goles_contra_prom": 1.56
     },
     "stats_v": {
-      "ataque": 1.125,
-      "defensa": 1.562,
+      "ataque": 1.312,
+      "defensa": 1.5,
       "partidos": 16,
-      "goles_favor_prom": 1.12,
-      "goles_contra_prom": 1.56
+      "goles_favor_prom": 1.31,
+      "goles_contra_prom": 1.5
     },
-    "ev_1": -0.036,
-    "ev_x": -0.006,
-    "ev_2": -0.035,
-    "ev_over25": -0.133,
-    "ev_under25": 0.064,
+    "ev_1": -0.091,
+    "ev_x": -0.001,
+    "ev_2": 0.014,
+    "ev_over25": -0.103,
+    "ev_under25": 0.034,
     "fecha": "2026-07-22",
     "hora": "21:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -423,38 +423,38 @@
     "local": "Portland Timbers",
     "visitante": "FC Dallas",
     "liga": "MLS",
-    "xg_l": 1.933,
-    "xg_v": 2.216,
+    "xg_l": 2.291,
+    "xg_v": 2.144,
     "fase": "regular",
-    "p1": 34.4,
-    "px": 22.6,
-    "p2": 43.0,
-    "over_1.5": 92.5,
-    "over_2.5": 78.7,
-    "over_3.5": 59.8,
-    "under_2.5": 21.3,
-    "btts_si": 76.9,
-    "btts_no": 23.1,
+    "p1": 41.9,
+    "px": 22.4,
+    "p2": 35.7,
+    "over_1.5": 93.4,
+    "over_2.5": 82.0,
+    "over_3.5": 64.7,
+    "under_2.5": 18.0,
+    "btts_si": 79.9,
+    "btts_no": 20.1,
     "marcador_prob": [
       {
-        "marcador": "1-2",
-        "prob": 8.1
+        "marcador": "2-2",
+        "prob": 7.7
       },
       {
         "marcador": "1-1",
-        "prob": 8.0
+        "prob": 7.4
       },
       {
-        "marcador": "2-2",
+        "marcador": "2-1",
         "prob": 7.3
       }
     ],
     "stats_l": {
-      "ataque": 1.688,
-      "defensa": 1.938,
+      "ataque": 2.0,
+      "defensa": 1.875,
       "partidos": 16,
-      "goles_favor_prom": 1.69,
-      "goles_contra_prom": 1.94
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 1.88
     },
     "stats_v": {
       "ataque": 1.812,
@@ -463,11 +463,11 @@
       "goles_favor_prom": 1.81,
       "goles_contra_prom": 1.5
     },
-    "ev_1": -0.082,
-    "ev_x": -0.049,
-    "ev_2": 0.053,
-    "ev_over25": 0.111,
-    "ev_under25": -0.178,
+    "ev_1": -0.007,
+    "ev_x": -0.051,
+    "ev_2": -0.02,
+    "ev_over25": 0.144,
+    "ev_under25": -0.211,
     "fecha": "2026-07-22",
     "hora": "21:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -529,37 +529,37 @@
     "local": "Sporting Kansas City",
     "visitante": "Minnesota United FC",
     "liga": "MLS",
-    "xg_l": 1.043,
+    "xg_l": 1.192,
     "xg_v": 2.173,
     "fase": "regular",
-    "p1": 18.9,
-    "px": 22.3,
-    "p2": 58.8,
-    "over_1.5": 83.1,
-    "over_2.5": 62.4,
-    "over_3.5": 39.6,
-    "under_2.5": 37.6,
-    "btts_si": 57.6,
-    "btts_no": 42.4,
+    "p1": 21.7,
+    "px": 23.0,
+    "p2": 55.3,
+    "over_1.5": 85.0,
+    "over_2.5": 65.4,
+    "over_3.5": 43.1,
+    "under_2.5": 34.6,
+    "btts_si": 62.1,
+    "btts_no": 37.9,
     "marcador_prob": [
       {
-        "marcador": "1-2",
-        "prob": 10.6
+        "marcador": "1-1",
+        "prob": 10.2
       },
       {
-        "marcador": "0-1",
-        "prob": 10.5
+        "marcador": "1-2",
+        "prob": 10.0
       },
       {
         "marcador": "0-2",
-        "prob": 10.3
+        "prob": 9.3
       }
     ],
     "stats_l": {
-      "ataque": 0.875,
+      "ataque": 1.0,
       "defensa": 2.625,
       "partidos": 16,
-      "goles_favor_prom": 0.88,
+      "goles_favor_prom": 1.0,
       "goles_contra_prom": 2.62
     },
     "stats_v": {
@@ -569,11 +569,11 @@
       "goles_favor_prom": 1.31,
       "goles_contra_prom": 1.56
     },
-    "ev_1": -0.093,
-    "ev_x": -0.044,
-    "ev_2": 0.062,
-    "ev_over25": -0.03,
-    "ev_under25": -0.037,
+    "ev_1": -0.065,
+    "ev_x": -0.037,
+    "ev_2": 0.027,
+    "ev_over25": 0.0,
+    "ev_under25": -0.067,
     "fecha": "2026-07-22",
     "hora": "19:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -582,26 +582,26 @@
     "local": "Nashville SC",
     "visitante": "CF Montreal",
     "liga": "MLS",
-    "xg_l": 3.24,
+    "xg_l": 3.054,
     "xg_v": 0.851,
     "fase": "regular",
-    "p1": 76.5,
-    "px": 14.2,
-    "p2": 9.3,
-    "over_1.5": 91.1,
-    "over_2.5": 77.2,
-    "over_3.5": 57.8,
-    "under_2.5": 22.8,
-    "btts_si": 55.2,
-    "btts_no": 44.8,
+    "p1": 75.1,
+    "px": 14.8,
+    "p2": 10.0,
+    "over_1.5": 89.9,
+    "over_2.5": 74.9,
+    "over_3.5": 55.2,
+    "under_2.5": 25.1,
+    "btts_si": 54.5,
+    "btts_no": 45.5,
     "marcador_prob": [
       {
-        "marcador": "3-0",
-        "prob": 10.7
+        "marcador": "2-0",
+        "prob": 10.9
       },
       {
-        "marcador": "2-0",
-        "prob": 9.6
+        "marcador": "3-0",
+        "prob": 10.2
       },
       {
         "marcador": "2-1",
@@ -617,16 +617,16 @@
     },
     "stats_v": {
       "ataque": 1.438,
-      "defensa": 2.125,
+      "defensa": 2.0,
       "partidos": 16,
       "goles_favor_prom": 1.44,
-      "goles_contra_prom": 2.12
+      "goles_contra_prom": 2.0
     },
-    "ev_1": 0.071,
-    "ev_x": -0.081,
-    "ev_2": -0.065,
-    "ev_over25": 0.131,
-    "ev_under25": -0.205,
+    "ev_1": 0.057,
+    "ev_x": -0.075,
+    "ev_2": -0.058,
+    "ev_over25": 0.108,
+    "ev_under25": -0.182,
     "fecha": "2026-07-22",
     "hora": "19:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -635,30 +635,30 @@
     "local": "Austin",
     "visitante": "Seattle Sounders",
     "liga": "MLS",
-    "xg_l": 0.955,
+    "xg_l": 1.252,
     "xg_v": 2.157,
     "fase": "regular",
-    "p1": 18.0,
-    "px": 22.0,
-    "p2": 60.0,
-    "over_1.5": 82.4,
-    "over_2.5": 59.9,
-    "over_3.5": 37.0,
-    "under_2.5": 40.1,
-    "btts_si": 54.7,
-    "btts_no": 45.3,
+    "p1": 22.8,
+    "px": 22.9,
+    "p2": 54.2,
+    "over_1.5": 85.4,
+    "over_2.5": 65.7,
+    "over_3.5": 44.9,
+    "under_2.5": 34.3,
+    "btts_si": 63.7,
+    "btts_no": 36.3,
     "marcador_prob": [
       {
-        "marcador": "0-2",
-        "prob": 11.5
-      },
-      {
-        "marcador": "0-1",
-        "prob": 10.9
-      },
-      {
         "marcador": "1-2",
-        "prob": 10.4
+        "prob": 10.0
+      },
+      {
+        "marcador": "1-1",
+        "prob": 10.0
+      },
+      {
+        "marcador": "0-2",
+        "prob": 9.0
       }
     ],
     "stats_l": {
@@ -670,16 +670,16 @@
     },
     "stats_v": {
       "ataque": 1.562,
-      "defensa": 1.0,
+      "defensa": 1.312,
       "partidos": 16,
       "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.0
+      "goles_contra_prom": 1.31
     },
-    "ev_1": -0.119,
-    "ev_x": -0.06,
-    "ev_2": 0.1,
-    "ev_over25": -0.011,
-    "ev_under25": -0.06,
+    "ev_1": -0.071,
+    "ev_x": -0.051,
+    "ev_2": 0.042,
+    "ev_over25": 0.047,
+    "ev_under25": -0.118,
     "fecha": "2026-07-22",
     "hora": "19:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -688,18 +688,18 @@
     "local": "Inter Miami",
     "visitante": "Chicago Fire",
     "liga": "MLS",
-    "xg_l": 2.863,
-    "xg_v": 1.987,
+    "xg_l": 2.804,
+    "xg_v": 2.064,
     "fase": "regular",
-    "p1": 53.0,
-    "px": 19.6,
-    "p2": 27.3,
-    "over_1.5": 95.5,
-    "over_2.5": 85.9,
-    "over_3.5": 71.2,
-    "under_2.5": 14.1,
-    "btts_si": 81.4,
-    "btts_no": 18.6,
+    "p1": 51.0,
+    "px": 20.5,
+    "p2": 28.6,
+    "over_1.5": 95.4,
+    "over_2.5": 87.0,
+    "over_3.5": 72.0,
+    "under_2.5": 13.0,
+    "btts_si": 82.4,
+    "btts_no": 17.6,
     "marcador_prob": [
       {
         "marcador": "2-1",
@@ -707,19 +707,19 @@
       },
       {
         "marcador": "2-2",
-        "prob": 6.5
+        "prob": 6.8
       },
       {
         "marcador": "3-1",
-        "prob": 6.4
+        "prob": 6.2
       }
     ],
     "stats_l": {
-      "ataque": 3.0,
-      "defensa": 1.625,
+      "ataque": 2.938,
+      "defensa": 1.688,
       "partidos": 16,
-      "goles_favor_prom": 3.0,
-      "goles_contra_prom": 1.62
+      "goles_favor_prom": 2.94,
+      "goles_contra_prom": 1.69
     },
     "stats_v": {
       "ataque": 1.938,
@@ -728,11 +728,11 @@
       "goles_favor_prom": 1.94,
       "goles_contra_prom": 1.25
     },
-    "ev_1": 0.035,
-    "ev_x": -0.05,
-    "ev_2": -0.06,
-    "ev_over25": 0.101,
-    "ev_under25": -0.172,
+    "ev_1": 0.015,
+    "ev_x": -0.041,
+    "ev_2": -0.048,
+    "ev_over25": 0.112,
+    "ev_under25": -0.182,
     "fecha": "2026-07-22",
     "hora": "18:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -794,30 +794,30 @@
     "local": "FC Cincinnati",
     "visitante": "Vancouver Whitecaps",
     "liga": "MLS",
-    "xg_l": 1.503,
+    "xg_l": 1.718,
     "xg_v": 3.024,
     "fase": "regular",
-    "p1": 18.9,
-    "px": 18.0,
-    "p2": 63.1,
-    "over_1.5": 94.0,
-    "over_2.5": 82.4,
-    "over_3.5": 66.1,
-    "under_2.5": 17.6,
-    "btts_si": 74.5,
-    "btts_no": 25.5,
+    "p1": 21.7,
+    "px": 18.4,
+    "p2": 59.8,
+    "over_1.5": 95.2,
+    "over_2.5": 85.2,
+    "over_3.5": 69.9,
+    "under_2.5": 14.8,
+    "btts_si": 78.4,
+    "btts_no": 21.6,
     "marcador_prob": [
       {
         "marcador": "1-2",
-        "prob": 8.1
+        "prob": 7.8
       },
       {
         "marcador": "1-3",
-        "prob": 7.9
+        "prob": 7.3
       },
       {
-        "marcador": "0-2",
-        "prob": 5.8
+        "marcador": "2-3",
+        "prob": 6.3
       }
     ],
     "stats_l": {
@@ -829,16 +829,16 @@
     },
     "stats_v": {
       "ataque": 2.375,
-      "defensa": 0.875,
+      "defensa": 1.0,
       "partidos": 16,
       "goles_favor_prom": 2.38,
-      "goles_contra_prom": 0.88
+      "goles_contra_prom": 1.0
     },
-    "ev_1": -0.078,
-    "ev_x": -0.068,
-    "ev_2": 0.069,
-    "ev_over25": 0.105,
-    "ev_under25": -0.171,
+    "ev_1": -0.05,
+    "ev_x": -0.064,
+    "ev_2": 0.036,
+    "ev_over25": 0.133,
+    "ev_under25": -0.199,
     "fecha": "2026-07-22",
     "hora": "18:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -847,22 +847,22 @@
     "local": "New England Revolution",
     "visitante": "Toronto FC",
     "liga": "MLS",
-    "xg_l": 2.264,
-    "xg_v": 1.361,
+    "xg_l": 2.196,
+    "xg_v": 1.305,
     "fase": "regular",
-    "p1": 54.5,
-    "px": 22.3,
-    "p2": 23.3,
-    "over_1.5": 87.9,
-    "over_2.5": 70.6,
-    "over_3.5": 49.7,
-    "under_2.5": 29.4,
-    "btts_si": 67.0,
-    "btts_no": 33.0,
+    "p1": 54.6,
+    "px": 22.4,
+    "p2": 22.9,
+    "over_1.5": 86.5,
+    "over_2.5": 68.0,
+    "over_3.5": 46.3,
+    "under_2.5": 32.0,
+    "btts_si": 64.7,
+    "btts_no": 35.3,
     "marcador_prob": [
       {
         "marcador": "2-1",
-        "prob": 10.0
+        "prob": 10.2
       },
       {
         "marcador": "1-1",
@@ -870,7 +870,7 @@
       },
       {
         "marcador": "2-0",
-        "prob": 7.5
+        "prob": 8.4
       }
     ],
     "stats_l": {
@@ -881,17 +881,17 @@
       "goles_contra_prom": 1.44
     },
     "stats_v": {
-      "ataque": 1.5,
-      "defensa": 2.062,
+      "ataque": 1.438,
+      "defensa": 2.0,
       "partidos": 16,
-      "goles_favor_prom": 1.5,
-      "goles_contra_prom": 2.06
+      "goles_favor_prom": 1.44,
+      "goles_contra_prom": 2.0
     },
-    "ev_1": 0.007,
-    "ev_x": -0.049,
-    "ev_2": -0.036,
-    "ev_over25": 0.125,
-    "ev_under25": -0.191,
+    "ev_1": 0.008,
+    "ev_x": -0.048,
+    "ev_2": -0.04,
+    "ev_over25": 0.099,
+    "ev_under25": -0.165,
     "fecha": "2026-07-22",
     "hora": "18:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -943,8 +943,8 @@
     "ev_1": -0.161,
     "ev_x": -0.021,
     "ev_2": 0.105,
-    "ev_over25": 0.062,
-    "ev_under25": -0.13,
+    "ev_over25": 0.066,
+    "ev_under25": -0.132,
     "fecha": "2026-07-22",
     "hora": "19:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -1256,9 +1256,9 @@
       "defensa": 1.0,
       "partidos": 0
     },
-    "ev_1": -0.211,
-    "ev_x": 0.072,
-    "ev_2": 0.023,
+    "ev_1": -0.194,
+    "ev_x": 0.088,
+    "ev_2": 0.031,
     "ev_over25": -0.196,
     "ev_under25": 0.135,
     "fecha": "2026-07-22",
@@ -1364,7 +1364,7 @@
     "ev_x": -0.023,
     "ev_2": 0.002,
     "ev_over25": -0.049,
-    "ev_under25": -0.022,
+    "ev_under25": -0.019,
     "fecha": "2026-07-23",
     "hora": "17:30",
     "liga_nombre": "Brasileirao Serie A"
@@ -1566,7 +1566,7 @@
     },
     "ev_1": -0.264,
     "ev_x": 0.055,
-    "ev_2": 0.13,
+    "ev_2": 0.129,
     "ev_over25": 0.004,
     "ev_under25": -0.065,
     "fecha": "2026-07-23",
@@ -1619,7 +1619,7 @@
     },
     "ev_1": -0.374,
     "ev_x": 0.006,
-    "ev_2": 0.302,
+    "ev_2": 0.301,
     "ev_over25": 0.203,
     "ev_under25": -0.27,
     "fecha": "2026-07-23",
@@ -1789,38 +1789,38 @@
     "local": "St. Louis City",
     "visitante": "Colorado Rapids",
     "liga": "MLS",
-    "xg_l": 1.449,
-    "xg_v": 1.602,
+    "xg_l": 1.691,
+    "xg_v": 1.538,
     "fase": "regular",
-    "p1": 34.7,
-    "px": 26.2,
-    "p2": 39.2,
-    "over_1.5": 81.0,
-    "over_2.5": 59.4,
-    "over_3.5": 35.9,
-    "under_2.5": 40.6,
-    "btts_si": 61.2,
-    "btts_no": 38.8,
+    "p1": 40.7,
+    "px": 25.2,
+    "p2": 34.2,
+    "over_1.5": 83.5,
+    "over_2.5": 62.6,
+    "over_3.5": 40.4,
+    "under_2.5": 37.4,
+    "btts_si": 64.0,
+    "btts_no": 36.0,
     "marcador_prob": [
       {
         "marcador": "1-1",
-        "prob": 11.9
+        "prob": 11.3
       },
       {
-        "marcador": "0-1",
+        "marcador": "2-1",
         "prob": 8.9
       },
       {
         "marcador": "1-2",
-        "prob": 8.6
+        "prob": 8.1
       }
     ],
     "stats_l": {
-      "ataque": 1.125,
-      "defensa": 1.562,
+      "ataque": 1.312,
+      "defensa": 1.5,
       "partidos": 16,
-      "goles_favor_prom": 1.12,
-      "goles_contra_prom": 1.56
+      "goles_favor_prom": 1.31,
+      "goles_contra_prom": 1.5
     },
     "stats_v": {
       "ataque": 1.625,
@@ -1829,11 +1829,11 @@
       "goles_favor_prom": 1.62,
       "goles_contra_prom": 1.69
     },
-    "ev_1": -0.228,
-    "ev_x": -0.017,
-    "ev_2": 0.107,
-    "ev_over25": -0.035,
-    "ev_under25": -0.025,
+    "ev_1": -0.168,
+    "ev_x": -0.027,
+    "ev_2": 0.057,
+    "ev_over25": -0.003,
+    "ev_under25": -0.057,
     "fecha": "2026-07-25",
     "hora": "19:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -1842,30 +1842,30 @@
     "local": "Philadelphia Union",
     "visitante": "Seattle Sounders",
     "liga": "MLS",
-    "xg_l": 0.955,
+    "xg_l": 1.252,
     "xg_v": 1.971,
     "fase": "regular",
-    "p1": 19.6,
-    "px": 23.7,
-    "p2": 56.7,
-    "over_1.5": 78.8,
-    "over_2.5": 55.5,
-    "over_3.5": 33.2,
-    "under_2.5": 44.5,
-    "btts_si": 53.0,
-    "btts_no": 47.0,
+    "p1": 24.9,
+    "px": 24.5,
+    "p2": 50.6,
+    "over_1.5": 82.8,
+    "over_2.5": 62.7,
+    "over_3.5": 39.9,
+    "under_2.5": 37.3,
+    "btts_si": 61.4,
+    "btts_no": 38.6,
     "marcador_prob": [
       {
-        "marcador": "0-1",
-        "prob": 12.0
-      },
-      {
-        "marcador": "0-2",
-        "prob": 11.1
-      },
-      {
         "marcador": "1-1",
-        "prob": 10.8
+        "prob": 11.0
+      },
+      {
+        "marcador": "1-2",
+        "prob": 10.1
+      },
+      {
+        "marcador": "0-1",
+        "prob": 9.4
       }
     ],
     "stats_l": {
@@ -1877,16 +1877,16 @@
     },
     "stats_v": {
       "ataque": 1.562,
-      "defensa": 1.0,
+      "defensa": 1.312,
       "partidos": 16,
       "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.0
+      "goles_contra_prom": 1.31
     },
-    "ev_1": -0.285,
-    "ev_x": -0.064,
-    "ev_2": 0.207,
-    "ev_over25": -0.044,
-    "ev_under25": -0.018,
+    "ev_1": -0.232,
+    "ev_x": -0.056,
+    "ev_2": 0.146,
+    "ev_over25": 0.028,
+    "ev_under25": -0.09,
     "fecha": "2026-07-25",
     "hora": "18:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -2097,8 +2097,8 @@
     "ev_1": 0.062,
     "ev_x": -0.071,
     "ev_2": -0.128,
-    "ev_over25": -0.053,
-    "ev_under25": -0.006,
+    "ev_over25": -0.05,
+    "ev_under25": -0.009,
     "fecha": "2026-07-25",
     "hora": "18:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -2107,51 +2107,51 @@
     "local": "CF Montreal",
     "visitante": "Inter Miami",
     "liga": "MLS",
-    "xg_l": 1.784,
+    "xg_l": 1.853,
     "xg_v": 3.024,
     "fase": "regular",
-    "p1": 22.7,
-    "px": 18.7,
-    "p2": 58.6,
-    "over_1.5": 95.8,
-    "over_2.5": 86.4,
-    "over_3.5": 70.5,
-    "under_2.5": 13.6,
-    "btts_si": 79.2,
-    "btts_no": 20.8,
+    "p1": 23.5,
+    "px": 18.6,
+    "p2": 57.9,
+    "over_1.5": 95.6,
+    "over_2.5": 86.5,
+    "over_3.5": 71.7,
+    "under_2.5": 13.5,
+    "btts_si": 80.6,
+    "btts_no": 19.4,
     "marcador_prob": [
       {
-        "marcador": "1-2",
-        "prob": 7.5
-      },
-      {
         "marcador": "1-3",
-        "prob": 6.9
+        "prob": 7.3
       },
       {
-        "marcador": "2-3",
-        "prob": 6.7
+        "marcador": "1-2",
+        "prob": 7.3
+      },
+      {
+        "marcador": "2-2",
+        "prob": 6.3
       }
     ],
     "stats_l": {
       "ataque": 1.438,
-      "defensa": 2.125,
+      "defensa": 2.0,
       "partidos": 16,
       "goles_favor_prom": 1.44,
-      "goles_contra_prom": 2.12
+      "goles_contra_prom": 2.0
     },
     "stats_v": {
-      "ataque": 3.0,
-      "defensa": 1.625,
+      "ataque": 2.938,
+      "defensa": 1.688,
       "partidos": 16,
-      "goles_favor_prom": 3.0,
-      "goles_contra_prom": 1.62
+      "goles_favor_prom": 2.94,
+      "goles_contra_prom": 1.69
     },
-    "ev_1": -0.113,
-    "ev_x": -0.081,
-    "ev_2": 0.068,
-    "ev_over25": 0.139,
-    "ev_under25": -0.201,
+    "ev_1": -0.105,
+    "ev_x": -0.082,
+    "ev_2": 0.061,
+    "ev_over25": 0.14,
+    "ev_under25": -0.202,
     "fecha": "2026-07-25",
     "hora": "18:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -2160,30 +2160,30 @@
     "local": "DC United",
     "visitante": "Toronto FC",
     "liga": "MLS",
-    "xg_l": 2.066,
-    "xg_v": 1.538,
+    "xg_l": 2.003,
+    "xg_v": 1.474,
     "fase": "regular",
     "p1": 47.7,
-    "px": 23.6,
-    "p2": 28.7,
-    "over_1.5": 87.3,
-    "over_2.5": 69.6,
-    "over_3.5": 48.2,
-    "under_2.5": 30.4,
-    "btts_si": 68.8,
-    "btts_no": 31.2,
+    "px": 23.9,
+    "p2": 28.4,
+    "over_1.5": 86.2,
+    "over_2.5": 67.5,
+    "over_3.5": 46.1,
+    "under_2.5": 32.5,
+    "btts_si": 66.8,
+    "btts_no": 33.2,
     "marcador_prob": [
       {
         "marcador": "1-1",
-        "prob": 9.9
+        "prob": 10.0
       },
       {
         "marcador": "2-1",
-        "prob": 9.5
+        "prob": 9.3
       },
       {
-        "marcador": "1-2",
-        "prob": 6.9
+        "marcador": "1-0",
+        "prob": 7.6
       }
     ],
     "stats_l": {
@@ -2194,17 +2194,17 @@
       "goles_contra_prom": 1.62
     },
     "stats_v": {
-      "ataque": 1.5,
-      "defensa": 2.062,
+      "ataque": 1.438,
+      "defensa": 2.0,
       "partidos": 16,
-      "goles_favor_prom": 1.5,
-      "goles_contra_prom": 2.06
+      "goles_favor_prom": 1.44,
+      "goles_contra_prom": 2.0
     },
     "ev_1": -0.075,
-    "ev_x": -0.062,
-    "ev_2": 0.005,
-    "ev_over25": 0.121,
-    "ev_under25": -0.184,
+    "ev_x": -0.059,
+    "ev_2": 0.002,
+    "ev_over25": 0.1,
+    "ev_under25": -0.163,
     "fecha": "2026-07-25",
     "hora": "18:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -2213,30 +2213,30 @@
     "local": "Minnesota United FC",
     "visitante": "Vancouver Whitecaps",
     "liga": "MLS",
-    "xg_l": 0.877,
+    "xg_l": 1.002,
     "xg_v": 2.34,
     "fase": "regular",
-    "p1": 14.6,
-    "px": 20.0,
-    "p2": 65.4,
-    "over_1.5": 83.0,
-    "over_2.5": 61.9,
-    "over_3.5": 39.6,
-    "under_2.5": 38.1,
-    "btts_si": 53.0,
-    "btts_no": 47.0,
+    "p1": 16.8,
+    "px": 21.2,
+    "p2": 62.0,
+    "over_1.5": 84.8,
+    "over_2.5": 64.1,
+    "over_3.5": 42.5,
+    "under_2.5": 35.9,
+    "btts_si": 57.6,
+    "btts_no": 42.4,
     "marcador_prob": [
       {
         "marcador": "0-2",
-        "prob": 12.5
-      },
-      {
-        "marcador": "0-1",
-        "prob": 11.1
+        "prob": 10.4
       },
       {
         "marcador": "1-2",
         "prob": 10.2
+      },
+      {
+        "marcador": "0-1",
+        "prob": 9.8
       }
     ],
     "stats_l": {
@@ -2248,16 +2248,16 @@
     },
     "stats_v": {
       "ataque": 2.375,
-      "defensa": 0.875,
+      "defensa": 1.0,
       "partidos": 16,
       "goles_favor_prom": 2.38,
-      "goles_contra_prom": 0.88
+      "goles_contra_prom": 1.0
     },
-    "ev_1": -0.181,
-    "ev_x": -0.09,
-    "ev_2": 0.125,
-    "ev_over25": -0.014,
-    "ev_under25": -0.048,
+    "ev_1": -0.159,
+    "ev_x": -0.078,
+    "ev_2": 0.091,
+    "ev_over25": 0.008,
+    "ev_under25": -0.07,
     "fecha": "2026-07-25",
     "hora": "19:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -2319,38 +2319,38 @@
     "local": "Portland Timbers",
     "visitante": "Real Salt Lake",
     "liga": "MLS",
-    "xg_l": 1.933,
-    "xg_v": 2.216,
+    "xg_l": 2.291,
+    "xg_v": 2.144,
     "fase": "regular",
-    "p1": 34.4,
-    "px": 22.6,
-    "p2": 43.0,
-    "over_1.5": 92.5,
-    "over_2.5": 78.7,
-    "over_3.5": 59.8,
-    "under_2.5": 21.3,
-    "btts_si": 76.9,
-    "btts_no": 23.1,
+    "p1": 41.9,
+    "px": 22.4,
+    "p2": 35.7,
+    "over_1.5": 93.4,
+    "over_2.5": 82.0,
+    "over_3.5": 64.7,
+    "under_2.5": 18.0,
+    "btts_si": 79.9,
+    "btts_no": 20.1,
     "marcador_prob": [
       {
-        "marcador": "1-2",
-        "prob": 8.1
+        "marcador": "2-2",
+        "prob": 7.7
       },
       {
         "marcador": "1-1",
-        "prob": 8.0
+        "prob": 7.4
       },
       {
-        "marcador": "2-2",
+        "marcador": "2-1",
         "prob": 7.3
       }
     ],
     "stats_l": {
-      "ataque": 1.688,
-      "defensa": 1.938,
+      "ataque": 2.0,
+      "defensa": 1.875,
       "partidos": 16,
-      "goles_favor_prom": 1.69,
-      "goles_contra_prom": 1.94
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 1.88
     },
     "stats_v": {
       "ataque": 1.812,
@@ -2359,11 +2359,11 @@
       "goles_favor_prom": 1.81,
       "goles_contra_prom": 1.5
     },
-    "ev_1": -0.117,
-    "ev_x": -0.06,
-    "ev_2": 0.027,
-    "ev_over25": 0.093,
-    "ev_under25": -0.169,
+    "ev_1": -0.042,
+    "ev_x": -0.062,
+    "ev_2": -0.046,
+    "ev_over25": 0.126,
+    "ev_under25": -0.202,
     "fecha": "2026-07-25",
     "hora": "21:30",
     "liga_nombre": "MLS Major League Soccer"
@@ -2530,29 +2530,29 @@
     "visitante": "Sporting Kansas City",
     "liga": "MLS",
     "xg_l": 3.24,
-    "xg_v": 0.586,
+    "xg_v": 0.67,
     "fase": "regular",
-    "p1": 80.6,
-    "px": 12.3,
-    "p2": 7.1,
-    "over_1.5": 89.5,
-    "over_2.5": 73.3,
-    "over_3.5": 53.2,
-    "under_2.5": 26.7,
-    "btts_si": 42.4,
-    "btts_no": 57.6,
+    "p1": 79.3,
+    "px": 12.7,
+    "p2": 7.9,
+    "over_1.5": 90.0,
+    "over_2.5": 74.6,
+    "over_3.5": 54.9,
+    "under_2.5": 25.4,
+    "btts_si": 47.1,
+    "btts_no": 52.9,
     "marcador_prob": [
       {
         "marcador": "3-0",
-        "prob": 13.4
+        "prob": 12.3
       },
       {
         "marcador": "2-0",
-        "prob": 13.0
+        "prob": 11.8
       },
       {
         "marcador": "4-0",
-        "prob": 9.9
+        "prob": 9.3
       }
     ],
     "stats_l": {
@@ -2563,17 +2563,17 @@
       "goles_contra_prom": 1.06
     },
     "stats_v": {
-      "ataque": 0.875,
+      "ataque": 1.0,
       "defensa": 2.625,
       "partidos": 16,
-      "goles_favor_prom": 0.88,
+      "goles_favor_prom": 1.0,
       "goles_contra_prom": 2.62
     },
-    "ev_1": -0.056,
-    "ev_x": -0.033,
-    "ev_2": -0.022,
-    "ev_over25": -0.067,
-    "ev_under25": -0.019,
+    "ev_1": -0.069,
+    "ev_x": -0.029,
+    "ev_2": -0.014,
+    "ev_over25": -0.054,
+    "ev_under25": -0.032,
     "fecha": "2026-07-25",
     "hora": "21:30",
     "liga_nombre": "MLS Major League Soccer"
