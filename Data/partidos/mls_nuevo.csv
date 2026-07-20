@@ -1,0 +1,705 @@
+liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente
+MLS,MLS Major League Soccer,2025-02-22,,Los Angeles FC,Minnesota United FC,1,0,1-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,Atlanta United FC,CF Montreal,3,2,3-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,Columbus Crew,Chicago Fire,4,2,4-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,DC United,Toronto FC,2,2,2-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,FC Cincinnati,New York Red Bulls,1,0,1-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,Inter Miami,New York City FC,2,2,2-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,Houston Dynamo,FC Dallas,1,2,1-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,Nashville SC,New England Revolution,0,0,0-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,Austin,Sporting Kansas City,1,0,1-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,St. Louis City,Colorado Rapids,0,0,0-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,Seattle Sounders,Charlotte,2,2,2-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-22,,San Jose Earthquakes,Real Salt Lake,4,0,4-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-23,,Portland Timbers,Vancouver Whitecaps,1,4,1-4,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-02-23,,Los Angeles Galaxy,San Diego,0,2,0-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,Charlotte,Atlanta United FC,2,0,2-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,Real Salt Lake,Seattle Sounders,2,0,2-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,Philadelphia Union,FC Cincinnati,4,1,4-1,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,New York Red Bulls,Nashville SC,2,0,2-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,New England Revolution,Columbus Crew,0,1,0-1,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,Chicago Fire,DC United,2,2,2-2,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,Minnesota United FC,CF Montreal,1,0,1-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,Los Angeles FC,New York City FC,1,0,1-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,Portland Timbers,Austin,1,0,1-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-01,,San Diego,St. Louis City,0,0,0-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-02,,Vancouver Whitecaps,Los Angeles Galaxy,2,1,2-1,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-02,,Houston Dynamo,Inter Miami,1,4,1-4,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,Columbus Crew,Houston Dynamo,0,0,0-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,Seattle Sounders,Los Angeles FC,5,2,5-2,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,New York City FC,Orlando City SC,2,1,2-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,Atlanta United FC,New York Red Bulls,0,0,0-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,New England Revolution,Philadelphia Union,0,2,0-2,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,DC United,Sporting Kansas City,2,1,2-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,FC Cincinnati,Toronto FC,2,0,2-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,FC Dallas,Chicago Fire,1,3,1-3,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,Nashville SC,Portland Timbers,2,0,2-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,Austin,Colorado Rapids,0,1,0-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,Vancouver Whitecaps,CF Montreal,2,0,2-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,Real Salt Lake,San Diego,1,3,1-3,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-08,,San Jose Earthquakes,Minnesota United FC,0,1,0-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-09,,Inter Miami,Charlotte,1,0,1-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-09,,Los Angeles Galaxy,St. Louis City,0,3,0-3,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,Toronto FC,Chicago Fire,1,2,1-2,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,New York Red Bulls,Orlando City SC,2,2,2-2,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,Los Angeles FC,Austin,0,1,0-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,DC United,CF Montreal,0,0,0-0,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,New York City FC,New England Revolution,2,1,2-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,Charlotte,FC Cincinnati,2,0,2-0,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,FC Dallas,Vancouver Whitecaps,0,1,0-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,Houston Dynamo,Real Salt Lake,1,2,1-2,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,St. Louis City,Seattle Sounders,1,0,1-0,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,San Jose Earthquakes,Colorado Rapids,1,2,1-2,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-15,,San Diego,Columbus Crew,1,1,1-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-16,,Philadelphia Union,Nashville SC,1,3,1-3,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-16,,Portland Timbers,Los Angeles Galaxy,1,1,1-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-16,,Atlanta United FC,Inter Miami,1,2,1-2,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,FC Cincinnati,Atlanta United FC,2,2,2-2,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,Minnesota United FC,Los Angeles Galaxy,2,2,2-2,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,Philadelphia Union,St. Louis City,1,0,1-0,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,New York Red Bulls,Toronto FC,2,1,2-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,Columbus Crew,New York City FC,0,0,0-0,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,Charlotte,San Jose Earthquakes,4,1,4-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,Nashville SC,CF Montreal,3,0,3-0,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,Real Salt Lake,FC Dallas,0,1,0-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,Seattle Sounders,Houston Dynamo,0,0,0-0,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-22,,Vancouver Whitecaps,Chicago Fire,1,3,1-3,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-23,,Austin,San Diego,2,1,2-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,Toronto FC,Vancouver Whitecaps,0,0,0-0,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,New England Revolution,New York Red Bulls,2,1,2-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,Atlanta United FC,New York City FC,4,3,4-3,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,DC United,Columbus Crew,1,2,1-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,Inter Miami,Philadelphia Union,2,1,2-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,FC Dallas,Sporting Kansas City,2,1,2-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,Chicago Fire,CF Montreal,1,1,1-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,Minnesota United FC,Real Salt Lake,2,0,2-0,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,Nashville SC,FC Cincinnati,1,2,1-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,San Jose Earthquakes,Seattle Sounders,1,1,1-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,Los Angeles Galaxy,Orlando City SC,1,2,1-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-29,,San Diego,Los Angeles FC,3,2,3-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-30,,St. Louis City,Austin,0,1,0-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-03-30,,Portland Timbers,Houston Dynamo,3,1,3-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,Charlotte,Nashville SC,2,1,2-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,Real Salt Lake,Los Angeles Galaxy,2,0,2-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,Philadelphia Union,Orlando City SC,0,0,0-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,New York Red Bulls,Chicago Fire,2,1,2-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,Atlanta United FC,FC Dallas,1,1,1-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,Columbus Crew,CF Montreal,2,1,2-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,FC Cincinnati,New England Revolution,1,0,1-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,Austin,Portland Timbers,0,0,0-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,Houston Dynamo,Los Angeles FC,1,0,1-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,Vancouver Whitecaps,Colorado Rapids,2,0,2-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-05,,San Diego,Seattle Sounders,3,0,3-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-06,,New York City FC,Minnesota United FC,1,2,1-2,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-06,,San Jose Earthquakes,DC United,6,1,6-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-06,,Inter Miami,Toronto FC,1,1,1-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,Toronto FC,Minnesota United FC,0,0,0-0,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,Atlanta United FC,New England Revolution,0,1,0-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,Vancouver Whitecaps,Austin,5,1,5-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,New York City FC,Philadelphia Union,1,0,1-0,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,CF Montreal,Charlotte,0,1,0-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,DC United,FC Cincinnati,0,1,0-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,FC Dallas,Seattle Sounders,0,1,0-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,Nashville SC,Real Salt Lake,2,1,2-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,Los Angeles Galaxy,Houston Dynamo,1,1,1-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-12,,Los Angeles FC,San Jose Earthquakes,2,1,2-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-13,,Chicago Fire,Inter Miami,0,0,0-0,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-13,,St. Louis City,Columbus Crew,1,2,1-2,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Austin,Los Angeles Galaxy,1,0,1-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Columbus Crew,Inter Miami,0,1,0-1,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Seattle Sounders,Nashville SC,3,0,3-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Philadelphia Union,Atlanta United FC,3,0,3-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,New York Red Bulls,DC United,1,2,1-2,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,New England Revolution,New York City FC,2,0,2-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,CF Montreal,Orlando City SC,0,0,0-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Charlotte,San Diego,3,0,3-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Houston Dynamo,Colorado Rapids,2,2,2-2,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Chicago Fire,FC Cincinnati,2,3,2-3,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Minnesota United FC,FC Dallas,0,0,0-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,St. Louis City,Vancouver Whitecaps,0,0,0-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Real Salt Lake,Toronto FC,0,1,0-1,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,Portland Timbers,Los Angeles FC,3,3,3-3,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-19,,San Jose Earthquakes,Sporting Kansas City,3,5,3-5,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,Toronto FC,New York City FC,0,1,0-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,FC Cincinnati,Sporting Kansas City,2,1,2-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,Philadelphia Union,DC United,3,0,3-0,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,New York Red Bulls,CF Montreal,1,0,1-0,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,Columbus Crew,San Jose Earthquakes,2,1,2-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,Charlotte,New England Revolution,0,1,0-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,San Diego,Real Salt Lake,1,3,1-3,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,Houston Dynamo,Austin,2,0,2-0,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-26,,Nashville SC,Chicago Fire,7,2,7-2,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-27,,Minnesota United FC,Vancouver Whitecaps,1,3,1-3,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-27,,Inter Miami,FC Dallas,3,4,3-4,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-27,,Los Angeles FC,St. Louis City,2,2,2-2,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-04-27,,Los Angeles Galaxy,Portland Timbers,2,4,2-4,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Atlanta United FC,Nashville SC,1,1,1-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Toronto FC,New England Revolution,0,2,0-2,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Columbus Crew,Charlotte,4,2,4-2,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,CF Montreal,Philadelphia Union,1,2,1-2,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,DC United,Colorado Rapids,2,1,2-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Inter Miami,New York Red Bulls,4,1,4-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Chicago Fire,Orlando City SC,0,0,0-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Austin,Minnesota United FC,0,3,0-3,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,San Diego,FC Dallas,5,0,5-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Vancouver Whitecaps,Real Salt Lake,2,1,2-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Seattle Sounders,St. Louis City,4,1,4-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,San Jose Earthquakes,Portland Timbers,4,1,4-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-03,,Los Angeles FC,Houston Dynamo,2,0,2-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-04,,New York City FC,FC Cincinnati,1,0,1-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,Chicago Fire,Atlanta United FC,2,1,2-1,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,Toronto FC,DC United,2,0,2-0,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,Minnesota United FC,Inter Miami,4,1,4-1,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,Philadelphia Union,Columbus Crew,2,2,2-2,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,New York Red Bulls,Los Angeles Galaxy,7,0,7-0,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,New York City FC,CF Montreal,0,1,0-1,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,FC Cincinnati,Austin,2,1,2-1,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,FC Dallas,Real Salt Lake,1,1,1-1,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,Houston Dynamo,Seattle Sounders,1,3,1-3,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,Nashville SC,Charlotte,2,1,2-1,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,St. Louis City,San Diego,1,2,1-2,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-10,,Portland Timbers,Sporting Kansas City,1,0,1-0,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-11,,Vancouver Whitecaps,Los Angeles FC,2,2,2-2,FINISHED,12,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,Philadelphia Union,Los Angeles Galaxy,3,2,3-2,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,Toronto FC,FC Cincinnati,0,1,0-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,CF Montreal,Columbus Crew,1,1,1-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,DC United,New York City FC,0,0,0-0,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,Houston Dynamo,Minnesota United FC,2,0,2-0,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,Nashville SC,New York Red Bulls,2,1,2-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,St. Louis City,Sporting Kansas City,2,2,2-2,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,Austin,Atlanta United FC,1,1,1-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,Real Salt Lake,Portland Timbers,0,0,0-0,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,San Jose Earthquakes,Inter Miami,3,3,3-3,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,Los Angeles FC,Seattle Sounders,4,0,4-0,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-14,,San Diego,Colorado Rapids,2,0,2-0,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,CF Montreal,Toronto FC,1,6,1-6,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,New York City FC,New York Red Bulls,2,0,2-0,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,Columbus Crew,FC Cincinnati,1,1,1-1,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,Atlanta United FC,Philadelphia Union,0,1,0-1,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,New England Revolution,San Jose Earthquakes,0,0,0-0,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,Charlotte,Chicago Fire,1,4,1-4,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,Minnesota United FC,St. Louis City,3,0,3-0,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,Nashville SC,DC United,0,0,0-0,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,Austin,Vancouver Whitecaps,0,0,0-0,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,FC Dallas,Houston Dynamo,0,2,0-2,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,Portland Timbers,Seattle Sounders,1,1,1-1,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-17,,San Diego,Sporting Kansas City,0,0,0-0,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-18,,Inter Miami,Orlando City SC,0,3,0-3,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-18,,Los Angeles Galaxy,Los Angeles FC,2,2,2-2,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,Seattle Sounders,FC Dallas,1,0,1-0,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,San Diego,Los Angeles Galaxy,2,1,2-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,Philadelphia Union,Inter Miami,3,3,3-3,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,Toronto FC,Nashville SC,1,2,1-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,CF Montreal,Los Angeles FC,2,2,2-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,DC United,New York Red Bulls,0,2,0-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,Charlotte,Columbus Crew,3,2,3-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,Minnesota United FC,Austin,1,1,1-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,Real Salt Lake,Vancouver Whitecaps,2,3,2-3,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-24,,San Jose Earthquakes,Houston Dynamo,3,3,3-3,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-25,,New York City FC,Chicago Fire,3,1,3-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-25,,Atlanta United FC,FC Cincinnati,4,2,4-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Toronto FC,Philadelphia Union,1,2,1-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,New York Red Bulls,Charlotte,4,2,4-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,New York City FC,Houston Dynamo,0,3,0-3,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Atlanta United FC,Orlando City SC,3,2,3-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,DC United,New England Revolution,1,1,1-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,FC Cincinnati,FC Dallas,3,3,3-3,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Inter Miami,CF Montreal,4,2,4-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Columbus Crew,Nashville SC,2,2,2-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Seattle Sounders,San Diego,1,0,1-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Austin,Real Salt Lake,1,1,1-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Los Angeles Galaxy,San Jose Earthquakes,0,1,0-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Vancouver Whitecaps,Minnesota United FC,0,0,0-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-28,,Portland Timbers,Colorado Rapids,2,1,2-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,St. Louis City,San Jose Earthquakes,2,1,2-1,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,Nashville SC,New York City FC,2,2,2-2,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,Toronto FC,Charlotte,0,2,0-2,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,New York Red Bulls,Atlanta United FC,2,0,2-0,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,CF Montreal,New England Revolution,0,3,0-3,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,FC Cincinnati,DC United,1,2,1-2,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,Inter Miami,Columbus Crew,5,1,5-1,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,FC Dallas,Philadelphia Union,0,0,0-0,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,Houston Dynamo,Sporting Kansas City,1,3,1-3,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,Los Angeles Galaxy,Real Salt Lake,2,0,2-0,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-05-31,,San Diego,Austin,2,0,2-0,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-06-01,,Seattle Sounders,Minnesota United FC,2,3,2-3,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-06-07,,DC United,Chicago Fire,1,7,1-7,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-08,,Portland Timbers,St. Louis City,2,1,2-1,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-08,,Vancouver Whitecaps,Seattle Sounders,3,0,3-0,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-08,,Los Angeles FC,Sporting Kansas City,3,1,3-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-06-12,,New York City FC,Atlanta United FC,4,0,4-0,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-13,,Portland Timbers,San Jose Earthquakes,1,1,1-1,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,St. Louis City,Los Angeles Galaxy,3,3,3-3,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,Philadelphia Union,Charlotte,2,1,2-1,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,New England Revolution,FC Cincinnati,0,1,0-1,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,Columbus Crew,Vancouver Whitecaps,2,1,2-1,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,Houston Dynamo,CF Montreal,1,3,1-3,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,Chicago Fire,Nashville SC,0,2,0-2,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,Minnesota United FC,San Diego,2,4,2-4,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,Austin,New York Red Bulls,2,1,2-1,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-14,,Real Salt Lake,DC United,2,0,2-0,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,Toronto FC,New York Red Bulls,1,1,1-1,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,New England Revolution,Nashville SC,2,3,2-3,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,Columbus Crew,Atlanta United FC,3,1,3-1,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,CF Montreal,FC Cincinnati,1,3,1-3,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,FC Dallas,San Jose Earthquakes,2,4,2-4,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,Chicago Fire,Philadelphia Union,0,1,0-1,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,Minnesota United FC,Houston Dynamo,3,1,3-1,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,St. Louis City,Orlando City SC,2,4,2-4,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-25,,Vancouver Whitecaps,San Diego,3,5,3-5,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-28,,Toronto FC,Portland Timbers,3,0,3-0,FINISHED,20,regular,manual
+MLS,MLS Major League Soccer,2025-06-28,,New York Red Bulls,Minnesota United FC,2,2,2-2,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-28,,New England Revolution,Colorado Rapids,3,3,3-3,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-28,,CF Montreal,New York City FC,1,0,1-0,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-06-28,,DC United,Nashville SC,0,1,0-1,FINISHED,20,regular,manual
+MLS,MLS Major League Soccer,2025-06-29,,Columbus Crew,Philadelphia Union,1,0,1-0,FINISHED,20,regular,manual
+MLS,MLS Major League Soccer,2025-06-29,,Los Angeles FC,Vancouver Whitecaps,0,1,0-1,FINISHED,20,regular,manual
+MLS,MLS Major League Soccer,2025-07-03,,New York City FC,Toronto FC,3,1,3-1,FINISHED,20,regular,manual
+MLS,MLS Major League Soccer,2025-07-04,,FC Dallas,Minnesota United FC,1,2,1-2,FINISHED,20,regular,manual
+MLS,MLS Major League Soccer,2025-07-04,,Los Angeles Galaxy,Vancouver Whitecaps,3,0,3-0,FINISHED,20,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,Charlotte,Orlando City SC,2,2,2-2,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,CF Montreal,Inter Miami,1,4,1-4,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,DC United,Atlanta United FC,0,0,0-0,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,FC Cincinnati,Chicago Fire,2,1,2-1,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,Nashville SC,Philadelphia Union,1,0,1-0,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,Real Salt Lake,St. Louis City,3,2,3-2,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,San Jose Earthquakes,New York Red Bulls,1,1,1-1,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,Portland Timbers,New England Revolution,2,1,2-1,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-05,,San Diego,Houston Dynamo,3,4,3-4,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-06,,Seattle Sounders,Columbus Crew,1,1,1-1,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-09,,New England Revolution,Inter Miami,1,2,1-2,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-07-09,,Los Angeles FC,Colorado Rapids,3,0,3-0,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Philadelphia Union,New York Red Bulls,2,0,2-0,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Toronto FC,Atlanta United FC,1,1,1-1,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Charlotte,New York City FC,2,0,2-0,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Inter Miami,Nashville SC,2,1,2-1,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Chicago Fire,San Diego,1,2,1-2,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Minnesota United FC,San Jose Earthquakes,4,1,4-1,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Austin,New England Revolution,0,0,0-0,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Real Salt Lake,Houston Dynamo,1,0,1-0,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Los Angeles Galaxy,DC United,2,1,2-1,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-12,,Los Angeles FC,FC Dallas,2,0,2-0,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-13,,St. Louis City,Portland Timbers,2,1,2-1,FINISHED,22,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Philadelphia Union,CF Montreal,2,1,2-1,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,New York Red Bulls,New England Revolution,5,3,5-3,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Atlanta United FC,Chicago Fire,2,2,2-2,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,FC Cincinnati,Inter Miami,3,0,3-0,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Charlotte,DC United,2,1,2-1,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Houston Dynamo,Vancouver Whitecaps,0,3,0-3,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Minnesota United FC,Los Angeles FC,0,1,0-1,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Nashville SC,Columbus Crew,3,0,3-0,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Seattle Sounders,Colorado Rapids,3,3,3-3,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,San Jose Earthquakes,FC Dallas,2,2,2-2,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Los Angeles Galaxy,Austin,1,2,1-2,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,Portland Timbers,Real Salt Lake,0,1,0-1,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-16,,San Diego,Toronto FC,0,1,0-1,FINISHED,23,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,New York Red Bulls,Inter Miami,1,5,1-5,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,Atlanta United FC,Charlotte,2,3,2-3,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,New England Revolution,Orlando City SC,1,2,1-2,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,Columbus Crew,DC United,2,1,2-1,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,CF Montreal,Chicago Fire,0,2,0-2,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,Seattle Sounders,San Jose Earthquakes,3,2,3-2,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,FC Dallas,St. Louis City,3,0,3-0,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,Houston Dynamo,Philadelphia Union,1,1,1-1,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,Nashville SC,Toronto FC,1,0,1-0,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,Real Salt Lake,FC Cincinnati,0,1,0-1,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,Los Angeles FC,Los Angeles Galaxy,3,3,3-3,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,Portland Timbers,Minnesota United FC,1,1,1-1,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-19,,San Diego,Vancouver Whitecaps,1,1,1-1,FINISHED,24,regular,manual
+MLS,MLS Major League Soccer,2025-07-25,,New England Revolution,CF Montreal,1,3,1-3,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-25,,FC Dallas,New York City FC,3,4,3-4,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-25,,Los Angeles FC,Portland Timbers,0,1,0-1,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-25,,San Diego,Nashville SC,1,0,1-0,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,Inter Miami,FC Cincinnati,0,0,0-0,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,Philadelphia Union,Colorado Rapids,3,1,3-1,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,Atlanta United FC,Seattle Sounders,2,2,2-2,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,DC United,Austin,2,4,2-4,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,Charlotte,Toronto FC,2,0,2-0,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,Chicago Fire,New York Red Bulls,1,0,1-0,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,St. Louis City,Minnesota United FC,1,2,1-2,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,Real Salt Lake,San Jose Earthquakes,2,1,2-1,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-07-26,,Vancouver Whitecaps,Sporting Kansas City,3,0,3-0,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-08-09,,Philadelphia Union,Toronto FC,1,1,1-1,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-09,,New England Revolution,DC United,2,0,2-0,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-09,,CF Montreal,Atlanta United FC,1,1,1-1,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-09,,FC Dallas,Portland Timbers,2,0,2-0,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-09,,Chicago Fire,Los Angeles FC,2,2,2-2,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-09,,Austin,Houston Dynamo,2,2,2-2,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-09,,St. Louis City,Nashville SC,3,1,3-1,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-09,,San Jose Earthquakes,Vancouver Whitecaps,2,1,2-1,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-10,,New York Red Bulls,Real Salt Lake,2,1,2-1,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-10,,Minnesota United FC,Colorado Rapids,1,2,1-2,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-10,,FC Cincinnati,Charlotte,0,1,0-1,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-10,,Los Angeles Galaxy,Seattle Sounders,0,4,0-4,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,Toronto FC,Columbus Crew,1,1,1-1,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,New York Red Bulls,Philadelphia Union,1,0,1-0,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,New England Revolution,Los Angeles FC,0,2,0-2,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,CF Montreal,DC United,1,1,1-1,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,Inter Miami,Los Angeles Galaxy,3,1,3-1,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,Charlotte,Real Salt Lake,1,0,1-0,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,Chicago Fire,St. Louis City,3,2,3-2,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,Minnesota United FC,Seattle Sounders,1,0,1-0,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,Austin,FC Dallas,1,1,1-1,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-16,,Portland Timbers,FC Cincinnati,2,3,2-3,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-17,,New York City FC,Nashville SC,2,1,2-1,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-17,,San Jose Earthquakes,San Diego,1,2,1-2,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-17,,Vancouver Whitecaps,Houston Dynamo,1,1,1-1,FINISHED,27,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,Philadelphia Union,Chicago Fire,4,0,4-0,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,Columbus Crew,New England Revolution,1,2,1-2,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,CF Montreal,Austin,3,2,3-2,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,DC United,Inter Miami,1,1,1-1,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,FC Cincinnati,New York City FC,0,1,0-1,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,FC Dallas,Los Angeles FC,1,1,1-1,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,Houston Dynamo,San Jose Earthquakes,1,2,1-2,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,Nashville SC,Orlando City SC,5,1,5-1,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,Vancouver Whitecaps,St. Louis City,3,2,3-2,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,Real Salt Lake,Minnesota United FC,1,3,1-3,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,Los Angeles Galaxy,Colorado Rapids,3,0,3-0,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-23,,San Diego,Portland Timbers,0,0,0-0,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-24,,Atlanta United FC,Toronto FC,0,0,0-0,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-24,,Charlotte,New York Red Bulls,1,0,1-0,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-24,,Seattle Sounders,Sporting Kansas City,5,2,5-2,FINISHED,28,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,Toronto FC,CF Montreal,1,1,1-1,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,New York Red Bulls,Columbus Crew,0,0,0-0,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,New York City FC,DC United,1,2,1-2,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,New England Revolution,Charlotte,1,2,1-2,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,FC Cincinnati,Philadelphia Union,0,1,0-1,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,Minnesota United FC,Portland Timbers,1,1,1-1,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,Nashville SC,Atlanta United FC,0,1,0-1,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,Austin,San Jose Earthquakes,3,1,3-1,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-30,,St. Louis City,Houston Dynamo,2,3,2-3,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-08-31,,Los Angeles FC,San Diego,1,2,1-2,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-09-06,,Houston Dynamo,Los Angeles Galaxy,1,1,1-1,FINISHED,25,regular,manual
+MLS,MLS Major League Soccer,2025-09-06,,Chicago Fire,New England Revolution,3,2,3-2,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-09-06,,St. Louis City,FC Dallas,1,1,1-1,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,Atlanta United FC,Columbus Crew,4,5,4-5,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,New England Revolution,Toronto FC,1,1,1-1,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,CF Montreal,St. Louis City,0,2,0-2,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,DC United,Orlando City SC,1,1,1-1,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,FC Cincinnati,Nashville SC,2,1,2-1,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,Charlotte,Inter Miami,3,0,3-0,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,Seattle Sounders,Los Angeles Galaxy,2,2,2-2,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,San Jose Earthquakes,Los Angeles FC,2,4,2-4,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,FC Dallas,Austin,2,0,2-0,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,Chicago Fire,New York City FC,1,3,1-3,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,Real Salt Lake,Sporting Kansas City,2,1,2-1,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,Vancouver Whitecaps,Philadelphia Union,7,0,7-0,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,Portland Timbers,New York Red Bulls,2,1,2-1,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-13,,San Diego,Minnesota United FC,1,3,1-3,FINISHED,30,regular,manual
+MLS,MLS Major League Soccer,2025-09-16,,Inter Miami,Seattle Sounders,3,1,3-1,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-17,,New York City FC,Columbus Crew,3,2,3-2,FINISHED,26,regular,manual
+MLS,MLS Major League Soccer,2025-09-17,,Real Salt Lake,Los Angeles FC,1,4,1-4,FINISHED,19,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,New York City FC,Charlotte,2,0,2-0,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,Philadelphia Union,New England Revolution,1,0,1-0,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,Atlanta United FC,San Diego,1,1,1-1,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,Columbus Crew,Toronto FC,1,1,1-1,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,CF Montreal,New York Red Bulls,0,2,0-2,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,Inter Miami,DC United,3,2,3-2,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,FC Dallas,Colorado Rapids,3,1,3-1,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,Houston Dynamo,Portland Timbers,1,0,1-0,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,Minnesota United FC,Chicago Fire,0,3,0-3,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,San Jose Earthquakes,St. Louis City,1,3,1-3,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-20,,Los Angeles Galaxy,FC Cincinnati,2,3,2-3,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-21,,Austin,Seattle Sounders,2,1,2-1,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-21,,Los Angeles FC,Real Salt Lake,4,1,4-1,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-24,,New York City FC,Inter Miami,0,4,0-4,FINISHED,31,regular,manual
+MLS,MLS Major League Soccer,2025-09-24,,Vancouver Whitecaps,Portland Timbers,1,1,1-1,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,Toronto FC,Inter Miami,1,1,1-1,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,New York Red Bulls,New York City FC,2,3,2-3,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,New England Revolution,Atlanta United FC,2,0,2-0,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,DC United,Philadelphia Union,0,6,0-6,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,Charlotte,CF Montreal,1,4,1-4,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,Chicago Fire,Columbus Crew,2,0,2-0,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,Nashville SC,Houston Dynamo,3,1,3-1,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,St. Louis City,Los Angeles FC,0,3,0-3,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,Real Salt Lake,Austin,3,1,3-1,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,Seattle Sounders,Vancouver Whitecaps,2,2,2-2,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,Los Angeles Galaxy,Sporting Kansas City,4,1,4-1,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,Portland Timbers,FC Dallas,2,2,2-2,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-27,,San Diego,San Jose Earthquakes,0,1,0-1,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-28,,FC Cincinnati,Orlando City SC,1,1,1-1,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-09-30,,Inter Miami,Chicago Fire,3,5,3-5,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,CF Montreal,Nashville SC,1,1,1-1,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,DC United,Charlotte,0,1,0-1,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,FC Dallas,Los Angeles Galaxy,2,1,2-1,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,Philadelphia Union,New York City FC,1,0,1-0,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,New York Red Bulls,FC Cincinnati,0,1,0-1,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,Inter Miami,New England Revolution,4,1,4-1,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,Houston Dynamo,San Diego,2,4,2-4,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,Chicago Fire,Toronto FC,2,2,2-2,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,Minnesota United FC,Sporting Kansas City,3,0,3-0,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,Austin,St. Louis City,1,3,1-3,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,Real Salt Lake,Colorado Rapids,1,0,1-0,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-04,,Seattle Sounders,Portland Timbers,1,0,1-0,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-05,,Vancouver Whitecaps,San Jose Earthquakes,4,1,4-1,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-05,,Los Angeles FC,Atlanta United FC,1,0,1-0,FINISHED,33,regular,manual
+MLS,MLS Major League Soccer,2025-10-08,,Los Angeles FC,Toronto FC,2,0,2-0,FINISHED,18,regular,manual
+MLS,MLS Major League Soccer,2025-10-11,,Inter Miami,Atlanta United FC,4,0,4-0,FINISHED,20,regular,manual
+MLS,MLS Major League Soccer,2025-10-11,,Seattle Sounders,Real Salt Lake,1,0,1-0,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-10-11,,Los Angeles Galaxy,FC Dallas,2,1,2-1,FINISHED,29,regular,manual
+MLS,MLS Major League Soccer,2025-10-12,,Austin,Los Angeles FC,1,0,1-0,FINISHED,21,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,Toronto FC,Orlando City SC,4,2,4-2,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,New York City FC,Seattle Sounders,1,2,1-2,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,Atlanta United FC,DC United,1,1,1-1,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,New England Revolution,Chicago Fire,2,2,2-2,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,Columbus Crew,New York Red Bulls,3,1,3-1,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,FC Cincinnati,CF Montreal,3,0,3-0,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,Nashville SC,Inter Miami,2,5,2-5,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,Charlotte,Philadelphia Union,2,0,2-0,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,San Jose Earthquakes,Austin,2,1,2-1,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,Vancouver Whitecaps,FC Dallas,1,2,1-2,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,Los Angeles Galaxy,Minnesota United FC,2,1,2-1,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,Portland Timbers,San Diego,0,4,0-4,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-18,,St. Louis City,Real Salt Lake,2,2,2-2,FINISHED,34,regular,manual
+MLS,MLS Major League Soccer,2025-10-22,,Chicago Fire,Orlando City SC,3,1,3-1,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-10-22,,Portland Timbers,Real Salt Lake,3,1,3-1,FINISHED,32,regular,manual
+MLS,MLS Major League Soccer,2025-10-24,,Inter Miami,Nashville SC,3,1,3-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-10-26,,Philadelphia Union,Chicago Fire,2,2,2-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-10-26,,Vancouver Whitecaps,FC Dallas,3,0,3-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-10-26,,San Diego,Portland Timbers,2,1,2-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-10-27,,FC Cincinnati,Columbus Crew,1,0,1-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-10-28,,Charlotte,New York City FC,0,1,0-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-10-29,,Los Angeles FC,Austin,2,1,2-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-01,,New York City FC,Charlotte,0,0,0-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-01,,Chicago Fire,Philadelphia Union,0,3,0-3,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-01,,Nashville SC,Inter Miami,2,1,2-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-01,,FC Dallas,Vancouver Whitecaps,1,1,1-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-01,,Portland Timbers,San Diego,2,2,2-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-02,,Columbus Crew,FC Cincinnati,4,0,4-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-02,,Austin,Los Angeles FC,1,4,1-4,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-03,,Seattle Sounders,Minnesota United FC,4,2,4-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-07,,Charlotte,New York City FC,1,3,1-3,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-08,,Minnesota United FC,Seattle Sounders,3,3,3-3,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-08,,FC Cincinnati,Columbus Crew,2,1,2-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-08,,Inter Miami,Nashville SC,4,0,4-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-09,,San Diego,Portland Timbers,4,0,4-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2025-11-22,,Vancouver Whitecaps,Los Angeles FC,2,2,2-2,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-23,,FC Cincinnati,Inter Miami,0,4,0-4,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-23,,Philadelphia Union,New York City FC,0,1,0-1,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-24,,San Diego,Minnesota United FC,1,0,1-0,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-29,,Inter Miami,New York City FC,5,1,5-1,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-11-29,,San Diego,Vancouver Whitecaps,1,3,1-3,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-12-06,,Inter Miami,Vancouver Whitecaps,3,1,3-1,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,St. Louis City,Charlotte,1,1,1-1,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,FC Cincinnati,Atlanta United FC,2,0,2-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,DC United,Philadelphia Union,1,0,1-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,Orlando City SC,New York Red Bulls,1,2,1-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,Vancouver Whitecaps,Real Salt Lake,1,0,1-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,Austin,Minnesota United FC,2,2,2-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,FC Dallas,Toronto FC,3,2,3-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,Houston Dynamo,Chicago Fire,2,1,2-1,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,Nashville SC,New England Revolution,4,1,4-1,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,Los Angeles FC,Inter Miami,3,0,3-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,Portland Timbers,Columbus Crew,3,2,3-2,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,San Diego,CF Montreal,5,0,5-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-21,,San Jose Earthquakes,Sporting Kansas City,3,0,3-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-22,,Los Angeles Galaxy,New York City FC,1,1,1-1,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-22,,Seattle Sounders,Colorado Rapids,2,0,2-0,FINISHED,1,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,New York Red Bulls,New England Revolution,1,0,1-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,Chicago Fire,CF Montreal,3,0,3-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,Minnesota United FC,FC Cincinnati,1,0,1-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,Colorado Rapids,Portland Timbers,2,0,2-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,Real Salt Lake,Seattle Sounders,2,1,2-1,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,San Jose Earthquakes,Atlanta United FC,2,0,2-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,Houston Dynamo,Los Angeles FC,0,2,0-2,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,Sporting Kansas City,Columbus Crew,2,2,2-2,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,FC Dallas,Nashville SC,0,0,0-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,Vancouver Whitecaps,Toronto FC,3,0,3-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-02-28,,Los Angeles Galaxy,Charlotte,3,0,3-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-03-01,,Austin,DC United,1,0,1-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-03-01,,Philadelphia Union,New York City FC,1,2,1-2,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-03-01,,Orlando City SC,Inter Miami,2,4,2-4,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-03-01,,San Diego,St. Louis City,2,0,2-0,FINISHED,2,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,New York City FC,Orlando City SC,5,0,5-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,DC United,Inter Miami,1,2,1-2,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Columbus Crew,Chicago Fire,0,0,0-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Philadelphia Union,San Jose Earthquakes,0,1,0-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Atlanta United FC,Real Salt Lake,2,3,2-3,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Charlotte,Austin,3,1,3-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,St. Louis City,Seattle Sounders,0,1,0-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Nashville SC,Minnesota United FC,3,1,3-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Sporting Kansas City,San Diego,0,1,0-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Colorado Rapids,Los Angeles Galaxy,4,1,4-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Los Angeles FC,FC Dallas,1,0,1-0,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-07,,Portland Timbers,Vancouver Whitecaps,1,4,1-4,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-08,,New York Red Bulls,CF Montreal,0,3,0-3,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-08,,FC Cincinnati,Toronto FC,0,1,0-1,FINISHED,3,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Toronto FC,New York Red Bulls,1,1,1-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Atlanta United FC,Philadelphia Union,3,1,3-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Columbus Crew,Nashville SC,0,1,0-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Charlotte,Inter Miami,0,0,0-0,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Orlando City SC,CF Montreal,2,1,2-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,New York City FC,Colorado Rapids,3,1,3-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,FC Dallas,San Diego,3,3,3-3,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Chicago Fire,DC United,1,2,1-2,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Houston Dynamo,Portland Timbers,3,2,3-2,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Los Angeles Galaxy,Sporting Kansas City,1,2,1-2,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Real Salt Lake,Austin,2,1,2-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-14,,Los Angeles FC,St. Louis City,2,0,2-0,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-15,,New England Revolution,FC Cincinnati,6,1,6-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-15,,Vancouver Whitecaps,Minnesota United FC,6,0,6-0,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-15,,San Jose Earthquakes,Seattle Sounders,0,1,0-1,FINISHED,4,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,Toronto FC,Columbus Crew,2,1,2-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,Philadelphia Union,Chicago Fire,1,2,1-2,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,Nashville SC,Orlando City SC,5,0,5-0,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,Atlanta United FC,DC United,0,0,0-0,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,Charlotte,New York Red Bulls,6,1,6-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,FC Dallas,Houston Dynamo,4,3,4-3,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,Sporting Kansas City,Colorado Rapids,1,4,1-4,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,St. Louis City,New England Revolution,3,1,3-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,Austin,Los Angeles FC,0,0,0-0,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-21,,Vancouver Whitecaps,San Jose Earthquakes,0,1,0-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-22,,FC Cincinnati,CF Montreal,4,3,4-3,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-22,,New York City FC,Inter Miami,2,3,2-3,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-22,,Minnesota United FC,Seattle Sounders,0,0,0-0,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-22,,Portland Timbers,Los Angeles Galaxy,1,1,1-1,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-03-22,,San Diego,Real Salt Lake,2,2,2-2,FINISHED,5,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Toronto FC,Colorado Rapids,3,2,3-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,New England Revolution,CF Montreal,3,0,3-0,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Real Salt Lake,Sporting Kansas City,3,1,3-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Inter Miami,Austin,2,2,2-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Atlanta United FC,Columbus Crew,1,3,1-3,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,New York Red Bulls,FC Cincinnati,4,2,4-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Charlotte,Philadelphia Union,2,1,2-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,New York City FC,St. Louis City,1,1,1-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,DC United,FC Dallas,0,4,0-4,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Houston Dynamo,Seattle Sounders,0,1,0-1,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Chicago Fire,Nashville SC,1,0,1-0,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Los Angeles FC,Orlando City SC,6,0,6-0,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Los Angeles Galaxy,Minnesota United FC,1,2,1-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,Vancouver Whitecaps,Portland Timbers,3,2,3-2,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-04,,San Jose Earthquakes,San Diego,3,0,3-0,FINISHED,6,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Toronto FC,FC Cincinnati,1,1,1-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Austin,Los Angeles Galaxy,1,2,1-2,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,CF Montreal,Philadelphia Union,1,2,1-2,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Portland Timbers,Los Angeles FC,2,1,2-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Inter Miami,New York Red Bulls,2,2,2-2,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Vancouver Whitecaps,New York City FC,2,0,2-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Charlotte,Nashville SC,1,2,1-2,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,New England Revolution,DC United,1,0,1-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Chicago Fire,Atlanta United FC,1,0,1-0,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,FC Dallas,St. Louis City,1,1,1-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Sporting Kansas City,San Jose Earthquakes,1,3,1-3,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,Colorado Rapids,Houston Dynamo,6,2,6-2,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-11,,San Diego,Minnesota United FC,1,2,1-2,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-12,,Columbus Crew,Orlando City SC,1,1,1-1,FINISHED,7,regular,manual
+MLS,MLS Major League Soccer,2026-04-17,,Vancouver Whitecaps,Sporting Kansas City,3,0,3-0,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,Toronto FC,Austin,3,3,3-3,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,CF Montreal,New York Red Bulls,4,1,4-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,Colorado Rapids,Inter Miami,2,3,2-3,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,Atlanta United FC,Nashville SC,0,2,0-2,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,FC Cincinnati,Chicago Fire,3,3,3-3,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,New England Revolution,Columbus Crew,2,1,2-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,Philadelphia Union,DC United,0,0,0-0,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,New York City FC,Charlotte,1,2,1-2,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,Orlando City SC,Houston Dynamo,0,1,0-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,FC Dallas,Los Angeles Galaxy,2,2,2-2,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,Minnesota United FC,Portland Timbers,2,0,2-0,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,Seattle Sounders,St. Louis City,4,1,4-1,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-18,,Real Salt Lake,San Diego,4,2,4-2,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-19,,Los Angeles FC,San Jose Earthquakes,1,4,1-4,FINISHED,8,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,Columbus Crew,Los Angeles Galaxy,2,1,2-1,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,New York City FC,FC Cincinnati,4,4,4-4,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,Toronto FC,Philadelphia Union,3,3,3-3,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,Orlando City SC,Charlotte,4,1,4-1,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,New York Red Bulls,DC United,4,4,4-4,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,Atlanta United FC,New England Revolution,1,2,1-2,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,FC Dallas,Minnesota United FC,0,1,0-1,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,Houston Dynamo,San Diego,1,0,1-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,Real Salt Lake,Inter Miami,0,2,0-2,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,Los Angeles FC,Colorado Rapids,0,0,0-0,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-22,,San Jose Earthquakes,Austin,5,1,5-1,FINISHED,9,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Toronto FC,Atlanta United FC,1,2,1-2,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,CF Montreal,New York City FC,1,0,1-0,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Minnesota United FC,Los Angeles FC,0,1,0-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Inter Miami,New England Revolution,1,1,1-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Columbus Crew,Philadelphia Union,2,0,2-0,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,FC Cincinnati,New York Red Bulls,2,0,2-0,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,DC United,Orlando City SC,3,2,3-2,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Nashville SC,Charlotte,4,2,4-2,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Chicago Fire,Sporting Kansas City,5,0,5-0,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Austin,Houston Dynamo,2,0,2-0,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,St. Louis City,San Jose Earthquakes,2,3,2-3,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,San Diego,Portland Timbers,1,2,1-2,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Seattle Sounders,FC Dallas,2,1,2-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-25,,Vancouver Whitecaps,Colorado Rapids,3,1,3-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-04-26,,Los Angeles Galaxy,Real Salt Lake,2,1,2-1,FINISHED,10,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Toronto FC,San Jose Earthquakes,1,1,1-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Sporting Kansas City,Seattle Sounders,1,1,1-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Real Salt Lake,Portland Timbers,2,0,2-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Inter Miami,Orlando City SC,3,4,3-4,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Philadelphia Union,Nashville SC,0,0,0-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Columbus Crew,Minnesota United FC,2,3,2-3,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Atlanta United FC,CF Montreal,3,1,3-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,New York Red Bulls,FC Dallas,0,2,0-2,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,New England Revolution,Charlotte,1,0,1-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Chicago Fire,FC Cincinnati,2,3,2-3,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Houston Dynamo,Colorado Rapids,1,0,1-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,San Diego,Los Angeles FC,2,2,2-2,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-02,,Los Angeles Galaxy,Vancouver Whitecaps,1,1,1-1,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-03,,New York City FC,DC United,0,2,0-2,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-03,,Austin,St. Louis City,2,0,2-0,FINISHED,11,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,Toronto FC,Inter Miami,2,4,2-4,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,Chicago Fire,New York Red Bulls,1,3,1-3,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,CF Montreal,Orlando City SC,2,0,2-0,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,Atlanta United FC,Los Angeles Galaxy,1,2,1-2,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,Charlotte,FC Cincinnati,2,2,2-2,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,New England Revolution,Philadelphia Union,2,1,2-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,FC Dallas,Real Salt Lake,3,1,3-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,Nashville SC,DC United,2,2,2-2,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,Colorado Rapids,St. Louis City,0,1,0-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,Seattle Sounders,San Diego,1,1,1-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,San Jose Earthquakes,Vancouver Whitecaps,1,1,1-1,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-09,,Portland Timbers,Sporting Kansas City,6,0,6-0,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-10,,New York City FC,Columbus Crew,3,0,3-0,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-10,,Minnesota United FC,Austin,2,2,2-2,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-10,,Los Angeles FC,Houston Dynamo,1,4,1-4,FINISHED,13,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,Charlotte,New York City FC,0,1,0-1,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,FC Cincinnati,Inter Miami,3,5,3-5,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,Orlando City SC,Philadelphia Union,4,3,4-3,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,New York Red Bulls,Columbus Crew,3,2,3-2,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,New England Revolution,Nashville SC,0,3,0-3,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,CF Montreal,Portland Timbers,2,2,2-2,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,DC United,Chicago Fire,1,3,1-3,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,St. Louis City,Los Angeles FC,2,1,2-1,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,Sporting Kansas City,Los Angeles Galaxy,3,1,3-1,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,FC Dallas,Vancouver Whitecaps,2,3,2-3,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,Minnesota United FC,Colorado Rapids,0,1,0-1,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,Seattle Sounders,San Jose Earthquakes,3,2,3-2,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,San Diego,Austin,5,0,5-0,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-13,,Real Salt Lake,Houston Dynamo,3,0,3-0,FINISHED,14,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,CF Montreal,Chicago Fire,0,2,0-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,Philadelphia Union,Columbus Crew,1,1,1-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,Orlando City SC,Atlanta United FC,1,1,1-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,New York Red Bulls,New York City FC,1,1,1-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,Charlotte,Toronto FC,3,1,3-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,New England Revolution,Minnesota United FC,2,1,2-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,DC United,St. Louis City,1,1,1-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,Houston Dynamo,Vancouver Whitecaps,1,0,1-0,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,Austin,Sporting Kansas City,1,2,1-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,Seattle Sounders,Los Angeles Galaxy,0,2,0-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,Real Salt Lake,Colorado Rapids,2,1,2-1,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,San Diego,FC Cincinnati,3,3,3-3,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-16,,San Jose Earthquakes,FC Dallas,2,3,2-3,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-17,,Inter Miami,Portland Timbers,2,0,2-0,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-17,,Nashville SC,Los Angeles FC,3,2,3-2,FINISHED,15,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,St. Louis City,Austin,3,0,3-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,Minnesota United FC,Real Salt Lake,1,1,1-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,FC Cincinnati,Orlando City SC,6,2,6-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,Charlotte,New England Revolution,1,0,1-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,DC United,CF Montreal,4,4,4-4,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,Nashville SC,New York City FC,2,1,2-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,Chicago Fire,Toronto FC,2,1,2-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,Sporting Kansas City,New York Red Bulls,1,2,1-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,San Diego,Vancouver Whitecaps,2,4,2-4,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,Colorado Rapids,FC Dallas,1,2,1-2,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,Portland Timbers,San Jose Earthquakes,1,3,1-3,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-23,,Los Angeles Galaxy,Houston Dynamo,1,1,1-1,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-24,,Columbus Crew,Atlanta United FC,2,0,2-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-24,,Inter Miami,Philadelphia Union,6,4,6-4,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-05-24,,Los Angeles FC,Seattle Sounders,1,0,1-0,FINISHED,16,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,CF Montreal,Toronto FC,0,0,0-0,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,St. Louis City,Sporting Kansas City,3,2,3-2,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,Seattle Sounders,Portland Timbers,1,5,1-5,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2026-07-17,,Nashville SC,Atlanta United FC,1,0,1-0,FINISHED,17,regular,manual
+MLS,MLS Major League Soccer,2026-07-17,,Los Angeles Galaxy,Los Angeles FC,0,3,0-3,FINISHED,17,regular,manual
