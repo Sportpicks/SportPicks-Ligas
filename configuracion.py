@@ -7,6 +7,7 @@ Configuración central de SportPicks-Ligas
 # ── APIs ──
 API_FOOTBALL_DATA = 'cce6c60e411047abb142e005de2d957a'
 API_ODDS          = '622b4b772a4d155e032de1c17a83e41a'
+API_THESTATS      = 'fapi_xsedmwUExuZrMwSQnNXUS790890Bxbvp'
 
 # ── Ligas configuradas ──
 LIGAS = {
