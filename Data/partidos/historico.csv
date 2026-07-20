@@ -665,7 +665,6 @@ BSA,Brasileirao Serie A,2025-10-30,,CR Flamengo,Fortaleza EC,5,0,5-0,FINISHED,,r
 BSA,Brasileirao Serie A,2025-09-20,,SE Palmeiras,Santos FC,2,2,2-2,FINISHED,,regular,manual
 BSA,Brasileirao Serie A,2025-08-10,,Botafogo FR,Fluminense FC,3,1,3-1,FINISHED,,regular,manual
 BSA,Brasileirao Serie A,2025-07-05,,SC Internacional,SC Corinthians Paulista,2,0,2-0,FINISHED,,regular,manual
-MLS,MLS Major League Soccer,2025-12-06,,Inter Miami,Vancouver Whitecaps,3,1,3-1,FINISHED,,regular,manual
 MLS,MLS Major League Soccer,2025-11-20,,Inter Miami,New York City FC,5,1,5-1,FINISHED,,regular,manual
 MLS,MLS Major League Soccer,2025-11-21,,Vancouver Whitecaps,San Diego FC,3,1,3-1,FINISHED,,regular,manual
 MLS,MLS Major League Soccer,2025-11-06,,Inter Miami,Los Angeles FC,2,0,2-0,FINISHED,,regular,manual
@@ -676,9 +675,6 @@ MLS,MLS Major League Soccer,2026-02-10,,Seattle Sounders,Colorado Rapids,2,0,2-0
 MLS,MLS Major League Soccer,2026-02-10,,Los Angeles Galaxy,New York City FC,1,1,1-1,FINISHED,,regular,manual
 MLS,MLS Major League Soccer,2026-02-11,,San Diego FC,CF Montreal,5,0,5-0,FINISHED,,regular,manual
 MLS,MLS Major League Soccer,2026-02-11,,Los Angeles FC,Inter Miami,3,0,3-0,FINISHED,,regular,manual
-MLS,MLS Major League Soccer,2026-07-16,,Seattle Sounders,Portland Timbers,1,5,1-5,FINISHED,,regular,manual
-MLS,MLS Major League Soccer,2026-07-16,,St. Louis City,Sporting Kansas City,3,2,3-2,FINISHED,,regular,manual
-MLS,MLS Major League Soccer,2026-07-16,,CF Montreal,Toronto FC,0,0,0-0,FINISHED,,regular,manual
 BSA,Brasileirao Serie A,2025-03-29,,Sao Paulo,Sport Recife,0,0,0-0,FINISHED,1.0,regular,manual
 BSA,Brasileirao Serie A,2025-03-29,,Gremio,Atletico-MG,2,1,2-1,FINISHED,1.0,regular,manual
 BSA,Brasileirao Serie A,2025-03-29,,Cruzeiro,Mirassol,2,1,2-1,FINISHED,1.0,regular,manual
@@ -3680,6 +3676,7 @@ MLS,MLS Major League Soccer,2025-11-23,,Philadelphia Union,New York City FC,0,1,
 MLS,MLS Major League Soccer,2025-11-24,,San Diego,Minnesota United FC,1,0,1-0,FINISHED,,regular,manual
 MLS,MLS Major League Soccer,2025-11-29,,Inter Miami,New York City FC,5,1,5-1,FINISHED,,regular,manual
 MLS,MLS Major League Soccer,2025-11-29,,San Diego,Vancouver Whitecaps,1,3,1-3,FINISHED,,regular,manual
+MLS,MLS Major League Soccer,2025-12-06,,Inter Miami,Vancouver Whitecaps,3,1,3-1,FINISHED,,regular,manual
 MLS,MLS Major League Soccer,2026-02-21,,St. Louis City,Charlotte,1,1,1-1,FINISHED,1.0,regular,manual
 MLS,MLS Major League Soccer,2026-02-21,,FC Cincinnati,Atlanta United FC,2,0,2-0,FINISHED,1.0,regular,manual
 MLS,MLS Major League Soccer,2026-02-21,,DC United,Philadelphia Union,1,0,1-0,FINISHED,1.0,regular,manual
@@ -3898,6 +3895,9 @@ MLS,MLS Major League Soccer,2026-05-23,,Los Angeles Galaxy,Houston Dynamo,1,1,1-
 MLS,MLS Major League Soccer,2026-05-24,,Columbus Crew,Atlanta United FC,2,0,2-0,FINISHED,16.0,regular,manual
 MLS,MLS Major League Soccer,2026-05-24,,Inter Miami,Philadelphia Union,6,4,6-4,FINISHED,16.0,regular,manual
 MLS,MLS Major League Soccer,2026-05-24,,Los Angeles FC,Seattle Sounders,1,0,1-0,FINISHED,16.0,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,CF Montreal,Toronto FC,0,0,0-0,FINISHED,17.0,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,St. Louis City,Sporting Kansas City,3,2,3-2,FINISHED,17.0,regular,manual
+MLS,MLS Major League Soccer,2026-07-16,,Seattle Sounders,Portland Timbers,1,5,1-5,FINISHED,17.0,regular,manual
 MLS,MLS Major League Soccer,2026-07-17,,Nashville SC,Atlanta United FC,1,0,1-0,FINISHED,17.0,regular,manual
 MLS,MLS Major League Soccer,2026-07-17,,Los Angeles Galaxy,Los Angeles FC,0,3,0-3,FINISHED,17.0,regular,manual
 UCL,UEFA Champions League,2025-09-16,11:45,Athletic Club,Arsenal FC,0,2,0-2,FINISHED,1.0,LEAGUE_STAGE,football-data
