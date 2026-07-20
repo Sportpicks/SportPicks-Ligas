@@ -176,12 +176,33 @@ def main():
             partidos_con_cuotas.extend(pts_odds)
             time.sleep(0.3)
 
-    # Guardar partidos históricos
+    # Guardar partidos históricos — merge, no sobreescritura total.
+    # Este script solo es dueño de las filas con fuente='football-data'
+    # (las ligas con fd_id). Los partidos cargados manualmente o desde
+    # otras fuentes (api-football, manual: CSU/MLS/LP1/temporadas viejas)
+    # se preservan intactos.
     if todos_partidos:
-        df = pd.DataFrame(todos_partidos)
+        df_nuevo = pd.DataFrame(todos_partidos)
+        ruta_hist = 'Data/partidos/historico.csv'
         os.makedirs('Data/partidos', exist_ok=True)
-        df.to_csv('Data/partidos/historico.csv', index=False)
-        print(f'\n✅ Histórico: {len(df)} partidos → Data/partidos/historico.csv')
+
+        if os.path.exists(ruta_hist):
+            df_prev = pd.read_csv(ruta_hist)
+            n_prev = len(df_prev)
+            # Conserva todo lo que NO venga de football-data (manual, api-football, etc.)
+            df_conservado = df_prev[df_prev.get('fuente') != 'football-data']
+            df_final = pd.concat([df_conservado, df_nuevo], ignore_index=True)
+            # Salvaguarda: si algún partido quedó duplicado, prioriza el recién descargado
+            claves = ['liga', 'fecha', 'local', 'visitante']
+            df_final = df_final.drop_duplicates(subset=claves, keep='last')
+            n_conservados = len(df_conservado)
+        else:
+            df_final = df_nuevo
+            n_prev = n_conservados = 0
+
+        df_final.to_csv(ruta_hist, index=False)
+        print(f'\n✅ Histórico: {len(df_final)} partidos → Data/partidos/historico.csv '
+              f'({len(df_nuevo)} actualizados vía football-data, {n_conservados} preservados de otras fuentes)')
 
     # Guardar próximos con cuotas
     if partidos_con_cuotas:
