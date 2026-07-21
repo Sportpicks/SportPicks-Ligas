@@ -1,0 +1,43 @@
+name: Pipeline diario
+
+on:
+  schedule:
+    - cron: '0 11 * * *'  # 11:00 UTC = 06:00 Perú (UTC-5)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Descargar próximos partidos y cuotas (modo diario)
+        run: python descargar_partidos.py --diario
+
+      - name: Generar picks
+        run: python generador_picks_ligas.py
+
+      - name: Generar web
+        run: python generar_web.py
+
+      - name: Commit y push de los resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f docs/index.html Data/picks_hoy.json Data/partidos/proximos.csv Predicciones/predicciones_hoy.json
+          git diff --staged --quiet || git commit -m "chore: pipeline diario $(date -u +%Y-%m-%d)"
+          git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
