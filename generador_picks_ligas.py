@@ -32,15 +32,22 @@ DIVERGENCIA_MAX_PP = 30
 
 def _prob_mercado_devigged(cuota_pick, cuotas_grupo):
     """
-    Probabilidad "justa" que implica el mercado para un mercado de N vías,
-    normalizando el overround (vig) del bookmaker.
-    cuotas_grupo: todas las cuotas reales del mismo mercado (ej. [c1,cx,c2]
-    para 1X2, [over,under] para goles).
-    Devuelve None si no hay cuotas reales suficientes para calcularlo.
+    Probabilidad "justa" que implica el mercado, normalizando el overround
+    (vig) del bookmaker cuando hay >=2 cuotas reales del mismo mercado
+    (ej. [c1,cx,c2] para 1X2, [over,under] para goles).
+    Si solo hay 1 cuota real disponible (ej. córners: TheStatsAPI solo trae
+    el lado "over", no el "under"), devuelve la probabilidad implícita SIN
+    de-vig — sobreestima levemente la probabilidad de mercado (incluye el
+    margen del bookmaker), lo cual es conservador para el filtro de
+    divergencia: si el modelo diverge de esa cifra ya "generosa", la brecha
+    real contra la probabilidad justa es aún mayor.
+    Devuelve None si no hay ninguna cuota real utilizable.
     """
     validas = [c for c in cuotas_grupo if c and c > 1.0]
-    if cuota_pick <= 1.0 or len(validas) < 2:
+    if cuota_pick <= 1.0 or not validas:
         return None
+    if len(validas) == 1:
+        return 100 / validas[0]
     overround = sum(1 / c for c in validas)
     if overround <= 0:
         return None
@@ -108,6 +115,41 @@ def generar_candidatos(pred, cuotas):
     if cuotas.get('under_2.5', 0) > 1.30:
         add('Menos de 2.5 goles', pred['under_2.5'], cuotas['under_2.5'], '🔒', 'Goles',
             f'xG total {pred["xg_l"]+pred["xg_v"]:.2f}', cuotas_grupo=grupo_ou25)
+
+    # ── Córners ── (TheStatsAPI solo trae la cuota del lado "over" — no hay
+    # "under" real, así que el grupo de divergencia tiene 1 sola cuota; ver
+    # _prob_mercado_devigged para cómo se maneja ese caso sin de-vig completo)
+    if cuotas.get('corners_over_8.5', 0) > 1.30 and 'corners_over_8.5' in pred:
+        add('Más de 8.5 córners', pred['corners_over_8.5'], cuotas['corners_over_8.5'], '🚩', 'Córners',
+            f'Córners esperados: {pred.get("corners_l_esperado",0):.1f} + {pred.get("corners_v_esperado",0):.1f}',
+            cuotas_grupo=[cuotas.get('corners_over_8.5', 0)])
+    if cuotas.get('corners_over_9.5', 0) > 1.30 and 'corners_over_9.5' in pred:
+        add('Más de 9.5 córners', pred['corners_over_9.5'], cuotas['corners_over_9.5'], '🚩', 'Córners',
+            f'Córners esperados: {pred.get("corners_l_esperado",0):.1f} + {pred.get("corners_v_esperado",0):.1f}',
+            cuotas_grupo=[cuotas.get('corners_over_9.5', 0)])
+
+    # ── Tarjetas y tiros ── DORMIDO hasta que descargar_partidos.py capture
+    # estas cuotas (línea VARIABLE por partido en Bet365 — no fija como
+    # córners). El pick usa la línea REAL de ese partido (pred['*_linea_real']
+    # y la prob. calculada exactamente en esa línea, pred['*_over_real']) —
+    # nunca la línea de referencia fija (4.5/24.5/8.5), que es solo dato
+    # informativo para la web. Mientras 'cuotas_over_precio' no llegue con
+    # datos reales, estos `if` nunca se disparan.
+    if cuotas.get('cards_over_precio', 0) > 1.30 and pred.get('cards_over_real') is not None:
+        linea = pred['cards_linea_real']
+        add(f'Más de {linea} tarjetas', pred['cards_over_real'], cuotas['cards_over_precio'], '🟨', 'Tarjetas',
+            f'Tarjetas esperadas: {pred.get("cards_l_esperado",0):.1f} + {pred.get("cards_v_esperado",0):.1f}',
+            cuotas_grupo=[cuotas.get('cards_over_precio', 0)])
+    if cuotas.get('shots_over_precio', 0) > 1.30 and pred.get('shots_over_real') is not None:
+        linea = pred['shots_linea_real']
+        add(f'Más de {linea} tiros', pred['shots_over_real'], cuotas['shots_over_precio'], '🎯', 'Tiros',
+            f'Tiros esperados: {pred.get("shots_l_esperado",0):.1f} + {pred.get("shots_v_esperado",0):.1f}',
+            cuotas_grupo=[cuotas.get('shots_over_precio', 0)])
+    if cuotas.get('sot_over_precio', 0) > 1.30 and pred.get('sot_over_real') is not None:
+        linea = pred['sot_linea_real']
+        add(f'Más de {linea} tiros al arco', pred['sot_over_real'], cuotas['sot_over_precio'], '🎯', 'Tiros',
+            f'Tiros al arco esperados: {pred.get("sot_l_esperado",0):.1f} + {pred.get("sot_v_esperado",0):.1f}',
+            cuotas_grupo=[cuotas.get('sot_over_precio', 0)])
 
     # ── BTTS ──
     btts_si = pred.get('btts_si', 0)
@@ -330,6 +372,11 @@ def main(fecha=None, dias=3, solo_hoy=False):
             'c2': pred.get('c2', 0),
             'over_2.5': pred.get('over_2.5', 0),
             'under_2.5': pred.get('under_2.5', 0),
+            'corners_over_8.5': 0,
+            'corners_over_9.5': 0,
+            'cards_over_precio': 0,   # dormido — ver nota en generar_candidatos
+            'shots_over_precio': 0,
+            'sot_over_precio': 0,
         }
 
         # Buscar en df_prox si hay cuotas
@@ -344,6 +391,14 @@ def main(fecha=None, dias=3, solo_hoy=False):
                     'c2': row.get('c2', 0),
                     'over_2.5': row.get('over_2.5', 0),
                     'under_2.5': row.get('under_2.5', 0),
+                    'corners_over_8.5': row.get('corners_over_8.5', 0),
+                    'corners_over_9.5': row.get('corners_over_9.5', 0),
+                    'cards_linea': row.get('cards_linea', ''),
+                    'cards_over_precio': row.get('cards_over_precio', 0),
+                    'shots_linea': row.get('shots_linea', ''),
+                    'shots_over_precio': row.get('shots_over_precio', 0),
+                    'sot_linea': row.get('sot_linea', ''),
+                    'sot_over_precio': row.get('sot_over_precio', 0),
                 }
 
         candidatos = generar_candidatos(pred, cuotas)

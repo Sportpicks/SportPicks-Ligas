@@ -1,194 +1,194 @@
-liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente,c1,cx,c2,over_2.5,under_2.5,btts_si,btts_no,corners_over_8.5,corners_over_9.5
-comp_4540,Liga Profesional Argentina,2026-07-26,17:30,Deportivo Riestra,Boca Juniors,,,,scheduled,1,,thestatsapi,4.41,3.0,2.04,3.4,1.33,2.62,1.44,1.83,2.0
-comp_4540,Liga Profesional Argentina,2026-07-26,15:15,Estudiantes de La Plata,CA Independiente,,,,scheduled,1,,thestatsapi,2.21,3.0,3.78,2.88,1.4,2.25,1.57,1.83,1.92
-comp_4540,Liga Profesional Argentina,2026-07-26,13:00,Atlético Tucumán,Independiente Rivadavia,,,,scheduled,1,,thestatsapi,2.67,3.1,2.84,2.35,1.57,1.95,1.8,1.8,2.0
-comp_4540,Liga Profesional Argentina,2026-07-25,19:30,Lanús,San Lorenzo,,,,scheduled,1,,thestatsapi,1.95,2.81,5.4,3.4,1.33,2.62,1.44,1.83,
-comp_4540,Liga Profesional Argentina,2026-07-25,17:15,River Plate,Barracas Central,,,,scheduled,1,,thestatsapi,1.4,4.23,9.16,2.37,1.6,2.62,1.44,1.83,2.15
-comp_4540,Liga Profesional Argentina,2026-07-25,15:00,Newell's Old Boys,Talleres,,,,scheduled,1,,thestatsapi,2.79,2.86,2.94,2.7,1.44,2.1,1.67,1.83,
-comp_4540,Liga Profesional Argentina,2026-07-25,12:45,Estudiantes de Río Cuarto,Tigre,,,,scheduled,1,,thestatsapi,3.91,2.95,2.19,3.4,1.33,2.62,1.44,1.83,
-comp_4540,Liga Profesional Argentina,2026-07-24,19:15,Huracán,Banfield,,,,scheduled,1,,thestatsapi,1.9,3.04,5.05,3.1,1.36,2.62,1.44,1.91,2.0
-comp_4540,Liga Profesional Argentina,2026-07-24,19:15,Platense,Club Atlético Unión de Santa Fe,,,,scheduled,1,,thestatsapi,2.86,2.74,2.98,3.1,1.36,2.38,1.53,1.83,2.06
-comp_4540,Liga Profesional Argentina,2026-07-24,17:00,Racing Club,Gimnasia y Esgrima,,,,scheduled,1,,thestatsapi,1.81,3.35,4.96,2.5,1.5,2.2,1.61,,2.1
-comp_4540,Liga Profesional Argentina,2026-07-24,17:00,Vélez Sarsfield,Instituto De Córdoba,,,,scheduled,1,,thestatsapi,2.16,2.98,3.97,2.7,1.44,2.25,1.57,1.8,
-comp_4540,Liga Profesional Argentina,2026-07-24,14:45,Gimnasia y Esgrima Mendoza,Central Córdoba,,,,scheduled,1,,thestatsapi,1.76,3.35,5.33,2.88,1.4,2.5,1.5,1.8,2.02
-comp_4540,Liga Profesional Argentina,2026-07-23,19:45,Defensa y Justicia,Aldosivi,,,,scheduled,1,,thestatsapi,1.89,3.2,4.71,2.7,1.44,2.25,1.57,1.83,
-comp_4540,Liga Profesional Argentina,2026-07-23,17:30,Sarmiento,Argentinos Juniors,,,,scheduled,1,,thestatsapi,4.44,3.01,2.03,3.1,1.36,2.5,1.5,1.73,2.05
-comp_4540,Liga Profesional Argentina,2026-07-23,17:30,Belgrano,Rosario Central,,,,scheduled,1,,thestatsapi,2.53,2.79,3.38,3.1,1.36,2.38,1.53,1.83,
-comp_4795,Brasileirão Série A,2026-07-26,17:30,Remo,Vitória,,,,scheduled,20,,thestatsapi,2.15,3.25,3.3,2.05,1.75,1.8,1.95,1.32,1.54
-comp_4795,Brasileirão Série A,2026-07-26,17:30,Palmeiras,Atlético Mineiro,,,,scheduled,20,,thestatsapi,1.6,3.7,5.75,2.08,1.73,2.05,1.7,1.4,1.73
-comp_4795,Brasileirão Série A,2026-07-26,16:30,Flamengo,São Paulo,,,,scheduled,20,,thestatsapi,1.5,4.1,6.0,1.9,1.9,2.0,1.75,1.37,1.67
-comp_4795,Brasileirão Série A,2026-07-26,16:30,Red Bull Bragantino,Coritiba,,,,scheduled,20,,thestatsapi,1.61,3.8,5.5,1.9,1.9,1.91,1.91,1.37,1.63
-comp_4795,Brasileirão Série A,2026-07-26,16:30,Grêmio,Fluminense,,,,scheduled,20,,thestatsapi,2.63,3.36,2.73,1.93,1.92,1.91,1.91,1.67,2.0
-comp_4795,Brasileirão Série A,2026-07-26,14:00,Cruzeiro,Botafogo,,,,scheduled,20,,thestatsapi,1.75,3.6,4.5,2.0,1.85,1.8,1.95,1.41,1.73
-comp_4795,Brasileirão Série A,2026-07-26,14:00,Bahia,Corinthians,,,,scheduled,20,,thestatsapi,2.1,3.3,3.4,2.0,1.8,1.8,1.95,1.4,1.83
-comp_4795,Brasileirão Série A,2026-07-25,18:30,Vasco da Gama,Mirassol,,,,scheduled,20,,thestatsapi,2.04,3.44,3.78,2.07,1.79,1.8,1.95,1.36,1.73
-comp_4795,Brasileirão Série A,2026-07-25,16:30,Santos,Chapecoense,,,,scheduled,20,,thestatsapi,1.38,4.33,8.0,1.73,2.08,1.91,1.91,1.42,1.73
-comp_4795,Brasileirão Série A,2026-07-25,16:30,Athletico,Internacional,,,,scheduled,20,,thestatsapi,1.95,3.2,4.0,2.35,1.57,2.05,1.7,1.44,1.72
-comp_4795,Brasileirão Série A,2026-07-23,17:30,Botafogo,Vitória,,,,scheduled,4,,thestatsapi,1.76,3.48,5.23,1.83,2.03,1.67,2.1,,
-comp_4795,Brasileirão Série A,2026-07-23,17:30,Corinthians,Remo,,,,scheduled,19,,thestatsapi,1.51,4.17,6.66,1.98,1.87,2.05,1.7,1.27,1.46
-comp_4795,Brasileirão Série A,2026-07-22,19:30,Chapecoense,Flamengo,,,,scheduled,19,,thestatsapi,7.25,4.46,1.45,1.87,1.99,2.0,1.75,1.36,1.75
-comp_4795,Brasileirão Série A,2026-07-22,19:30,Internacional,Cruzeiro,,,,scheduled,19,,thestatsapi,2.25,3.31,3.36,2.07,1.79,1.8,1.95,1.37,1.73
-comp_4795,Brasileirão Série A,2026-07-22,19:30,São Paulo,Athletico,,,,scheduled,19,,thestatsapi,2.01,3.27,4.13,2.25,1.67,1.95,1.8,1.47,1.73
-comp_4795,Brasileirão Série A,2026-07-22,17:30,Coritiba,Palmeiras,,,,scheduled,19,,thestatsapi,4.27,3.35,1.95,2.18,1.71,1.95,1.8,1.32,1.67
-comp_4795,Brasileirão Série A,2026-07-21,17:30,Atlético Mineiro,Bahia,,,,scheduled,19,,thestatsapi,2.14,3.35,3.59,1.94,1.93,1.7,2.05,1.4,1.6
-comp_720692,Primera A Colombia,2026-07-26,20:15,Once Caldas,Cúcuta Deportivo,,,,scheduled,1,,thestatsapi,1.51,4.06,6.2,1.88,1.93,2.08,1.64,,
-comp_720692,Primera A Colombia,2026-07-26,18:10,Alianza Valledupar FC,Fortaleza CEIF,,,,scheduled,1,,thestatsapi,2.05,3.0,3.4,2.25,1.57,,,,
-comp_720692,Primera A Colombia,2026-07-26,16:05,Rionegro Águilas Doradas,Independiente Santa Fe,,,,scheduled,1,,thestatsapi,2.8,2.95,2.75,2.25,1.57,,,,
-comp_720692,Primera A Colombia,2026-07-26,14:00,Internacional de Bogotá,América de Cali,,,,scheduled,1,,thestatsapi,2.72,3.13,2.68,2.21,1.66,1.86,1.81,,
-comp_720692,Primera A Colombia,2026-07-25,20:15,Deportes Tolima,Junior Barranquilla,,,,scheduled,1,,thestatsapi,1.97,2.98,4.57,2.05,1.76,,,,
-comp_720692,Primera A Colombia,2026-07-25,18:10,Millonarios,Atlético Bucaramanga,,,,scheduled,1,,thestatsapi,1.88,3.24,4.45,2.29,1.61,1.97,1.71,1.64,2.02
-comp_720692,Primera A Colombia,2026-07-25,16:05,Independiente Medellín,Deportivo Pasto,,,,scheduled,1,,thestatsapi,1.67,3.54,5.41,2.07,1.74,1.8,1.87,1.66,2.07
-comp_720692,Primera A Colombia,2026-07-25,14:00,Boyacá Chicó FC,Atlético Nacional,,,,scheduled,1,,thestatsapi,5.73,3.65,1.62,1.98,1.83,1.87,1.8,,
-comp_720692,Primera A Colombia,2026-07-24,20:15,Deportivo Cali,Jaguares de Córdoba,,,,scheduled,1,,thestatsapi,1.53,3.78,6.73,2.17,1.68,2.08,1.64,,
-comp_720692,Primera A Colombia,2026-07-24,18:10,Llaneros FC,Deportivo Pereira,,,,scheduled,1,,thestatsapi,1.6,3.61,6.02,2.25,1.63,2.06,1.66,,
-comp_1615,CONMEBOL Sudamericana,2026-07-23,19:30,Independiente Santa Fe,Caracas F.C.,,,,scheduled,,round_of_16,thestatsapi,1.43,4.02,7.81,2.29,1.59,2.62,1.44,1.73,2.2
-comp_1615,CONMEBOL Sudamericana,2026-07-23,19:30,Boca Juniors,O'Higgins,,,,scheduled,,round_of_16,thestatsapi,1.25,5.32,11.05,1.85,1.93,2.62,1.44,1.66,2.1
-comp_1615,CONMEBOL Sudamericana,2026-07-23,17:00,Bolívar,Grêmio,,,,scheduled,,round_of_16,thestatsapi,1.6,4.15,4.8,1.72,2.06,1.73,2.0,,
-comp_1615,CONMEBOL Sudamericana,2026-07-22,19:30,Club Sporting Cristal,Red Bull Bragantino,,,,scheduled,,round_of_16,thestatsapi,3.33,3.38,2.12,1.98,1.81,1.8,1.91,,1.67
-comp_1615,CONMEBOL Sudamericana,2026-07-22,19:30,Lanús,Cienciano,,,,scheduled,,round_of_16,thestatsapi,1.31,5.02,8.65,1.79,2.01,2.2,1.61,1.85,
-comp_1615,CONMEBOL Sudamericana,2026-07-22,17:00,Independiente Medellín,Vasco da Gama,,,,scheduled,,round_of_16,thestatsapi,2.28,3.13,3.25,2.12,1.68,1.91,1.8,1.73,2.0
-comp_1615,CONMEBOL Sudamericana,2026-07-21,19:30,Universidad Central,Santos,,,,scheduled,,round_of_16,thestatsapi,4.29,3.39,1.85,2.07,1.74,2.0,1.73,,1.91
-comp_1615,CONMEBOL Sudamericana,2026-07-21,17:00,Nacional,Tigre,,,,scheduled,,round_of_16,thestatsapi,2.32,3.13,3.28,2.5,1.5,2.1,1.67,1.67,2.23
-comp_7938,Danish Superliga,2026-07-27,12:00,Randers FC,Silkeborg IF,,,,scheduled,1,,thestatsapi,1.78,3.92,4.23,1.68,2.2,1.67,2.1,,1.83
-comp_7938,Danish Superliga,2026-07-26,11:00,AC Horsens,FC Nordsjælland,,,,scheduled,1,,thestatsapi,3.73,3.74,1.93,1.69,2.19,1.57,2.25,1.45,2.0
-comp_7938,Danish Superliga,2026-07-26,09:00,FC København,Lyngby,,,,scheduled,1,,thestatsapi,1.39,4.5,6.0,,,,,,
-comp_7938,Danish Superliga,2026-07-26,07:00,Sønderjyske Fodbold,FC Midtjylland,,,,scheduled,1,,thestatsapi,5.24,4.52,1.55,1.5,2.5,1.57,2.25,,1.73
-comp_7938,Danish Superliga,2026-07-25,11:00,AGF,Brøndby IF,,,,scheduled,1,,thestatsapi,2.23,3.68,3.03,1.67,2.23,1.57,2.25,,1.83
-comp_7938,Danish Superliga,2026-07-24,12:00,Viborg FF,Odense Boldklub,,,,scheduled,1,,thestatsapi,1.8,3.7,3.7,1.65,2.1,,,,
-comp_1992,Eliteserien,2026-07-27,12:00,Rosenborg BK,Fredrikstad FK,,,,scheduled,15,,thestatsapi,1.7,3.97,4.77,1.77,2.09,1.7,2.05,,
-comp_1992,Eliteserien,2026-07-26,12:15,Aalesunds FK,Viking FK,,,,scheduled,15,,thestatsapi,6.0,4.33,1.44,1.4,2.88,1.53,2.38,,1.38
-comp_1992,Eliteserien,2026-07-26,10:00,Sarpsborg 08,HamKam,,,,scheduled,15,,thestatsapi,1.85,3.6,3.7,1.57,2.35,1.53,2.38,,1.41
-comp_1992,Eliteserien,2026-07-26,10:00,Sandefjord Fotball,Bodø/Glimt,,,,scheduled,15,,thestatsapi,6.25,4.75,1.4,1.36,3.1,1.53,2.38,,1.44
-comp_1992,Eliteserien,2026-07-26,10:00,KFUM Oslo,Molde FK,,,,scheduled,15,,thestatsapi,3.11,3.95,2.13,1.7,2.2,,,,
-comp_1992,Eliteserien,2026-07-26,07:30,SK Brann,Vålerenga IF,,,,scheduled,15,,thestatsapi,1.74,4.34,4.14,1.44,2.7,1.53,2.38,,1.52
-comp_1992,Eliteserien,2026-07-25,09:00,Kristiansund BK,IK Start,,,,scheduled,15,,thestatsapi,2.24,3.58,3.15,1.75,2.13,1.61,2.2,1.42,1.67
-comp_1992,Eliteserien,2026-07-22,12:00,Lillestrøm SK,Viking FK,,,,scheduled,11,,thestatsapi,3.15,3.68,2.2,1.53,2.4,1.53,2.38,,
-comp_1992,Eliteserien,2026-07-22,12:00,Bodø/Glimt,HamKam,,,,scheduled,2,,thestatsapi,1.1,11.49,17.7,1.25,4.0,1.95,1.8,1.32,1.53
-comp_6981,Liga 1 Perú,2026-07-26,19:00,Deportivo Garcilaso,FC Cajamarca,,,,scheduled,2,,thestatsapi,1.52,3.91,6.13,2.0,1.81,1.91,1.8,1.91,
-comp_6981,Liga 1 Perú,2026-07-26,15:30,Comerciantes Unidos,Alianza Lima,,,,scheduled,2,,thestatsapi,3.99,3.03,2.01,2.25,1.61,2.1,1.67,,1.91
-comp_6981,Liga 1 Perú,2026-07-26,13:00,Universidad Técnica de Cajamarca,CD Moquegua,,,,scheduled,2,,thestatsapi,1.59,3.91,5.2,1.87,1.93,1.91,1.8,,1.8
-comp_6981,Liga 1 Perú,2026-07-25,20:00,Melgar,Club Sporting Cristal,,,,scheduled,2,,thestatsapi,1.77,3.75,4.02,1.72,2.08,1.73,2.0,1.3,1.52
-comp_6981,Liga 1 Perú,2026-07-25,17:30,Sport Boys,Asociación Deportiva Tarma,,,,scheduled,2,,thestatsapi,1.8,3.52,4.21,1.93,1.88,,,,
-comp_6981,Liga 1 Perú,2026-07-25,15:15,ADC Juan Pablo II,Cienciano,,,,scheduled,2,,thestatsapi,3.0,3.4,2.25,1.7,2.1,1.57,2.25,,
-comp_6981,Liga 1 Perú,2026-07-25,13:00,Sport Huancayo,Club Atlético Grau,,,,scheduled,2,,thestatsapi,1.62,3.74,5.19,1.99,1.82,1.91,1.8,1.83,
-comp_6981,Liga 1 Perú,2026-07-24,20:30,Universitario,Cusco FC,,,,scheduled,2,,thestatsapi,1.45,4.35,6.32,1.74,2.06,2.0,1.73,1.73,1.88
-comp_6981,Liga 1 Perú,2026-07-24,15:00,Alianza Atlético de Sullana,Los Chankas CYC,,,,scheduled,2,,thestatsapi,1.72,3.53,4.49,1.94,1.85,1.8,1.91,1.83,
-comp_298265,Liga MX Apertura,2026-07-26,19:00,CF Pachuca,Querétaro FC,,,,scheduled,2,,thestatsapi,1.61,3.8,5.79,1.7,2.18,1.8,1.95,1.44,1.8
-comp_298265,Liga MX Apertura,2026-07-26,18:00,Club Necaxa,CF Monterrey,,,,scheduled,2,,thestatsapi,2.9,3.7,2.3,1.6,2.3,1.5,2.5,1.46,1.83
-comp_298265,Liga MX Apertura,2026-07-25,21:00,Santos Laguna,Atlas FC,,,,scheduled,2,,thestatsapi,2.61,3.24,2.8,1.89,1.94,1.61,2.2,1.48,1.93
-comp_298265,Liga MX Apertura,2026-07-25,18:00,CD Guadalajara,FC Juárez,,,,scheduled,2,,thestatsapi,1.49,4.64,5.83,1.6,2.3,1.61,2.2,1.5,1.83
-comp_298265,Liga MX Apertura,2026-07-24,21:00,Atlante FC,Club América,,,,scheduled,2,,thestatsapi,4.45,3.81,1.77,1.83,2.01,1.75,2.0,,1.83
-comp_298265,Liga MX Apertura,2026-07-24,21:00,Club Tijuana,Club León,,,,scheduled,2,,thestatsapi,2.05,3.78,3.35,1.65,2.27,1.61,2.2,,
-comp_298265,Liga MX Apertura,2026-07-24,20:00,Tigres UANL,Atlético San Luis,,,,scheduled,2,,thestatsapi,1.44,4.93,6.2,1.61,2.25,1.8,1.95,,
-comp_298265,Liga MX Apertura,2026-07-21,22:05,CD Toluca,Pumas UNAM,,,,scheduled,2,,thestatsapi,1.59,4.24,5.17,1.65,2.2,1.61,2.2,,2.1
-comp_298265,Liga MX Apertura,2026-07-21,20:00,Cruz Azul,Club Puebla,,,,scheduled,2,,thestatsapi,1.31,5.63,8.51,1.65,2.29,1.91,1.91,,1.83
-comp_1917,LigaPro Serie A Ecuador,2026-07-27,16:30,Guayaquil City,Universidad Católica del Ecuador,,,,scheduled,22,,thestatsapi,,,,,,,,,
-comp_1917,LigaPro Serie A Ecuador,2026-07-27,14:00,Mushuc Runa,Libertad,,,,scheduled,22,,thestatsapi,,,,,,,,,
-comp_1917,LigaPro Serie A Ecuador,2026-07-26,19:15,Barcelona SC,LDU,,,,scheduled,22,,thestatsapi,2.6,3.1,2.65,2.16,1.58,1.86,1.81,1.62,2.0
-comp_1917,LigaPro Serie A Ecuador,2026-07-26,15:45,Orense SC,Independiente del Valle,,,,scheduled,22,,thestatsapi,4.0,3.35,1.88,1.94,1.72,1.8,1.87,1.5,1.85
-comp_1917,LigaPro Serie A Ecuador,2026-07-26,13:15,Delfín,Leones del Norte,,,,scheduled,22,,thestatsapi,2.38,2.85,3.2,2.7,1.37,2.2,1.57,,
-comp_1917,LigaPro Serie A Ecuador,2026-07-26,13:15,Aucas,Macará,,,,scheduled,22,,thestatsapi,1.87,3.3,4.1,2.1,1.61,1.93,1.75,1.33,1.55
-comp_1917,LigaPro Serie A Ecuador,2026-07-25,19:00,Técnico Universitario,Manta FC,,,,scheduled,22,,thestatsapi,1.75,3.4,4.6,2.1,1.6,1.98,1.71,1.5,1.8
-comp_1917,LigaPro Serie A Ecuador,2026-07-23,19:00,Emelec,Mushuc Runa,,,,scheduled,21,,thestatsapi,1.71,3.79,4.49,2.08,1.72,1.83,1.83,,2.0
-comp_1917,LigaPro Serie A Ecuador,2026-07-23,16:30,Orense SC,Aucas,,,,scheduled,21,,thestatsapi,2.61,3.04,2.84,2.22,1.64,1.83,1.83,1.34,1.56
-comp_1917,LigaPro Serie A Ecuador,2026-07-23,16:30,Leones del Norte,Guayaquil City,,,,scheduled,21,,thestatsapi,1.8,3.32,4.68,2.5,1.5,2.15,1.6,,
-comp_1917,LigaPro Serie A Ecuador,2026-07-22,19:00,Manta FC,LDU,,,,scheduled,21,,thestatsapi,4.89,3.39,1.75,2.33,1.58,2.1,1.67,,1.83
-comp_1917,LigaPro Serie A Ecuador,2026-07-22,16:30,Independiente del Valle,Técnico Universitario,,,,scheduled,21,,thestatsapi,1.17,6.85,12.67,1.57,2.35,2.38,1.53,1.38,1.83
-comp_1917,LigaPro Serie A Ecuador,2026-07-22,14:00,Macará,Deportivo Cuenca,,,,scheduled,21,,thestatsapi,2.14,3.1,3.61,2.5,1.5,2.0,1.73,1.43,1.73
-comp_1917,LigaPro Serie A Ecuador,2026-07-21,19:00,Universidad Católica del Ecuador,Barcelona SC,,,,scheduled,21,,thestatsapi,1.9,3.42,4.17,2.08,1.75,1.91,1.8,,
-comp_1917,LigaPro Serie A Ecuador,2026-07-21,16:30,Libertad,Delfín,,,,scheduled,21,,thestatsapi,2.31,3.22,3.2,2.4,1.53,2.0,1.73,,
-comp_3498,UEFA Champions League,2026-07-22,14:00,KF Egnatia,NK Celje,,,,scheduled,2,qualifying,thestatsapi,3.49,3.4,2.01,2.05,1.74,1.91,1.8,1.7,2.12
-comp_3498,UEFA Champions League,2026-07-22,12:30,Levski Sofia,Universitatea Craiova,,,,scheduled,2,qualifying,thestatsapi,2.15,3.02,3.54,2.22,1.64,1.91,1.8,1.66,2.1
-comp_3498,UEFA Champions League,2026-07-22,12:00,Omonia Nicosia,Kairat Almaty,,,,scheduled,2,qualifying,thestatsapi,1.65,3.87,4.71,2.03,1.79,2.0,1.73,1.65,2.1
-comp_3498,UEFA Champions League,2026-07-21,14:00,Larne FC,FK Crvena zvezda,,,,scheduled,2,qualifying,thestatsapi,13.28,6.73,1.14,1.61,2.25,1.8,1.91,1.67,2.1
-comp_3498,UEFA Champions League,2026-07-21,14:00,Víkingur Reykjavík,Hapoel Be'er Sheva,,,,scheduled,2,qualifying,thestatsapi,2.52,3.47,2.54,1.74,2.06,1.61,2.2,1.52,1.83
-comp_3498,UEFA Champions League,2026-07-21,13:45,Klaksvíkar Ítróttarfelag,FK Kauno Žalgiris,,,,scheduled,2,qualifying,thestatsapi,2.18,3.07,3.13,2.38,1.53,2.1,1.67,1.63,2.0
-comp_3498,UEFA Champions League,2026-07-21,13:30,SK Sturm Graz,Heart of Midlothian,,,,scheduled,2,qualifying,thestatsapi,1.76,3.79,4.16,1.75,2.07,1.57,2.25,1.48,1.9
-comp_3498,UEFA Champions League,2026-07-21,13:00,FC Thun,GNK Dinamo Zagreb,,,,scheduled,2,qualifying,thestatsapi,3.45,3.68,1.96,1.64,2.24,1.61,2.2,1.56,1.83
-comp_3498,UEFA Champions League,2026-07-21,13:00,Fenerbahçe,Górnik Zabrze,,,,scheduled,2,qualifying,thestatsapi,1.18,6.95,12.57,1.36,2.88,2.1,1.67,1.47,1.9
-comp_3498,UEFA Champions League,2026-07-21,12:00,AGF,Lech Poznań,,,,scheduled,2,qualifying,thestatsapi,2.19,3.08,3.47,2.31,1.61,1.8,1.91,1.53,2.0
-comp_3498,UEFA Champions League,2026-07-21,11:00,Sabah FK,KuPS,,,,scheduled,2,qualifying,thestatsapi,1.64,4.21,4.2,1.68,2.13,1.73,2.0,1.56,1.83
-comp_3498,UEFA Champions League,2026-07-21,11:00,Mjällby AIF,Lincoln Red Imps,,,,scheduled,2,qualifying,thestatsapi,1.11,8.46,18.13,1.5,2.5,2.1,1.67,1.56,2.0
-comp_3498,UEFA Champions League,2026-07-21,11:00,FC Ararat-Armenia,Shamrock Rovers,,,,scheduled,2,qualifying,thestatsapi,2.21,3.34,3.06,2.02,1.77,1.61,2.2,1.67,2.08
-comp_3498,UEFA Champions League,2026-07-21,11:00,FC Iberia 1999,ŠK Slovan Bratislava,,,,scheduled,2,qualifying,thestatsapi,3.17,3.29,1.81,1.67,2.15,1.57,2.25,1.52,1.91
-comp_3498,UEFA Champions League,2026-07-21,08:00,Sabah FK,FK Vardar Skopje,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,
-comp_408698,UEFA Conference League,2026-07-23,14:15,Valur Reykjavík,HŠK Zrinjski Mostar,,,,scheduled,2,qualifying,thestatsapi,2.05,3.3,3.1,1.84,1.92,1.73,2.0,1.61,2.0
-comp_408698,UEFA Conference League,2026-07-23,14:00,Stjarnan Garðabær,Ilves,,,,scheduled,2,qualifying,thestatsapi,2.15,3.7,2.7,1.53,2.38,1.5,2.5,,1.78
-comp_408698,UEFA Conference League,2026-07-23,14:00,FK Partizan,Una Strassen,,,,scheduled,2,qualifying,thestatsapi,1.25,6.5,7.5,1.5,2.5,2.38,1.53,1.41,2.0
-comp_408698,UEFA Conference League,2026-07-23,13:45,NSÍ Runavík,FC Koper,,,,scheduled,2,qualifying,thestatsapi,3.5,3.5,1.83,1.79,1.97,1.67,2.1,1.46,1.76
-comp_408698,UEFA Conference League,2026-07-23,13:45,NK Bravo,KF Shkëndija,,,,scheduled,2,qualifying,thestatsapi,1.75,3.5,3.9,1.75,1.99,1.67,2.1,1.73,
-comp_408698,UEFA Conference League,2026-07-23,13:45,Motherwell,HB Tórshavn,,,,scheduled,2,qualifying,thestatsapi,1.18,7.0,12.0,1.44,2.62,2.38,1.53,1.63,2.0
-comp_408698,UEFA Conference League,2026-07-23,13:45,Shelbourne,Nõmme Kalju,,,,scheduled,2,qualifying,thestatsapi,1.4,4.2,6.0,1.91,1.85,2.0,1.73,1.47,1.77
-comp_408698,UEFA Conference League,2026-07-23,13:45,HNK Rijeka,Derry City,,,,scheduled,2,qualifying,thestatsapi,1.17,6.0,13.0,1.67,2.15,2.25,1.57,1.57,1.91
-comp_408698,UEFA Conference League,2026-07-23,13:30,MŠK Žilina,GKS Katowice,,,,scheduled,2,qualifying,thestatsapi,2.7,3.4,2.25,1.82,1.94,1.57,2.25,1.48,1.83
-comp_408698,UEFA Conference League,2026-07-23,13:30,FK Borac Banja Luka,FC Petrocub Hîncesti,,,,scheduled,2,qualifying,thestatsapi,1.4,4.33,6.25,1.5,2.5,1.57,2.25,,2.0
-comp_408698,UEFA Conference League,2026-07-23,13:30,LNZ Cherkasy,KAA Gent,,,,scheduled,2,qualifying,thestatsapi,3.5,3.4,1.85,2.27,1.62,1.91,1.8,1.5,1.81
-comp_408698,UEFA Conference League,2026-07-23,13:30,Hapoel Tel Aviv,Ludogorets,,,,scheduled,2,qualifying,thestatsapi,2.8,3.2,2.25,2.25,1.57,2.0,1.73,1.53,1.9
-comp_408698,UEFA Conference League,2026-07-23,13:30,FC Lugano,Dukagjini,,,,scheduled,2,qualifying,thestatsapi,1.17,6.0,21.0,1.7,2.1,2.38,1.53,1.66,2.07
-comp_408698,UEFA Conference League,2026-07-23,13:00,NK Varaždin,FK Jablonec,,,,scheduled,2,qualifying,thestatsapi,2.55,3.5,2.3,1.86,1.89,1.67,2.1,1.5,1.93
-comp_408698,UEFA Conference League,2026-07-23,13:00,FK Vojvodina,AFC Ajax,,,,scheduled,2,qualifying,thestatsapi,4.33,4.1,1.57,1.83,1.93,1.67,2.1,1.58,1.91
-comp_408698,UEFA Conference League,2026-07-23,13:00,NK Aluminij Kidričevo,Dinamo City,,,,scheduled,2,qualifying,thestatsapi,2.7,3.4,2.25,1.92,1.83,1.67,2.1,,2.1
-comp_408698,UEFA Conference League,2026-07-23,13:00,Polissya Zhytomyr,FC København,,,,scheduled,2,qualifying,thestatsapi,3.8,4.0,1.67,1.7,2.1,1.73,2.0,,1.91
-comp_408698,UEFA Conference League,2026-07-23,13:00,Paksi FC,Panathinaikos,,,,scheduled,2,qualifying,thestatsapi,4.75,4.1,1.53,1.67,2.15,1.83,1.83,1.55,1.91
-comp_408698,UEFA Conference League,2026-07-23,12:45,FCSB,FK Auda,,,,scheduled,2,qualifying,thestatsapi,1.25,4.75,10.0,1.66,2.12,2.2,1.61,1.4,1.67
-comp_408698,UEFA Conference League,2026-07-23,12:30,FC Vaduz,Atlètic Club Escaldes,,,,scheduled,2,qualifying,thestatsapi,1.42,4.1,6.5,1.5,2.5,2.0,1.73,1.68,2.08
-comp_408698,UEFA Conference League,2026-07-23,12:00,FC Santa Coloma,SK Rapid Wien,,,,scheduled,2,qualifying,thestatsapi,9.0,5.5,1.22,1.44,2.62,1.67,2.1,1.54,1.91
-comp_408698,UEFA Conference League,2026-07-23,12:00,Dinamo Tbilisi,FK Žalgiris,,,,scheduled,2,qualifying,thestatsapi,1.83,3.3,3.7,2.26,1.58,2.0,1.73,,1.95
-comp_408698,UEFA Conference League,2026-07-23,12:00,BATE Borisov,FC Sion,,,,scheduled,2,qualifying,thestatsapi,11.0,5.5,1.2,1.65,2.13,2.25,1.57,,
-comp_408698,UEFA Conference League,2026-07-23,12:00,FC Universitatea Cluj,SK Brann,,,,scheduled,2,qualifying,thestatsapi,2.62,3.2,2.4,2.03,1.76,1.83,1.83,1.43,1.7
-comp_408698,UEFA Conference League,2026-07-23,12:00,ML Vitebsk,FK Sutjeska Nikšić,,,,scheduled,2,qualifying,thestatsapi,1.73,3.6,4.0,2.01,1.74,1.73,2.0,,
-comp_408698,UEFA Conference League,2026-07-23,12:00,FC Zimbru Chişinău,FC Noah,,,,scheduled,2,qualifying,thestatsapi,4.75,3.8,1.57,1.76,1.98,1.67,2.1,,
-comp_408698,UEFA Conference League,2026-07-23,12:00,GAIS,FC Nordsjælland,,,,scheduled,2,qualifying,thestatsapi,2.9,3.4,2.1,1.88,1.92,1.73,2.0,1.54,1.91
-comp_408698,UEFA Conference League,2026-07-23,11:30,RFS,IF Vestri,,,,scheduled,2,qualifying,thestatsapi,1.03,12.99,31.04,1.29,3.6,2.75,1.4,1.45,1.73
-comp_408698,UEFA Conference League,2026-07-23,11:30,AEK Larnaca,Beitar Jerusalem,,,,scheduled,2,qualifying,thestatsapi,1.85,3.5,3.5,2.13,1.7,1.8,1.91,1.72,2.17
-comp_408698,UEFA Conference League,2026-07-23,11:30,DAC 1904,FK Velež Mostar,,,,scheduled,2,qualifying,thestatsapi,,,,1.67,2.11,,,,
-comp_408698,UEFA Conference League,2026-07-23,11:30,Raków Częstochowa,Valletta FC,,,,scheduled,2,qualifying,thestatsapi,1.11,8.0,17.0,1.5,2.5,2.25,1.57,1.68,2.08
-comp_408698,UEFA Conference League,2026-07-23,11:00,Paide Linnameeskond,Zirə FK,,,,scheduled,2,qualifying,thestatsapi,11.0,4.33,1.3,1.74,2.01,1.83,1.83,1.67,
-comp_408698,UEFA Conference League,2026-07-23,11:00,FC Dila Gori,Apollon Limassol,,,,scheduled,2,qualifying,thestatsapi,3.4,3.25,2.0,2.16,1.64,1.91,1.8,,2.1
-comp_408698,UEFA Conference League,2026-07-23,11:00,Flora Tallinn,The New Saints,,,,scheduled,2,qualifying,thestatsapi,2.15,3.4,2.8,1.72,2.03,1.61,2.2,1.43,1.71
-comp_408698,UEFA Conference League,2026-07-23,11:00,Debreceni VSC,Pyunik Yerevan,,,,scheduled,2,qualifying,thestatsapi,1.73,3.6,4.0,1.99,1.77,1.91,1.8,,2.1
-comp_408698,UEFA Conference League,2026-07-23,11:00,HJK,Coleraine FC,,,,scheduled,2,qualifying,thestatsapi,1.4,4.75,5.5,1.57,2.35,1.8,1.91,1.48,1.82
-comp_408698,UEFA Conference League,2026-07-23,10:30,FK Panevėžys,FC Tobol,,,,scheduled,2,qualifying,thestatsapi,3.2,3.4,1.95,2.22,1.61,2.0,1.73,,1.83
-comp_408698,UEFA Conference League,2026-07-23,10:00,FC Alashkert,CFR 1907 Cluj,,,,scheduled,2,qualifying,thestatsapi,3.4,3.25,1.95,2.27,1.58,1.83,1.83,,2.1
-comp_408698,UEFA Conference League,2026-07-23,10:00,FK Liepaja,Austria Wien,,,,scheduled,2,qualifying,thestatsapi,6.0,4.75,1.38,1.76,1.98,2.1,1.67,1.5,1.83
-comp_408698,UEFA Conference League,2026-07-23,09:30,FC Malisheva,Hibernian,,,,scheduled,2,qualifying,thestatsapi,4.33,4.0,1.57,1.84,1.92,1.83,1.83,1.49,1.8
-comp_408698,UEFA Conference League,2026-07-23,08:00,KuPS,Riga FC,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,
-comp_408698,UEFA Conference League,2026-07-22,14:00,FK Železničar Pančevo,Sporting Braga,,,,scheduled,2,qualifying,thestatsapi,7.0,4.33,1.36,1.67,2.11,1.91,1.8,1.67,2.06
-comp_408698,UEFA Conference League,2026-07-22,13:30,FC Spartak Trnava,FC CSKA 1948 Sofia,,,,scheduled,2,qualifying,thestatsapi,2.2,3.2,3.0,2.1,1.67,1.91,1.8,1.61,1.98
-comp_408698,UEFA Conference League,2026-07-22,13:00,FK Vardar Skopje,Riga FC,,,,scheduled,2,qualifying,thestatsapi,2.7,3.4,2.2,1.7,2.06,1.53,2.38,1.68,2.0
-comp_408698,UEFA Conference League,2026-07-22,12:45,Başakşehir FK,Inter Turku,,,,scheduled,2,qualifying,thestatsapi,1.22,7.0,11.0,1.6,2.3,2.2,1.61,1.56,1.91
-comp_408698,UEFA Conference League,2026-07-22,12:00,Bohemian FC,KF Ballkani,,,,scheduled,2,qualifying,thestatsapi,1.75,3.5,3.9,1.96,1.8,1.73,2.0,1.58,1.91
-comp_408698,UEFA Conference League,2026-07-22,11:00,Neftçi Baku PFK,Dinamo Minsk,,,,scheduled,2,qualifying,thestatsapi,2.0,3.2,3.4,2.21,1.61,1.73,2.0,,1.83
-comp_408698,UEFA Conference League,2026-07-21,13:15,Atert Bissen,ETO FC Győr,,,,scheduled,2,qualifying,thestatsapi,4.5,4.33,1.5,1.69,2.07,1.83,1.83,1.56,1.91
-comp_408698,UEFA Conference League,2026-07-21,12:30,Floriana FC,FC Drita,,,,scheduled,2,qualifying,thestatsapi,3.1,3.7,1.91,1.7,2.01,1.73,2.0,1.52,1.83
-comp_408698,UEFA Conference League,2026-07-21,12:00,IFK Göteborg,FCI Levadia Tallinn,,,,scheduled,2,qualifying,thestatsapi,1.42,4.5,5.25,1.67,2.15,1.83,1.83,1.41,1.68
-comp_9799,MLS,2026-07-25,21:30,San Jose Earthquakes,LA Galaxy,,,,scheduled,,,thestatsapi,1.67,4.1,4.33,1.44,2.7,1.5,2.5,,
-comp_9799,MLS,2026-07-25,21:30,Portland Timbers,Real Salt Lake,,,,scheduled,,,thestatsapi,2.35,3.75,2.62,1.36,2.88,1.4,2.75,,
-comp_9799,MLS,2026-07-25,21:30,Los Angeles FC,Sporting Kansas City,,,,scheduled,,,thestatsapi,1.17,7.0,13.0,1.25,3.6,1.73,2.0,,
-comp_9799,MLS,2026-07-25,20:30,San Diego FC,FC Dallas,,,,scheduled,,,thestatsapi,2.05,3.8,3.1,1.4,2.88,1.4,2.75,,1.83
-comp_9799,MLS,2026-07-25,19:30,St.Louis City,Colorado Rapids,,,,scheduled,,,thestatsapi,1.85,3.75,3.75,1.57,2.35,1.53,2.38,,
-comp_9799,MLS,2026-07-25,19:30,Minnesota United,Vancouver Whitecaps,,,,scheduled,,,thestatsapi,3.3,3.7,2.0,1.57,2.35,1.53,2.38,,1.83
-comp_9799,MLS,2026-07-25,19:30,Houston Dynamo,Austin FC,,,,scheduled,,,thestatsapi,1.53,4.2,5.5,1.61,2.25,1.7,2.05,,
-comp_9799,MLS,2026-07-25,18:30,Philadelphia Union,Seattle Sounders FC,,,,scheduled,,,thestatsapi,2.2,3.5,3.0,1.67,2.15,1.57,2.25,,
-comp_9799,MLS,2026-07-25,18:30,Orlando City SC,Nashville SC,,,,scheduled,,,thestatsapi,3.0,3.8,2.1,1.53,2.4,1.5,2.5,,
-comp_9799,MLS,2026-07-25,18:30,CF Montréal,Inter Miami CF,,,,scheduled,,,thestatsapi,3.3,4.0,1.91,1.36,3.1,1.36,3.0,,
-comp_9799,MLS,2026-07-25,18:30,New York City FC,Chicago Fire,,,,scheduled,,,thestatsapi,2.35,3.6,2.7,1.61,2.25,1.53,2.38,,1.73
-comp_9799,MLS,2026-07-25,18:30,New England Revolution,Atlanta United,,,,scheduled,,,thestatsapi,1.91,3.5,3.75,1.8,2.0,1.67,2.1,,
-comp_9799,MLS,2026-07-25,18:30,DC United,Toronto FC,,,,scheduled,,,thestatsapi,1.9,3.5,3.8,1.73,2.08,1.67,2.1,,
-comp_9799,MLS,2026-07-25,18:00,Columbus Crew,FC Cincinnati,,,,scheduled,,,thestatsapi,1.75,4.0,3.9,1.36,3.1,1.4,2.75,,
-comp_9799,MLS,2026-07-25,17:30,New York Red Bulls,Charlotte FC,,,,scheduled,,,thestatsapi,2.2,3.7,2.9,1.53,2.4,1.5,2.5,,
-comp_9799,MLS,2026-07-22,21:30,Los Angeles FC,Real Salt Lake,,,,scheduled,,,thestatsapi,1.72,4.15,4.31,1.5,2.4,1.53,2.35,1.43,2.0
-comp_9799,MLS,2026-07-22,21:30,LA Galaxy,St.Louis City,,,,scheduled,,,thestatsapi,1.95,3.7,3.5,1.57,2.35,1.5,2.5,,1.91
-comp_9799,MLS,2026-07-22,21:30,San Jose Earthquakes,Orlando City SC,,,,scheduled,,,thestatsapi,1.53,4.98,4.91,1.33,3.4,1.44,2.62,1.35,1.57
-comp_9799,MLS,2026-07-22,21:30,Portland Timbers,FC Dallas,,,,scheduled,,,thestatsapi,2.38,3.73,2.76,1.5,2.5,1.4,2.75,1.45,1.65
-comp_9799,MLS,2026-07-22,20:30,Colorado Rapids,San Diego FC,,,,scheduled,,,thestatsapi,2.09,4.0,3.1,1.4,2.88,1.44,2.62,1.43,1.8
-comp_9799,MLS,2026-07-22,19:30,Sporting Kansas City,Minnesota United,,,,scheduled,,,thestatsapi,3.69,3.88,1.91,1.5,2.5,1.5,2.5,1.42,1.73
-comp_9799,MLS,2026-07-22,19:30,Houston Dynamo,DC United,,,,scheduled,,,thestatsapi,1.8,3.78,4.29,1.79,2.05,1.7,2.05,1.46,1.73
-comp_9799,MLS,2026-07-22,19:30,Nashville SC,CF Montréal,,,,scheduled,,,thestatsapi,1.49,4.49,6.19,1.65,2.27,1.75,2.0,1.47,2.0
-comp_9799,MLS,2026-07-22,19:30,Austin FC,Seattle Sounders FC,,,,scheduled,,,thestatsapi,3.36,3.67,2.08,1.67,2.23,1.61,2.2,1.43,1.73
-comp_9799,MLS,2026-07-22,19:15,Charlotte FC,Atlanta United,,,,scheduled,,,thestatsapi,1.84,3.75,4.13,1.69,2.19,1.7,2.05,1.41,1.91
-comp_9799,MLS,2026-07-22,18:30,Columbus Crew,New York City FC,,,,scheduled,,,thestatsapi,1.97,3.71,3.66,1.76,2.08,1.61,2.2,1.44,2.0
-comp_9799,MLS,2026-07-22,18:30,Philadelphia Union,New York Red Bulls,,,,scheduled,,,thestatsapi,1.77,4.14,4.06,1.48,2.6,1.5,2.5,1.43,1.8
-comp_9799,MLS,2026-07-22,18:30,New England Revolution,Toronto FC,,,,scheduled,,,thestatsapi,1.93,3.77,3.74,1.8,2.03,1.7,2.05,1.45,1.93
-comp_9799,MLS,2026-07-22,18:30,Inter Miami CF,Chicago Fire,,,,scheduled,,,thestatsapi,2.11,4.19,2.96,1.33,3.4,1.36,3.0,1.47,1.9
-comp_9799,MLS,2026-07-22,18:30,FC Cincinnati,Vancouver Whitecaps,,,,scheduled,,,thestatsapi,3.95,4.22,1.77,1.4,2.88,1.36,3.0,1.46,1.91
+liga,liga_nombre,fecha,hora_peru,local,visitante,goles_l,goles_v,resultado,estado,jornada,fase,fuente,c1,cx,c2,over_2.5,under_2.5,btts_si,btts_no,corners_over_8.5,corners_over_9.5,shots_linea,shots_over_precio,sot_linea,sot_over_precio,cards_linea,cards_over_precio
+comp_4540,Liga Profesional Argentina,2026-07-28,17:00,Banfield,Sarmiento,,,,scheduled,2,,thestatsapi,2.15,2.9,3.9,2.88,1.4,2.25,1.57,,,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-28,17:00,San Lorenzo,Gimnasia y Esgrima Mendoza,,,,scheduled,2,,thestatsapi,2.15,2.88,3.8,3.1,1.36,2.5,1.5,,,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-26,17:30,Deportivo Riestra,Boca Juniors,,,,scheduled,1,,thestatsapi,4.41,3.0,2.04,3.4,1.33,2.62,1.44,1.83,2.0,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-26,15:15,Estudiantes de La Plata,CA Independiente,,,,scheduled,1,,thestatsapi,2.21,3.0,3.78,2.88,1.4,2.25,1.57,1.83,1.92,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-26,13:00,Atlético Tucumán,Independiente Rivadavia,,,,scheduled,1,,thestatsapi,2.67,3.1,2.84,2.32,1.53,1.95,1.8,1.8,2.0,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-25,19:30,Lanús,San Lorenzo,,,,scheduled,1,,thestatsapi,1.92,2.88,5.39,3.1,1.36,2.62,1.44,1.83,,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-25,17:15,River Plate,Barracas Central,,,,scheduled,1,,thestatsapi,1.39,4.3,9.41,2.34,1.61,2.62,1.44,1.83,2.15,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-25,15:00,Newell's Old Boys,Talleres,,,,scheduled,1,,thestatsapi,2.79,2.86,2.94,2.7,1.44,2.1,1.67,1.83,,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-25,12:45,Estudiantes de Río Cuarto,Tigre,,,,scheduled,1,,thestatsapi,3.91,2.95,2.19,3.4,1.33,2.62,1.44,1.9,,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-24,19:15,Huracán,Banfield,,,,scheduled,1,,thestatsapi,1.93,3.02,4.96,3.1,1.36,2.62,1.44,1.91,2.0,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-24,19:15,Platense,Club Atlético Unión de Santa Fe,,,,scheduled,1,,thestatsapi,2.87,2.73,2.99,3.1,1.36,2.38,1.53,1.93,2.06,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-24,17:00,Racing Club,Gimnasia y Esgrima,,,,scheduled,1,,thestatsapi,1.81,3.35,4.96,2.5,1.5,2.2,1.61,,,26.5,1.91,8.5,1.83,,
+comp_4540,Liga Profesional Argentina,2026-07-24,17:00,Vélez Sarsfield,Instituto De Córdoba,,,,scheduled,1,,thestatsapi,2.16,2.98,3.97,2.88,1.4,2.25,1.57,1.8,,,,,,,
+comp_4540,Liga Profesional Argentina,2026-07-24,14:45,Gimnasia y Esgrima Mendoza,Central Córdoba,,,,scheduled,1,,thestatsapi,1.76,3.35,5.33,2.88,1.4,2.5,1.5,1.8,2.02,23.5,1.91,8.5,2.1,,
+comp_4540,Liga Profesional Argentina,2026-07-23,19:45,Defensa y Justicia,Aldosivi,,,,scheduled,1,,thestatsapi,1.89,3.2,4.71,2.7,1.44,2.25,1.57,1.83,,22.5,1.83,7.5,1.67,,
+comp_4540,Liga Profesional Argentina,2026-07-23,17:30,Sarmiento,Argentinos Juniors,,,,scheduled,1,,thestatsapi,4.7,3.03,1.96,3.1,1.36,2.5,1.5,1.73,2.05,,,7.5,1.8,,
+comp_4540,Liga Profesional Argentina,2026-07-23,17:30,Belgrano,Rosario Central,,,,scheduled,1,,thestatsapi,2.53,2.79,3.38,2.88,1.36,2.38,1.53,1.83,,22.5,1.8,7.5,1.83,5.5,1.83
+comp_4795,Brasileirão Série A,2026-07-26,17:30,Remo,Vitória,,,,scheduled,20,,thestatsapi,2.15,3.25,3.3,2.05,1.75,1.8,1.95,1.32,1.54,,,,,,
+comp_4795,Brasileirão Série A,2026-07-26,17:30,Palmeiras,Atlético Mineiro,,,,scheduled,20,,thestatsapi,1.6,3.7,5.75,2.08,1.73,2.05,1.7,1.4,1.73,,,,,,
+comp_4795,Brasileirão Série A,2026-07-26,16:30,Flamengo,São Paulo,,,,scheduled,20,,thestatsapi,1.5,4.1,6.0,1.9,1.9,2.0,1.75,1.37,1.6,,,,,,
+comp_4795,Brasileirão Série A,2026-07-26,16:30,Red Bull Bragantino,Coritiba,,,,scheduled,20,,thestatsapi,1.61,3.8,5.5,1.9,1.9,1.91,1.91,1.37,1.63,,,,,,
+comp_4795,Brasileirão Série A,2026-07-26,16:30,Grêmio,Fluminense,,,,scheduled,20,,thestatsapi,2.64,3.36,2.72,1.93,1.92,1.91,1.91,1.67,2.0,,,,,,
+comp_4795,Brasileirão Série A,2026-07-26,14:00,Cruzeiro,Botafogo,,,,scheduled,20,,thestatsapi,1.75,3.6,4.5,1.95,1.85,1.8,1.95,1.41,1.73,,,,,,
+comp_4795,Brasileirão Série A,2026-07-26,14:00,Bahia,Corinthians,,,,scheduled,20,,thestatsapi,2.1,3.3,3.4,2.0,1.8,1.8,1.95,1.4,1.67,,,,,,
+comp_4795,Brasileirão Série A,2026-07-25,18:30,Vasco da Gama,Mirassol,,,,scheduled,20,,thestatsapi,2.05,3.43,3.76,2.07,1.79,1.8,1.95,1.36,1.73,,,,,,
+comp_4795,Brasileirão Série A,2026-07-25,16:30,Santos,Chapecoense,,,,scheduled,20,,thestatsapi,1.38,4.33,8.0,1.73,2.08,1.91,1.91,1.42,1.68,,,,,,
+comp_4795,Brasileirão Série A,2026-07-25,16:30,Athletico,Internacional,,,,scheduled,20,,thestatsapi,1.95,3.2,4.0,2.35,1.57,2.05,1.7,1.44,1.72,,,,,,
+comp_4795,Brasileirão Série A,2026-07-23,17:30,Botafogo,Vitória,,,,scheduled,4,,thestatsapi,1.76,3.47,5.2,1.83,2.02,1.67,2.1,,2.1,25.5,1.73,8.5,1.8,4.5,1.91
+comp_4795,Brasileirão Série A,2026-07-23,17:30,Corinthians,Remo,,,,scheduled,19,,thestatsapi,1.52,4.13,6.66,1.99,1.86,2.05,1.7,1.27,1.57,24.5,1.73,8.5,2.0,4.5,1.73
+comp_4795,Brasileirão Série A,2026-07-22,19:30,Chapecoense,Flamengo,,,,scheduled,19,,thestatsapi,7.19,4.41,1.46,1.88,1.99,2.0,1.75,1.36,1.73,27.5,1.8,,,4.5,1.91
+comp_4795,Brasileirão Série A,2026-07-22,19:30,Internacional,Cruzeiro,,,,scheduled,19,,thestatsapi,2.26,3.3,3.34,2.08,1.79,1.8,1.95,1.37,1.73,24.5,1.83,8.5,1.83,5.5,2.0
+comp_4795,Brasileirão Série A,2026-07-22,19:30,São Paulo,Athletico,,,,scheduled,19,,thestatsapi,2.03,3.24,4.11,2.31,1.65,1.95,1.8,1.47,1.73,25.5,1.83,8.5,2.1,5.5,2.0
+comp_4795,Brasileirão Série A,2026-07-22,17:30,Coritiba,Palmeiras,,,,scheduled,19,,thestatsapi,4.74,3.41,1.84,2.22,1.7,1.95,1.8,1.32,1.57,26.5,1.8,8.5,1.73,4.5,1.73
+comp_4795,Brasileirão Série A,2026-07-21,17:30,Atlético Mineiro,Bahia,,,,scheduled,19,,thestatsapi,1.93,3.7,4.18,1.87,2.04,1.7,2.05,1.35,1.6,27.5,1.8,9.5,1.83,5.5,2.0
+comp_720692,Primera A Colombia,2026-07-26,20:15,Once Caldas,Cúcuta Deportivo,,,,scheduled,1,,thestatsapi,1.51,4.06,6.2,1.88,1.93,1.91,1.8,,1.8,,,,,,
+comp_720692,Primera A Colombia,2026-07-26,18:10,Alianza Valledupar FC,Fortaleza CEIF,,,,scheduled,1,,thestatsapi,2.05,3.0,3.4,2.25,1.57,1.95,1.75,,,,,,,,
+comp_720692,Primera A Colombia,2026-07-26,16:05,Rionegro Águilas Doradas,Independiente Santa Fe,,,,scheduled,1,,thestatsapi,2.8,2.95,2.75,2.4,1.53,2.0,1.73,,,,,,,,
+comp_720692,Primera A Colombia,2026-07-26,14:00,Internacional de Bogotá,América de Cali,,,,scheduled,1,,thestatsapi,2.72,3.13,2.68,2.21,1.66,2.0,1.73,,,,,,,,
+comp_720692,Primera A Colombia,2026-07-25,20:15,Deportes Tolima,Junior Barranquilla,,,,scheduled,1,,thestatsapi,1.98,2.95,4.57,2.1,1.72,1.75,1.95,,,,,,,,
+comp_720692,Primera A Colombia,2026-07-25,18:10,Millonarios,Atlético Bucaramanga,,,,scheduled,1,,thestatsapi,1.88,3.24,4.45,2.29,1.61,2.0,1.73,1.83,2.02,,,,,,
+comp_720692,Primera A Colombia,2026-07-25,16:05,Independiente Medellín,Deportivo Pasto,,,,scheduled,1,,thestatsapi,1.74,3.42,5.01,2.11,1.72,1.91,1.8,1.93,2.07,,,,,,
+comp_720692,Primera A Colombia,2026-07-25,14:00,Boyacá Chicó FC,Atlético Nacional,,,,scheduled,1,,thestatsapi,6.11,3.68,1.58,2.03,1.79,2.0,1.73,,,,,,,,
+comp_720692,Primera A Colombia,2026-07-24,20:15,Deportivo Cali,Jaguares de Córdoba,,,,scheduled,1,,thestatsapi,1.53,3.78,6.73,2.17,1.68,2.25,1.57,1.73,,,,,,,
+comp_720692,Primera A Colombia,2026-07-24,18:10,Llaneros FC,Deportivo Pereira,,,,scheduled,1,,thestatsapi,1.6,3.61,6.02,2.25,1.63,2.25,1.57,,1.83,,,,,,
+comp_1615,CONMEBOL Sudamericana,2026-07-28,17:00,Tigre,Nacional,,,,scheduled,,round_of_16,thestatsapi,,,,,,,,,,,,,,,
+comp_1615,CONMEBOL Sudamericana,2026-07-23,19:30,Independiente Santa Fe,Caracas F.C.,,,,scheduled,,round_of_16,thestatsapi,1.43,4.05,7.82,2.26,1.61,2.62,1.44,1.73,2.2,,,,,,
+comp_1615,CONMEBOL Sudamericana,2026-07-23,19:30,Boca Juniors,O'Higgins,,,,scheduled,,round_of_16,thestatsapi,1.26,5.28,11.11,1.85,1.93,2.62,1.44,1.66,2.05,28.5,1.91,8.5,1.91,,
+comp_1615,CONMEBOL Sudamericana,2026-07-23,17:00,Bolívar,Grêmio,,,,scheduled,,round_of_16,thestatsapi,1.6,4.16,4.82,1.72,2.06,1.73,2.0,,,29.5,1.8,9.5,2.0,4.5,2.0
+comp_1615,CONMEBOL Sudamericana,2026-07-22,19:30,Club Sporting Cristal,Red Bull Bragantino,,,,scheduled,,round_of_16,thestatsapi,3.33,3.38,2.12,1.99,1.82,1.8,1.91,,1.67,,,,,4.5,1.73
+comp_1615,CONMEBOL Sudamericana,2026-07-22,19:30,Lanús,Cienciano,,,,scheduled,,round_of_16,thestatsapi,1.31,5.02,8.65,1.8,2.02,2.2,1.61,,2.1,25.5,1.73,8.5,1.8,4.5,1.67
+comp_1615,CONMEBOL Sudamericana,2026-07-22,17:00,Independiente Medellín,Vasco da Gama,,,,scheduled,,round_of_16,thestatsapi,2.28,3.12,3.27,2.14,1.68,1.91,1.8,1.73,2.0,,,,,5.5,1.8
+comp_1615,CONMEBOL Sudamericana,2026-07-21,19:30,Universidad Central,Santos,,,,scheduled,,round_of_16,thestatsapi,4.3,3.41,1.9,2.14,1.71,2.0,1.73,1.57,1.91,25.5,1.83,8.5,2.0,5.5,1.83
+comp_1615,CONMEBOL Sudamericana,2026-07-21,17:00,Nacional,Tigre,,,,scheduled,,round_of_16,thestatsapi,2.3,2.79,3.89,2.7,1.44,2.1,1.67,1.8,2.3,20.5,1.83,8.5,2.1,5.5,1.83
+comp_7938,Danish Superliga,2026-07-27,12:00,Randers FC,Silkeborg IF,,,,scheduled,1,,thestatsapi,1.78,3.92,4.23,1.68,2.2,1.67,2.1,,1.83,,,,,,
+comp_7938,Danish Superliga,2026-07-26,11:00,AC Horsens,FC Nordsjælland,,,,scheduled,1,,thestatsapi,3.73,3.74,1.93,1.69,2.19,1.57,2.25,1.45,2.0,,,,,,
+comp_7938,Danish Superliga,2026-07-26,09:00,FC København,Lyngby,,,,scheduled,1,,thestatsapi,1.39,4.5,6.0,,,,,,,,,,,,
+comp_7938,Danish Superliga,2026-07-26,07:00,Sønderjyske Fodbold,FC Midtjylland,,,,scheduled,1,,thestatsapi,5.24,4.52,1.55,1.5,2.5,1.57,2.25,,1.73,,,,,,
+comp_7938,Danish Superliga,2026-07-25,11:00,AGF,Brøndby IF,,,,scheduled,1,,thestatsapi,2.33,3.66,2.88,1.68,2.22,1.57,2.25,,1.83,,,,,,
+comp_7938,Danish Superliga,2026-07-24,12:00,Viborg FF,Odense Boldklub,,,,scheduled,1,,thestatsapi,1.85,3.7,3.6,1.6,2.2,,,,,,,,,,
+comp_1992,Eliteserien,2026-07-27,12:00,Rosenborg BK,Fredrikstad FK,,,,scheduled,15,,thestatsapi,1.7,3.97,4.77,1.77,2.09,1.7,2.05,,,,,,,,
+comp_1992,Eliteserien,2026-07-26,12:15,Aalesunds FK,Viking FK,,,,scheduled,15,,thestatsapi,6.0,4.33,1.44,1.4,2.88,1.53,2.38,,1.38,,,,,,
+comp_1992,Eliteserien,2026-07-26,10:00,Sarpsborg 08,HamKam,,,,scheduled,15,,thestatsapi,1.85,3.6,3.7,1.57,2.35,1.53,2.38,,1.41,,,,,,
+comp_1992,Eliteserien,2026-07-26,10:00,Sandefjord Fotball,Bodø/Glimt,,,,scheduled,15,,thestatsapi,6.25,4.75,1.4,1.36,3.1,1.53,2.38,,1.44,,,,,,
+comp_1992,Eliteserien,2026-07-26,10:00,KFUM Oslo,Molde FK,,,,scheduled,15,,thestatsapi,2.96,3.93,2.21,1.7,2.19,,,,,,,,,,
+comp_1992,Eliteserien,2026-07-26,07:30,SK Brann,Vålerenga IF,,,,scheduled,15,,thestatsapi,1.75,4.32,4.1,1.44,2.7,1.53,2.38,,1.52,,,,,,
+comp_1992,Eliteserien,2026-07-25,09:00,Kristiansund BK,IK Start,,,,scheduled,15,,thestatsapi,2.21,3.6,3.18,1.74,2.13,1.61,2.2,1.42,1.68,,,,,,
+comp_1992,Eliteserien,2026-07-22,12:00,Lillestrøm SK,Viking FK,,,,scheduled,11,,thestatsapi,3.07,3.77,2.26,1.53,2.4,1.5,2.5,1.35,1.58,,,,,,
+comp_1992,Eliteserien,2026-07-22,12:00,Bodø/Glimt,HamKam,,,,scheduled,2,,thestatsapi,1.11,11.81,18.21,1.25,4.0,1.95,1.8,1.3,1.5,,,,,,
+comp_6981,Liga 1 Perú,2026-07-26,19:00,Deportivo Garcilaso,FC Cajamarca,,,,scheduled,2,,thestatsapi,1.52,3.91,6.13,2.0,1.81,1.91,1.8,1.91,,,,,,,
+comp_6981,Liga 1 Perú,2026-07-26,15:30,Comerciantes Unidos,Alianza Lima,,,,scheduled,2,,thestatsapi,3.99,3.03,2.01,2.4,1.53,2.1,1.67,,,,,,,,
+comp_6981,Liga 1 Perú,2026-07-26,13:00,Universidad Técnica de Cajamarca,CD Moquegua,,,,scheduled,2,,thestatsapi,1.59,3.91,5.2,1.87,1.93,1.91,1.8,,2.0,,,,,,
+comp_6981,Liga 1 Perú,2026-07-25,20:00,Melgar,Club Sporting Cristal,,,,scheduled,2,,thestatsapi,1.77,3.75,4.02,1.72,2.08,1.73,2.0,1.3,1.52,,,,,,
+comp_6981,Liga 1 Perú,2026-07-25,17:30,Sport Boys,Asociación Deportiva Tarma,,,,scheduled,2,,thestatsapi,1.8,3.52,4.21,1.93,1.88,,,,,,,,,,
+comp_6981,Liga 1 Perú,2026-07-25,15:15,ADC Juan Pablo II,Cienciano,,,,scheduled,2,,thestatsapi,3.0,3.4,2.25,1.7,2.1,1.57,2.25,,,,,,,,
+comp_6981,Liga 1 Perú,2026-07-25,13:00,Sport Huancayo,Club Atlético Grau,,,,scheduled,2,,thestatsapi,1.65,3.66,5.05,2.01,1.8,1.91,1.8,1.83,,,,,,,
+comp_6981,Liga 1 Perú,2026-07-24,20:30,Universitario,Cusco FC,,,,scheduled,2,,thestatsapi,1.45,4.35,6.32,1.74,2.06,2.0,1.73,1.73,1.88,,,,,,
+comp_6981,Liga 1 Perú,2026-07-24,15:00,Alianza Atlético de Sullana,Los Chankas CYC,,,,scheduled,2,,thestatsapi,1.72,3.53,4.49,1.94,1.85,1.8,1.91,1.83,,,,,,,
+comp_298265,Liga MX Apertura,2026-07-26,19:00,CF Pachuca,Querétaro FC,,,,scheduled,2,,thestatsapi,1.58,3.85,6.16,1.69,2.19,1.8,1.95,1.44,1.8,,,,,,
+comp_298265,Liga MX Apertura,2026-07-26,18:00,Club Necaxa,CF Monterrey,,,,scheduled,2,,thestatsapi,2.9,3.7,2.3,1.6,2.3,1.5,2.5,1.46,1.77,,,,,,
+comp_298265,Liga MX Apertura,2026-07-25,22:00,Santos Laguna,Atlas FC,,,,scheduled,2,,thestatsapi,2.62,3.24,2.78,1.89,1.94,1.61,2.2,1.48,1.83,,,,,,
+comp_298265,Liga MX Apertura,2026-07-25,22:00,Tigres UANL,Atlético San Luis,,,,scheduled,2,,thestatsapi,1.44,4.93,6.2,1.61,2.25,1.8,1.95,,2.1,,,,,,
+comp_298265,Liga MX Apertura,2026-07-25,18:00,CD Guadalajara,FC Juárez,,,,scheduled,2,,thestatsapi,1.49,4.64,5.83,1.6,2.3,1.61,2.2,1.5,1.83,,,,,,
+comp_298265,Liga MX Apertura,2026-07-24,21:00,Atlante FC,Club América,,,,scheduled,2,,thestatsapi,4.49,3.97,1.72,1.83,2.02,1.75,2.0,,1.83,,,,,,
+comp_298265,Liga MX Apertura,2026-07-24,21:00,Club Tijuana,Club León,,,,scheduled,2,,thestatsapi,2.05,3.78,3.35,1.65,2.27,1.57,2.25,,1.91,,,,,,
+comp_298265,Liga MX Apertura,2026-07-21,22:05,CD Toluca,Pumas UNAM,,,,scheduled,2,,thestatsapi,1.62,4.36,5.27,1.66,2.32,1.61,2.2,1.48,2.0,29.5,2.0,9.5,1.8,,
+comp_298265,Liga MX Apertura,2026-07-21,20:00,Cruz Azul,Club Puebla,,,,scheduled,2,,thestatsapi,1.35,5.71,8.04,1.6,2.3,2.0,1.75,1.5,1.83,28.5,1.83,9.5,1.8,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-27,19:00,Deportivo Cuenca,Emelec,,,,scheduled,22,,thestatsapi,,,,,,,,,,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-27,16:30,Guayaquil City,Universidad Católica del Ecuador,,,,scheduled,22,,thestatsapi,,,,,,,,,,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-27,14:00,Mushuc Runa,Libertad,,,,scheduled,22,,thestatsapi,,,,,,,,,,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-26,19:15,Barcelona SC,LDU,,,,scheduled,22,,thestatsapi,2.6,3.1,2.65,2.16,1.58,1.86,1.81,1.62,2.0,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-26,15:45,Orense SC,Independiente del Valle,,,,scheduled,22,,thestatsapi,4.0,3.35,1.88,1.94,1.72,1.8,1.87,1.5,1.85,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-26,13:15,Delfín,Leones del Norte,,,,scheduled,22,,thestatsapi,2.38,2.85,3.2,2.7,1.37,2.2,1.57,,,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-26,13:15,Aucas,Macará,,,,scheduled,22,,thestatsapi,1.87,3.3,4.1,2.1,1.61,1.93,1.75,1.33,1.55,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-25,19:00,Técnico Universitario,Manta FC,,,,scheduled,22,,thestatsapi,1.75,3.4,4.6,2.1,1.6,1.98,1.71,1.5,1.8,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-23,19:00,Emelec,Mushuc Runa,,,,scheduled,21,,thestatsapi,1.83,3.63,4.03,2.11,1.7,1.83,1.83,,,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-23,16:30,Orense SC,Aucas,,,,scheduled,21,,thestatsapi,2.61,3.04,2.84,2.22,1.64,1.83,1.83,1.34,1.91,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-23,16:30,Leones del Norte,Guayaquil City,,,,scheduled,21,,thestatsapi,1.8,3.32,4.68,2.5,1.5,2.15,1.6,,,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-22,19:00,Manta FC,LDU,,,,scheduled,21,,thestatsapi,4.87,3.3,1.77,2.35,1.57,2.1,1.67,,1.83,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-22,16:30,Independiente del Valle,Técnico Universitario,,,,scheduled,21,,thestatsapi,1.21,6.2,11.2,1.62,2.25,2.2,1.61,1.38,1.83,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-22,14:00,Macará,Deportivo Cuenca,,,,scheduled,21,,thestatsapi,2.17,3.1,3.67,2.6,1.48,2.0,1.73,1.46,1.91,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-21,19:00,Universidad Católica del Ecuador,Barcelona SC,,,,scheduled,21,,thestatsapi,1.92,3.53,4.05,1.99,1.85,1.91,1.8,,2.1,,,,,,
+comp_1917,LigaPro Serie A Ecuador,2026-07-21,16:30,Libertad,Delfín,,,,scheduled,21,,thestatsapi,2.28,2.96,3.66,2.4,1.53,2.0,1.73,,1.83,,,,,,
+comp_3498,UEFA Champions League,2026-07-28,14:00,Shamrock Rovers,FC Ararat-Armenia,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_3498,UEFA Champions League,2026-07-28,13:45,Heart of Midlothian,SK Sturm Graz,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_3498,UEFA Champions League,2026-07-28,13:15,NK Celje,KF Egnatia,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_3498,UEFA Champions League,2026-07-28,13:00,GNK Dinamo Zagreb,FC Thun,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_3498,UEFA Champions League,2026-07-28,11:00,Lincoln Red Imps,Mjällby AIF,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_3498,UEFA Champions League,2026-07-28,10:00,KuPS,Sabah FK,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_3498,UEFA Champions League,2026-07-28,08:00,FK Vardar Skopje,Sabah FK,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_3498,UEFA Champions League,2026-07-22,14:00,KF Egnatia,NK Celje,,,,scheduled,2,qualifying,thestatsapi,3.52,3.42,1.99,2.06,1.74,1.91,1.8,1.67,2.12,,,,,,
+comp_3498,UEFA Champions League,2026-07-22,12:30,Levski Sofia,Universitatea Craiova,,,,scheduled,2,qualifying,thestatsapi,2.14,3.04,3.56,2.21,1.65,1.91,1.8,1.62,2.1,,,,,,
+comp_3498,UEFA Champions League,2026-07-22,12:00,Omonia Nicosia,Kairat Almaty,,,,scheduled,2,qualifying,thestatsapi,1.66,3.83,4.63,2.02,1.77,2.0,1.73,1.65,2.1,,,,,,
+comp_408698,UEFA Conference League,2026-07-28,13:00,FC Drita,Floriana FC,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-28,12:30,FC CSKA 1948 Sofia,FC Spartak Trnava,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-28,12:00,Riga FC,FK Vardar Skopje,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-28,12:00,Apollon Limassol,FC Dila Gori,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,14:15,Valur Reykjavík,HŠK Zrinjski Mostar,,,,scheduled,2,qualifying,thestatsapi,2.62,3.25,2.35,1.83,1.93,1.73,2.0,1.61,2.0,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,14:00,Stjarnan Garðabær,Ilves,,,,scheduled,2,qualifying,thestatsapi,2.5,3.7,2.35,1.5,2.5,1.5,2.5,,1.78,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,14:00,FK Partizan,Una Strassen,,,,scheduled,2,qualifying,thestatsapi,1.25,6.5,7.5,1.5,2.5,2.38,1.53,1.41,2.0,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:45,NSÍ Runavík,FC Koper,,,,scheduled,2,qualifying,thestatsapi,3.4,3.4,1.91,1.79,1.97,1.67,2.1,1.46,1.76,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:45,NK Bravo,KF Shkëndija,,,,scheduled,2,qualifying,thestatsapi,1.7,3.5,4.1,1.72,2.03,1.67,2.1,1.73,,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:45,Motherwell,HB Tórshavn,,,,scheduled,2,qualifying,thestatsapi,1.12,8.0,15.0,1.44,2.62,2.38,1.53,1.63,1.91,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:45,Shelbourne,Nõmme Kalju,,,,scheduled,2,qualifying,thestatsapi,1.25,5.0,9.0,1.82,1.93,2.1,1.67,1.47,1.77,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:45,HNK Rijeka,Derry City,,,,scheduled,2,qualifying,thestatsapi,1.17,6.0,13.0,1.67,2.15,2.25,1.57,1.57,1.91,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:30,MŠK Žilina,GKS Katowice,,,,scheduled,2,qualifying,thestatsapi,2.7,3.4,2.25,1.8,1.96,1.57,2.25,1.48,1.83,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:30,FK Borac Banja Luka,FC Petrocub Hîncesti,,,,scheduled,2,qualifying,thestatsapi,1.42,4.1,6.0,1.57,2.35,1.57,2.25,,2.0,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:30,LNZ Cherkasy,KAA Gent,,,,scheduled,2,qualifying,thestatsapi,3.8,3.1,1.85,2.23,1.65,1.91,1.8,1.5,1.83,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:30,Hapoel Tel Aviv,Ludogorets,,,,scheduled,2,qualifying,thestatsapi,2.62,3.2,2.4,2.25,1.57,2.0,1.73,1.53,1.83,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:30,FC Lugano,Dukagjini,,,,scheduled,2,qualifying,thestatsapi,1.17,6.25,21.0,1.7,2.1,2.38,1.53,1.67,2.07,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:00,NK Varaždin,FK Jablonec,,,,scheduled,2,qualifying,thestatsapi,2.7,3.6,2.15,1.86,1.89,1.67,2.1,1.5,1.83,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:00,FK Vojvodina,AFC Ajax,,,,scheduled,2,qualifying,thestatsapi,5.0,4.0,1.5,1.84,1.92,1.67,2.1,1.58,1.94,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:00,NK Aluminij Kidričevo,Dinamo City,,,,scheduled,2,qualifying,thestatsapi,2.5,3.3,2.4,1.93,1.83,1.67,2.1,,2.1,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:00,Polissya Zhytomyr,FC København,,,,scheduled,2,qualifying,thestatsapi,3.8,4.0,1.67,1.7,2.1,1.73,2.0,,1.91,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,13:00,Paksi FC,Panathinaikos,,,,scheduled,2,qualifying,thestatsapi,4.75,4.1,1.53,1.6,2.3,1.83,1.83,1.55,1.91,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:45,FCSB,FK Auda,,,,scheduled,2,qualifying,thestatsapi,1.17,5.75,13.0,1.67,2.15,2.2,1.61,1.4,1.67,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:30,FC Vaduz,Atlètic Club Escaldes,,,,scheduled,2,qualifying,thestatsapi,1.3,4.75,8.5,1.53,2.38,2.0,1.73,1.68,2.1,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:00,FC Santa Coloma,SK Rapid Wien,,,,scheduled,2,qualifying,thestatsapi,11.0,5.75,1.2,1.44,2.62,2.0,1.73,1.54,1.91,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:00,Dinamo Tbilisi,FK Žalgiris,,,,scheduled,2,qualifying,thestatsapi,2.05,3.2,3.1,2.3,1.56,2.0,1.73,,1.83,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:00,BATE Borisov,FC Sion,,,,scheduled,2,qualifying,thestatsapi,8.5,5.25,1.22,1.64,2.13,2.25,1.57,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:00,FC Universitatea Cluj,SK Brann,,,,scheduled,2,qualifying,thestatsapi,2.88,3.2,2.25,2.03,1.76,1.91,1.8,1.43,1.67,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:00,ML Vitebsk,FK Sutjeska Nikšić,,,,scheduled,2,qualifying,thestatsapi,1.85,3.5,3.6,1.99,1.77,1.73,2.0,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:00,FC Zimbru Chişinău,FC Noah,,,,scheduled,2,qualifying,thestatsapi,4.2,3.7,1.67,1.84,1.92,1.67,2.1,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,12:00,GAIS,FC Nordsjælland,,,,scheduled,2,qualifying,thestatsapi,2.7,3.5,2.2,1.88,1.92,1.73,2.0,1.54,1.98,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:30,RFS,IF Vestri,,,,scheduled,2,qualifying,thestatsapi,1.03,12.46,28.88,1.25,4.0,2.75,1.4,1.45,1.73,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:30,AEK Larnaca,Beitar Jerusalem,,,,scheduled,2,qualifying,thestatsapi,1.85,3.5,3.5,2.13,1.7,1.8,1.91,1.73,2.17,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:30,DAC 1904,FK Velež Mostar,,,,scheduled,2,qualifying,thestatsapi,,,,1.67,2.11,,,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:30,Raków Częstochowa,Valletta FC,,,,scheduled,2,qualifying,thestatsapi,1.11,8.0,17.0,1.5,2.5,2.25,1.57,1.67,2.08,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:00,Paide Linnameeskond,Zirə FK,,,,scheduled,2,qualifying,thestatsapi,11.0,4.33,1.3,1.76,1.98,1.83,1.83,1.67,,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:00,FC Dila Gori,Apollon Limassol,,,,scheduled,2,qualifying,thestatsapi,3.4,3.25,2.0,2.13,1.66,1.91,1.8,,2.1,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:00,Flora Tallinn,The New Saints,,,,scheduled,2,qualifying,thestatsapi,2.2,3.4,2.8,1.74,2.01,1.61,2.2,1.43,1.73,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:00,Debreceni VSC,Pyunik Yerevan,,,,scheduled,2,qualifying,thestatsapi,1.73,3.6,4.0,1.99,1.77,1.91,1.8,,2.1,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,11:00,HJK,Coleraine FC,,,,scheduled,2,qualifying,thestatsapi,1.4,4.75,5.5,1.57,2.35,1.8,1.91,1.48,1.8,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,10:30,FK Panevėžys,FC Tobol,,,,scheduled,2,qualifying,thestatsapi,3.2,3.4,1.95,2.22,1.61,2.0,1.73,,1.88,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,10:00,FC Alashkert,CFR 1907 Cluj,,,,scheduled,2,qualifying,thestatsapi,3.4,3.25,1.95,2.27,1.58,1.83,1.83,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,10:00,FK Liepaja,Austria Wien,,,,scheduled,2,qualifying,thestatsapi,6.0,4.75,1.38,1.76,1.98,2.1,1.67,1.5,1.83,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,09:30,FC Malisheva,Hibernian,,,,scheduled,2,qualifying,thestatsapi,4.75,4.0,1.53,1.78,1.98,1.83,1.83,1.49,1.8,,,,,,
+comp_408698,UEFA Conference League,2026-07-23,08:00,KuPS,Riga FC,,,,scheduled,2,qualifying,thestatsapi,,,,,,,,,,,,,,,
+comp_408698,UEFA Conference League,2026-07-22,14:00,FK Železničar Pančevo,Sporting Braga,,,,scheduled,2,qualifying,thestatsapi,7.72,4.97,1.29,1.7,2.05,1.91,1.8,1.67,2.0,,,,,,
+comp_408698,UEFA Conference League,2026-07-22,13:30,FC Spartak Trnava,FC CSKA 1948 Sofia,,,,scheduled,2,qualifying,thestatsapi,2.2,3.2,3.0,2.1,1.7,1.91,1.8,1.62,1.91,,,,,,
+comp_408698,UEFA Conference League,2026-07-22,13:00,FK Vardar Skopje,Riga FC,,,,scheduled,2,qualifying,thestatsapi,2.9,3.4,2.05,1.69,2.08,1.53,2.38,1.6,2.0,,,,,,
+comp_408698,UEFA Conference League,2026-07-22,12:45,Başakşehir FK,Inter Turku,,,,scheduled,2,qualifying,thestatsapi,1.18,7.5,12.0,1.57,2.25,2.2,1.61,1.56,1.91,,,,,,
+comp_408698,UEFA Conference League,2026-07-22,12:00,Bohemian FC,KF Ballkani,,,,scheduled,2,qualifying,thestatsapi,1.73,3.5,4.0,1.97,1.79,1.73,2.0,1.56,2.0,,,,,,
+comp_408698,UEFA Conference League,2026-07-22,11:00,Neftçi Baku PFK,Dinamo Minsk,,,,scheduled,2,qualifying,thestatsapi,2.0,3.2,3.4,2.21,1.61,1.73,2.0,,1.83,,,,,,
+comp_9799,MLS,2026-07-25,21:30,San Jose Earthquakes,LA Galaxy,,,,scheduled,,,thestatsapi,1.67,4.1,4.33,1.44,2.7,1.5,2.5,,,,,,,,
+comp_9799,MLS,2026-07-25,21:30,Portland Timbers,Real Salt Lake,,,,scheduled,,,thestatsapi,2.35,3.75,2.62,1.44,2.7,1.4,2.75,,1.8,,,,,,
+comp_9799,MLS,2026-07-25,21:30,Los Angeles FC,Sporting Kansas City,,,,scheduled,,,thestatsapi,1.17,7.0,13.0,1.25,3.6,1.73,2.0,,,,,,,,
+comp_9799,MLS,2026-07-25,20:30,San Diego FC,FC Dallas,,,,scheduled,,,thestatsapi,2.05,3.8,3.1,1.4,2.88,1.4,2.75,,,,,,,,
+comp_9799,MLS,2026-07-25,19:30,St.Louis City,Colorado Rapids,,,,scheduled,,,thestatsapi,1.85,3.75,3.75,1.57,2.35,1.53,2.38,,,,,,,,
+comp_9799,MLS,2026-07-25,19:30,Minnesota United,Vancouver Whitecaps,,,,scheduled,,,thestatsapi,3.3,3.7,2.0,1.57,2.35,1.53,2.38,,1.83,,,,,,
+comp_9799,MLS,2026-07-25,19:30,Houston Dynamo,Austin FC,,,,scheduled,,,thestatsapi,1.53,4.2,5.5,1.61,2.25,1.7,2.05,,1.73,,,,,,
+comp_9799,MLS,2026-07-25,18:30,Philadelphia Union,Seattle Sounders FC,,,,scheduled,,,thestatsapi,2.2,3.5,3.0,1.67,2.15,1.57,2.25,,,,,,,,
+comp_9799,MLS,2026-07-25,18:30,Orlando City SC,Nashville SC,,,,scheduled,,,thestatsapi,3.0,3.8,2.1,1.53,2.4,1.5,2.5,,1.91,,,,,,
+comp_9799,MLS,2026-07-25,18:30,CF Montréal,Inter Miami CF,,,,scheduled,,,thestatsapi,3.4,4.0,1.95,1.36,3.1,1.36,3.0,,1.95,,,,,,
+comp_9799,MLS,2026-07-25,18:30,New York City FC,Chicago Fire,,,,scheduled,,,thestatsapi,2.35,3.6,2.7,1.61,2.25,1.53,2.38,,,,,,,,
+comp_9799,MLS,2026-07-25,18:30,New England Revolution,Atlanta United,,,,scheduled,,,thestatsapi,1.91,3.5,3.75,1.8,2.0,1.67,2.1,,1.83,,,,,,
+comp_9799,MLS,2026-07-25,18:30,DC United,Toronto FC,,,,scheduled,,,thestatsapi,1.9,3.5,3.8,1.73,2.08,1.67,2.1,,1.8,,,,,,
+comp_9799,MLS,2026-07-25,18:15,Columbus Crew,FC Cincinnati,,,,scheduled,,,thestatsapi,1.73,4.33,4.0,1.36,3.1,1.4,2.75,,1.8,,,,,,
+comp_9799,MLS,2026-07-25,17:30,New York Red Bulls,Charlotte FC,,,,scheduled,,,thestatsapi,2.25,3.7,2.9,1.53,2.4,1.5,2.5,,1.73,,,,,,
+comp_9799,MLS,2026-07-22,21:30,Los Angeles FC,Real Salt Lake,,,,scheduled,,,thestatsapi,1.7,4.25,4.31,1.5,2.4,1.57,2.25,1.43,2.0,,,,,,
+comp_9799,MLS,2026-07-22,21:30,LA Galaxy,St.Louis City,,,,scheduled,,,thestatsapi,1.95,3.75,3.6,1.57,2.35,1.5,2.5,,1.73,,,,,4.5,2.2
+comp_9799,MLS,2026-07-22,21:30,San Jose Earthquakes,Orlando City SC,,,,scheduled,,,thestatsapi,1.56,4.89,4.74,1.36,3.1,1.44,2.62,1.35,1.6,,,,,,
+comp_9799,MLS,2026-07-22,21:30,Portland Timbers,FC Dallas,,,,scheduled,,,thestatsapi,2.3,3.73,2.89,1.5,2.5,1.4,2.75,1.45,1.65,,,,,4.5,1.91
+comp_9799,MLS,2026-07-22,20:30,Colorado Rapids,San Diego FC,,,,scheduled,,,thestatsapi,2.09,4.0,3.1,1.44,2.7,1.44,2.62,1.43,1.8,,,,,,
+comp_9799,MLS,2026-07-22,20:30,Austin FC,Seattle Sounders FC,,,,scheduled,,,thestatsapi,3.35,3.69,2.08,1.66,2.28,1.61,2.2,1.43,1.75,,,,,,
+comp_9799,MLS,2026-07-22,19:30,Sporting Kansas City,Minnesota United,,,,scheduled,,,thestatsapi,3.43,3.98,1.96,1.45,2.55,1.5,2.5,1.42,1.73,,,,,,
+comp_9799,MLS,2026-07-22,19:30,Houston Dynamo,DC United,,,,scheduled,,,thestatsapi,1.75,3.86,4.52,1.79,2.07,1.7,2.05,1.46,1.73,,,,,,
+comp_9799,MLS,2026-07-22,19:30,Nashville SC,CF Montréal,,,,scheduled,,,thestatsapi,1.47,4.56,6.4,1.61,2.25,1.75,2.0,1.47,2.0,,,,,,
+comp_9799,MLS,2026-07-22,19:15,Charlotte FC,Atlanta United,,,,scheduled,,,thestatsapi,1.95,3.62,3.79,1.72,2.17,1.7,2.05,1.41,1.83,,,,,4.5,1.91
+comp_9799,MLS,2026-07-22,18:30,Columbus Crew,New York City FC,,,,scheduled,,,thestatsapi,1.98,3.66,3.67,1.81,2.03,1.61,2.2,1.44,1.91,,,,,4.5,1.83
+comp_9799,MLS,2026-07-22,18:30,Philadelphia Union,New York Red Bulls,,,,scheduled,,,thestatsapi,1.77,4.14,4.06,1.48,2.6,1.5,2.5,1.43,1.82,,,,,,
+comp_9799,MLS,2026-07-22,18:30,New England Revolution,Toronto FC,,,,scheduled,,,thestatsapi,1.93,3.77,3.74,1.81,2.04,1.7,2.05,1.45,1.83,,,,,,
+comp_9799,MLS,2026-07-22,18:30,Inter Miami CF,Chicago Fire,,,,scheduled,,,thestatsapi,2.06,4.16,3.08,1.36,3.1,1.36,3.0,1.47,1.83,,,,,,
+comp_9799,MLS,2026-07-22,18:30,FC Cincinnati,Vancouver Whitecaps,,,,scheduled,,,thestatsapi,3.95,4.22,1.77,1.4,2.88,1.36,3.0,1.46,1.98,,,,,,

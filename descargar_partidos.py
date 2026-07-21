@@ -68,6 +68,14 @@ COLUMNAS_PROX = [
     'goles_l', 'goles_v', 'resultado', 'estado', 'jornada', 'fase', 'fuente',
     'c1', 'cx', 'c2', 'over_2.5', 'under_2.5', 'btts_si', 'btts_no',
     'corners_over_8.5', 'corners_over_9.5',
+    # Línea VARIABLE por partido (a diferencia de corners, que casi siempre
+    # usa 8.5/9.5 fijas) — se guarda la línea real junto con el precio, y el
+    # modelo calcula la prob. Over para ESA línea específica, no una fija.
+    # Solo Bet365 los cotiza (confirmado por exploración manual de /odds);
+    # total_cards además es intermitente, no siempre está disponible.
+    'shots_linea', 'shots_over_precio',
+    'sot_linea', 'sot_over_precio',
+    'cards_linea', 'cards_over_precio',
 ]
 
 BOOKMAKERS_PREFERIDOS = ('Pinnacle', 'Bet365')
@@ -198,9 +206,40 @@ def _buscar_precio(bookmakers, market_key, *path):
     return ''
 
 
+def _buscar_precio_linea_dinamica(bookmakers, market_key, lado='over'):
+    """
+    Para mercados con línea VARIABLE por partido (a diferencia de
+    match_corners, que casi siempre trae 8.5/9.5 fijas): match_shots,
+    match_shots_on_target y total_cards. Cada partido puede traer una línea
+    distinta (ej. 22.5, 23.5, 26.5 en tiros totales), así que en vez de
+    buscar una clave fija se toma la única línea que haya bajo ese
+    market_key, del lado pedido.
+    Devuelve (linea: float|None, precio: str|'').
+    """
+    por_nombre, orden = _orden_bookmakers(bookmakers)
+    for nombre in orden:
+        nodo = por_nombre[nombre]['markets'].get(market_key, {})
+        if not isinstance(nodo, dict) or not nodo:
+            continue
+        for linea_str, lados in nodo.items():
+            if not isinstance(lados, dict):
+                continue
+            precio = _precio(lados.get(lado))
+            if precio != '':
+                try:
+                    return float(linea_str), precio
+                except (TypeError, ValueError):
+                    continue
+    return None, ''
+
+
 def fila_proximos(liga_id, liga_cfg, m, odds):
     fecha, hora = utc_a_peru(m['utc_date'])
     bookmakers = (odds or {}).get('bookmakers', [])
+
+    shots_linea, shots_precio = _buscar_precio_linea_dinamica(bookmakers, 'match_shots', 'over')
+    sot_linea, sot_precio = _buscar_precio_linea_dinamica(bookmakers, 'match_shots_on_target', 'over')
+    cards_linea, cards_precio = _buscar_precio_linea_dinamica(bookmakers, 'total_cards', 'over')
 
     return {
         'liga': liga_id, 'liga_nombre': liga_cfg['nombre'],
@@ -214,6 +253,12 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
         'c1': _buscar_precio(bookmakers, 'match_odds', 'home'),
         'cx': _buscar_precio(bookmakers, 'match_odds', 'draw'),
         'c2': _buscar_precio(bookmakers, 'match_odds', 'away'),
+        'shots_linea': shots_linea if shots_linea is not None else '',
+        'shots_over_precio': shots_precio,
+        'sot_linea': sot_linea if sot_linea is not None else '',
+        'sot_over_precio': sot_precio,
+        'cards_linea': cards_linea if cards_linea is not None else '',
+        'cards_over_precio': cards_precio,
         'over_2.5': _buscar_precio(bookmakers, 'total_goals', '2.5', 'over'),
         'under_2.5': _buscar_precio(bookmakers, 'total_goals', '2.5', 'under'),
         'btts_si': _buscar_precio(bookmakers, 'btts', 'yes'),

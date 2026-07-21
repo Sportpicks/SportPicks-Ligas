@@ -44,9 +44,42 @@ def cargar_json(ruta, default):
         return json.load(f)
 
 
-def mejor_apuesta(p):
-    """Elige el mercado más recomendable de un partido a partir de las
-    probabilidades y EV del modelo (1X2, over/under 2.5)."""
+def _nivel_confianza(prob):
+    if prob >= 70:
+        return 'muy-alta', 'Alta confianza'
+    if prob >= 55:
+        return 'alta', 'Confianza media'
+    return 'media', 'Especulativo'
+
+
+def mejor_apuesta(p, candidatos_partido=None):
+    """
+    Elige el mercado más recomendable de un partido.
+    Prioriza candidatos_partido (de Data/picks_hoy.json → todos_candidatos)
+    porque ya cubre TODOS los mercados que calcula el modelo — 1X2, goles,
+    BTTS, doble oportunidad y córners — y ya pasó por el filtro de
+    divergencia vs mercado del generador de picks. Antes esta función solo
+    miraba 1X2 y over/under 2.5 desde predicciones_hoy.json directamente,
+    por eso la web nunca mostraba BTTS/doble op/córners como "mejor apuesta"
+    aunque el modelo ya los calculara.
+    Si el partido no tiene candidatos (ej. sin cuotas de mercado en absoluto),
+    cae al fallback anterior (1X2 + over/under 2.5 desde el propio pred).
+    """
+    if candidatos_partido:
+        con_ev = [c for c in candidatos_partido if c.get('ev') and c['ev'] > 0]
+        elegido = max(con_ev, key=lambda c: c['ev']) if con_ev else \
+            max(candidatos_partido, key=lambda c: c.get('prob', 0))
+        prob = elegido.get('prob', 0)
+        nivel, texto = _nivel_confianza(prob)
+        return {
+            'mercado': elegido.get('mercado', ''), 'prob': round(prob, 1),
+            'ev': round(elegido.get('ev', 0) or 0, 3),
+            'emoji': elegido.get('emoji', '⚽'), 'categoria': elegido.get('categoria', ''),
+            'nivel': nivel, 'texto': texto,
+        }
+
+    # Fallback: sin candidatos con cuotas reales, usar solo lo que trae el
+    # propio pred (1X2 + over/under 2.5), igual que el comportamiento previo.
     local = p.get('local', '')
     visitante = p.get('visitante', '')
     candidatos = [
@@ -56,32 +89,26 @@ def mejor_apuesta(p):
         ('over25', 'Más de 2.5 goles', p.get('over_2.5', 0), p.get('ev_over25', 0), '🥅', 'Goles'),
         ('under25', 'Menos de 2.5 goles', p.get('under_2.5', 0), p.get('ev_under25', 0), '🔒', 'Goles'),
     ]
-    validos = [c for c in candidatos if c[2] >= 45]
-    if not validos:
-        validos = candidatos
-    # Prioriza EV positivo más alto; si no hay, la probabilidad más alta.
+    validos = [c for c in candidatos if c[2] >= 45] or candidatos
     con_ev = [c for c in validos if c[3] > 0]
     elegido = max(con_ev, key=lambda c: c[3]) if con_ev else max(validos, key=lambda c: c[2])
     _, mercado, prob, ev, emoji, categoria = elegido
-    if prob >= 70:
-        nivel, texto = 'muy-alta', 'Alta confianza'
-    elif prob >= 55:
-        nivel, texto = 'alta', 'Confianza media'
-    else:
-        nivel, texto = 'media', 'Especulativo'
+    nivel, texto = _nivel_confianza(prob)
     return {
         'mercado': mercado, 'prob': round(prob, 1), 'ev': round(ev, 3),
         'emoji': emoji, 'categoria': categoria, 'nivel': nivel, 'texto': texto,
     }
 
 
-def preparar_partidos(partidos):
+def preparar_partidos(partidos, candidatos_por_partido=None):
+    candidatos_por_partido = candidatos_por_partido or {}
     out = []
     for p in partidos:
         q = dict(p)
         q['liga_emoji'] = LIGA_EMOJI.get(p.get('liga'), '⚽')
         q['liga_color'] = LIGA_COLOR.get(p.get('liga'), '#60a5fa')
-        q['mejor_apuesta'] = mejor_apuesta(p)
+        clave = f"{p.get('local','')} vs {p.get('visitante','')}"
+        q['mejor_apuesta'] = mejor_apuesta(p, candidatos_por_partido.get(clave))
         q['marcador_prob'] = (p.get('marcador_prob') or [])[:3]
         out.append(q)
     out.sort(key=lambda p: (p.get('fecha', ''), p.get('hora', '')))
@@ -247,6 +274,7 @@ def render_card(p):
              f'<span class="chip">+2.5 <b>{p.get("over_2.5",0)}%</b></span>'
              f'<span class="chip">+3.5 <b>{p.get("over_3.5",0)}%</b></span>'
              f'<span class="chip">BTTS Sí <b>{p.get("btts_si",0)}%</b></span>'
+             f'<span class="chip">🚩 +8.5 córners <b>{p.get("corners_over_8.5",0)}%</b></span>'
              f'</div>')
 
     xg = (f'<div class="xg-row">'
@@ -318,11 +346,22 @@ def render_pick(pk, i):
 
 
 def main():
-    partidos = preparar_partidos(cargar_json('Predicciones/predicciones_hoy.json', []))
     picks_data = cargar_json('Data/picks_hoy.json', {})
     publicos = picks_data.get('publicos', [])
     premium = picks_data.get('premium', [])
     premium_teaser = premium[0] if premium else None
+
+    # Índice partido -> candidatos, para que mejor_apuesta() pueda elegir
+    # entre TODOS los mercados que calculó el generador (1X2, goles, BTTS,
+    # doble oportunidad, córners), ya filtrados por divergencia vs mercado.
+    candidatos_por_partido = {}
+    for c in picks_data.get('todos_candidatos', []):
+        candidatos_por_partido.setdefault(c.get('partido', ''), []).append(c)
+
+    partidos = preparar_partidos(
+        cargar_json('Predicciones/predicciones_hoy.json', []),
+        candidatos_por_partido=candidatos_por_partido,
+    )
 
     hoy = datetime.now(PERU_TZ).strftime('%Y-%m-%d')
     generado_str = datetime.now(PERU_TZ).strftime('%d-%m-%Y %H:%M')
