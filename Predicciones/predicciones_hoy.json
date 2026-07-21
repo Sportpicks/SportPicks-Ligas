@@ -1,32 +1,85 @@
 [
   {
-    "local": "Club Nacional de Football",
-    "visitante": "CA Tigre",
-    "liga": "CSU",
-    "xg_l": 1.035,
-    "xg_v": 1.222,
-    "fase": "eliminatoria",
-    "p1": 30.7,
-    "px": 31.0,
-    "p2": 38.3,
-    "over_1.5": 66.0,
-    "over_2.5": 38.7,
-    "over_3.5": 19.0,
-    "under_2.5": 61.3,
-    "btts_si": 45.3,
-    "btts_no": 54.7,
+    "local": "Universidad Católica del Ecuador",
+    "visitante": "Barcelona SC",
+    "liga": "comp_1917",
+    "xg_l": 2.351,
+    "xg_v": 1.178,
+    "fase": "regular",
+    "p1": 60.7,
+    "px": 20.3,
+    "p2": 18.9,
+    "over_1.5": 87.0,
+    "over_2.5": 67.7,
+    "over_3.5": 47.0,
+    "under_2.5": 32.3,
+    "btts_si": 62.2,
+    "btts_no": 37.8,
     "marcador_prob": [
       {
-        "marcador": "0-1",
-        "prob": 14.4
-      },
-      {
-        "marcador": "0-0",
-        "prob": 13.9
+        "marcador": "2-1",
+        "prob": 8.8
       },
       {
         "marcador": "1-1",
-        "prob": 13.6
+        "prob": 8.6
+      },
+      {
+        "marcador": "2-0",
+        "prob": 8.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.062,
+      "defensa": 1.188,
+      "partidos": 16,
+      "goles_favor_prom": 2.06,
+      "goles_contra_prom": 1.19
+    },
+    "stats_v": {
+      "ataque": 1.25,
+      "defensa": 1.188,
+      "partidos": 16,
+      "goles_favor_prom": 1.25,
+      "goles_contra_prom": 1.19
+    },
+    "ev_1": 0.081,
+    "ev_x": -0.089,
+    "ev_2": -0.051,
+    "ev_over25": 0.196,
+    "ev_under25": -0.248,
+    "fecha": "2026-07-21",
+    "hora": "19:00",
+    "liga_nombre": "LigaPro Serie A Ecuador"
+  },
+  {
+    "local": "FC Ararat-Armenia",
+    "visitante": "Shamrock Rovers",
+    "liga": "comp_3498",
+    "xg_l": 0.91,
+    "xg_v": 1.312,
+    "fase": "eliminatoria",
+    "p1": 26.3,
+    "px": 29.8,
+    "p2": 43.9,
+    "over_1.5": 65.2,
+    "over_2.5": 38.4,
+    "over_3.5": 18.7,
+    "under_2.5": 61.6,
+    "btts_si": 44.0,
+    "btts_no": 56.0,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 14.8
+      },
+      {
+        "marcador": "1-1",
+        "prob": 13.2
+      },
+      {
+        "marcador": "0-0",
+        "prob": 12.3
       }
     ],
     "stats_l": {
@@ -37,153 +90,257 @@
       "goles_contra_prom": 1.67
     },
     "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
+      "ataque": 1.571,
+      "defensa": 1.286,
+      "partidos": 14,
+      "goles_favor_prom": 1.57,
+      "goles_contra_prom": 1.29
     },
-    "ev_1": -0.158,
-    "ev_x": -0.017,
-    "ev_2": 0.091,
-    "ev_over25": -0.026,
-    "ev_under25": -0.054,
+    "ev_1": -0.189,
+    "ev_x": -0.001,
+    "ev_2": 0.112,
+    "ev_over25": -0.111,
+    "ev_under25": 0.051,
     "fecha": "2026-07-21",
-    "hora": "17:00",
-    "liga_nombre": "Copa Sudamericana"
+    "hora": "11:00",
+    "liga_nombre": "UEFA Champions League"
   },
   {
-    "local": "Club Universitario de Deportes",
-    "visitante": "Santos FC",
-    "liga": "CSU",
-    "xg_l": 0.492,
-    "xg_v": 1.833,
+    "local": "Mjällby AIF",
+    "visitante": "Lincoln Red Imps",
+    "liga": "comp_3498",
+    "xg_l": 1.394,
+    "xg_v": 0.602,
     "fase": "eliminatoria",
-    "p1": 11.7,
-    "px": 24.7,
-    "p2": 63.6,
-    "over_1.5": 67.5,
-    "over_2.5": 41.0,
-    "over_3.5": 20.5,
-    "under_2.5": 59.0,
-    "btts_si": 32.6,
-    "btts_no": 67.4,
+    "p1": 53.2,
+    "px": 29.3,
+    "p2": 17.5,
+    "over_1.5": 59.9,
+    "over_2.5": 32.3,
+    "over_3.5": 14.4,
+    "under_2.5": 67.7,
+    "btts_si": 34.6,
+    "btts_no": 65.4,
     "marcador_prob": [
       {
-        "marcador": "0-1",
-        "prob": 21.2
-      },
-      {
-        "marcador": "0-2",
-        "prob": 17.0
+        "marcador": "1-0",
+        "prob": 19.4
       },
       {
         "marcador": "0-0",
+        "prob": 14.7
+      },
+      {
+        "marcador": "2-0",
         "prob": 13.1
       }
     ],
     "stats_l": {
-      "ataque": 0.467,
-      "defensa": 1.667,
-      "partidos": 15,
-      "goles_favor_prom": 0.47,
-      "goles_contra_prom": 1.67
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
     },
     "stats_v": {
-      "ataque": 1.5,
-      "defensa": 1.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.5,
-      "goles_contra_prom": 1.19
+      "ataque": 1.2,
+      "defensa": 2.3,
+      "partidos": 10,
+      "goles_favor_prom": 1.2,
+      "goles_contra_prom": 2.3
     },
-    "ev_1": -0.123,
-    "ev_x": -0.048,
-    "ev_2": 0.095,
-    "ev_over25": -0.073,
-    "ev_under25": 0.009,
+    "ev_1": -0.369,
+    "ev_x": 0.175,
+    "ev_2": 0.12,
+    "ev_over25": -0.344,
+    "ev_under25": 0.277,
     "fecha": "2026-07-21",
-    "hora": "19:30",
-    "liga_nombre": "Copa Sudamericana"
+    "hora": "11:00",
+    "liga_nombre": "UEFA Champions League"
   },
   {
-    "local": "CA Mineiro",
-    "visitante": "EC Bahia",
-    "liga": "BSA",
-    "xg_l": 1.568,
-    "xg_v": 1.177,
-    "fase": "regular",
-    "p1": 45.3,
-    "px": 26.4,
-    "p2": 28.3,
-    "over_1.5": 75.6,
-    "over_2.5": 52.2,
-    "over_3.5": 30.1,
-    "under_2.5": 47.8,
-    "btts_si": 54.5,
-    "btts_no": 45.5,
+    "local": "Sabah FK",
+    "visitante": "KuPS",
+    "liga": "comp_3498",
+    "xg_l": 1.095,
+    "xg_v": 0.348,
+    "fase": "eliminatoria",
+    "p1": 51.2,
+    "px": 35.1,
+    "p2": 13.7,
+    "over_1.5": 42.1,
+    "over_2.5": 17.2,
+    "over_3.5": 5.8,
+    "under_2.5": 82.8,
+    "btts_si": 19.4,
+    "btts_no": 80.6,
     "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 11.5
-      },
       {
         "marcador": "1-0",
-        "prob": 11.4
-      },
-      {
-        "marcador": "2-1",
-        "prob": 9.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.312,
-      "defensa": 1.25,
-      "partidos": 16,
-      "goles_favor_prom": 1.31,
-      "goles_contra_prom": 1.25
-    },
-    "stats_v": {
-      "ataque": 1.25,
-      "defensa": 1.312,
-      "partidos": 16,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 1.31
-    },
-    "ev_1": -0.028,
-    "ev_x": -0.041,
-    "ev_2": -0.005,
-    "ev_over25": -0.01,
-    "ev_under25": -0.057,
-    "fecha": "2026-07-21",
-    "hora": "17:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Chapecoense",
-    "visitante": "CR Flamengo",
-    "liga": "BSA",
-    "xg_l": 0.968,
-    "xg_v": 1.412,
-    "fase": "regular",
-    "p1": 26.5,
-    "px": 28.3,
-    "p2": 45.2,
-    "over_1.5": 68.9,
-    "over_2.5": 42.4,
-    "over_3.5": 21.7,
-    "under_2.5": 57.6,
-    "btts_si": 47.1,
-    "btts_no": 52.9,
-    "marcador_prob": [
-      {
-        "marcador": "0-1",
-        "prob": 13.8
-      },
-      {
-        "marcador": "1-1",
-        "prob": 12.9
+        "prob": 26.2
       },
       {
         "marcador": "0-0",
-        "prob": 10.3
+        "prob": 25.4
+      },
+      {
+        "marcador": "2-0",
+        "prob": 13.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.667,
+      "defensa": 0.833,
+      "partidos": 6,
+      "goles_favor_prom": 1.67,
+      "goles_contra_prom": 0.83
+    },
+    "stats_v": {
+      "ataque": 0.833,
+      "defensa": 1.083,
+      "partidos": 12,
+      "goles_favor_prom": 0.83,
+      "goles_contra_prom": 1.08
+    },
+    "ev_1": -0.098,
+    "ev_x": 0.113,
+    "ev_2": -0.101,
+    "ev_over25": -0.423,
+    "ev_under25": 0.359,
+    "fecha": "2026-07-21",
+    "hora": "11:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "AGF",
+    "visitante": "Lech Poznań",
+    "liga": "comp_3498",
+    "xg_l": 1.518,
+    "xg_v": 1.065,
+    "fase": "eliminatoria",
+    "p1": 46.6,
+    "px": 26.8,
+    "p2": 26.6,
+    "over_1.5": 72.9,
+    "over_2.5": 48.4,
+    "over_3.5": 26.0,
+    "under_2.5": 51.6,
+    "btts_si": 50.8,
+    "btts_no": 49.2,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 12.6
+      },
+      {
+        "marcador": "1-1",
+        "prob": 12.1
+      },
+      {
+        "marcador": "2-0",
+        "prob": 9.3
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.062,
+      "defensa": 1.062,
+      "partidos": 16,
+      "goles_favor_prom": 2.06,
+      "goles_contra_prom": 1.06
+    },
+    "stats_v": {
+      "ataque": 2.0,
+      "defensa": 1.214,
+      "partidos": 14,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 1.21
+    },
+    "ev_1": 0.009,
+    "ev_x": -0.057,
+    "ev_2": -0.022,
+    "ev_over25": 0.051,
+    "ev_under25": -0.105,
+    "fecha": "2026-07-21",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "Fenerbahçe",
+    "visitante": "Górnik Zabrze",
+    "liga": "comp_3498",
+    "xg_l": 0.909,
+    "xg_v": 0.627,
+    "fase": "eliminatoria",
+    "p1": 38.7,
+    "px": 36.6,
+    "p2": 24.7,
+    "over_1.5": 45.2,
+    "over_2.5": 19.7,
+    "over_3.5": 7.1,
+    "under_2.5": 80.3,
+    "btts_si": 28.3,
+    "btts_no": 71.7,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 23.0
+      },
+      {
+        "marcador": "1-0",
+        "prob": 20.1
+      },
+      {
+        "marcador": "0-1",
+        "prob": 14.1
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.5,
+      "defensa": 1.25,
+      "partidos": 4,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.25
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": -0.46,
+    "ev_x": 0.222,
+    "ev_2": 0.167,
+    "ev_over25": -0.538,
+    "ev_under25": 0.456,
+    "fecha": "2026-07-21",
+    "hora": "13:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "FC Thun",
+    "visitante": "GNK Dinamo Zagreb",
+    "liga": "comp_3498",
+    "xg_l": 0.607,
+    "xg_v": 0.501,
+    "fase": "eliminatoria",
+    "p1": 30.8,
+    "px": 43.7,
+    "p2": 25.5,
+    "over_1.5": 29.9,
+    "over_2.5": 10.0,
+    "over_3.5": 2.4,
+    "under_2.5": 90.0,
+    "btts_si": 18.0,
+    "btts_no": 82.0,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 34.6
+      },
+      {
+        "marcador": "1-0",
+        "prob": 20.1
+      },
+      {
+        "marcador": "0-1",
+        "prob": 17.3
       }
     ],
     "stats_l": {
@@ -192,199 +349,409 @@
       "partidos": 0
     },
     "stats_v": {
-      "ataque": 1.875,
-      "defensa": 1.062,
-      "partidos": 16,
-      "goles_favor_prom": 1.88,
-      "goles_contra_prom": 1.06
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
     },
-    "ev_1": 0.123,
-    "ev_x": 0.049,
-    "ev_2": -0.247,
-    "ev_over25": -0.125,
-    "ev_under25": 0.055,
-    "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "Brasileirao Serie A"
+    "ev_1": 0.018,
+    "ev_x": 0.165,
+    "ev_2": -0.255,
+    "ev_over25": -0.51,
+    "ev_under25": 0.454,
+    "fecha": "2026-07-21",
+    "hora": "13:00",
+    "liga_nombre": "UEFA Champions League"
   },
   {
-    "local": "Philadelphia Union",
-    "visitante": "New York Red Bulls",
-    "liga": "MLS",
-    "xg_l": 1.968,
-    "xg_v": 1.971,
-    "fase": "regular",
-    "p1": 39.1,
-    "px": 22.5,
-    "p2": 38.4,
-    "over_1.5": 90.1,
-    "over_2.5": 75.6,
-    "over_3.5": 55.6,
-    "under_2.5": 24.4,
-    "btts_si": 74.1,
-    "btts_no": 25.9,
+    "local": "Universidad Central",
+    "visitante": "Santos",
+    "liga": "comp_1615",
+    "xg_l": 1.643,
+    "xg_v": 1.854,
+    "fase": "eliminatoria",
+    "p1": 34.6,
+    "px": 25.7,
+    "p2": 39.6,
+    "over_1.5": 86.5,
+    "over_2.5": 67.3,
+    "over_3.5": 46.1,
+    "under_2.5": 32.7,
+    "btts_si": 67.7,
+    "btts_no": 32.3,
     "marcador_prob": [
       {
         "marcador": "1-1",
-        "prob": 8.6
+        "prob": 11.1
       },
       {
         "marcador": "1-2",
-        "prob": 8.1
+        "prob": 8.6
       },
       {
         "marcador": "2-1",
-        "prob": 7.9
+        "prob": 8.3
       }
     ],
     "stats_l": {
-      "ataque": 1.25,
-      "defensa": 2.0,
-      "partidos": 16,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 2.0
+      "ataque": 1.167,
+      "defensa": 1.833,
+      "partidos": 6,
+      "goles_favor_prom": 1.17,
+      "goles_contra_prom": 1.83
     },
     "stats_v": {
-      "ataque": 1.562,
-      "defensa": 2.062,
+      "ataque": 1.25,
+      "defensa": 1.438,
       "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 2.06
+      "goles_favor_prom": 1.25,
+      "goles_contra_prom": 1.44
     },
-    "ev_1": -0.197,
-    "ev_x": -0.021,
-    "ev_2": 0.143,
-    "ev_over25": 0.071,
-    "ev_under25": -0.144,
-    "fecha": "2026-07-22",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
+    "ev_1": 0.113,
+    "ev_x": -0.038,
+    "ev_2": -0.145,
+    "ev_over25": 0.19,
+    "ev_under25": -0.248,
+    "fecha": "2026-07-21",
+    "hora": "19:30",
+    "liga_nombre": "CONMEBOL Sudamericana"
   },
   {
-    "local": "San Jose Earthquakes",
-    "visitante": "Orlando City SC",
-    "liga": "MLS",
-    "xg_l": 3.24,
-    "xg_v": 0.907,
+    "local": "Atlético Mineiro",
+    "visitante": "Bahia",
+    "liga": "comp_4795",
+    "xg_l": 1.577,
+    "xg_v": 1.039,
     "fase": "regular",
-    "p1": 75.8,
-    "px": 14.2,
-    "p2": 10.0,
-    "over_1.5": 92.2,
-    "over_2.5": 78.1,
-    "over_3.5": 59.5,
-    "under_2.5": 21.9,
-    "btts_si": 57.6,
-    "btts_no": 42.4,
+    "p1": 48.1,
+    "px": 26.5,
+    "p2": 25.4,
+    "over_1.5": 73.6,
+    "over_2.5": 48.9,
+    "over_3.5": 26.7,
+    "under_2.5": 51.1,
+    "btts_si": 50.9,
+    "btts_no": 49.1,
     "marcador_prob": [
       {
-        "marcador": "3-0",
-        "prob": 10.1
+        "marcador": "1-0",
+        "prob": 12.6
+      },
+      {
+        "marcador": "1-1",
+        "prob": 12.1
       },
       {
         "marcador": "2-0",
-        "prob": 9.6
-      },
-      {
-        "marcador": "2-1",
-        "prob": 8.2
+        "prob": 9.7
       }
     ],
     "stats_l": {
-      "ataque": 2.25,
+      "ataque": 1.375,
       "defensa": 1.0,
       "partidos": 16,
-      "goles_favor_prom": 2.25,
+      "goles_favor_prom": 1.38,
       "goles_contra_prom": 1.0
     },
     "stats_v": {
       "ataque": 1.438,
-      "defensa": 2.812,
+      "defensa": 1.312,
       "partidos": 16,
       "goles_favor_prom": 1.44,
-      "goles_contra_prom": 2.81
+      "goles_contra_prom": 1.31
     },
-    "ev_1": 0.078,
-    "ev_x": -0.063,
-    "ev_2": -0.093,
-    "ev_over25": 0.018,
-    "ev_under25": -0.081,
-    "fecha": "2026-07-22",
-    "hora": "21:30",
-    "liga_nombre": "MLS Major League Soccer"
+    "ev_1": 0.014,
+    "ev_x": -0.034,
+    "ev_2": -0.025,
+    "ev_over25": -0.026,
+    "ev_under25": -0.007,
+    "fecha": "2026-07-21",
+    "hora": "17:30",
+    "liga_nombre": "Brasileirão Série A"
   },
   {
-    "local": "Los Angeles FC",
-    "visitante": "Real Salt Lake",
-    "liga": "MLS",
-    "xg_l": 1.933,
-    "xg_v": 1.214,
-    "fase": "regular",
-    "p1": 51.9,
-    "px": 23.3,
-    "p2": 24.8,
-    "over_1.5": 82.5,
-    "over_2.5": 60.9,
-    "over_3.5": 38.4,
-    "under_2.5": 39.1,
-    "btts_si": 60.0,
-    "btts_no": 40.0,
+    "local": "Klaksvíkar Ítróttarfelag",
+    "visitante": "FK Kauno Žalgiris",
+    "liga": "comp_3498",
+    "xg_l": 0.943,
+    "xg_v": 0.391,
+    "fase": "eliminatoria",
+    "p1": 45.9,
+    "px": 37.7,
+    "p2": 16.3,
+    "over_1.5": 38.7,
+    "over_2.5": 14.8,
+    "over_3.5": 4.4,
+    "under_2.5": 85.2,
+    "btts_si": 19.8,
+    "btts_no": 80.2,
     "marcador_prob": [
       {
-        "marcador": "1-1",
-        "prob": 10.5
+        "marcador": "0-0",
+        "prob": 28.0
       },
       {
         "marcador": "1-0",
-        "prob": 10.2
+        "prob": 25.7
       },
       {
-        "marcador": "2-1",
-        "prob": 9.6
+        "marcador": "2-0",
+        "prob": 11.0
       }
     ],
     "stats_l": {
-      "ataque": 1.688,
-      "defensa": 1.062,
-      "partidos": 16,
-      "goles_favor_prom": 1.69,
-      "goles_contra_prom": 1.06
+      "ataque": 1.167,
+      "defensa": 0.667,
+      "partidos": 6,
+      "goles_favor_prom": 1.17,
+      "goles_contra_prom": 0.67
     },
     "stats_v": {
-      "ataque": 1.812,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.81,
-      "goles_contra_prom": 1.5
+      "ataque": 1.167,
+      "defensa": 1.333,
+      "partidos": 6,
+      "goles_favor_prom": 1.17,
+      "goles_contra_prom": 1.33
     },
-    "ev_1": -0.073,
-    "ev_x": -0.018,
-    "ev_2": 0.014,
-    "ev_over25": -0.049,
-    "ev_under25": -0.029,
-    "fecha": "2026-07-22",
-    "hora": "21:30",
-    "liga_nombre": "MLS Major League Soccer"
+    "ev_1": 0.0,
+    "ev_x": 0.051,
+    "ev_2": -0.156,
+    "ev_over25": -0.272,
+    "ev_under25": 0.198,
+    "fecha": "2026-07-21",
+    "hora": "13:45",
+    "liga_nombre": "UEFA Champions League"
   },
   {
-    "local": "Los Angeles Galaxy",
-    "visitante": "St. Louis City",
-    "liga": "MLS",
-    "xg_l": 1.575,
-    "xg_v": 1.293,
-    "fase": "regular",
-    "p1": 42.7,
-    "px": 26.6,
-    "p2": 30.6,
-    "over_1.5": 78.5,
-    "over_2.5": 54.6,
-    "over_3.5": 31.8,
-    "under_2.5": 45.4,
-    "btts_si": 57.4,
-    "btts_no": 42.6,
+    "local": "Víkingur Reykjavík",
+    "visitante": "Hapoel Be'er Sheva",
+    "liga": "comp_3498",
+    "xg_l": 0.505,
+    "xg_v": 0.21,
+    "fase": "eliminatoria",
+    "p1": 32.2,
+    "px": 53.9,
+    "p2": 13.9,
+    "over_1.5": 15.8,
+    "over_2.5": 3.6,
+    "over_3.5": 0.5,
+    "under_2.5": 96.4,
+    "btts_si": 7.3,
+    "btts_no": 92.7,
     "marcador_prob": [
       {
-        "marcador": "1-1",
+        "marcador": "0-0",
+        "prob": 51.2
+      },
+      {
+        "marcador": "1-0",
+        "prob": 23.9
+      },
+      {
+        "marcador": "0-1",
+        "prob": 10.1
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.667,
+      "defensa": 1.667,
+      "partidos": 6,
+      "goles_favor_prom": 1.67,
+      "goles_contra_prom": 1.67
+    },
+    "stats_v": {
+      "ataque": 0.0,
+      "defensa": 0.5,
+      "partidos": 2,
+      "goles_favor_prom": 0.0,
+      "goles_contra_prom": 0.5
+    },
+    "ev_1": -0.075,
+    "ev_x": 0.251,
+    "ev_2": -0.255,
+    "ev_over25": -0.539,
+    "ev_under25": 0.479,
+    "fecha": "2026-07-21",
+    "hora": "14:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "Larne FC",
+    "visitante": "FK Crvena zvezda",
+    "liga": "comp_3498",
+    "xg_l": 0.404,
+    "xg_v": 0.835,
+    "fase": "eliminatoria",
+    "p1": 17.8,
+    "px": 40.4,
+    "p2": 41.8,
+    "over_1.5": 34.7,
+    "over_2.5": 13.1,
+    "over_3.5": 3.9,
+    "under_2.5": 86.9,
+    "btts_si": 18.7,
+    "btts_no": 81.3,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 30.9
+      },
+      {
+        "marcador": "0-1",
+        "prob": 24.8
+      },
+      {
+        "marcador": "1-0",
+        "prob": 11.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.667,
+      "defensa": 0.833,
+      "partidos": 6,
+      "goles_favor_prom": 0.67,
+      "goles_contra_prom": 0.83
+    },
+    "stats_v": {
+      "ataque": 2.0,
+      "defensa": 1.0,
+      "partidos": 6,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 1.0
+    },
+    "ev_1": 0.103,
+    "ev_x": 0.255,
+    "ev_2": -0.459,
+    "ev_over25": -0.49,
+    "ev_under25": 0.425,
+    "fecha": "2026-07-21",
+    "hora": "14:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "Libertad",
+    "visitante": "Delfín",
+    "liga": "comp_1917",
+    "xg_l": 2.16,
+    "xg_v": 0.589,
+    "fase": "regular",
+    "p1": 69.9,
+    "px": 19.1,
+    "p2": 11.0,
+    "over_1.5": 76.6,
+    "over_2.5": 52.3,
+    "over_3.5": 30.0,
+    "under_2.5": 47.7,
+    "btts_si": 39.5,
+    "btts_no": 60.5,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 14.8
+      },
+      {
+        "marcador": "1-0",
+        "prob": 13.7
+      },
+      {
+        "marcador": "3-0",
+        "prob": 10.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.125,
+      "defensa": 1.188,
+      "partidos": 16,
+      "goles_favor_prom": 1.12,
+      "goles_contra_prom": 1.19
+    },
+    "stats_v": {
+      "ataque": 0.625,
+      "defensa": 2.0,
+      "partidos": 16,
+      "goles_favor_prom": 0.62,
+      "goles_contra_prom": 2.0
+    },
+    "ev_1": 0.266,
+    "ev_x": -0.12,
+    "ev_2": -0.202,
+    "ev_over25": 0.106,
+    "ev_under25": -0.177,
+    "fecha": "2026-07-21",
+    "hora": "16:30",
+    "liga_nombre": "LigaPro Serie A Ecuador"
+  },
+  {
+    "local": "Cruz Azul",
+    "visitante": "Club Puebla",
+    "liga": "comp_298265",
+    "xg_l": 2.632,
+    "xg_v": 0.689,
+    "fase": "regular",
+    "p1": 74.0,
+    "px": 16.0,
+    "p2": 10.0,
+    "over_1.5": 84.2,
+    "over_2.5": 64.9,
+    "over_3.5": 42.4,
+    "under_2.5": 35.1,
+    "btts_si": 46.2,
+    "btts_no": 53.8,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 11.8
+      },
+      {
+        "marcador": "3-0",
+        "prob": 11.5
+      },
+      {
+        "marcador": "1-0",
+        "prob": 9.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.625,
+      "defensa": 1.0,
+      "partidos": 16,
+      "goles_favor_prom": 1.62,
+      "goles_contra_prom": 1.0
+    },
+    "stats_v": {
+      "ataque": 1.133,
+      "defensa": 2.2,
+      "partidos": 15,
+      "goles_favor_prom": 1.13,
+      "goles_contra_prom": 2.2
+    },
+    "ev_1": -0.023,
+    "ev_x": -0.018,
+    "ev_2": -0.018,
+    "ev_over25": 0.043,
+    "ev_under25": -0.086,
+    "fecha": "2026-07-21",
+    "hora": "20:00",
+    "liga_nombre": "Liga MX Apertura"
+  },
+  {
+    "local": "CD Toluca",
+    "visitante": "Pumas UNAM",
+    "liga": "comp_298265",
+    "xg_l": 2.341,
+    "xg_v": 0.785,
+    "fase": "regular",
+    "p1": 68.6,
+    "px": 18.7,
+    "p2": 12.7,
+    "over_1.5": 82.1,
+    "over_2.5": 60.5,
+    "over_3.5": 38.2,
+    "under_2.5": 39.5,
+    "btts_si": 49.2,
+    "btts_no": 50.8,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
         "prob": 12.0
       },
       {
@@ -393,758 +760,1494 @@
       },
       {
         "marcador": "2-1",
-        "prob": 8.9
+        "prob": 9.5
       }
     ],
     "stats_l": {
-      "ataque": 1.375,
-      "defensa": 1.562,
-      "partidos": 16,
-      "goles_favor_prom": 1.38,
-      "goles_contra_prom": 1.56
-    },
-    "stats_v": {
-      "ataque": 1.312,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.31,
-      "goles_contra_prom": 1.5
-    },
-    "ev_1": -0.091,
-    "ev_x": -0.001,
-    "ev_2": 0.014,
-    "ev_over25": -0.103,
-    "ev_under25": 0.034,
-    "fecha": "2026-07-22",
-    "hora": "21:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Portland Timbers",
-    "visitante": "FC Dallas",
-    "liga": "MLS",
-    "xg_l": 2.291,
-    "xg_v": 2.144,
-    "fase": "regular",
-    "p1": 41.9,
-    "px": 22.4,
-    "p2": 35.7,
-    "over_1.5": 93.4,
-    "over_2.5": 82.0,
-    "over_3.5": 64.7,
-    "under_2.5": 18.0,
-    "btts_si": 79.9,
-    "btts_no": 20.1,
-    "marcador_prob": [
-      {
-        "marcador": "2-2",
-        "prob": 7.7
-      },
-      {
-        "marcador": "1-1",
-        "prob": 7.4
-      },
-      {
-        "marcador": "2-1",
-        "prob": 7.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.0,
-      "defensa": 1.875,
-      "partidos": 16,
-      "goles_favor_prom": 2.0,
-      "goles_contra_prom": 1.88
-    },
-    "stats_v": {
-      "ataque": 1.812,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.81,
-      "goles_contra_prom": 1.5
-    },
-    "ev_1": -0.007,
-    "ev_x": -0.051,
-    "ev_2": -0.02,
-    "ev_over25": 0.144,
-    "ev_under25": -0.211,
-    "fecha": "2026-07-22",
-    "hora": "21:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Colorado Rapids",
-    "visitante": "San Diego FC",
-    "liga": "MLS",
-    "xg_l": 2.068,
-    "xg_v": 3.024,
-    "fase": "regular",
-    "p1": 26.9,
-    "px": 18.9,
-    "p2": 54.2,
-    "over_1.5": 96.3,
-    "over_2.5": 88.3,
-    "over_3.5": 74.5,
-    "under_2.5": 11.7,
-    "btts_si": 83.3,
-    "btts_no": 16.7,
-    "marcador_prob": [
-      {
-        "marcador": "1-2",
-        "prob": 6.8
-      },
-      {
-        "marcador": "1-3",
-        "prob": 6.7
-      },
-      {
-        "marcador": "2-2",
-        "prob": 6.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.625,
-      "defensa": 1.688,
-      "partidos": 16,
-      "goles_favor_prom": 1.62,
-      "goles_contra_prom": 1.69
-    },
-    "stats_v": {
-      "ataque": 3.0,
-      "defensa": 1.667,
-      "partidos": 3,
-      "goles_favor_prom": 3.0,
-      "goles_contra_prom": 1.67
-    },
-    "ev_1": -0.219,
-    "ev_x": -0.073,
-    "ev_2": 0.213,
-    "ev_over25": 0.174,
-    "ev_under25": -0.24,
-    "fecha": "2026-07-22",
-    "hora": "20:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Sporting Kansas City",
-    "visitante": "Minnesota United FC",
-    "liga": "MLS",
-    "xg_l": 1.192,
-    "xg_v": 2.173,
-    "fase": "regular",
-    "p1": 21.7,
-    "px": 23.0,
-    "p2": 55.3,
-    "over_1.5": 85.0,
-    "over_2.5": 65.4,
-    "over_3.5": 43.1,
-    "under_2.5": 34.6,
-    "btts_si": 62.1,
-    "btts_no": 37.9,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 10.2
-      },
-      {
-        "marcador": "1-2",
-        "prob": 10.0
-      },
-      {
-        "marcador": "0-2",
-        "prob": 9.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.0,
-      "defensa": 2.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.0,
-      "goles_contra_prom": 2.62
-    },
-    "stats_v": {
-      "ataque": 1.312,
-      "defensa": 1.562,
-      "partidos": 16,
-      "goles_favor_prom": 1.31,
-      "goles_contra_prom": 1.56
-    },
-    "ev_1": -0.065,
-    "ev_x": -0.037,
-    "ev_2": 0.027,
-    "ev_over25": 0.0,
-    "ev_under25": -0.067,
-    "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Nashville SC",
-    "visitante": "CF Montreal",
-    "liga": "MLS",
-    "xg_l": 3.054,
-    "xg_v": 0.851,
-    "fase": "regular",
-    "p1": 75.1,
-    "px": 14.8,
-    "p2": 10.0,
-    "over_1.5": 89.9,
-    "over_2.5": 74.9,
-    "over_3.5": 55.2,
-    "under_2.5": 25.1,
-    "btts_si": 54.5,
-    "btts_no": 45.5,
-    "marcador_prob": [
-      {
-        "marcador": "2-0",
-        "prob": 10.9
-      },
-      {
-        "marcador": "3-0",
-        "prob": 10.2
-      },
-      {
-        "marcador": "2-1",
-        "prob": 8.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.0,
+      "ataque": 2.312,
       "defensa": 0.938,
       "partidos": 16,
-      "goles_favor_prom": 2.0,
+      "goles_favor_prom": 2.31,
       "goles_contra_prom": 0.94
     },
     "stats_v": {
-      "ataque": 1.438,
-      "defensa": 2.0,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 2.0
-    },
-    "ev_1": 0.057,
-    "ev_x": -0.075,
-    "ev_2": -0.058,
-    "ev_over25": 0.108,
-    "ev_under25": -0.182,
-    "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Austin",
-    "visitante": "Seattle Sounders",
-    "liga": "MLS",
-    "xg_l": 1.252,
-    "xg_v": 2.157,
-    "fase": "regular",
-    "p1": 22.8,
-    "px": 22.9,
-    "p2": 54.2,
-    "over_1.5": 85.4,
-    "over_2.5": 65.7,
-    "over_3.5": 44.9,
-    "under_2.5": 34.3,
-    "btts_si": 63.7,
-    "btts_no": 36.3,
-    "marcador_prob": [
-      {
-        "marcador": "1-2",
-        "prob": 10.0
-      },
-      {
-        "marcador": "1-1",
-        "prob": 10.0
-      },
-      {
-        "marcador": "0-2",
-        "prob": 9.0
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.25,
-      "defensa": 2.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 2.19
-    },
-    "stats_v": {
-      "ataque": 1.562,
-      "defensa": 1.312,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.31
-    },
-    "ev_1": -0.071,
-    "ev_x": -0.051,
-    "ev_2": 0.042,
-    "ev_over25": 0.047,
-    "ev_under25": -0.118,
-    "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Inter Miami",
-    "visitante": "Chicago Fire",
-    "liga": "MLS",
-    "xg_l": 2.804,
-    "xg_v": 2.064,
-    "fase": "regular",
-    "p1": 51.0,
-    "px": 20.5,
-    "p2": 28.6,
-    "over_1.5": 95.4,
-    "over_2.5": 87.0,
-    "over_3.5": 72.0,
-    "under_2.5": 13.0,
-    "btts_si": 82.4,
-    "btts_no": 17.6,
-    "marcador_prob": [
-      {
-        "marcador": "2-1",
-        "prob": 7.1
-      },
-      {
-        "marcador": "2-2",
-        "prob": 6.8
-      },
-      {
-        "marcador": "3-1",
-        "prob": 6.2
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.938,
-      "defensa": 1.688,
-      "partidos": 16,
-      "goles_favor_prom": 2.94,
-      "goles_contra_prom": 1.69
-    },
-    "stats_v": {
-      "ataque": 1.938,
-      "defensa": 1.25,
-      "partidos": 16,
-      "goles_favor_prom": 1.94,
-      "goles_contra_prom": 1.25
-    },
-    "ev_1": 0.015,
-    "ev_x": -0.041,
-    "ev_2": -0.048,
-    "ev_over25": 0.112,
-    "ev_under25": -0.182,
-    "fecha": "2026-07-22",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Columbus Crew",
-    "visitante": "New York City FC",
-    "liga": "MLS",
-    "xg_l": 1.938,
-    "xg_v": 1.474,
-    "fase": "regular",
-    "p1": 46.8,
-    "px": 24.3,
-    "p2": 28.9,
-    "over_1.5": 85.2,
-    "over_2.5": 67.0,
-    "over_3.5": 44.6,
-    "under_2.5": 33.0,
-    "btts_si": 66.2,
-    "btts_no": 33.8,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 10.6
-      },
-      {
-        "marcador": "2-1",
-        "prob": 9.4
-      },
-      {
-        "marcador": "1-0",
-        "prob": 7.8
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.562,
-      "defensa": 1.438,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.44
-    },
-    "stats_v": {
-      "ataque": 1.625,
-      "defensa": 1.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.62,
-      "goles_contra_prom": 1.62
-    },
-    "ev_1": -0.05,
-    "ev_x": -0.034,
-    "ev_2": 0.007,
-    "ev_over25": 0.075,
-    "ev_under25": -0.139,
-    "fecha": "2026-07-22",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "FC Cincinnati",
-    "visitante": "Vancouver Whitecaps",
-    "liga": "MLS",
-    "xg_l": 1.718,
-    "xg_v": 3.024,
-    "fase": "regular",
-    "p1": 21.7,
-    "px": 18.4,
-    "p2": 59.8,
-    "over_1.5": 95.2,
-    "over_2.5": 85.2,
-    "over_3.5": 69.9,
-    "under_2.5": 14.8,
-    "btts_si": 78.4,
-    "btts_no": 21.6,
-    "marcador_prob": [
-      {
-        "marcador": "1-2",
-        "prob": 7.8
-      },
-      {
-        "marcador": "1-3",
-        "prob": 7.3
-      },
-      {
-        "marcador": "2-3",
-        "prob": 6.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.25,
-      "defensa": 2.562,
-      "partidos": 16,
-      "goles_favor_prom": 2.25,
-      "goles_contra_prom": 2.56
-    },
-    "stats_v": {
-      "ataque": 2.375,
-      "defensa": 1.0,
-      "partidos": 16,
-      "goles_favor_prom": 2.38,
-      "goles_contra_prom": 1.0
-    },
-    "ev_1": -0.05,
-    "ev_x": -0.064,
-    "ev_2": 0.036,
-    "ev_over25": 0.133,
-    "ev_under25": -0.199,
-    "fecha": "2026-07-22",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "New England Revolution",
-    "visitante": "Toronto FC",
-    "liga": "MLS",
-    "xg_l": 2.196,
-    "xg_v": 1.305,
-    "fase": "regular",
-    "p1": 54.6,
-    "px": 22.4,
-    "p2": 22.9,
-    "over_1.5": 86.5,
-    "over_2.5": 68.0,
-    "over_3.5": 46.3,
-    "under_2.5": 32.0,
-    "btts_si": 64.7,
-    "btts_no": 35.3,
-    "marcador_prob": [
-      {
-        "marcador": "2-1",
-        "prob": 10.2
-      },
-      {
-        "marcador": "1-1",
-        "prob": 9.4
-      },
-      {
-        "marcador": "2-0",
-        "prob": 8.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.438,
-      "defensa": 1.438,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 1.44
-    },
-    "stats_v": {
-      "ataque": 1.438,
-      "defensa": 2.0,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 2.0
-    },
-    "ev_1": 0.008,
-    "ev_x": -0.048,
-    "ev_2": -0.04,
-    "ev_over25": 0.099,
-    "ev_under25": -0.165,
-    "fecha": "2026-07-22",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Houston Dynamo",
-    "visitante": "DC United",
-    "liga": "MLS",
-    "xg_l": 1.706,
-    "xg_v": 1.552,
-    "fase": "regular",
-    "p1": 41.0,
-    "px": 24.9,
-    "p2": 34.1,
-    "over_1.5": 83.5,
-    "over_2.5": 63.7,
-    "over_3.5": 40.7,
-    "under_2.5": 36.3,
-    "btts_si": 64.7,
-    "btts_no": 35.3,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 11.1
-      },
-      {
-        "marcador": "2-1",
-        "prob": 9.2
-      },
-      {
-        "marcador": "1-2",
-        "prob": 8.0
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.375,
-      "defensa": 1.875,
-      "partidos": 16,
-      "goles_favor_prom": 1.38,
-      "goles_contra_prom": 1.88
-    },
-    "stats_v": {
-      "ataque": 1.312,
-      "defensa": 1.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.31,
-      "goles_contra_prom": 1.62
-    },
-    "ev_1": -0.161,
-    "ev_x": -0.021,
-    "ev_2": 0.105,
-    "ev_over25": 0.066,
-    "ev_under25": -0.132,
-    "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "São Paulo FC",
-    "visitante": "Club Athletico Paranaense",
-    "liga": "BSA",
-    "xg_l": 0.774,
-    "xg_v": 1.92,
-    "fase": "regular",
-    "p1": 16.2,
-    "px": 23.7,
-    "p2": 60.1,
-    "over_1.5": 74.7,
-    "over_2.5": 50.0,
-    "over_3.5": 28.3,
-    "under_2.5": 50.0,
-    "btts_si": 45.9,
-    "btts_no": 54.1,
-    "marcador_prob": [
-      {
-        "marcador": "0-1",
-        "prob": 14.1
-      },
-      {
-        "marcador": "0-2",
-        "prob": 12.8
-      },
-      {
-        "marcador": "1-1",
-        "prob": 10.6
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.062,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.06,
-      "goles_contra_prom": 1.5
-    },
-    "stats_v": {
-      "ataque": 1.7,
-      "defensa": 0.8,
-      "partidos": 10,
-      "goles_favor_prom": 1.7,
-      "goles_contra_prom": 0.8
-    },
-    "ev_1": -0.346,
-    "ev_x": -0.076,
-    "ev_2": 0.343,
-    "ev_over25": 0.039,
-    "ev_under25": -0.11,
-    "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "SC Internacional",
-    "visitante": "Cruzeiro EC",
-    "liga": "BSA",
-    "xg_l": 0.961,
-    "xg_v": 1.342,
-    "fase": "regular",
-    "p1": 27.1,
-    "px": 29.2,
-    "p2": 43.7,
-    "over_1.5": 67.9,
-    "over_2.5": 40.5,
-    "over_3.5": 19.7,
-    "under_2.5": 59.5,
-    "btts_si": 45.5,
-    "btts_no": 54.5,
-    "marcador_prob": [
-      {
-        "marcador": "0-1",
-        "prob": 14.1
-      },
-      {
-        "marcador": "1-1",
-        "prob": 13.2
-      },
-      {
-        "marcador": "0-0",
-        "prob": 11.5
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.125,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.12,
-      "goles_contra_prom": 1.5
-    },
-    "stats_v": {
-      "ataque": 1.188,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 1.19,
-      "goles_contra_prom": 0.94
-    },
-    "ev_1": -0.188,
-    "ev_x": -0.02,
-    "ev_2": 0.127,
-    "ev_over25": -0.09,
-    "ev_under25": 0.017,
-    "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Charlotte",
-    "visitante": "Atlanta United FC",
-    "liga": "MLS",
-    "xg_l": 1.837,
-    "xg_v": 0.759,
-    "fase": "regular",
-    "p1": 58.8,
-    "px": 24.8,
-    "p2": 16.4,
-    "over_1.5": 73.7,
-    "over_2.5": 48.3,
-    "over_3.5": 25.8,
-    "under_2.5": 51.7,
-    "btts_si": 44.5,
-    "btts_no": 55.5,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 15.1
-      },
-      {
-        "marcador": "2-0",
-        "prob": 13.4
-      },
-      {
-        "marcador": "1-1",
-        "prob": 11.0
-      }
-    ],
-    "stats_l": {
       "ataque": 1.375,
       "defensa": 1.375,
       "partidos": 16,
       "goles_favor_prom": 1.38,
       "goles_contra_prom": 1.38
     },
-    "stats_v": {
-      "ataque": 0.875,
-      "defensa": 1.75,
-      "partidos": 16,
-      "goles_favor_prom": 0.88,
-      "goles_contra_prom": 1.75
-    },
-    "ev_1": 0.039,
-    "ev_x": -0.027,
-    "ev_2": -0.089,
-    "ev_over25": -0.119,
-    "ev_under25": 0.045,
-    "fecha": "2026-07-22",
-    "hora": "19:15",
-    "liga_nombre": "MLS Major League Soccer"
+    "ev_1": 0.057,
+    "ev_x": -0.049,
+    "ev_2": -0.066,
+    "ev_over25": -0.001,
+    "ev_under25": -0.06,
+    "fecha": "2026-07-21",
+    "hora": "22:05",
+    "liga_nombre": "Liga MX Apertura"
   },
   {
-    "local": "CDC Atlético Nacional",
-    "visitante": "CR Vasco da Gama",
-    "liga": "CSU",
-    "xg_l": 2.06,
-    "xg_v": 1.45,
+    "local": "SK Sturm Graz",
+    "visitante": "Heart of Midlothian",
+    "liga": "comp_3498",
+    "xg_l": 0.492,
+    "xg_v": 2.94,
     "fase": "eliminatoria",
-    "p1": 48.6,
-    "px": 24.4,
-    "p2": 27.0,
-    "over_1.5": 87.2,
-    "over_2.5": 68.9,
-    "over_3.5": 46.7,
-    "under_2.5": 31.1,
-    "btts_si": 67.0,
-    "btts_no": 33.0,
+    "p1": 6.9,
+    "px": 12.6,
+    "p2": 80.5,
+    "over_1.5": 85.6,
+    "over_2.5": 67.0,
+    "over_3.5": 44.6,
+    "under_2.5": 33.0,
+    "btts_si": 36.4,
+    "btts_no": 63.6,
     "marcador_prob": [
       {
-        "marcador": "1-1",
-        "prob": 11.0
+        "marcador": "0-2",
+        "prob": 15.2
       },
       {
-        "marcador": "2-1",
-        "prob": 9.5
+        "marcador": "0-3",
+        "prob": 14.1
       },
       {
-        "marcador": "1-0",
-        "prob": 8.4
+        "marcador": "0-1",
+        "prob": 10.9
       }
     ],
     "stats_l": {
+      "ataque": 1.0,
+      "defensa": 3.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 3.0
+    },
+    "stats_v": {
+      "ataque": 2.0,
+      "defensa": 0.812,
+      "partidos": 16,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 0.81
+    },
+    "ev_1": -0.499,
+    "ev_x": -0.138,
+    "ev_2": 0.565,
+    "ev_over25": 0.099,
+    "ev_under25": -0.153,
+    "fecha": "2026-07-21",
+    "hora": "13:30",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "Sabah FK",
+    "visitante": "FK Vardar Skopje",
+    "liga": "comp_3498",
+    "xg_l": 2.021,
+    "xg_v": 0.418,
+    "fase": "eliminatoria",
+    "p1": 71.0,
+    "px": 19.7,
+    "p2": 9.4,
+    "over_1.5": 70.4,
+    "over_2.5": 43.9,
+    "over_3.5": 22.9,
+    "under_2.5": 56.1,
+    "btts_si": 29.3,
+    "btts_no": 70.7,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 19.0
+      },
+      {
+        "marcador": "2-0",
+        "prob": 18.8
+      },
+      {
+        "marcador": "3-0",
+        "prob": 11.9
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.667,
+      "defensa": 0.833,
+      "partidos": 6,
+      "goles_favor_prom": 1.67,
+      "goles_contra_prom": 0.83
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 2.0,
+      "partidos": 4,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 2.0
+    },
+    "ev_1": 0,
+    "ev_x": 0,
+    "ev_2": 0,
+    "fecha": "2026-07-21",
+    "hora": "08:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "FC Iberia 1999",
+    "visitante": "ŠK Slovan Bratislava",
+    "liga": "comp_3498",
+    "xg_l": 1.274,
+    "xg_v": 0.902,
+    "fase": "eliminatoria",
+    "p1": 43.6,
+    "px": 30.3,
+    "p2": 26.1,
+    "over_1.5": 63.9,
+    "over_2.5": 37.3,
+    "over_3.5": 17.3,
+    "under_2.5": 62.7,
+    "btts_si": 42.4,
+    "btts_no": 57.6,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 15.5
+      },
+      {
+        "marcador": "1-1",
+        "prob": 13.4
+      },
+      {
+        "marcador": "0-0",
+        "prob": 12.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.75,
+      "defensa": 1.5,
+      "partidos": 4,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.2,
+      "defensa": 1.2,
+      "partidos": 10,
+      "goles_favor_prom": 1.2,
+      "goles_contra_prom": 1.2
+    },
+    "ev_1": 0.121,
+    "ev_x": -0.001,
+    "ev_2": -0.291,
+    "ev_over25": -0.226,
+    "ev_under25": 0.162,
+    "fecha": "2026-07-21",
+    "hora": "11:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "Nacional",
+    "visitante": "Tigre",
+    "liga": "comp_1615",
+    "xg_l": 0.787,
+    "xg_v": 1.289,
+    "fase": "eliminatoria",
+    "p1": 23.1,
+    "px": 31.7,
+    "p2": 45.2,
+    "over_1.5": 61.3,
+    "over_2.5": 34.7,
+    "over_3.5": 16.0,
+    "under_2.5": 65.3,
+    "btts_si": 39.4,
+    "btts_no": 60.6,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 18.4
+      },
+      {
+        "marcador": "0-0",
+        "prob": 16.8
+      },
+      {
+        "marcador": "1-1",
+        "prob": 12.1
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.167,
+      "defensa": 1.5,
+      "partidos": 6,
+      "goles_favor_prom": 1.17,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.062,
+      "defensa": 0.688,
+      "partidos": 16,
+      "goles_favor_prom": 1.06,
+      "goles_contra_prom": 0.69
+    },
+    "ev_1": -0.2,
+    "ev_x": -0.002,
+    "ev_2": 0.147,
+    "ev_over25": -0.053,
+    "ev_under25": -0.014,
+    "fecha": "2026-07-21",
+    "hora": "17:00",
+    "liga_nombre": "CONMEBOL Sudamericana"
+  },
+  {
+    "local": "Atert Bissen",
+    "visitante": "ETO FC Győr",
+    "liga": "comp_408698",
+    "xg_l": 1.149,
+    "xg_v": 1.9,
+    "fase": "regular",
+    "p1": 24.1,
+    "px": 23.4,
+    "p2": 52.5,
+    "over_1.5": 80.5,
+    "over_2.5": 57.8,
+    "over_3.5": 35.9,
+    "under_2.5": 42.2,
+    "btts_si": 57.7,
+    "btts_no": 42.3,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 10.4
+      },
+      {
+        "marcador": "1-2",
+        "prob": 9.9
+      },
+      {
+        "marcador": "0-1",
+        "prob": 9.3
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 2.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 2.0
+    },
+    "stats_v": {
       "ataque": 1.375,
       "defensa": 1.375,
       "partidos": 8,
       "goles_favor_prom": 1.38,
       "goles_contra_prom": 1.38
     },
+    "ev_1": 0.019,
+    "ev_x": 0.003,
+    "ev_2": -0.142,
+    "ev_over25": -0.014,
+    "ev_under25": -0.061,
+    "fecha": "2026-07-21",
+    "hora": "13:15",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Floriana FC",
+    "visitante": "FC Drita",
+    "liga": "comp_408698",
+    "xg_l": 1.97,
+    "xg_v": 1.727,
+    "fase": "regular",
+    "p1": 43.2,
+    "px": 22.9,
+    "p2": 33.9,
+    "over_1.5": 88.3,
+    "over_2.5": 71.1,
+    "over_3.5": 50.8,
+    "under_2.5": 28.9,
+    "btts_si": 70.9,
+    "btts_no": 29.1,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 8.4
+      },
+      {
+        "marcador": "2-1",
+        "prob": 8.3
+      },
+      {
+        "marcador": "2-2",
+        "prob": 7.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.5,
+      "defensa": 2.5,
+      "partidos": 4,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 2.5
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.571,
+      "partidos": 14,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.57
+    },
+    "ev_1": 0.109,
+    "ev_x": -0.041,
+    "ev_2": -0.185,
+    "ev_over25": 0.123,
+    "ev_under25": -0.209,
+    "fecha": "2026-07-21",
+    "hora": "12:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "IFK Göteborg",
+    "visitante": "FCI Levadia Tallinn",
+    "liga": "comp_408698",
+    "xg_l": 0.696,
+    "xg_v": 1.727,
+    "fase": "regular",
+    "p1": 16.3,
+    "px": 24.1,
+    "p2": 59.6,
+    "over_1.5": 69.5,
+    "over_2.5": 43.3,
+    "over_3.5": 22.6,
+    "under_2.5": 56.7,
+    "btts_si": 41.2,
+    "btts_no": 58.8,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 15.4
+      },
+      {
+        "marcador": "0-2",
+        "prob": 13.4
+      },
+      {
+        "marcador": "1-1",
+        "prob": 10.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 2.5,
+      "defensa": 0.833,
+      "partidos": 6,
+      "goles_favor_prom": 2.5,
+      "goles_contra_prom": 0.83
+    },
+    "ev_1": -0.541,
+    "ev_x": 0.019,
+    "ev_2": 0.406,
+    "ev_over25": -0.166,
+    "ev_under25": 0.102,
+    "fecha": "2026-07-21",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Levski Sofia",
+    "visitante": "Universitatea Craiova",
+    "liga": "comp_3498",
+    "xg_l": 1.105,
+    "xg_v": 1.045,
+    "fase": "eliminatoria",
+    "p1": 36.1,
+    "px": 30.8,
+    "p2": 33.0,
+    "over_1.5": 62.7,
+    "over_2.5": 35.7,
+    "over_3.5": 17.1,
+    "under_2.5": 64.3,
+    "btts_si": 42.8,
+    "btts_no": 57.2,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 13.8
+      },
+      {
+        "marcador": "1-0",
+        "prob": 13.7
+      },
+      {
+        "marcador": "0-0",
+        "prob": 12.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.5,
+      "defensa": 1.167,
+      "partidos": 6,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.17
+    },
+    "stats_v": {
+      "ataque": 1.786,
+      "defensa": 1.214,
+      "partidos": 14,
+      "goles_favor_prom": 1.79,
+      "goles_contra_prom": 1.21
+    },
+    "ev_1": -0.104,
+    "ev_x": -0.023,
+    "ev_2": 0.048,
+    "ev_over25": -0.093,
+    "ev_under25": 0.033,
+    "fecha": "2026-07-22",
+    "hora": "12:30",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "KF Egnatia",
+    "visitante": "NK Celje",
+    "liga": "comp_3498",
+    "xg_l": 1.645,
+    "xg_v": 0.621,
+    "fase": "eliminatoria",
+    "p1": 59.2,
+    "px": 25.0,
+    "p2": 15.8,
+    "over_1.5": 66.4,
+    "over_2.5": 39.6,
+    "over_3.5": 19.1,
+    "under_2.5": 60.4,
+    "btts_si": 37.5,
+    "btts_no": 62.5,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 18.0
+      },
+      {
+        "marcador": "2-0",
+        "prob": 14.3
+      },
+      {
+        "marcador": "0-0",
+        "prob": 11.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.0,
+      "defensa": 0.667,
+      "partidos": 6,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 0.67
+    },
+    "stats_v": {
+      "ataque": 1.857,
+      "defensa": 1.357,
+      "partidos": 14,
+      "goles_favor_prom": 1.86,
+      "goles_contra_prom": 1.36
+    },
+    "ev_1": 0.305,
+    "ev_x": -0.044,
+    "ev_2": -0.34,
+    "ev_over25": -0.092,
+    "ev_under25": 0.029,
+    "fecha": "2026-07-22",
+    "hora": "14:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "Columbus Crew",
+    "visitante": "New York City FC",
+    "liga": "comp_9799",
+    "xg_l": 1.146,
+    "xg_v": 1.638,
+    "fase": "regular",
+    "p1": 26.8,
+    "px": 27.0,
+    "p2": 46.2,
+    "over_1.5": 76.2,
+    "over_2.5": 52.0,
+    "over_3.5": 30.0,
+    "under_2.5": 48.0,
+    "btts_si": 54.8,
+    "btts_no": 45.2,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 12.9
+      },
+      {
+        "marcador": "0-1",
+        "prob": 11.2
+      },
+      {
+        "marcador": "1-2",
+        "prob": 9.4
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.312,
+      "defensa": 1.438,
+      "partidos": 16,
+      "goles_favor_prom": 1.31,
+      "goles_contra_prom": 1.44
+    },
+    "stats_v": {
+      "ataque": 1.875,
+      "defensa": 1.188,
+      "partidos": 16,
+      "goles_favor_prom": 1.88,
+      "goles_contra_prom": 1.19
+    },
+    "ev_1": -0.24,
+    "ev_x": 0.0,
+    "ev_2": 0.189,
+    "ev_over25": -0.048,
+    "ev_under25": -0.001,
+    "fecha": "2026-07-22",
+    "hora": "18:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Inter Miami CF",
+    "visitante": "Chicago Fire",
+    "liga": "comp_9799",
+    "xg_l": 2.986,
+    "xg_v": 1.823,
+    "fase": "regular",
+    "p1": 57.4,
+    "px": 19.2,
+    "p2": 23.4,
+    "over_1.5": 95.4,
+    "over_2.5": 86.2,
+    "over_3.5": 70.2,
+    "under_2.5": 13.8,
+    "btts_si": 79.8,
+    "btts_no": 20.2,
+    "marcador_prob": [
+      {
+        "marcador": "3-1",
+        "prob": 7.2
+      },
+      {
+        "marcador": "2-1",
+        "prob": 7.2
+      },
+      {
+        "marcador": "2-2",
+        "prob": 6.3
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.5,
+      "defensa": 1.5,
+      "partidos": 16,
+      "goles_favor_prom": 2.5,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 2.0,
+      "defensa": 1.625,
+      "partidos": 16,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 1.62
+    },
+    "ev_1": 0.1,
+    "ev_x": -0.047,
+    "ev_2": -0.104,
+    "ev_over25": 0.11,
+    "ev_under25": -0.156,
+    "fecha": "2026-07-22",
+    "hora": "18:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Macará",
+    "visitante": "Deportivo Cuenca",
+    "liga": "comp_1917",
+    "xg_l": 2.25,
+    "xg_v": 0.765,
+    "fase": "regular",
+    "p1": 68.0,
+    "px": 19.0,
+    "p2": 13.0,
+    "over_1.5": 80.1,
+    "over_2.5": 57.8,
+    "over_3.5": 35.8,
+    "under_2.5": 42.2,
+    "btts_si": 47.7,
+    "btts_no": 52.3,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 12.4
+      },
+      {
+        "marcador": "1-0",
+        "prob": 11.5
+      },
+      {
+        "marcador": "3-0",
+        "prob": 9.4
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.875,
+      "defensa": 0.812,
+      "partidos": 16,
+      "goles_favor_prom": 1.88,
+      "goles_contra_prom": 0.81
+    },
+    "stats_v": {
+      "ataque": 1.188,
+      "defensa": 1.25,
+      "partidos": 16,
+      "goles_favor_prom": 1.19,
+      "goles_contra_prom": 1.25
+    },
+    "ev_1": 0.213,
+    "ev_x": -0.133,
+    "ev_2": -0.147,
+    "ev_over25": 0.178,
+    "ev_under25": -0.245,
+    "fecha": "2026-07-22",
+    "hora": "14:00",
+    "liga_nombre": "LigaPro Serie A Ecuador"
+  },
+  {
+    "local": "Manta FC",
+    "visitante": "LDU",
+    "liga": "comp_1917",
+    "xg_l": 1.283,
+    "xg_v": 2.256,
+    "fase": "regular",
+    "p1": 22.5,
+    "px": 21.0,
+    "p2": 56.5,
+    "over_1.5": 87.1,
+    "over_2.5": 69.1,
+    "over_3.5": 46.7,
+    "under_2.5": 30.9,
+    "btts_si": 64.9,
+    "btts_no": 35.1,
+    "marcador_prob": [
+      {
+        "marcador": "1-2",
+        "prob": 9.8
+      },
+      {
+        "marcador": "1-1",
+        "prob": 8.3
+      },
+      {
+        "marcador": "0-2",
+        "prob": 7.4
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.188,
+      "defensa": 1.625,
+      "partidos": 16,
+      "goles_favor_prom": 1.19,
+      "goles_contra_prom": 1.62
+    },
+    "stats_v": {
+      "ataque": 1.75,
+      "defensa": 1.125,
+      "partidos": 16,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 1.12
+    },
+    "ev_1": 0.021,
+    "ev_x": -0.085,
+    "ev_2": -0.006,
+    "ev_over25": 0.262,
+    "ev_under25": -0.324,
+    "fecha": "2026-07-22",
+    "hora": "19:00",
+    "liga_nombre": "LigaPro Serie A Ecuador"
+  },
+  {
+    "local": "Omonia Nicosia",
+    "visitante": "Kairat Almaty",
+    "liga": "comp_3498",
+    "xg_l": 1.548,
+    "xg_v": 0.336,
+    "fase": "eliminatoria",
+    "p1": 64.1,
+    "px": 26.3,
+    "p2": 9.6,
+    "over_1.5": 56.0,
+    "over_2.5": 28.9,
+    "over_3.5": 12.0,
+    "under_2.5": 71.1,
+    "btts_si": 22.0,
+    "btts_no": 78.0,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 24.4
+      },
+      {
+        "marcador": "2-0",
+        "prob": 18.4
+      },
+      {
+        "marcador": "0-0",
+        "prob": 16.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.571,
+      "defensa": 0.714,
+      "partidos": 14,
+      "goles_favor_prom": 1.57,
+      "goles_contra_prom": 0.71
+    },
+    "stats_v": {
+      "ataque": 0.938,
+      "defensa": 1.625,
+      "partidos": 16,
+      "goles_favor_prom": 0.94,
+      "goles_contra_prom": 1.62
+    },
+    "ev_1": 0.035,
+    "ev_x": 0.005,
+    "ev_2": -0.116,
+    "ev_over25": -0.204,
+    "ev_under25": 0.152,
+    "fecha": "2026-07-22",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Champions League"
+  },
+  {
+    "local": "Philadelphia Union",
+    "visitante": "New York Red Bulls",
+    "liga": "comp_9799",
+    "xg_l": 1.723,
+    "xg_v": 0.896,
+    "fase": "regular",
+    "p1": 54.1,
+    "px": 25.9,
+    "p2": 20.1,
+    "over_1.5": 73.4,
+    "over_2.5": 48.3,
+    "over_3.5": 26.1,
+    "under_2.5": 51.7,
+    "btts_si": 48.1,
+    "btts_no": 51.9,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 14.3
+      },
+      {
+        "marcador": "1-1",
+        "prob": 11.4
+      },
+      {
+        "marcador": "2-0",
+        "prob": 11.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.5,
+      "defensa": 1.312,
+      "partidos": 16,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.31
+    },
+    "stats_v": {
+      "ataque": 1.125,
+      "defensa": 1.562,
+      "partidos": 16,
+      "goles_favor_prom": 1.12,
+      "goles_contra_prom": 1.56
+    },
+    "ev_1": -0.024,
+    "ev_x": 0.017,
+    "ev_2": -0.045,
+    "ev_over25": -0.193,
+    "ev_under25": 0.132,
+    "fecha": "2026-07-22",
+    "hora": "18:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "New England Revolution",
+    "visitante": "Toronto FC",
+    "liga": "comp_9799",
+    "xg_l": 1.516,
+    "xg_v": 1.444,
+    "fase": "regular",
+    "p1": 38.4,
+    "px": 26.5,
+    "p2": 35.1,
+    "over_1.5": 79.7,
+    "over_2.5": 56.7,
+    "over_3.5": 34.2,
+    "under_2.5": 43.3,
+    "btts_si": 59.8,
+    "btts_no": 40.2,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 12.2
+      },
+      {
+        "marcador": "1-0",
+        "prob": 8.9
+      },
+      {
+        "marcador": "0-1",
+        "prob": 8.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.5,
+      "defensa": 1.812,
+      "partidos": 16,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.81
+    },
+    "stats_v": {
+      "ataque": 1.312,
+      "defensa": 1.375,
+      "partidos": 16,
+      "goles_favor_prom": 1.31,
+      "goles_contra_prom": 1.38
+    },
+    "ev_1": -0.134,
+    "ev_x": -0.0,
+    "ev_2": 0.084,
+    "ev_over25": 0.011,
+    "ev_under25": -0.06,
+    "fecha": "2026-07-22",
+    "hora": "18:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Bodø/Glimt",
+    "visitante": "HamKam",
+    "liga": "comp_1992",
+    "xg_l": 2.259,
+    "xg_v": 1.563,
+    "fase": "regular",
+    "p1": 51.5,
+    "px": 21.8,
+    "p2": 26.7,
+    "over_1.5": 89.5,
+    "over_2.5": 73.4,
+    "over_3.5": 53.6,
+    "under_2.5": 26.6,
+    "btts_si": 71.3,
+    "btts_no": 28.7,
+    "marcador_prob": [
+      {
+        "marcador": "2-1",
+        "prob": 8.7
+      },
+      {
+        "marcador": "1-1",
+        "prob": 8.1
+      },
+      {
+        "marcador": "3-1",
+        "prob": 6.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.375,
+      "defensa": 1.562,
+      "partidos": 16,
+      "goles_favor_prom": 2.38,
+      "goles_contra_prom": 1.56
+    },
+    "stats_v": {
+      "ataque": 1.75,
+      "defensa": 1.375,
+      "partidos": 16,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 1.38
+    },
+    "ev_1": -0.394,
+    "ev_x": 0.131,
+    "ev_2": 0.211,
+    "ev_over25": -0.066,
+    "ev_under25": 0.016,
+    "fecha": "2026-07-22",
+    "hora": "12:00",
+    "liga_nombre": "Eliteserien"
+  },
+  {
+    "local": "Lillestrøm SK",
+    "visitante": "Viking FK",
+    "liga": "comp_1992",
+    "xg_l": 1.327,
+    "xg_v": 1.583,
+    "fase": "regular",
+    "p1": 32.8,
+    "px": 25.8,
+    "p2": 41.4,
+    "over_1.5": 79.0,
+    "over_2.5": 55.5,
+    "over_3.5": 33.2,
+    "under_2.5": 44.5,
+    "btts_si": 58.6,
+    "btts_no": 41.4,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 11.8
+      },
+      {
+        "marcador": "1-2",
+        "prob": 8.8
+      },
+      {
+        "marcador": "0-1",
+        "prob": 8.4
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.615,
+      "defensa": 0.923,
+      "partidos": 13,
+      "goles_favor_prom": 1.62,
+      "goles_contra_prom": 0.92
+    },
+    "stats_v": {
+      "ataque": 3.0,
+      "defensa": 1.188,
+      "partidos": 16,
+      "goles_favor_prom": 3.0,
+      "goles_contra_prom": 1.19
+    },
+    "ev_1": 0.011,
+    "ev_x": -0.014,
+    "ev_2": -0.041,
+    "ev_over25": -0.099,
+    "ev_under25": 0.028,
+    "fecha": "2026-07-22",
+    "hora": "12:00",
+    "liga_nombre": "Eliteserien"
+  },
+  {
+    "local": "Independiente del Valle",
+    "visitante": "Técnico Universitario",
+    "liga": "comp_1917",
+    "xg_l": 2.145,
+    "xg_v": 0.443,
+    "fase": "regular",
+    "p1": 73.0,
+    "px": 18.0,
+    "p2": 9.0,
+    "over_1.5": 73.3,
+    "over_2.5": 48.1,
+    "over_3.5": 26.4,
+    "under_2.5": 51.9,
+    "btts_si": 31.2,
+    "btts_no": 68.8,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 17.4
+      },
+      {
+        "marcador": "1-0",
+        "prob": 16.1
+      },
+      {
+        "marcador": "3-0",
+        "prob": 12.5
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.625,
+      "defensa": 0.688,
+      "partidos": 16,
+      "goles_favor_prom": 1.62,
+      "goles_contra_prom": 0.69
+    },
+    "stats_v": {
+      "ataque": 0.812,
+      "defensa": 1.375,
+      "partidos": 16,
+      "goles_favor_prom": 0.81,
+      "goles_contra_prom": 1.38
+    },
+    "ev_1": -0.125,
+    "ev_x": 0.034,
+    "ev_2": 0.011,
+    "ev_over25": -0.156,
+    "ev_under25": 0.093,
+    "fecha": "2026-07-22",
+    "hora": "16:30",
+    "liga_nombre": "LigaPro Serie A Ecuador"
+  },
+  {
+    "local": "Charlotte FC",
+    "visitante": "Atlanta United",
+    "liga": "comp_9799",
+    "xg_l": 1.447,
+    "xg_v": 0.608,
+    "fase": "regular",
+    "p1": 54.2,
+    "px": 28.5,
+    "p2": 17.4,
+    "over_1.5": 60.9,
+    "over_2.5": 34.0,
+    "over_3.5": 15.4,
+    "under_2.5": 66.0,
+    "btts_si": 35.2,
+    "btts_no": 64.8,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 19.9
+      },
+      {
+        "marcador": "0-0",
+        "prob": 14.7
+      },
+      {
+        "marcador": "2-0",
+        "prob": 13.5
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.125,
+      "defensa": 1.0,
+      "partidos": 16,
+      "goles_favor_prom": 1.12,
+      "goles_contra_prom": 1.0
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.75,
+      "partidos": 16,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.75
+    },
+    "ev_1": -0.001,
+    "ev_x": 0.018,
+    "ev_2": -0.068,
+    "ev_over25": -0.252,
+    "ev_under25": 0.203,
+    "fecha": "2026-07-22",
+    "hora": "19:15",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Bohemian FC",
+    "visitante": "KF Ballkani",
+    "liga": "comp_408698",
+    "xg_l": 1.254,
+    "xg_v": 0.2,
+    "fase": "regular",
+    "p1": 61.7,
+    "px": 30.2,
+    "p2": 8.1,
+    "over_1.5": 42.8,
+    "over_2.5": 18.1,
+    "over_3.5": 6.1,
+    "under_2.5": 81.9,
+    "btts_si": 12.8,
+    "btts_no": 87.2,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 29.2
+      },
+      {
+        "marcador": "0-0",
+        "prob": 23.8
+      },
+      {
+        "marcador": "2-0",
+        "prob": 18.5
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 0.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 0.0
+    },
+    "stats_v": {
+      "ataque": 1.5,
+      "defensa": 1.5,
+      "partidos": 6,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.5
+    },
+    "ev_1": 0.046,
+    "ev_x": 0.016,
+    "ev_2": -0.175,
+    "ev_over25": -0.329,
+    "ev_under25": 0.263,
+    "fecha": "2026-07-22",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Neftçi Baku PFK",
+    "visitante": "Dinamo Minsk",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 0.2,
+    "fase": "regular",
+    "p1": 48.2,
+    "px": 40.6,
+    "p2": 11.2,
+    "over_1.5": 27.6,
+    "over_2.5": 8.4,
+    "over_3.5": 1.9,
+    "under_2.5": 91.6,
+    "btts_si": 9.9,
+    "btts_no": 90.1,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 35.3
+      },
+      {
+        "marcador": "1-0",
+        "prob": 29.9
+      },
+      {
+        "marcador": "2-0",
+        "prob": 12.4
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 0.25,
+      "defensa": 1.0,
+      "partidos": 4,
+      "goles_favor_prom": 0.25,
+      "goles_contra_prom": 1.0
+    },
+    "ev_1": -0.018,
+    "ev_x": 0.094,
+    "ev_2": -0.182,
+    "ev_over25": -0.368,
+    "ev_under25": 0.295,
+    "fecha": "2026-07-22",
+    "hora": "11:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Houston Dynamo",
+    "visitante": "DC United",
+    "liga": "comp_9799",
+    "xg_l": 1.916,
+    "xg_v": 1.096,
+    "fase": "regular",
+    "p1": 53.1,
+    "px": 24.2,
+    "p2": 22.7,
+    "over_1.5": 80.3,
+    "over_2.5": 58.3,
+    "over_3.5": 35.2,
+    "under_2.5": 41.7,
+    "btts_si": 56.9,
+    "btts_no": 43.1,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 10.9
+      },
+      {
+        "marcador": "1-1",
+        "prob": 10.9
+      },
+      {
+        "marcador": "2-1",
+        "prob": 9.9
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.438,
+      "defensa": 2.062,
+      "partidos": 16,
+      "goles_favor_prom": 1.44,
+      "goles_contra_prom": 2.06
+    },
+    "stats_v": {
+      "ataque": 0.875,
+      "defensa": 1.812,
+      "partidos": 16,
+      "goles_favor_prom": 0.88,
+      "goles_contra_prom": 1.81
+    },
+    "ev_1": -0.025,
+    "ev_x": -0.023,
+    "ev_2": -0.006,
+    "ev_over25": 0.024,
+    "ev_under25": -0.071,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Sporting Kansas City",
+    "visitante": "Minnesota United",
+    "liga": "comp_9799",
+    "xg_l": 0.948,
+    "xg_v": 2.222,
+    "fase": "regular",
+    "p1": 17.0,
+    "px": 21.8,
+    "p2": 61.1,
+    "over_1.5": 82.6,
+    "over_2.5": 61.3,
+    "over_3.5": 38.6,
+    "under_2.5": 38.7,
+    "btts_si": 55.2,
+    "btts_no": 44.8,
+    "marcador_prob": [
+      {
+        "marcador": "0-2",
+        "prob": 11.2
+      },
+      {
+        "marcador": "0-1",
+        "prob": 10.6
+      },
+      {
+        "marcador": "1-2",
+        "prob": 10.4
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.938,
+      "defensa": 2.438,
+      "partidos": 16,
+      "goles_favor_prom": 0.94,
+      "goles_contra_prom": 2.44
+    },
+    "stats_v": {
+      "ataque": 1.5,
+      "defensa": 1.375,
+      "partidos": 16,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.38
+    },
+    "ev_1": -0.101,
+    "ev_x": -0.04,
+    "ev_2": 0.087,
+    "ev_over25": -0.054,
+    "ev_under25": -0.013,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Colorado Rapids",
+    "visitante": "San Diego FC",
+    "liga": "comp_9799",
+    "xg_l": 1.25,
+    "xg_v": 2.061,
+    "fase": "regular",
+    "p1": 23.9,
+    "px": 23.6,
+    "p2": 52.5,
+    "over_1.5": 84.3,
+    "over_2.5": 63.8,
+    "over_3.5": 41.7,
+    "under_2.5": 36.2,
+    "btts_si": 62.0,
+    "btts_no": 38.0,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 10.5
+      },
+      {
+        "marcador": "1-2",
+        "prob": 10.0
+      },
+      {
+        "marcador": "0-1",
+        "prob": 9.1
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.812,
+      "defensa": 1.938,
+      "partidos": 16,
+      "goles_favor_prom": 1.81,
+      "goles_contra_prom": 1.94
+    },
+    "stats_v": {
+      "ataque": 1.75,
+      "defensa": 0.938,
+      "partidos": 16,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 0.94
+    },
+    "ev_1": -0.239,
+    "ev_x": -0.014,
+    "ev_2": 0.202,
+    "ev_over25": -0.076,
+    "ev_under25": 0.015,
+    "fecha": "2026-07-22",
+    "hora": "20:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Portland Timbers",
+    "visitante": "FC Dallas",
+    "liga": "comp_9799",
+    "xg_l": 1.146,
+    "xg_v": 1.795,
+    "fase": "regular",
+    "p1": 25.1,
+    "px": 25.7,
+    "p2": 49.1,
+    "over_1.5": 78.5,
+    "over_2.5": 55.6,
+    "over_3.5": 33.7,
+    "under_2.5": 44.4,
+    "btts_si": 56.5,
+    "btts_no": 43.5,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 11.5
+      },
+      {
+        "marcador": "0-1",
+        "prob": 11.1
+      },
+      {
+        "marcador": "1-2",
+        "prob": 9.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.188,
+      "defensa": 1.688,
+      "partidos": 16,
+      "goles_favor_prom": 1.19,
+      "goles_contra_prom": 1.69
+    },
+    "stats_v": {
+      "ataque": 1.75,
+      "defensa": 1.312,
+      "partidos": 16,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 1.31
+    },
+    "ev_1": -0.169,
+    "ev_x": -0.011,
+    "ev_2": 0.129,
+    "ev_over25": -0.111,
+    "ev_under25": 0.044,
+    "fecha": "2026-07-22",
+    "hora": "21:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "San Jose Earthquakes",
+    "visitante": "Orlando City SC",
+    "liga": "comp_9799",
+    "xg_l": 2.688,
+    "xg_v": 1.42,
+    "fase": "regular",
+    "p1": 60.5,
+    "px": 19.0,
+    "p2": 20.6,
+    "over_1.5": 91.8,
+    "over_2.5": 78.1,
+    "over_3.5": 59.3,
+    "under_2.5": 21.9,
+    "btts_si": 71.7,
+    "btts_no": 28.3,
+    "marcador_prob": [
+      {
+        "marcador": "2-1",
+        "prob": 8.9
+      },
+      {
+        "marcador": "3-1",
+        "prob": 7.8
+      },
+      {
+        "marcador": "1-1",
+        "prob": 7.3
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.5,
+      "defensa": 1.438,
+      "partidos": 16,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.44
+    },
+    "stats_v": {
+      "ataque": 1.625,
+      "defensa": 2.438,
+      "partidos": 16,
+      "goles_favor_prom": 1.62,
+      "goles_contra_prom": 2.44
+    },
+    "ev_1": -0.049,
+    "ev_x": -0.011,
+    "ev_2": 0.002,
+    "ev_over25": 0.029,
+    "ev_under25": -0.075,
+    "fecha": "2026-07-22",
+    "hora": "21:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "LA Galaxy",
+    "visitante": "St.Louis City",
+    "liga": "comp_9799",
+    "xg_l": 2.172,
+    "xg_v": 1.475,
+    "fase": "regular",
+    "p1": 51.2,
+    "px": 22.1,
+    "p2": 26.7,
+    "over_1.5": 87.6,
+    "over_2.5": 71.0,
+    "over_3.5": 49.7,
+    "under_2.5": 29.0,
+    "btts_si": 68.5,
+    "btts_no": 31.5,
+    "marcador_prob": [
+      {
+        "marcador": "2-1",
+        "prob": 9.9
+      },
+      {
+        "marcador": "1-1",
+        "prob": 9.2
+      },
+      {
+        "marcador": "2-0",
+        "prob": 7.3
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.75,
+      "defensa": 1.688,
+      "partidos": 16,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 1.69
+    },
     "stats_v": {
       "ataque": 1.438,
       "defensa": 1.688,
@@ -1152,39 +2255,669 @@
       "goles_favor_prom": 1.44,
       "goles_contra_prom": 1.69
     },
-    "ev_1": 0.045,
-    "ev_x": -0.07,
-    "ev_2": -0.057,
-    "ev_over25": 0.217,
-    "ev_under25": -0.295,
+    "ev_1": -0.001,
+    "ev_x": -0.049,
+    "ev_2": -0.019,
+    "ev_over25": 0.073,
+    "ev_under25": -0.136,
     "fecha": "2026-07-22",
-    "hora": "17:00",
-    "liga_nombre": "Copa Sudamericana"
+    "hora": "21:30",
+    "liga_nombre": "MLS"
   },
   {
-    "local": "CS Cristal",
-    "visitante": "RB Bragantino",
-    "liga": "CSU",
-    "xg_l": 1.386,
-    "xg_v": 2.2,
-    "fase": "eliminatoria",
-    "p1": 25.3,
-    "px": 23.5,
-    "p2": 51.2,
-    "over_1.5": 87.3,
-    "over_2.5": 69.5,
-    "over_3.5": 48.5,
-    "under_2.5": 30.5,
-    "btts_si": 66.8,
-    "btts_no": 33.2,
+    "local": "Los Angeles FC",
+    "visitante": "Real Salt Lake",
+    "liga": "comp_9799",
+    "xg_l": 2.573,
+    "xg_v": 0.731,
+    "fase": "regular",
+    "p1": 71.3,
+    "px": 17.5,
+    "p2": 11.2,
+    "over_1.5": 84.1,
+    "over_2.5": 64.7,
+    "over_3.5": 42.1,
+    "under_2.5": 35.3,
+    "btts_si": 47.9,
+    "btts_no": 52.1,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 13.6
+      },
+      {
+        "marcador": "1-0",
+        "prob": 11.1
+      },
+      {
+        "marcador": "3-0",
+        "prob": 10.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.0,
+      "defensa": 0.875,
+      "partidos": 16,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 0.88
+    },
+    "stats_v": {
+      "ataque": 1.375,
+      "defensa": 1.75,
+      "partidos": 16,
+      "goles_favor_prom": 1.38,
+      "goles_contra_prom": 1.75
+    },
+    "ev_1": 0.132,
+    "ev_x": -0.066,
+    "ev_2": -0.12,
+    "ev_over25": -0.02,
+    "ev_under25": -0.064,
+    "fecha": "2026-07-22",
+    "hora": "21:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "FK Železničar Pančevo",
+    "visitante": "Sporting Braga",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 0.691,
+    "fase": "regular",
+    "p1": 35.4,
+    "px": 36.7,
+    "p2": 28.0,
+    "over_1.5": 45.7,
+    "over_2.5": 19.2,
+    "over_3.5": 6.5,
+    "under_2.5": 80.8,
+    "btts_si": 28.4,
+    "btts_no": 71.6,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 21.9
+      },
+      {
+        "marcador": "1-0",
+        "prob": 17.8
+      },
+      {
+        "marcador": "0-1",
+        "prob": 14.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": 0.211,
+    "ev_x": 0.136,
+    "ev_2": -0.455,
+    "ev_over25": -0.407,
+    "ev_under25": 0.334,
+    "fecha": "2026-07-22",
+    "hora": "14:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FC Spartak Trnava",
+    "visitante": "FC CSKA 1948 Sofia",
+    "liga": "comp_408698",
+    "xg_l": 2.299,
+    "xg_v": 1.036,
+    "fase": "regular",
+    "p1": 62.3,
+    "px": 20.3,
+    "p2": 17.4,
+    "over_1.5": 84.6,
+    "over_2.5": 65.0,
+    "over_3.5": 42.6,
+    "under_2.5": 35.0,
+    "btts_si": 58.1,
+    "btts_no": 41.9,
+    "marcador_prob": [
+      {
+        "marcador": "2-1",
+        "prob": 9.5
+      },
+      {
+        "marcador": "2-0",
+        "prob": 9.2
+      },
+      {
+        "marcador": "1-1",
+        "prob": 8.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.75,
+      "defensa": 1.5,
+      "partidos": 4,
+      "goles_favor_prom": 2.75,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": 0.168,
+    "ev_x": -0.109,
+    "ev_2": -0.159,
+    "ev_over25": 0.174,
+    "ev_under25": -0.249,
+    "fecha": "2026-07-22",
+    "hora": "13:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FK Vardar Skopje",
+    "visitante": "Riga FC",
+    "liga": "comp_408698",
+    "xg_l": 1.358,
+    "xg_v": 2.245,
+    "fase": "regular",
+    "p1": 23.6,
+    "px": 21.9,
+    "p2": 54.5,
+    "over_1.5": 87.7,
+    "over_2.5": 70.1,
+    "over_3.5": 49.0,
+    "under_2.5": 29.9,
+    "btts_si": 67.1,
+    "btts_no": 32.9,
+    "marcador_prob": [
+      {
+        "marcador": "1-2",
+        "prob": 9.3
+      },
+      {
+        "marcador": "1-1",
+        "prob": 8.3
+      },
+      {
+        "marcador": "1-3",
+        "prob": 7.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 2.0,
+      "partidos": 4,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 2.0
+    },
+    "stats_v": {
+      "ataque": 1.625,
+      "defensa": 1.625,
+      "partidos": 8,
+      "goles_favor_prom": 1.62,
+      "goles_contra_prom": 1.62
+    },
+    "ev_1": -0.134,
+    "ev_x": -0.075,
+    "ev_2": 0.09,
+    "ev_over25": 0.113,
+    "ev_under25": -0.186,
+    "fecha": "2026-07-22",
+    "hora": "13:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Başakşehir FK",
+    "visitante": "Inter Turku",
+    "liga": "comp_408698",
+    "xg_l": 1.532,
+    "xg_v": 1.209,
+    "fase": "regular",
+    "p1": 44.0,
+    "px": 26.0,
+    "p2": 30.0,
+    "over_1.5": 76.4,
+    "over_2.5": 51.7,
+    "over_3.5": 28.9,
+    "under_2.5": 48.3,
+    "btts_si": 54.7,
+    "btts_no": 45.3,
     "marcador_prob": [
       {
         "marcador": "1-1",
-        "prob": 10.2
+        "prob": 11.9
+      },
+      {
+        "marcador": "1-0",
+        "prob": 9.7
+      },
+      {
+        "marcador": "2-1",
+        "prob": 9.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.833,
+      "defensa": 1.167,
+      "partidos": 6,
+      "goles_favor_prom": 1.83,
+      "goles_contra_prom": 1.17
+    },
+    "stats_v": {
+      "ataque": 1.5,
+      "defensa": 1.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.0
+    },
+    "ev_1": -0.38,
+    "ev_x": 0.117,
+    "ev_2": 0.209,
+    "ev_over25": -0.108,
+    "ev_under25": 0.048,
+    "fecha": "2026-07-22",
+    "hora": "12:45",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Austin FC",
+    "visitante": "Seattle Sounders FC",
+    "liga": "comp_9799",
+    "xg_l": 1.507,
+    "xg_v": 2.582,
+    "fase": "regular",
+    "p1": 22.7,
+    "px": 20.5,
+    "p2": 56.8,
+    "over_1.5": 91.6,
+    "over_2.5": 77.8,
+    "over_3.5": 58.8,
+    "under_2.5": 22.2,
+    "btts_si": 72.6,
+    "btts_no": 27.4,
+    "marcador_prob": [
+      {
+        "marcador": "1-2",
+        "prob": 9.0
+      },
+      {
+        "marcador": "1-3",
+        "prob": 7.8
+      },
+      {
+        "marcador": "1-1",
+        "prob": 7.3
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.562,
+      "defensa": 2.0,
+      "partidos": 16,
+      "goles_favor_prom": 1.56,
+      "goles_contra_prom": 2.0
+    },
+    "stats_v": {
+      "ataque": 2.125,
+      "defensa": 1.312,
+      "partidos": 16,
+      "goles_favor_prom": 2.12,
+      "goles_contra_prom": 1.31
+    },
+    "ev_1": -0.071,
+    "ev_x": -0.067,
+    "ev_2": 0.087,
+    "ev_over25": 0.179,
+    "ev_under25": -0.226,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Nashville SC",
+    "visitante": "CF Montréal",
+    "liga": "comp_9799",
+    "xg_l": 2.494,
+    "xg_v": 1.638,
+    "fase": "regular",
+    "p1": 53.3,
+    "px": 21.2,
+    "p2": 25.5,
+    "over_1.5": 91.6,
+    "over_2.5": 77.9,
+    "over_3.5": 59.2,
+    "under_2.5": 22.1,
+    "btts_si": 74.2,
+    "btts_no": 25.8,
+    "marcador_prob": [
+      {
+        "marcador": "2-1",
+        "prob": 8.8
+      },
+      {
+        "marcador": "1-1",
+        "prob": 7.9
+      },
+      {
+        "marcador": "2-2",
+        "prob": 6.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.938,
+      "defensa": 1.875,
+      "partidos": 16,
+      "goles_favor_prom": 1.94,
+      "goles_contra_prom": 1.88
+    },
+    "stats_v": {
+      "ataque": 1.438,
+      "defensa": 1.75,
+      "partidos": 16,
+      "goles_favor_prom": 1.44,
+      "goles_contra_prom": 1.75
+    },
+    "ev_1": -0.138,
+    "ev_x": -0.011,
+    "ev_2": 0.093,
+    "ev_over25": 0.173,
+    "ev_under25": -0.22,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "FC Cincinnati",
+    "visitante": "Vancouver Whitecaps",
+    "liga": "comp_9799",
+    "xg_l": 0.983,
+    "xg_v": 2.313,
+    "fase": "regular",
+    "p1": 16.6,
+    "px": 21.3,
+    "p2": 62.1,
+    "over_1.5": 84.5,
+    "over_2.5": 63.5,
+    "over_3.5": 41.3,
+    "under_2.5": 36.5,
+    "btts_si": 56.4,
+    "btts_no": 43.6,
+    "marcador_prob": [
+      {
+        "marcador": "0-2",
+        "prob": 10.6
       },
       {
         "marcador": "1-2",
+        "prob": 10.3
+      },
+      {
+        "marcador": "0-1",
         "prob": 10.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.188,
+      "defensa": 1.562,
+      "partidos": 16,
+      "goles_favor_prom": 1.19,
+      "goles_contra_prom": 1.56
+    },
+    "stats_v": {
+      "ataque": 2.438,
+      "defensa": 1.125,
+      "partidos": 16,
+      "goles_favor_prom": 2.44,
+      "goles_contra_prom": 1.12
+    },
+    "ev_1": -0.087,
+    "ev_x": -0.024,
+    "ev_2": 0.056,
+    "ev_over25": -0.079,
+    "ev_under25": 0.018,
+    "fecha": "2026-07-22",
+    "hora": "18:30",
+    "liga_nombre": "MLS"
+  },
+  {
+    "local": "Coritiba",
+    "visitante": "Palmeiras",
+    "liga": "comp_4795",
+    "xg_l": 1.147,
+    "xg_v": 1.777,
+    "fase": "regular",
+    "p1": 26.2,
+    "px": 24.9,
+    "p2": 49.0,
+    "over_1.5": 78.5,
+    "over_2.5": 55.5,
+    "over_3.5": 32.7,
+    "under_2.5": 44.5,
+    "btts_si": 56.2,
+    "btts_no": 43.8,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 11.5
+      },
+      {
+        "marcador": "0-1",
+        "prob": 10.3
+      },
+      {
+        "marcador": "1-2",
+        "prob": 9.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.312,
+      "defensa": 1.312,
+      "partidos": 16,
+      "goles_favor_prom": 1.31,
+      "goles_contra_prom": 1.31
+    },
+    "stats_v": {
+      "ataque": 1.875,
+      "defensa": 1.0,
+      "partidos": 16,
+      "goles_favor_prom": 1.88,
+      "goles_contra_prom": 1.0
+    },
+    "ev_1": 0.028,
+    "ev_x": -0.05,
+    "ev_2": -0.023,
+    "ev_over25": 0.096,
+    "ev_under25": -0.14,
+    "fecha": "2026-07-22",
+    "hora": "17:30",
+    "liga_nombre": "Brasileirão Série A"
+  },
+  {
+    "local": "Club Sporting Cristal",
+    "visitante": "Red Bull Bragantino",
+    "liga": "comp_1615",
+    "xg_l": 2.686,
+    "xg_v": 0.986,
+    "fase": "eliminatoria",
+    "p1": 67.2,
+    "px": 19.1,
+    "p2": 13.7,
+    "over_1.5": 88.3,
+    "over_2.5": 71.4,
+    "over_3.5": 50.2,
+    "under_2.5": 28.6,
+    "btts_si": 58.5,
+    "btts_no": 41.5,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 11.0
+      },
+      {
+        "marcador": "1-0",
+        "prob": 9.9
+      },
+      {
+        "marcador": "2-1",
+        "prob": 9.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.688,
+      "defensa": 0.812,
+      "partidos": 16,
+      "goles_favor_prom": 1.69,
+      "goles_contra_prom": 0.81
+    },
+    "stats_v": {
+      "ataque": 1.5,
+      "defensa": 1.625,
+      "partidos": 16,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.62
+    },
+    "ev_1": 0.372,
+    "ev_x": -0.105,
+    "ev_2": -0.335,
+    "ev_over25": 0.209,
+    "ev_under25": -0.266,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "CONMEBOL Sudamericana"
+  },
+  {
+    "local": "Lanús",
+    "visitante": "Cienciano",
+    "liga": "comp_1615",
+    "xg_l": 1.071,
+    "xg_v": 0.948,
+    "fase": "eliminatoria",
+    "p1": 36.4,
+    "px": 33.2,
+    "p2": 30.4,
+    "over_1.5": 60.0,
+    "over_2.5": 33.1,
+    "over_3.5": 14.2,
+    "under_2.5": 66.9,
+    "btts_si": 40.2,
+    "btts_no": 59.8,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 17.4
+      },
+      {
+        "marcador": "1-0",
+        "prob": 16.7
+      },
+      {
+        "marcador": "0-1",
+        "prob": 14.0
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.875,
+      "defensa": 0.75,
+      "partidos": 16,
+      "goles_favor_prom": 0.88,
+      "goles_contra_prom": 0.75
+    },
+    "stats_v": {
+      "ataque": 1.562,
+      "defensa": 1.25,
+      "partidos": 16,
+      "goles_favor_prom": 1.56,
+      "goles_contra_prom": 1.25
+    },
+    "ev_1": -0.399,
+    "ev_x": 0.133,
+    "ev_2": 0.188,
+    "ev_over25": -0.228,
+    "ev_under25": 0.171,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "CONMEBOL Sudamericana"
+  },
+  {
+    "local": "São Paulo",
+    "visitante": "Athletico",
+    "liga": "comp_4795",
+    "xg_l": 1.102,
+    "xg_v": 0.559,
+    "fase": "regular",
+    "p1": 45.8,
+    "px": 34.0,
+    "p2": 20.2,
+    "over_1.5": 49.9,
+    "over_2.5": 23.2,
+    "over_3.5": 8.7,
+    "under_2.5": 76.8,
+    "btts_si": 29.5,
+    "btts_no": 70.5,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 21.6
+      },
+      {
+        "marcador": "0-0",
+        "prob": 20.7
+      },
+      {
+        "marcador": "1-1",
+        "prob": 11.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.188,
+      "defensa": 0.562,
+      "partidos": 16,
+      "goles_favor_prom": 1.19,
+      "goles_contra_prom": 0.56
+    },
+    "stats_v": {
+      "ataque": 1.375,
+      "defensa": 1.062,
+      "partidos": 16,
+      "goles_favor_prom": 1.38,
+      "goles_contra_prom": 1.06
+    },
+    "ev_1": -0.04,
+    "ev_x": 0.034,
+    "ev_2": -0.04,
+    "ev_over25": -0.212,
+    "ev_under25": 0.169,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "Brasileirão Série A"
+  },
+  {
+    "local": "Independiente Medellín",
+    "visitante": "Vasco da Gama",
+    "liga": "comp_1615",
+    "xg_l": 1.429,
+    "xg_v": 2.156,
+    "fase": "eliminatoria",
+    "p1": 26.4,
+    "px": 24.1,
+    "p2": 49.5,
+    "over_1.5": 87.6,
+    "over_2.5": 69.4,
+    "over_3.5": 47.9,
+    "under_2.5": 30.6,
+    "btts_si": 67.3,
+    "btts_no": 32.7,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 10.9
+      },
+      {
+        "marcador": "1-2",
+        "prob": 9.8
       },
       {
         "marcador": "0-1",
@@ -1192,150 +2925,1353 @@
       }
     ],
     "stats_l": {
-      "ataque": 1.0,
-      "defensa": 2.667,
-      "partidos": 6,
-      "goles_favor_prom": 1.0,
-      "goles_contra_prom": 2.67
+      "ataque": 1.062,
+      "defensa": 1.375,
+      "partidos": 16,
+      "goles_favor_prom": 1.06,
+      "goles_contra_prom": 1.38
     },
     "stats_v": {
-      "ataque": 1.125,
-      "defensa": 1.562,
+      "ataque": 1.938,
+      "defensa": 1.375,
       "partidos": 16,
-      "goles_favor_prom": 1.12,
-      "goles_contra_prom": 1.56
+      "goles_favor_prom": 1.94,
+      "goles_contra_prom": 1.38
     },
-    "ev_1": -0.049,
-    "ev_x": -0.065,
-    "ev_2": 0.038,
-    "ev_over25": 0.185,
-    "ev_under25": -0.26,
+    "ev_1": -0.175,
+    "ev_x": -0.078,
+    "ev_2": 0.187,
+    "ev_over25": 0.222,
+    "ev_under25": -0.289,
     "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "Copa Sudamericana"
+    "hora": "17:00",
+    "liga_nombre": "CONMEBOL Sudamericana"
   },
   {
-    "local": "CA Lanus",
-    "visitante": "Club Cienciano",
-    "liga": "CSU",
-    "xg_l": 1.552,
-    "xg_v": 0.55,
-    "fase": "eliminatoria",
-    "p1": 56.4,
-    "px": 29.2,
-    "p2": 14.4,
-    "over_1.5": 62.1,
-    "over_2.5": 36.0,
-    "over_3.5": 16.3,
-    "under_2.5": 64.0,
-    "btts_si": 33.8,
-    "btts_no": 66.2,
+    "local": "Internacional",
+    "visitante": "Cruzeiro",
+    "liga": "comp_4795",
+    "xg_l": 0.738,
+    "xg_v": 1.677,
+    "fase": "regular",
+    "p1": 17.6,
+    "px": 25.4,
+    "p2": 57.0,
+    "over_1.5": 69.0,
+    "over_2.5": 43.3,
+    "over_3.5": 22.8,
+    "under_2.5": 56.7,
+    "btts_si": 42.9,
+    "btts_no": 57.1,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 16.4
+      },
+      {
+        "marcador": "0-2",
+        "prob": 12.8
+      },
+      {
+        "marcador": "1-1",
+        "prob": 11.1
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.125,
+      "defensa": 1.688,
+      "partidos": 16,
+      "goles_favor_prom": 1.12,
+      "goles_contra_prom": 1.69
+    },
+    "stats_v": {
+      "ataque": 1.375,
+      "defensa": 0.75,
+      "partidos": 16,
+      "goles_favor_prom": 1.38,
+      "goles_contra_prom": 0.75
+    },
+    "ev_1": -0.268,
+    "ev_x": -0.048,
+    "ev_2": 0.272,
+    "ev_over25": -0.05,
+    "ev_under25": 0.008,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "Brasileirão Série A"
+  },
+  {
+    "local": "Chapecoense",
+    "visitante": "Flamengo",
+    "liga": "comp_4795",
+    "xg_l": 0.318,
+    "xg_v": 1.947,
+    "fase": "regular",
+    "p1": 7.9,
+    "px": 21.0,
+    "p2": 71.1,
+    "over_1.5": 66.2,
+    "over_2.5": 39.1,
+    "over_3.5": 19.4,
+    "under_2.5": 60.9,
+    "btts_si": 23.1,
+    "btts_no": 76.9,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 21.3
+      },
+      {
+        "marcador": "0-2",
+        "prob": 20.2
+      },
+      {
+        "marcador": "0-3",
+        "prob": 12.5
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.938,
+      "defensa": 1.875,
+      "partidos": 16,
+      "goles_favor_prom": 0.94,
+      "goles_contra_prom": 1.88
+    },
+    "stats_v": {
+      "ataque": 1.438,
+      "defensa": 0.375,
+      "partidos": 16,
+      "goles_favor_prom": 1.44,
+      "goles_contra_prom": 0.38
+    },
+    "ev_1": -0.059,
+    "ev_x": -0.014,
+    "ev_2": 0.021,
+    "ev_over25": -0.144,
+    "ev_under25": 0.106,
+    "fecha": "2026-07-22",
+    "hora": "19:30",
+    "liga_nombre": "Brasileirão Série A"
+  },
+  {
+    "local": "Valur Reykjavík",
+    "visitante": "HŠK Zrinjski Mostar",
+    "liga": "comp_408698",
+    "xg_l": 1.588,
+    "xg_v": 1.14,
+    "fase": "regular",
+    "p1": 47.0,
+    "px": 25.9,
+    "p2": 27.2,
+    "over_1.5": 75.4,
+    "over_2.5": 50.9,
+    "over_3.5": 29.2,
+    "under_2.5": 49.1,
+    "btts_si": 53.6,
+    "btts_no": 46.4,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 11.7
+      },
+      {
+        "marcador": "1-0",
+        "prob": 10.6
+      },
+      {
+        "marcador": "2-1",
+        "prob": 9.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.5,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.1,
+      "defensa": 1.9,
+      "partidos": 10,
+      "goles_favor_prom": 1.1,
+      "goles_contra_prom": 1.9
+    },
+    "ev_1": -0.018,
+    "ev_x": -0.044,
+    "ev_2": -0.051,
+    "ev_over25": -0.034,
+    "ev_under25": -0.03,
+    "fecha": "2026-07-23",
+    "hora": "14:15",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Polissya Zhytomyr",
+    "visitante": "FC København",
+    "liga": "comp_408698",
+    "xg_l": 2.107,
+    "xg_v": 2.137,
+    "fase": "regular",
+    "p1": 38.4,
+    "px": 22.0,
+    "p2": 39.6,
+    "over_1.5": 92.5,
+    "over_2.5": 79.8,
+    "over_3.5": 61.4,
+    "under_2.5": 20.2,
+    "btts_si": 78.2,
+    "btts_no": 21.8,
+    "marcador_prob": [
+      {
+        "marcador": "2-2",
+        "prob": 7.7
+      },
+      {
+        "marcador": "1-2",
+        "prob": 7.1
+      },
+      {
+        "marcador": "2-1",
+        "prob": 6.9
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.833,
+      "defensa": 1.833,
+      "partidos": 6,
+      "goles_favor_prom": 1.83,
+      "goles_contra_prom": 1.83
+    },
+    "stats_v": {
+      "ataque": 1.688,
+      "defensa": 1.375,
+      "partidos": 16,
+      "goles_favor_prom": 1.69,
+      "goles_contra_prom": 1.38
+    },
+    "ev_1": 0.121,
+    "ev_x": -0.03,
+    "ev_2": -0.203,
+    "ev_over25": 0.21,
+    "ev_under25": -0.274,
+    "fecha": "2026-07-23",
+    "hora": "13:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "NK Aluminij Kidričevo",
+    "visitante": "Dinamo City",
+    "liga": "comp_408698",
+    "xg_l": 1.045,
+    "xg_v": 0.691,
+    "fase": "regular",
+    "p1": 42.4,
+    "px": 32.3,
+    "p2": 25.2,
+    "over_1.5": 51.6,
+    "over_2.5": 25.2,
+    "over_3.5": 9.3,
+    "under_2.5": 74.8,
+    "btts_si": 31.8,
+    "btts_no": 68.2,
     "marcador_prob": [
       {
         "marcador": "1-0",
-        "prob": 21.2
+        "prob": 18.6
       },
       {
         "marcador": "0-0",
-        "prob": 16.3
+        "prob": 17.2
+      },
+      {
+        "marcador": "0-1",
+        "prob": 12.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.25,
+      "partidos": 8,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.25
+    },
+    "ev_1": 0.054,
+    "ev_x": 0.029,
+    "ev_2": -0.192,
+    "ev_over25": -0.269,
+    "ev_under25": 0.202,
+    "fecha": "2026-07-23",
+    "hora": "13:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FK Vojvodina",
+    "visitante": "AFC Ajax",
+    "liga": "comp_408698",
+    "xg_l": 2.194,
+    "xg_v": 0.691,
+    "fase": "regular",
+    "p1": 68.4,
+    "px": 19.2,
+    "p2": 12.3,
+    "over_1.5": 78.7,
+    "over_2.5": 55.6,
+    "over_3.5": 32.7,
+    "under_2.5": 44.4,
+    "btts_si": 44.3,
+    "btts_no": 55.7,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 13.6
+      },
+      {
+        "marcador": "1-0",
+        "prob": 12.1
+      },
+      {
+        "marcador": "3-0",
+        "prob": 10.1
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 2.625,
+      "partidos": 8,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 2.62
+    },
+    "ev_1": 0.453,
+    "ev_x": -0.052,
+    "ev_2": -0.514,
+    "ev_over25": 0.01,
+    "ev_under25": -0.074,
+    "fecha": "2026-07-23",
+    "hora": "13:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "NK Varaždin",
+    "visitante": "FK Jablonec",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 1.036,
+    "fase": "regular",
+    "p1": 29.1,
+    "px": 32.3,
+    "p2": 38.6,
+    "over_1.5": 55.4,
+    "over_2.5": 29.2,
+    "over_3.5": 12.1,
+    "under_2.5": 70.8,
+    "btts_si": 36.4,
+    "btts_no": 63.6,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 15.7
+      },
+      {
+        "marcador": "0-0",
+        "prob": 15.6
+      },
+      {
+        "marcador": "1-0",
+        "prob": 13.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.5,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": -0.101,
+    "ev_x": 0.037,
+    "ev_2": -0.049,
+    "ev_over25": -0.246,
+    "ev_under25": 0.179,
+    "fecha": "2026-07-23",
+    "hora": "13:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FC Lugano",
+    "visitante": "Dukagjini",
+    "liga": "comp_408698",
+    "xg_l": 1.672,
+    "xg_v": 2.418,
+    "fase": "regular",
+    "p1": 27.5,
+    "px": 20.6,
+    "p2": 52.0,
+    "over_1.5": 91.3,
+    "over_2.5": 77.4,
+    "over_3.5": 58.5,
+    "under_2.5": 22.6,
+    "btts_si": 74.6,
+    "btts_no": 25.4,
+    "marcador_prob": [
+      {
+        "marcador": "1-2",
+        "prob": 8.1
+      },
+      {
+        "marcador": "1-1",
+        "prob": 7.0
+      },
+      {
+        "marcador": "2-2",
+        "prob": 6.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.0,
+      "defensa": 3.5,
+      "partidos": 2,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 3.5
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": -0.58,
+    "ev_x": 0.039,
+    "ev_2": 0.472,
+    "ev_over25": 0.186,
+    "ev_under25": -0.25,
+    "fecha": "2026-07-23",
+    "hora": "13:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Hapoel Tel Aviv",
+    "visitante": "Ludogorets",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 0.2,
+    "fase": "regular",
+    "p1": 48.2,
+    "px": 40.6,
+    "p2": 11.2,
+    "over_1.5": 27.6,
+    "over_2.5": 8.4,
+    "over_3.5": 1.9,
+    "under_2.5": 91.6,
+    "btts_si": 9.9,
+    "btts_no": 90.1,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 35.3
+      },
+      {
+        "marcador": "1-0",
+        "prob": 29.9
       },
       {
         "marcador": "2-0",
-        "prob": 14.7
+        "prob": 12.4
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 0.25,
+      "defensa": 1.0,
+      "partidos": 4,
+      "goles_favor_prom": 0.25,
+      "goles_contra_prom": 1.0
+    },
+    "ev_1": 0.125,
+    "ev_x": 0.094,
+    "ev_2": -0.332,
+    "ev_over25": -0.36,
+    "ev_under25": 0.279,
+    "fecha": "2026-07-23",
+    "hora": "13:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "LNZ Cherkasy",
+    "visitante": "KAA Gent",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 0.691,
+    "fase": "regular",
+    "p1": 35.4,
+    "px": 36.7,
+    "p2": 28.0,
+    "over_1.5": 45.7,
+    "over_2.5": 19.2,
+    "over_3.5": 6.5,
+    "under_2.5": 80.8,
+    "btts_si": 28.4,
+    "btts_no": 71.6,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 21.9
+      },
+      {
+        "marcador": "1-0",
+        "prob": 17.8
+      },
+      {
+        "marcador": "0-1",
+        "prob": 14.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": 0.068,
+    "ev_x": 0.073,
+    "ev_2": -0.261,
+    "ev_over25": -0.249,
+    "ev_under25": 0.191,
+    "fecha": "2026-07-23",
+    "hora": "13:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FK Borac Banja Luka",
+    "visitante": "FC Petrocub Hîncesti",
+    "liga": "comp_408698",
+    "xg_l": 1.358,
+    "xg_v": 1.295,
+    "fase": "regular",
+    "p1": 37.6,
+    "px": 28.0,
+    "p2": 34.4,
+    "over_1.5": 74.0,
+    "over_2.5": 49.8,
+    "over_3.5": 28.3,
+    "under_2.5": 50.2,
+    "btts_si": 54.3,
+    "btts_no": 45.7,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 12.5
+      },
+      {
+        "marcador": "1-0",
+        "prob": 9.3
+      },
+      {
+        "marcador": "0-1",
+        "prob": 9.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.5,
+      "defensa": 2.5,
+      "partidos": 2,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 2.5
+    },
+    "stats_v": {
+      "ataque": 0.75,
+      "defensa": 3.25,
+      "partidos": 4,
+      "goles_favor_prom": 0.75,
+      "goles_contra_prom": 3.25
+    },
+    "ev_1": -0.338,
+    "ev_x": 0.049,
+    "ev_2": 0.184,
+    "ev_over25": -0.169,
+    "ev_under25": 0.102,
+    "fecha": "2026-07-23",
+    "hora": "13:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "HNK Rijeka",
+    "visitante": "Derry City",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 0.403,
+    "fase": "regular",
+    "p1": 42.5,
+    "px": 39.1,
+    "p2": 18.5,
+    "over_1.5": 34.9,
+    "over_2.5": 12.7,
+    "over_3.5": 3.5,
+    "under_2.5": 87.3,
+    "btts_si": 18.9,
+    "btts_no": 81.1,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 28.9
+      },
+      {
+        "marcador": "1-0",
+        "prob": 24.2
+      },
+      {
+        "marcador": "0-1",
+        "prob": 12.0
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 0.583,
+      "partidos": 12,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 0.58
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": -0.43,
+    "ev_x": 0.224,
+    "ev_2": 0.108,
+    "ev_over25": -0.472,
+    "ev_under25": 0.408,
+    "fecha": "2026-07-23",
+    "hora": "13:45",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Corinthians",
+    "visitante": "Remo",
+    "liga": "comp_4795",
+    "xg_l": 1.66,
+    "xg_v": 0.815,
+    "fase": "regular",
+    "p1": 54.6,
+    "px": 26.1,
+    "p2": 19.4,
+    "over_1.5": 70.9,
+    "over_2.5": 45.1,
+    "over_3.5": 23.4,
+    "under_2.5": 54.9,
+    "btts_si": 44.9,
+    "btts_no": 55.1,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 15.6
+      },
+      {
+        "marcador": "2-0",
+        "prob": 11.6
+      },
+      {
+        "marcador": "1-1",
+        "prob": 11.5
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.125,
+      "defensa": 1.062,
+      "partidos": 16,
+      "goles_favor_prom": 1.12,
+      "goles_contra_prom": 1.06
+    },
+    "stats_v": {
+      "ataque": 1.062,
+      "defensa": 1.688,
+      "partidos": 16,
+      "goles_favor_prom": 1.06,
+      "goles_contra_prom": 1.69
+    },
+    "ev_1": -0.116,
+    "ev_x": 0.021,
+    "ev_2": 0.044,
+    "ev_over25": -0.054,
+    "ev_under25": 0.014,
+    "fecha": "2026-07-23",
+    "hora": "17:30",
+    "liga_nombre": "Brasileirão Série A"
+  },
+  {
+    "local": "Shelbourne",
+    "visitante": "Nõmme Kalju",
+    "liga": "comp_408698",
+    "xg_l": 0.418,
+    "xg_v": 1.036,
+    "fase": "regular",
+    "p1": 16.3,
+    "px": 34.3,
+    "p2": 49.4,
+    "over_1.5": 42.3,
+    "over_2.5": 18.0,
+    "over_3.5": 6.2,
+    "under_2.5": 82.0,
+    "btts_si": 21.5,
+    "btts_no": 78.5,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 24.3
+      },
+      {
+        "marcador": "0-0",
+        "prob": 23.5
+      },
+      {
+        "marcador": "0-2",
+        "prob": 12.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.5,
+      "defensa": 1.2,
+      "partidos": 10,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 1.2
+    },
+    "stats_v": {
+      "ataque": 1.25,
+      "defensa": 1.0,
+      "partidos": 4,
+      "goles_favor_prom": 1.25,
+      "goles_contra_prom": 1.0
+    },
+    "ev_1": -0.551,
+    "ev_x": 0.105,
+    "ev_2": 0.327,
+    "ev_over25": -0.344,
+    "ev_under25": 0.279,
+    "fecha": "2026-07-23",
+    "hora": "13:45",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Motherwell",
+    "visitante": "HB Tórshavn",
+    "liga": "comp_408698",
+    "xg_l": 1.306,
+    "xg_v": 0.324,
+    "fase": "regular",
+    "p1": 59.8,
+    "px": 29.2,
+    "p2": 11.0,
+    "over_1.5": 48.4,
+    "over_2.5": 22.8,
+    "over_3.5": 8.4,
+    "under_2.5": 77.2,
+    "btts_si": 19.8,
+    "btts_no": 80.2,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 25.7
+      },
+      {
+        "marcador": "0-0",
+        "prob": 19.9
+      },
+      {
+        "marcador": "2-0",
+        "prob": 16.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.562,
+      "defensa": 0.938,
+      "partidos": 16,
+      "goles_favor_prom": 1.56,
+      "goles_contra_prom": 0.94
+    },
+    "stats_v": {
+      "ataque": 0.5,
+      "defensa": 1.0,
+      "partidos": 2,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 1.0
+    },
+    "ev_1": -0.249,
+    "ev_x": 0.149,
+    "ev_2": 0.027,
+    "ev_over25": -0.466,
+    "ev_under25": 0.39,
+    "fecha": "2026-07-23",
+    "hora": "13:45",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "NK Bravo",
+    "visitante": "KF Shkëndija",
+    "liga": "comp_408698",
+    "xg_l": 1.015,
+    "xg_v": 0.691,
+    "fase": "regular",
+    "p1": 41.4,
+    "px": 33.5,
+    "p2": 25.1,
+    "over_1.5": 50.6,
+    "over_2.5": 24.4,
+    "over_3.5": 9.2,
+    "under_2.5": 75.6,
+    "btts_si": 31.8,
+    "btts_no": 68.2,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 18.5
+      },
+      {
+        "marcador": "0-0",
+        "prob": 18.3
+      },
+      {
+        "marcador": "1-1",
+        "prob": 12.9
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.214,
+      "partidos": 14,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.21
+    },
+    "ev_1": -0.157,
+    "ev_x": 0.049,
+    "ev_2": -0.005,
+    "ev_over25": -0.327,
+    "ev_under25": 0.253,
+    "fecha": "2026-07-23",
+    "hora": "13:45",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "NSÍ Runavík",
+    "visitante": "FC Koper",
+    "liga": "comp_408698",
+    "xg_l": 3.0,
+    "xg_v": 1.036,
+    "fase": "regular",
+    "p1": 72.6,
+    "px": 15.5,
+    "p2": 11.9,
+    "over_1.5": 91.3,
+    "over_2.5": 76.9,
+    "over_3.5": 56.9,
+    "under_2.5": 23.1,
+    "btts_si": 61.4,
+    "btts_no": 38.6,
+    "marcador_prob": [
+      {
+        "marcador": "2-1",
+        "prob": 8.5
+      },
+      {
+        "marcador": "3-0",
+        "prob": 8.4
+      },
+      {
+        "marcador": "2-0",
+        "prob": 7.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.5,
+      "defensa": 1.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.0
+    },
+    "stats_v": {
+      "ataque": 1.5,
+      "defensa": 6.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 6.0
+    },
+    "ev_1": 0.44,
+    "ev_x": -0.131,
+    "ev_2": -0.427,
+    "ev_over25": 0.21,
+    "ev_under25": -0.277,
+    "fecha": "2026-07-23",
+    "hora": "13:45",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FK Partizan",
+    "visitante": "Una Strassen",
+    "liga": "comp_408698",
+    "xg_l": 0.94,
+    "xg_v": 0.389,
+    "fase": "regular",
+    "p1": 46.7,
+    "px": 37.1,
+    "p2": 16.3,
+    "over_1.5": 38.5,
+    "over_2.5": 14.6,
+    "over_3.5": 4.6,
+    "under_2.5": 85.4,
+    "btts_si": 19.9,
+    "btts_no": 80.1,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 26.4
+      },
+      {
+        "marcador": "1-0",
+        "prob": 25.0
+      },
+      {
+        "marcador": "2-0",
+        "prob": 11.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.25,
+      "defensa": 0.75,
+      "partidos": 4,
+      "goles_favor_prom": 2.25,
+      "goles_contra_prom": 0.75
+    },
+    "stats_v": {
+      "ataque": 0.75,
+      "defensa": 0.5,
+      "partidos": 4,
+      "goles_favor_prom": 0.75,
+      "goles_contra_prom": 0.5
+    },
+    "ev_1": -0.333,
+    "ev_x": 0.217,
+    "ev_2": 0.03,
+    "ev_over25": -0.521,
+    "ev_under25": 0.454,
+    "fecha": "2026-07-23",
+    "hora": "14:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Stjarnan Garðabær",
+    "visitante": "Ilves",
+    "liga": "comp_408698",
+    "xg_l": 3.0,
+    "xg_v": 1.813,
+    "fase": "regular",
+    "p1": 59.7,
+    "px": 17.8,
+    "p2": 22.5,
+    "over_1.5": 95.3,
+    "over_2.5": 85.6,
+    "over_3.5": 70.4,
+    "under_2.5": 14.4,
+    "btts_si": 79.6,
+    "btts_no": 20.4,
+    "marcador_prob": [
+      {
+        "marcador": "2-1",
+        "prob": 6.8
+      },
+      {
+        "marcador": "3-1",
+        "prob": 6.6
+      },
+      {
+        "marcador": "3-2",
+        "prob": 5.9
+      }
+    ],
+    "stats_l": {
+      "ataque": 2.5,
+      "defensa": 1.5,
+      "partidos": 2,
+      "goles_favor_prom": 2.5,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.75,
+      "defensa": 2.25,
+      "partidos": 4,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 2.25
+    },
+    "ev_1": 0.132,
+    "ev_x": -0.092,
+    "ev_2": -0.145,
+    "ev_over25": 0.202,
+    "ev_under25": -0.276,
+    "fecha": "2026-07-23",
+    "hora": "14:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Botafogo",
+    "visitante": "Vitória",
+    "liga": "comp_4795",
+    "xg_l": 2.753,
+    "xg_v": 0.66,
+    "fase": "regular",
+    "p1": 74.5,
+    "px": 16.0,
+    "p2": 9.5,
+    "over_1.5": 85.6,
+    "over_2.5": 66.4,
+    "over_3.5": 44.8,
+    "under_2.5": 33.6,
+    "btts_si": 45.2,
+    "btts_no": 54.8,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 12.9
+      },
+      {
+        "marcador": "3-0",
+        "prob": 12.1
+      },
+      {
+        "marcador": "1-0",
+        "prob": 10.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.625,
+      "defensa": 0.812,
+      "partidos": 16,
+      "goles_favor_prom": 1.62,
+      "goles_contra_prom": 0.81
+    },
+    "stats_v": {
+      "ataque": 1.125,
+      "defensa": 1.938,
+      "partidos": 16,
+      "goles_favor_prom": 1.12,
+      "goles_contra_prom": 1.94
+    },
+    "ev_1": 0.177,
+    "ev_x": -0.127,
+    "ev_2": -0.096,
+    "ev_over25": 0.118,
+    "ev_under25": -0.157,
+    "fecha": "2026-07-23",
+    "hora": "17:30",
+    "liga_nombre": "Brasileirão Série A"
+  },
+  {
+    "local": "Paksi FC",
+    "visitante": "Panathinaikos",
+    "liga": "comp_408698",
+    "xg_l": 1.254,
+    "xg_v": 0.432,
+    "fase": "regular",
+    "p1": 55.4,
+    "px": 30.2,
+    "p2": 14.4,
+    "over_1.5": 49.7,
+    "over_2.5": 23.6,
+    "over_3.5": 9.1,
+    "under_2.5": 76.4,
+    "btts_si": 24.7,
+    "btts_no": 75.3,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 23.5
+      },
+      {
+        "marcador": "0-0",
+        "prob": 18.5
+      },
+      {
+        "marcador": "2-0",
+        "prob": 14.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.25,
+      "partidos": 4,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.25
+    },
+    "stats_v": {
+      "ataque": 0.5,
+      "defensa": 1.5,
+      "partidos": 2,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 1.5
+    },
+    "ev_1": 0.343,
+    "ev_x": 0.058,
+    "ev_2": -0.51,
+    "ev_over25": -0.363,
+    "ev_under25": 0.299,
+    "fecha": "2026-07-23",
+    "hora": "13:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FC Vaduz",
+    "visitante": "Atlètic Club Escaldes",
+    "liga": "comp_408698",
+    "xg_l": 0.3,
+    "xg_v": 1.295,
+    "fase": "regular",
+    "p1": 10.8,
+    "px": 29.7,
+    "p2": 59.5,
+    "over_1.5": 48.0,
+    "over_2.5": 21.9,
+    "over_3.5": 8.0,
+    "under_2.5": 78.1,
+    "btts_si": 18.6,
+    "btts_no": 81.4,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 25.7
+      },
+      {
+        "marcador": "0-0",
+        "prob": 20.5
+      },
+      {
+        "marcador": "0-2",
+        "prob": 17.3
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.25,
+      "defensa": 1.25,
+      "partidos": 4,
+      "goles_favor_prom": 0.25,
+      "goles_contra_prom": 1.25
+    },
+    "stats_v": {
+      "ataque": 1.5,
+      "defensa": 1.25,
+      "partidos": 4,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.25
+    },
+    "ev_1": -0.596,
+    "ev_x": 0.053,
+    "ev_2": 0.441,
+    "ev_over25": -0.448,
+    "ev_under25": 0.381,
+    "fecha": "2026-07-23",
+    "hora": "12:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FC Santa Coloma",
+    "visitante": "SK Rapid Wien",
+    "liga": "comp_408698",
+    "xg_l": 2.681,
+    "xg_v": 1.151,
+    "fase": "regular",
+    "p1": 65.9,
+    "px": 18.0,
+    "p2": 16.1,
+    "over_1.5": 89.2,
+    "over_2.5": 73.9,
+    "over_3.5": 54.1,
+    "under_2.5": 26.1,
+    "btts_si": 63.8,
+    "btts_no": 36.2,
+    "marcador_prob": [
+      {
+        "marcador": "2-1",
+        "prob": 8.5
+      },
+      {
+        "marcador": "3-1",
+        "prob": 8.2
+      },
+      {
+        "marcador": "2-0",
+        "prob": 7.4
       }
     ],
     "stats_l": {
       "ataque": 1.75,
-      "defensa": 0.75,
-      "partidos": 12,
+      "defensa": 1.25,
+      "partidos": 4,
       "goles_favor_prom": 1.75,
-      "goles_contra_prom": 0.75
+      "goles_contra_prom": 1.25
     },
     "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
+      "ataque": 1.333,
+      "defensa": 1.833,
+      "partidos": 12,
+      "goles_favor_prom": 1.33,
+      "goles_contra_prom": 1.83
     },
-    "ev_1": -0.194,
-    "ev_x": 0.088,
-    "ev_2": 0.031,
-    "ev_over25": -0.196,
-    "ev_under25": 0.135,
-    "fecha": "2026-07-22",
-    "hora": "19:30",
-    "liga_nombre": "Copa Sudamericana"
+    "ev_1": 0.548,
+    "ev_x": -0.002,
+    "ev_2": -0.659,
+    "ev_over25": 0.045,
+    "ev_under25": -0.121,
+    "fecha": "2026-07-23",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
   },
   {
-    "local": "Coritiba FC",
-    "visitante": "SE Palmeiras",
-    "liga": "BSA",
-    "xg_l": 0.854,
-    "xg_v": 1.6,
+    "local": "KuPS",
+    "visitante": "Riga FC",
+    "liga": "comp_408698",
+    "xg_l": 1.131,
+    "xg_v": 1.216,
     "fase": "regular",
-    "p1": 20.9,
-    "px": 26.7,
-    "p2": 52.4,
-    "over_1.5": 70.3,
-    "over_2.5": 44.5,
-    "over_3.5": 23.2,
-    "under_2.5": 55.5,
-    "btts_si": 45.9,
-    "btts_no": 54.1,
+    "p1": 34.3,
+    "px": 27.7,
+    "p2": 38.0,
+    "over_1.5": 67.6,
+    "over_2.5": 41.6,
+    "over_3.5": 20.9,
+    "under_2.5": 58.4,
+    "btts_si": 47.2,
+    "btts_no": 52.8,
     "marcador_prob": [
       {
-        "marcador": "0-1",
-        "prob": 14.9
-      },
-      {
         "marcador": "1-1",
-        "prob": 12.3
+        "prob": 12.8
       },
       {
-        "marcador": "0-2",
-        "prob": 11.9
+        "marcador": "0-1",
+        "prob": 11.7
+      },
+      {
+        "marcador": "1-0",
+        "prob": 11.6
       }
     ],
     "stats_l": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
+      "ataque": 0.833,
+      "defensa": 1.083,
+      "partidos": 12,
+      "goles_favor_prom": 0.83,
+      "goles_contra_prom": 1.08
     },
     "stats_v": {
-      "ataque": 2.125,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 2.12,
-      "goles_contra_prom": 0.94
+      "ataque": 1.625,
+      "defensa": 1.625,
+      "partidos": 8,
+      "goles_favor_prom": 1.62,
+      "goles_contra_prom": 1.62
     },
-    "ev_1": -0.047,
-    "ev_x": -0.045,
-    "ev_2": 0.014,
-    "ev_over25": -0.022,
-    "ev_under25": -0.047,
-    "fecha": "2026-07-22",
-    "hora": "17:30",
-    "liga_nombre": "Brasileirao Serie A"
+    "ev_1": 0,
+    "ev_x": 0,
+    "ev_2": 0,
+    "fecha": "2026-07-23",
+    "hora": "08:00",
+    "liga_nombre": "UEFA Conference League"
   },
   {
-    "local": "Botafogo FR",
-    "visitante": "EC Vitória",
-    "liga": "BSA",
-    "xg_l": 1.779,
-    "xg_v": 0.988,
+    "local": "FC Malisheva",
+    "visitante": "Hibernian",
+    "liga": "comp_408698",
+    "xg_l": 3.0,
+    "xg_v": 1.166,
     "fase": "regular",
-    "p1": 53.1,
-    "px": 25.6,
-    "p2": 21.3,
-    "over_1.5": 76.2,
-    "over_2.5": 51.9,
-    "over_3.5": 30.2,
-    "under_2.5": 48.1,
-    "btts_si": 51.8,
-    "btts_no": 48.2,
+    "p1": 69.7,
+    "px": 16.7,
+    "p2": 13.6,
+    "over_1.5": 92.5,
+    "over_2.5": 78.6,
+    "over_3.5": 60.1,
+    "under_2.5": 21.4,
+    "btts_si": 65.7,
+    "btts_no": 34.3,
+    "marcador_prob": [
+      {
+        "marcador": "3-1",
+        "prob": 8.5
+      },
+      {
+        "marcador": "2-1",
+        "prob": 7.8
+      },
+      {
+        "marcador": "3-0",
+        "prob": 7.0
+      }
+    ],
+    "stats_l": {
+      "ataque": 3.0,
+      "defensa": 1.0,
+      "partidos": 2,
+      "goles_favor_prom": 3.0,
+      "goles_contra_prom": 1.0
+    },
+    "stats_v": {
+      "ataque": 1.688,
+      "defensa": 1.312,
+      "partidos": 16,
+      "goles_favor_prom": 1.69,
+      "goles_contra_prom": 1.31
+    },
+    "ev_1": 0.466,
+    "ev_x": -0.083,
+    "ev_2": -0.501,
+    "ev_over25": 0.243,
+    "ev_under25": -0.307,
+    "fecha": "2026-07-23",
+    "hora": "09:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FK Liepaja",
+    "visitante": "Austria Wien",
+    "liga": "comp_408698",
+    "xg_l": 1.567,
+    "xg_v": 0.95,
+    "fase": "regular",
+    "p1": 50.8,
+    "px": 25.8,
+    "p2": 23.4,
+    "over_1.5": 71.2,
+    "over_2.5": 46.1,
+    "over_3.5": 24.8,
+    "under_2.5": 53.9,
+    "btts_si": 48.1,
+    "btts_no": 51.9,
     "marcador_prob": [
       {
         "marcador": "1-0",
-        "prob": 12.3
+        "prob": 12.9
       },
       {
         "marcador": "1-1",
@@ -1343,2234 +4279,962 @@
       },
       {
         "marcador": "2-0",
-        "prob": 10.6
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.562,
-      "defensa": 1.312,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.31
-    },
-    "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.25,
-      "partidos": 16,
-      "goles_favor_prom": 1.0,
-      "goles_contra_prom": 1.25
-    },
-    "ev_1": -0.061,
-    "ev_x": -0.023,
-    "ev_2": 0.002,
-    "ev_over25": -0.049,
-    "ev_under25": -0.019,
-    "fecha": "2026-07-23",
-    "hora": "17:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "SC Corinthians Paulista",
-    "visitante": "Clube do Remo",
-    "liga": "BSA",
-    "xg_l": 1.082,
-    "xg_v": 0.895,
-    "fase": "regular",
-    "p1": 38.3,
-    "px": 32.4,
-    "p2": 29.3,
-    "over_1.5": 58.7,
-    "over_2.5": 31.6,
-    "over_3.5": 13.8,
-    "under_2.5": 68.4,
-    "btts_si": 39.1,
-    "btts_no": 60.9,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 16.2
-      },
-      {
-        "marcador": "0-0",
-        "prob": 15.6
-      },
-      {
-        "marcador": "1-1",
-        "prob": 13.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.188,
-      "defensa": 1.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.19,
-      "goles_contra_prom": 1.19
-    },
-    "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
-    },
-    "ev_1": -0.288,
-    "ev_x": 0.072,
-    "ev_2": 0.136,
-    "ev_over25": -0.205,
-    "ev_under25": 0.132,
-    "fecha": "2026-07-23",
-    "hora": "17:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Coritiba FC",
-    "visitante": "SE Palmeiras",
-    "liga": "BSA",
-    "xg_l": 0.854,
-    "xg_v": 1.6,
-    "fase": "regular",
-    "p1": 20.9,
-    "px": 26.7,
-    "p2": 52.4,
-    "over_1.5": 70.3,
-    "over_2.5": 44.5,
-    "over_3.5": 23.2,
-    "under_2.5": 55.5,
-    "btts_si": 45.9,
-    "btts_no": 54.1,
-    "marcador_prob": [
-      {
-        "marcador": "0-1",
-        "prob": 14.9
-      },
-      {
-        "marcador": "1-1",
-        "prob": 12.3
-      },
-      {
-        "marcador": "0-2",
-        "prob": 11.9
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
-    },
-    "stats_v": {
-      "ataque": 2.125,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 2.12,
-      "goles_contra_prom": 0.94
-    },
-    "ev_1": -0.03,
-    "ev_x": -0.037,
-    "ev_2": 0.016,
-    "fecha": "2026-07-23",
-    "hora": "19:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Club Bolívar",
-    "visitante": "Grêmio FBPA",
-    "liga": "CSU",
-    "xg_l": 2.552,
-    "xg_v": 2.269,
-    "fase": "eliminatoria",
-    "p1": 44.1,
-    "px": 21.2,
-    "p2": 34.7,
-    "over_1.5": 95.2,
-    "over_2.5": 86.2,
-    "over_3.5": 71.5,
-    "under_2.5": 13.8,
-    "btts_si": 82.9,
-    "btts_no": 17.1,
-    "marcador_prob": [
-      {
-        "marcador": "2-1",
-        "prob": 7.6
-      },
-      {
-        "marcador": "2-2",
-        "prob": 7.1
-      },
-      {
-        "marcador": "1-2",
-        "prob": 6.7
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.0,
-      "defensa": 1.833,
-      "partidos": 6,
-      "goles_favor_prom": 2.0,
-      "goles_contra_prom": 1.83
-    },
-    "stats_v": {
-      "ataque": 1.688,
-      "defensa": 1.438,
-      "partidos": 16,
-      "goles_favor_prom": 1.69,
-      "goles_contra_prom": 1.44
-    },
-    "ev_1": -0.158,
-    "ev_x": -0.044,
-    "ev_2": 0.126,
-    "ev_over25": 0.284,
-    "ev_under25": -0.352,
-    "fecha": "2026-07-23",
-    "hora": "17:00",
-    "liga_nombre": "Copa Sudamericana"
-  },
-  {
-    "local": "CA Boca Juniors",
-    "visitante": "CD O'Higgins",
-    "liga": "CSU",
-    "xg_l": 1.863,
-    "xg_v": 1.027,
-    "fase": "eliminatoria",
-    "p1": 53.6,
-    "px": 24.9,
-    "p2": 21.5,
-    "over_1.5": 78.5,
-    "over_2.5": 55.0,
-    "over_3.5": 32.7,
-    "under_2.5": 45.0,
-    "btts_si": 53.9,
-    "btts_no": 46.1,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 13.5
-      },
-      {
-        "marcador": "1-1",
-        "prob": 11.2
-      },
-      {
-        "marcador": "2-0",
-        "prob": 10.8
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.1,
-      "defensa": 1.4,
-      "partidos": 10,
-      "goles_favor_prom": 2.1,
-      "goles_contra_prom": 1.4
-    },
-    "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
-    },
-    "ev_1": -0.264,
-    "ev_x": 0.055,
-    "ev_2": 0.129,
-    "ev_over25": 0.004,
-    "ev_under25": -0.065,
-    "fecha": "2026-07-23",
-    "hora": "19:30",
-    "liga_nombre": "Copa Sudamericana"
-  },
-  {
-    "local": "Independiente Santa Fe",
-    "visitante": "Caracas FC",
-    "liga": "CSU",
-    "xg_l": 1.562,
-    "xg_v": 1.848,
-    "fase": "eliminatoria",
-    "p1": 33.5,
-    "px": 24.8,
-    "p2": 41.7,
-    "over_1.5": 85.6,
-    "over_2.5": 66.0,
-    "over_3.5": 44.0,
-    "under_2.5": 34.0,
-    "btts_si": 66.2,
-    "btts_no": 33.8,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 10.9
-      },
-      {
-        "marcador": "1-2",
-        "prob": 9.0
-      },
-      {
-        "marcador": "0-1",
-        "prob": 8.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.2,
-      "defensa": 1.8,
-      "partidos": 5,
-      "goles_favor_prom": 1.2,
-      "goles_contra_prom": 1.8
-    },
-    "stats_v": {
-      "ataque": 1.4,
-      "defensa": 1.467,
-      "partidos": 15,
-      "goles_favor_prom": 1.4,
-      "goles_contra_prom": 1.47
-    },
-    "ev_1": -0.374,
-    "ev_x": 0.006,
-    "ev_2": 0.301,
-    "ev_over25": 0.203,
-    "ev_under25": -0.27,
-    "fecha": "2026-07-23",
-    "hora": "19:30",
-    "liga_nombre": "Copa Sudamericana"
-  },
-  {
-    "local": "San Jose Earthquakes",
-    "visitante": "Los Angeles Galaxy",
-    "liga": "MLS",
-    "xg_l": 2.684,
-    "xg_v": 0.867,
-    "fase": "regular",
-    "p1": 70.0,
-    "px": 17.8,
-    "p2": 12.2,
-    "over_1.5": 87.0,
-    "over_2.5": 68.7,
-    "over_3.5": 47.7,
-    "under_2.5": 31.3,
-    "btts_si": 54.2,
-    "btts_no": 45.8,
-    "marcador_prob": [
-      {
-        "marcador": "2-0",
-        "prob": 11.5
-      },
-      {
-        "marcador": "3-0",
-        "prob": 9.9
-      },
-      {
-        "marcador": "1-0",
-        "prob": 9.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.25,
-      "defensa": 1.0,
-      "partidos": 16,
-      "goles_favor_prom": 2.25,
-      "goles_contra_prom": 1.0
-    },
-    "stats_v": {
-      "ataque": 1.375,
-      "defensa": 1.562,
-      "partidos": 16,
-      "goles_favor_prom": 1.38,
-      "goles_contra_prom": 1.56
-    },
-    "ev_1": 0.071,
-    "ev_x": -0.083,
-    "ev_2": -0.129,
-    "ev_over25": -0.027,
-    "ev_under25": -0.069,
-    "fecha": "2026-07-25",
-    "hora": "21:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "San Diego FC",
-    "visitante": "FC Dallas",
-    "liga": "MLS",
-    "xg_l": 3.24,
-    "xg_v": 1.906,
-    "fase": "regular",
-    "p1": 59.9,
-    "px": 17.7,
-    "p2": 22.5,
-    "over_1.5": 96.3,
-    "over_2.5": 88.9,
-    "over_3.5": 75.4,
-    "under_2.5": 11.1,
-    "btts_si": 81.9,
-    "btts_no": 18.1,
-    "marcador_prob": [
-      {
-        "marcador": "3-1",
-        "prob": 7.0
-      },
-      {
-        "marcador": "2-1",
-        "prob": 6.8
-      },
-      {
-        "marcador": "2-2",
-        "prob": 6.0
-      }
-    ],
-    "stats_l": {
-      "ataque": 3.0,
-      "defensa": 1.667,
-      "partidos": 3,
-      "goles_favor_prom": 3.0,
-      "goles_contra_prom": 1.67
-    },
-    "stats_v": {
-      "ataque": 1.812,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.81,
-      "goles_contra_prom": 1.5
-    },
-    "ev_1": 0.086,
-    "ev_x": -0.102,
-    "ev_2": -0.12,
-    "ev_over25": 0.175,
-    "ev_under25": -0.246,
-    "fecha": "2026-07-25",
-    "hora": "20:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "New York City FC",
-    "visitante": "Chicago Fire",
-    "liga": "MLS",
-    "xg_l": 1.551,
-    "xg_v": 1.987,
-    "fase": "regular",
-    "p1": 31.4,
-    "px": 23.5,
-    "p2": 45.1,
-    "over_1.5": 86.8,
-    "over_2.5": 68.6,
-    "over_3.5": 46.6,
-    "under_2.5": 31.4,
-    "btts_si": 67.8,
-    "btts_no": 32.2,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 10.0
-      },
-      {
-        "marcador": "1-2",
-        "prob": 9.1
-      },
-      {
-        "marcador": "2-1",
-        "prob": 7.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.625,
-      "defensa": 1.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.62,
-      "goles_contra_prom": 1.62
-    },
-    "stats_v": {
-      "ataque": 1.938,
-      "defensa": 1.25,
-      "partidos": 16,
-      "goles_favor_prom": 1.94,
-      "goles_contra_prom": 1.25
-    },
-    "ev_1": -0.138,
-    "ev_x": -0.059,
-    "ev_2": 0.056,
-    "ev_over25": 0.073,
-    "ev_under25": -0.128,
-    "fecha": "2026-07-25",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "St. Louis City",
-    "visitante": "Colorado Rapids",
-    "liga": "MLS",
-    "xg_l": 1.691,
-    "xg_v": 1.538,
-    "fase": "regular",
-    "p1": 40.7,
-    "px": 25.2,
-    "p2": 34.2,
-    "over_1.5": 83.5,
-    "over_2.5": 62.6,
-    "over_3.5": 40.4,
-    "under_2.5": 37.4,
-    "btts_si": 64.0,
-    "btts_no": 36.0,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 11.3
-      },
-      {
-        "marcador": "2-1",
-        "prob": 8.9
-      },
-      {
-        "marcador": "1-2",
-        "prob": 8.1
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.312,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.31,
-      "goles_contra_prom": 1.5
-    },
-    "stats_v": {
-      "ataque": 1.625,
-      "defensa": 1.688,
-      "partidos": 16,
-      "goles_favor_prom": 1.62,
-      "goles_contra_prom": 1.69
-    },
-    "ev_1": -0.168,
-    "ev_x": -0.027,
-    "ev_2": 0.057,
-    "ev_over25": -0.003,
-    "ev_under25": -0.057,
-    "fecha": "2026-07-25",
-    "hora": "19:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Philadelphia Union",
-    "visitante": "Seattle Sounders",
-    "liga": "MLS",
-    "xg_l": 1.252,
-    "xg_v": 1.971,
-    "fase": "regular",
-    "p1": 24.9,
-    "px": 24.5,
-    "p2": 50.6,
-    "over_1.5": 82.8,
-    "over_2.5": 62.7,
-    "over_3.5": 39.9,
-    "under_2.5": 37.3,
-    "btts_si": 61.4,
-    "btts_no": 38.6,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 11.0
-      },
-      {
-        "marcador": "1-2",
         "prob": 10.1
-      },
-      {
-        "marcador": "0-1",
-        "prob": 9.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.25,
-      "defensa": 2.0,
-      "partidos": 16,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 2.0
-    },
-    "stats_v": {
-      "ataque": 1.562,
-      "defensa": 1.312,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.31
-    },
-    "ev_1": -0.232,
-    "ev_x": -0.056,
-    "ev_2": 0.146,
-    "ev_over25": 0.028,
-    "ev_under25": -0.09,
-    "fecha": "2026-07-25",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Orlando City SC",
-    "visitante": "Nashville SC",
-    "liga": "MLS",
-    "xg_l": 1.03,
-    "xg_v": 3.024,
-    "fase": "regular",
-    "p1": 12.0,
-    "px": 16.4,
-    "p2": 71.6,
-    "over_1.5": 91.1,
-    "over_2.5": 76.8,
-    "over_3.5": 57.7,
-    "under_2.5": 23.2,
-    "btts_si": 61.0,
-    "btts_no": 39.0,
-    "marcador_prob": [
-      {
-        "marcador": "0-2",
-        "prob": 9.1
-      },
-      {
-        "marcador": "1-2",
-        "prob": 8.9
-      },
-      {
-        "marcador": "0-3",
-        "prob": 8.8
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.438,
-      "defensa": 2.812,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 2.81
-    },
-    "stats_v": {
-      "ataque": 2.0,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 2.0,
-      "goles_contra_prom": 0.94
-    },
-    "ev_1": -0.236,
-    "ev_x": -0.116,
-    "ev_2": 0.211,
-    "ev_over25": 0.11,
-    "ev_under25": -0.18,
-    "fecha": "2026-07-25",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "New York Red Bulls",
-    "visitante": "Charlotte",
-    "liga": "MLS",
-    "xg_l": 1.639,
-    "xg_v": 1.788,
-    "fase": "regular",
-    "p1": 36.1,
-    "px": 24.0,
-    "p2": 39.9,
-    "over_1.5": 85.8,
-    "over_2.5": 66.3,
-    "over_3.5": 43.7,
-    "under_2.5": 33.7,
-    "btts_si": 66.5,
-    "btts_no": 33.5,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 10.2
-      },
-      {
-        "marcador": "1-2",
-        "prob": 8.8
-      },
-      {
-        "marcador": "2-1",
-        "prob": 8.6
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.562,
-      "defensa": 2.062,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 2.06
-    },
-    "stats_v": {
-      "ataque": 1.375,
-      "defensa": 1.375,
-      "partidos": 16,
-      "goles_favor_prom": 1.38,
-      "goles_contra_prom": 1.38
-    },
-    "ev_1": -0.12,
-    "ev_x": -0.046,
-    "ev_2": 0.033,
-    "ev_over25": 0.005,
-    "ev_under25": -0.071,
-    "fecha": "2026-07-25",
-    "hora": "17:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Columbus Crew",
-    "visitante": "FC Cincinnati",
-    "liga": "MLS",
-    "xg_l": 3.055,
-    "xg_v": 2.041,
-    "fase": "regular",
-    "p1": 55.5,
-    "px": 19.3,
-    "p2": 25.2,
-    "over_1.5": 96.4,
-    "over_2.5": 88.4,
-    "over_3.5": 74.8,
-    "under_2.5": 11.6,
-    "btts_si": 83.1,
-    "btts_no": 16.9,
-    "marcador_prob": [
-      {
-        "marcador": "2-1",
-        "prob": 7.1
-      },
-      {
-        "marcador": "3-1",
-        "prob": 6.3
-      },
-      {
-        "marcador": "2-2",
-        "prob": 6.2
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.562,
-      "defensa": 1.438,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.44
-    },
-    "stats_v": {
-      "ataque": 2.25,
-      "defensa": 2.562,
-      "partidos": 16,
-      "goles_favor_prom": 2.25,
-      "goles_contra_prom": 2.56
-    },
-    "ev_1": -0.04,
-    "ev_x": -0.069,
-    "ev_2": -0.018,
-    "ev_over25": 0.143,
-    "ev_under25": -0.207,
-    "fecha": "2026-07-25",
-    "hora": "18:00",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "New England Revolution",
-    "visitante": "Atlanta United FC",
-    "liga": "MLS",
-    "xg_l": 1.921,
-    "xg_v": 0.794,
-    "fase": "regular",
-    "p1": 60.3,
-    "px": 23.1,
-    "p2": 16.6,
-    "over_1.5": 75.5,
-    "over_2.5": 50.6,
-    "over_3.5": 28.7,
-    "under_2.5": 49.4,
-    "btts_si": 46.5,
-    "btts_no": 53.5,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 14.8
-      },
-      {
-        "marcador": "2-0",
-        "prob": 12.9
-      },
-      {
-        "marcador": "1-1",
-        "prob": 10.2
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.438,
-      "defensa": 1.438,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 1.44
-    },
-    "stats_v": {
-      "ataque": 0.875,
-      "defensa": 1.75,
-      "partidos": 16,
-      "goles_favor_prom": 0.88,
-      "goles_contra_prom": 1.75
-    },
-    "ev_1": 0.062,
-    "ev_x": -0.071,
-    "ev_2": -0.128,
-    "ev_over25": -0.05,
-    "ev_under25": -0.009,
-    "fecha": "2026-07-25",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "CF Montreal",
-    "visitante": "Inter Miami",
-    "liga": "MLS",
-    "xg_l": 1.853,
-    "xg_v": 3.024,
-    "fase": "regular",
-    "p1": 23.5,
-    "px": 18.6,
-    "p2": 57.9,
-    "over_1.5": 95.6,
-    "over_2.5": 86.5,
-    "over_3.5": 71.7,
-    "under_2.5": 13.5,
-    "btts_si": 80.6,
-    "btts_no": 19.4,
-    "marcador_prob": [
-      {
-        "marcador": "1-3",
-        "prob": 7.3
-      },
-      {
-        "marcador": "1-2",
-        "prob": 7.3
-      },
-      {
-        "marcador": "2-2",
-        "prob": 6.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.438,
-      "defensa": 2.0,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 2.0
-    },
-    "stats_v": {
-      "ataque": 2.938,
-      "defensa": 1.688,
-      "partidos": 16,
-      "goles_favor_prom": 2.94,
-      "goles_contra_prom": 1.69
-    },
-    "ev_1": -0.105,
-    "ev_x": -0.082,
-    "ev_2": 0.061,
-    "ev_over25": 0.14,
-    "ev_under25": -0.202,
-    "fecha": "2026-07-25",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "DC United",
-    "visitante": "Toronto FC",
-    "liga": "MLS",
-    "xg_l": 2.003,
-    "xg_v": 1.474,
-    "fase": "regular",
-    "p1": 47.7,
-    "px": 23.9,
-    "p2": 28.4,
-    "over_1.5": 86.2,
-    "over_2.5": 67.5,
-    "over_3.5": 46.1,
-    "under_2.5": 32.5,
-    "btts_si": 66.8,
-    "btts_no": 33.2,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 10.0
-      },
-      {
-        "marcador": "2-1",
-        "prob": 9.3
-      },
-      {
-        "marcador": "1-0",
-        "prob": 7.6
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.312,
-      "defensa": 1.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.31,
-      "goles_contra_prom": 1.62
-    },
-    "stats_v": {
-      "ataque": 1.438,
-      "defensa": 2.0,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 2.0
-    },
-    "ev_1": -0.075,
-    "ev_x": -0.059,
-    "ev_2": 0.002,
-    "ev_over25": 0.1,
-    "ev_under25": -0.163,
-    "fecha": "2026-07-25",
-    "hora": "18:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Minnesota United FC",
-    "visitante": "Vancouver Whitecaps",
-    "liga": "MLS",
-    "xg_l": 1.002,
-    "xg_v": 2.34,
-    "fase": "regular",
-    "p1": 16.8,
-    "px": 21.2,
-    "p2": 62.0,
-    "over_1.5": 84.8,
-    "over_2.5": 64.1,
-    "over_3.5": 42.5,
-    "under_2.5": 35.9,
-    "btts_si": 57.6,
-    "btts_no": 42.4,
-    "marcador_prob": [
-      {
-        "marcador": "0-2",
-        "prob": 10.4
-      },
-      {
-        "marcador": "1-2",
-        "prob": 10.2
-      },
-      {
-        "marcador": "0-1",
-        "prob": 9.8
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.312,
-      "defensa": 1.562,
-      "partidos": 16,
-      "goles_favor_prom": 1.31,
-      "goles_contra_prom": 1.56
-    },
-    "stats_v": {
-      "ataque": 2.375,
-      "defensa": 1.0,
-      "partidos": 16,
-      "goles_favor_prom": 2.38,
-      "goles_contra_prom": 1.0
-    },
-    "ev_1": -0.159,
-    "ev_x": -0.078,
-    "ev_2": 0.091,
-    "ev_over25": 0.008,
-    "ev_under25": -0.07,
-    "fecha": "2026-07-25",
-    "hora": "19:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Houston Dynamo",
-    "visitante": "Austin",
-    "liga": "MLS",
-    "xg_l": 2.297,
-    "xg_v": 1.479,
-    "fase": "regular",
-    "p1": 53.3,
-    "px": 22.2,
-    "p2": 24.6,
-    "over_1.5": 89.3,
-    "over_2.5": 72.8,
-    "over_3.5": 52.5,
-    "under_2.5": 27.2,
-    "btts_si": 69.5,
-    "btts_no": 30.5,
-    "marcador_prob": [
-      {
-        "marcador": "2-1",
-        "prob": 9.5
-      },
-      {
-        "marcador": "1-1",
-        "prob": 8.8
-      },
-      {
-        "marcador": "2-0",
-        "prob": 7.1
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.375,
-      "defensa": 1.875,
-      "partidos": 16,
-      "goles_favor_prom": 1.38,
-      "goles_contra_prom": 1.88
-    },
-    "stats_v": {
-      "ataque": 1.25,
-      "defensa": 2.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 2.19
-    },
-    "ev_1": -0.143,
-    "ev_x": -0.032,
-    "ev_2": 0.043,
-    "ev_over25": 0.107,
-    "ev_under25": -0.169,
-    "fecha": "2026-07-25",
-    "hora": "19:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Portland Timbers",
-    "visitante": "Real Salt Lake",
-    "liga": "MLS",
-    "xg_l": 2.291,
-    "xg_v": 2.144,
-    "fase": "regular",
-    "p1": 41.9,
-    "px": 22.4,
-    "p2": 35.7,
-    "over_1.5": 93.4,
-    "over_2.5": 82.0,
-    "over_3.5": 64.7,
-    "under_2.5": 18.0,
-    "btts_si": 79.9,
-    "btts_no": 20.1,
-    "marcador_prob": [
-      {
-        "marcador": "2-2",
-        "prob": 7.7
-      },
-      {
-        "marcador": "1-1",
-        "prob": 7.4
-      },
-      {
-        "marcador": "2-1",
-        "prob": 7.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.0,
-      "defensa": 1.875,
-      "partidos": 16,
-      "goles_favor_prom": 2.0,
-      "goles_contra_prom": 1.88
-    },
-    "stats_v": {
-      "ataque": 1.812,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.81,
-      "goles_contra_prom": 1.5
-    },
-    "ev_1": -0.042,
-    "ev_x": -0.062,
-    "ev_2": -0.046,
-    "ev_over25": 0.126,
-    "ev_under25": -0.202,
-    "fecha": "2026-07-25",
-    "hora": "21:30",
-    "liga_nombre": "MLS Major League Soccer"
-  },
-  {
-    "local": "Club Athletico Paranaense",
-    "visitante": "SC Internacional",
-    "liga": "BSA",
-    "xg_l": 2.322,
-    "xg_v": 0.677,
-    "fase": "regular",
-    "p1": 69.7,
-    "px": 18.5,
-    "p2": 11.8,
-    "over_1.5": 79.5,
-    "over_2.5": 58.1,
-    "over_3.5": 35.4,
-    "under_2.5": 41.9,
-    "btts_si": 43.9,
-    "btts_no": 56.1,
-    "marcador_prob": [
-      {
-        "marcador": "2-0",
-        "prob": 14.2
-      },
-      {
-        "marcador": "1-0",
-        "prob": 13.2
-      },
-      {
-        "marcador": "3-0",
-        "prob": 10.9
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.7,
-      "defensa": 0.8,
-      "partidos": 10,
-      "goles_favor_prom": 1.7,
-      "goles_contra_prom": 0.8
-    },
-    "stats_v": {
-      "ataque": 1.125,
-      "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.12,
-      "goles_contra_prom": 1.5
-    },
-    "ev_1": 0.179,
-    "ev_x": -0.131,
-    "ev_2": -0.136,
-    "ev_over25": 0.148,
-    "ev_under25": -0.226,
-    "fecha": "2026-07-25",
-    "hora": "16:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Santos FC",
-    "visitante": "Chapecoense",
-    "liga": "BSA",
-    "xg_l": 1.366,
-    "xg_v": 0.895,
-    "fase": "regular",
-    "p1": 46.1,
-    "px": 29.1,
-    "p2": 24.8,
-    "over_1.5": 65.8,
-    "over_2.5": 39.5,
-    "over_3.5": 19.4,
-    "under_2.5": 60.5,
-    "btts_si": 43.7,
-    "btts_no": 56.3,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 15.1
-      },
-      {
-        "marcador": "1-1",
-        "prob": 12.9
-      },
-      {
-        "marcador": "0-0",
-        "prob": 11.9
       }
     ],
     "stats_l": {
       "ataque": 1.5,
-      "defensa": 1.188,
-      "partidos": 16,
+      "defensa": 0.5,
+      "partidos": 2,
       "goles_favor_prom": 1.5,
-      "goles_contra_prom": 1.19
+      "goles_contra_prom": 0.5
+    },
+    "stats_v": {
+      "ataque": 2.75,
+      "defensa": 1.25,
+      "partidos": 4,
+      "goles_favor_prom": 2.75,
+      "goles_contra_prom": 1.25
+    },
+    "ev_1": 0.341,
+    "ev_x": 0.047,
+    "ev_2": -0.491,
+    "ev_over25": -0.107,
+    "ev_under25": 0.034,
+    "fecha": "2026-07-23",
+    "hora": "10:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FC Alashkert",
+    "visitante": "CFR 1907 Cluj",
+    "liga": "comp_408698",
+    "xg_l": 2.926,
+    "xg_v": 1.036,
+    "fase": "regular",
+    "p1": 71.4,
+    "px": 16.3,
+    "p2": 12.2,
+    "over_1.5": 90.7,
+    "over_2.5": 75.6,
+    "over_3.5": 56.1,
+    "under_2.5": 24.4,
+    "btts_si": 61.3,
+    "btts_no": 38.7,
+    "marcador_prob": [
+      {
+        "marcador": "2-0",
+        "prob": 8.2
+      },
+      {
+        "marcador": "2-1",
+        "prob": 8.2
+      },
+      {
+        "marcador": "3-1",
+        "prob": 8.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.0
+    },
+    "stats_v": {
+      "ataque": 1.5,
+      "defensa": 3.5,
+      "partidos": 2,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 3.5
+    },
+    "ev_1": 0.42,
+    "ev_x": -0.145,
+    "ev_2": -0.391,
+    "ev_over25": 0.315,
+    "ev_under25": -0.389,
+    "fecha": "2026-07-23",
+    "hora": "10:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FK Panevėžys",
+    "visitante": "FC Tobol",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 0.691,
+    "fase": "regular",
+    "p1": 35.4,
+    "px": 36.7,
+    "p2": 28.0,
+    "over_1.5": 45.7,
+    "over_2.5": 19.2,
+    "over_3.5": 6.5,
+    "under_2.5": 80.8,
+    "btts_si": 28.4,
+    "btts_no": 71.6,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 21.9
+      },
+      {
+        "marcador": "1-0",
+        "prob": 17.8
+      },
+      {
+        "marcador": "0-1",
+        "prob": 14.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
     },
     "stats_v": {
       "ataque": 1.0,
       "defensa": 1.0,
       "partidos": 0
     },
-    "ev_1": -0.264,
-    "ev_x": 0.063,
-    "ev_2": 0.113,
-    "ev_over25": -0.197,
-    "ev_under25": 0.124,
-    "fecha": "2026-07-25",
-    "hora": "16:30",
-    "liga_nombre": "Brasileirao Serie A"
+    "ev_1": 0.041,
+    "ev_x": 0.073,
+    "ev_2": -0.233,
+    "ev_over25": -0.258,
+    "ev_under25": 0.187,
+    "fecha": "2026-07-23",
+    "hora": "10:30",
+    "liga_nombre": "UEFA Conference League"
   },
   {
-    "local": "CR Vasco da Gama",
-    "visitante": "Mirassol FC",
-    "liga": "BSA",
-    "xg_l": 1.556,
-    "xg_v": 1.985,
+    "local": "HJK",
+    "visitante": "Coleraine FC",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 0.691,
     "fase": "regular",
-    "p1": 31.5,
-    "px": 23.7,
-    "p2": 44.9,
-    "over_1.5": 86.8,
-    "over_2.5": 68.1,
-    "over_3.5": 47.1,
-    "under_2.5": 31.9,
-    "btts_si": 68.0,
-    "btts_no": 32.0,
+    "p1": 35.4,
+    "px": 36.7,
+    "p2": 28.0,
+    "over_1.5": 45.7,
+    "over_2.5": 19.2,
+    "over_3.5": 6.5,
+    "under_2.5": 80.8,
+    "btts_si": 28.4,
+    "btts_no": 71.6,
     "marcador_prob": [
       {
-        "marcador": "1-1",
-        "prob": 9.7
+        "marcador": "0-0",
+        "prob": 21.9
       },
       {
-        "marcador": "1-2",
-        "prob": 9.2
+        "marcador": "1-0",
+        "prob": 17.8
       },
       {
-        "marcador": "2-1",
-        "prob": 7.1
+        "marcador": "0-1",
+        "prob": 14.6
       }
     ],
     "stats_l": {
-      "ataque": 1.438,
-      "defensa": 1.688,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 1.69
-    },
-    "stats_v": {
-      "ataque": 1.562,
-      "defensa": 1.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.19
-    },
-    "ev_1": -0.175,
-    "ev_x": -0.069,
-    "ev_2": 0.161,
-    "ev_over25": 0.183,
-    "ev_under25": -0.256,
-    "fecha": "2026-07-25",
-    "hora": "18:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Los Angeles FC",
-    "visitante": "Sporting Kansas City",
-    "liga": "MLS",
-    "xg_l": 3.24,
-    "xg_v": 0.67,
-    "fase": "regular",
-    "p1": 79.3,
-    "px": 12.7,
-    "p2": 7.9,
-    "over_1.5": 90.0,
-    "over_2.5": 74.6,
-    "over_3.5": 54.9,
-    "under_2.5": 25.4,
-    "btts_si": 47.1,
-    "btts_no": 52.9,
-    "marcador_prob": [
-      {
-        "marcador": "3-0",
-        "prob": 12.3
-      },
-      {
-        "marcador": "2-0",
-        "prob": 11.8
-      },
-      {
-        "marcador": "4-0",
-        "prob": 9.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.688,
-      "defensa": 1.062,
-      "partidos": 16,
-      "goles_favor_prom": 1.69,
-      "goles_contra_prom": 1.06
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.0
     },
     "stats_v": {
       "ataque": 1.0,
-      "defensa": 2.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.0,
-      "goles_contra_prom": 2.62
+      "defensa": 1.0,
+      "partidos": 0
     },
-    "ev_1": -0.069,
-    "ev_x": -0.029,
-    "ev_2": -0.014,
-    "ev_over25": -0.054,
-    "ev_under25": -0.032,
-    "fecha": "2026-07-25",
-    "hora": "21:30",
-    "liga_nombre": "MLS Major League Soccer"
+    "ev_1": -0.36,
+    "ev_x": 0.156,
+    "ev_2": 0.098,
+    "ev_over25": -0.445,
+    "ev_under25": 0.382,
+    "fecha": "2026-07-23",
+    "hora": "11:00",
+    "liga_nombre": "UEFA Conference League"
   },
   {
-    "local": "EC Bahia",
-    "visitante": "SC Corinthians Paulista",
-    "liga": "BSA",
-    "xg_l": 1.353,
-    "xg_v": 1.173,
+    "local": "Debreceni VSC",
+    "visitante": "Pyunik Yerevan",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 1.209,
     "fase": "regular",
-    "p1": 40.2,
-    "px": 27.9,
-    "p2": 31.9,
-    "over_1.5": 71.6,
-    "over_2.5": 46.4,
-    "over_3.5": 25.1,
-    "under_2.5": 53.6,
-    "btts_si": 51.0,
-    "btts_no": 49.0,
+    "p1": 26.0,
+    "px": 30.2,
+    "p2": 43.8,
+    "over_1.5": 60.9,
+    "over_2.5": 33.8,
+    "over_3.5": 15.0,
+    "under_2.5": 66.2,
+    "btts_si": 40.0,
+    "btts_no": 60.0,
     "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 12.5
-      },
-      {
-        "marcador": "1-0",
-        "prob": 12.1
-      },
       {
         "marcador": "0-1",
-        "prob": 10.3
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.25,
-      "defensa": 1.312,
-      "partidos": 16,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 1.31
-    },
-    "stats_v": {
-      "ataque": 1.188,
-      "defensa": 1.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.19,
-      "goles_contra_prom": 1.19
-    },
-    "ev_1": -0.086,
-    "ev_x": -0.027,
-    "ev_2": 0.02,
-    "ev_over25": -0.044,
-    "ev_under25": -0.029,
-    "fecha": "2026-07-26",
-    "hora": "14:00",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Cruzeiro EC",
-    "visitante": "Botafogo FR",
-    "liga": "BSA",
-    "xg_l": 1.419,
-    "xg_v": 1.103,
-    "fase": "regular",
-    "p1": 43.7,
-    "px": 27.4,
-    "p2": 28.9,
-    "over_1.5": 71.6,
-    "over_2.5": 46.4,
-    "over_3.5": 24.5,
-    "under_2.5": 53.6,
-    "btts_si": 50.5,
-    "btts_no": 49.5,
-    "marcador_prob": [
+        "prob": 15.1
+      },
       {
-        "marcador": "1-0",
-        "prob": 13.1
+        "marcador": "0-0",
+        "prob": 13.2
       },
       {
         "marcador": "1-1",
-        "prob": 12.4
-      },
-      {
-        "marcador": "0-1",
-        "prob": 9.6
+        "prob": 13.2
       }
     ],
     "stats_l": {
-      "ataque": 1.188,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 1.19,
-      "goles_contra_prom": 0.94
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
     },
     "stats_v": {
-      "ataque": 1.562,
-      "defensa": 1.312,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.31
+      "ataque": 1.75,
+      "defensa": 1.0,
+      "partidos": 4,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 1.0
     },
-    "ev_1": -0.128,
-    "ev_x": -0.014,
-    "ev_2": 0.053,
-    "ev_over25": -0.06,
-    "ev_under25": -0.007,
-    "fecha": "2026-07-26",
-    "hora": "14:00",
-    "liga_nombre": "Brasileirao Serie A"
+    "ev_1": -0.318,
+    "ev_x": 0.024,
+    "ev_2": 0.188,
+    "ev_over25": -0.165,
+    "ev_under25": 0.097,
+    "fecha": "2026-07-23",
+    "hora": "11:00",
+    "liga_nombre": "UEFA Conference League"
   },
   {
-    "local": "SE Palmeiras",
-    "visitante": "CA Mineiro",
-    "liga": "BSA",
-    "xg_l": 2.42,
-    "xg_v": 0.926,
+    "local": "Flora Tallinn",
+    "visitante": "The New Saints",
+    "liga": "comp_408698",
+    "xg_l": 2.508,
+    "xg_v": 0.432,
     "fase": "regular",
-    "p1": 65.4,
-    "px": 20.0,
-    "p2": 14.6,
-    "over_1.5": 84.9,
-    "over_2.5": 64.8,
-    "over_3.5": 42.8,
-    "under_2.5": 35.2,
-    "btts_si": 54.8,
-    "btts_no": 45.2,
+    "p1": 77.7,
+    "px": 14.9,
+    "p2": 7.4,
+    "over_1.5": 79.4,
+    "over_2.5": 56.4,
+    "over_3.5": 33.6,
+    "under_2.5": 43.6,
+    "btts_si": 31.7,
+    "btts_no": 68.3,
     "marcador_prob": [
       {
         "marcador": "2-0",
-        "prob": 10.9
-      },
-      {
-        "marcador": "1-0",
-        "prob": 9.8
-      },
-      {
-        "marcador": "2-1",
-        "prob": 9.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.125,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 2.12,
-      "goles_contra_prom": 0.94
-    },
-    "stats_v": {
-      "ataque": 1.312,
-      "defensa": 1.25,
-      "partidos": 16,
-      "goles_favor_prom": 1.31,
-      "goles_contra_prom": 1.25
-    },
-    "ev_1": 0.009,
-    "ev_x": -0.069,
-    "ev_2": -0.028,
-    "ev_over25": 0.155,
-    "ev_under25": -0.229,
-    "fecha": "2026-07-26",
-    "hora": "17:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "CR Flamengo",
-    "visitante": "São Paulo FC",
-    "liga": "BSA",
-    "xg_l": 2.562,
-    "xg_v": 0.849,
-    "fase": "regular",
-    "p1": 69.4,
-    "px": 18.0,
-    "p2": 12.6,
-    "over_1.5": 85.2,
-    "over_2.5": 66.2,
-    "over_3.5": 44.3,
-    "under_2.5": 33.8,
-    "btts_si": 52.4,
-    "btts_no": 47.6,
-    "marcador_prob": [
-      {
-        "marcador": "2-0",
-        "prob": 11.7
-      },
-      {
-        "marcador": "1-0",
-        "prob": 10.0
+        "prob": 16.6
       },
       {
         "marcador": "3-0",
-        "prob": 9.5
+        "prob": 14.7
+      },
+      {
+        "marcador": "1-0",
+        "prob": 13.2
       }
     ],
     "stats_l": {
-      "ataque": 1.875,
-      "defensa": 1.062,
-      "partidos": 16,
-      "goles_favor_prom": 1.88,
-      "goles_contra_prom": 1.06
+      "ataque": 2.0,
+      "defensa": 2.5,
+      "partidos": 2,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 2.5
     },
     "stats_v": {
-      "ataque": 1.062,
+      "ataque": 0.25,
       "defensa": 1.5,
-      "partidos": 16,
-      "goles_favor_prom": 1.06,
+      "partidos": 4,
+      "goles_favor_prom": 0.25,
       "goles_contra_prom": 1.5
     },
-    "ev_1": 0.018,
-    "ev_x": -0.071,
-    "ev_2": -0.037,
-    "ev_over25": 0.127,
-    "ev_under25": -0.197,
-    "fecha": "2026-07-26",
-    "hora": "16:30",
-    "liga_nombre": "Brasileirao Serie A"
+    "ev_1": 0.312,
+    "ev_x": -0.145,
+    "ev_2": -0.283,
+    "ev_over25": -0.017,
+    "ev_under25": -0.057,
+    "fecha": "2026-07-23",
+    "hora": "11:00",
+    "liga_nombre": "UEFA Conference League"
   },
   {
-    "local": "Grêmio FBPA",
-    "visitante": "Fluminense FC",
-    "liga": "BSA",
-    "xg_l": 0.961,
-    "xg_v": 1.557,
+    "local": "FC Dila Gori",
+    "visitante": "Apollon Limassol",
+    "liga": "comp_408698",
+    "xg_l": 1.463,
+    "xg_v": 1.209,
     "fase": "regular",
-    "p1": 24.2,
-    "px": 26.5,
-    "p2": 49.3,
-    "over_1.5": 71.9,
-    "over_2.5": 46.1,
-    "over_3.5": 24.8,
-    "under_2.5": 53.9,
-    "btts_si": 49.2,
-    "btts_no": 50.8,
+    "p1": 42.6,
+    "px": 26.8,
+    "p2": 30.6,
+    "over_1.5": 74.7,
+    "over_2.5": 50.3,
+    "over_3.5": 28.0,
+    "under_2.5": 49.7,
+    "btts_si": 54.0,
+    "btts_no": 46.0,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 11.9
+      },
+      {
+        "marcador": "1-0",
+        "prob": 10.1
+      },
+      {
+        "marcador": "2-1",
+        "prob": 9.1
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.75,
+      "defensa": 1.75,
+      "partidos": 4,
+      "goles_favor_prom": 1.75,
+      "goles_contra_prom": 1.75
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": 0.132,
+    "ev_x": -0.04,
+    "ev_2": -0.194,
+    "ev_over25": 0.04,
+    "ev_under25": -0.113,
+    "fecha": "2026-07-23",
+    "hora": "11:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FCSB",
+    "visitante": "FK Auda",
+    "liga": "comp_408698",
+    "xg_l": 0.418,
+    "xg_v": 1.036,
+    "fase": "regular",
+    "p1": 16.3,
+    "px": 34.3,
+    "p2": 49.4,
+    "over_1.5": 42.3,
+    "over_2.5": 18.0,
+    "over_3.5": 6.2,
+    "under_2.5": 82.0,
+    "btts_si": 21.5,
+    "btts_no": 78.5,
     "marcador_prob": [
       {
         "marcador": "0-1",
-        "prob": 13.9
+        "prob": 24.3
+      },
+      {
+        "marcador": "0-0",
+        "prob": 23.5
+      },
+      {
+        "marcador": "0-2",
+        "prob": 12.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.5,
+      "defensa": 1.5,
+      "partidos": 2,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": -0.637,
+    "ev_x": 0.132,
+    "ev_2": 0.394,
+    "ev_over25": -0.422,
+    "ev_under25": 0.348,
+    "fecha": "2026-07-23",
+    "hora": "12:45",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Paide Linnameeskond",
+    "visitante": "Zirə FK",
+    "liga": "comp_408698",
+    "xg_l": 0.627,
+    "xg_v": 2.418,
+    "fase": "regular",
+    "p1": 9.9,
+    "px": 17.1,
+    "p2": 73.0,
+    "over_1.5": 80.9,
+    "over_2.5": 58.6,
+    "over_3.5": 35.5,
+    "under_2.5": 41.4,
+    "btts_si": 42.3,
+    "btts_no": 57.7,
+    "marcador_prob": [
+      {
+        "marcador": "0-2",
+        "prob": 14.0
+      },
+      {
+        "marcador": "0-3",
+        "prob": 11.8
+      },
+      {
+        "marcador": "0-1",
+        "prob": 11.6
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.5,
+      "defensa": 1.75,
+      "partidos": 4,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.75
+    },
+    "stats_v": {
+      "ataque": 2.0,
+      "defensa": 0.5,
+      "partidos": 4,
+      "goles_favor_prom": 2.0,
+      "goles_contra_prom": 0.5
+    },
+    "ev_1": 0.008,
+    "ev_x": -0.06,
+    "ev_2": -0.039,
+    "ev_over25": 0.011,
+    "ev_under25": -0.084,
+    "fecha": "2026-07-23",
+    "hora": "11:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "DAC 1904",
+    "visitante": "FK Velež Mostar",
+    "liga": "comp_408698",
+    "xg_l": 0.418,
+    "xg_v": 0.691,
+    "fase": "regular",
+    "p1": 20.6,
+    "px": 42.0,
+    "p2": 37.4,
+    "over_1.5": 30.4,
+    "over_2.5": 9.8,
+    "over_3.5": 2.6,
+    "under_2.5": 90.2,
+    "btts_si": 16.5,
+    "btts_no": 83.5,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 32.9
+      },
+      {
+        "marcador": "0-1",
+        "prob": 23.0
+      },
+      {
+        "marcador": "1-0",
+        "prob": 13.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 0.5,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 0.5
+    },
+    "ev_1": 0,
+    "ev_x": 0,
+    "ev_2": 0,
+    "ev_over25": -0.501,
+    "ev_under25": 0.428,
+    "fecha": "2026-07-23",
+    "hora": "11:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "AEK Larnaca",
+    "visitante": "Beitar Jerusalem",
+    "liga": "comp_408698",
+    "xg_l": 1.463,
+    "xg_v": 0.432,
+    "fase": "regular",
+    "p1": 61.0,
+    "px": 26.3,
+    "p2": 12.7,
+    "over_1.5": 56.6,
+    "over_2.5": 29.6,
+    "over_3.5": 12.3,
+    "under_2.5": 70.4,
+    "btts_si": 26.7,
+    "btts_no": 73.3,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 22.0
+      },
+      {
+        "marcador": "2-0",
+        "prob": 16.4
+      },
+      {
+        "marcador": "0-0",
+        "prob": 14.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 0.25,
+      "partidos": 8,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 0.25
+    },
+    "stats_v": {
+      "ataque": 2.5,
+      "defensa": 1.75,
+      "partidos": 4,
+      "goles_favor_prom": 2.5,
+      "goles_contra_prom": 1.75
+    },
+    "ev_1": 0.069,
+    "ev_x": -0.023,
+    "ev_2": -0.159,
+    "ev_over25": -0.173,
+    "ev_under25": 0.116,
+    "fecha": "2026-07-23",
+    "hora": "11:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "RFS",
+    "visitante": "IF Vestri",
+    "liga": "comp_408698",
+    "xg_l": 0.975,
+    "xg_v": 1.036,
+    "fase": "regular",
+    "p1": 32.8,
+    "px": 31.7,
+    "p2": 35.5,
+    "over_1.5": 59.4,
+    "over_2.5": 32.3,
+    "over_3.5": 14.4,
+    "under_2.5": 67.7,
+    "btts_si": 40.0,
+    "btts_no": 60.0,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 13.8
+      },
+      {
+        "marcador": "0-1",
+        "prob": 13.8
+      },
+      {
+        "marcador": "0-0",
+        "prob": 13.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.167,
+      "defensa": 1.5,
+      "partidos": 6,
+      "goles_favor_prom": 1.17,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": -0.643,
+    "ev_x": 0.24,
+    "ev_2": 0.323,
+    "ev_over25": -0.452,
+    "ev_under25": 0.399,
+    "fecha": "2026-07-23",
+    "hora": "11:30",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "GAIS",
+    "visitante": "FC Nordsjælland",
+    "liga": "comp_408698",
+    "xg_l": 1.567,
+    "xg_v": 0.906,
+    "fase": "regular",
+    "p1": 51.6,
+    "px": 26.1,
+    "p2": 22.3,
+    "over_1.5": 71.0,
+    "over_2.5": 44.8,
+    "over_3.5": 23.4,
+    "under_2.5": 55.2,
+    "btts_si": 47.0,
+    "btts_no": 53.0,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 13.0
       },
       {
         "marcador": "1-1",
         "prob": 12.0
       },
       {
-        "marcador": "1-2",
-        "prob": 10.0
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.688,
-      "defensa": 1.438,
-      "partidos": 16,
-      "goles_favor_prom": 1.69,
-      "goles_contra_prom": 1.44
-    },
-    "stats_v": {
-      "ataque": 1.438,
-      "defensa": 0.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 0.62
-    },
-    "ev_1": -0.153,
-    "ev_x": -0.046,
-    "ev_2": 0.111,
-    "ev_over25": -0.054,
-    "ev_under25": -0.01,
-    "fecha": "2026-07-26",
-    "hora": "16:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Clube do Remo",
-    "visitante": "EC Vitória",
-    "liga": "BSA",
-    "xg_l": 1.138,
-    "xg_v": 0.753,
-    "fase": "regular",
-    "p1": 42.8,
-    "px": 32.3,
-    "p2": 24.9,
-    "over_1.5": 56.3,
-    "over_2.5": 28.8,
-    "over_3.5": 11.9,
-    "under_2.5": 71.2,
-    "btts_si": 35.7,
-    "btts_no": 64.3,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 18.3
-      },
-      {
-        "marcador": "0-0",
-        "prob": 16.6
-      },
-      {
-        "marcador": "1-1",
-        "prob": 12.9
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
-    },
-    "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.25,
-      "partidos": 16,
-      "goles_favor_prom": 1.0,
-      "goles_contra_prom": 1.25
-    },
-    "ev_1": -0.041,
-    "ev_x": 0.011,
-    "ev_2": -0.062,
-    "ev_over25": -0.21,
-    "ev_under25": 0.137,
-    "fecha": "2026-07-26",
-    "hora": "17:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "RB Bragantino",
-    "visitante": "Coritiba FC",
-    "liga": "BSA",
-    "xg_l": 1.025,
-    "xg_v": 1.176,
-    "fase": "regular",
-    "p1": 31.7,
-    "px": 30.4,
-    "p2": 37.9,
-    "over_1.5": 64.5,
-    "over_2.5": 37.6,
-    "over_3.5": 17.4,
-    "under_2.5": 62.4,
-    "btts_si": 43.8,
-    "btts_no": 56.2,
-    "marcador_prob": [
-      {
-        "marcador": "0-1",
-        "prob": 13.8
-      },
-      {
-        "marcador": "1-1",
-        "prob": 13.3
-      },
-      {
-        "marcador": "1-0",
-        "prob": 12.6
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.125,
-      "defensa": 1.562,
-      "partidos": 16,
-      "goles_favor_prom": 1.12,
-      "goles_contra_prom": 1.56
-    },
-    "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
-    },
-    "ev_1": -0.296,
-    "ev_x": 0.031,
-    "ev_2": 0.179,
-    "ev_over25": -0.159,
-    "ev_under25": 0.089,
-    "fecha": "2026-07-26",
-    "hora": "16:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Botafogo FR",
-    "visitante": "Grêmio FBPA",
-    "liga": "BSA",
-    "xg_l": 2.046,
-    "xg_v": 1.667,
-    "fase": "regular",
-    "p1": 45.5,
-    "px": 22.9,
-    "p2": 31.6,
-    "over_1.5": 88.7,
-    "over_2.5": 71.9,
-    "over_3.5": 50.6,
-    "under_2.5": 28.1,
-    "btts_si": 70.6,
-    "btts_no": 29.4,
-    "marcador_prob": [
-      {
-        "marcador": "2-1",
-        "prob": 9.2
-      },
-      {
-        "marcador": "1-1",
-        "prob": 9.2
-      },
-      {
-        "marcador": "1-2",
-        "prob": 7.2
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.562,
-      "defensa": 1.312,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.31
-    },
-    "stats_v": {
-      "ataque": 1.688,
-      "defensa": 1.438,
-      "partidos": 16,
-      "goles_favor_prom": 1.69,
-      "goles_contra_prom": 1.44
-    },
-    "ev_1": -0.137,
-    "ev_x": -0.046,
-    "ev_2": 0.077,
-    "ev_over25": 0.124,
-    "ev_under25": -0.204,
-    "fecha": "2026-07-28",
-    "hora": "19:00",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Chapecoense",
-    "visitante": "CR Vasco da Gama",
-    "liga": "BSA",
-    "xg_l": 1.538,
-    "xg_v": 1.082,
-    "fase": "regular",
-    "p1": 46.4,
-    "px": 26.8,
-    "p2": 26.8,
-    "over_1.5": 74.4,
-    "over_2.5": 49.1,
-    "over_3.5": 26.5,
-    "under_2.5": 50.9,
-    "btts_si": 51.6,
-    "btts_no": 48.4,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 12.4
-      },
-      {
-        "marcador": "1-0",
-        "prob": 12.1
-      },
-      {
         "marcador": "2-0",
-        "prob": 9.4
+        "prob": 11.0
       }
     ],
     "stats_l": {
       "ataque": 1.0,
       "defensa": 1.0,
       "partidos": 0
-    },
-    "stats_v": {
-      "ataque": 1.438,
-      "defensa": 1.688,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 1.69
-    },
-    "ev_1": 0.081,
-    "ev_x": -0.031,
-    "ev_2": -0.158,
-    "ev_over25": -0.09,
-    "ev_under25": 0.006,
-    "fecha": "2026-07-28",
-    "hora": "19:00",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Fluminense FC",
-    "visitante": "EC Bahia",
-    "liga": "BSA",
-    "xg_l": 1.718,
-    "xg_v": 0.588,
-    "fase": "regular",
-    "p1": 61.1,
-    "px": 24.6,
-    "p2": 14.4,
-    "over_1.5": 66.9,
-    "over_2.5": 40.4,
-    "over_3.5": 20.5,
-    "under_2.5": 59.6,
-    "btts_si": 36.6,
-    "btts_no": 63.4,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 18.3
-      },
-      {
-        "marcador": "2-0",
-        "prob": 15.2
-      },
-      {
-        "marcador": "0-0",
-        "prob": 11.2
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.438,
-      "defensa": 0.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 0.62
-    },
-    "stats_v": {
-      "ataque": 1.25,
-      "defensa": 1.312,
-      "partidos": 16,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 1.31
-    },
-    "ev_1": 0.049,
-    "ev_x": -0.041,
-    "ev_2": -0.116,
-    "ev_over25": -0.171,
-    "ev_under25": 0.088,
-    "fecha": "2026-07-29",
-    "hora": "19:30",
-    "liga_nombre": "Brasileirao Serie A"
-  },
-  {
-    "local": "Estudiantes de La Plata",
-    "visitante": "CD Universidad Católica",
-    "liga": "CLB",
-    "xg_l": 1.452,
-    "xg_v": 0.721,
-    "fase": "eliminatoria",
-    "p1": 49.5,
-    "px": 30.9,
-    "p2": 19.6,
-    "over_1.5": 64.1,
-    "over_2.5": 36.8,
-    "over_3.5": 17.5,
-    "under_2.5": 63.2,
-    "btts_si": 38.7,
-    "btts_no": 61.3,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 20.0
-      },
-      {
-        "marcador": "0-0",
-        "prob": 16.2
-      },
-      {
-        "marcador": "1-1",
-        "prob": 12.2
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.562,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 0.94
-    },
-    "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
-    },
-    "ev_1": -0.1,
-    "ev_x": 0.027,
-    "ev_2": -0.021,
-    "ev_over25": -0.054,
-    "ev_under25": -0.022,
-    "fecha": "2026-08-11",
-    "hora": "19:30",
-    "liga_nombre": "Copa Libertadores"
-  },
-  {
-    "local": "CD Tolima",
-    "visitante": "CAR Independiente del Valle",
-    "liga": "CLB",
-    "xg_l": 0.36,
-    "xg_v": 1.098,
-    "fase": "eliminatoria",
-    "p1": 13.7,
-    "px": 37.6,
-    "p2": 48.7,
-    "over_1.5": 42.5,
-    "over_2.5": 18.4,
-    "over_3.5": 5.7,
-    "under_2.5": 81.6,
-    "btts_si": 19.1,
-    "btts_no": 80.9,
-    "marcador_prob": [
-      {
-        "marcador": "0-0",
-        "prob": 29.4
-      },
-      {
-        "marcador": "0-1",
-        "prob": 27.5
-      },
-      {
-        "marcador": "0-2",
-        "prob": 12.5
-      }
-    ],
-    "stats_l": {
-      "ataque": 0.0,
-      "defensa": 1.0,
-      "partidos": 2,
-      "goles_favor_prom": 0.0,
-      "goles_contra_prom": 1.0
-    },
-    "stats_v": {
-      "ataque": 1.429,
-      "defensa": 1.857,
-      "partidos": 7,
-      "goles_favor_prom": 1.43,
-      "goles_contra_prom": 1.86
-    },
-    "ev_1": -0.266,
-    "ev_x": 0.061,
-    "ev_2": 0.11,
-    "ev_over25": -0.331,
-    "ev_under25": 0.257,
-    "fecha": "2026-08-11",
-    "hora": "19:30",
-    "liga_nombre": "Copa Libertadores"
-  },
-  {
-    "local": "CA Rosario Central",
-    "visitante": "SC Corinthians Paulista",
-    "liga": "CLB",
-    "xg_l": 1.38,
-    "xg_v": 1.711,
-    "fase": "eliminatoria",
-    "p1": 30.8,
-    "px": 26.9,
-    "p2": 42.3,
-    "over_1.5": 81.3,
-    "over_2.5": 59.6,
-    "over_3.5": 36.8,
-    "under_2.5": 40.4,
-    "btts_si": 61.3,
-    "btts_no": 38.7,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 12.7
-      },
-      {
-        "marcador": "0-1",
-        "prob": 10.9
-      },
-      {
-        "marcador": "1-2",
-        "prob": 9.1
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.25,
-      "defensa": 1.875,
-      "partidos": 8,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 1.88
-    },
-    "stats_v": {
-      "ataque": 1.188,
-      "defensa": 1.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.19,
-      "goles_contra_prom": 1.19
-    },
-    "ev_1": -0.153,
-    "ev_x": -0.042,
-    "ev_2": 0.112,
-    "ev_over25": 0.139,
-    "ev_under25": -0.245,
-    "fecha": "2026-08-11",
-    "hora": "19:00",
-    "liga_nombre": "Copa Libertadores"
-  },
-  {
-    "local": "Fluminense FC",
-    "visitante": "Independiente Rivadavia",
-    "liga": "CLB",
-    "xg_l": 1.337,
-    "xg_v": 0.48,
-    "fase": "eliminatoria",
-    "p1": 52.3,
-    "px": 33.1,
-    "p2": 14.6,
-    "over_1.5": 54.4,
-    "over_2.5": 27.2,
-    "over_3.5": 11.2,
-    "under_2.5": 72.8,
-    "btts_si": 28.2,
-    "btts_no": 71.8,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 25.0
-      },
-      {
-        "marcador": "0-0",
-        "prob": 22.2
-      },
-      {
-        "marcador": "2-0",
-        "prob": 13.2
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.438,
-      "defensa": 0.625,
-      "partidos": 16,
-      "goles_favor_prom": 1.44,
-      "goles_contra_prom": 0.62
-    },
-    "stats_v": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
-    },
-    "ev_1": -0.135,
-    "ev_x": 0.088,
-    "ev_2": -0.046,
-    "ev_over25": -0.252,
-    "ev_under25": 0.182,
-    "fecha": "2026-08-11",
-    "hora": "17:00",
-    "liga_nombre": "Copa Libertadores"
-  },
-  {
-    "local": "Cruzeiro EC",
-    "visitante": "CR Flamengo",
-    "liga": "CLB",
-    "xg_l": 1.172,
-    "xg_v": 1.351,
-    "fase": "eliminatoria",
-    "p1": 31.9,
-    "px": 29.6,
-    "p2": 38.4,
-    "over_1.5": 72.0,
-    "over_2.5": 46.3,
-    "over_3.5": 24.9,
-    "under_2.5": 53.7,
-    "btts_si": 51.1,
-    "btts_no": 48.9,
-    "marcador_prob": [
-      {
-        "marcador": "0-1",
-        "prob": 13.3
-      },
-      {
-        "marcador": "1-1",
-        "prob": 13.1
-      },
-      {
-        "marcador": "1-0",
-        "prob": 12.4
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.188,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 1.19,
-      "goles_contra_prom": 0.94
-    },
-    "stats_v": {
-      "ataque": 1.875,
-      "defensa": 1.062,
-      "partidos": 16,
-      "goles_favor_prom": 1.88,
-      "goles_contra_prom": 1.06
-    },
-    "ev_1": -0.076,
-    "ev_x": -0.02,
-    "ev_2": -0.002,
-    "ev_over25": -0.011,
-    "ev_under25": -0.062,
-    "fecha": "2026-08-12",
-    "hora": "19:30",
-    "liga_nombre": "Copa Libertadores"
-  },
-  {
-    "local": "Club Platense",
-    "visitante": "CD Coquimbo Unido",
-    "liga": "CLB",
-    "xg_l": 1.394,
-    "xg_v": 0.256,
-    "fase": "eliminatoria",
-    "p1": 58.9,
-    "px": 31.7,
-    "p2": 9.4,
-    "over_1.5": 49.7,
-    "over_2.5": 23.1,
-    "over_3.5": 8.6,
-    "under_2.5": 76.9,
-    "btts_si": 16.8,
-    "btts_no": 83.2,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 30.0
-      },
-      {
-        "marcador": "0-0",
-        "prob": 25.2
-      },
-      {
-        "marcador": "2-0",
-        "prob": 16.9
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.0,
-      "defensa": 1.0,
-      "partidos": 0
-    },
-    "stats_v": {
-      "ataque": 0.333,
-      "defensa": 1.5,
-      "partidos": 6,
-      "goles_favor_prom": 0.33,
-      "goles_contra_prom": 1.5
-    },
-    "ev_1": 0.021,
-    "ev_x": 0.002,
-    "ev_2": -0.116,
-    "ev_over25": -0.226,
-    "ev_under25": 0.148,
-    "fecha": "2026-08-12",
-    "hora": "17:00",
-    "liga_nombre": "Copa Libertadores"
-  },
-  {
-    "local": "SE Palmeiras",
-    "visitante": "Club Cerro Porteño",
-    "liga": "CLB",
-    "xg_l": 2.54,
-    "xg_v": 1.081,
-    "fase": "eliminatoria",
-    "p1": 63.4,
-    "px": 20.5,
-    "p2": 16.2,
-    "over_1.5": 87.2,
-    "over_2.5": 70.1,
-    "over_3.5": 49.8,
-    "under_2.5": 29.9,
-    "btts_si": 60.8,
-    "btts_no": 39.2,
-    "marcador_prob": [
-      {
-        "marcador": "2-0",
-        "prob": 11.2
-      },
-      {
-        "marcador": "1-0",
-        "prob": 11.1
-      },
-      {
-        "marcador": "2-1",
-        "prob": 10.0
-      }
-    ],
-    "stats_l": {
-      "ataque": 2.125,
-      "defensa": 0.938,
-      "partidos": 16,
-      "goles_favor_prom": 2.12,
-      "goles_contra_prom": 0.94
-    },
-    "stats_v": {
-      "ataque": 1.5,
-      "defensa": 1.286,
-      "partidos": 14,
-      "goles_favor_prom": 1.5,
-      "goles_contra_prom": 1.29
-    },
-    "ev_1": -0.124,
-    "ev_x": -0.002,
-    "ev_2": 0.036,
-    "ev_over25": 0.18,
-    "ev_under25": -0.25,
-    "fecha": "2026-08-12",
-    "hora": "17:00",
-    "liga_nombre": "Copa Libertadores"
-  },
-  {
-    "local": "CA Rosario Central",
-    "visitante": "SC Corinthians Paulista",
-    "liga": "CLB",
-    "xg_l": 1.38,
-    "xg_v": 1.711,
-    "fase": "eliminatoria",
-    "p1": 30.8,
-    "px": 26.9,
-    "p2": 42.3,
-    "over_1.5": 81.3,
-    "over_2.5": 59.6,
-    "over_3.5": 36.8,
-    "under_2.5": 40.4,
-    "btts_si": 61.3,
-    "btts_no": 38.7,
-    "marcador_prob": [
-      {
-        "marcador": "1-1",
-        "prob": 12.7
-      },
-      {
-        "marcador": "0-1",
-        "prob": 10.9
-      },
-      {
-        "marcador": "1-2",
-        "prob": 9.1
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.25,
-      "defensa": 1.875,
-      "partidos": 8,
-      "goles_favor_prom": 1.25,
-      "goles_contra_prom": 1.88
-    },
-    "stats_v": {
-      "ataque": 1.188,
-      "defensa": 1.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.19,
-      "goles_contra_prom": 1.19
-    },
-    "ev_1": -0.155,
-    "ev_x": -0.056,
-    "ev_2": 0.11,
-    "ev_over25": 0.167,
-    "ev_under25": -0.229,
-    "fecha": "2026-08-13",
-    "hora": "19:30",
-    "liga_nombre": "Copa Libertadores"
-  },
-  {
-    "local": "Mirassol FC",
-    "visitante": "LDU de Quito",
-    "liga": "CLB",
-    "xg_l": 1.271,
-    "xg_v": 1.198,
-    "fase": "eliminatoria",
-    "p1": 36.3,
-    "px": 30.5,
-    "p2": 33.2,
-    "over_1.5": 70.8,
-    "over_2.5": 44.7,
-    "over_3.5": 23.5,
-    "under_2.5": 55.3,
-    "btts_si": 50.0,
-    "btts_no": 50.0,
-    "marcador_prob": [
-      {
-        "marcador": "1-0",
-        "prob": 13.8
-      },
-      {
-        "marcador": "1-1",
-        "prob": 13.5
-      },
-      {
-        "marcador": "0-1",
-        "prob": 12.8
-      }
-    ],
-    "stats_l": {
-      "ataque": 1.562,
-      "defensa": 1.188,
-      "partidos": 16,
-      "goles_favor_prom": 1.56,
-      "goles_contra_prom": 1.19
     },
     "stats_v": {
       "ataque": 1.312,
-      "defensa": 0.875,
+      "defensa": 1.875,
       "partidos": 16,
       "goles_favor_prom": 1.31,
-      "goles_contra_prom": 0.88
+      "goles_contra_prom": 1.88
     },
-    "ev_1": -0.169,
-    "ev_x": 0.0,
-    "ev_2": 0.074,
-    "ev_over25": 0.018,
-    "ev_under25": -0.092,
-    "fecha": "2026-08-13",
-    "hora": "17:00",
-    "liga_nombre": "Copa Libertadores"
+    "ev_1": 0.171,
+    "ev_x": -0.033,
+    "ev_2": -0.253,
+    "ev_over25": -0.084,
+    "ev_under25": 0.031,
+    "fecha": "2026-07-23",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FC Zimbru Chişinău",
+    "visitante": "FC Noah",
+    "liga": "comp_408698",
+    "xg_l": 0.697,
+    "xg_v": 1.554,
+    "fase": "regular",
+    "p1": 17.9,
+    "px": 25.5,
+    "p2": 56.6,
+    "over_1.5": 65.8,
+    "over_2.5": 39.7,
+    "over_3.5": 19.0,
+    "under_2.5": 60.3,
+    "btts_si": 40.0,
+    "btts_no": 60.0,
+    "marcador_prob": [
+      {
+        "marcador": "0-1",
+        "prob": 16.6
+      },
+      {
+        "marcador": "0-2",
+        "prob": 12.6
+      },
+      {
+        "marcador": "1-1",
+        "prob": 11.2
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.5,
+      "defensa": 1.5,
+      "partidos": 2,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 1.5
+    },
+    "stats_v": {
+      "ataque": 1.5,
+      "defensa": 1.667,
+      "partidos": 12,
+      "goles_favor_prom": 1.5,
+      "goles_contra_prom": 1.67
+    },
+    "ev_1": -0.032,
+    "ev_x": -0.008,
+    "ev_2": -0.071,
+    "ev_over25": -0.171,
+    "ev_under25": 0.098,
+    "fecha": "2026-07-23",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "ML Vitebsk",
+    "visitante": "FK Sutjeska Nikšić",
+    "liga": "comp_408698",
+    "xg_l": 1.149,
+    "xg_v": 1.727,
+    "fase": "regular",
+    "p1": 26.4,
+    "px": 24.8,
+    "p2": 48.8,
+    "over_1.5": 78.4,
+    "over_2.5": 54.5,
+    "over_3.5": 31.4,
+    "under_2.5": 45.5,
+    "btts_si": 56.1,
+    "btts_no": 43.9,
+    "marcador_prob": [
+      {
+        "marcador": "1-1",
+        "prob": 11.3
+      },
+      {
+        "marcador": "1-2",
+        "prob": 10.2
+      },
+      {
+        "marcador": "0-1",
+        "prob": 9.7
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.5,
+      "defensa": 2.5,
+      "partidos": 2,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 2.5
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 2.75,
+      "partidos": 4,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 2.75
+    },
+    "ev_1": -0.314,
+    "ev_x": -0.03,
+    "ev_2": 0.238,
+    "ev_over25": 0.047,
+    "ev_under25": -0.12,
+    "fecha": "2026-07-23",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "FC Universitatea Cluj",
+    "visitante": "SK Brann",
+    "liga": "comp_408698",
+    "xg_l": 0.653,
+    "xg_v": 0.669,
+    "fase": "regular",
+    "p1": 29.7,
+    "px": 38.8,
+    "p2": 31.5,
+    "over_1.5": 37.6,
+    "over_2.5": 14.5,
+    "over_3.5": 4.5,
+    "under_2.5": 85.5,
+    "btts_si": 23.0,
+    "btts_no": 77.0,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 26.6
+      },
+      {
+        "marcador": "0-1",
+        "prob": 18.2
+      },
+      {
+        "marcador": "1-0",
+        "prob": 17.5
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.5,
+      "defensa": 0.5,
+      "partidos": 2,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 0.5
+    },
+    "stats_v": {
+      "ataque": 1.938,
+      "defensa": 1.562,
+      "partidos": 16,
+      "goles_favor_prom": 1.94,
+      "goles_contra_prom": 1.56
+    },
+    "ev_1": -0.085,
+    "ev_x": 0.075,
+    "ev_2": -0.102,
+    "ev_over25": -0.348,
+    "ev_under25": 0.287,
+    "fecha": "2026-07-23",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "BATE Borisov",
+    "visitante": "FC Sion",
+    "liga": "comp_408698",
+    "xg_l": 0.418,
+    "xg_v": 0.345,
+    "fase": "regular",
+    "p1": 25.9,
+    "px": 51.8,
+    "p2": 22.3,
+    "over_1.5": 17.6,
+    "over_2.5": 4.0,
+    "over_3.5": 0.8,
+    "under_2.5": 96.0,
+    "btts_si": 9.9,
+    "btts_no": 90.1,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 46.7
+      },
+      {
+        "marcador": "1-0",
+        "prob": 18.9
+      },
+      {
+        "marcador": "0-1",
+        "prob": 16.8
+      }
+    ],
+    "stats_l": {
+      "ataque": 0.5,
+      "defensa": 0.5,
+      "partidos": 2,
+      "goles_favor_prom": 0.5,
+      "goles_contra_prom": 0.5
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": 0.168,
+    "ev_x": 0.336,
+    "ev_2": -0.61,
+    "ev_over25": -0.566,
+    "ev_under25": 0.491,
+    "fecha": "2026-07-23",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Dinamo Tbilisi",
+    "visitante": "FK Žalgiris",
+    "liga": "comp_408698",
+    "xg_l": 0.836,
+    "xg_v": 0.863,
+    "fase": "regular",
+    "p1": 32.2,
+    "px": 34.2,
+    "p2": 33.6,
+    "over_1.5": 50.2,
+    "over_2.5": 24.3,
+    "over_3.5": 9.0,
+    "under_2.5": 75.7,
+    "btts_si": 32.5,
+    "btts_no": 67.5,
+    "marcador_prob": [
+      {
+        "marcador": "0-0",
+        "prob": 18.5
+      },
+      {
+        "marcador": "0-1",
+        "prob": 15.9
+      },
+      {
+        "marcador": "1-0",
+        "prob": 15.4
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 2,
+      "goles_favor_prom": 1.0,
+      "goles_contra_prom": 1.0
+    },
+    "stats_v": {
+      "ataque": 1.25,
+      "defensa": 1.0,
+      "partidos": 4,
+      "goles_favor_prom": 1.25,
+      "goles_contra_prom": 1.0
+    },
+    "ev_1": -0.224,
+    "ev_x": 0.039,
+    "ev_2": 0.066,
+    "ev_over25": -0.199,
+    "ev_under25": 0.124,
+    "fecha": "2026-07-23",
+    "hora": "12:00",
+    "liga_nombre": "UEFA Conference League"
+  },
+  {
+    "local": "Raków Częstochowa",
+    "visitante": "Valletta FC",
+    "liga": "comp_408698",
+    "xg_l": 1.313,
+    "xg_v": 0.444,
+    "fase": "regular",
+    "p1": 56.7,
+    "px": 29.3,
+    "p2": 14.1,
+    "over_1.5": 52.4,
+    "over_2.5": 25.8,
+    "over_3.5": 10.3,
+    "under_2.5": 74.2,
+    "btts_si": 26.1,
+    "btts_no": 73.9,
+    "marcador_prob": [
+      {
+        "marcador": "1-0",
+        "prob": 22.7
+      },
+      {
+        "marcador": "0-0",
+        "prob": 17.2
+      },
+      {
+        "marcador": "2-0",
+        "prob": 14.9
+      }
+    ],
+    "stats_l": {
+      "ataque": 1.571,
+      "defensa": 0.643,
+      "partidos": 14,
+      "goles_favor_prom": 1.57,
+      "goles_contra_prom": 0.64
+    },
+    "stats_v": {
+      "ataque": 1.0,
+      "defensa": 1.0,
+      "partidos": 0
+    },
+    "ev_1": -0.334,
+    "ev_x": 0.168,
+    "ev_2": 0.082,
+    "ev_over25": -0.409,
+    "ev_under25": 0.342,
+    "fecha": "2026-07-23",
+    "hora": "11:30",
+    "liga_nombre": "UEFA Conference League"
   }
 ]
