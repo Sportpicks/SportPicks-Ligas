@@ -126,10 +126,12 @@ def guardar_checkpoint(ruta, cp):
 def fila_historico(liga_id, liga_cfg, m, stats):
     fecha, hora = utc_a_peru(m['utc_date'])
     gl, gv = m['score']['home'], m['score']['away']
-    ov = (stats or {}).get('overview', {})
+    ov = (stats or {}).get('overview') or {}
 
     def par(campo):
-        d = ov.get(campo, {}).get('all', {})
+        # ov.get(campo, {}) NO alcanza cuando la clave existe pero vale
+        # None (json null) -- pasa con partidos sin stats completos.
+        d = (ov.get(campo) or {}).get('all') or {}
         return d.get('home'), d.get('away')
 
     xg_l, xg_v = par('expected_goals')
@@ -269,10 +271,30 @@ def correr_diario(client, ligas, ruta_prox):
 
 # ── Modo historico ───────────────────────────────────────────────────
 
-def descargar_historico_liga(client, liga_id, cfg, inicio_sesion, limite):
-    """Devuelve (filas, completa). completa=False => no checkpointear, reintentar entera la proxima sesion."""
+def _claves_existentes(ruta_hist, liga_id):
+    """(fecha, local, visitante) ya guardados para esta liga en historico.csv -- para resumir a mitad de liga sin duplicar."""
+    claves = set()
+    if not os.path.exists(ruta_hist):
+        return claves
+    with open(ruta_hist, encoding='utf-8') as f:
+        for row in csv.DictReader(f):
+            if row.get('liga') == liga_id:
+                claves.add((row.get('fecha'), row.get('local'), row.get('visitante')))
+    return claves
+
+
+def descargar_historico_liga(client, liga_id, cfg, inicio_sesion, limite, ruta_hist):
+    """
+    Descarga y GUARDA cada partido individualmente (append inmediato a
+    ruta_hist) a medida que se procesa -- si la sesion se corta a mitad
+    de liga, el progreso ya hecho queda en el CSV. La proxima sesion lee
+    _claves_existentes() y salta lo ya descargado en vez de reintentar
+    la liga entera.
+    Devuelve (nuevos_esta_sesion, completa). completa=False => faltan
+    partidos por bajar, seguira en la proxima sesion (no checkpointear).
+    """
     if not cfg.get('has_team_stats'):
-        return [], True
+        return 0, True
 
     hoy = hoy_peru()
     hace_365 = (hoy - timedelta(days=365)).isoformat()
@@ -283,19 +305,39 @@ def descargar_historico_liga(client, liga_id, cfg, inicio_sesion, limite):
         )
     except TheStatsAPIError as e:
         print(f'    ⚠️ matches: {e} — se reintentará en la próxima sesión')
-        return [], False
+        return 0, False
 
-    filas = []
-    for m in terminados:
+    ya = _claves_existentes(ruta_hist, liga_id)
+    nuevos = 0
+    ultimo_heartbeat = time.monotonic()
+
+    for i, m in enumerate(terminados, 1):
         if time.monotonic() - inicio_sesion > limite:
-            return filas, False
+            return nuevos, False
+
+        fecha, _hora = utc_a_peru(m['utc_date'])
+        clave = (fecha, m['home_team']['name'], m['away_team']['name'])
+        if clave in ya:
+            continue
+
         stats = None
         try:
             stats = client.get_match_stats(m['id'])
         except TheStatsAPIError:
             pass
-        filas.append(fila_historico(liga_id, cfg, m, stats))
-    return filas, True
+        fila = fila_historico(liga_id, cfg, m, stats)
+        append_csv(ruta_hist, [fila], COLUMNAS_HIST)
+        ya.add(clave)
+        nuevos += 1
+
+        # Heartbeat: sin esto, una liga sin 429 no imprime nada durante
+        # toda su descarga (10-25+ min) y algo en el entorno mata
+        # procesos en background que quedan callados demasiado tiempo.
+        if time.monotonic() - ultimo_heartbeat > 30:
+            print(f'    … {i}/{len(terminados)} partidos revisados ({nuevos} nuevos guardados)', flush=True)
+            ultimo_heartbeat = time.monotonic()
+
+    return nuevos, True
 
 
 def correr_historico(client, ligas, ruta_hist, session_minutos, ruta_checkpoint):
@@ -335,6 +377,8 @@ def correr_historico(client, ligas, ruta_hist, session_minutos, ruta_checkpoint)
     limite = session_minutos * 60
     procesadas_sesion = 0
 
+    nuevos_sesion_total = 0
+
     for liga_id, cfg in pendientes.items():
         if time.monotonic() - inicio_sesion > limite:
             print(f'\n⏰ Límite de sesión ({session_minutos} min) alcanzado — deteniendo. Checkpoint guardado, reanuda con el mismo comando.')
@@ -342,24 +386,26 @@ def correr_historico(client, ligas, ruta_hist, session_minutos, ruta_checkpoint)
 
         print(f'\n  {cfg["nombre"]} ({liga_id}):')
         llamadas_antes = client.total_requests
-        filas, completa = descargar_historico_liga(client, liga_id, cfg, inicio_sesion, limite)
+        nuevos, completa = descargar_historico_liga(client, liga_id, cfg, inicio_sesion, limite, ruta_hist)
+        llamadas_liga = client.total_requests - llamadas_antes
+        nuevos_sesion_total += nuevos
 
         if not completa:
-            print('    ⏸️ liga incompleta (se cortó el tiempo de sesión a mitad de liga) — se reintentará entera en la próxima sesión')
+            print(f'    ⏸️ liga incompleta ({nuevos} partidos nuevos guardados esta sesión, ya en historico.csv) '
+                  f'— continúa exactamente donde quedó en la próxima sesión, sin duplicar')
             break
 
-        append_csv(ruta_hist, filas, COLUMNAS_HIST)
-        llamadas_liga = client.total_requests - llamadas_antes
+        total_liga = len(_claves_existentes(ruta_hist, liga_id))
         completadas[liga_id] = {
-            'partidos': len(filas),
+            'partidos': total_liga,
             'llamadas': llamadas_liga,
             'fecha': datetime.now(PERU_TZ).isoformat(),
         }
         guardar_checkpoint(ruta_checkpoint, cp)
         procesadas_sesion += 1
-        print(f'    ✅ {len(filas)} partidos con stats ({llamadas_liga} llamadas) → checkpoint guardado')
+        print(f'    ✅ {total_liga} partidos con stats ({llamadas_liga} llamadas esta sesión) → checkpoint guardado')
 
-    print(f'\n✅ Sesión terminada: {procesadas_sesion} liga(s) nueva(s) completada(s).')
+    print(f'\n✅ Sesión terminada: {procesadas_sesion} liga(s) nueva(s) completada(s), {nuevos_sesion_total} partidos nuevos guardados en total.')
     print(f'   Total acumulado: {len(completadas)}/{len(ligas)} ligas en checkpoint.')
     if len(completadas) < len(ligas):
         print(f'   Corré el mismo comando de nuevo para continuar con las {len(ligas) - len(completadas)} ligas restantes.')
