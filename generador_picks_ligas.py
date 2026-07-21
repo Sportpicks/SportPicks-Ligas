@@ -278,13 +278,15 @@ def seleccionar_premium(todos, mercados_excluidos):
 
     return [mejor] if mejor else []
 
-def main(fecha=None, dias=3):
+def main(fecha=None, dias=3, solo_hoy=False):
     if fecha is None:
         fecha = hoy_peru()
 
     print(f'\n{"="*60}')
     print(f'  GENERADOR DE PICKS — SportPicks Ligas')
     print(f'  Fecha: {fecha}')
+    if solo_hoy:
+        print(f'  Modo: SOLO HOY (excluye partidos de otros días)')
     print(f'{"="*60}')
 
     # Obtener predicciones solo para hoy y mañana
@@ -345,6 +347,15 @@ def main(fecha=None, dias=3):
 
     print(f'\n✅ Total candidatos: {len(todos)}')
 
+    # Modo --solo-hoy: descarta candidatos de otros días antes de seleccionar
+    if solo_hoy:
+        todos_multi = todos
+        todos = [pk for pk in todos if pk.get('fecha', '') == fecha]
+        print(f'   Solo-hoy: {len(todos)}/{len(todos_multi)} candidatos son de {fecha}')
+        if not todos:
+            print(f'❌ Sin candidatos para {fecha} en modo solo-hoy')
+            return
+
     # Seleccionar picks
     publicos, premium = seleccionar_picks(todos)
 
@@ -352,18 +363,23 @@ def main(fecha=None, dias=3):
     print(f'\n📋 PANEL PÚBLICO ({len(publicos)} picks):')
     for i, pk in enumerate(publicos, 1):
         liga_emoji = LIGAS.get(pk['liga'], {}).get('emoji', '⚽')
-        print(f'   #{i} {liga_emoji} [{pk["categoria"]}] {pk["mercado"]}')
+        pk_fecha = pk.get('fecha', '')
+        etiqueta_fecha = f'HOY ({pk_fecha})' if pk_fecha == fecha else pk_fecha
+        print(f'   #{i} {liga_emoji} [{pk["categoria"]}] {pk["mercado"]} — {etiqueta_fecha}')
         print(f'      {pk["partido"]} | {pk["prob"]:.1f}% | @{pk["cuota"]:.2f} EV:{pk["ev"]:+.1%}')
 
     print(f'\n💎 PANEL PREMIUM ({len(premium)} picks):')
     for pk in premium:
-        print(f'   #1 {pk["emoji"]} {pk["mercado"]}')
+        pk_fecha = pk.get('fecha', '')
+        etiqueta_fecha = f'HOY ({pk_fecha})' if pk_fecha == fecha else pk_fecha
+        print(f'   #1 {pk["emoji"]} {pk["mercado"]} — {etiqueta_fecha}')
         print(f'      {pk["partido"]} | {pk["prob"]:.1f}% | @{pk["cuota"]:.2f}')
 
     # Guardar picks del día
     picks_data = {
         'fecha': fecha,
         'generado': datetime.now(PERU_TZ).isoformat(),
+        'solo_hoy': solo_hoy,
         'publicos': publicos,
         'premium': premium,
         'todos_candidatos': todos,
@@ -374,4 +390,5 @@ def main(fecha=None, dias=3):
     print(f'\n✅ Picks guardados en Data/picks_hoy.json')
 
 if __name__ == '__main__':
-    main()
+    solo_hoy_flag = '--solo-hoy' in sys.argv
+    main(solo_hoy=solo_hoy_flag)
