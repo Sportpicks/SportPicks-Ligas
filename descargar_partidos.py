@@ -61,6 +61,12 @@ COLUMNAS_HIST = [
     'xg_l', 'xg_v', 'corners_l', 'corners_v', 'shots_l', 'shots_v',
     'shots_on_target_l', 'shots_on_target_v', 'fouls_l', 'fouls_v',
     'yellow_cards_l', 'yellow_cards_v',
+    # Intento de captura de tarjetas rojas -- no confirmado si TheStatsAPI
+    # expone este campo bajo 'overview' (no hay forma de verificarlo sin
+    # acceso a la API en vivo). par('red_cards') devuelve '' si la clave no
+    # existe, así que agregar esto es inofensivo si el campo no está --
+    # sirve para detectar en la próxima corrida real si el dato existe.
+    'red_cards_l', 'red_cards_v',
 ]
 
 COLUMNAS_PROX = [
@@ -76,6 +82,12 @@ COLUMNAS_PROX = [
     'shots_linea', 'shots_over_precio',
     'sot_linea', 'sot_over_precio',
     'cards_linea', 'cards_over_precio',
+    # Faltas -- clave de mercado 'total_fouls' es una suposición por
+    # analogía con 'total_cards' (mismo proveedor Bet365, mismo patrón de
+    # nomenclatura para mercados totales del partido); no confirmada con
+    # una respuesta real de /odds. Si la clave real es otra, esto devuelve
+    # vacío consistentemente (no rompe nada) hasta corregirla.
+    'fouls_linea', 'fouls_over_precio',
 ]
 
 BOOKMAKERS_PREFERIDOS = ('Pinnacle', 'Bet365')
@@ -148,6 +160,7 @@ def fila_historico(liga_id, liga_cfg, m, stats):
     sot_l, sot_v = par('shots_on_target')
     fo_l, fo_v = par('fouls')
     yc_l, yc_v = par('yellow_cards')
+    rc_l, rc_v = par('red_cards')  # exploratorio -- ver nota en COLUMNAS_HIST
 
     return {
         'liga': liga_id, 'liga_nombre': liga_cfg['nombre'],
@@ -165,6 +178,7 @@ def fila_historico(liga_id, liga_cfg, m, stats):
         'shots_on_target_l': _num(sot_l), 'shots_on_target_v': _num(sot_v),
         'fouls_l': _num(fo_l), 'fouls_v': _num(fo_v),
         'yellow_cards_l': _num(yc_l), 'yellow_cards_v': _num(yc_v),
+        'red_cards_l': _num(rc_l), 'red_cards_v': _num(rc_v),
     }
 
 
@@ -240,6 +254,7 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
     shots_linea, shots_precio = _buscar_precio_linea_dinamica(bookmakers, 'match_shots', 'over')
     sot_linea, sot_precio = _buscar_precio_linea_dinamica(bookmakers, 'match_shots_on_target', 'over')
     cards_linea, cards_precio = _buscar_precio_linea_dinamica(bookmakers, 'total_cards', 'over')
+    fouls_linea, fouls_precio = _buscar_precio_linea_dinamica(bookmakers, 'total_fouls', 'over')
 
     return {
         'liga': liga_id, 'liga_nombre': liga_cfg['nombre'],
@@ -259,6 +274,8 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
         'sot_over_precio': sot_precio,
         'cards_linea': cards_linea if cards_linea is not None else '',
         'cards_over_precio': cards_precio,
+        'fouls_linea': fouls_linea if fouls_linea is not None else '',
+        'fouls_over_precio': fouls_precio,
         'over_2.5': _buscar_precio(bookmakers, 'total_goals', '2.5', 'over'),
         'under_2.5': _buscar_precio(bookmakers, 'total_goals', '2.5', 'under'),
         'btts_si': _buscar_precio(bookmakers, 'btts', 'yes'),

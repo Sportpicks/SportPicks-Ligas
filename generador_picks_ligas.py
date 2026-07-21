@@ -30,6 +30,17 @@ def hoy_peru():
 # ineficiencia real explotable.
 DIVERGENCIA_MAX_PP = 30
 
+# Zona intermedia (20-30pp): en vez de todo-o-nada, se blendea la prob. del
+# modelo con la implícita de mercado en vez de descartar directo. Debajo de
+# BLEND_MIN_PP se confía 100% en el modelo (la brecha entra en el ruido
+# normal de que el modelo vea algo que el mercado aún no descontó). Encima
+# de DIVERGENCIA_MAX_PP se sigue descartando entero (esa magnitud es
+# evidencia de input roto, no de señal real — ver nota arriba). Peso de
+# mercado modesto (30%): el objetivo es amortiguar output claramente
+# desalineado, no reemplazar el modelo por el mercado.
+DIVERGENCIA_BLEND_MIN_PP = 20
+PESO_MERCADO_EN_BLEND = 0.30
+
 def _prob_mercado_devigged(cuota_pick, cuotas_grupo):
     """
     Probabilidad "justa" que implica el mercado, normalizando el overround
@@ -64,15 +75,27 @@ def generar_candidatos(pred, cuotas):
     def add(mercado, prob, cuota, emoji, categoria, descripcion, cuotas_grupo=None):
         if cuota < 1.30 or prob < 50:
             return
+        prob_efectiva = prob
+        blend_aplicado = False
         if cuotas_grupo:
             prob_mercado = _prob_mercado_devigged(cuota, cuotas_grupo)
-            if prob_mercado is not None and abs(prob - prob_mercado) > DIVERGENCIA_MAX_PP:
-                descartados_divergencia.append(
-                    f'{mercado} ({partido}): modelo {prob:.1f}% vs mercado {prob_mercado:.1f}% '
-                    f'(brecha {abs(prob-prob_mercado):.1f}pp)'
-                )
-                return
-        ev = round((prob/100) - (1/cuota), 3)
+            if prob_mercado is not None:
+                brecha = abs(prob - prob_mercado)
+                if brecha > DIVERGENCIA_MAX_PP:
+                    descartados_divergencia.append(
+                        f'{mercado} ({partido}): modelo {prob:.1f}% vs mercado {prob_mercado:.1f}% '
+                        f'(brecha {brecha:.1f}pp)'
+                    )
+                    return
+                if brecha > DIVERGENCIA_BLEND_MIN_PP:
+                    # Zona 20-30pp: blend en vez de confiar 100% en el modelo
+                    # o descartar entero (ver nota en DIVERGENCIA_BLEND_MIN_PP).
+                    prob_efectiva = round(
+                        prob * (1 - PESO_MERCADO_EN_BLEND) + prob_mercado * PESO_MERCADO_EN_BLEND, 1)
+                    blend_aplicado = True
+        if prob_efectiva < 50:
+            return  # el blend puede bajar la prob por debajo del piso público
+        ev = round((prob_efectiva/100) - (1/cuota), 3)
         candidatos.append({
             'partido': partido,
             'local': local,
@@ -82,7 +105,9 @@ def generar_candidatos(pred, cuotas):
             'fecha': pred.get('fecha', ''),
             'hora': pred.get('hora', ''),
             'mercado': mercado,
-            'prob': prob,
+            'prob': prob_efectiva,
+            'prob_modelo': prob,
+            'blend_aplicado': blend_aplicado,
             'cuota': cuota,
             'cuota_display': cuota,
             'ev': ev,
@@ -150,6 +175,15 @@ def generar_candidatos(pred, cuotas):
         add(f'Más de {linea} tiros al arco', pred['sot_over_real'], cuotas['sot_over_precio'], '🎯', 'Tiros',
             f'Tiros al arco esperados: {pred.get("sot_l_esperado",0):.1f} + {pred.get("sot_v_esperado",0):.1f}',
             cuotas_grupo=[cuotas.get('sot_over_precio', 0)])
+    # Faltas — DORMIDO igual que tarjetas/tiros: la clave de mercado
+    # 'total_fouls' en descargar_partidos.py es una suposición sin
+    # confirmar; hasta que la próxima corrida en vivo confirme (o corrija)
+    # esa clave, 'fouls_over_precio' llega vacío y este bloque nunca dispara.
+    if cuotas.get('fouls_over_precio', 0) > 1.30 and pred.get('fouls_over_real') is not None:
+        linea = pred['fouls_linea_real']
+        add(f'Más de {linea} faltas', pred['fouls_over_real'], cuotas['fouls_over_precio'], '🟥', 'Faltas',
+            f'Faltas esperadas: {pred.get("fouls_l_esperado",0):.1f} + {pred.get("fouls_v_esperado",0):.1f}',
+            cuotas_grupo=[cuotas.get('fouls_over_precio', 0)])
 
     # ── BTTS ──
     btts_si = pred.get('btts_si', 0)
@@ -377,6 +411,7 @@ def main(fecha=None, dias=3, solo_hoy=False):
             'cards_over_precio': 0,   # dormido — ver nota en generar_candidatos
             'shots_over_precio': 0,
             'sot_over_precio': 0,
+            'fouls_over_precio': 0,
         }
 
         # Buscar en df_prox si hay cuotas
@@ -399,6 +434,8 @@ def main(fecha=None, dias=3, solo_hoy=False):
                     'shots_over_precio': row.get('shots_over_precio', 0),
                     'sot_linea': row.get('sot_linea', ''),
                     'sot_over_precio': row.get('sot_over_precio', 0),
+                    'fouls_linea': row.get('fouls_linea', ''),
+                    'fouls_over_precio': row.get('fouls_over_precio', 0),
                 }
 
         candidatos = generar_candidatos(pred, cuotas)

@@ -29,6 +29,15 @@ COLS_PRED = [
     'cuota_1', 'cuota_x', 'cuota_2',
     'cuota_over_25', 'cuota_under_25',
     'generado_en',
+    # Closing Line Value: cuota "de cierre" (aproximada, ver
+    # registrar_cierre_desde_proximos) vs la cuota de publicación de arriba.
+    # Señal de calidad de modelo independiente del resultado final del
+    # partido — si el mercado se mueve a favor del pick (cuota baja) después
+    # de publicado, es evidencia de que el modelo vio algo real antes que
+    # el mercado terminara de descontarlo.
+    'cuota_1_cierre', 'cuota_x_cierre', 'cuota_2_cierre',
+    'cuota_over_25_cierre', 'cuota_under_25_cierre',
+    'clv_1x2_pct', 'cierre_registrado_en',
 ]
 
 # ── Columnas del log de resultados ──
@@ -42,9 +51,18 @@ COLS_RESULT = [
 ]
 
 def cargar_log(path, cols):
-    """Carga o crea un log CSV"""
+    """
+    Carga o crea un log CSV. Si el CSV existente es de una versión anterior
+    del schema (ej. antes de agregar las columnas de CLV), agrega las
+    columnas faltantes como NaN en vez de romper -- migración silenciosa
+    hacia adelante sin perder filas existentes.
+    """
     if os.path.exists(path):
-        return pd.read_csv(path)
+        df = pd.read_csv(path)
+        for c in cols:
+            if c not in df.columns:
+                df[c] = pd.NA
+        return df
     return pd.DataFrame(columns=cols)
 
 def guardar_log(df, path):
@@ -299,6 +317,83 @@ def sincronizar_resultados(dias_atras=4):
     print(f'\n✅ Sync resultados: {revisados} finalizados revisados, {registrados} nuevos en {LOG_RESULT}')
     return registrados
 
+def registrar_cierre_desde_proximos():
+    """
+    Snapshot de cuota "de cierre" para partidos de HOY que ya tienen una
+    predicción registrada (de un día anterior) pero todavía no un cierre.
+    Usa la cuota más reciente de proximos.csv, refrescada por
+    descargar_partidos.py --diario que corre justo antes en el pipeline
+    diario -- es la cuota más cercana al kickoff disponible con la
+    arquitectura actual de snapshots diarios (no hay polling en tiempo
+    real de odds). Es una APROXIMACIÓN de Closing Line Value, no el cierre
+    exacto de ningún bookmaker: sirve como proxy de si el mercado se movió
+    a favor o en contra del pick entre publicación y el día del partido.
+    """
+    df_pred = cargar_log(LOG_PRED, COLS_PRED)
+    if len(df_pred) == 0:
+        print('⚠️ Sin predicciones registradas aún')
+        return 0
+    try:
+        df_prox = pd.read_csv(os.path.join(RAIZ, 'Data', 'partidos', 'proximos.csv'))
+    except FileNotFoundError:
+        print('⚠️ Sin Data/partidos/proximos.csv -- corré descargar_partidos.py --diario primero')
+        return 0
+
+    hoy = datetime.now(PERU_TZ).strftime('%Y-%m-%d')
+    sin_cierre = df_pred['cuota_1_cierre'].isna() if 'cuota_1_cierre' in df_pred else pd.Series(True, index=df_pred.index)
+    pendientes = df_pred[(df_pred['fecha'] == hoy) & sin_cierre]
+    actualizados = 0
+
+    for idx, row in pendientes.iterrows():
+        mask = ((df_prox['local'] == row['local']) &
+                (df_prox['visitante'] == row['visitante']) &
+                (df_prox['fecha'] == row['fecha']))
+        if not mask.any():
+            continue
+        prox = df_prox[mask].iloc[0]
+        c1c = prox.get('c1', 0) or None
+        cxc = prox.get('cx', 0) or None
+        c2c = prox.get('c2', 0) or None
+        df_pred.loc[idx, 'cuota_1_cierre'] = c1c
+        df_pred.loc[idx, 'cuota_x_cierre'] = cxc
+        df_pred.loc[idx, 'cuota_2_cierre'] = c2c
+        df_pred.loc[idx, 'cuota_over_25_cierre'] = prox.get('over_2.5', 0) or None
+        df_pred.loc[idx, 'cuota_under_25_cierre'] = prox.get('under_2.5', 0) or None
+
+        c1_pub = row.get('cuota_1', 0)
+        if c1_pub and c1c:
+            # CLV positivo = la cuota bajó (mercado se movió a favor del
+            # pick) entre publicación y cierre -- señal de que el modelo
+            # capturó algo real antes de que el mercado terminara de
+            # ajustarse. Negativo = el mercado se movió en contra.
+            df_pred.loc[idx, 'clv_1x2_pct'] = round((float(c1_pub) / float(c1c) - 1) * 100, 2)
+        df_pred.loc[idx, 'cierre_registrado_en'] = datetime.now(PERU_TZ).isoformat()
+        actualizados += 1
+
+    if actualizados:
+        guardar_log(df_pred, LOG_PRED)
+    print(f'✅ CLV: {actualizados} cierre(s) registrado(s) para partidos de hoy')
+    return actualizados
+
+def calcular_clv_resumen():
+    """
+    Resumen de Closing Line Value acumulado -- CLV promedio positivo y
+    consistente en el tiempo es la señal estándar de la industria de que un
+    modelo tiene edge real, independiente de si los resultados puntuales
+    salieron a favor o en contra (varianza de corto plazo).
+    """
+    df_pred = cargar_log(LOG_PRED, COLS_PRED)
+    con_clv = df_pred.dropna(subset=['clv_1x2_pct']) if 'clv_1x2_pct' in df_pred else df_pred.iloc[0:0]
+    if len(con_clv) == 0:
+        print('⚠️ Sin datos de CLV todavía -- corré registrar-cierre unos días')
+        return {}
+    clv_prom = float(con_clv['clv_1x2_pct'].mean())
+    pct_positivo = float((con_clv['clv_1x2_pct'] > 0).mean() * 100)
+    print(f'\n📈 CLV RESUMEN ({len(con_clv)} picks con cierre registrado)')
+    print(f'   CLV promedio: {clv_prom:+.2f}%')
+    print(f'   % de picks con CLV positivo: {pct_positivo:.1f}%')
+    return {'n': len(con_clv), 'clv_promedio_pct': round(clv_prom, 2), 'pct_clv_positivo': round(pct_positivo, 1)}
+
 def auto_registrar_predicciones(fecha=None):
     """
     Registra automáticamente las predicciones del día en el log
@@ -372,6 +467,10 @@ if __name__ == '__main__':
             sincronizar_resultados(dias_atras=dias)
         elif cmd == 'calibrar':
             calcular_mse()
+        elif cmd == 'registrar-cierre':
+            registrar_cierre_desde_proximos()
+        elif cmd == 'clv-resumen':
+            calcular_clv_resumen()
         elif cmd == 'resumen':
             mostrar_resumen()
         elif cmd == 'resultado':

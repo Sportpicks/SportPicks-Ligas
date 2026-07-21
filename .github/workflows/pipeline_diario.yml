@@ -26,6 +26,10 @@ jobs:
       - name: Descargar próximos partidos y cuotas (modo diario)
         run: python descargar_partidos.py --diario
 
+      - name: Registrar cierre de cuotas (CLV) para partidos de hoy
+        run: python logger_predicciones.py registrar-cierre
+        continue-on-error: true
+
       - name: Generar picks (solo hoy)
         run: python generador_picks_ligas.py --solo-hoy
 

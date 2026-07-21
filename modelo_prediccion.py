@@ -124,6 +124,79 @@ SOS_FACTOR_MAX = 1.18
 # ninguno de los dos: Brier -0.0086, MSE goles -0.2339, acierto 1X2 +3.77pp.
 SHRINKAGE_K = 10
 
+# ── Home advantage (factor_local) calculado por liga ──
+# Antes: factor_local=1.10 fijo para las 15 ligas. Ventaja de localía real
+# varía fuertemente por liga (Ecuador ~1.0-1.1 vs Brasileirao/CAF ~1.2+ en
+# el propio historico.csv). Se estima como sqrt(media_goles_local/
+# media_goles_visitante) de la liga (ver derivación en el docstring de
+# calcular_factor_local_liga) y se aplica solo si la liga ya acumuló
+# suficiente muestra propia; si no, cae al default fijo 1.10.
+# Calibrado por retrodicción (backtest_factor_local.py, n=900, MIN=60):
+# Brier -0.0046, acierto 1X2 +0.22pp vs 1.10 fijo para las 15 ligas — mejora
+# consistente aunque modesta, sin casos donde empeore.
+FACTOR_LOCAL_MIN = 0.95
+FACTOR_LOCAL_MAX = 1.25
+FACTOR_LOCAL_MIN_PARTIDOS = 60
+FACTOR_LOCAL_DEFAULT = 1.10
+
+def calcular_factor_local_liga(df_historico, liga_key, default=FACTOR_LOCAL_DEFAULT):
+    """
+    Ventaja de localía específica de la liga, derivada de la proporción
+    goles_local/goles_visitante observada en toda la liga (no por equipo,
+    para tener muestra grande y estable). Como en promedio ataque/defensa
+    de local y visitante se cancelan entre sí en la fórmula de xG, la
+    proporción de goles agregada aproxima factor_local^2 — de ahí la raíz
+    cuadrada. Con muestra chica (< FACTOR_LOCAL_MIN_PARTIDOS) no se confía
+    en el estimador propio y se usa el default fijo.
+    """
+    df_liga = df_historico[df_historico['liga'] == liga_key]
+    try:
+        gl = pd.to_numeric(df_liga['goles_l'], errors='coerce').dropna()
+        gv = pd.to_numeric(df_liga['goles_v'], errors='coerce').dropna()
+        n = min(len(gl), len(gv))
+        if n < FACTOR_LOCAL_MIN_PARTIDOS or gv.mean() <= 0:
+            return default
+        factor = (gl.mean() / gv.mean()) ** 0.5
+        return round(min(max(factor, FACTOR_LOCAL_MIN), FACTOR_LOCAL_MAX), 3)
+    except Exception:
+        return default
+
+# ── Calibración dinámica por liga (cierra el loop de logger_predicciones.py) ──
+# calcular_mse() escribe Data/calibracion.json con un factor_correccion
+# (media_real/media_pred de goles) recalculado cada vez que corre el
+# pipeline diario, pero hasta ahora nadie lo leía de vuelta — quedaba
+# huérfano. CALIBRACION_MIN_PARTIDOS evita confiar en una muestra chica
+# (ej. 3 partidos): con eso, el factor es ruido, no señal.
+CALIBRACION_MIN_PARTIDOS = 30
+_CALIBRACION_CACHE = None
+
+def _cargar_calibracion():
+    global _CALIBRACION_CACHE
+    if _CALIBRACION_CACHE is None:
+        ruta = os.path.join(RAIZ, 'Data', 'calibracion.json')
+        try:
+            with open(ruta, encoding='utf-8') as f:
+                _CALIBRACION_CACHE = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            _CALIBRACION_CACHE = {}
+    return _CALIBRACION_CACHE
+
+def factor_escala_dinamico(liga_key, factor_estatico_default):
+    """
+    Prioridad de corrección de xG por liga:
+    1. calibracion.json (factor_correccion recalculado a diario por
+       logger_predicciones.py calcular_mse()) SI la liga ya acumuló al
+       menos CALIBRACION_MIN_PARTIDOS resultados reales.
+    2. factor_escala_liga hardcodeado en predecir_partido (calibrado
+       manualmente con una muestra histórica más grande, antes de tener
+       el logger corriendo en producción).
+    3. 1.0 (neutro) si ninguna de las dos aplica.
+    """
+    calib = _cargar_calibracion().get(liga_key)
+    if calib and calib.get('partidos', 0) >= CALIBRACION_MIN_PARTIDOS:
+        return calib['factor_correccion']
+    return factor_estatico_default
+
 def aplicar_shrinkage(stats, media_liga, k=None):
     """
     Regresión bayesiana de ataque/defensa hacia la media de liga, ponderada
@@ -387,7 +460,7 @@ def monte_carlo_partido(xg_l, xg_v, n=10000, shrinkage=0.10):
 
 def predecir_partido(local, visitante, df_historico, liga_key,
                      cuotas=None, fase='regular', cache_sos=None, cache_corners=None,
-                     cache_cards=None, cache_shots=None, cache_sot=None):
+                     cache_cards=None, cache_shots=None, cache_sot=None, cache_fouls=None):
     """Genera predicción completa para un partido"""
     # Media de goles de la liga (promedio por EQUIPO, no total del partido)
     # Medias por liga — representan goles promedio POR EQUIPO
@@ -433,16 +506,22 @@ def predecir_partido(local, visitante, df_historico, liga_key,
     stats_l = calcular_stats_equipo_sos(df_historico, local, media_goles, cache=cache_sos)
     stats_v = calcular_stats_equipo_sos(df_historico, visitante, media_goles, cache=cache_sos)
 
+    # Home advantage específico de la liga (ver calcular_factor_local_liga)
+    factor_local_liga = calcular_factor_local_liga(df_historico, liga_key)
+
     # xG Dixon-Coles
     xg_l, xg_v = dixon_coles_xg(
         stats_l['ataque'], stats_l['defensa'],
         stats_v['ataque'], stats_v['defensa'],
         media_goles_liga=media_goles,
+        factor_local=factor_local_liga,
         fase=fase
     )
     # Aplicar factor de escala por liga para corregir subestimación de goles
-    # Se aplica DESPUÉS de calcular probs 1X2 para no afectar calibración
-    escala = factor_escala_liga.get(liga_key, 1.0)
+    # Se aplica DESPUÉS de calcular probs 1X2 para no afectar calibración.
+    # factor_escala_dinamico prioriza calibracion.json (recalculado a diario)
+    # sobre el diccionario hardcodeado, si ya hay muestra suficiente.
+    escala = factor_escala_dinamico(liga_key, factor_escala_liga.get(liga_key, 1.0))
     xg_l_scaled = round(xg_l * escala, 3)
     xg_v_scaled = round(xg_v * escala, 3)
 
@@ -510,10 +589,12 @@ def predecir_partido(local, visitante, df_historico, liga_key,
     linea_cards_real = _linea_valida((cuotas or {}).get('cards_linea'))
     linea_shots_real = _linea_valida((cuotas or {}).get('shots_linea'))
     linea_sot_real = _linea_valida((cuotas or {}).get('sot_linea'))
+    linea_fouls_real = _linea_valida((cuotas or {}).get('fouls_linea'))
 
     lineas_cards = tuple(sorted({4.5} | ({linea_cards_real} if linea_cards_real else set())))
     lineas_shots = tuple(sorted({24.5} | ({linea_shots_real} if linea_shots_real else set())))
     lineas_sot = tuple(sorted({8.5} | ({linea_sot_real} if linea_sot_real else set())))
+    lineas_fouls = tuple(sorted({22.5} | ({linea_fouls_real} if linea_fouls_real else set())))
 
     esp_cards_l, esp_cards_v, probs_cards = predecir_stat_generica(
         df_historico, local, visitante, liga_key, 'yellow_cards_l', 'yellow_cards_v',
@@ -527,6 +608,15 @@ def predecir_partido(local, visitante, df_historico, liga_key,
         df_historico, local, visitante, liga_key, 'shots_on_target_l', 'shots_on_target_v',
         media_default=4.25, piso=1.0, techo=9.0, factor_local=1.10,
         cache=cache_sot, lineas=lineas_sot)
+    # Faltas — misma infraestructura SoS+shrinkage. factor_local=1.0: a
+    # diferencia de goles/tiros, la data agregada (historico.csv) no muestra
+    # sesgo local/visitante relevante en faltas (11.93 vs 11.92 promedio).
+    # Validado por retrodicción (backtest_stat_generica.py STAT=fouls,
+    # n=775, línea 22.5): Brier -0.0101, MAE -0.188 vs promedio simple.
+    esp_fouls_l, esp_fouls_v, probs_fouls = predecir_stat_generica(
+        df_historico, local, visitante, liga_key, 'fouls_l', 'fouls_v',
+        media_default=11.75, piso=4.0, techo=22.0, factor_local=1.0,
+        cache=cache_fouls, lineas=lineas_fouls)
 
     resultado = {
         'local': local,
@@ -555,6 +645,12 @@ def predecir_partido(local, visitante, df_historico, liga_key,
         'sot_over_8.5': probs_sot[8.5],
         'sot_linea_real': linea_sot_real,
         'sot_over_real': probs_sot.get(float(linea_sot_real)) if linea_sot_real else None,
+        'fouls_l_esperado': esp_fouls_l,
+        'fouls_v_esperado': esp_fouls_v,
+        'fouls_over_22.5': probs_fouls[22.5],
+        'fouls_linea_real': linea_fouls_real,
+        'fouls_over_real': probs_fouls.get(float(linea_fouls_real)) if linea_fouls_real else None,
+        'factor_local_liga': factor_local_liga,
         'stats_l': stats_l,
         'stats_v': stats_v,
     }
@@ -583,6 +679,8 @@ def predecir_partido(local, visitante, df_historico, liga_key,
             resultado['ev_shots_over_real'] = round((resultado['shots_over_real']/100) - (1/cuotas['shots_over_precio']), 3)
         if cuotas.get('sot_over_precio', 0) > 0 and resultado.get('sot_over_real') is not None:
             resultado['ev_sot_over_real'] = round((resultado['sot_over_real']/100) - (1/cuotas['sot_over_precio']), 3)
+        if cuotas.get('fouls_over_precio', 0) > 0 and resultado.get('fouls_over_real') is not None:
+            resultado['ev_fouls_over_real'] = round((resultado['fouls_over_real']/100) - (1/cuotas['fouls_over_precio']), 3)
 
     return resultado
 
@@ -612,6 +710,7 @@ def predecir_jornada(fecha=None):
     cache_cards = {}
     cache_shots = {}
     cache_sot = {}
+    cache_fouls = {}
 
     for _, p in partidos_hoy.iterrows():
         local = p['local']
@@ -634,6 +733,8 @@ def predecir_jornada(fecha=None):
             'shots_over_precio': p.get('shots_over_precio', 0),
             'sot_linea': p.get('sot_linea', ''),
             'sot_over_precio': p.get('sot_over_precio', 0),
+            'fouls_linea': p.get('fouls_linea', ''),
+            'fouls_over_precio': p.get('fouls_over_precio', 0),
         }
 
         # Determinar fase (mismo criterio que antes, con los IDs nuevos:
@@ -645,7 +746,8 @@ def predecir_jornada(fecha=None):
         visit_hist = normalizar_nombre(visitante)
         pred = predecir_partido(local_hist, visit_hist, df_hist, liga, cuotas, fase,
                                  cache_sos=cache_sos, cache_corners=cache_corners,
-                                 cache_cards=cache_cards, cache_shots=cache_shots, cache_sot=cache_sot)
+                                 cache_cards=cache_cards, cache_shots=cache_shots, cache_sot=cache_sot,
+                                 cache_fouls=cache_fouls)
         pred['local'] = local
         pred['visitante'] = visitante
         pred['fecha'] = p['fecha']

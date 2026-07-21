@@ -6,6 +6,7 @@ que el proyecto Mundial 2026, adaptado a múltiples ligas de clubes).
 """
 import os, sys, json
 from datetime import datetime, timezone, timedelta
+import pandas as pd
 
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 os.chdir(RAIZ)
@@ -113,6 +114,49 @@ def preparar_partidos(partidos, candidatos_por_partido=None):
         out.append(q)
     out.sort(key=lambda p: (p.get('fecha', ''), p.get('hora', '')))
     return out
+
+
+def calcular_track_record():
+    """
+    Track record real del modelo -- transparencia para un producto premium
+    de pago: en vez de solo mostrar los picks del día, expone el historial
+    verificable (accuracy 1X2, Over/Under 2.5 y CLV promedio) calculado
+    sobre Data/predicciones_log.csv + Data/resultados_log.csv, la misma
+    fuente que usa logger_predicciones.py calcular_mse()/calcular_clv_resumen().
+    Devuelve None si todavía no hay suficiente historial (< 10 partidos
+    con predicción Y resultado) -- evita mostrar un track record con
+    muestra estadísticamente inútil.
+    """
+    try:
+        df_pred = pd.read_csv('Data/predicciones_log.csv')
+        df_res = pd.read_csv('Data/resultados_log.csv')
+    except FileNotFoundError:
+        return None
+
+    df = pd.merge(df_pred, df_res, on=['fecha', 'liga', 'local', 'visitante'], how='inner')
+    if len(df) < 10:
+        return None
+
+    df['pred_resultado'] = df.apply(
+        lambda r: '1' if r['prob_1'] >= r['prob_x'] and r['prob_1'] >= r['prob_2']
+                  else ('X' if r['prob_x'] >= r['prob_2'] else '2'), axis=1)
+    accuracy_1x2 = round(float((df['pred_resultado'] == df['resultado_real']).mean() * 100), 1)
+
+    df['pred_over25'] = df['prob_over_25'] >= 50
+    accuracy_over25 = round(float((df['pred_over25'] == df['over_25_real']).mean() * 100), 1)
+
+    clv_prom = None
+    if 'clv_1x2_pct' in df.columns:
+        con_clv = df.dropna(subset=['clv_1x2_pct'])
+        if len(con_clv) >= 5:
+            clv_prom = round(float(con_clv['clv_1x2_pct'].mean()), 1)
+
+    return {
+        'n': len(df),
+        'accuracy_1x2': accuracy_1x2,
+        'accuracy_over25': accuracy_over25,
+        'clv_prom': clv_prom,
+    }
 
 
 def resumen_picks(picks):
@@ -417,6 +461,27 @@ def main():
     else:
         premium_html = '<div class="vacio">Sin pick premium disponible por ahora.</div>'
 
+    track = calcular_track_record()
+    if track:
+        clv_html = (f'<div><div class="rs-v" style="color:{"var(--v)" if (track["clv_prom"] or 0) >= 0 else "var(--d)"}">'
+                    f'{track["clv_prom"]:+.1f}%</div><div class="rs-l">CLV promedio</div></div>'
+                    if track['clv_prom'] is not None else
+                    '<div><div class="rs-v" style="color:var(--tx2)">—</div><div class="rs-l">CLV (acumulando)</div></div>')
+        track_html = f'''<h2 id="track-record">📊 Track record <small>Historial real, no marketing</small></h2>
+  <div class="resumen">
+    <div><div class="rs-v">{track['n']}</div><div class="rs-l">Partidos evaluados</div></div>
+    <div><div class="rs-v" style="color:var(--v)">{track['accuracy_1x2']}%</div><div class="rs-l">Acierto 1X2</div></div>
+    <div><div class="rs-v" style="color:var(--ac)">{track['accuracy_over25']}%</div><div class="rs-l">Acierto Over/Under 2.5</div></div>
+    {clv_html}
+  </div>
+  <div class="aviso" style="margin-top:0">
+    <b>📈 ¿Qué es CLV?</b> Closing Line Value mide si la cuota del mercado se movió a favor del pick
+    entre la publicación y el día del partido — señal de calidad de modelo independiente del resultado
+    puntual de cada partido (que siempre tiene varianza de corto plazo).
+  </div>'''
+    else:
+        track_html = ''
+
     ligas_badges = ''.join(
         f'<span class="badge on" style="border-color:{LIGA_COLOR.get(k,"#60a5fa")};color:{LIGA_COLOR.get(k,"#60a5fa")}">{v["emoji"]} {v["nombre"]}</span>'
         for k, v in LIGAS.items() if v.get('activa')
@@ -436,6 +501,7 @@ def main():
   <a href="#partidos">📅 Partidos</a>
   <a href="#picks-gratis">✅ Picks gratis</a>
   <a href="#picks-premium">💎 Premium</a>
+  {'<a href="#track-record">📊 Track record</a>' if track else ''}
   <a class="tg-nav" href="https://t.me/sportpickoficial" target="_blank">📣 Telegram</a>
 </div></nav>
 
@@ -503,6 +569,8 @@ def main():
 
   <h2 id="picks-premium"><span class="badge-prem">💎 PREMIUM</span> Pick exclusivo</h2>
   {premium_html}
+
+  {track_html}
 
   <div class="aviso">
     <b>⚠️ Mercados calculados automáticamente por el modelo.</b>
