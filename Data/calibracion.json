@@ -1,0 +1,24 @@
+{
+  "comp_3498": {
+    "partidos": 11,
+    "mse_goles": 1.74,
+    "mae_goles": 1.167,
+    "sesgo_goles": -0.194,
+    "accuracy_1x2": 63.6,
+    "accuracy_over25": 72.7,
+    "media_xg_pred": 2.261,
+    "media_goles_real": 2.455,
+    "factor_correccion": 1.086
+  },
+  "comp_408698": {
+    "partidos": 3,
+    "mse_goles": 9.744,
+    "mae_goles": 2.333,
+    "sesgo_goles": -1.763,
+    "accuracy_1x2": 33.3,
+    "accuracy_over25": 33.3,
+    "media_xg_pred": 2.571,
+    "media_goles_real": 4.333,
+    "factor_correccion": 1.686
+  }
+}
