@@ -26,17 +26,30 @@ jobs:
       - name: Descargar próximos partidos y cuotas (modo diario)
         run: python descargar_partidos.py --diario
 
-      - name: Generar picks
-        run: python generador_picks_ligas.py
+      - name: Generar picks (solo hoy)
+        run: python generador_picks_ligas.py --solo-hoy
 
       - name: Generar web
         run: python generar_web.py
+
+      - name: Registrar predicciones del día (log calibración)
+        run: python logger_predicciones.py registrar
+        continue-on-error: true
+
+      - name: Sincronizar resultados finalizados (log calibración)
+        run: python logger_predicciones.py sync-resultados 4
+        continue-on-error: true
+
+      - name: Recalcular calibración (MSE / sesgo por liga)
+        run: python logger_predicciones.py calibrar
+        continue-on-error: true
 
       - name: Commit y push de los resultados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f docs/index.html Data/picks_hoy.json Data/partidos/proximos.csv Predicciones/predicciones_hoy.json
+          git add -f docs/index.html Data/picks_hoy.json Data/partidos/proximos.csv Predicciones/predicciones_hoy.json \
+                     Data/predicciones_log.csv Data/resultados_log.csv Data/calibracion.json
           git diff --staged --quiet || git commit -m "chore: pipeline diario $(date -u +%Y-%m-%d)"
           git push origin HEAD:main
         env:

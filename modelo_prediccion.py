@@ -42,13 +42,20 @@ def normalizar_nombre(nombre):
     """
     return nombre
 
-def calcular_stats_equipo(df, equipo, n_partidos=8):
-    """Calcula stats promedio de un equipo en sus últimos N partidos"""
+def calcular_stats_equipo(df, equipo, n_partidos=8, con_detalle=False):
+    """
+    Calcula stats promedio (bruto, sin ajustar por rival) de un equipo
+    en sus últimos N partidos.
+    Si con_detalle=True, además devuelve la lista partido a partido
+    (rival, gol_favor, gol_contra) — la usa calcular_stats_equipo_sos()
+    para el ajuste por fortaleza de rival (SoS).
+    """
     como_local = df[df['local'] == equipo].tail(n_partidos)
     como_visita = df[df['visitante'] == equipo].tail(n_partidos)
 
     goles_favor = []
     goles_contra = []
+    detalle = []
 
     def es_valido(val):
         try:
@@ -59,24 +66,100 @@ def calcular_stats_equipo(df, equipo, n_partidos=8):
 
     for _, p in como_local.iterrows():
         if es_valido(p['goles_l']) and es_valido(p['goles_v']):
-            goles_favor.append(int(float(p['goles_l'])))
-            goles_contra.append(int(float(p['goles_v'])))
+            gf, gc = int(float(p['goles_l'])), int(float(p['goles_v']))
+            goles_favor.append(gf)
+            goles_contra.append(gc)
+            detalle.append({'rival': p['visitante'], 'gol_favor': gf, 'gol_contra': gc})
 
     for _, p in como_visita.iterrows():
         if es_valido(p['goles_v']) and es_valido(p['goles_l']):
-            goles_favor.append(int(float(p['goles_v'])))
-            goles_contra.append(int(float(p['goles_l'])))
+            gf, gc = int(float(p['goles_v'])), int(float(p['goles_l']))
+            goles_favor.append(gf)
+            goles_contra.append(gc)
+            detalle.append({'rival': p['local'], 'gol_favor': gf, 'gol_contra': gc})
 
     if not goles_favor:
         # Default conservador para equipos sin historial
-        return {'ataque': 1.0, 'defensa': 1.0, 'partidos': 0}
+        base = {'ataque': 1.0, 'defensa': 1.0, 'partidos': 0}
+        return (base, []) if con_detalle else base
 
-    return {
+    resultado = {
         'ataque':   round(np.mean(goles_favor), 3),
         'defensa':  round(np.mean(goles_contra), 3),
         'partidos': len(goles_favor),
         'goles_favor_prom': round(np.mean(goles_favor), 2),
         'goles_contra_prom': round(np.mean(goles_contra), 2),
+    }
+    return (resultado, detalle) if con_detalle else resultado
+
+# Clamp del factor de ajuste SoS — evita sobreajuste cuando el rival
+# tiene pocos partidos (muestra chica → defensa/ataque bruto ruidoso).
+# Calibrado por retrodicción (backtest_sos.py, n=770 partidos, historico.csv):
+# con 0.60-1.60 el modelo empeoraba en las 3 métricas (brier/mse/acierto 1X2).
+# Con 0.85-1.18 mejora brier (-0.001) y acierto 1X2 (+0.78pp), MSE goles
+# prácticamente plano (+0.005, dentro del ruido de muestra).
+SOS_FACTOR_MIN = 0.85
+SOS_FACTOR_MAX = 1.18
+
+def calcular_stats_equipo_sos(df, equipo, media_liga, n_partidos=8, cache=None):
+    """
+    Ataque/defensa ajustados por Strength of Schedule — una sola pasada
+    (sin iterar hasta convergencia, a propósito: con ligas nuevas que
+    todavía no tienen muchos partidos históricos, iterar tipo Massey/Colley
+    arriesga sobreajuste; una pasada es más estable y suficiente mejora
+    sobre el promedio plano).
+
+    Para cada partido del equipo, pondera el gol marcado/recibido por la
+    fuerza bruta (sin ajustar) del rival de ese partido, relativa a la
+    media de goles de la liga:
+      - Rival con defensa débil (concede mucho) → descuenta el gol marcado
+        (anotarle a una defensa floja es menos meritorio).
+      - Rival con ataque débil (anota poco) → penaliza más el gol recibido
+        (que te haga un gol un equipo que casi no anota es peor señal
+        defensiva que recibirlo de un equipo goleador).
+
+    cache: dict opcional {equipo: stats_bruto} para memoizar entre llamadas
+    dentro de la misma jornada y no recalcular el mismo rival varias veces.
+    """
+    if cache is None:
+        cache = {}
+
+    def raw(nombre):
+        if nombre not in cache:
+            cache[nombre] = calcular_stats_equipo(df, nombre, n_partidos)
+        return cache[nombre]
+
+    stats_bruto, detalle = calcular_stats_equipo(df, equipo, n_partidos, con_detalle=True)
+    cache[equipo] = stats_bruto  # evita recalcular si este equipo aparece como rival de otro
+
+    if not detalle:
+        return stats_bruto  # sin historial — usar default neutro tal cual
+
+    goles_favor_adj = []
+    goles_contra_adj = []
+
+    for d in detalle:
+        rival_stats = raw(d['rival'])
+        tiene_historial = rival_stats.get('partidos', 0) > 0
+        defensa_rival = rival_stats['defensa'] if tiene_historial else media_liga
+        ataque_rival  = rival_stats['ataque']  if tiene_historial else media_liga
+
+        factor_def = media_liga / max(defensa_rival, 0.30)
+        factor_atq = media_liga / max(ataque_rival, 0.30)
+        factor_def = min(max(factor_def, SOS_FACTOR_MIN), SOS_FACTOR_MAX)
+        factor_atq = min(max(factor_atq, SOS_FACTOR_MIN), SOS_FACTOR_MAX)
+
+        goles_favor_adj.append(d['gol_favor'] * factor_def)
+        goles_contra_adj.append(d['gol_contra'] * factor_atq)
+
+    return {
+        'ataque':   round(float(np.mean(goles_favor_adj)), 3),
+        'defensa':  round(float(np.mean(goles_contra_adj)), 3),
+        'partidos': stats_bruto['partidos'],
+        'goles_favor_prom': stats_bruto.get('goles_favor_prom'),
+        'goles_contra_prom': stats_bruto.get('goles_contra_prom'),
+        'ataque_bruto': stats_bruto['ataque'],
+        'defensa_bruto': stats_bruto['defensa'],
     }
 
 def dixon_coles_xg(ataque_l, defensa_l, ataque_v, defensa_v,
@@ -149,12 +232,8 @@ def monte_carlo_partido(xg_l, xg_v, n=10000, shrinkage=0.10):
     }
 
 def predecir_partido(local, visitante, df_historico, liga_key,
-                     cuotas=None, fase='regular'):
+                     cuotas=None, fase='regular', cache_sos=None):
     """Genera predicción completa para un partido"""
-    # Calcular stats
-    stats_l = calcular_stats_equipo(df_historico, local)
-    stats_v = calcular_stats_equipo(df_historico, visitante)
-
     # Media de goles de la liga (promedio por EQUIPO, no total del partido)
     # Medias por liga — representan goles promedio POR EQUIPO
     # NO modificar para calibrar — usar factor_escala en dixon_coles_xg
@@ -193,6 +272,11 @@ def predecir_partido(local, visitante, df_historico, liga_key,
             media_goles = media_defaults.get(liga_key, 1.25)
     except:
         media_goles = media_defaults.get(liga_key, 1.25)
+
+    # Calcular stats — ataque/defensa ajustados por Strength of Schedule
+    # (necesita media_goles ya calculada como referencia de fortaleza de rival)
+    stats_l = calcular_stats_equipo_sos(df_historico, local, media_goles, cache=cache_sos)
+    stats_v = calcular_stats_equipo_sos(df_historico, visitante, media_goles, cache=cache_sos)
 
     # xG Dixon-Coles
     xg_l, xg_v = dixon_coles_xg(
@@ -264,6 +348,7 @@ def predecir_jornada(fecha=None):
     partidos_hoy = df_prox[df_prox['fecha'] >= fecha].sort_values('fecha').head(100)
 
     predicciones = []
+    cache_sos = {}  # memoiza stats brutas por equipo durante toda la jornada (SoS)
 
     for _, p in partidos_hoy.iterrows():
         local = p['local']
@@ -285,7 +370,7 @@ def predecir_jornada(fecha=None):
         # Normalizar nombres para buscar en histórico
         local_hist = normalizar_nombre(local)
         visit_hist = normalizar_nombre(visitante)
-        pred = predecir_partido(local_hist, visit_hist, df_hist, liga, cuotas, fase)
+        pred = predecir_partido(local_hist, visit_hist, df_hist, liga, cuotas, fase, cache_sos=cache_sos)
         pred['local'] = local
         pred['visitante'] = visitante
         pred['fecha'] = p['fecha']

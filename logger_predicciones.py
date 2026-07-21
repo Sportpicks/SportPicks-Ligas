@@ -98,7 +98,11 @@ def registrar_prediccion(pred, cuotas=None):
 
 def registrar_resultado(fecha, liga, local, visitante, goles_l, goles_v):
     """
-    Registra el resultado real después del partido
+    Registra el resultado real después del partido.
+    Idempotente: si ya existe una fila igual (mismo marcador), no reescribe
+    el CSV ni cuenta como registro nuevo — importante para sincronizar_resultados(),
+    que re-consulta la misma ventana de días cada vez que corre.
+    Devuelve True solo si insertó una fila nueva o actualizó un marcador distinto.
     """
     df = cargar_log(LOG_RESULT, COLS_RESULT)
 
@@ -109,6 +113,14 @@ def registrar_resultado(fecha, liga, local, visitante, goles_l, goles_v):
         (df['visitante'] == visitante)
     )
     if mask.any():
+        existente = df.loc[mask].iloc[0]
+        sin_cambios = (
+            str(existente.get('goles_l_real')) == str(goles_l) and
+            str(existente.get('goles_v_real')) == str(goles_v)
+        )
+        if sin_cambios:
+            return False  # ya estaba registrado con el mismo marcador
+
         # Actualizar
         df.loc[mask, 'goles_l_real'] = goles_l
         df.loc[mask, 'goles_v_real'] = goles_v
@@ -229,6 +241,64 @@ def calcular_mse():
 
     return calibracion
 
+def sincronizar_resultados(dias_atras=4):
+    """
+    Trae partidos FINALIZADOS de las ligas cubiertas (configuracion.LIGAS)
+    de los últimos `dias_atras` días desde TheStatsAPI y los registra en
+    resultados_log.csv, para poder cruzarlos contra predicciones_log.csv
+    y recalibrar el modelo (calcular_mse()).
+
+    Usa el mismo cliente/API que descargar_partidos.py, así que los nombres
+    de equipo y competition_id coinciden exactamente con los que ya quedaron
+    en predicciones_log.csv (evita el mismatch de nombres que existía en
+    los registros manuales previos a la migración a TheStatsAPI).
+    """
+    from configuracion import API_THESTATS
+    from thestats_client import TheStatsClient, TheStatsAPIError
+    from descargar_partidos import utc_a_peru
+
+    hoy = datetime.now(PERU_TZ).date()
+    date_from = (hoy - timedelta(days=dias_atras)).isoformat()
+    date_to = hoy.isoformat()
+
+    client = TheStatsClient(API_THESTATS)
+    revisados = 0
+    registrados = 0
+
+    print(f'\n🔄 Sincronizando resultados finalizados ({date_from} → {date_to})')
+
+    for liga_id, cfg in LIGAS.items():
+        try:
+            finalizados = client.get_matches(
+                liga_id, status='finished',
+                date_from=date_from, date_to=date_to,
+            )
+        except TheStatsAPIError as e:
+            print(f'  ⚠️ {cfg.get("nombre", liga_id)}: {e}')
+            continue
+
+        nuevos_liga = 0
+        for m in finalizados:
+            score = m.get('score') or {}
+            gl, gv = score.get('home'), score.get('away')
+            if gl is None or gv is None:
+                continue
+
+            fecha, _hora = utc_a_peru(m['utc_date'])
+            local = m['home_team']['name']
+            visitante = m['away_team']['name']
+            revisados += 1
+
+            if registrar_resultado(fecha, liga_id, local, visitante, int(gl), int(gv)):
+                registrados += 1
+                nuevos_liga += 1
+
+        if finalizados:
+            print(f'  {cfg.get("nombre", liga_id)}: {len(finalizados)} finalizados, {nuevos_liga} nuevos')
+
+    print(f'\n✅ Sync resultados: {revisados} finalizados revisados, {registrados} nuevos en {LOG_RESULT}')
+    return registrados
+
 def auto_registrar_predicciones(fecha=None):
     """
     Registra automáticamente las predicciones del día en el log
@@ -296,6 +366,10 @@ if __name__ == '__main__':
         cmd = sys.argv[1]
         if cmd == 'registrar':
             auto_registrar_predicciones()
+        elif cmd == 'sync-resultados':
+            # python logger_predicciones.py sync-resultados [dias_atras]
+            dias = int(sys.argv[2]) if len(sys.argv) >= 3 else 4
+            sincronizar_resultados(dias_atras=dias)
         elif cmd == 'calibrar':
             calcular_mse()
         elif cmd == 'resumen':
