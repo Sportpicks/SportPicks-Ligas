@@ -85,3 +85,14 @@ PROB_MIN_PREMIUM  = 75   # %
 CUOTA_MIN_PUBLICO = 1.50
 CUOTA_MIN_PREMIUM = 1.60
 MAX_PICKS_PUBLICO = 3
+
+# Piso mínimo de EV -- antes el filtro era solo "ev > 0", que deja pasar
+# EVs de +0.1-0.8% indistinguibles del propio ruido del pipeline: la
+# simulación Monte Carlo (n=10000) tiene un error estándar de ~0.5pp en la
+# probabilidad estimada (sqrt(p(1-p)/n)), que se traslada 1:1 al EV; sumale
+# la aproximación de SoS/shrinkage y el margen (vig) típico de un
+# bookmaker líquido (2-5%), y un EV por debajo de este piso no es una
+# ventaja real explotable, es ruido de modelo. Premium más exigente por
+# ser el producto de pago.
+EV_MIN_PUBLICO  = 0.03   # 3%
+EV_MIN_PREMIUM  = 0.05   # 5%
