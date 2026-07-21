@@ -348,16 +348,22 @@ def main(fecha=None, dias=3, solo_hoy=False):
     print(f'\n✅ Total candidatos: {len(todos)}')
 
     # Modo --solo-hoy: descarta candidatos de otros días antes de seleccionar
+    todos_multi = todos  # conserva el pool completo de {dias} días para el fallback
+    fallback_multi_dia = False
+
     if solo_hoy:
-        todos_multi = todos
         todos = [pk for pk in todos if pk.get('fecha', '') == fecha]
         print(f'   Solo-hoy: {len(todos)}/{len(todos_multi)} candidatos son de {fecha}')
-        if not todos:
-            print(f'❌ Sin candidatos para {fecha} en modo solo-hoy')
-            return
 
     # Seleccionar picks
     publicos, premium = seleccionar_picks(todos)
+
+    # Fallback: si solo-hoy no alcanza para armar panel público, ampliar al rango de {dias} días
+    if solo_hoy and len(publicos) == 0 and not premium:
+        print(f'⚠️  Solo-hoy sin picks suficientes para {fecha} — fallback a rango de {dias} días')
+        fallback_multi_dia = True
+        todos = todos_multi
+        publicos, premium = seleccionar_picks(todos)
 
     # Mostrar panel
     print(f'\n📋 PANEL PÚBLICO ({len(publicos)} picks):')
@@ -380,6 +386,7 @@ def main(fecha=None, dias=3, solo_hoy=False):
         'fecha': fecha,
         'generado': datetime.now(PERU_TZ).isoformat(),
         'solo_hoy': solo_hoy,
+        'fallback_multi_dia': fallback_multi_dia,
         'publicos': publicos,
         'premium': premium,
         'todos_candidatos': todos,
