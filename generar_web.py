@@ -116,6 +116,138 @@ def preparar_partidos(partidos, candidatos_por_partido=None):
     return out
 
 
+HISTORIAL_PATH = 'Data/historial_picks.csv'
+COLS_HISTORIAL = [
+    'fecha', 'hora', 'liga', 'liga_nombre', 'local', 'visitante',
+    'mercado', 'categoria', 'prob', 'cuota', 'ev',
+    'es_publico', 'es_premium', 'es_mejor_apuesta', 'es_combo',
+    'estado', 'resultado_detalle', 'registrado_en', 'liquidado_en',
+]
+
+
+def archivar_historial(partidos, publicos, premium):
+    """
+    Archiva en Data/historial_picks.csv (persistente entre corridas -- a
+    diferencia de Data/picks_hoy.json y Predicciones/predicciones_hoy.json,
+    que se sobreescriben cada día) la "mejor apuesta" de cada card y los
+    picks públicos/premium publicados, para poder liquidarlos después
+    contra el resultado real (ver logger_predicciones.py liquidar_historial)
+    y mostrar un historial de ganados/perdidos en la web -- hoy no existía
+    ningún registro de qué se publicó en días anteriores.
+
+    Idempotente por (fecha, local, visitante, mercado): si la misma
+    combinación ya está archivada (ej. la mejor_apuesta de un partido
+    coincide con el pick público del día), solo actualiza los flags
+    es_publico/es_premium/es_mejor_apuesta, sin duplicar la fila ni tocar
+    su estado de liquidación si ya se liquidó.
+    """
+    if os.path.exists(HISTORIAL_PATH):
+        df = pd.read_csv(HISTORIAL_PATH)
+    else:
+        df = pd.DataFrame(columns=COLS_HISTORIAL)
+
+    existentes = {(r['fecha'], r['local'], r['visitante'], r['mercado']): idx
+                  for idx, r in df.iterrows()}
+    entradas = {}
+    ahora = datetime.now(PERU_TZ).isoformat()
+
+    def registrar(fecha, hora, liga, liga_nombre, local, visitante, mercado, categoria,
+                  prob, cuota, ev, es_publico=False, es_premium=False,
+                  es_mejor_apuesta=False, es_combo=False, detalle=''):
+        if not mercado:
+            return
+        k = (fecha, local, visitante, mercado)
+        if k in existentes:
+            idx = existentes[k]
+            if es_publico:
+                df.loc[idx, 'es_publico'] = True
+            if es_premium:
+                df.loc[idx, 'es_premium'] = True
+            if es_mejor_apuesta:
+                df.loc[idx, 'es_mejor_apuesta'] = True
+            return
+        if k in entradas:
+            if es_publico:
+                entradas[k]['es_publico'] = True
+            if es_premium:
+                entradas[k]['es_premium'] = True
+            if es_mejor_apuesta:
+                entradas[k]['es_mejor_apuesta'] = True
+            return
+        entradas[k] = {
+            'fecha': fecha, 'hora': hora, 'liga': liga, 'liga_nombre': liga_nombre,
+            'local': local, 'visitante': visitante, 'mercado': mercado, 'categoria': categoria,
+            'prob': prob, 'cuota': cuota, 'ev': ev,
+            'es_publico': es_publico, 'es_premium': es_premium,
+            'es_mejor_apuesta': es_mejor_apuesta, 'es_combo': es_combo,
+            'estado': 'Pendiente', 'resultado_detalle': detalle,
+            'registrado_en': ahora, 'liquidado_en': '',
+        }
+
+    for p in partidos:
+        ma = p.get('mejor_apuesta') or {}
+        if ma.get('mercado'):
+            registrar(p.get('fecha', ''), p.get('hora', ''), p.get('liga', ''), p.get('liga_nombre', ''),
+                      p.get('local', ''), p.get('visitante', ''), ma['mercado'], ma.get('categoria', ''),
+                      ma.get('prob', 0), None, ma.get('ev', 0), es_mejor_apuesta=True)
+
+    for pk in publicos:
+        registrar(pk.get('fecha', ''), pk.get('hora', ''), pk.get('liga', ''), pk.get('liga_nombre', ''),
+                  pk.get('local', ''), pk.get('visitante', ''), pk.get('mercado', ''), pk.get('categoria', ''),
+                  pk.get('prob', 0), pk.get('cuota', 0), pk.get('ev', 0), es_publico=True)
+
+    for pk in premium:
+        es_combo = bool(pk.get('picks_combo'))
+        detalle = json.dumps(pk['picks_combo'], ensure_ascii=False) if es_combo else ''
+        registrar(pk.get('fecha', ''), pk.get('hora', ''), pk.get('liga', ''), pk.get('liga_nombre', ''),
+                  pk.get('local', ''), pk.get('visitante', ''), pk.get('mercado', ''), pk.get('categoria', ''),
+                  pk.get('prob', 0), pk.get('cuota', 0), pk.get('ev', 0), es_premium=True,
+                  es_combo=es_combo, detalle=detalle)
+
+    nuevas = len(entradas)
+    if nuevas and len(df) > 0:
+        df_final = pd.concat([df, pd.DataFrame(entradas.values())], ignore_index=True)
+    elif nuevas:
+        df_final = pd.DataFrame(entradas.values())
+    else:
+        df_final = df
+    os.makedirs('Data', exist_ok=True)
+    df_final.to_csv(HISTORIAL_PATH, index=False)
+    return nuevas
+
+
+def calcular_historial_resumen():
+    """
+    Resumen de ganados/perdidos para público y premium, más los últimos
+    resultados liquidados, para mostrar en la web. None si el archivo
+    todavía no existe o no hay ninguna fila liquidada (evita mostrar un
+    0-0 vacío antes de que haya datos reales).
+    """
+    if not os.path.exists(HISTORIAL_PATH):
+        return None
+    df = pd.read_csv(HISTORIAL_PATH)
+    if len(df) == 0:
+        return None
+
+    def resumen_grupo(mask):
+        sub = df[mask & df['estado'].isin(['Ganado', 'Perdido'])]
+        if len(sub) == 0:
+            return {'n': 0, 'ganados': 0, 'perdidos': 0, 'winrate': 0}
+        ganados = int((sub['estado'] == 'Ganado').sum())
+        return {'n': len(sub), 'ganados': ganados, 'perdidos': len(sub) - ganados,
+                'winrate': round(ganados / len(sub) * 100, 1)}
+
+    publico = resumen_grupo(df['es_publico'] == True)
+    premium = resumen_grupo(df['es_premium'] == True)
+    if publico['n'] == 0 and premium['n'] == 0:
+        return None
+
+    recientes = df[df['estado'].isin(['Ganado', 'Perdido']) & ((df['es_publico'] == True) | (df['es_premium'] == True))]
+    recientes = recientes.sort_values('fecha', ascending=False).head(10)
+
+    return {'publico': publico, 'premium': premium, 'recientes': recientes.to_dict('records')}
+
+
 def calcular_track_record():
     """
     Track record real del modelo -- transparencia para un producto premium
@@ -281,6 +413,18 @@ h2 small{color:var(--tx2);font-weight:400;font-size:.82rem}
 .prem-yape{font-size:.75rem;color:var(--tx2)}
 .vacio{background:var(--panel);border:1px dashed var(--lin);border-radius:12px;padding:22px;text-align:center;color:var(--tx2);grid-column:1/-1}
 .aviso{background:var(--panel);border-left:4px solid var(--e);border-radius:0 12px 12px 0;padding:14px 16px;font-size:.81rem;color:var(--tx2);margin-top:32px}
+.hist-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.hist-card{background:var(--panel);border:1px solid var(--lin);border-radius:12px;padding:12px;text-align:center}
+.hist-card .hc-label{font-size:.74rem;color:var(--tx2);margin-bottom:4px}
+.hist-card .hc-wr{font-size:1.4rem;font-weight:800}
+.hist-card .hc-gp{font-size:.76rem;color:var(--tx2);margin-top:2px}
+.hist-lista{display:flex;flex-direction:column;gap:6px}
+.hist-item{display:flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--lin);border-radius:10px;padding:8px 12px;font-size:.8rem}
+.hist-item .hi-badge{font-size:1rem;flex-shrink:0}
+.hist-item .hi-txt{flex:1;color:var(--tx2)}
+.hist-item .hi-txt b{color:var(--tx)}
+.hist-item.ok{border-color:var(--v)}
+.hist-item.no{border-color:var(--d)}
 footer{text-align:center;color:var(--tx2);font-size:.76rem;margin-top:28px}
 footer a{color:var(--ac);text-decoration:none}
 @keyframes tgSlide{from{transform:translateY(80px);opacity:0}to{transform:translateY(0);opacity:1}}
@@ -407,6 +551,10 @@ def main():
         candidatos_por_partido=candidatos_por_partido,
     )
 
+    nuevas_historial = archivar_historial(partidos, publicos, premium)
+    if nuevas_historial:
+        print(f'📋 {nuevas_historial} entrada(s) nueva(s) archivada(s) en {HISTORIAL_PATH}')
+
     hoy = datetime.now(PERU_TZ).strftime('%Y-%m-%d')
     generado_str = datetime.now(PERU_TZ).strftime('%d-%m-%Y %H:%M')
     fechas = sorted({p.get('fecha', '') for p in partidos if p.get('fecha')})
@@ -461,6 +609,36 @@ def main():
     else:
         premium_html = '<div class="vacio">Sin pick premium disponible por ahora.</div>'
 
+    historial = calcular_historial_resumen()
+    if historial:
+        def hc(label, g):
+            if g['n'] == 0:
+                return f'<div class="hist-card"><div class="hc-label">{label}</div><div class="hc-wr" style="color:var(--tx2)">—</div><div class="hc-gp">Sin liquidar aún</div></div>'
+            color = 'var(--v)' if g['winrate'] >= 50 else 'var(--d)'
+            return (f'<div class="hist-card"><div class="hc-label">{label}</div>'
+                    f'<div class="hc-wr" style="color:{color}">{g["winrate"]}%</div>'
+                    f'<div class="hc-gp">{g["ganados"]}G - {g["perdidos"]}P ({g["n"]} liquidados)</div></div>')
+
+        items = ''
+        for r in historial['recientes']:
+            ok = r['estado'] == 'Ganado'
+            badge = '✅' if ok else '❌'
+            partido_txt = f"{r['local']} vs {r['visitante']}" if r.get('local') and not r.get('es_combo') else r.get('mercado', '')
+            items += (f'<div class="hist-item {"ok" if ok else "no"}">'
+                      f'<span class="hi-badge">{badge}</span>'
+                      f'<span class="hi-txt">{r["fecha"]} · <b>{r["mercado"]}</b>'
+                      f'{" — " + partido_txt if not r.get("es_combo") else ""}</span>'
+                      f'</div>')
+
+        historial_html = f'''<h2 id="historial">🏅 Historial de resultados <small>Ganados y perdidos, verificable</small></h2>
+  <div class="hist-stats">
+    {hc('✅ Picks públicos', historial['publico'])}
+    {hc('💎 Picks premium', historial['premium'])}
+  </div>
+  <div class="hist-lista">{items or '<div class="vacio">Sin resultados liquidados todavía.</div>'}</div>'''
+    else:
+        historial_html = ''
+
     track = calcular_track_record()
     if track:
         clv_html = (f'<div><div class="rs-v" style="color:{"var(--v)" if (track["clv_prom"] or 0) >= 0 else "var(--d)"}">'
@@ -501,6 +679,7 @@ def main():
   <a href="#partidos">📅 Partidos</a>
   <a href="#picks-gratis">✅ Picks gratis</a>
   <a href="#picks-premium">💎 Premium</a>
+  {'<a href="#historial">🏅 Historial</a>' if historial else ''}
   {'<a href="#track-record">📊 Track record</a>' if track else ''}
   <a class="tg-nav" href="https://t.me/sportpickoficial" target="_blank">📣 Telegram</a>
 </div></nav>
@@ -569,6 +748,8 @@ def main():
 
   <h2 id="picks-premium"><span class="badge-prem">💎 PREMIUM</span> Pick exclusivo</h2>
   {premium_html}
+
+  {historial_html}
 
   {track_html}
 

@@ -375,6 +375,121 @@ def registrar_cierre_desde_proximos():
     print(f'✅ CLV: {actualizados} cierre(s) registrado(s) para partidos de hoy')
     return actualizados
 
+HISTORIAL_PATH = os.path.join(RAIZ, 'Data', 'historial_picks.csv')
+
+def _evaluar_mercado(mercado, local, visitante, res):
+    """
+    Evalúa un mercado (texto tal como lo genera generador_picks_ligas.py)
+    contra la fila de resultado real correspondiente. Devuelve 'Ganado',
+    'Perdido', o None si el mercado no se puede evaluar con los datos
+    disponibles hoy (córners/tarjetas/tiros/faltas -- resultados_log.csv
+    solo guarda goles/over25/btts, fase 1 de este historial; para liquidar
+    esos mercados hay que extender sincronizar_resultados() a pedir
+    get_match_stats() de cada partido finalizado, igual que fila_historico).
+    """
+    m = mercado.strip()
+    resultado_real = res.get('resultado_real', '')
+    if m == f'Victoria {local}':
+        return 'Ganado' if resultado_real == '1' else 'Perdido'
+    if m == f'Victoria {visitante}':
+        return 'Ganado' if resultado_real == '2' else 'Perdido'
+    if m == 'Empate':
+        return 'Ganado' if resultado_real == 'X' else 'Perdido'
+    if m == 'Más de 2.5 goles':
+        return 'Ganado' if bool(res.get('over_25_real')) else 'Perdido'
+    if m == 'Menos de 2.5 goles':
+        return 'Ganado' if not bool(res.get('over_25_real')) else 'Perdido'
+    if m == 'Ambos anotan - Sí':
+        return 'Ganado' if bool(res.get('btts_real')) else 'Perdido'
+    if m == 'Ambos anotan - No':
+        return 'Ganado' if not bool(res.get('btts_real')) else 'Perdido'
+    if m.startswith('1X — '):
+        return 'Ganado' if resultado_real in ('1', 'X') else 'Perdido'
+    if m.startswith('X2 — '):
+        return 'Ganado' if resultado_real in ('X', '2') else 'Perdido'
+    return None  # córners/tarjetas/tiros/faltas -- fase 2 pendiente
+
+def liquidar_historial():
+    """
+    Liquida (marca Ganado/Perdido/Sin datos) las filas 'Pendiente' de
+    Data/historial_picks.csv contra Data/resultados_log.csv. Fase 1: solo
+    goles/BTTS/doble oportunidad -- mercados de córners/tarjetas/tiros/
+    faltas quedan en 'Sin datos' hasta extender la sincronización de
+    resultados con stats completos (ver _evaluar_mercado).
+    Las combinadas (es_combo=True) se liquidan evaluando cada pata por
+    separado (guardadas en resultado_detalle como JSON de picks_combo):
+    Ganado solo si TODAS las patas ganan, Perdido si CUALQUIERA pierde.
+    """
+    if not os.path.exists(HISTORIAL_PATH):
+        print('⚠️ Sin Data/historial_picks.csv todavía -- corré generar_web.py primero')
+        return 0
+    df = pd.read_csv(HISTORIAL_PATH)
+    for c in ('estado', 'resultado_detalle', 'liquidado_en'):
+        df[c] = df[c].astype('object')  # evita FutureWarning al asignar str sobre columnas leídas como float (todo-NaN)
+    df_res = cargar_log(LOG_RESULT, COLS_RESULT)
+    if len(df_res) == 0:
+        print('⚠️ Sin resultados sincronizados todavía -- corré sync-resultados primero')
+        return 0
+
+    def resultado_de(fecha, local, visitante):
+        mask = (df_res['fecha'] == fecha) & (df_res['local'] == local) & (df_res['visitante'] == visitante)
+        m = df_res[mask]
+        return m.iloc[0] if len(m) else None
+
+    pendientes = df[df['estado'] == 'Pendiente']
+    liquidados = 0
+    ahora = datetime.now(PERU_TZ).isoformat()
+
+    for idx, row in pendientes.iterrows():
+        if row.get('es_combo'):
+            try:
+                legs = json.loads(row.get('resultado_detalle') or '[]')
+            except (TypeError, json.JSONDecodeError):
+                legs = []
+            if not legs:
+                continue
+            estados_legs, detalle_legs, listo = [], [], True
+            for leg in legs:
+                partido = leg.get('partido', '')
+                if ' vs ' not in partido:
+                    listo = False
+                    break
+                loc, vis = partido.split(' vs ', 1)
+                res = resultado_de(row['fecha'], loc, vis)
+                if res is None:
+                    listo = False
+                    break
+                est = _evaluar_mercado(leg.get('mercado', ''), loc, vis, res)
+                if est is None:
+                    listo = False
+                    break
+                estados_legs.append(est)
+                detalle_legs.append(f"{leg.get('mercado','')}: {est}")
+            if not listo:
+                continue
+            df.loc[idx, 'estado'] = 'Ganado' if all(e == 'Ganado' for e in estados_legs) else 'Perdido'
+            df.loc[idx, 'resultado_detalle'] = ' | '.join(detalle_legs)
+            df.loc[idx, 'liquidado_en'] = ahora
+            liquidados += 1
+            continue
+
+        res = resultado_de(row['fecha'], row['local'], row['visitante'])
+        if res is None:
+            continue
+        estado = _evaluar_mercado(row['mercado'], row['local'], row['visitante'], res)
+        if estado is None:
+            df.loc[idx, 'estado'] = 'Sin datos'
+            df.loc[idx, 'liquidado_en'] = ahora
+            continue
+        df.loc[idx, 'estado'] = estado
+        df.loc[idx, 'resultado_detalle'] = f"{row['local']} {res['goles_l_real']}-{res['goles_v_real']} {row['visitante']}"
+        df.loc[idx, 'liquidado_en'] = ahora
+        liquidados += 1
+
+    df.to_csv(HISTORIAL_PATH, index=False)
+    print(f'✅ Historial: {liquidados} pick(s) liquidado(s)')
+    return liquidados
+
 def calcular_clv_resumen():
     """
     Resumen de Closing Line Value acumulado -- CLV promedio positivo y
@@ -471,6 +586,8 @@ if __name__ == '__main__':
             registrar_cierre_desde_proximos()
         elif cmd == 'clv-resumen':
             calcular_clv_resumen()
+        elif cmd == 'liquidar-historial':
+            liquidar_historial()
         elif cmd == 'resumen':
             mostrar_resumen()
         elif cmd == 'resultado':

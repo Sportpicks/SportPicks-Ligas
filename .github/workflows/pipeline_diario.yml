@@ -33,9 +33,6 @@ jobs:
       - name: Generar picks (solo hoy)
         run: python generador_picks_ligas.py --solo-hoy
 
-      - name: Generar web
-        run: python generar_web.py
-
       - name: Registrar predicciones del día (log calibración)
         run: python logger_predicciones.py registrar
         continue-on-error: true
@@ -44,16 +41,27 @@ jobs:
         run: python logger_predicciones.py sync-resultados 4
         continue-on-error: true
 
+      - name: Liquidar historial de picks (ganados/perdidos)
+        run: python logger_predicciones.py liquidar-historial
+        continue-on-error: true
+
       - name: Recalcular calibración (MSE / sesgo por liga)
         run: python logger_predicciones.py calibrar
         continue-on-error: true
+
+      # Generar web AL FINAL: archiva los picks de hoy en historial_picks.csv
+      # y ya refleja la liquidación de resultados pasados (sync-resultados +
+      # liquidar-historial corrieron arriba) en la misma corrida -- si fuera
+      # antes, el historial mostrado en la web quedaría un día atrasado.
+      - name: Generar web
+        run: python generar_web.py
 
       - name: Commit y push de los resultados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f docs/index.html Data/picks_hoy.json Data/partidos/proximos.csv Predicciones/predicciones_hoy.json \
-                     Data/predicciones_log.csv Data/resultados_log.csv Data/calibracion.json
+                     Data/predicciones_log.csv Data/resultados_log.csv Data/calibracion.json Data/historial_picks.csv
           git diff --staged --quiet || git commit -m "chore: pipeline diario $(date -u +%Y-%m-%d)"
           git push origin HEAD:main
         env:
