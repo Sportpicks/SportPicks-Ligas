@@ -467,7 +467,7 @@ def main():
 
   <div class="aviso">
     <b>⚠️ Mercados calculados automáticamente por el modelo.</b>
-    Probabilidades vía XGBoost + Dixon-Coles + simulación Monte Carlo sobre datos de football-data.org, The Odds API y Betano.
+    Probabilidades vía XGBoost + Dixon-Coles + simulación Monte Carlo sobre datos de TheStatsAPI.
     El modelo elige el mercado con mayor valor esperado (EV) en cada partido.
   </div>
   <footer>
