@@ -101,6 +101,40 @@ def calcular_stats_equipo(df, equipo, n_partidos=8, con_detalle=False):
 SOS_FACTOR_MIN = 0.85
 SOS_FACTOR_MAX = 1.18
 
+# Peso del prior (en "partidos virtuales" a la media de liga) para el
+# shrinkage bayesiano de ataque/defensa. Corrige el caso de equipos con
+# muestra muy chica en historico.csv (típicamente clubes de ligas no
+# cubiertas por las 15 curadas, que solo aparecen por 2-6 eliminatorias
+# europeas) cuyo promedio bruto no es estadísticamente confiable.
+# Calibrado por retrodicción (backtest_sos.py, n=1274 partidos, barrido
+# k=3/6/10/15/20/30): brier y acierto 1X2 mejoran hasta ~k=10-15 y luego
+# empiezan a revertir (demasiado shrinkage aplana señal real); MSE de
+# goles sigue mejorando monótonamente con k más alto pero a costa de
+# aciertos. k=10 combinado con SoS (0.85-1.18) vs modelo actual sin
+# ninguno de los dos: Brier -0.0086, MSE goles -0.2339, acierto 1X2 +3.77pp.
+SHRINKAGE_K = 10
+
+def aplicar_shrinkage(stats, media_liga, k=None):
+    """
+    Regresión bayesiana de ataque/defensa hacia la media de liga, ponderada
+    por el tamaño de muestra: un equipo con pocos partidos (n chico frente
+    a k) pesa poco su propio promedio bruto y queda cerca de la media de
+    liga; uno con muestra robusta (n >> k) queda casi intacto.
+    No modifica equipos sin historial (ya son neutros por defecto).
+    k=None resuelve a SHRINKAGE_K en tiempo de llamada (no de definición),
+    para que los backtests puedan barrer distintos valores de k en caliente.
+    """
+    if k is None:
+        k = SHRINKAGE_K
+    n = stats.get('partidos', 0)
+    if n == 0:
+        return stats
+    peso_dato = n / (n + k)
+    nuevo = dict(stats)
+    nuevo['ataque']  = round(stats['ataque']  * peso_dato + media_liga * (1 - peso_dato), 3)
+    nuevo['defensa'] = round(stats['defensa'] * peso_dato + media_liga * (1 - peso_dato), 3)
+    return nuevo
+
 def calcular_stats_equipo_sos(df, equipo, media_liga, n_partidos=8, cache=None):
     """
     Ataque/defensa ajustados por Strength of Schedule — una sola pasada
@@ -139,8 +173,13 @@ def calcular_stats_equipo_sos(df, equipo, media_liga, n_partidos=8, cache=None):
     goles_contra_adj = []
 
     for d in detalle:
-        rival_stats = raw(d['rival'])
-        tiene_historial = rival_stats.get('partidos', 0) > 0
+        rival_bruto = raw(d['rival'])
+        tiene_historial = rival_bruto.get('partidos', 0) > 0
+        # Shrinkage sobre el rival ANTES de usarlo como referencia: si el
+        # rival tiene muestra chica (ej. 2 partidos de una eliminatoria
+        # europea), su ataque/defensa bruto no debe tratarse como un hecho
+        # — se regresa hacia la media de liga antes de derivar el factor.
+        rival_stats = aplicar_shrinkage(rival_bruto, media_liga) if tiene_historial else rival_bruto
         defensa_rival = rival_stats['defensa'] if tiene_historial else media_liga
         ataque_rival  = rival_stats['ataque']  if tiene_historial else media_liga
 
@@ -152,7 +191,7 @@ def calcular_stats_equipo_sos(df, equipo, media_liga, n_partidos=8, cache=None):
         goles_favor_adj.append(d['gol_favor'] * factor_def)
         goles_contra_adj.append(d['gol_contra'] * factor_atq)
 
-    return {
+    stats_sos = {
         'ataque':   round(float(np.mean(goles_favor_adj)), 3),
         'defensa':  round(float(np.mean(goles_contra_adj)), 3),
         'partidos': stats_bruto['partidos'],
@@ -161,6 +200,13 @@ def calcular_stats_equipo_sos(df, equipo, media_liga, n_partidos=8, cache=None):
         'ataque_bruto': stats_bruto['ataque'],
         'defensa_bruto': stats_bruto['defensa'],
     }
+    # Shrinkage final sobre el propio equipo: aunque ya se ajustó por rival,
+    # si SU PROPIA muestra es chica (ej. Sturm Graz con 2 partidos europeos)
+    # el promedio sigue sin ser confiable — se regresa hacia la media de liga.
+    stats_final = aplicar_shrinkage(stats_sos, media_liga)
+    stats_final['ataque_sin_shrink'] = stats_sos['ataque']
+    stats_final['defensa_sin_shrink'] = stats_sos['defensa']
+    return stats_final
 
 def dixon_coles_xg(ataque_l, defensa_l, ataque_v, defensa_v,
                     media_goles_liga=1.35, factor_local=1.10, fase='regular'):

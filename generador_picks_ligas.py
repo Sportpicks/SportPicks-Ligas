@@ -19,16 +19,52 @@ PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
 def hoy_peru():
     return datetime.now(PERU_TZ).strftime('%Y-%m-%d')
 
+# Divergencia máxima (en puntos porcentuales) entre la prob. del modelo y
+# la prob. implícita en las cuotas reales (sin vig) antes de descartar un
+# candidato. Caso real que motivó esto: equipos con 0 partidos en
+# historico.csv (ej. FC Thun, GNK Dinamo Zagreb) heredan el default neutro
+# (ataque=defensa=1.0) y el modelo puede terminar 45pp desalineado del
+# mercado — el shrinkage bayesiano no corrige esto porque no hay dato real
+# con el cual mezclar el prior cuando partidos=0. Una brecha de esa
+# magnitud en un mercado líquido es evidencia de un input roto, no de una
+# ineficiencia real explotable.
+DIVERGENCIA_MAX_PP = 30
+
+def _prob_mercado_devigged(cuota_pick, cuotas_grupo):
+    """
+    Probabilidad "justa" que implica el mercado para un mercado de N vías,
+    normalizando el overround (vig) del bookmaker.
+    cuotas_grupo: todas las cuotas reales del mismo mercado (ej. [c1,cx,c2]
+    para 1X2, [over,under] para goles).
+    Devuelve None si no hay cuotas reales suficientes para calcularlo.
+    """
+    validas = [c for c in cuotas_grupo if c and c > 1.0]
+    if cuota_pick <= 1.0 or len(validas) < 2:
+        return None
+    overround = sum(1 / c for c in validas)
+    if overround <= 0:
+        return None
+    return (1 / cuota_pick) / overround * 100
+
 def generar_candidatos(pred, cuotas):
     """Genera lista de picks candidatos para un partido"""
     candidatos = []
     local = pred['local']
     visitante = pred['visitante']
     partido = f"{local} vs {visitante}"
+    descartados_divergencia = []
 
-    def add(mercado, prob, cuota, emoji, categoria, descripcion):
+    def add(mercado, prob, cuota, emoji, categoria, descripcion, cuotas_grupo=None):
         if cuota < 1.30 or prob < 50:
             return
+        if cuotas_grupo:
+            prob_mercado = _prob_mercado_devigged(cuota, cuotas_grupo)
+            if prob_mercado is not None and abs(prob - prob_mercado) > DIVERGENCIA_MAX_PP:
+                descartados_divergencia.append(
+                    f'{mercado} ({partido}): modelo {prob:.1f}% vs mercado {prob_mercado:.1f}% '
+                    f'(brecha {abs(prob-prob_mercado):.1f}pp)'
+                )
+                return
         ev = round((prob/100) - (1/cuota), 3)
         candidatos.append({
             'partido': partido,
@@ -54,35 +90,45 @@ def generar_candidatos(pred, cuotas):
         })
 
     # ── Goles ──
+    grupo_1x2 = [cuotas.get('c1', 0), cuotas.get('cx', 0), cuotas.get('c2', 0)]
+    grupo_ou25 = [cuotas.get('over_2.5', 0), cuotas.get('under_2.5', 0)]
+
     if cuotas.get('c1', 0) > 1.30:
         add(f'Victoria {local}', pred['p1'], cuotas['c1'], '⚽', '1X2',
-            f'xG {pred["xg_l"]:.2f} — modelo {pred["p1"]}%')
+            f'xG {pred["xg_l"]:.2f} — modelo {pred["p1"]}%', cuotas_grupo=grupo_1x2)
     if cuotas.get('cx', 0) > 1.30:
         add('Empate', pred['px'], cuotas['cx'], '🤝', '1X2',
-            f'xG total {pred["xg_l"]+pred["xg_v"]:.2f}')
+            f'xG total {pred["xg_l"]+pred["xg_v"]:.2f}', cuotas_grupo=grupo_1x2)
     if cuotas.get('c2', 0) > 1.30:
         add(f'Victoria {visitante}', pred['p2'], cuotas['c2'], '⚽', '1X2',
-            f'xG {pred["xg_v"]:.2f} — modelo {pred["p2"]}%')
+            f'xG {pred["xg_v"]:.2f} — modelo {pred["p2"]}%', cuotas_grupo=grupo_1x2)
     if cuotas.get('over_2.5', 0) > 1.30:
         add('Más de 2.5 goles', pred['over_2.5'], cuotas['over_2.5'], '🥅', 'Goles',
-            f'xG total {pred["xg_l"]+pred["xg_v"]:.2f}')
+            f'xG total {pred["xg_l"]+pred["xg_v"]:.2f}', cuotas_grupo=grupo_ou25)
     if cuotas.get('under_2.5', 0) > 1.30:
         add('Menos de 2.5 goles', pred['under_2.5'], cuotas['under_2.5'], '🔒', 'Goles',
-            f'xG total {pred["xg_l"]+pred["xg_v"]:.2f}')
+            f'xG total {pred["xg_l"]+pred["xg_v"]:.2f}', cuotas_grupo=grupo_ou25)
 
     # ── BTTS ──
     btts_si = pred.get('btts_si', 0)
     btts_no = pred.get('btts_no', 0)
-    # Estimar cuotas BTTS si no están disponibles
+    # cuotas reales de mercado (si TheStatsAPI las trajo) vs. estimadas del
+    # propio modelo (100/prob) — el filtro de divergencia solo tiene sentido
+    # contra una cuota REAL; comparar el modelo contra su propia estimación
+    # nunca dispararía la brecha, así que solo se pasa cuotas_grupo cuando
+    # el valor viene de mercado.
+    btts_si_real = cuotas.get('btts_si', 0)
+    btts_no_real = cuotas.get('btts_no', 0)
+    grupo_btts = [btts_si_real, btts_no_real] if (btts_si_real and btts_no_real) else None
     if btts_si > 0:
-        cuota_btts_si = cuotas.get('btts_si', round(100/btts_si, 2) if btts_si > 0 else 0)
-        cuota_btts_no = cuotas.get('btts_no', round(100/btts_no, 2) if btts_no > 0 else 0)
+        cuota_btts_si = btts_si_real or (round(100/btts_si, 2) if btts_si > 0 else 0)
+        cuota_btts_no = btts_no_real or (round(100/btts_no, 2) if btts_no > 0 else 0)
         if cuota_btts_si > 1.30:
             add('Ambos anotan - Sí', btts_si, cuota_btts_si, '⚽', 'Goles',
-                f'Prob BTTS: {btts_si}%')
+                f'Prob BTTS: {btts_si}%', cuotas_grupo=grupo_btts)
         if cuota_btts_no > 1.30 and btts_no > 45:
             add('Ambos anotan - No', btts_no, cuota_btts_no, '🔒', 'Goles',
-                f'Prob BTTS No: {btts_no}%')
+                f'Prob BTTS No: {btts_no}%', cuotas_grupo=grupo_btts)
 
     # ── Doble oportunidad ──
     p1x = round(pred['p1'] + pred['px'], 1)
@@ -95,6 +141,13 @@ def generar_candidatos(pred, cuotas):
     if cuota_x2 > 1.30 and px2 > 60:
         add(f'X2 — Empate o {visitante}', px2, cuota_x2, '🛡️', 'Doble Op.',
             f'Sin derrota {visitante}: {px2}%')
+    # NOTA: 1X/X2 usan una cuota sintética derivada del propio modelo
+    # (1/prob * 0.90), no una cuota real de mercado — el filtro de
+    # divergencia no aplica aquí porque compararía el modelo contra sí
+    # mismo. Es una limitación conocida, distinta a la de este fix.
+
+    for aviso in descartados_divergencia:
+        print(f'  ⚠️ Descartado por divergencia vs mercado: {aviso}')
 
     return candidatos
 
@@ -155,76 +208,27 @@ def seleccionar_premium(todos, mercados_excluidos):
         key=lambda x: x['prob'], reverse=True
     )
 
-    # Buscar mejor combinada del mismo partido
+    # NOTA: no se generan combinadas del mismo partido (bet builder / SGP).
+    # Cualquier par de mercados del mismo partido está estadísticamente
+    # correlacionado en algún grado (goles ↔ resultado, goles ↔ doble
+    # oportunidad, BTTS ↔ goles...) y la lista de exclusiones puntuales que
+    # había antes (over/under contradictorios, BTTS-goles) dejaba huecos —
+    # el caso real detectado: "Menos de 2.5" + "X2" no estaba excluido, y la
+    # cuota combinada (producto de las dos cuotas de mercado) tampoco es una
+    # cotización real de ningún bookmaker, así que el EV que salía de ahí
+    # era ilusorio. Regla de diseño: solo combinar mercados de PARTIDOS
+    # DISTINTOS (Paso 1 abajo), que sí son estadísticamente independientes.
     mejor = None
     mejor_prob = 0
 
-    partidos = list(dict.fromkeys(pk['partido'] for pk in candidatos))
-    for partido in partidos:
-        pks = [pk for pk in candidatos if pk['partido'] == partido]
-        for i, pk1 in enumerate(pks):
-            for pk2 in pks[i+1:]:
-                m1 = pk1['mercado'].lower()
-                m2 = pk2['mercado'].lower()
-                # Evitar contradictorios y correlacionados
-                if ('más de' in m1 and 'menos de' in m2) or ('menos de' in m1 and 'más de' in m2):
-                    continue
-                if m1 == m2:
-                    continue
-                # Evitar picks muy correlacionados
-                if 'menos de 2.5' in m1 and 'ambos anotan - no' in m2:
-                    continue
-                if 'menos de 2.5' in m2 and 'ambos anotan - no' in m1:
-                    continue
-                if 'más de 2.5' in m1 and 'ambos anotan - sí' in m2:
-                    continue
-                if 'más de 2.5' in m2 and 'ambos anotan - sí' in m1:
-                    continue
-                cuota_combo = round(pk1['cuota'] * pk2['cuota'], 2)
-                if cuota_combo < CUOTA_MIN_PREMIUM:
-                    continue
-                prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
-                # Solo combinar si la prob combinada es >= 52%
-                if prob_combo < 40:
-                    continue
-                if prob_combo > mejor_prob:
-                    mejor_prob = prob_combo
-                    mejor = {
-                        'partido': partido,
-                        'local': pk1['local'],
-                        'visitante': pk1['visitante'],
-                        'liga': pk1['liga'],
-                        'liga_nombre': pk1['liga_nombre'],
-                        'fecha': pk1['fecha'],
-                        'hora': pk1['hora'],
-                        'mercado': f"Combinada: {pk1['mercado']} + {pk2['mercado']}",
-                        'prob': prob_combo,
-                        'cuota': cuota_combo,
-                        'cuota_display': cuota_combo,
-                        'ev': round((prob_combo/100) * cuota_combo - 1, 3),
-                        'emoji': '🎯',
-                        'categoria': 'Combinada',
-                        'descripcion': f"{pk1['mercado']} ({pk1['prob']:.0f}%) × {pk2['mercado']} ({pk2['prob']:.0f}%)",
-                        'fuente': 'real',
-                        'tipo': 'premium',
-                        'estado': 'Pendiente',
-                        'ganancia': 0,
-                        'stake': 0,
-                        'picks_combo': [
-                            {'mercado': pk1['mercado'], 'cuota': pk1['cuota']},
-                            {'mercado': pk2['mercado'], 'cuota': pk2['cuota']},
-                        ]
-                    }
-
-    # Paso 2: si no hay combinada del mismo partido, buscar combinada multi-partido
+    # Paso 1: combinada multi-partido (mercados de partidos distintos —
+    # independientes entre sí, sin riesgo de correlación intra-partido)
     if not mejor:
         pks_multi = [pk for pk in candidatos if pk['mercado'] not in mercados_excluidos]
         for i, pk1 in enumerate(pks_multi):
             for pk2 in pks_multi[i+1:]:
                 if pk1['partido'] == pk2['partido']:
-                    continue  # ya probamos mismo partido arriba
-                m1 = pk1['mercado'].lower()
-                m2 = pk2['mercado'].lower()
+                    continue  # nunca combinar mercados del mismo partido
                 cuota_combo = round(pk1['cuota'] * pk2['cuota'], 2)
                 if cuota_combo < CUOTA_MIN_PREMIUM:
                     continue
@@ -260,7 +264,7 @@ def seleccionar_premium(todos, mercados_excluidos):
                         ]
                     }
 
-    # Paso 3: pick individual premium — cualquier pick con buena prob y cuota >= 1.60
+    # Paso 2: pick individual premium — cualquier pick con buena prob y cuota >= 1.60
     if not mejor:
         for pk in sorted(todos, key=lambda x: (x['prob'], x['ev']), reverse=True):
             if (pk['prob'] >= 65
