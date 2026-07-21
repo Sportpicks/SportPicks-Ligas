@@ -14,14 +14,11 @@ Dos modos independientes (uno u otro, no ambos):
 
   --diario      Descarga solo los proximos 7 dias + cuotas (sin stats
                 historicos). Pensado para correr todos los dias (p.ej. en
-                GitHub Actions). Por defecto usa un subconjunto reducido de
-                ligas (DEFAULT_DIARIO_COMP_IDS, las 7 del pipeline original)
-                en vez de las 149. Calibrado empiricamente (test MLS+BSA,
-                2026-07-20): ~53 llamadas para 2 ligas => las 7 ligas
-                completas usan realisticamente ~150-250 llamadas/dia
-                (~15-20 min con el rate limit real de ~12 req/min), no las
-                50-80 originalmente estimadas a ojo. Aceptado como costo
-                operativo normal de un cron diario.
+                GitHub Actions). Por defecto procesa las ligas de
+                configuracion.LIGAS (el set curado de 15 ligas prioritarias
+                de SportPicks-Ligas). Calibrado empiricamente (test MLS+BSA,
+                2026-07-20): ~53 llamadas para 2 ligas => ~26.5 llamadas/liga
+                en promedio, variable segun el calendario de la semana.
 
 Uso:
     python descargar_partidos.py --historico [--session-minutos 120]
@@ -45,20 +42,6 @@ except AttributeError:
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
 
 CHECKPOINT_PATH = 'Data/descarga_checkpoint.json'
-
-# Ligas que procesa el modo diario por defecto (las 7 que ya usaba el
-# pipeline original). Uso real medido (2026-07-20, MLS+BSA): ~53 llamadas
-# para 2 ligas => ~150-250 llamadas/dia para las 7 (~15-20 min), no 50-80.
-# El modo --historico si cubre las 149 ligas del CSV, por sesiones.
-DEFAULT_DIARIO_COMP_IDS = [
-    'comp_3498',  # UEFA Champions League
-    'comp_7739',  # UEFA Europa League
-    'comp_1615',  # CONMEBOL Sudamericana
-    'comp_0499',  # CONMEBOL Libertadores
-    'comp_4795',  # Brasileirao Serie A
-    'comp_9799',  # MLS
-    'comp_6981',  # Liga 1 (Peru)
-]
 
 # Calibracion de estimaciones: segundos por llamada real observados contra
 # el rate limit del servidor (~12 req / ventana de ~60s), y promedio de
@@ -402,10 +385,8 @@ def main():
         faltantes = set(ids) - set(ligas)
         if faltantes:
             print(f'⚠️ comp_ids no encontrados en LIGAS: {faltantes}')
-    elif args.diario:
-        ligas = {k: LIGAS[k] for k in DEFAULT_DIARIO_COMP_IDS if k in LIGAS}
     else:
-        ligas = LIGAS
+        ligas = LIGAS  # las 15 ligas prioritarias de configuracion.py, en ambos modos
 
     print('\n' + '=' * 60)
     print(f'  SportPicks Ligas — TheStatsAPI — modo {"DIARIO" if args.diario else "HISTÓRICO"}')

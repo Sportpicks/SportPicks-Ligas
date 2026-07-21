@@ -11,160 +11,70 @@ RAIZ = os.path.dirname(os.path.abspath(__file__))
 # ── APIs ──
 API_THESTATS = 'fapi_xsedmwUExuZrMwSQnNXUS790890Bxbvp'
 
-# ── Ligas configuradas ──
-# Se cargan dinamicamente desde Data/thestats_ligas.csv (generado por
-# descargar_thestats_ligas.py). Clave: id de competicion de TheStatsAPI
-# (p.ej. 'comp_9799'). Todas las ligas del CSV se consideran activas.
-def _cargar_ligas():
-    ruta = os.path.join(RAIZ, 'Data', 'thestats_ligas.csv')
-    ligas = {}
-    if not os.path.exists(ruta):
-        return ligas
-
-    def _bool(v):
-        return str(v).strip().lower() == 'true'
-
-    with open(ruta, encoding='utf-8') as f:
-        for row in csv.DictReader(f):
-            ligas[row['id']] = {
-                'nombre':              row['name'],
-                'pais':                row['country'] or None,
-                'confederacion':       row['confederation'] or None,
-                'tipo':                row['type'],
-                'has_team_stats':      _bool(row['has_team_stats']),
-                'has_player_stats':    _bool(row['has_player_stats']),
-                'xg_available':        _bool(row['xg_available']),
-                'odds_available':      _bool(row['odds_available']),
-                'live_odds_available': _bool(row['live_odds_available']),
-                'activa':              True,
-            }
-    return ligas
-
-LIGAS = _cargar_ligas()
-
-# ── Nombres en español / normalización ──
-# Clave: nombre de la Odds API → valor: nombre del histórico (football-data.org)
-NOMBRES_ES = {
-    # Champions League
-    'Real Madrid': 'Real Madrid', 'Barcelona': 'FC Barcelona',
-    'Manchester City': 'Manchester City FC', 'Arsenal': 'Arsenal FC',
-    'Bayern Munich': 'FC Bayern München', 'Borussia Dortmund': 'Borussia Dortmund',
-    'Paris Saint-Germain FC': 'Paris Saint-Germain FC',
-    'Juventus': 'Juventus FC', 'Inter Milan': 'FC Internazionale Milano',
-    'AC Milan': 'AC Milan', 'Liverpool FC': 'Liverpool FC',
-    'Chelsea FC': 'Chelsea FC', 'Atletico Madrid': 'Club Atlético de Madrid',
-
-    # Brasileirao — Odds API → football-data.org
-    'Flamengo':          'CR Flamengo',
-    'Fluminense':        'Fluminense FC',
-    'Botafogo':          'Botafogo FR',
-    'Palmeiras':         'SE Palmeiras',
-    'Corinthians':       'SC Corinthians Paulista',
-    'Sao Paulo':         'São Paulo FC',
-    'Internacional':     'SC Internacional',
-    'Grêmio':            'Grêmio FBPA',
-    'Atletico Mineiro':  'CA Mineiro',
-    'Bragantino-SP':     'RB Bragantino',
-    'Cruzeiro':          'Cruzeiro EC',
-    'Bahia':             'EC Bahia',
-    'Vitoria':           'EC Vitória',
-    'Mirassol':          'Mirassol FC',
-    'Atletico Paranaense': 'Club Athletico Paranaense',
-    'Chapecoense':       'Chapecoense',
-    'Coritiba':          'Coritiba FC',
-    'Remo':              'Clube do Remo',
-
-    # Copa Libertadores / Sudamericana — Odds API → football-data.org
-    'River Plate':                'CA River Plate',
-    'Boca Juniors':               'CA Boca Juniors',
-    'Racing Club':                'Racing Club',
-    'Estudiantes':                'Estudiantes de La Plata',
-    'Estudiantes La Plata':       'Estudiantes de La Plata',
-    'Nacional':                   'Club Nacional',
-    'Club Nacional':              'Club Nacional',
-    'Nacional de Montevideo':     'Club Nacional de Football',
-    'CA Tigre':                   'CA Tigre',
-    'CA Tigre BA':                'CA Tigre',
-    'Santos FC':                  'Santos FC',
-    'Santos':                     'Santos FC',
-    'Universidad César Vallejo':  'Club Universitario de Deportes',
-    'UCV FC':                     'Club Universitario de Deportes',
-    'Flamengo-RJ':                'CR Flamengo',
-    'Fluminense-RJ':              'Fluminense FC',
-    'Corinthians-SP':             'SC Corinthians Paulista',
-    'Palmeiras-SP':               'SE Palmeiras',
-    'LDU Quito':                  'LDU de Quito',
-    'Independiente del Valle':    'CAR Independiente del Valle',
-    'Deportes Tolima':            'CD Tolima',
-    'Sporting Cristal':           'CS Cristal',
-    'Cerro Porteño':              'Club Cerro Porteño',
-    'Platense':                   'Club Platense',
-    'Vasco da Gama':              'CR Vasco da Gama',
-    'Independiente Medellín':     'CDC Atlético Nacional',
-    'Boca Juniors':               'CA Boca Juniors',
-    "O'Higgins":                 "CD O'Higgins",
-    'Lanus':                      'CA Lanus',
-    'Rosario Central':            'CA Rosario Central',
-    'Coquimbo Unido':             'CD Coquimbo Unido',
-    'Independiente Rivadavia':    'Independiente Rivadavia',
-    'Universidad Católica (CHI)': 'CD Universidad Católica',
-    'Caracas FC':                 'Caracas FC',
-    'Club Cienciano':             'Club Cienciano',
-    'Grêmio':                     'Grêmio FBPA',
-    # CSU adicionales
-    'Atletico Mineiro':           'CA Mineiro',
-    'Flamengo':                   'CR Flamengo',
-    'Internacional':              'SC Internacional',
-    'Sao Paulo':                  'São Paulo FC',
-    'Vasco':                      'CR Vasco da Gama',
-
-    # MLS — Odds API → API-Football (histórico)
-    'LA Galaxy':                  'Los Angeles Galaxy',
-    'Los Angeles FC':             'Los Angeles FC',
-    'LAFC':                       'Los Angeles FC',
-    'Seattle Sounders FC':        'Seattle Sounders',
-    'Portland Timbers':           'Portland Timbers',
-    'Atlanta United FC':          'Atlanta United FC',
-    'Nashville SC':               'Nashville SC',
-    'Columbus Crew SC':           'Columbus Crew',
-    'New York City FC':           'New York City FC',
-    'New England Revolution':     'New England Revolution',
-    'Charlotte FC':               'Charlotte',
-    'CF Montréal':                'CF Montreal',
-    'CF Montreal':                'CF Montreal',
-    'Toronto FC':                 'Toronto FC',
-    'Chicago Fire FC':            'Chicago Fire',
-    'Chicago Fire':               'Chicago Fire',
-    'Vancouver Whitecaps FC':     'Vancouver Whitecaps',
-    'St. Louis City SC':          'St. Louis City',
-    'Sporting Kansas City':       'Sporting Kansas City',
-    'Inter Miami CF':             'Inter Miami',
-    'Inter Miami':                'Inter Miami',
-    'Austin FC':                  'Austin',
-    'D.C. United':                'DC United',
-    'DC United':                  'DC United',
-    'FC Cincinnati':              'FC Cincinnati',
-    'FC Dallas':                  'FC Dallas',
-    'Houston Dynamo':             'Houston Dynamo',
-    'Minnesota United FC':        'Minnesota United FC',
-    'Colorado Rapids':            'Colorado Rapids',
-    'Real Salt Lake':             'Real Salt Lake',
-    'San Jose Earthquakes':       'San Jose Earthquakes',
-    'New York Red Bulls':         'New York Red Bulls',
-    'Orlando City SC':            'Orlando City SC',
-    'Philadelphia Union':         'Philadelphia Union',
-
-    # Liga 1 Perú
-    'Alianza Lima':      'Alianza Lima',
-    'Universitario':     'Universitario de Deportes',
-    'Melgar':            'FBC Melgar',
-    'Cienciano':         'Cienciano',
-    'Cesar Vallejo':     'Universidad César Vallejo',
+# ── Ligas prioritarias ──
+# Set curado de 15 ligas para SportPicks-Ligas (reemplaza el listado
+# dinamico de las 149 competiciones de Data/thestats_ligas.csv). Clave:
+# codigo corto interno; 'id' es el competition_id real de TheStatsAPI.
+THESTATS_LIGAS_PRIORITARIAS = {
+    'ARG': {'id': 'comp_4540',   'nombre': 'Liga Profesional Argentina', 'emoji': '🇦🇷'},
+    'BSA': {'id': 'comp_4795',   'nombre': 'Brasileirão Série A',        'emoji': '🇧🇷'},
+    'COL': {'id': 'comp_720692', 'nombre': 'Primera A Colombia',         'emoji': '🇨🇴'},
+    'CAF': {'id': 'comp_08478',  'nombre': 'CAF Champions League',       'emoji': '🌍'},
+    'CLB': {'id': 'comp_0499',   'nombre': 'CONMEBOL Libertadores',      'emoji': '🏆'},
+    'CSU': {'id': 'comp_1615',   'nombre': 'CONMEBOL Sudamericana',      'emoji': '🏆'},
+    'DAN': {'id': 'comp_7938',   'nombre': 'Danish Superliga',           'emoji': '🇩🇰'},
+    'NOR': {'id': 'comp_1992',   'nombre': 'Eliteserien',                'emoji': '🇳🇴'},
+    'LP1': {'id': 'comp_6981',   'nombre': 'Liga 1 Perú',                'emoji': '🇵🇪'},
+    'MXA': {'id': 'comp_298265', 'nombre': 'Liga MX Apertura',           'emoji': '🇲🇽'},
+    'ECU': {'id': 'comp_1917',   'nombre': 'LigaPro Serie A Ecuador',    'emoji': '🇪🇨'},
+    'SCO': {'id': 'comp_6387',   'nombre': 'Scottish Premiership',       'emoji': '🏴󠁧󠁢󠁳󠁣󠁴󠁿'},
+    'UCL': {'id': 'comp_3498',   'nombre': 'UEFA Champions League',      'emoji': '⭐'},
+    'UCO': {'id': 'comp_408698', 'nombre': 'UEFA Conference League',     'emoji': '🇪🇺'},
+    'MLS': {'id': 'comp_9799',   'nombre': 'MLS',                       'emoji': '🇺🇸'},
 }
 
-# Mapa inverso: histórico → normalizado (para buscar stats)
-NOMBRES_HIST = {v: v for v in NOMBRES_ES.values()}
-NOMBRES_HIST.update({v: k for k, v in NOMBRES_ES.items()})
+# LIGAS: clave = competition_id de TheStatsAPI (p.ej. 'comp_9799'), para
+# que coincida con el valor 'liga' que descargar_partidos.py escribe en
+# historico.csv/proximos.csv. Cada entrada agrega 'codigo' (el codigo
+# corto de arriba, para mostrar en la web/logs) y las capacidades de la
+# competicion (has_team_stats/odds_available/xg_available/...) leidas de
+# Data/thestats_ligas.csv, si el archivo existe.
+def _cargar_capacidades():
+    ruta = os.path.join(RAIZ, 'Data', 'thestats_ligas.csv')
+    capacidades = {}
+    if not os.path.exists(ruta):
+        return capacidades
+    with open(ruta, encoding='utf-8') as f:
+        for row in csv.DictReader(f):
+            capacidades[row['id']] = row
+    return capacidades
+
+def _bool(v):
+    return str(v).strip().lower() == 'true'
+
+def _construir_ligas():
+    capacidades = _cargar_capacidades()
+    ligas = {}
+    for codigo, info in THESTATS_LIGAS_PRIORITARIAS.items():
+        comp_id = info['id']
+        fila = capacidades.get(comp_id, {})
+        ligas[comp_id] = {
+            'codigo':              codigo,
+            'nombre':              info['nombre'],
+            'emoji':               info['emoji'],
+            'pais':                fila.get('country') or None,
+            'confederacion':       fila.get('confederation') or None,
+            'tipo':                fila.get('type'),
+            'has_team_stats':      _bool(fila.get('has_team_stats', 'False')),
+            'has_player_stats':    _bool(fila.get('has_player_stats', 'False')),
+            'xg_available':        _bool(fila.get('xg_available', 'False')),
+            'odds_available':      _bool(fila.get('odds_available', 'False')),
+            'live_odds_available': _bool(fila.get('live_odds_available', 'False')),
+            'activa':              True,
+        }
+    return ligas
+
+LIGAS = _construir_ligas()
 
 # ── Zonas horarias ──
 ZONA_PERU = -5  # UTC-5

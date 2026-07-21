@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 os.chdir(RAIZ)
 sys.path.insert(0, RAIZ)
-from configuracion import ZONA_PERU, NOMBRES_ES
+from configuracion import ZONA_PERU
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
 
@@ -34,19 +34,18 @@ def prob_under(lam, linea):
     return round(100 - prob_over(lam, linea), 1)
 
 def normalizar_nombre(nombre):
-    """Convierte nombre de Odds API al nombre del histórico"""
-    return NOMBRES_ES.get(nombre, nombre)
+    """
+    TheStatsAPI es fuente unica para historico.csv y proximos.csv -- los
+    nombres de equipo ya son consistentes entre ambos, no hace falta
+    mapear entre fuentes distintas. Se mantiene como identidad para no
+    romper los imports existentes (generador_picks_ligas.py, logger_predicciones.py).
+    """
+    return nombre
 
 def calcular_stats_equipo(df, equipo, n_partidos=8):
     """Calcula stats promedio de un equipo en sus últimos N partidos"""
-    # Intentar con nombre original y normalizado
-    nombre_hist = normalizar_nombre(equipo)
-    
-    for nom in [equipo, nombre_hist]:
-        como_local = df[df['local'] == nom].tail(n_partidos)
-        como_visita = df[df['visitante'] == nom].tail(n_partidos)
-        if len(como_local) + len(como_visita) > 0:
-            break
+    como_local = df[df['local'] == equipo].tail(n_partidos)
+    como_visita = df[df['visitante'] == equipo].tail(n_partidos)
 
     goles_favor = []
     goles_contra = []
@@ -159,16 +158,29 @@ def predecir_partido(local, visitante, df_historico, liga_key,
     # Media de goles de la liga (promedio por EQUIPO, no total del partido)
     # Medias por liga — representan goles promedio POR EQUIPO
     # NO modificar para calibrar — usar factor_escala en dixon_coles_xg
+    # Claves = competition_id de TheStatsAPI. Ligas sin calibracion propia
+    # caen al default de .get() (1.25) -- las 9 ligas nuevas del set de
+    # 15 (ARG/COL/CAF/DAN/NOR/MXA/ECU/SCO/UCO) todavia no tienen
+    # retrodiccion historica, asi que usan ese valor neutro a proposito.
     media_defaults = {
-        'BSA': 1.25, 'MLS': 1.40, 'UCL': 1.35,
-        'CLB': 1.15, 'CSU': 1.10, 'LP1': 1.05,
+        'comp_4795': 1.25,  # BSA
+        'comp_9799': 1.40,  # MLS
+        'comp_3498': 1.35,  # UCL
+        'comp_0499': 1.15,  # CLB
+        'comp_1615': 1.10,  # CSU
+        'comp_6981': 1.05,  # LP1
     }
-    # Factor de escala por liga — calibrado con retrodicción histórica
-    # Corrige subestimación sin afectar la distribución 1X2
+    # Factor de escala por liga — calibrado con retrodicción histórica.
+    # Corrige subestimación sin afectar la distribución 1X2.
     # BSA sesgo -0.079 → +6%, MLS sesgo -0.107 → +8%, CLB sesgo -0.336 → +20%
+    # Ligas sin calibracion propia caen al default de .get() (1.0, neutro).
     factor_escala_liga = {
-        'BSA': 1.06, 'MLS': 1.08, 'UCL': 1.05,
-        'CLB': 1.20, 'CSU': 1.15, 'LP1': 1.10,
+        'comp_4795': 1.06,  # BSA
+        'comp_9799': 1.08,  # MLS
+        'comp_3498': 1.05,  # UCL
+        'comp_0499': 1.20,  # CLB
+        'comp_1615': 1.15,  # CSU
+        'comp_6981': 1.10,  # LP1
     }
     df_liga = df_historico[df_historico['liga'] == liga_key].copy()
     try:
@@ -266,8 +278,9 @@ def predecir_jornada(fecha=None):
             'under_2.5': p.get('under_2.5', 0),
         }
 
-        # Determinar fase
-        fase = 'eliminatoria' if liga in ['UCL', 'CLB', 'CSU'] else 'regular'
+        # Determinar fase (mismo criterio que antes, con los IDs nuevos:
+        # UCL=comp_3498, CLB=comp_0499, CSU=comp_1615)
+        fase = 'eliminatoria' if liga in ('comp_3498', 'comp_0499', 'comp_1615') else 'regular'
 
         # Normalizar nombres para buscar en histórico
         local_hist = normalizar_nombre(local)

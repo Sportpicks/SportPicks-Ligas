@@ -14,17 +14,27 @@ from configuracion import LIGAS, ZONA_PERU
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
 
+# Claves = competition_id de TheStatsAPI (ver configuracion.THESTATS_LIGAS_PRIORITARIAS)
 LIGA_COLOR = {
-    'UCL': '#60a5fa',
-    'CLB': '#fbbf24',
-    'CSU': '#fb923c',
-    'BSA': '#34d399',
-    'MLS': '#a78bfa',
-    'LP1': '#fb7185',
-    'UEL': '#f472b6',
+    'comp_4540':   '#7dd3fc',  # ARG
+    'comp_4795':   '#34d399',  # BSA
+    'comp_720692': '#fde047',  # COL
+    'comp_08478':  '#fb923c',  # CAF
+    'comp_0499':   '#fbbf24',  # CLB
+    'comp_1615':   '#f97316',  # CSU
+    'comp_7938':   '#f87171',  # DAN
+    'comp_1992':   '#38bdf8',  # NOR
+    'comp_6981':   '#fb7185',  # LP1
+    'comp_298265': '#4ade80',  # MXA
+    'comp_1917':   '#facc15',  # ECU
+    'comp_6387':   '#c084fc',  # SCO
+    'comp_3498':   '#60a5fa',  # UCL
+    'comp_408698': '#f472b6',  # UCO
+    'comp_9799':   '#a78bfa',  # MLS
 }
 LIGA_EMOJI = {k: v['emoji'] for k, v in LIGAS.items()}
 LIGA_NOMBRE = {k: v['nombre'] for k, v in LIGAS.items()}
+LIGA_CODIGO = {k: v['codigo'] for k, v in LIGAS.items()}
 
 
 def cargar_json(ruta, default):
@@ -320,7 +330,7 @@ def main():
     ligas_presentes = list(dict.fromkeys(p.get('liga', '') for p in partidos if p.get('liga')))
 
     ligas_btns = '<button type="button" class="sel" data-liga="TODAS">⚽ Todas</button>' + ''.join(
-        f'<button type="button" data-liga="{lg}">{LIGA_EMOJI.get(lg,"")} {lg}</button>' for lg in ligas_presentes
+        f'<button type="button" data-liga="{lg}">{LIGA_EMOJI.get(lg,"")} {LIGA_CODIGO.get(lg,lg)}</button>' for lg in ligas_presentes
     )
 
     def fmt_dia(f):
@@ -379,7 +389,7 @@ def main():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SportPicks Ligas · Predicciones Multi-Liga con IA</title>
-<meta name="description" content="Predicciones deportivas con IA para Champions League, Libertadores, Sudamericana, Brasileirao, MLS y Liga 1 Perú.">
+<meta name="description" content="Predicciones deportivas con IA para 15 ligas: Champions League, Conference League, Libertadores, Sudamericana, Brasileirao, MLS, Liga 1 Perú y más.">
 <style>{CSS}</style>
 </head>
 <body>
@@ -426,7 +436,7 @@ def main():
     <div style="font-size:1.8rem">📣</div>
     <div style="flex:1">
       <div class="tg-banner-txt">Canal GRATIS de SportPicks — Únete ahora</div>
-      <div class="tg-banner-sub">✅ Picks públicos diarios · 💎 Análisis del modelo · ⚽ 6 ligas</div>
+      <div class="tg-banner-sub">✅ Picks públicos diarios · 💎 Análisis del modelo · ⚽ 15 ligas</div>
     </div>
     <a class="tg-banner-btn" href="https://t.me/sportpickoficial" target="_blank" onclick="event.stopPropagation()">Unirme →</a>
   </div>
@@ -472,7 +482,7 @@ def main():
   <div style="font-size:2rem;flex-shrink:0">📣</div>
   <div style="flex:1">
     <div style="color:#fff;font-weight:700;font-size:.88rem;line-height:1.3">Canal GRATIS de SportPicks</div>
-    <div style="color:rgba(255,255,255,.8);font-size:.74rem;margin-top:3px">Picks diarios · 6 ligas internacionales</div>
+    <div style="color:rgba(255,255,255,.8);font-size:.74rem;margin-top:3px">Picks diarios · 15 ligas internacionales</div>
   </div>
   <button id="tg-close" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:50%;width:24px;height:24px;cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">✕</button>
 </div>

@@ -11,7 +11,7 @@ RAIZ = os.path.dirname(os.path.abspath(__file__))
 os.chdir(RAIZ)
 sys.path.insert(0, RAIZ)
 from configuracion import (ZONA_PERU, CUOTA_MIN_PUBLICO, CUOTA_MIN_PREMIUM,
-                            PROB_MIN_PUBLICO, PROB_MIN_PREMIUM, MAX_PICKS_PUBLICO)
+                            PROB_MIN_PUBLICO, PROB_MIN_PREMIUM, MAX_PICKS_PUBLICO, LIGAS)
 from modelo_prediccion import predecir_jornada, normalizar_nombre
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
@@ -351,7 +351,7 @@ def main(fecha=None, dias=3):
     # Mostrar panel
     print(f'\n📋 PANEL PÚBLICO ({len(publicos)} picks):')
     for i, pk in enumerate(publicos, 1):
-        liga_emoji = {'BSA':'🇧🇷','MLS':'🇺🇸','CSU':'🏆','CLB':'🏆','UCL':'🇪🇺','LP1':'🇵🇪','UEL':'🇪🇺'}.get(pk['liga'],'⚽')
+        liga_emoji = LIGAS.get(pk['liga'], {}).get('emoji', '⚽')
         print(f'   #{i} {liga_emoji} [{pk["categoria"]}] {pk["mercado"]}')
         print(f'      {pk["partido"]} | {pk["prob"]:.1f}% | @{pk["cuota"]:.2f} EV:{pk["ev"]:+.1%}')
 
