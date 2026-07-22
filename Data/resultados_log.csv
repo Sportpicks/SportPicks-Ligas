@@ -1,0 +1,63 @@
+fecha,liga,local,visitante,goles_l_real,goles_v_real,goles_total_real,resultado_real,over_25_real,btts_real,registrado_en
+2026-07-17,comp_4795,Mirassol,Grêmio,2,1,3,1,True,True,2026-07-21T16:58:17.297224-05:00
+2026-07-17,comp_4795,Fluminense,Red Bull Bragantino,1,1,2,X,False,True,2026-07-21T16:58:17.301381-05:00
+2026-07-17,comp_4795,Bahia,Chapecoense,2,0,2,1,False,False,2026-07-21T16:58:17.304085-05:00
+2026-07-18,comp_1992,Viking FK,Sandefjord Fotball,2,1,3,1,True,True,2026-07-21T16:58:40.602063-05:00
+2026-07-18,comp_1992,Molde FK,SK Brann,1,2,3,2,True,True,2026-07-21T16:58:40.604880-05:00
+2026-07-18,comp_1992,IK Start,Rosenborg BK,0,3,3,2,True,False,2026-07-21T16:58:40.607491-05:00
+2026-07-18,comp_1992,Lillestrøm SK,KFUM Oslo,2,1,3,1,True,True,2026-07-21T16:58:40.609881-05:00
+2026-07-18,comp_1992,Kristiansund BK,Sarpsborg 08,0,0,0,X,False,False,2026-07-21T16:58:40.612265-05:00
+2026-07-18,comp_1992,HamKam,Tromsø IL,1,4,5,2,True,True,2026-07-21T16:58:40.614687-05:00
+2026-07-17,comp_1992,Bodø/Glimt,Fredrikstad FK,1,0,1,1,False,False,2026-07-21T16:58:40.616970-05:00
+2026-07-19,comp_6981,Alianza Lima,Sport Huancayo,2,1,3,1,True,True,2026-07-21T16:58:44.481697-05:00
+2026-07-19,comp_6981,Los Chankas CYC,Sport Boys,1,0,1,1,False,False,2026-07-21T16:58:44.484330-05:00
+2026-07-18,comp_6981,Cusco FC,Alianza Atlético de Sullana,4,1,5,1,True,True,2026-07-21T16:58:44.486720-05:00
+2026-07-18,comp_6981,Club Atlético Grau,Universidad Técnica de Cajamarca,3,1,4,1,True,True,2026-07-21T16:58:44.489051-05:00
+2026-07-18,comp_6981,Asociación Deportiva Tarma,Universitario,1,2,3,2,True,True,2026-07-21T16:58:44.491400-05:00
+2026-07-18,comp_6981,CD Moquegua,Comerciantes Unidos,2,2,4,X,True,True,2026-07-21T16:58:44.493798-05:00
+2026-07-17,comp_6981,Cienciano,Melgar,1,3,4,2,True,True,2026-07-21T16:58:44.496112-05:00
+2026-07-17,comp_6981,Club Sporting Cristal,Deportivo Garcilaso,1,0,1,1,False,False,2026-07-21T16:58:44.498500-05:00
+2026-07-17,comp_6981,FC Cajamarca,ADC Juan Pablo II,2,2,4,X,True,True,2026-07-21T16:58:44.500803-05:00
+2026-07-18,comp_298265,Querétaro FC,Club América,0,1,1,2,False,False,2026-07-21T16:58:48.364054-05:00
+2026-07-18,comp_298265,CD Guadalajara,CD Toluca,0,2,2,2,False,False,2026-07-21T16:58:48.366709-05:00
+2026-07-18,comp_298265,CF Monterrey,Santos Laguna,3,2,5,1,True,True,2026-07-21T16:58:48.369095-05:00
+2026-07-18,comp_298265,Pumas UNAM,CF Pachuca,0,3,3,2,True,False,2026-07-21T16:58:48.371508-05:00
+2026-07-17,comp_298265,FC Juárez,Club Puebla,0,1,1,2,False,False,2026-07-21T16:58:48.373869-05:00
+2026-07-17,comp_298265,Atlético San Luis,Cruz Azul,2,3,5,2,True,True,2026-07-21T16:58:48.376217-05:00
+2026-07-17,comp_298265,Club León,Atlas FC,2,3,5,2,True,True,2026-07-21T16:58:48.378626-05:00
+2026-07-16,comp_298265,Club Tijuana,Tigres UANL,3,1,4,1,True,True,2026-07-21T16:58:48.381000-05:00
+2026-07-16,comp_298265,Club Necaxa,Atlante FC,2,1,3,1,True,True,2026-07-21T16:58:48.383391-05:00
+2026-07-20,comp_1917,Mushuc Runa,Orense SC,2,1,3,1,True,True,2026-07-21T16:58:52.234381-05:00
+2026-07-19,comp_1917,Independiente del Valle,Emelec,6,1,7,1,True,True,2026-07-21T16:58:52.237052-05:00
+2026-07-19,comp_1917,Guayaquil City,Manta FC,1,0,1,1,False,False,2026-07-21T16:58:52.239554-05:00
+2026-07-19,comp_1917,Técnico Universitario,Aucas,0,1,1,2,False,False,2026-07-21T16:58:52.241961-05:00
+2026-07-18,comp_1917,Barcelona SC,Libertad,1,0,1,1,False,False,2026-07-21T16:58:52.244375-05:00
+2026-07-18,comp_1917,LDU,Leones del Norte,0,1,1,2,False,False,2026-07-21T16:58:52.246842-05:00
+2026-07-18,comp_1917,Deportivo Cuenca,Universidad Católica del Ecuador,0,2,2,2,False,False,2026-07-21T16:58:52.249220-05:00
+2026-07-17,comp_1917,Delfín,Macará,2,1,3,1,True,True,2026-07-21T16:58:52.251629-05:00
+2026-07-16,comp_1917,Orense SC,Emelec,0,2,2,2,False,False,2026-07-21T16:58:52.254035-05:00
+2026-07-21,comp_3498,Larne FC,FK Crvena zvezda,0,4,4,2,True,False,2026-07-21T16:59:20.235667-05:00
+2026-07-21,comp_3498,Víkingur Reykjavík,Hapoel Be'er Sheva,2,1,3,1,True,True,2026-07-21T16:59:20.238403-05:00
+2026-07-21,comp_3498,Klaksvíkar Ítróttarfelag,FK Kauno Žalgiris,0,0,0,X,False,False,2026-07-21T16:59:20.240845-05:00
+2026-07-21,comp_3498,SK Sturm Graz,Heart of Midlothian,4,0,4,1,True,False,2026-07-21T16:59:20.243282-05:00
+2026-07-21,comp_3498,FC Thun,GNK Dinamo Zagreb,1,1,2,X,False,True,2026-07-21T16:59:20.245714-05:00
+2026-07-21,comp_3498,Fenerbahçe,Górnik Zabrze,1,0,1,1,False,False,2026-07-21T16:59:20.248147-05:00
+2026-07-21,comp_3498,AGF,Lech Poznań,1,4,5,2,True,True,2026-07-21T16:59:20.250606-05:00
+2026-07-21,comp_3498,Sabah FK,KuPS,1,0,1,1,False,False,2026-07-21T16:59:20.253014-05:00
+2026-07-21,comp_3498,Mjällby AIF,Lincoln Red Imps,3,0,3,1,True,False,2026-07-21T16:59:20.255484-05:00
+2026-07-21,comp_3498,FC Ararat-Armenia,Shamrock Rovers,2,0,2,1,False,False,2026-07-21T16:59:20.257937-05:00
+2026-07-21,comp_3498,FC Iberia 1999,ŠK Slovan Bratislava,0,2,2,2,False,False,2026-07-21T16:59:20.260406-05:00
+2026-07-21,comp_408698,Atert Bissen,ETO FC Győr,2,6,8,2,True,True,2026-07-21T16:59:23.534340-05:00
+2026-07-21,comp_408698,Floriana FC,FC Drita,1,1,2,X,False,True,2026-07-21T16:59:23.537174-05:00
+2026-07-21,comp_408698,IFK Göteborg,FCI Levadia Tallinn,1,2,3,2,True,True,2026-07-21T16:59:23.539756-05:00
+2026-07-17,comp_9799,LA Galaxy,Los Angeles FC,0,3,3,2,True,False,2026-07-21T16:59:26.848996-05:00
+2026-07-17,comp_9799,Nashville SC,Atlanta United,1,0,1,1,False,False,2026-07-21T16:59:26.851872-05:00
+2026-07-16,comp_9799,Seattle Sounders FC,Portland Timbers,1,5,6,2,True,True,2026-07-21T16:59:26.854419-05:00
+2026-07-16,comp_9799,St.Louis City,Sporting Kansas City,3,2,5,1,True,True,2026-07-21T16:59:26.856936-05:00
+2026-07-21,comp_4795,Atlético Mineiro,Bahia,1,1,2,X,False,True,2026-07-22T11:18:41.639907-05:00
+2026-07-21,comp_1615,Universidad Central,Santos,1,4,5,2,True,True,2026-07-22T11:19:29.774665-05:00
+2026-07-21,comp_1615,Nacional,Tigre,0,3,3,2,True,False,2026-07-22T11:19:29.777833-05:00
+2026-07-21,comp_298265,CD Toluca,Pumas UNAM,1,2,3,2,True,True,2026-07-22T11:20:24.698049-05:00
+2026-07-21,comp_298265,Cruz Azul,Club Puebla,2,1,3,1,True,True,2026-07-22T11:20:24.700949-05:00
+2026-07-21,comp_1917,Universidad Católica del Ecuador,Barcelona SC,2,1,3,1,True,True,2026-07-22T11:20:29.733789-05:00
+2026-07-21,comp_1917,Libertad,Delfín,1,0,1,1,False,False,2026-07-22T11:20:29.736795-05:00
