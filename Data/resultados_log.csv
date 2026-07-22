@@ -54,3 +54,10 @@ fecha,liga,local,visitante,goles_l_real,goles_v_real,goles_total_real,resultado_
 2026-07-17,comp_9799,Nashville SC,Atlanta United,1,0,1,1,False,False,2026-07-21T16:59:26.851872-05:00
 2026-07-16,comp_9799,Seattle Sounders FC,Portland Timbers,1,5,6,2,True,True,2026-07-21T16:59:26.854419-05:00
 2026-07-16,comp_9799,St.Louis City,Sporting Kansas City,3,2,5,1,True,True,2026-07-21T16:59:26.856936-05:00
+2026-07-21,comp_4795,Atlético Mineiro,Bahia,1,1,2,X,False,True,2026-07-22T11:18:41.639907-05:00
+2026-07-21,comp_1615,Universidad Central,Santos,1,4,5,2,True,True,2026-07-22T11:19:29.774665-05:00
+2026-07-21,comp_1615,Nacional,Tigre,0,3,3,2,True,False,2026-07-22T11:19:29.777833-05:00
+2026-07-21,comp_298265,CD Toluca,Pumas UNAM,1,2,3,2,True,True,2026-07-22T11:20:24.698049-05:00
+2026-07-21,comp_298265,Cruz Azul,Club Puebla,2,1,3,1,True,True,2026-07-22T11:20:24.700949-05:00
+2026-07-21,comp_1917,Universidad Católica del Ecuador,Barcelona SC,2,1,3,1,True,True,2026-07-22T11:20:29.733789-05:00
+2026-07-21,comp_1917,Libertad,Delfín,1,0,1,1,False,False,2026-07-22T11:20:29.736795-05:00
