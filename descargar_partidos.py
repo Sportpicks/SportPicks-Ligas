@@ -61,11 +61,16 @@ COLUMNAS_HIST = [
     'xg_l', 'xg_v', 'corners_l', 'corners_v', 'shots_l', 'shots_v',
     'shots_on_target_l', 'shots_on_target_v', 'fouls_l', 'fouls_v',
     'yellow_cards_l', 'yellow_cards_v',
-    # Intento de captura de tarjetas rojas -- no confirmado si TheStatsAPI
-    # expone este campo bajo 'overview' (no hay forma de verificarlo sin
-    # acceso a la API en vivo). par('red_cards') devuelve '' si la clave no
-    # existe, así que agregar esto es inofensivo si el campo no está --
-    # sirve para detectar en la próxima corrida real si el dato existe.
+    # Campo confirmado (ver check_red_cards.py, corrida real 2026-07-22):
+    # TheStatsAPI SI expone 'red_cards' bajo overview igual que yellow_cards.
+    # Se decidio NO usarlo como covariable del modelo de goles: evento raro
+    # (~23% de partidos en la muestra, mayoria 0-0), señal ya capturada
+    # indirectamente por fouls/yellow_cards (que tienen mucha mejor muestra),
+    # y backtestearlo en serio exigiria re-descargar stats de los ~4125
+    # partidos de historico.csv (rate limit ~12 req/60s -- varias horas) para
+    # muy probablemente confirmar que el efecto marginal es ruido. Se deja
+    # la columna (inofensiva, exploratoria) por si en el futuro cambia el
+    # calculo de costo/beneficio (ej. si se automatiza la descarga masiva).
     'red_cards_l', 'red_cards_v',
 ]
 
