@@ -70,7 +70,25 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f docs/index.html Data/picks_hoy.json Data/partidos/proximos.csv Predicciones/predicciones_hoy.json \
                      Data/predicciones_log.csv Data/resultados_log.csv Data/calibracion.json Data/historial_picks.csv
-          git diff --staged --quiet || git commit -m "chore: pipeline diario $(date -u +%Y-%m-%d)"
-          git push origin HEAD:main
+          if git diff --staged --quiet; then
+            echo "Sin cambios que commitear."
+            exit 0
+          fi
+          git commit -m "chore: pipeline diario $(date -u +%Y-%m-%d)"
+          # Reintento con rebase si el push es rechazado por non-fast-forward
+          # -- puede pasar si el cron nativo, el disparador externo (cron-job.org)
+          # o un push manual corrieron en paralelo y el remoto se movio mientras
+          # este job trabajaba sus varios minutos de descarga/calculo. No es un
+          # error real del pipeline, solo hay que sincronizar antes de subir.
+          for intento in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push rechazado (intento $intento/3) -- sincronizando con origin/main y reintentando"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "No se pudo pushear tras 3 intentos -- revisar conflicto manualmente"
+          exit 1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
