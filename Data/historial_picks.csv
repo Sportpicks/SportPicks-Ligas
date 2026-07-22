@@ -1,11 +1,11 @@
 fecha,hora,liga,liga_nombre,local,visitante,mercado,categoria,prob,cuota,ev,es_publico,es_premium,es_mejor_apuesta,es_combo,estado,resultado_detalle,registrado_en,liquidado_en
-2026-07-21,16:30,comp_1917,LigaPro Serie A Ecuador,Libertad,Delfín,Victoria Libertad,1X2,61.3,,0.174,True,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-21,17:00,comp_1615,CONMEBOL Sudamericana,Nacional,Tigre,Más de 20.5 tiros,Tiros,73.3,,0.187,True,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-21,17:30,comp_4795,Brasileirão Série A,Atlético Mineiro,Bahia,Ambos anotan - Sí,Goles,53.8,,0.0,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-21,19:00,comp_1917,LigaPro Serie A Ecuador,Universidad Católica del Ecuador,Barcelona SC,Más de 9.5 córners,Córners,56.8,,0.092,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-21,19:30,comp_1615,CONMEBOL Sudamericana,Universidad Central,Santos,Más de 2.5 goles,Goles,50.3,,0.036,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-21,20:00,comp_298265,Liga MX Apertura,Cruz Azul,Club Puebla,Ambos anotan - Sí,Goles,52.2,,0.001,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-21,22:05,comp_298265,Liga MX Apertura,CD Toluca,Pumas UNAM,Victoria CD Toluca,1X2,62.5,,0.008,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
+2026-07-21,16:30,comp_1917,LigaPro Serie A Ecuador,Libertad,Delfín,Victoria Libertad,1X2,61.3,,0.174,True,False,True,False,Ganado,Libertad 1-0 Delfín,2026-07-21T16:33:28.538367-05:00,2026-07-22T11:21:25.007611-05:00
+2026-07-21,17:00,comp_1615,CONMEBOL Sudamericana,Nacional,Tigre,Más de 20.5 tiros,Tiros,73.3,,0.187,True,False,True,False,Perdido,Nacional 0-3 Tigre (remates: 7-11=18),2026-07-21T16:33:28.538367-05:00,2026-07-22T12:00:00.000000-05:00
+2026-07-21,17:30,comp_4795,Brasileirão Série A,Atlético Mineiro,Bahia,Ambos anotan - Sí,Goles,53.8,,0.0,False,False,True,False,Ganado,Atlético Mineiro 1-1 Bahia,2026-07-21T16:33:28.538367-05:00,2026-07-22T11:21:25.007611-05:00
+2026-07-21,19:00,comp_1917,LigaPro Serie A Ecuador,Universidad Católica del Ecuador,Barcelona SC,Más de 9.5 córners,Córners,56.8,,0.092,False,False,True,False,Ganado,U. Católica 2-1 Barcelona SC (córners: 8-2=10),2026-07-21T16:33:28.538367-05:00,2026-07-22T12:00:00.000000-05:00
+2026-07-21,19:30,comp_1615,CONMEBOL Sudamericana,Universidad Central,Santos,Más de 2.5 goles,Goles,50.3,,0.036,False,False,True,False,Ganado,Universidad Central 1-4 Santos,2026-07-21T16:33:28.538367-05:00,2026-07-22T11:21:25.007611-05:00
+2026-07-21,20:00,comp_298265,Liga MX Apertura,Cruz Azul,Club Puebla,Ambos anotan - Sí,Goles,52.2,,0.001,False,False,True,False,Ganado,Cruz Azul 2-1 Club Puebla,2026-07-21T16:33:28.538367-05:00,2026-07-22T11:21:25.007611-05:00
+2026-07-21,22:05,comp_298265,Liga MX Apertura,CD Toluca,Pumas UNAM,Victoria CD Toluca,1X2,62.5,,0.008,False,False,True,False,Perdido,CD Toluca 1-2 Pumas UNAM,2026-07-21T16:33:28.538367-05:00,2026-07-22T11:21:25.007611-05:00
 2026-07-22,11:00,comp_408698,UEFA Conference League,Neftçi Baku PFK,Dinamo Minsk,Menos de 2.5 goles,Goles,74.9,,0.128,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-22,12:00,comp_1992,Eliteserien,Lillestrøm SK,Viking FK,Más de 2.5 goles,Goles,59.7,,-0.057,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-22,12:00,comp_1992,Eliteserien,Bodø/Glimt,HamKam,Más de 2.5 goles,Goles,68.4,,-0.116,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
@@ -37,7 +37,7 @@ fecha,hora,liga,liga_nombre,local,visitante,mercado,categoria,prob,cuota,ev,es_p
 2026-07-22,19:30,comp_9799,MLS,Nashville SC,CF Montréal,Más de 2.5 goles,Goles,74.1,,0.12,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-22,19:30,comp_9799,MLS,Houston Dynamo,DC United,Más de 2.5 goles,Goles,62.5,,0.066,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-22,20:30,comp_9799,MLS,Colorado Rapids,San Diego FC,Más de 2.5 goles,Goles,64.7,,-0.047,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,20:30,comp_9799,MLS,Austin FC,Seattle Sounders FC,Más de 2.5 goles,Goles,74.6,,0.144,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
+2026-07-22,20:30,comp_9799,MLS,Austin FC,Seattle Sounders FC,Más de 2.5 goles,Goles,74.6,,0.144,True,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-22,21:30,comp_9799,MLS,Portland Timbers,FC Dallas,Más de 2.5 goles,Goles,61.0,,-0.057,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-22,21:30,comp_9799,MLS,Los Angeles FC,Real Salt Lake,Victoria Los Angeles FC,1X2,64.8,,0.06,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-22,21:30,comp_9799,MLS,LA Galaxy,St.Louis City,Más de 2.5 goles,Goles,69.1,,0.054,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
@@ -99,4 +99,8 @@ fecha,hora,liga,liga_nombre,local,visitante,mercado,categoria,prob,cuota,ev,es_p
 2026-07-24,17:00,comp_4540,Liga Profesional Argentina,Racing Club,Gimnasia y Esgrima,Menos de 2.5 goles,Goles,63.5,,-0.032,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-24,18:10,comp_720692,Primera A Colombia,Llaneros FC,Deportivo Pereira,Más de 2.5 goles,Goles,45.5,,0.011,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-24,19:15,comp_4540,Liga Profesional Argentina,Platense,Club Atlético Unión de Santa Fe,Menos de 2.5 goles,Goles,63.3,,-0.102,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-21,17:00,comp_1615,Multi-liga,Nacional,Tigre,Combinada: Más de 20.5 tiros (Nacional) + Victoria Cruz Azul (Cruz Azul),Combinada,48.1,2.47,0.188,False,True,False,True,Pendiente,"[{""partido"": ""Nacional vs Tigre"", ""mercado"": ""Más de 20.5 tiros"", ""cuota"": 1.83}, {""partido"": ""Cruz Azul vs Club Puebla"", ""mercado"": ""Victoria Cruz Azul"", ""cuota"": 1.35}]",2026-07-21T16:33:28.538367-05:00,
+2026-07-21,17:00,comp_1615,Multi-liga,Nacional,Tigre,Combinada: Más de 20.5 tiros (Nacional) + Victoria Cruz Azul (Cruz Azul),Combinada,48.1,2.47,0.188,False,True,False,True,Perdido,Más de 20.5 tiros: Perdido | Victoria Cruz Azul: Ganado,2026-07-21T16:33:28.538367-05:00,2026-07-22T12:00:00.000000-05:00
+2026-07-21,17:00,comp_1615,CONMEBOL Sudamericana,Nacional,Tigre,Más de 8.5 córners,Córners,63.5,,0.079,False,True,True,False,Perdido,Nacional 0-3 Tigre (córners: 2-2=4),2026-07-21T16:59:27.983654-05:00,2026-07-22T12:00:00.000000-05:00
+2026-07-21,17:30,comp_4795,Brasileirão Série A,Atlético Mineiro,Bahia,Más de 2.5 goles,Goles,53.5,,0.009,False,False,True,False,Perdido,Atlético Mineiro 1-1 Bahia,2026-07-21T16:59:27.983654-05:00,2026-07-22T11:21:25.007611-05:00
+2026-07-24,20:30,comp_6981,Liga 1 Perú,Universitario,Cusco FC,Menos de 2.5 goles,Goles,52.7,,0.042,False,False,True,False,Pendiente,,2026-07-21T16:59:27.983654-05:00,
+2026-07-24,21:00,comp_298265,Liga MX Apertura,Club Tijuana,Club León,Victoria Club Tijuana,1X2,63.2,,0.144,False,False,True,False,Pendiente,,2026-07-21T16:59:27.983654-05:00,
