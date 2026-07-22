@@ -151,11 +151,49 @@ def archivar_historial(partidos, publicos, premium):
     entradas = {}
     ahora = datetime.now(PERU_TZ).isoformat()
 
+    def _desactivar_snapshots_previos(fecha, local, visitante, mercado, es_publico, es_premium):
+        """
+        El pipeline puede correr más de una vez el mismo día (ej. refresh de
+        cuotas), y entre corridas el mercado elegido para el público/premium
+        de un mismo partido puede cambiar (ej. pasa de una combinada a un
+        pick individual de córners porque la cuota/EV se movió). Sin esto,
+        cada corrida agregaba una fila nueva -- todas con es_publico/
+        es_premium en True -- e inflaba el conteo de "picks del día" con
+        snapshots intermedios que en la práctica nunca fueron LO que se
+        publicó al final (ej. quedaron 2 filas premium de un día que solo
+        tuvo 1 pick premium real). Antes de registrar el pick vigente,
+        apagamos el flag en cualquier fila anterior del mismo partido/mismo
+        día que tenía ese flag prendido con OTRO mercado y sigue Pendiente
+        (si ya se liquidó, la dejamos intacta -- no se debe reescribir
+        historia ya cerrada).
+        """
+        if not (es_publico or es_premium):
+            return
+        for k2, idx2 in existentes.items():
+            f2, l2, v2, m2 = k2
+            if f2 == fecha and l2 == local and v2 == visitante and m2 != mercado:
+                if df.loc[idx2, 'estado'] != 'Pendiente':
+                    continue
+                if es_publico and bool(df.loc[idx2, 'es_publico']):
+                    df.loc[idx2, 'es_publico'] = False
+                if es_premium and bool(df.loc[idx2, 'es_premium']):
+                    df.loc[idx2, 'es_premium'] = False
+        for k2, e2 in entradas.items():
+            f2, l2, v2, m2 = k2
+            if f2 == fecha and l2 == local and v2 == visitante and m2 != mercado:
+                if e2['estado'] != 'Pendiente':
+                    continue
+                if es_publico and e2.get('es_publico'):
+                    e2['es_publico'] = False
+                if es_premium and e2.get('es_premium'):
+                    e2['es_premium'] = False
+
     def registrar(fecha, hora, liga, liga_nombre, local, visitante, mercado, categoria,
                   prob, cuota, ev, es_publico=False, es_premium=False,
                   es_mejor_apuesta=False, es_combo=False, detalle=''):
         if not mercado:
             return
+        _desactivar_snapshots_previos(fecha, local, visitante, mercado, es_publico, es_premium)
         k = (fecha, local, visitante, mercado)
         if k in existentes:
             idx = existentes[k]
