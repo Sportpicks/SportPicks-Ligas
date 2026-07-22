@@ -3,6 +3,14 @@ name: Pipeline diario
 on:
   schedule:
     - cron: '0 11 * * *'  # 11:00 UTC = 06:00 Perú (UTC-5)
+  # workflow_dispatch queda abierto para disparo manual Y para el respaldo
+  # externo: un cronjob en cron-job.org llama a la API de GitHub
+  # (POST /actions/workflows/pipeline_diario.yml/dispatches) todos los dias
+  # a las 11:05 UTC. El 'schedule' nativo de GitHub es best-effort y no
+  # garantiza el horario (confirmado empiricamente: no disparo ni una vez
+  # en varios dias seguidos durante el desarrollo de este pipeline); un
+  # dispatch por API es una llamada directa, mucho mas confiable. Si ambos
+  # disparan el mismo dia no hay problema -- el pipeline es idempotente.
   workflow_dispatch: {}
 
 permissions:
