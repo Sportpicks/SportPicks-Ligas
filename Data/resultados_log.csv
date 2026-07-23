@@ -61,3 +61,39 @@ fecha,liga,local,visitante,goles_l_real,goles_v_real,goles_total_real,resultado_
 2026-07-21,comp_298265,Cruz Azul,Club Puebla,2,1,3,1,True,True,2026-07-22T11:20:24.700949-05:00
 2026-07-21,comp_1917,Universidad Católica del Ecuador,Barcelona SC,2,1,3,1,True,True,2026-07-22T11:20:29.733789-05:00
 2026-07-21,comp_1917,Libertad,Delfín,1,0,1,1,False,False,2026-07-22T11:20:29.736795-05:00
+2026-07-22,comp_4795,Chapecoense,Flamengo,0,4,4,2,True,False,2026-07-23T06:18:51.666672-05:00
+2026-07-22,comp_4795,Internacional,Cruzeiro,1,2,3,2,True,True,2026-07-23T06:18:51.670560-05:00
+2026-07-22,comp_4795,São Paulo,Athletico,1,2,3,2,True,True,2026-07-23T06:18:51.673441-05:00
+2026-07-22,comp_4795,Coritiba,Palmeiras,1,3,4,2,True,True,2026-07-23T06:18:51.676195-05:00
+2026-07-22,comp_1615,Club Sporting Cristal,Red Bull Bragantino,0,0,0,X,False,False,2026-07-23T06:18:56.444942-05:00
+2026-07-22,comp_1615,Lanús,Cienciano,2,0,2,1,False,False,2026-07-23T06:18:56.448210-05:00
+2026-07-22,comp_1615,Independiente Medellín,Vasco da Gama,2,2,4,X,True,True,2026-07-23T06:18:56.450934-05:00
+2026-07-22,comp_1992,Lillestrøm SK,Viking FK,1,2,3,2,True,True,2026-07-23T06:18:58.817074-05:00
+2026-07-22,comp_1992,Bodø/Glimt,HamKam,3,0,3,1,True,False,2026-07-23T06:18:58.820335-05:00
+2026-07-22,comp_1917,Manta FC,LDU,1,1,2,X,False,True,2026-07-23T06:19:26.845742-05:00
+2026-07-22,comp_1917,Independiente del Valle,Técnico Universitario,3,0,3,1,True,False,2026-07-23T06:19:26.849119-05:00
+2026-07-22,comp_1917,Macará,Deportivo Cuenca,3,0,3,1,True,False,2026-07-23T06:19:26.852461-05:00
+2026-07-22,comp_3498,KF Egnatia,NK Celje,3,3,6,X,True,True,2026-07-23T06:19:33.482709-05:00
+2026-07-22,comp_3498,Levski Sofia,Universitatea Craiova,1,0,1,1,False,False,2026-07-23T06:19:33.486197-05:00
+2026-07-22,comp_3498,Omonia Nicosia,Kairat Almaty,1,0,1,1,False,False,2026-07-23T06:19:33.489369-05:00
+2026-07-22,comp_408698,FK Železničar Pančevo,Sporting Braga,0,1,1,2,False,False,2026-07-23T06:19:36.791499-05:00
+2026-07-22,comp_408698,FC Spartak Trnava,FC CSKA 1948 Sofia,0,0,0,X,False,False,2026-07-23T06:19:36.794859-05:00
+2026-07-22,comp_408698,FK Vardar Skopje,Riga FC,2,3,5,2,True,True,2026-07-23T06:19:36.797455-05:00
+2026-07-22,comp_408698,Başakşehir FK,Inter Turku,1,1,2,X,False,True,2026-07-23T06:19:36.800044-05:00
+2026-07-22,comp_408698,Bohemian FC,KF Ballkani,2,1,3,1,True,True,2026-07-23T06:19:36.802617-05:00
+2026-07-22,comp_408698,Neftçi Baku PFK,Dinamo Minsk,2,4,6,2,True,True,2026-07-23T06:19:36.805238-05:00
+2026-07-22,comp_9799,Los Angeles FC,Real Salt Lake,3,1,4,1,True,True,2026-07-23T06:19:40.132050-05:00
+2026-07-22,comp_9799,LA Galaxy,St.Louis City,1,3,4,2,True,True,2026-07-23T06:19:40.135358-05:00
+2026-07-22,comp_9799,San Jose Earthquakes,Orlando City SC,0,4,4,2,True,False,2026-07-23T06:19:40.138002-05:00
+2026-07-22,comp_9799,Portland Timbers,FC Dallas,2,2,4,X,True,True,2026-07-23T06:19:40.140608-05:00
+2026-07-22,comp_9799,Colorado Rapids,San Diego FC,1,0,1,1,False,False,2026-07-23T06:19:40.143176-05:00
+2026-07-22,comp_9799,Austin FC,Seattle Sounders FC,3,1,4,1,True,True,2026-07-23T06:19:40.145753-05:00
+2026-07-22,comp_9799,Sporting Kansas City,Minnesota United,2,1,3,1,True,True,2026-07-23T06:19:40.148360-05:00
+2026-07-22,comp_9799,Houston Dynamo,DC United,1,1,2,X,False,True,2026-07-23T06:19:40.150981-05:00
+2026-07-22,comp_9799,Nashville SC,CF Montréal,1,0,1,1,False,False,2026-07-23T06:19:40.153645-05:00
+2026-07-22,comp_9799,Charlotte FC,Atlanta United,2,2,4,X,True,True,2026-07-23T06:19:40.156245-05:00
+2026-07-22,comp_9799,Columbus Crew,New York City FC,1,2,3,2,True,True,2026-07-23T06:19:40.158907-05:00
+2026-07-22,comp_9799,Philadelphia Union,New York Red Bulls,3,1,4,1,True,True,2026-07-23T06:19:40.161538-05:00
+2026-07-22,comp_9799,New England Revolution,Toronto FC,0,0,0,X,False,False,2026-07-23T06:19:40.164149-05:00
+2026-07-22,comp_9799,Inter Miami CF,Chicago Fire,3,2,5,1,True,True,2026-07-23T06:19:40.166733-05:00
+2026-07-22,comp_9799,FC Cincinnati,Vancouver Whitecaps,4,3,7,1,True,True,2026-07-23T06:19:40.169361-05:00
