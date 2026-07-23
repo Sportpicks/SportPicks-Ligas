@@ -6,42 +6,45 @@ fecha,hora,liga,liga_nombre,local,visitante,mercado,categoria,prob,cuota,ev,es_p
 2026-07-21,19:30,comp_1615,CONMEBOL Sudamericana,Universidad Central,Santos,Más de 2.5 goles,Goles,50.3,,0.036,False,False,True,False,Ganado,Universidad Central 1-4 Santos,2026-07-21T16:33:28.538367-05:00,2026-07-22T11:21:25.007611-05:00
 2026-07-21,20:00,comp_298265,Liga MX Apertura,Cruz Azul,Club Puebla,Ambos anotan - Sí,Goles,52.2,,0.001,False,False,True,False,Ganado,Cruz Azul 2-1 Club Puebla,2026-07-21T16:33:28.538367-05:00,2026-07-22T11:21:25.007611-05:00
 2026-07-21,22:05,comp_298265,Liga MX Apertura,CD Toluca,Pumas UNAM,Victoria CD Toluca,1X2,62.5,,0.008,False,False,True,False,Perdido,CD Toluca 1-2 Pumas UNAM,2026-07-21T16:33:28.538367-05:00,2026-07-22T11:21:25.007611-05:00
-2026-07-22,11:00,comp_408698,UEFA Conference League,Neftçi Baku PFK,Dinamo Minsk,Menos de 2.5 goles,Goles,74.9,,0.128,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,12:00,comp_1992,Eliteserien,Lillestrøm SK,Viking FK,Más de 2.5 goles,Goles,59.7,,-0.057,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,12:00,comp_1992,Eliteserien,Bodø/Glimt,HamKam,Más de 2.5 goles,Goles,68.4,,-0.116,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,12:00,comp_3498,UEFA Champions League,Omonia Nicosia,Kairat Almaty,Menos de 2.5 goles,Goles,61.3,,0.048,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,12:00,comp_408698,UEFA Conference League,Bohemian FC,KF Ballkani,Menos de 2.5 goles,Goles,55.4,,-0.005,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,12:30,comp_3498,UEFA Champions League,Levski Sofia,Universitatea Craiova,Más de 2.5 goles,Goles,46.6,,0.014,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,12:45,comp_408698,UEFA Conference League,Başakşehir FK,Inter Turku,Menos de 2.5 goles,Goles,48.5,,0.041,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,13:00,comp_408698,UEFA Conference League,FK Vardar Skopje,Riga FC,Más de 2.5 goles,Goles,57.5,,-0.017,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,13:30,comp_408698,UEFA Conference League,FC Spartak Trnava,FC CSKA 1948 Sofia,Victoria FC Spartak Trnava,1X2,51.8,,0.063,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,14:00,comp_3498,UEFA Champions League,KF Egnatia,NK Celje,Victoria KF Egnatia,1X2,50.2,,0.218,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,14:00,comp_1917,LigaPro Serie A Ecuador,Macará,Deportivo Cuenca,Victoria Macará,1X2,56.8,,0.107,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,14:00,comp_408698,UEFA Conference League,FK Železničar Pančevo,Sporting Braga,Menos de 2.5 goles,Goles,79.8,,0.31,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,16:30,comp_1917,LigaPro Serie A Ecuador,Independiente del Valle,Técnico Universitario,Menos de 2.5 goles,Goles,60.1,,0.157,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,17:00,comp_1615,CONMEBOL Sudamericana,Independiente Medellín,Vasco da Gama,Más de 2.5 goles,Goles,55.3,,0.086,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,17:30,comp_4795,Brasileirão Série A,Coritiba,Palmeiras,Más de 2.5 goles,Goles,58.6,,0.136,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,18:30,comp_9799,MLS,Inter Miami CF,Chicago Fire,Más de 2.5 goles,Goles,80.8,,0.073,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,18:30,comp_9799,MLS,FC Cincinnati,Vancouver Whitecaps,Más de 2.5 goles,Goles,67.0,,-0.044,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,18:30,comp_9799,MLS,Columbus Crew,New York City FC,Más de 2.5 goles,Goles,60.3,,0.051,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,18:30,comp_9799,MLS,Philadelphia Union,New York Red Bulls,Más de 2.5 goles,Goles,59.4,,-0.082,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,18:30,comp_9799,MLS,New England Revolution,Toronto FC,Más de 2.5 goles,Goles,61.6,,0.064,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:00,comp_1917,LigaPro Serie A Ecuador,Manta FC,LDU,Más de 2.5 goles,Goles,55.0,,0.124,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:15,comp_9799,MLS,Charlotte FC,Atlanta United,Menos de 2.5 goles,Goles,50.2,,0.041,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:30,comp_4795,Brasileirão Série A,São Paulo,Athletico,Menos de 2.5 goles,Goles,63.8,,0.032,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:30,comp_1615,CONMEBOL Sudamericana,Club Sporting Cristal,Red Bull Bragantino,Victoria Club Sporting Cristal,1X2,57.7,,0.277,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:30,comp_1615,CONMEBOL Sudamericana,Lanús,Cienciano,Menos de 2.5 goles,Goles,67.9,,0.184,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:30,comp_4795,Brasileirão Série A,Internacional,Cruzeiro,Menos de 2.5 goles,Goles,52.8,,-0.031,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:30,comp_4795,Brasileirão Série A,Chapecoense,Flamengo,Menos de 2.5 goles,Goles,57.4,,0.071,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:30,comp_9799,MLS,Sporting Kansas City,Minnesota United,Más de 2.5 goles,Goles,60.2,,-0.088,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:30,comp_9799,MLS,Nashville SC,CF Montréal,Más de 2.5 goles,Goles,74.1,,0.12,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,19:30,comp_9799,MLS,Houston Dynamo,DC United,Más de 2.5 goles,Goles,62.5,,0.066,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,20:30,comp_9799,MLS,Colorado Rapids,San Diego FC,Más de 2.5 goles,Goles,64.7,,-0.047,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,20:30,comp_9799,MLS,Austin FC,Seattle Sounders FC,Más de 2.5 goles,Goles,74.6,,0.144,True,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,21:30,comp_9799,MLS,Portland Timbers,FC Dallas,Más de 2.5 goles,Goles,61.0,,-0.057,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,21:30,comp_9799,MLS,Los Angeles FC,Real Salt Lake,Victoria Los Angeles FC,1X2,64.8,,0.06,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,21:30,comp_9799,MLS,LA Galaxy,St.Louis City,Más de 2.5 goles,Goles,69.1,,0.054,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-22,21:30,comp_9799,MLS,San Jose Earthquakes,Orlando City SC,Más de 2.5 goles,Goles,73.7,,0.002,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
+2026-07-22,11:00,comp_408698,UEFA Conference League,Neftçi Baku PFK,Dinamo Minsk,Menos de 2.5 goles,Goles,74.9,,0.128,False,False,True,False,Perdido,Neftçi Baku PFK 2-4 Dinamo Minsk,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,12:00,comp_1992,Eliteserien,Lillestrøm SK,Viking FK,Más de 2.5 goles,Goles,59.7,,-0.057,False,False,True,False,Ganado,Lillestrøm SK 1-2 Viking FK,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,12:00,comp_1992,Eliteserien,Bodø/Glimt,HamKam,Más de 2.5 goles,Goles,68.4,,-0.116,False,False,True,False,Ganado,Bodø/Glimt 3-0 HamKam,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,12:00,comp_3498,UEFA Champions League,Omonia Nicosia,Kairat Almaty,Menos de 2.5 goles,Goles,61.3,,0.048,False,False,True,False,Ganado,Omonia Nicosia 1-0 Kairat Almaty,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,12:00,comp_408698,UEFA Conference League,Bohemian FC,KF Ballkani,Menos de 2.5 goles,Goles,55.4,,-0.005,False,False,True,False,Perdido,Bohemian FC 2-1 KF Ballkani,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,12:30,comp_3498,UEFA Champions League,Levski Sofia,Universitatea Craiova,Más de 2.5 goles,Goles,46.6,,0.014,False,False,True,False,Perdido,Levski Sofia 1-0 Universitatea Craiova,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,12:45,comp_408698,UEFA Conference League,Başakşehir FK,Inter Turku,Menos de 2.5 goles,Goles,48.5,,0.041,False,False,True,False,Ganado,Başakşehir FK 1-1 Inter Turku,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,13:00,comp_408698,UEFA Conference League,FK Vardar Skopje,Riga FC,Más de 2.5 goles,Goles,57.5,,-0.017,False,False,True,False,Ganado,FK Vardar Skopje 2-3 Riga FC,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,13:30,comp_408698,UEFA Conference League,FC Spartak Trnava,FC CSKA 1948 Sofia,Victoria FC Spartak Trnava,1X2,51.8,,0.063,False,False,True,False,Perdido,FC Spartak Trnava 0-0 FC CSKA 1948 Sofia,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,14:00,comp_3498,UEFA Champions League,KF Egnatia,NK Celje,Victoria KF Egnatia,1X2,50.2,,0.218,False,False,True,False,Perdido,KF Egnatia 3-3 NK Celje,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,14:00,comp_1917,LigaPro Serie A Ecuador,Macará,Deportivo Cuenca,Victoria Macará,1X2,56.8,,0.107,False,False,True,False,Ganado,Macará 3-0 Deportivo Cuenca,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,14:00,comp_408698,UEFA Conference League,FK Železničar Pančevo,Sporting Braga,Menos de 2.5 goles,Goles,79.8,,0.31,False,False,True,False,Ganado,FK Železničar Pančevo 0-1 Sporting Braga,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,16:30,comp_1917,LigaPro Serie A Ecuador,Independiente del Valle,Técnico Universitario,Menos de 2.5 goles,Goles,60.1,,0.157,False,False,True,False,Perdido,Independiente del Valle 3-0 Técnico Universitario,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,17:00,comp_1615,CONMEBOL Sudamericana,Independiente Medellín,Vasco da Gama,Más de 2.5 goles,Goles,55.3,,0.086,False,False,True,False,Ganado,Independiente Medellín 2-2 Vasco da Gama,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,17:00,comp_1615,CONMEBOL Sudamericana,Independiente Medellín,Vasco da Gama,Más de 24.5 tiros,Tiros,71.7,,0.171,True,False,True,False,Sin datos,,2026-07-22T11:21:25.712549-05:00,2026-07-23T08:30:00.000000-05:00
+2026-07-22,17:30,comp_4795,Brasileirão Série A,Coritiba,Palmeiras,Más de 2.5 goles,Goles,58.6,,0.136,False,False,True,False,Ganado,Coritiba 1-3 Palmeiras,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,18:30,comp_9799,MLS,Inter Miami CF,Chicago Fire,Más de 2.5 goles,Goles,80.8,,0.073,False,False,True,False,Ganado,Inter Miami CF 3-2 Chicago Fire,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,18:30,comp_9799,MLS,FC Cincinnati,Vancouver Whitecaps,Más de 2.5 goles,Goles,67.0,,-0.044,False,False,True,False,Ganado,FC Cincinnati 4-3 Vancouver Whitecaps,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,18:30,comp_9799,MLS,Columbus Crew,New York City FC,Más de 2.5 goles,Goles,60.3,,0.051,False,False,True,False,Ganado,Columbus Crew 1-2 New York City FC,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,18:30,comp_9799,MLS,Philadelphia Union,New York Red Bulls,Más de 2.5 goles,Goles,59.4,,-0.082,False,False,True,False,Ganado,Philadelphia Union 3-1 New York Red Bulls,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,18:30,comp_9799,MLS,New England Revolution,Toronto FC,Más de 2.5 goles,Goles,61.6,,0.064,False,False,True,False,Perdido,New England Revolution 0-0 Toronto FC,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:00,comp_1917,LigaPro Serie A Ecuador,Manta FC,LDU,Más de 2.5 goles,Goles,55.0,,0.124,False,False,True,False,Perdido,Manta FC 1-1 LDU,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:15,comp_9799,MLS,Charlotte FC,Atlanta United,Menos de 2.5 goles,Goles,50.2,,0.041,False,False,True,False,Perdido,Charlotte FC 2-2 Atlanta United,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:30,comp_4795,Brasileirão Série A,São Paulo,Athletico,Menos de 2.5 goles,Goles,63.8,,0.032,False,False,True,False,Perdido,São Paulo 1-2 Athletico,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:30,comp_1615,CONMEBOL Sudamericana,Club Sporting Cristal,Red Bull Bragantino,Victoria Club Sporting Cristal,1X2,57.7,,0.277,False,False,True,False,Perdido,Club Sporting Cristal 0-0 Red Bull Bragantino,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:30,comp_1615,CONMEBOL Sudamericana,Club Sporting Cristal,Red Bull Bragantino,Más de 8.5 córners,Córners,82.6,1.52,0.168,True,False,False,False,Sin datos,,2026-07-22T11:21:25.712549-05:00,2026-07-23T08:30:00.000000-05:00
+2026-07-22,19:30,comp_1615,Multi-liga,Club Sporting Cristal,Red Bull Bragantino,Combinada: Más de 8.5 córners (Club Sporting Cristal) + Más de 8.5 córners (Portland Timbers),Combinada,64.4,2.22,0.43,False,True,False,True,Pendiente,"[{""partido"": ""Club Sporting Cristal vs Red Bull Bragantino"", ""mercado"": ""Más de 8.5 córners"", ""cuota"": 1.52}, {""partido"": ""Portland Timbers vs FC Dallas"", ""mercado"": ""Más de 8.5 córners"", ""cuota"": 1.46}]",2026-07-22T11:21:25.712549-05:00,
+2026-07-22,19:30,comp_1615,CONMEBOL Sudamericana,Lanús,Cienciano,Menos de 2.5 goles,Goles,67.9,,0.184,False,False,True,False,Ganado,Lanús 2-0 Cienciano,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:30,comp_4795,Brasileirão Série A,Internacional,Cruzeiro,Menos de 2.5 goles,Goles,52.8,,-0.031,False,False,True,False,Perdido,Internacional 1-2 Cruzeiro,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:30,comp_4795,Brasileirão Série A,Chapecoense,Flamengo,Menos de 2.5 goles,Goles,57.4,,0.071,False,False,True,False,Perdido,Chapecoense 0-4 Flamengo,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:30,comp_9799,MLS,Sporting Kansas City,Minnesota United,Más de 2.5 goles,Goles,60.2,,-0.088,False,False,True,False,Ganado,Sporting Kansas City 2-1 Minnesota United,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:30,comp_9799,MLS,Nashville SC,CF Montréal,Más de 2.5 goles,Goles,74.1,,0.12,False,False,True,False,Perdido,Nashville SC 1-0 CF Montréal,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,19:30,comp_9799,MLS,Houston Dynamo,DC United,Más de 2.5 goles,Goles,62.5,,0.066,False,False,True,False,Perdido,Houston Dynamo 1-1 DC United,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,20:30,comp_9799,MLS,Colorado Rapids,San Diego FC,Más de 2.5 goles,Goles,64.7,,-0.047,False,False,True,False,Perdido,Colorado Rapids 1-0 San Diego FC,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,20:30,comp_9799,MLS,Austin FC,Seattle Sounders FC,Más de 2.5 goles,Goles,74.6,,0.144,True,False,True,False,Ganado,Austin FC 3-1 Seattle Sounders FC,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,21:30,comp_9799,MLS,Portland Timbers,FC Dallas,Más de 2.5 goles,Goles,61.0,,-0.057,False,False,True,False,Ganado,Portland Timbers 2-2 FC Dallas,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,21:30,comp_9799,MLS,Los Angeles FC,Real Salt Lake,Victoria Los Angeles FC,1X2,64.8,,0.06,False,False,True,False,Ganado,Los Angeles FC 3-1 Real Salt Lake,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,21:30,comp_9799,MLS,LA Galaxy,St.Louis City,Más de 2.5 goles,Goles,69.1,,0.054,False,False,True,False,Ganado,LA Galaxy 1-3 St.Louis City,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
+2026-07-22,21:30,comp_9799,MLS,San Jose Earthquakes,Orlando City SC,Más de 2.5 goles,Goles,73.7,,0.002,False,False,True,False,Ganado,San Jose Earthquakes 0-4 Orlando City SC,2026-07-21T16:33:28.538367-05:00,2026-07-23T06:19:40.488827-05:00
 2026-07-23,08:00,comp_408698,UEFA Conference League,KuPS,Riga FC,Menos de 2.5 goles,Goles,56.5,,0.0,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,09:30,comp_408698,UEFA Conference League,FC Malisheva,Hibernian,Victoria FC Malisheva,1X2,50.5,,0.294,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,10:00,comp_408698,UEFA Conference League,FK Liepaja,Austria Wien,Más de 2.5 goles,Goles,51.8,,-0.05,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
@@ -73,7 +76,7 @@ fecha,hora,liga,liga_nombre,local,visitante,mercado,categoria,prob,cuota,ev,es_p
 2026-07-23,13:30,comp_408698,UEFA Conference League,MŠK Žilina,GKS Katowice,Menos de 2.5 goles,Goles,65.9,,0.149,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,13:30,comp_408698,UEFA Conference League,FK Borac Banja Luka,FC Petrocub Hîncesti,Más de 2.5 goles,Goles,58.3,,-0.054,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,13:30,comp_408698,UEFA Conference League,LNZ Cherkasy,KAA Gent,Menos de 2.5 goles,Goles,79.8,,0.192,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-23,13:30,comp_408698,UEFA Conference League,Hapoel Tel Aviv,Ludogorets,Menos de 2.5 goles,Goles,74.4,,0.107,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
+2026-07-23,13:30,comp_408698,UEFA Conference League,Hapoel Tel Aviv,Ludogorets,Menos de 2.5 goles,Goles,74.4,,0.107,True,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,13:30,comp_408698,UEFA Conference League,FC Lugano,Dukagjini,Menos de 2.5 goles,Goles,59.2,,0.116,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,13:45,comp_408698,UEFA Conference League,HNK Rijeka,Derry City,Menos de 2.5 goles,Goles,76.9,,0.304,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,13:45,comp_408698,UEFA Conference League,Motherwell,HB Tórshavn,Menos de 2.5 goles,Goles,56.6,,0.184,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
@@ -87,7 +90,7 @@ fecha,hora,liga,liga_nombre,local,visitante,mercado,categoria,prob,cuota,ev,es_p
 2026-07-23,16:30,comp_1917,LigaPro Serie A Ecuador,Leones del Norte,Guayaquil City,Menos de 2.5 goles,Goles,70.3,,0.036,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,17:00,comp_1615,CONMEBOL Sudamericana,Bolívar,Grêmio,Menos de 2.5 goles,Goles,69.6,,0.211,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,17:30,comp_4795,Brasileirão Série A,Corinthians,Remo,Más de 2.5 goles,Goles,51.4,,0.011,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
-2026-07-23,17:30,comp_4795,Brasileirão Série A,Botafogo,Vitória,Victoria Botafogo,1X2,69.2,,0.124,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
+2026-07-23,17:30,comp_4795,Brasileirão Série A,Botafogo,Vitória,Victoria Botafogo,1X2,69.2,,0.124,True,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,17:30,comp_4540,Liga Profesional Argentina,Sarmiento,Argentinos Juniors,Menos de 2.5 goles,Goles,76.4,,0.029,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,17:30,comp_4540,Liga Profesional Argentina,Belgrano,Rosario Central,Menos de 2.5 goles,Goles,82.7,,0.092,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
 2026-07-23,19:00,comp_1917,LigaPro Serie A Ecuador,Emelec,Mushuc Runa,Menos de 2.5 goles,Goles,62.7,,0.039,False,False,True,False,Pendiente,,2026-07-21T16:33:28.538367-05:00,
@@ -104,3 +107,66 @@ fecha,hora,liga,liga_nombre,local,visitante,mercado,categoria,prob,cuota,ev,es_p
 2026-07-21,17:30,comp_4795,Brasileirão Série A,Atlético Mineiro,Bahia,Más de 2.5 goles,Goles,53.5,,0.009,False,False,True,False,Perdido,Atlético Mineiro 1-1 Bahia,2026-07-21T16:59:27.983654-05:00,2026-07-22T11:21:25.007611-05:00
 2026-07-24,20:30,comp_6981,Liga 1 Perú,Universitario,Cusco FC,Menos de 2.5 goles,Goles,52.7,,0.042,False,False,True,False,Pendiente,,2026-07-21T16:59:27.983654-05:00,
 2026-07-24,21:00,comp_298265,Liga MX Apertura,Club Tijuana,Club León,Victoria Club Tijuana,1X2,63.2,,0.144,False,False,True,False,Pendiente,,2026-07-21T16:59:27.983654-05:00,
+2026-07-23,08:00,comp_408698,UEFA Conference League,KuPS,Riga FC,Ambos anotan - No,Goles,51.9,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,09:30,comp_408698,UEFA Conference League,FC Malisheva,Hibernian,Ambos anotan - Sí,Goles,57.6,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,10:00,comp_408698,UEFA Conference League,FK Liepaja,Austria Wien,Ambos anotan - Sí,Goles,55.8,,-0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,10:00,comp_408698,UEFA Conference League,FC Alashkert,CFR 1907 Cluj,Más de 2.5 goles,Goles,57.3,,0.147,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,11:00,comp_408698,UEFA Conference League,Paide Linnameeskond,Zirə FK,1X — Paide Linnameeskond o Empate,Doble Op.,64.6,,-0.073,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,11:00,comp_408698,UEFA Conference League,HJK,Coleraine FC,Ambos anotan - No,Goles,61.8,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,11:30,comp_408698,UEFA Conference League,RFS,IF Vestri,Ambos anotan - No,Goles,59.6,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,11:30,comp_408698,UEFA Conference League,AEK Larnaca,Beitar Jerusalem,Victoria AEK Larnaca,1X2,54.0,,0.062,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,11:30,comp_408698,UEFA Conference League,Raków Częstochowa,Valletta FC,Ambos anotan - No,Goles,67.3,,0.002,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,12:00,comp_408698,UEFA Conference League,BATE Borisov,FC Sion,Ambos anotan - No,Goles,65.3,,-0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,12:00,comp_408698,UEFA Conference League,FC Zimbru Chişinău,FC Noah,Ambos anotan - Sí,Goles,54.4,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,12:00,comp_408698,UEFA Conference League,Dinamo Tbilisi,FK Žalgiris,Ambos anotan - No,Goles,51.9,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,12:00,comp_408698,UEFA Conference League,FC Santa Coloma,SK Rapid Wien,Ambos anotan - Sí,Goles,54.2,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,13:00,comp_408698,UEFA Conference League,Paksi FC,Panathinaikos,Menos de 2.5 goles,Goles,55.9,,0.111,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,13:00,comp_408698,UEFA Conference League,Polissya Zhytomyr,FC København,Más de 2.5 goles,Goles,61.2,,0.024,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,13:00,comp_408698,UEFA Conference League,FK Vojvodina,AFC Ajax,Menos de 2.5 goles,Goles,57.2,,0.091,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,13:45,comp_408698,UEFA Conference League,HNK Rijeka,Derry City,Ambos anotan - No,Goles,70.5,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,16:30,comp_1917,LigaPro Serie A Ecuador,Orense SC,Aucas,Ambos anotan - Sí,Goles,53.0,,0.001,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,17:30,comp_4795,Brasileirão Série A,Corinthians,Remo,Más de 24.5 tiros,Tiros,67.0,,0.114,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,17:30,comp_4540,Liga Profesional Argentina,Sarmiento,Argentinos Juniors,Más de 5.5 tarjetas,Tarjetas,58.0,,0.034,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-24,12:00,comp_7938,Danish Superliga,Viborg FF,Odense Boldklub,Más de 2.5 goles,Goles,70.3,,0.078,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-24,15:00,comp_6981,Liga 1 Perú,Alianza Atlético de Sullana,Los Chankas CYC,Menos de 2.5 goles,Goles,55.0,,0.018,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-24,19:15,comp_4540,Liga Profesional Argentina,Huracán,Banfield,Menos de 2.5 goles,Goles,68.1,,-0.054,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-24,20:15,comp_720692,Primera A Colombia,Deportivo Cali,Jaguares de Córdoba,Victoria Deportivo Cali,1X2,61.0,,-0.044,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-24,21:00,comp_298265,Liga MX Apertura,Atlante FC,Club América,Más de 2.5 goles,Goles,55.9,,0.01,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,09:00,comp_1992,Eliteserien,Kristiansund BK,IK Start,Más de 2.5 goles,Goles,61.8,,0.043,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,10:30,comp_6981,Liga 1 Perú,Sport Boys,Asociación Deportiva Tarma,Menos de 2.5 goles,Goles,55.9,,0.027,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,11:00,comp_7938,Danish Superliga,AGF,Brøndby IF,Victoria AGF,1X2,47.6,,0.037,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,12:45,comp_4540,Liga Profesional Argentina,Estudiantes de Río Cuarto,Tigre,Victoria Tigre,1X2,53.9,,0.102,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,13:00,comp_6981,Liga 1 Perú,Sport Huancayo,Club Atlético Grau,Más de 2.5 goles,Goles,67.0,,0.177,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,14:00,comp_720692,Primera A Colombia,Boyacá Chicó FC,Atlético Nacional,Menos de 2.5 goles,Goles,56.7,,0.008,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,15:00,comp_4540,Liga Profesional Argentina,Newell's Old Boys,Talleres,Menos de 2.5 goles,Goles,76.7,,0.073,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,15:15,comp_6981,Liga 1 Perú,ADC Juan Pablo II,Cienciano,Menos de 2.5 goles,Goles,58.1,,0.105,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,16:05,comp_720692,Primera A Colombia,Independiente Medellín,Deportivo Pasto,Más de 2.5 goles,Goles,48.9,,0.013,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,16:30,comp_4795,Brasileirão Série A,Athletico,Internacional,Más de 2.5 goles,Goles,56.3,,0.122,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,16:30,comp_4795,Brasileirão Série A,Santos,Chapecoense,Más de 2.5 goles,Goles,60.2,,0.01,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,17:15,comp_4540,Liga Profesional Argentina,River Plate,Barracas Central,Menos de 2.5 goles,Goles,64.3,,0.051,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,17:30,comp_9799,MLS,New York Red Bulls,Charlotte FC,Menos de 2.5 goles,Goles,52.7,,0.11,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:07,comp_298265,Liga MX Apertura,CD Guadalajara,FC Juárez,Más de 2.5 goles,Goles,59.5,,-0.03,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:10,comp_720692,Primera A Colombia,Millonarios,Atlético Bucaramanga,Menos de 2.5 goles,Goles,58.1,,-0.04,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:15,comp_9799,MLS,Columbus Crew,FC Cincinnati,Más de 2.5 goles,Goles,57.4,,-0.14,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:30,comp_9799,MLS,DC United,Toronto FC,Más de 2.5 goles,Goles,51.6,,-0.01,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:30,comp_9799,MLS,New England Revolution,Atlanta United,Más de 2.5 goles,Goles,63.7,,0.066,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:30,comp_9799,MLS,New York City FC,Chicago Fire,Más de 2.5 goles,Goles,72.2,,0.12,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:30,comp_9799,MLS,CF Montréal,Inter Miami CF,Más de 2.5 goles,Goles,75.7,,0.043,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:30,comp_9799,MLS,Orlando City SC,Nashville SC,Más de 2.5 goles,Goles,79.6,,0.175,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:30,comp_4795,Brasileirão Série A,Vasco da Gama,Mirassol,Más de 2.5 goles,Goles,62.2,,0.144,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,18:30,comp_9799,MLS,Philadelphia Union,Seattle Sounders FC,Más de 2.5 goles,Goles,63.8,,0.017,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,19:00,comp_1917,LigaPro Serie A Ecuador,Técnico Universitario,Manta FC,Menos de 2.5 goles,Goles,57.9,,-0.088,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,19:30,comp_9799,MLS,St.Louis City,Colorado Rapids,Más de 2.5 goles,Goles,71.3,,0.076,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,19:30,comp_4540,Liga Profesional Argentina,Lanús,San Lorenzo,Menos de 2.5 goles,Goles,81.2,,0.06,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,19:30,comp_9799,MLS,Houston Dynamo,Austin FC,Más de 2.5 goles,Goles,75.2,,0.171,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,19:30,comp_9799,MLS,Minnesota United,Vancouver Whitecaps,Más de 2.5 goles,Goles,64.3,,0.022,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,20:00,comp_6981,Liga 1 Perú,Melgar,Club Sporting Cristal,Menos de 2.5 goles,Goles,53.7,,0.063,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,20:15,comp_720692,Primera A Colombia,Deportes Tolima,Junior Barranquilla,Victoria Deportes Tolima,1X2,57.4,,0.107,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,20:30,comp_9799,MLS,San Diego FC,FC Dallas,Victoria San Diego FC,1X2,48.5,,0.009,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,21:30,comp_9799,MLS,San Jose Earthquakes,LA Galaxy,Más de 2.5 goles,Goles,65.8,,-0.036,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,21:30,comp_9799,MLS,Portland Timbers,Real Salt Lake,Victoria Portland Timbers,1X2,46.8,,0.056,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,21:30,comp_9799,MLS,Los Angeles FC,Sporting Kansas City,Victoria Los Angeles FC,1X2,74.4,,-0.076,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,22:00,comp_298265,Liga MX Apertura,Tigres UANL,Atlético San Luis,Más de 2.5 goles,Goles,65.7,,0.036,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-25,22:00,comp_298265,Liga MX Apertura,Santos Laguna,Atlas FC,Victoria Santos Laguna,1X2,51.1,,0.125,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,13:00,comp_408698,UEFA Conference League,Paksi FC,Panathinaikos,Más de 8.5 córners,Córners,67.2,1.6,0.047,True,False,False,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-23,17:30,comp_4540,Multi-liga,Belgrano,Rosario Central,Combinada: Menos de 2.5 goles (Belgrano) + Menos de 2.5 goles (Sarmiento),Combinada,63.2,1.85,0.169,False,True,False,True,Pendiente,"[{""partido"": ""Belgrano vs Rosario Central"", ""mercado"": ""Menos de 2.5 goles"", ""cuota"": 1.36}, {""partido"": ""Sarmiento vs Argentinos Juniors"", ""mercado"": ""Menos de 2.5 goles"", ""cuota"": 1.36}]",2026-07-23T06:19:41.225314-05:00,
