@@ -148,9 +148,16 @@ def guardar_checkpoint(ruta, cp):
 
 # ── Filas de salida ──────────────────────────────────────────────────
 
-def fila_historico(liga_id, liga_cfg, m, stats):
-    fecha, hora = utc_a_peru(m['utc_date'])
-    gl, gv = m['score']['home'], m['score']['away']
+def extraer_stats_overview(stats):
+    """
+    Parsea el bloque 'overview' de get_match_stats() en un dict plano
+    {campo_l, campo_v} para cada stat que usamos (córners, tiros, tiros al
+    arco, faltas, tarjetas amarillas/rojas). Centralizado acá para que
+    fila_historico() (descarga histórica) y sincronizar_resultados() de
+    logger_predicciones.py (liquidación fase 2 del historial de picks)
+    parseen exactamente igual y no diverjan si la API cambia de forma.
+    Valores ausentes quedan en None (no en '', que es solo para CSV).
+    """
     ov = (stats or {}).get('overview') or {}
 
     def par(campo):
@@ -166,6 +173,29 @@ def fila_historico(liga_id, liga_cfg, m, stats):
     fo_l, fo_v = par('fouls')
     yc_l, yc_v = par('yellow_cards')
     rc_l, rc_v = par('red_cards')  # exploratorio -- ver nota en COLUMNAS_HIST
+
+    return {
+        'xg_l': xg_l, 'xg_v': xg_v,
+        'corners_l': cor_l, 'corners_v': cor_v,
+        'shots_l': sh_l, 'shots_v': sh_v,
+        'shots_on_target_l': sot_l, 'shots_on_target_v': sot_v,
+        'fouls_l': fo_l, 'fouls_v': fo_v,
+        'yellow_cards_l': yc_l, 'yellow_cards_v': yc_v,
+        'red_cards_l': rc_l, 'red_cards_v': rc_v,
+    }
+
+
+def fila_historico(liga_id, liga_cfg, m, stats):
+    fecha, hora = utc_a_peru(m['utc_date'])
+    gl, gv = m['score']['home'], m['score']['away']
+    est = extraer_stats_overview(stats)
+    xg_l, xg_v = est['xg_l'], est['xg_v']
+    cor_l, cor_v = est['corners_l'], est['corners_v']
+    sh_l, sh_v = est['shots_l'], est['shots_v']
+    sot_l, sot_v = est['shots_on_target_l'], est['shots_on_target_v']
+    fo_l, fo_v = est['fouls_l'], est['fouls_v']
+    yc_l, yc_v = est['yellow_cards_l'], est['yellow_cards_v']
+    rc_l, rc_v = est['red_cards_l'], est['red_cards_v']
 
     return {
         'liga': liga_id, 'liga_nombre': liga_cfg['nombre'],

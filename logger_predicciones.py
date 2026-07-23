@@ -4,7 +4,7 @@ logger_predicciones.py
 Sistema de logging de predicciones vs resultados reales
 Calcula MSE y recalibra parámetros Dixon-Coles por liga
 """
-import os, sys, json
+import os, sys, json, re
 import pandas as pd
 import numpy as np
 from datetime import datetime, timezone, timedelta
@@ -48,6 +48,18 @@ COLS_RESULT = [
     'over_25_real',    # True/False
     'btts_real',       # True/False
     'registrado_en',
+    # Fase 2 (liquidación de córners/tiros/tarjetas/faltas en el historial
+    # de picks): stats reales por partido, pedidas a TheStatsAPI vía
+    # get_match_stats() en sincronizar_resultados(). Pueden quedar NaN si
+    # el partido no tiene stats completos en la API (mismo caso que ya
+    # maneja fila_historico() en descargar_partidos.py) -- en ese caso
+    # _evaluar_mercado() sigue devolviendo None y el pick queda 'Sin datos'.
+    'corners_l_real', 'corners_v_real',
+    'shots_l_real', 'shots_v_real',
+    'shots_on_target_l_real', 'shots_on_target_v_real',
+    'fouls_l_real', 'fouls_v_real',
+    'cards_l_real', 'cards_v_real',  # tarjetas amarillas (igual que el modelo, ver modelo_prediccion.py:600)
+    'stats_registrados_en',
 ]
 
 def cargar_log(path, cols):
@@ -114,13 +126,32 @@ def registrar_prediccion(pred, cuotas=None):
     guardar_log(df, LOG_PRED)
     return True
 
-def registrar_resultado(fecha, liga, local, visitante, goles_l, goles_v):
+STATS_COLS_MAP = {
+    'corners_l': 'corners_l_real', 'corners_v': 'corners_v_real',
+    'shots_l': 'shots_l_real', 'shots_v': 'shots_v_real',
+    'shots_on_target_l': 'shots_on_target_l_real', 'shots_on_target_v': 'shots_on_target_v_real',
+    'fouls_l': 'fouls_l_real', 'fouls_v': 'fouls_v_real',
+    'yellow_cards_l': 'cards_l_real', 'yellow_cards_v': 'cards_v_real',
+}
+
+def _stats_completos(fila):
+    """True si ya tenemos las 5 stats (córners/tiros/tiros al arco/faltas/tarjetas) registradas para esta fila -- para no volver a pedir get_match_stats() de un partido ya sincronizado en una corrida anterior."""
+    return all(pd.notna(fila.get(col)) for col in STATS_COLS_MAP.values())
+
+def registrar_resultado(fecha, liga, local, visitante, goles_l, goles_v, stats=None):
     """
     Registra el resultado real después del partido.
-    Idempotente: si ya existe una fila igual (mismo marcador), no reescribe
-    el CSV ni cuenta como registro nuevo — importante para sincronizar_resultados(),
-    que re-consulta la misma ventana de días cada vez que corre.
-    Devuelve True solo si insertó una fila nueva o actualizó un marcador distinto.
+    Idempotente: si ya existe una fila igual (mismo marcador y mismas
+    stats), no reescribe el CSV ni cuenta como registro nuevo — importante
+    para sincronizar_resultados(), que re-consulta la misma ventana de días
+    cada vez que corre.
+    `stats` (opcional): dict con las claves de extraer_stats_overview() de
+    descargar_partidos.py (corners_l, corners_v, shots_l, ..., yellow_cards_v)
+    -- fase 2 de liquidación del historial (córners/tiros/tarjetas/faltas).
+    Si una fila ya existe con stats completos, no se pisan (evita perder
+    datos si una corrida futura llega sin `stats` por un fallo puntual de
+    get_match_stats()).
+    Devuelve True solo si insertó una fila nueva o actualizó algún campo.
     """
     df = cargar_log(LOG_RESULT, COLS_RESULT)
 
@@ -130,23 +161,33 @@ def registrar_resultado(fecha, liga, local, visitante, goles_l, goles_v):
         (df['local'] == local) &
         (df['visitante'] == visitante)
     )
+    cambio = False
     if mask.any():
         existente = df.loc[mask].iloc[0]
-        sin_cambios = (
+        sin_cambios_goles = (
             str(existente.get('goles_l_real')) == str(goles_l) and
             str(existente.get('goles_v_real')) == str(goles_v)
         )
-        if sin_cambios:
-            return False  # ya estaba registrado con el mismo marcador
+        if not sin_cambios_goles:
+            df.loc[mask, 'goles_l_real'] = goles_l
+            df.loc[mask, 'goles_v_real'] = goles_v
+            df.loc[mask, 'goles_total_real'] = goles_l + goles_v
+            df.loc[mask, 'resultado_real'] = '1' if goles_l > goles_v else ('X' if goles_l == goles_v else '2')
+            df.loc[mask, 'over_25_real'] = goles_l + goles_v > 2.5
+            df.loc[mask, 'btts_real'] = goles_l > 0 and goles_v > 0
+            df.loc[mask, 'registrado_en'] = datetime.now(PERU_TZ).isoformat()
+            cambio = True
 
-        # Actualizar
-        df.loc[mask, 'goles_l_real'] = goles_l
-        df.loc[mask, 'goles_v_real'] = goles_v
-        df.loc[mask, 'goles_total_real'] = goles_l + goles_v
-        df.loc[mask, 'resultado_real'] = '1' if goles_l > goles_v else ('X' if goles_l == goles_v else '2')
-        df.loc[mask, 'over_25_real'] = goles_l + goles_v > 2.5
-        df.loc[mask, 'btts_real'] = goles_l > 0 and goles_v > 0
-        df.loc[mask, 'registrado_en'] = datetime.now(PERU_TZ).isoformat()
+        if stats and not _stats_completos(existente):
+            for campo_stats, col in STATS_COLS_MAP.items():
+                valor = stats.get(campo_stats)
+                if valor is not None:
+                    df.loc[mask, col] = valor
+            df.loc[mask, 'stats_registrados_en'] = datetime.now(PERU_TZ).isoformat()
+            cambio = True
+
+        if not cambio:
+            return False  # ya estaba registrado con el mismo marcador y stats completos
     else:
         nueva_fila = {
             'fecha':           fecha,
@@ -161,6 +202,10 @@ def registrar_resultado(fecha, liga, local, visitante, goles_l, goles_v):
             'btts_real':       goles_l > 0 and goles_v > 0,
             'registrado_en':   datetime.now(PERU_TZ).isoformat(),
         }
+        if stats:
+            for campo_stats, col in STATS_COLS_MAP.items():
+                nueva_fila[col] = stats.get(campo_stats)
+            nueva_fila['stats_registrados_en'] = datetime.now(PERU_TZ).isoformat()
         df = pd.concat([df, pd.DataFrame([nueva_fila])], ignore_index=True)
 
     guardar_log(df, LOG_RESULT)
@@ -273,7 +318,7 @@ def sincronizar_resultados(dias_atras=4):
     """
     from configuracion import API_THESTATS
     from thestats_client import TheStatsClient, TheStatsAPIError
-    from descargar_partidos import utc_a_peru
+    from descargar_partidos import utc_a_peru, extraer_stats_overview
 
     hoy = datetime.now(PERU_TZ).date()
     date_from = (hoy - timedelta(days=dias_atras)).isoformat()
@@ -282,6 +327,18 @@ def sincronizar_resultados(dias_atras=4):
     client = TheStatsClient(API_THESTATS)
     revisados = 0
     registrados = 0
+    con_stats = 0
+
+    # Set de (fecha, local, visitante) que ya tienen las 5 stats fase-2
+    # completas -- para no volver a pedir get_match_stats() de un partido
+    # ya sincronizado en una corrida anterior (ahorra llamadas, el cliente
+    # ya se autolimita pero no hace falta gastarlas de más).
+    df_res_previo = cargar_log(LOG_RESULT, COLS_RESULT)
+    ya_con_stats = set()
+    if len(df_res_previo):
+        for _, r in df_res_previo.iterrows():
+            if _stats_completos(r):
+                ya_con_stats.add((r['fecha'], r['local'], r['visitante']))
 
     print(f'\n🔄 Sincronizando resultados finalizados ({date_from} → {date_to})')
 
@@ -307,14 +364,25 @@ def sincronizar_resultados(dias_atras=4):
             visitante = m['away_team']['name']
             revisados += 1
 
-            if registrar_resultado(fecha, liga_id, local, visitante, int(gl), int(gv)):
+            stats = None
+            if (fecha, local, visitante) not in ya_con_stats:
+                try:
+                    raw_stats = client.get_match_stats(m['id'])
+                    stats = extraer_stats_overview(raw_stats)
+                    if any(v is not None for v in stats.values()):
+                        con_stats += 1
+                except TheStatsAPIError:
+                    pass  # se reintenta en la próxima corrida
+
+            if registrar_resultado(fecha, liga_id, local, visitante, int(gl), int(gv), stats=stats):
                 registrados += 1
                 nuevos_liga += 1
 
         if finalizados:
             print(f'  {cfg.get("nombre", liga_id)}: {len(finalizados)} finalizados, {nuevos_liga} nuevos')
 
-    print(f'\n✅ Sync resultados: {revisados} finalizados revisados, {registrados} nuevos en {LOG_RESULT}')
+    print(f'\n✅ Sync resultados: {revisados} finalizados revisados, {registrados} nuevos/actualizados, '
+          f'{con_stats} con stats fase-2 pedidas → {LOG_RESULT}')
     return registrados
 
 def registrar_cierre_desde_proximos():
@@ -377,15 +445,28 @@ def registrar_cierre_desde_proximos():
 
 HISTORIAL_PATH = os.path.join(RAIZ, 'Data', 'historial_picks.csv')
 
+# Mercados 'Más de <línea> <etiqueta>' -- fase 2 (córners/tiros/tiros al
+# arco/tarjetas/faltas). El orden importa: 'tiros al arco' debe probarse
+# ANTES que 'tiros' (si no, 'tiros al arco' matchearía el patrón de 'tiros'
+# con la etiqueta completa colgando del número). Ver generador_picks_ligas.py
+# líneas 148-187 para el texto exacto que genera cada mercado -- siempre
+# 'Más de', nunca 'Menos de', para estos 5 mercados.
+_MERCADOS_STATS_LINEA = [
+    ('córners',        'corners_l_real',            'corners_v_real'),
+    ('tiros al arco',  'shots_on_target_l_real',     'shots_on_target_v_real'),
+    ('tiros',          'shots_l_real',               'shots_v_real'),
+    ('tarjetas',       'cards_l_real',               'cards_v_real'),
+    ('faltas',         'fouls_l_real',                'fouls_v_real'),
+]
+
 def _evaluar_mercado(mercado, local, visitante, res):
     """
     Evalúa un mercado (texto tal como lo genera generador_picks_ligas.py)
     contra la fila de resultado real correspondiente. Devuelve 'Ganado',
-    'Perdido', o None si el mercado no se puede evaluar con los datos
-    disponibles hoy (córners/tarjetas/tiros/faltas -- resultados_log.csv
-    solo guarda goles/over25/btts, fase 1 de este historial; para liquidar
-    esos mercados hay que extender sincronizar_resultados() a pedir
-    get_match_stats() de cada partido finalizado, igual que fila_historico).
+    'Perdido', o None si el mercado no se puede evaluar (resultado aún no
+    sincronizado, o -- para córners/tiros/tarjetas/faltas -- el partido no
+    trajo esas stats completas en TheStatsAPI, ver extraer_stats_overview()
+    en descargar_partidos.py y sincronizar_resultados() en este archivo).
     """
     m = mercado.strip()
     resultado_real = res.get('resultado_real', '')
@@ -407,18 +488,34 @@ def _evaluar_mercado(mercado, local, visitante, res):
         return 'Ganado' if resultado_real in ('1', 'X') else 'Perdido'
     if m.startswith('X2 — '):
         return 'Ganado' if resultado_real in ('X', '2') else 'Perdido'
-    return None  # córners/tarjetas/tiros/faltas -- fase 2 pendiente
+
+    for etiqueta, col_l, col_v in _MERCADOS_STATS_LINEA:
+        match = re.match(rf'^Más de (\d+(?:\.\d+)?) {re.escape(etiqueta)}$', m)
+        if match:
+            val_l, val_v = res.get(col_l), res.get(col_v)
+            if pd.isna(val_l) or pd.isna(val_v):
+                return None  # partido sin esa stat en la API -- queda 'Sin datos'
+            linea = float(match.group(1))
+            total = float(val_l) + float(val_v)
+            return 'Ganado' if total > linea else 'Perdido'
+
+    return None  # mercado no reconocido
 
 def liquidar_historial():
     """
     Liquida (marca Ganado/Perdido/Sin datos) las filas 'Pendiente' de
-    Data/historial_picks.csv contra Data/resultados_log.csv. Fase 1: solo
-    goles/BTTS/doble oportunidad -- mercados de córners/tarjetas/tiros/
-    faltas quedan en 'Sin datos' hasta extender la sincronización de
-    resultados con stats completos (ver _evaluar_mercado).
+    Data/historial_picks.csv contra Data/resultados_log.csv. También
+    reintenta las filas ya marcadas 'Sin datos' (córners/tarjetas/tiros/
+    faltas) por si sincronizar_resultados() ya trajo esas stats en una
+    corrida más reciente -- fase 2 llenó resultados_log.csv con
+    corners_l_real/shots_l_real/etc. después de que estas filas quedaran
+    'Sin datos' bajo la fase 1, así que hace falta reevaluarlas y no solo
+    las 'Pendiente' (ver _evaluar_mercado).
     Las combinadas (es_combo=True) se liquidan evaluando cada pata por
     separado (guardadas en resultado_detalle como JSON de picks_combo):
     Ganado solo si TODAS las patas ganan, Perdido si CUALQUIERA pierde.
+    Nunca quedan en 'Sin datos' (si falta una pata, se dejan 'Pendiente'
+    indefinidamente), así que no necesitan el reintento.
     """
     if not os.path.exists(HISTORIAL_PATH):
         print('⚠️ Sin Data/historial_picks.csv todavía -- corré generar_web.py primero')
@@ -436,7 +533,7 @@ def liquidar_historial():
         m = df_res[mask]
         return m.iloc[0] if len(m) else None
 
-    pendientes = df[df['estado'] == 'Pendiente']
+    pendientes = df[df['estado'].isin(['Pendiente', 'Sin datos'])]
     liquidados = 0
     ahora = datetime.now(PERU_TZ).isoformat()
 
