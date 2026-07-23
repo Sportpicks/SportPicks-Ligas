@@ -1,24 +1,68 @@
 {
+  "comp_1917": {
+    "partidos": 5,
+    "mse_goles": 0.742,
+    "mae_goles": 0.766,
+    "sesgo_goles": 0.158,
+    "accuracy_1x2": 80.0,
+    "accuracy_over25": 40.0,
+    "media_xg_pred": 2.558,
+    "media_goles_real": 2.4,
+    "factor_correccion": 0.938
+  },
   "comp_3498": {
-    "partidos": 11,
-    "mse_goles": 1.74,
-    "mae_goles": 1.167,
-    "sesgo_goles": -0.194,
-    "accuracy_1x2": 63.6,
-    "accuracy_over25": 72.7,
-    "media_xg_pred": 2.261,
-    "media_goles_real": 2.455,
-    "factor_correccion": 1.086
+    "partidos": 14,
+    "mse_goles": 2.407,
+    "mae_goles": 1.346,
+    "sesgo_goles": -0.193,
+    "accuracy_1x2": 64.3,
+    "accuracy_over25": 78.6,
+    "media_xg_pred": 2.307,
+    "media_goles_real": 2.5,
+    "factor_correccion": 1.084
+  },
+  "comp_1615": {
+    "partidos": 5,
+    "mse_goles": 3.074,
+    "mae_goles": 1.433,
+    "sesgo_goles": -0.313,
+    "accuracy_1x2": 40.0,
+    "accuracy_over25": 40.0,
+    "media_xg_pred": 2.487,
+    "media_goles_real": 2.8,
+    "factor_correccion": 1.126
+  },
+  "comp_4795": {
+    "partidos": 5,
+    "mse_goles": 0.96,
+    "mae_goles": 0.913,
+    "sesgo_goles": -0.603,
+    "accuracy_1x2": 60.0,
+    "accuracy_over25": 20.0,
+    "media_xg_pred": 2.597,
+    "media_goles_real": 3.2,
+    "factor_correccion": 1.232
   },
   "comp_408698": {
-    "partidos": 3,
-    "mse_goles": 9.744,
-    "mae_goles": 2.333,
-    "sesgo_goles": -1.763,
+    "partidos": 9,
+    "mse_goles": 6.472,
+    "mae_goles": 1.935,
+    "sesgo_goles": -0.965,
+    "accuracy_1x2": 22.2,
+    "accuracy_over25": 44.4,
+    "media_xg_pred": 2.369,
+    "media_goles_real": 3.333,
+    "factor_correccion": 1.407
+  },
+  "comp_9799": {
+    "partidos": 15,
+    "mse_goles": 2.819,
+    "mae_goles": 1.244,
+    "sesgo_goles": 0.075,
     "accuracy_1x2": 33.3,
-    "accuracy_over25": 33.3,
-    "media_xg_pred": 2.571,
-    "media_goles_real": 4.333,
-    "factor_correccion": 1.686
+    "accuracy_over25": 66.7,
+    "media_xg_pred": 3.408,
+    "media_goles_real": 3.333,
+    "factor_correccion": 0.978
   }
 }
