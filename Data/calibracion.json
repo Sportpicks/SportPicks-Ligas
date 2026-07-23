@@ -44,15 +44,15 @@
     "factor_correccion": 1.232
   },
   "comp_408698": {
-    "partidos": 9,
-    "mse_goles": 6.472,
-    "mae_goles": 1.935,
-    "sesgo_goles": -0.965,
-    "accuracy_1x2": 22.2,
-    "accuracy_over25": 44.4,
-    "media_xg_pred": 2.369,
-    "media_goles_real": 3.333,
-    "factor_correccion": 1.407
+    "partidos": 10,
+    "mse_goles": 5.912,
+    "mae_goles": 1.835,
+    "sesgo_goles": -0.774,
+    "accuracy_1x2": 30.0,
+    "accuracy_over25": 40.0,
+    "media_xg_pred": 2.426,
+    "media_goles_real": 3.2,
+    "factor_correccion": 1.319
   },
   "comp_9799": {
     "partidos": 15,
