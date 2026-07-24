@@ -41,6 +41,17 @@ def _cargar_historial() -> list[dict]:
     # NaN produce el token literal "NaN", que NO es JSON valido (rompe en
     # cualquier parser estricto, incluido el de JS en el navegador). Se
     # convierte a None explicitamente antes de serializar.
+    #
+    # BUG REAL encontrado en produccion (24/07/2026): pd.notnull() NO
+    # detecta +-Infinity como "nulo" (infinito no es lo mismo que NaN para
+    # pandas), asi que un valor infinito en alguna columna numerica (ej. un
+    # 'ev' calculado con una division por cero en algun caso raro) pasaba
+    # este filtro intacto. `requests` rechaza json=payload con Infinity
+    # dentro (no es JSON valido) con el error "Out of range float values
+    # are not JSON compliant" -- justo lo que fallo en el workflow. Se
+    # reemplazan +-inf por None ANTES del filtro de NaN, cubriendo los dos
+    # casos.
+    df = df.replace([float("inf"), float("-inf")], None)
     df = df.where(pd.notnull(df), None)
     return df.to_dict(orient="records")
 
