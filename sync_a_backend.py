@@ -17,8 +17,10 @@ solo se imprime un aviso) -- antes de que el backend este desplegado en
 Railway, este paso es un no-op intencional, no un error.
 """
 import json
+import math
 import os
 import sys
+from typing import Any
 
 import pandas as pd
 import requests
@@ -30,9 +32,34 @@ RUTA_PICKS_HOY = "Data/picks_hoy.json"
 RUTA_HISTORIAL = "Data/historial_picks.csv"
 
 
+def _sanear_json(valor: Any) -> Any:
+    """Reemplaza recursivamente NaN/Infinity/-Infinity por None.
+
+    BUG REAL encontrado en produccion (24/07/2026), segunda vuelta: el fix
+    original solo saneaba el historial (via pandas). Pero json.load() de la
+    stdlib de Python ACEPTA por defecto los literales no estandar NaN,
+    Infinity y -Infinity (son una extension de Python, no JSON valido) --
+    asi que si generador_picks_ligas.py escribio un 'ev' o similar en
+    Infinity (division entre cero en algun caso raro) dentro de
+    Data/picks_hoy.json, _cargar_picks_hoy() lo carga sin quejarse, y recien
+    revienta despues, cuando `requests` intenta re-serializar el payload a
+    JSON estricto para el POST. Mismo mensaje de error, origen distinto. Se
+    sanea de forma recursiva y generica (dict/list/float) para cubrir
+    picks_hoy.json ademas del historial, sin depender de que columna
+    especifica tenga el problema.
+    """
+    if isinstance(valor, float):
+        return None if (math.isnan(valor) or math.isinf(valor)) else valor
+    if isinstance(valor, dict):
+        return {k: _sanear_json(v) for k, v in valor.items()}
+    if isinstance(valor, list):
+        return [_sanear_json(v) for v in valor]
+    return valor
+
+
 def _cargar_picks_hoy() -> dict:
     with open(RUTA_PICKS_HOY, encoding="utf-8") as f:
-        return json.load(f)
+        return _sanear_json(json.load(f))
 
 
 def _cargar_historial() -> list[dict]:
@@ -53,7 +80,7 @@ def _cargar_historial() -> list[dict]:
     # casos.
     df = df.replace([float("inf"), float("-inf")], None)
     df = df.where(pd.notnull(df), None)
-    return df.to_dict(orient="records")
+    return _sanear_json(df.to_dict(orient="records"))
 
 
 def main() -> int:
