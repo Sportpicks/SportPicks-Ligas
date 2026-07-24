@@ -96,7 +96,22 @@ def generar_candidatos(pred, cuotas):
                     blend_aplicado = True
         if prob_efectiva < 50:
             return  # el blend puede bajar la prob por debajo del piso público
-        ev = round((prob_efectiva/100) - (1/cuota), 3)
+        # BUG REAL encontrado en auditoria de modelo (24/07/2026): esta formula
+        # era `prob - 1/cuota`, que NO es el valor esperado monetario estandar
+        # de una apuesta (`prob*cuota - 1`) -- es ese mismo EV real dividido
+        # entre la cuota. Efecto practico: con cuotas altas (favoritos de
+        # mercado poco probables donde el modelo mas diverge de la cuota), el
+        # EV mostrado quedaba artificialmente chico frente al EV real, y el
+        # filtro EV_MIN_* terminaba exigiendo MENOS edge real cuanto mas alta
+        # la cuota -- justo lo opuesto de lo prudente. Analisis de los
+        # primeros 125 picks liquidados confirmo el sintoma: el bucket de EV
+        # (viejo) mas alto (20%+) acerto solo 25% de las veces, peor que
+        # cualquier otro bucket -- la formula estaba premiando divergencia
+        # modelo-vs-mercado (a menudo error del modelo en equipos con poco
+        # historial, ej. UEFA Conference League) en vez de ventaja real.
+        # La combinada premium (mas abajo, seleccionar_premium) YA usaba la
+        # formula correcta -- esta linea quedaba inconsistente con esa.
+        ev = round((prob_efectiva/100) * cuota - 1, 3)
         candidatos.append({
             'partido': partido,
             'local': local,
