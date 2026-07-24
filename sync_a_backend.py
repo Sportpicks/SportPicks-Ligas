@@ -21,6 +21,7 @@ import math
 import os
 import sys
 import time
+from datetime import datetime
 from typing import Any
 
 import pandas as pd
@@ -98,22 +99,40 @@ def _cargar_historial() -> list[dict]:
 
 def _cargar_partidos_hoy() -> list[dict]:
     """
-    Todos los partidos del dia (no solo los picks ya filtrados) con 1X2,
-    xG, marcador probable y "mejor apuesta" por partido -- la misma
-    informacion que ya se le mostraba al usuario en docs/index.html (seccion
-    "Partidos"), ahora tambien disponible detras del paywall en /panel.
+    Partidos de HOY (no solo los picks ya filtrados) con 1X2, xG, marcador
+    probable y "mejor apuesta" por partido -- la misma informacion que ya se
+    le mostraba al usuario en docs/index.html (seccion "Partidos"), ahora
+    tambien disponible detras del paywall en /panel.
+
+    BUG REAL encontrado en produccion (24/07/2026): Predicciones/
+    predicciones_hoy.json NO esta acotado a hoy pese al nombre -- lo genera
+    modelo_prediccion.predecir_jornada() con
+    `df_prox[df_prox['fecha'] >= fecha].head(100)`, o sea "los proximos 100
+    partidos desde hoy en adelante, sin fecha limite". El primer sync
+    publico 100 partidos que en realidad abarcaban varios dias/semanas, no
+    solo el dia de hoy (decision explicita: la pestana "Partidos" de /panel
+    debe mostrar SOLO hoy, ver conversacion del 24/07/2026). Se filtra aca
+    -- no en modelo_prediccion.py -- para no tocar ese archivo (lo sigue
+    usando docs/index.html con sus propios botones de fecha, que si
+    necesitan el rango multi-dia).
+
     Devuelve lista vacia (no error) si predicciones_hoy.json no existe
     todavia -- pasa en corridas --diario tempranas del pipeline antes de
     que generador_picks_ligas.py haya corrido.
     """
     if not os.path.exists(RUTA_PREDICCIONES):
         return []
+    hoy = datetime.now(_web.PERU_TZ).strftime("%Y-%m-%d")
+    predicciones = [
+        p for p in _web.cargar_json(RUTA_PREDICCIONES, [])
+        if p.get("fecha", "") == hoy
+    ]
     picks_data = _web.cargar_json(RUTA_PICKS_HOY, {})
     candidatos_por_partido: dict[str, list[dict]] = {}
     for c in picks_data.get("todos_candidatos", []):
         candidatos_por_partido.setdefault(c.get("partido", ""), []).append(c)
     partidos = _web.preparar_partidos(
-        _web.cargar_json(RUTA_PREDICCIONES, []),
+        predicciones,
         candidatos_por_partido=candidatos_por_partido,
     )
     return _sanear_json(partidos)
