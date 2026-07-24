@@ -127,7 +127,7 @@ fecha,hora,liga,liga_nombre,local,visitante,mercado,categoria,prob,cuota,ev,es_p
 2026-07-23,16:30,comp_1917,LigaPro Serie A Ecuador,Orense SC,Aucas,Ambos anotan - Sí,Goles,53.0,,0.001,False,False,True,False,Ganado,Orense SC 2-1 Aucas,2026-07-23T06:19:41.225314-05:00,2026-07-24T02:02:20.642033-05:00
 2026-07-23,17:30,comp_4795,Brasileirão Série A,Corinthians,Remo,Más de 24.5 tiros,Tiros,67.0,,0.114,False,False,True,False,Perdido,Corinthians 3-0 Remo,2026-07-23T06:19:41.225314-05:00,2026-07-24T02:02:20.642033-05:00
 2026-07-23,17:30,comp_4540,Liga Profesional Argentina,Sarmiento,Argentinos Juniors,Más de 5.5 tarjetas,Tarjetas,58.0,,0.034,False,False,True,False,Ganado,Sarmiento 2-3 Argentinos Juniors,2026-07-23T06:19:41.225314-05:00,2026-07-24T02:02:20.642033-05:00
-2026-07-24,12:00,comp_7938,Danish Superliga,Viborg FF,Odense Boldklub,Más de 2.5 goles,Goles,70.3,,0.078,True,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
+2026-07-24,12:00,comp_7938,Danish Superliga,Viborg FF,Odense Boldklub,Más de 2.5 goles,Goles,70.3,,0.078,True,False,True,False,Perdido,Viborg FF 1-0 Odense Boldklub,2026-07-23T06:19:41.225314-05:00,2026-07-24T14:10:50.470489-05:00
 2026-07-24,15:00,comp_6981,Liga 1 Perú,Alianza Atlético de Sullana,Los Chankas CYC,Menos de 2.5 goles,Goles,55.0,,0.018,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
 2026-07-24,19:15,comp_4540,Liga Profesional Argentina,Huracán,Banfield,Menos de 2.5 goles,Goles,68.1,,-0.054,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
 2026-07-24,20:15,comp_720692,Primera A Colombia,Deportivo Cali,Jaguares de Córdoba,Victoria Deportivo Cali,1X2,61.0,,-0.044,False,False,True,False,Pendiente,,2026-07-23T06:19:41.225314-05:00,
