@@ -20,6 +20,7 @@ import json
 import math
 import os
 import sys
+import time
 from typing import Any
 
 import pandas as pd
@@ -103,21 +104,38 @@ def main() -> int:
         "historial": _cargar_historial(),
     }
 
-    try:
-        resp = requests.post(
-            url,
-            json=payload,
-            headers={"X-Sync-Secret": secreto},
-            timeout=30,
-        )
-    except requests.RequestException as e:
-        # Fallo de red hacia Railway no debe tumbar el pipeline diario entero
-        # (los picks ya se generaron y commitearon a git antes de este paso) --
-        # se imprime el error para diagnostico pero se sale con codigo != 0
-        # solo para que el step de Actions quede visible en rojo (ya corre
-        # con continue-on-error: true en el workflow).
-        print(f"sync_a_backend: error de red al contactar el backend: {e}", file=sys.stderr)
-        return 1
+    # Render free tier suspende el servicio tras ~15 min sin trafico -- el
+    # primer request que lo despierta ("cold start") puede tardar 50s+ en
+    # responder mientras el contenedor arranca, muy por encima de un timeout
+    # de 30s (BUG REAL en produccion 24/07/2026: "Read timed out" tras
+    # resolver el bug de Infinity). Se sube el timeout a 90s y se reintenta
+    # una vez mas si el primer intento truena por timeout/conexion --
+    # el segundo intento ya encuentra el servicio despierto.
+    intentos = 2
+    for intento in range(1, intentos + 1):
+        try:
+            resp = requests.post(
+                url,
+                json=payload,
+                headers={"X-Sync-Secret": secreto},
+                timeout=90,
+            )
+            break
+        except requests.RequestException as e:
+            if intento < intentos:
+                print(
+                    f"sync_a_backend: intento {intento}/{intentos} fallo ({e}) -- "
+                    "probablemente cold start de Render, reintentando..."
+                )
+                time.sleep(5)
+                continue
+            # Fallo de red persistente no debe tumbar el pipeline diario entero
+            # (los picks ya se generaron y commitearon a git antes de este paso) --
+            # se imprime el error para diagnostico pero se sale con codigo != 0
+            # solo para que el step de Actions quede visible en rojo (ya corre
+            # con continue-on-error: true en el workflow).
+            print(f"sync_a_backend: error de red al contactar el backend: {e}", file=sys.stderr)
+            return 1
 
     if resp.status_code != 200:
         print(f"sync_a_backend: backend respondio {resp.status_code}: {resp.text[:500]}", file=sys.stderr)
