@@ -28,9 +28,21 @@ import requests
 
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 os.chdir(RAIZ)
+sys.path.insert(0, RAIZ)
+
+# Se reutilizan las funciones puras de generar_web.py (cargar_json,
+# preparar_partidos) en vez de duplicar la logica de "mejor apuesta por
+# partido" aca -- esa logica ya filtra por divergencia vs mercado y elige
+# entre TODOS los mercados calculados (1X2, goles, BTTS, doble oportunidad,
+# corners). Importar el modulo NO ejecuta generar_web.main() (esta detras
+# de `if __name__ == '__main__'`), asi que no hay efecto secundario de
+# reescribir docs/index.html -- solo se usan sus funciones y sus globales
+# ya construidos (LIGA_EMOJI/LIGA_COLOR/etc, derivados de configuracion.LIGAS).
+import generar_web as _web
 
 RUTA_PICKS_HOY = "Data/picks_hoy.json"
 RUTA_HISTORIAL = "Data/historial_picks.csv"
+RUTA_PREDICCIONES = "Predicciones/predicciones_hoy.json"
 
 
 def _sanear_json(valor: Any) -> Any:
@@ -84,6 +96,29 @@ def _cargar_historial() -> list[dict]:
     return _sanear_json(df.to_dict(orient="records"))
 
 
+def _cargar_partidos_hoy() -> list[dict]:
+    """
+    Todos los partidos del dia (no solo los picks ya filtrados) con 1X2,
+    xG, marcador probable y "mejor apuesta" por partido -- la misma
+    informacion que ya se le mostraba al usuario en docs/index.html (seccion
+    "Partidos"), ahora tambien disponible detras del paywall en /panel.
+    Devuelve lista vacia (no error) si predicciones_hoy.json no existe
+    todavia -- pasa en corridas --diario tempranas del pipeline antes de
+    que generador_picks_ligas.py haya corrido.
+    """
+    if not os.path.exists(RUTA_PREDICCIONES):
+        return []
+    picks_data = _web.cargar_json(RUTA_PICKS_HOY, {})
+    candidatos_por_partido: dict[str, list[dict]] = {}
+    for c in picks_data.get("todos_candidatos", []):
+        candidatos_por_partido.setdefault(c.get("partido", ""), []).append(c)
+    partidos = _web.preparar_partidos(
+        _web.cargar_json(RUTA_PREDICCIONES, []),
+        candidatos_por_partido=candidatos_por_partido,
+    )
+    return _sanear_json(partidos)
+
+
 def main() -> int:
     url = os.environ.get("BACKEND_SYNC_URL", "").strip()
     secreto = os.environ.get("BACKEND_SYNC_SECRET", "").strip()
@@ -102,6 +137,7 @@ def main() -> int:
     payload = {
         "picks_hoy": _cargar_picks_hoy(),
         "historial": _cargar_historial(),
+        "partidos_hoy": _cargar_partidos_hoy(),
     }
 
     # Render free tier suspende el servicio tras ~15 min sin trafico -- el
