@@ -64,6 +64,18 @@ jobs:
       - name: Generar web
         run: python generar_web.py
 
+      # Publica picks_hoy.json + historial_picks.csv en el backend de
+      # suscripcion (Railway) para que /panel los sirva detras del paywall.
+      # No-op (exit 0) si los secrets todavia no estan configurados -- ver
+      # sync_a_backend.py. continue-on-error ademas por si el backend esta
+      # caido: no debe bloquear el commit/push de los datos del pipeline.
+      - name: Sincronizar picks con el backend de suscripcion
+        run: python sync_a_backend.py
+        continue-on-error: true
+        env:
+          BACKEND_SYNC_URL: ${{ secrets.BACKEND_SYNC_URL }}
+          BACKEND_SYNC_SECRET: ${{ secrets.BACKEND_SYNC_SECRET }}
+
       - name: Commit y push de los resultados
         run: |
           git config user.name "github-actions[bot]"
