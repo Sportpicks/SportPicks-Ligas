@@ -12,7 +12,7 @@ os.chdir(RAIZ)
 sys.path.insert(0, RAIZ)
 from configuracion import (ZONA_PERU, CUOTA_MIN_PUBLICO, CUOTA_MIN_PREMIUM,
                             PROB_MIN_PUBLICO, PROB_MIN_PREMIUM, MAX_PICKS_PUBLICO, LIGAS,
-                            EV_MIN_PUBLICO, EV_MIN_PREMIUM)
+                            EV_MIN_PUBLICO, EV_MIN_PREMIUM, EV_MAX_PUBLICO, EV_MAX_PREMIUM)
 from modelo_prediccion import predecir_jornada, normalizar_nombre
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
@@ -245,11 +245,15 @@ def generar_candidatos(pred, cuotas):
 
 def seleccionar_picks(todos, max_publico=3):
     """Selecciona picks públicos y premium"""
-    # Filtrar por EV positivo y prob mínima
+    # Filtrar por EV en rango [EV_MIN_PUBLICO, EV_MAX_PUBLICO] y prob mínima.
+    # El techo (EV_MAX_PUBLICO) es tan importante como el piso -- ver la nota
+    # larga en configuracion.py: EV informado por encima del techo es señal
+    # de error de calibración del modelo, no de ventaja real, confirmado en
+    # dos auditorías consecutivas (24/07 y 25/07/2026).
     validos = [pk for pk in todos
                if pk['prob'] >= PROB_MIN_PUBLICO
                and pk['cuota'] >= CUOTA_MIN_PUBLICO
-               and pk['ev'] >= EV_MIN_PUBLICO]
+               and EV_MIN_PUBLICO <= pk['ev'] <= EV_MAX_PUBLICO]
 
     # Ordenar por EV
     validos.sort(key=lambda x: (x['prob'], x['ev']), reverse=True)
@@ -328,7 +332,7 @@ def seleccionar_premium(todos, mercados_excluidos):
                 if prob_combo < 40:
                     continue
                 ev_combo = round((prob_combo/100) * cuota_combo - 1, 3)
-                if ev_combo < EV_MIN_PREMIUM:
+                if ev_combo < EV_MIN_PREMIUM or ev_combo > EV_MAX_PREMIUM:
                     continue
                 if prob_combo > mejor_prob:
                     mejor_prob = prob_combo
@@ -364,7 +368,7 @@ def seleccionar_premium(todos, mercados_excluidos):
         for pk in sorted(todos, key=lambda x: (x['prob'], x['ev']), reverse=True):
             if (pk['prob'] >= 65
                 and pk['cuota'] >= CUOTA_MIN_PREMIUM
-                and pk['ev'] >= EV_MIN_PREMIUM
+                and EV_MIN_PREMIUM <= pk['ev'] <= EV_MAX_PREMIUM
                 and pk['mercado'] not in mercados_excluidos):
                 pk['tipo'] = 'premium'
                 return [pk]
@@ -372,7 +376,7 @@ def seleccionar_premium(todos, mercados_excluidos):
         for pk in sorted(todos, key=lambda x: x['prob'], reverse=True):
             if (pk['prob'] >= 62
                 and pk['cuota'] >= 1.50
-                and pk['ev'] >= EV_MIN_PREMIUM
+                and EV_MIN_PREMIUM <= pk['ev'] <= EV_MAX_PREMIUM
                 and pk['mercado'] not in mercados_excluidos):
                 pk['tipo'] = 'premium'
                 return [pk]

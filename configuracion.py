@@ -96,3 +96,20 @@ MAX_PICKS_PUBLICO = 3
 # ser el producto de pago.
 EV_MIN_PUBLICO  = 0.03   # 3%
 EV_MIN_PREMIUM  = 0.05   # 5%
+
+# Techo máximo de EV -- auditoría de modelo del 25/07/2026 (180 picks
+# liquidados, segunda vuelta tras la primera del 24/07 con 125): el bucket
+# de EV 20-30% dio 26.7% de acierto real (15 picks) y el de 30%+ dio 22.2%
+# (9 picks) -- ambos muy por debajo del promedio general (~51.7%), y el
+# patrón se sostuvo IGUAL de mal entre las dos auditorías con muestras
+# crecientes (13→15 y 7→9 picks respectivamente), lo cual ya descarta que
+# sea ruido de muestra chica. Un EV informado por encima de este techo no
+# es evidencia de una ventaja real explotable -- es la misma señal que
+# motivó el fix de la fórmula de EV del 24/07: cuanto más diverge el
+# modelo del mercado, más probable es que sea un error de calibración del
+# modelo (equipos con poco historial, ligas de sample pequeño) que una
+# ineficiencia real del bookmaker. Picks con EV por encima de este techo
+# se descartan en vez de publicarse -- ver seleccionar_picks() y
+# seleccionar_premium() en generador_picks_ligas.py.
+EV_MAX_PUBLICO  = 0.20   # 20%
+EV_MAX_PREMIUM  = 0.20   # 20%
