@@ -29,6 +29,7 @@ THESTATS_LIGAS_PRIORITARIAS = {
     'ECU': {'id': 'comp_1917',   'nombre': 'LigaPro Serie A Ecuador',    'emoji': '🇪🇨'},
     'SCO': {'id': 'comp_6387',   'nombre': 'Scottish Premiership',       'emoji': '🏴󠁧󠁢󠁳󠁣󠁴󠁿'},
     'UCL': {'id': 'comp_3498',   'nombre': 'UEFA Champions League',      'emoji': '⭐'},
+    'UEL': {'id': 'comp_7739',   'nombre': 'UEFA Europa League',         'emoji': '🥈'},
     'UCO': {'id': 'comp_408698', 'nombre': 'UEFA Conference League',     'emoji': '🇪🇺'},
     'MLS': {'id': 'comp_9799',   'nombre': 'MLS',                       'emoji': '🇺🇸'},
 }
