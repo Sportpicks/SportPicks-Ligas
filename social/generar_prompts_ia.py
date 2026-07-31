@@ -80,7 +80,6 @@ def _linea_pick(row):
 def _prompt_imagen(ganados, perdidos, hist, formato):
     lineas_g = "\n".join(f"   Pick {i+1} (GANADO): {_linea_pick(r)}" for i, (_, r) in enumerate(ganados.iterrows()))
     linea_p = "\n".join(f"   Pick 4 (PERDIDO): {_linea_pick(r)}" for _, r in perdidos.iterrows())
-    winrate = f"{hist['winrate']}%" if hist["winrate"] is not None else "--"
 
     if formato == "vertical":
         layout = (
@@ -126,12 +125,13 @@ texto que no esté en esta lista):
 {lineas_g}
 {linea_p}
 
-4. Al final, separado por una línea delgada horizontal: "{winrate} de
-   acierto histórico -- {hist['liquidados']} picks liquidados" en acento
-   lima, debajo en blanco pequeño "Historial completo público -- link en
-   la bio", y en el texto más pequeño de toda la imagen (última línea,
-   gris tenue): "+18 · Análisis estadístico, no garantía de resultado.
-   Juega con responsabilidad."
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Historial completo público -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+   NO muestres ningún porcentaje de acierto ni cantidad de picks
+   liquidados en esta imagen -- ese dato no debe aparecer en ningún
+   lugar.
 
 RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
 de contenido de TikTok/Meta sobre juego/apuestas):
