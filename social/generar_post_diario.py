@@ -47,6 +47,13 @@ ROJO_PERDIDO = "#ff6b6b"  # no esta en la paleta del sitio (que no marca
 # perdidos con color propio), pero aqui ayuda a distinguir de un vistazo
 # en un formato de imagen fija donde no hay hover ni texto adicional.
 
+BASE_URL = "https://sportpicks-suscripcion.vercel.app"
+
+
+def _link_utm(campana):
+    return f"{BASE_URL}/?utm_source=facebook&utm_medium=social&utm_campaign={campana}"
+
+
 FUENTE_DIR = "/usr/share/fonts/truetype/dejavu"
 FUENTE_BOLD = os.path.join(FUENTE_DIR, "DejaVuSans-Bold.ttf")
 FUENTE_REG = os.path.join(FUENTE_DIR, "DejaVuSans.ttf")
@@ -203,8 +210,13 @@ def _render_imagen(picks_dia, fecha_iso, hist, ancho, alto):
     stat_txt = f"{winrate_txt} de acierto historico -- {hist['liquidados']} picks liquidados"
     _texto_centrado(draw, cx, footer_texto_y, stat_txt, _fuente(int(ancho * 0.026)), ACCENT)
     footer_texto_y += 40
+    # "Link en la bio" en vez de un dominio -- una imagen estatica no
+    # tiene link clickeable de todas formas, y el dominio real
+    # (sportpicks-suscripcion.vercel.app) es largo/feo para mostrar en
+    # pantalla. El link real con UTM va en el caption (Facebook) o en la
+    # bio de la cuenta (Instagram/TikTok, ver configuracion de cuentas).
     _texto_centrado(
-        draw, cx, footer_texto_y, "Historial completo publico -- sportpicksligas.com",
+        draw, cx, footer_texto_y, "Historial completo publico -- link en la bio",
         _fuente(int(ancho * 0.02), bold=False), FG,
     )
 
@@ -222,6 +234,7 @@ def generar_caption(picks_dia, fecha_iso, hist):
         emoji = "✅" if p["estado"] == "Ganado" else "❌"
         ejemplos.append(f"{emoji} {p['local']} vs {p['visitante']} -- {p['mercado']}")
     bloque_ejemplos = "\n".join(ejemplos)
+    link = _link_utm(f"post_diario_{fecha_iso}")
 
     facebook = f"""📊 Resultados del {fecha_txt}
 
@@ -231,7 +244,7 @@ def generar_caption(picks_dia, fecha_iso, hist):
 
 Track record histórico: {winrate_txt} de acierto en {hist['liquidados']} picks liquidados.
 
-👉 Historial completo y picks gratis de hoy en sportpicksligas.com
+👉 Historial completo y picks gratis de hoy: {link}
 
 ⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18."""
 
