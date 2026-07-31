@@ -37,7 +37,13 @@ HISTORIAL_CSV = os.path.join(RAIZ_PIPELINE, "Data", "historial_picks.csv")
 SALIDA_BASE = os.path.join(RAIZ_PIPELINE, "Data", "social")
 
 sys.path.insert(0, RAIZ)
-from generar_post_diario import generar_caption, stats_historicas  # noqa: E402
+from generar_post_diario import stats_historicas  # noqa: E402
+
+BASE_URL = "https://sportpicks-suscripcion.vercel.app"
+
+
+def _link_utm(plataforma, campana):
+    return f"{BASE_URL}/?utm_source={plataforma}&utm_medium=social&utm_campaign={campana}"
 
 PALETA = {
     "bg": "#081210",
@@ -184,6 +190,103 @@ está en la imagen debe permanecer visible y legible durante todo el
 video, no lo tapes ni lo recortes con el zoom."""
 
 
+def _ligas_involucradas(ganados, perdidos):
+    """Lista de ligas unicas de los 4 picks, en orden de aparicion --
+    para mencionarlas en el caption sin inventar nada fuera de lo que
+    ya se muestra en la imagen."""
+    vistas = []
+    for _, r in pd.concat([ganados, perdidos]).iterrows():
+        if r["liga_nombre"] not in vistas:
+            vistas.append(r["liga_nombre"])
+    return vistas
+
+
+def _texto_ligas(ligas):
+    if len(ligas) == 1:
+        return ligas[0]
+    if len(ligas) == 2:
+        return f"{ligas[0]} y {ligas[1]}"
+    return ", ".join(ligas[:-1]) + f" y {ligas[-1]}"
+
+
+# Hashtags fijos por plataforma -- separados de los de liga (que si
+# cambian dia a dia segun que competiciones aparezcan en los 4 picks).
+# Nunca se usa la palabra "apuesta(s)" en un hashtag (mismo criterio de
+# cumplimiento que las imagenes) -- "juegaresponsable" es la unica
+# excepcion, porque es la etiqueta estandar de juego responsable, no
+# promocional.
+HASHTAGS_LIGA = {
+    "Brasileirão Série A": "#Brasileirao",
+    "Liga Profesional Argentina": "#LigaArgentina",
+    "CONMEBOL Sudamericana": "#CopaSudamericana",
+    "CONMEBOL Libertadores": "#CopaLibertadores",
+    "UEFA Champions League": "#ChampionsLeague",
+    "UEFA Europa League": "#EuropaLeague",
+    "UEFA Conference League": "#ConferenceLeague",
+    "Major League Soccer": "#MLS",
+}
+
+
+def _hashtags(ligas, n_max):
+    base = ["#SportPicksLigas", "#Futbol", "#PronosticosFutbol", "#AnalisisDeportivo", "#DatosDeportivos"]
+    de_liga = [HASHTAGS_LIGA[l] for l in ligas if l in HASHTAGS_LIGA]
+    todos = base + de_liga
+    # dedup preservando orden, luego recorta al maximo pedido
+    vistos, resultado = set(), []
+    for h in todos:
+        if h not in vistos:
+            vistos.add(h)
+            resultado.append(h)
+    return resultado[:n_max]
+
+
+def _alt_text(ganados, perdidos):
+    partes = []
+    for _, r in pd.concat([ganados, perdidos]).iterrows():
+        resultado = "ganado" if r["estado"] == "Ganado" else "perdido"
+        partes.append(f"{r['local']} vs {r['visitante']} ({resultado})")
+    return (
+        "Tarjetas de picks de fútbol con resultados recientes del modelo estadístico "
+        f"SportPicks Ligas: {', '.join(partes)}, con cuotas y probabilidad de cada pick."
+    )
+
+
+def generar_captions(ganados, perdidos):
+    ligas = _ligas_involucradas(ganados, perdidos)
+    texto_ligas = _texto_ligas(ligas)
+    campana = f"picks_recientes_{date.today().isoformat()}"
+
+    tiktok = (
+        f"Repaso de nuestros últimos picks de fútbol 📊 {texto_ligas}.\n\n"
+        f"Transparencia total: mostramos lo que sale bien y lo que sale mal.\n\n"
+        f"Historial completo y picks gratis en el link de la bio ⚽\n\n"
+        f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
+        + " ".join(_hashtags(ligas, 5))
+    )
+
+    instagram = (
+        f"📊 Repaso de picks: así venimos en {texto_ligas}.\n\n"
+        f"Sin editar lo que sale mal -- transparencia total, ganes o pierdas.\n\n"
+        f"👉 Historial completo y picks gratis de hoy en el link de la bio.\n\n"
+        f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
+        f".\n.\n.\n"
+        + " ".join(_hashtags(ligas, 12) + ["#JuegaResponsable"])
+    )
+
+    link_fb = _link_utm("facebook", campana)
+    facebook = (
+        f"📊 Repaso de nuestros últimos picks -- {texto_ligas}.\n\n"
+        f"Mostramos todo, ganes o pierdas: así queda el historial público, sin editar.\n\n"
+        f"👉 Historial completo y picks gratis de hoy: {link_fb}\n\n"
+        f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
+        + " ".join(_hashtags(ligas, 3))
+    )
+
+    alt_text = _alt_text(ganados, perdidos)
+
+    return tiktok, instagram, facebook, alt_text
+
+
 def main():
     ganados, perdidos = _seleccionar_picks()
     if len(ganados) < 3 or len(perdidos) < 1:
@@ -200,6 +303,7 @@ def main():
     prompt_vertical = _prompt_imagen(ganados, perdidos, hist, "vertical")
     prompt_cuadrado = _prompt_imagen(ganados, perdidos, hist, "cuadrado")
     prompt_video = _prompt_video()
+    tiktok, instagram, facebook, alt_text = generar_captions(ganados, perdidos)
 
     ruta = os.path.join(carpeta_salida, "prompts_ia.txt")
     with open(ruta, "w", encoding="utf-8") as f:
@@ -209,11 +313,17 @@ def main():
         f.write(prompt_cuadrado)
         f.write("\n\n\n=== PROMPT VIDEO (Flow) — usar la imagen vertical como fotograma inicial ===\n\n")
         f.write(prompt_video)
+        f.write("\n\n\n=== CAPTION TIKTOK ===\n\n")
+        f.write(tiktok)
+        f.write("\n\n\n=== CAPTION INSTAGRAM ===\n\n")
+        f.write(instagram)
+        f.write("\n\n\n=== CAPTION FACEBOOK ===\n\n")
+        f.write(facebook)
+        f.write("\n\n\n=== TEXTO ALTERNATIVO (accesibilidad + SEO -- pegar en el campo 'Alt text' de Instagram/Facebook) ===\n\n")
+        f.write(alt_text)
         f.write("\n")
 
     print(f"Generado: {ruta}")
-    print()
-    print(prompt_vertical)
 
 
 if __name__ == "__main__":
