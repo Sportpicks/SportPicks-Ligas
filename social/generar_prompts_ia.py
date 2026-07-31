@@ -71,7 +71,10 @@ def _seleccionar_picks():
 
 def _linea_pick(row):
     cuota = f"@{row['cuota']}" if pd.notna(row["cuota"]) else "s/d"
-    return f"{row['local']} vs {row['visitante']} — {row['mercado']} — cuota {cuota} — {row['prob']}% prob."
+    return (
+        f"{row['local']} vs {row['visitante']} ({row['liga_nombre']}) — "
+        f"{row['mercado']} — cuota {cuota} — {row['prob']}% prob."
+    )
 
 
 def _prompt_imagen(ganados, perdidos, hist, formato):
@@ -90,10 +93,14 @@ def _prompt_imagen(ganados, perdidos, hist, formato):
             "Las 4 tarjetas de picks en una cuadricula 2x2 para aprovechar el espacio cuadrado."
         )
 
-    return f"""Diseña una imagen para redes sociales de la marca de análisis deportivo
-"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de datos
-deportivos. NO fotos de personas ni rostros, NO logos de casas de apuestas,
-NO marcas de agua.
+    return f"""IDIOMA: todo el texto de esta imagen debe estar en ESPAÑOL. No traduzcas
+ninguna palabra al inglés, ni siquiera "GANADO"/"PERDIDO" ni el resto de
+las etiquetas -- copia el texto exactamente como aparece más abajo,
+entre comillas, sin traducirlo ni parafrasearlo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
 
 {layout}
 
@@ -104,23 +111,45 @@ Paleta EXACTA (respetar los códigos hex):
 - Tarjetas: verde apenas más claro que el fondo {PALETA['surface']}, borde sutil {PALETA['border']}
 - Etiqueta de pick perdido: rojo suave {PALETA['rojo']}
 
-Contenido exacto a mostrar, de arriba a abajo (no agregues texto que no
-esté en esta lista):
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
 
 1. Título grande en acento lima: "SPORTPICKS LIGAS"
 2. Subtítulo en blanco: "Nuestros últimos picks"
 3. Cuatro tarjetas redondeadas, una por pick, cada una con: una etiqueta
    pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro, o
-   "PERDIDO" en rojo suave), el nombre del partido en blanco bold, y
-   debajo el mercado + cuota + probabilidad en gris claro:
+   "PERDIDO" en rojo suave -- en español, nunca "WON"/"LOST"), el nombre
+   del partido en blanco bold, el nombre de la liga/competición en gris
+   pequeño debajo del partido, y debajo el mercado + cuota + probabilidad
+   en gris claro:
 
 {lineas_g}
 {linea_p}
 
 4. Al final, separado por una línea delgada horizontal: "{winrate} de
    acierto histórico -- {hist['liquidados']} picks liquidados" en acento
-   lima, y debajo en blanco pequeño: "Historial completo público -- link
-   en la bio".
+   lima, debajo en blanco pequeño "Historial completo público -- link en
+   la bio", y en el texto más pequeño de toda la imagen (última línea,
+   gris tenue): "+18 · Análisis estadístico, no garantía de resultado.
+   Juega con responsabilidad."
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" del punto 4 -- no es opcional, debe verse en la
+  imagen, no solo en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
 
 Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
 serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
@@ -128,7 +157,11 @@ jerarquía visual clara."""
 
 
 def _prompt_video():
-    return """Usa la imagen vertical generada (la de formato 1080x1920) como
+    return """IDIOMA: si el modelo agrega cualquier texto, subtítulo o voz en off,
+debe estar en ESPAÑOL -- no en inglés. Preferible que no agregue texto
+nuevo en absoluto (ver abajo).
+
+Usa la imagen vertical generada (la de formato 1080x1920) como
 fotograma inicial -- animación image-to-video, no generar desde cero.
 
 Genera un video vertical de 8 a 10 segundos, SIN audio ni voz, para
@@ -138,10 +171,17 @@ Movimiento: zoom lento y constante hacia el título "SPORTPICKS LIGAS"
 (efecto Ken Burns), cámara estática salvo por ese zoom suave y continuo,
 sin cortes ni cambios de plano. No agregues elementos que no estén en la
 imagen original -- nada de personas, balones en movimiento, ni gráficos
-animados adicionales. El resultado debe sentirse como una pieza de
-datos/dashboard, sobria y profesional, no como un anuncio llamativo. Sin
-texto adicional al que ya está en la imagen. Termina con un fundido a
-negro suave en el último medio segundo."""
+animados adicionales, ni texto nuevo que no estuviera ya en la imagen.
+El resultado debe sentirse como una pieza de datos/dashboard, sobria y
+profesional, no como un anuncio llamativo. Termina con un fundido a
+negro suave en el último medio segundo.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
+menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
+"bet" en ningún texto u overlay, no agregues lenguaje de "ganancia
+garantizada". El disclaimer "+18 · Juega con responsabilidad" que ya
+está en la imagen debe permanecer visible y legible durante todo el
+video, no lo tapes ni lo recortes con el zoom."""
 
 
 def main():
