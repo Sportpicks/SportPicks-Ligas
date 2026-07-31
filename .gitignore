@@ -1,0 +1,22 @@
+# Imagenes y captions generados por social/generar_post_diario.py -- salida
+# local para revisar y publicar manualmente, no hace falta versionarla (se
+# regenera en segundos a partir de Data/historial_picks.csv, que si esta
+# versionado).
+Data/social/
+
+# Credenciales locales (token del bot de Telegram, etc.) -- nunca al repo.
+.env
+
+# Cache de bytecode de Python -- se regenera solo, no aporta nada versionado.
+__pycache__/
+*.pyc
+
+# Repo del backend/frontend de suscripcion (sportpicks-suscripcion): es un
+# proyecto y un repositorio git aparte (tiene su propio .git/), montado
+# dentro de esta carpeta solo por conveniencia local. No debe versionarse
+# como parte de SportPicks-Ligas.
+Repo/
+
+# Configuracion local de la herramienta de agente (Claude/Cowork) -- no es
+# parte del proyecto.
+.claude/
