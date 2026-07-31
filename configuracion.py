@@ -98,6 +98,19 @@ MAX_PICKS_PUBLICO = 3
 EV_MIN_PUBLICO  = 0.03   # 3%
 EV_MIN_PREMIUM  = 0.05   # 5%
 
+# Categorías de mercado descartadas -- auditoría de calibración del
+# 31/07/2026 (410 picks liquidados, vs. los 180 de la auditoría anterior):
+# '1X2' rindió 44.9% de acierto real (n=49) y 'Tiros' 40.9% (n=22), ambos
+# muy por debajo del promedio general (54.4%) y de los mercados de Goles
+# (57.1%, n=282) y Córners (57.1%, n=35), que sí sostienen su calibración
+# con muestra grande. Mismo criterio que tarjetas rojas (descartado antes
+# por costo/beneficio): en vez de mantener mercados con acierto real por
+# debajo de la media mientras se investiga la causa, se descartan por
+# completo del panel público y como patas de combinadas premium. Revisar
+# cuando acumulen más muestra o se identifique y corrija la causa de la
+# sobreconfianza del modelo en estos dos mercados.
+CATEGORIAS_EXCLUIDAS = {'1X2', 'Tiros'}
+
 # Techo máximo de EV -- auditoría de modelo del 25/07/2026 (180 picks
 # liquidados, segunda vuelta tras la primera del 24/07 con 125): el bucket
 # de EV 20-30% dio 26.7% de acierto real (15 picks) y el de 30%+ dio 22.2%

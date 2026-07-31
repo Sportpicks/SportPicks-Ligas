@@ -12,7 +12,8 @@ os.chdir(RAIZ)
 sys.path.insert(0, RAIZ)
 from configuracion import (ZONA_PERU, CUOTA_MIN_PUBLICO, CUOTA_MIN_PREMIUM,
                             PROB_MIN_PUBLICO, PROB_MIN_PREMIUM, MAX_PICKS_PUBLICO, LIGAS,
-                            EV_MIN_PUBLICO, EV_MIN_PREMIUM, EV_MAX_PUBLICO, EV_MAX_PREMIUM)
+                            EV_MIN_PUBLICO, EV_MIN_PREMIUM, EV_MAX_PUBLICO, EV_MAX_PREMIUM,
+                            CATEGORIAS_EXCLUIDAS)
 from modelo_prediccion import predecir_jornada, normalizar_nombre
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
@@ -253,7 +254,8 @@ def seleccionar_picks(todos, max_publico=3):
     validos = [pk for pk in todos
                if pk['prob'] >= PROB_MIN_PUBLICO
                and pk['cuota'] >= CUOTA_MIN_PUBLICO
-               and EV_MIN_PUBLICO <= pk['ev'] <= EV_MAX_PUBLICO]
+               and EV_MIN_PUBLICO <= pk['ev'] <= EV_MAX_PUBLICO
+               and pk['categoria'] not in CATEGORIAS_EXCLUIDAS]
 
     # Ordenar por EV
     validos.sort(key=lambda x: (x['prob'], x['ev']), reverse=True)
@@ -295,12 +297,22 @@ def seleccionar_picks(todos, max_publico=3):
 
 def seleccionar_premium(todos, mercados_excluidos):
     """Busca la mejor combinada para el premium"""
-    # Picks con prob alta y cuota baja — candidatos para combinada
+    # Picks con prob alta y cuota baja — candidatos para combinada.
+    # Piso de prob por pata subido de 60% a 68% (auditoría 31/07/2026,
+    # 410 picks liquidados): al multiplicar dos patas, la sobreconfianza
+    # del modelo se compone -- con patas de ~60% mostrado, el acierto real
+    # de la combinada terminó en 36.4% (n=11) vs. un 57% de prob combinada
+    # mostrada (gap de 20.6pp). Subir el piso reduce cuántas combinadas
+    # dependen de patas de calibración débil, sin eliminar el mecanismo.
+    # También se excluyen los mercados de CATEGORIAS_EXCLUIDAS (1X2, Tiros)
+    # como patas -- misma auditoría, ambos por debajo del acierto promedio.
+    PROB_MIN_PATA_PREMIUM = 68
     candidatos = sorted(
         [pk for pk in todos
-         if pk['prob'] >= 60
+         if pk['prob'] >= PROB_MIN_PATA_PREMIUM
          and 1.20 <= pk['cuota'] <= 3.00
-         and pk['mercado'] not in mercados_excluidos],
+         and pk['mercado'] not in mercados_excluidos
+         and pk['categoria'] not in CATEGORIAS_EXCLUIDAS],
         key=lambda x: x['prob'], reverse=True
     )
 
@@ -369,13 +381,15 @@ def seleccionar_premium(todos, mercados_excluidos):
             if (pk['prob'] >= 65
                 and pk['cuota'] >= CUOTA_MIN_PREMIUM
                 and EV_MIN_PREMIUM <= pk['ev'] <= EV_MAX_PREMIUM
-                and pk['mercado'] not in mercados_excluidos):
+                and pk['mercado'] not in mercados_excluidos
+                and pk['categoria'] not in CATEGORIAS_EXCLUIDAS):
                 pk['tipo'] = 'premium'
                 return [pk]
         # Último recurso — mejor pick disponible con cuota >= 1.50
         for pk in sorted(todos, key=lambda x: x['prob'], reverse=True):
             if (pk['prob'] >= 62
                 and pk['cuota'] >= 1.50
+                and pk['categoria'] not in CATEGORIAS_EXCLUIDAS
                 and EV_MIN_PREMIUM <= pk['ev'] <= EV_MAX_PREMIUM
                 and pk['mercado'] not in mercados_excluidos):
                 pk['tipo'] = 'premium'
