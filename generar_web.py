@@ -77,6 +77,7 @@ def mejor_apuesta(p, candidatos_partido=None):
             'ev': round(elegido.get('ev', 0) or 0, 3),
             'emoji': elegido.get('emoji', '⚽'), 'categoria': elegido.get('categoria', ''),
             'nivel': nivel, 'texto': texto,
+            'cuota': elegido.get('cuota_display', elegido.get('cuota')),
         }
 
     # Fallback: sin candidatos con cuotas reales, usar solo lo que trae el
@@ -227,7 +228,7 @@ def archivar_historial(partidos, publicos, premium):
         if ma.get('mercado'):
             registrar(p.get('fecha', ''), p.get('hora', ''), p.get('liga', ''), p.get('liga_nombre', ''),
                       p.get('local', ''), p.get('visitante', ''), ma['mercado'], ma.get('categoria', ''),
-                      ma.get('prob', 0), None, ma.get('ev', 0), es_mejor_apuesta=True)
+                      ma.get('prob', 0), ma.get('cuota'), ma.get('ev', 0), es_mejor_apuesta=True)
 
     for pk in publicos:
         registrar(pk.get('fecha', ''), pk.get('hora', ''), pk.get('liga', ''), pk.get('liga_nombre', ''),

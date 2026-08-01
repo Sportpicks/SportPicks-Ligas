@@ -30,12 +30,15 @@ texto que no esté en esta lista):
    pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro -- en
    español, nunca "WON"), el nombre del partido en blanco bold, el
    nombre de la liga/competición en gris pequeño debajo del partido, y
-   debajo el mercado + cuota + probabilidad en gris claro:
+   debajo el mercado + cuota + probabilidad en gris claro. Si una tarjeta
+   no trae cuota en el texto de abajo, NO escribas "s/d" ni inventes un
+   número -- en esa tarjeta muestra solo mercado + probabilidad, sin el
+   dato de cuota (es normal que no todas las tarjetas tengan cuota):
 
-   Pick 1 (GANADO): Dundee United vs Rangers (Scottish Premiership) — Ambos anotan - Sí — cuota s/d — 55.4% prob.
-   Pick 2 (GANADO): Bodø/Glimt vs Lillestrøm SK (Eliteserien) — Más de 9.5 córners — cuota s/d — 65.4% prob.
-   Pick 3 (GANADO): FC Juárez vs Pumas UNAM (Liga MX Apertura) — Más de 2.5 goles — cuota s/d — 58.7% prob.
-   Pick 4 (GANADO): Vålerenga IF vs HamKam (Eliteserien) — Más de 2.5 goles — cuota s/d — 66.4% prob.
+   Pick 1 (GANADO): Dundee United vs Rangers (Scottish Premiership) — Ambos anotan - Sí — 55.4% prob.
+   Pick 2 (GANADO): Bodø/Glimt vs Lillestrøm SK (Eliteserien) — Más de 9.5 córners — 65.4% prob.
+   Pick 3 (GANADO): FC Juárez vs Pumas UNAM (Liga MX Apertura) — Más de 2.5 goles — 58.7% prob.
+   Pick 4 (GANADO): Vålerenga IF vs HamKam (Eliteserien) — Más de 2.5 goles — 66.4% prob.
 4. Al final, separado por una línea delgada horizontal: en blanco
    "Historial completo público -- link en la bio", y en el texto más
    pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
@@ -95,12 +98,15 @@ texto que no esté en esta lista):
    pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro -- en
    español, nunca "WON"), el nombre del partido en blanco bold, el
    nombre de la liga/competición en gris pequeño debajo del partido, y
-   debajo el mercado + cuota + probabilidad en gris claro:
+   debajo el mercado + cuota + probabilidad en gris claro. Si una tarjeta
+   no trae cuota en el texto de abajo, NO escribas "s/d" ni inventes un
+   número -- en esa tarjeta muestra solo mercado + probabilidad, sin el
+   dato de cuota (es normal que no todas las tarjetas tengan cuota):
 
-   Pick 1 (GANADO): Dundee United vs Rangers (Scottish Premiership) — Ambos anotan - Sí — cuota s/d — 55.4% prob.
-   Pick 2 (GANADO): Bodø/Glimt vs Lillestrøm SK (Eliteserien) — Más de 9.5 córners — cuota s/d — 65.4% prob.
-   Pick 3 (GANADO): FC Juárez vs Pumas UNAM (Liga MX Apertura) — Más de 2.5 goles — cuota s/d — 58.7% prob.
-   Pick 4 (GANADO): Vålerenga IF vs HamKam (Eliteserien) — Más de 2.5 goles — cuota s/d — 66.4% prob.
+   Pick 1 (GANADO): Dundee United vs Rangers (Scottish Premiership) — Ambos anotan - Sí — 55.4% prob.
+   Pick 2 (GANADO): Bodø/Glimt vs Lillestrøm SK (Eliteserien) — Más de 9.5 córners — 65.4% prob.
+   Pick 3 (GANADO): FC Juárez vs Pumas UNAM (Liga MX Apertura) — Más de 2.5 goles — 58.7% prob.
+   Pick 4 (GANADO): Vålerenga IF vs HamKam (Eliteserien) — Más de 2.5 goles — 66.4% prob.
 4. Al final, separado por una línea delgada horizontal: en blanco
    "Historial completo público -- link en la bio", y en el texto más
    pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis

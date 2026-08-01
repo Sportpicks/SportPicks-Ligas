@@ -98,10 +98,10 @@ def _picks_de_hoy():
 
 
 def _linea_pick(row):
-    cuota = f"@{row['cuota']}" if pd.notna(row["cuota"]) else "s/d"
+    cuota_txt = f" — cuota @{row['cuota']}" if pd.notna(row["cuota"]) else ""
     return (
         f"{row['local']} vs {row['visitante']} ({row['liga_nombre']}) — "
-        f"{row['mercado']} — cuota {cuota} — {row['prob']}% prob."
+        f"{row['mercado']}{cuota_txt} — {row['prob']}% prob."
     )
 
 
@@ -158,7 +158,10 @@ texto que no esté en esta lista):
    pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro -- en
    español, nunca "WON"), el nombre del partido en blanco bold, el
    nombre de la liga/competición en gris pequeño debajo del partido, y
-   debajo el mercado + cuota + probabilidad en gris claro:
+   debajo el mercado + cuota + probabilidad en gris claro. Si una tarjeta
+   no trae cuota en el texto de abajo, NO escribas "s/d" ni inventes un
+   número -- en esa tarjeta muestra solo mercado + probabilidad, sin el
+   dato de cuota (es normal que no todas las tarjetas tengan cuota):
 
 {lineas}
 4. Al final, separado por una línea delgada horizontal: en blanco
