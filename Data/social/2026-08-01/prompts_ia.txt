@@ -1,0 +1,371 @@
+############################################
+# PIEZA 1: RECAP DE GANADOS (4 picks ya jugados)
+############################################
+
+=== PROMPT IMAGEN VERTICAL (Nano Banana Pro) — TikTok/Reels/Stories ===
+
+IDIOMA: todo el texto de esta imagen debe estar en ESPAÑOL. No traduzcas
+ninguna palabra al inglés, ni siquiera "GANADO" -- copia el texto
+exactamente como aparece más abajo, entre comillas, sin traducirlo ni
+parafrasearlo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
+
+Formato vertical 1080x1920 (para Instagram/TikTok Reels y Stories). Las 4 tarjetas de picks apiladas en una sola columna, de arriba a abajo.
+
+Paleta EXACTA (respetar los códigos hex):
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (títulos y dato clave): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjetas: verde apenas más claro que el fondo #0f1f1b, borde sutil #1c332c
+
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
+
+1. Título grande en acento lima: "SPORTPICKS LIGAS"
+2. Subtítulo en blanco: "Nuestros últimos picks ganados"
+3. Cuatro tarjetas redondeadas, una por pick, cada una con: una etiqueta
+   pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro -- en
+   español, nunca "WON"), el nombre del partido en blanco bold, el
+   nombre de la liga/competición en gris pequeño debajo del partido, y
+   debajo el mercado + cuota + probabilidad en gris claro:
+
+   Pick 1 (GANADO): Dundee United vs Rangers (Scottish Premiership) — Ambos anotan - Sí — cuota s/d — 55.4% prob.
+   Pick 2 (GANADO): Bodø/Glimt vs Lillestrøm SK (Eliteserien) — Más de 9.5 córners — cuota s/d — 65.4% prob.
+   Pick 3 (GANADO): FC Juárez vs Pumas UNAM (Liga MX Apertura) — Más de 2.5 goles — cuota s/d — 58.7% prob.
+   Pick 4 (GANADO): Vålerenga IF vs HamKam (Eliteserien) — Más de 2.5 goles — cuota s/d — 66.4% prob.
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Historial completo público -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+   NO muestres ningún porcentaje de acierto ni cantidad de picks
+   liquidados en esta imagen -- ese dato no debe aparecer en ningún
+   lugar.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" del punto 4 -- no es opcional, debe verse en la
+  imagen, no solo en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
+
+Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
+serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
+jerarquía visual clara.
+
+
+=== PROMPT IMAGEN CUADRADA (Nano Banana Pro) — Facebook/Instagram feed ===
+
+IDIOMA: todo el texto de esta imagen debe estar en ESPAÑOL. No traduzcas
+ninguna palabra al inglés, ni siquiera "GANADO" -- copia el texto
+exactamente como aparece más abajo, entre comillas, sin traducirlo ni
+parafrasearlo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
+
+Formato cuadrado 1080x1080 (para feed de Facebook/Instagram). Las 4 tarjetas de picks en una cuadricula 2x2, para aprovechar el espacio cuadrado.
+
+Paleta EXACTA (respetar los códigos hex):
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (títulos y dato clave): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjetas: verde apenas más claro que el fondo #0f1f1b, borde sutil #1c332c
+
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
+
+1. Título grande en acento lima: "SPORTPICKS LIGAS"
+2. Subtítulo en blanco: "Nuestros últimos picks ganados"
+3. Cuatro tarjetas redondeadas, una por pick, cada una con: una etiqueta
+   pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro -- en
+   español, nunca "WON"), el nombre del partido en blanco bold, el
+   nombre de la liga/competición en gris pequeño debajo del partido, y
+   debajo el mercado + cuota + probabilidad en gris claro:
+
+   Pick 1 (GANADO): Dundee United vs Rangers (Scottish Premiership) — Ambos anotan - Sí — cuota s/d — 55.4% prob.
+   Pick 2 (GANADO): Bodø/Glimt vs Lillestrøm SK (Eliteserien) — Más de 9.5 córners — cuota s/d — 65.4% prob.
+   Pick 3 (GANADO): FC Juárez vs Pumas UNAM (Liga MX Apertura) — Más de 2.5 goles — cuota s/d — 58.7% prob.
+   Pick 4 (GANADO): Vålerenga IF vs HamKam (Eliteserien) — Más de 2.5 goles — cuota s/d — 66.4% prob.
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Historial completo público -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+   NO muestres ningún porcentaje de acierto ni cantidad de picks
+   liquidados en esta imagen -- ese dato no debe aparecer en ningún
+   lugar.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" del punto 4 -- no es opcional, debe verse en la
+  imagen, no solo en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
+
+Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
+serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
+jerarquía visual clara.
+
+
+=== PROMPT VIDEO (Flow) — usar la imagen vertical del recap como fotograma inicial ===
+
+IDIOMA: si el modelo agrega cualquier texto, subtítulo o voz en off,
+debe estar en ESPAÑOL -- no en inglés. Preferible que no agregue texto
+nuevo en absoluto (ver abajo).
+
+Usa la imagen vertical del RECAP DE GANADOS (formato 1080x1920) como
+fotograma inicial -- animación image-to-video, no generar desde cero.
+
+Genera un video vertical de 8 a 10 segundos, SIN audio ni voz, para
+TikTok/Reels.
+
+Movimiento: zoom lento y constante hacia el título "SPORTPICKS LIGAS"
+(efecto Ken Burns), cámara estática salvo por ese zoom suave y continuo,
+sin cortes ni cambios de plano. No agregues elementos que no estén en la
+imagen original -- nada de personas, balones en movimiento, ni gráficos
+animados adicionales, ni texto nuevo que no estuviera ya en la imagen.
+El resultado debe sentirse como una pieza de datos/dashboard, sobria y
+profesional, no como un anuncio llamativo. Termina con un fundido a
+negro suave en el último medio segundo.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
+menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
+"bet" en ningún texto u overlay, no agregues lenguaje de "ganancia
+garantizada". El disclaimer "+18 · Juega con responsabilidad" que ya
+está en la imagen debe permanecer visible y legible durante todo el
+video, no lo tapes ni lo recortes con el zoom.
+
+
+=== CAPTION TIKTOK ===
+
+Repaso de nuestros últimos picks ganados 📊 Scottish Premiership, Eliteserien y Liga MX Apertura.
+
+Historial completo (con lo que sale bien y lo que sale mal) en el link de la bio ⚽
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos
+
+
+=== CAPTION INSTAGRAM ===
+
+📊 Así venimos: nuestros últimos 4 picks ganados en Scottish Premiership, Eliteserien y Liga MX Apertura.
+
+👉 Historial completo (transparente, con lo bueno y lo malo) en el link de la bio.
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+.
+.
+.
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos #JuegaResponsable
+
+
+=== CAPTION FACEBOOK ===
+
+📊 Nuestros últimos 4 picks ganados -- Scottish Premiership, Eliteserien y Liga MX Apertura.
+
+👉 Historial público completo: https://sportpicks-suscripcion.vercel.app/?utm_source=facebook&utm_medium=social&utm_campaign=picks_ganados_2026-08-01
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol
+
+
+=== TEXTO ALTERNATIVO (accesibilidad + SEO) ===
+
+Tarjetas de picks de fútbol ganados recientes del modelo estadístico SportPicks Ligas: Dundee United vs Rangers (ganado), Bodø/Glimt vs Lillestrøm SK (ganado), FC Juárez vs Pumas UNAM (ganado), Vålerenga IF vs HamKam (ganado), con cuotas y probabilidad de cada pick.
+
+
+############################################
+# PIEZA 2: PICKS DE HOY (pendientes de jugar)
+############################################
+
+=== PROMPT IMAGEN VERTICAL (Nano Banana Pro) — TikTok/Reels/Stories ===
+
+IDIOMA: todo el texto de esta imagen debe estar en ESPAÑOL. No traduzcas
+ninguna palabra al inglés -- copia el texto exactamente como aparece más
+abajo, entre comillas, sin traducirlo ni parafrasearlo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
+
+Formato vertical 1080x1920 (para Instagram/TikTok Reels y Stories). Las 4 tarjetas apiladas en una sola columna, de arriba a abajo.
+
+Paleta EXACTA (respetar los códigos hex):
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (títulos, etiqueta "HOY" y dato clave): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjetas: verde apenas más claro que el fondo #0f1f1b, borde en acento lima #c8ff3d (más marcado que el borde gris normal, porque estos partidos todavía no se juegan)
+
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
+
+1. Título grande en acento lima: "SPORTPICKS LIGAS"
+2. Subtítulo en blanco: "Picks de hoy"
+3. 4 tarjetas redondeadas con borde en acento lima, una por pick, cada
+   una con: una etiqueta pequeña a la izquierda que diga "HOY" en acento
+   lima sobre fondo oscuro (nunca "GANADO"/"PERDIDO" -- estos partidos
+   todavía no se juegan), el nombre del partido (o de la combinada) en
+   blanco bold, el nombre de la liga/competición en gris pequeño debajo
+   del partido, y debajo el mercado + cuota + probabilidad en gris claro:
+
+   Pick 1: FC Cincinnati vs San Jose Earthquakes (MLS) — Más de 8.5 córners — cuota @1.53 — 77.5% prob.
+   Pick 2: Alianza Valledupar FC vs Deportes Tolima (Primera A Colombia) — Menos de 2.5 goles — cuota @1.6 — 72.3% prob.
+   Pick 3: IK Start vs Viking FK (Eliteserien) — Más de 2.5 goles — cuota @1.53 — 70.0% prob.
+   Pick 4: Combinada: Menos de 2.5 goles @1.4 × Más de 8.5 córners @1.34 — cuota @1.88 — 60.6% prob.
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Picks gratis todos los días -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" -- no es opcional, debe verse en la imagen, no solo
+  en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
+
+Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
+serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
+jerarquía visual clara.
+
+
+=== PROMPT IMAGEN CUADRADA (Nano Banana Pro) — Facebook/Instagram feed ===
+
+IDIOMA: todo el texto de esta imagen debe estar en ESPAÑOL. No traduzcas
+ninguna palabra al inglés -- copia el texto exactamente como aparece más
+abajo, entre comillas, sin traducirlo ni parafrasearlo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
+
+Formato cuadrado 1080x1080 (para feed de Facebook/Instagram). Las 4 tarjetas en una cuadricula 2x2 (o la distribución más pareja posible para 4 elementos), para aprovechar el espacio cuadrado.
+
+Paleta EXACTA (respetar los códigos hex):
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (títulos, etiqueta "HOY" y dato clave): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjetas: verde apenas más claro que el fondo #0f1f1b, borde en acento lima #c8ff3d (más marcado que el borde gris normal, porque estos partidos todavía no se juegan)
+
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
+
+1. Título grande en acento lima: "SPORTPICKS LIGAS"
+2. Subtítulo en blanco: "Picks de hoy"
+3. 4 tarjetas redondeadas con borde en acento lima, una por pick, cada
+   una con: una etiqueta pequeña a la izquierda que diga "HOY" en acento
+   lima sobre fondo oscuro (nunca "GANADO"/"PERDIDO" -- estos partidos
+   todavía no se juegan), el nombre del partido (o de la combinada) en
+   blanco bold, el nombre de la liga/competición en gris pequeño debajo
+   del partido, y debajo el mercado + cuota + probabilidad en gris claro:
+
+   Pick 1: FC Cincinnati vs San Jose Earthquakes (MLS) — Más de 8.5 córners — cuota @1.53 — 77.5% prob.
+   Pick 2: Alianza Valledupar FC vs Deportes Tolima (Primera A Colombia) — Menos de 2.5 goles — cuota @1.6 — 72.3% prob.
+   Pick 3: IK Start vs Viking FK (Eliteserien) — Más de 2.5 goles — cuota @1.53 — 70.0% prob.
+   Pick 4: Combinada: Menos de 2.5 goles @1.4 × Más de 8.5 córners @1.34 — cuota @1.88 — 60.6% prob.
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Picks gratis todos los días -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" -- no es opcional, debe verse en la imagen, no solo
+  en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
+
+Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
+serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
+jerarquía visual clara.
+
+
+=== CAPTION TIKTOK ===
+
+🔥 Picks de hoy: MLS, Primera A Colombia y Eliteserien.
+
+Análisis estadístico, no corazonadas. Picks gratis en el link de la bio ⚽
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos
+
+
+=== CAPTION INSTAGRAM ===
+
+🔥 Picks de hoy para MLS, Primera A Colombia y Eliteserien.
+
+👉 Todos los picks gratis del día en el link de la bio.
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+.
+.
+.
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos #JuegaResponsable
+
+
+=== CAPTION FACEBOOK ===
+
+🔥 Picks de hoy -- MLS, Primera A Colombia y Eliteserien.
+
+👉 Picks gratis del día: https://sportpicks-suscripcion.vercel.app/?utm_source=facebook&utm_medium=social&utm_campaign=picks_hoy_2026-08-01
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol
+
+
+=== TEXTO ALTERNATIVO (accesibilidad + SEO) ===
+
+Picks de fútbol pendientes de hoy del modelo estadístico SportPicks Ligas: FC Cincinnati vs San Jose Earthquakes, Alianza Valledupar FC vs Deportes Tolima, IK Start vs Viking FK, Menos de 2.5 goles @1.4 × Más de 8.5 córners @1.34, con cuotas y probabilidad de cada pick.
