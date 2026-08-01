@@ -25,6 +25,7 @@ prompt de imagen cuadrada, prompt de video) + caption.txt (se genera
 igual que antes, via generar_post_diario.generar_caption, reutilizado
 para no duplicar logica).
 """
+import json
 import os
 import sys
 from datetime import date, datetime
@@ -34,6 +35,7 @@ import pandas as pd
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 RAIZ_PIPELINE = os.path.dirname(RAIZ)
 HISTORIAL_CSV = os.path.join(RAIZ_PIPELINE, "Data", "historial_picks.csv")
+PICKS_HOY_JSON = os.path.join(RAIZ_PIPELINE, "Data", "picks_hoy.json")
 SALIDA_BASE = os.path.join(RAIZ_PIPELINE, "Data", "social")
 
 sys.path.insert(0, RAIZ)
@@ -75,6 +77,21 @@ def _seleccionar_picks():
     return ganados, perdidos
 
 
+def _pick_de_hoy():
+    """El primer pick del panel publico de Data/picks_hoy.json (ya viene
+    ordenado por prob/EV desde generador_picks_ligas.py) -- a diferencia
+    de los 4 de _seleccionar_picks(), este SI esta pendiente (el partido
+    todavia no se jugo), es el gancho de "actua hoy" que complementa la
+    prueba social. None si todavia no hay picks publicos generados para
+    hoy (pipeline no corrio o no paso el piso de EV ningun candidato)."""
+    if not os.path.exists(PICKS_HOY_JSON):
+        return None
+    with open(PICKS_HOY_JSON, encoding="utf-8") as f:
+        data = json.load(f)
+    publicos = data.get("publicos", [])
+    return publicos[0] if publicos else None
+
+
 def _linea_pick(row):
     cuota = f"@{row['cuota']}" if pd.notna(row["cuota"]) else "s/d"
     return (
@@ -83,20 +100,47 @@ def _linea_pick(row):
     )
 
 
-def _prompt_imagen(ganados, perdidos, hist, formato):
+def _linea_pick_hoy(pick_hoy):
+    cuota = pick_hoy.get("cuota_display", pick_hoy.get("cuota"))
+    return (
+        f"{pick_hoy['local']} vs {pick_hoy['visitante']} ({pick_hoy['liga_nombre']}) — "
+        f"{pick_hoy['mercado']} — cuota @{cuota} — {pick_hoy['prob']}% prob."
+    )
+
+
+def _prompt_imagen(ganados, perdidos, hist, formato, pick_hoy=None):
     lineas_g = "\n".join(f"   Pick {i+1} (GANADO): {_linea_pick(r)}" for i, (_, r) in enumerate(ganados.iterrows()))
     linea_p = "\n".join(f"   Pick 4 (PERDIDO): {_linea_pick(r)}" for _, r in perdidos.iterrows())
 
+    extra_tarjeta = " + la tarjeta destacada del pick de hoy" if pick_hoy is not None else ""
     if formato == "vertical":
         layout = (
             "Formato vertical 1080x1920 (para Instagram/TikTok Reels y Stories). "
-            "Las 4 tarjetas de picks apiladas en una sola columna, de arriba a abajo."
+            f"Las 4 tarjetas de picks apiladas en una sola columna, de arriba a abajo{extra_tarjeta}."
         )
     else:
         layout = (
             "Formato cuadrado 1080x1080 (para feed de Facebook/Instagram). "
-            "Las 4 tarjetas de picks en una cuadricula 2x2 para aprovechar el espacio cuadrado."
+            f"Las 4 tarjetas de picks en una cuadricula 2x2{extra_tarjeta}, "
+            "para aprovechar el espacio cuadrado."
         )
+
+    if pick_hoy is not None:
+        bloque_pick_hoy = f"""
+5. Separado del resto por espacio extra y un pequeño rótulo superior en
+   acento lima "PICK DE HOY" (mayúsculas, no confundir con las 4
+   tarjetas anteriores): UNA tarjeta destacada con borde en acento lima
+   (en vez del borde gris de las otras 4) y una etiqueta a la izquierda
+   que diga "HOY" en acento lima sobre fondo oscuro (NO "GANADO" ni
+   "PERDIDO" -- este partido todavía no se juega, es distinto a los 4 de
+   arriba). Mismo formato de contenido: nombre del partido en blanco
+   bold, liga en gris pequeño debajo, mercado + cuota + probabilidad en
+   gris claro:
+
+   Pick de hoy (HOY): {_linea_pick_hoy(pick_hoy)}
+"""
+    else:
+        bloque_pick_hoy = ""
 
     return f"""IDIOMA: todo el texto de esta imagen debe estar en ESPAÑOL. No traduzcas
 ninguna palabra al inglés, ni siquiera "GANADO"/"PERDIDO" ni el resto de
@@ -130,8 +174,8 @@ texto que no esté en esta lista):
 
 {lineas_g}
 {linea_p}
-
-4. Al final, separado por una línea delgada horizontal: en blanco
+{bloque_pick_hoy}
+6. Al final, separado por una línea delgada horizontal: en blanco
    "Historial completo público -- link en la bio", y en el texto más
    pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
    estadístico, no garantía de resultado. Juega con responsabilidad."
@@ -240,25 +284,38 @@ def _hashtags(ligas, n_max):
     return resultado[:n_max]
 
 
-def _alt_text(ganados, perdidos):
+def _alt_text(ganados, perdidos, pick_hoy=None):
     partes = []
     for _, r in pd.concat([ganados, perdidos]).iterrows():
         resultado = "ganado" if r["estado"] == "Ganado" else "perdido"
         partes.append(f"{r['local']} vs {r['visitante']} ({resultado})")
-    return (
+    texto = (
         "Tarjetas de picks de fútbol con resultados recientes del modelo estadístico "
         f"SportPicks Ligas: {', '.join(partes)}, con cuotas y probabilidad de cada pick."
     )
+    if pick_hoy is not None:
+        texto += f" Incluye el pick de hoy: {pick_hoy['local']} vs {pick_hoy['visitante']} (pendiente)."
+    return texto
 
 
-def generar_captions(ganados, perdidos):
+def generar_captions(ganados, perdidos, pick_hoy=None):
     ligas = _ligas_involucradas(ganados, perdidos)
     texto_ligas = _texto_ligas(ligas)
     campana = f"picks_recientes_{date.today().isoformat()}"
 
+    if pick_hoy is not None:
+        cuota_hoy = pick_hoy.get("cuota_display", pick_hoy.get("cuota"))
+        linea_hoy = (
+            f"\n\n🔥 Pick de hoy: {pick_hoy['local']} vs {pick_hoy['visitante']} "
+            f"({pick_hoy['liga_nombre']}) -- {pick_hoy['mercado']} @{cuota_hoy}."
+        )
+    else:
+        linea_hoy = ""
+
     tiktok = (
         f"Repaso de nuestros últimos picks de fútbol 📊 {texto_ligas}.\n\n"
-        f"Transparencia total: mostramos lo que sale bien y lo que sale mal.\n\n"
+        f"Transparencia total: mostramos lo que sale bien y lo que sale mal."
+        f"{linea_hoy}\n\n"
         f"Historial completo y picks gratis en el link de la bio ⚽\n\n"
         f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
         + " ".join(_hashtags(ligas, 5))
@@ -266,7 +323,8 @@ def generar_captions(ganados, perdidos):
 
     instagram = (
         f"📊 Repaso de picks: así venimos en {texto_ligas}.\n\n"
-        f"Sin editar lo que sale mal -- transparencia total, ganes o pierdas.\n\n"
+        f"Sin editar lo que sale mal -- transparencia total, ganes o pierdas."
+        f"{linea_hoy}\n\n"
         f"👉 Historial completo y picks gratis de hoy en el link de la bio.\n\n"
         f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
         f".\n.\n.\n"
@@ -276,13 +334,14 @@ def generar_captions(ganados, perdidos):
     link_fb = _link_utm("facebook", campana)
     facebook = (
         f"📊 Repaso de nuestros últimos picks -- {texto_ligas}.\n\n"
-        f"Mostramos todo, ganes o pierdas: así queda el historial público, sin editar.\n\n"
+        f"Mostramos todo, ganes o pierdas: así queda el historial público, sin editar."
+        f"{linea_hoy}\n\n"
         f"👉 Historial completo y picks gratis de hoy: {link_fb}\n\n"
         f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
         + " ".join(_hashtags(ligas, 3))
     )
 
-    alt_text = _alt_text(ganados, perdidos)
+    alt_text = _alt_text(ganados, perdidos, pick_hoy)
 
     return tiktok, instagram, facebook, alt_text
 
@@ -300,10 +359,12 @@ def main():
     carpeta_salida = os.path.join(SALIDA_BASE, fecha_iso)
     os.makedirs(carpeta_salida, exist_ok=True)
 
-    prompt_vertical = _prompt_imagen(ganados, perdidos, hist, "vertical")
-    prompt_cuadrado = _prompt_imagen(ganados, perdidos, hist, "cuadrado")
+    pick_hoy = _pick_de_hoy()
+
+    prompt_vertical = _prompt_imagen(ganados, perdidos, hist, "vertical", pick_hoy)
+    prompt_cuadrado = _prompt_imagen(ganados, perdidos, hist, "cuadrado", pick_hoy)
     prompt_video = _prompt_video()
-    tiktok, instagram, facebook, alt_text = generar_captions(ganados, perdidos)
+    tiktok, instagram, facebook, alt_text = generar_captions(ganados, perdidos, pick_hoy)
 
     ruta = os.path.join(carpeta_salida, "prompts_ia.txt")
     with open(ruta, "w", encoding="utf-8") as f:
