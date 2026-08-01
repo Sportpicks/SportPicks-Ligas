@@ -118,7 +118,7 @@ def _linea_pick_hoy(item):
 
 def _prompt_imagen_ganados(ganados, formato):
     lineas = "\n".join(
-        f"   Pick {i+1} (GANADO): {_linea_pick(r)}" for i, (_, r) in enumerate(ganados.iterrows())
+        f'   Pick {i+1} (GANADO): "{_linea_pick(r)}"' for i, (_, r) in enumerate(ganados.iterrows())
     )
 
     if formato == "vertical":
@@ -132,10 +132,18 @@ def _prompt_imagen_ganados(ganados, formato):
             "Las 4 tarjetas de picks en una cuadricula 2x2, para aprovechar el espacio cuadrado."
         )
 
-    return f"""IDIOMA: todo el texto de esta imagen debe estar en ESPAÑOL. No traduzcas
-ninguna palabra al inglés, ni siquiera "GANADO" -- copia el texto
-exactamente como aparece más abajo, entre comillas, sin traducirlo ni
-parafrasearlo.
+    return f"""IDIOMA -- INSTRUCCIÓN CRÍTICA, LÉELA DOS VECES: esta imagen es para
+un público 100% hispanohablante. TODO el texto debe quedar en ESPAÑOL,
+sin excepción. Cada frase entre comillas más abajo (títulos, etiquetas
+y las 4 líneas de picks) es el texto FINAL, letra por letra -- no es
+una descripción para que tú traduzcas o adaptes, es el texto literal
+que debe aparecer renderizado en la imagen. NO generes ninguna palabra
+en inglés en ningún lugar: ni "WON", ni "GOALS", ni "CORNERS", ni
+"ODDS", ni "PROB", ni "LATEST PICKS", ni "HISTORY", ni "LINK IN BIO",
+ni ninguna otra traducción de las palabras españolas "GANADO", "goles",
+"córners", "cuota", "prob.", "Nuestros últimos picks ganados",
+"Historial completo público -- link en la bio". Copia el español tal
+cual está escrito, con tildes y todo.
 
 Diseña una imagen para redes sociales de la marca de análisis deportivo
 "SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
@@ -158,10 +166,13 @@ texto que no esté en esta lista):
    pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro -- en
    español, nunca "WON"), el nombre del partido en blanco bold, el
    nombre de la liga/competición en gris pequeño debajo del partido, y
-   debajo el mercado + cuota + probabilidad en gris claro. Si una tarjeta
-   no trae cuota en el texto de abajo, NO escribas "s/d" ni inventes un
-   número -- en esa tarjeta muestra solo mercado + probabilidad, sin el
-   dato de cuota (es normal que no todas las tarjetas tengan cuota):
+   debajo el mercado + cuota + probabilidad en gris claro, EN ESPAÑOL
+   (recuerda: nada de "goals", "corners", "odds", "prob" en inglés). Si
+   una tarjeta no trae cuota en el texto de abajo, NO escribas "s/d" ni
+   inventes un número -- en esa tarjeta muestra solo mercado +
+   probabilidad, sin el dato de cuota (es normal que no todas las
+   tarjetas tengan cuota). El texto entre comillas de cada línea es
+   literal, cópialo tal cual, no lo traduzcas:
 
 {lineas}
 4. Al final, separado por una línea delgada horizontal: en blanco
@@ -171,6 +182,10 @@ texto que no esté en esta lista):
    NO muestres ningún porcentaje de acierto ni cantidad de picks
    liquidados en esta imagen -- ese dato no debe aparecer en ningún
    lugar.
+
+RECORDATORIO FINAL DE IDIOMA: antes de generar, revisa que ningún texto
+de la imagen haya quedado en inglés. Si dudas de una palabra, déjala en
+español.
 
 RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
 de contenido de TikTok/Meta sobre juego/apuestas):
@@ -197,7 +212,7 @@ jerarquía visual clara."""
 
 def _prompt_imagen_hoy(picks_hoy, formato):
     lineas = "\n".join(
-        f"   Pick {i+1}: {_linea_pick_hoy(p)}" for i, p in enumerate(picks_hoy)
+        f'   Pick {i+1}: "{_linea_pick_hoy(p)}"' for i, p in enumerate(picks_hoy)
     )
     n = len(picks_hoy)
 
@@ -213,9 +228,18 @@ def _prompt_imagen_hoy(picks_hoy, formato):
             f"posible para {n} elementos), para aprovechar el espacio cuadrado."
         )
 
-    return f"""IDIOMA: todo el texto de esta imagen debe estar en ESPAÑOL. No traduzcas
-ninguna palabra al inglés -- copia el texto exactamente como aparece más
-abajo, entre comillas, sin traducirlo ni parafrasearlo.
+    return f"""IDIOMA -- INSTRUCCIÓN CRÍTICA, LÉELA DOS VECES: esta imagen es para
+un público 100% hispanohablante. TODO el texto debe quedar en ESPAÑOL,
+sin excepción. Cada frase entre comillas más abajo (títulos, etiquetas
+y las {n} líneas de picks) es el texto FINAL, letra por letra -- no es
+una descripción para que tú traduzcas o adaptes, es el texto literal
+que debe aparecer renderizado en la imagen. NO generes ninguna palabra
+en inglés en ningún lugar: ni "TODAY", ni "GOALS", ni "CORNERS", ni
+"ODDS", ni "PROB", ni "COMBINED", ni "FREE PICKS", ni "LINK IN BIO", ni
+ninguna otra traducción de las palabras españolas "HOY", "goles",
+"córners", "cuota", "prob.", "Combinada", "Picks de hoy", "Picks
+gratis todos los días -- link en la bio". Copia el español tal cual
+está escrito, con tildes y todo.
 
 Diseña una imagen para redes sociales de la marca de análisis deportivo
 "SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
@@ -239,13 +263,19 @@ texto que no esté en esta lista):
    lima sobre fondo oscuro (nunca "GANADO"/"PERDIDO" -- estos partidos
    todavía no se juegan), el nombre del partido (o de la combinada) en
    blanco bold, el nombre de la liga/competición en gris pequeño debajo
-   del partido, y debajo el mercado + cuota + probabilidad en gris claro:
+   del partido, y debajo el mercado + cuota + probabilidad en gris
+   claro, EN ESPAÑOL. El texto entre comillas de cada línea es literal,
+   cópialo tal cual, no lo traduzcas:
 
 {lineas}
 4. Al final, separado por una línea delgada horizontal: en blanco
    "Picks gratis todos los días -- link en la bio", y en el texto más
    pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
    estadístico, no garantía de resultado. Juega con responsabilidad."
+
+RECORDATORIO FINAL DE IDIOMA: antes de generar, revisa que ningún texto
+de la imagen haya quedado en inglés. Si dudas de una palabra, déjala en
+español.
 
 RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
 de contenido de TikTok/Meta sobre juego/apuestas):
