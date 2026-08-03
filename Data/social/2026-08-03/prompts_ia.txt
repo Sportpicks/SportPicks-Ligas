@@ -1,0 +1,715 @@
+############################################
+# PIEZA 1: RECAP DE GANADOS (4 picks ya jugados)
+############################################
+
+=== PROMPT IMAGEN VERTICAL (Nano Banana Pro) — Instagram/Facebook feed, Stories ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA, LÉELA DOS VECES: esta imagen es para
+un público 100% hispanohablante. TODO el texto debe quedar en ESPAÑOL,
+sin excepción. Cada frase entre comillas más abajo (títulos, etiquetas
+y las 4 líneas de picks) es el texto FINAL, letra por letra -- no es
+una descripción para que tú traduzcas o adaptes, es el texto literal
+que debe aparecer renderizado en la imagen. NO generes ninguna palabra
+en inglés en ningún lugar: ni "WON", ni "GOALS", ni "CORNERS", ni
+"ODDS", ni "PROB", ni "LATEST PICKS", ni "HISTORY", ni "LINK IN BIO",
+ni ninguna otra traducción de las palabras españolas "GANADO", "goles",
+"córners", "cuota", "prob.", "Nuestros últimos picks ganados",
+"Historial completo público -- link en la bio". Copia el español tal
+cual está escrito, con tildes y todo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
+
+Formato vertical 1080x1920 (para Instagram/TikTok Reels y Stories). Las 4 tarjetas de picks apiladas en una sola columna, de arriba a abajo.
+
+Paleta EXACTA (respetar los códigos hex):
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (títulos y dato clave): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjetas: verde apenas más claro que el fondo #0f1f1b, borde sutil #1c332c
+
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
+
+1. Título grande en acento lima: "SPORTPICKS LIGAS"
+2. Subtítulo en blanco: "Nuestros últimos picks ganados"
+3. Cuatro tarjetas redondeadas, una por pick, cada una con: una etiqueta
+   pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro -- en
+   español, nunca "WON"), el nombre del partido en blanco bold, el
+   nombre de la liga/competición en gris pequeño debajo del partido, y
+   debajo el mercado + cuota + probabilidad en gris claro, EN ESPAÑOL
+   (recuerda: nada de "goals", "corners", "odds", "prob" en inglés). Si
+   una tarjeta no trae cuota en el texto de abajo, NO escribas "s/d" ni
+   inventes un número -- en esa tarjeta muestra solo mercado +
+   probabilidad, sin el dato de cuota (es normal que no todas las
+   tarjetas tengan cuota). El texto entre comillas de cada línea es
+   literal, cópialo tal cual, no lo traduzcas:
+
+   Pick 1 (GANADO): "Aldosivi vs Gimnasia y Esgrima (Liga Profesional Argentina) — Más de 7.5 tiros al arco — cuota @2.1 — 53.0% prob."
+   Pick 2 (GANADO): "KFUM Oslo vs Kristiansund BK (Eliteserien) — Victoria KFUM Oslo — cuota @1.74 — 59.6% prob."
+   Pick 3 (GANADO): "Aalesunds FK vs Tromsø IL (Eliteserien) — Ambos anotan - Sí — cuota @1.71 — 58.6% prob."
+   Pick 4 (GANADO): "Hibernian vs Motherwell (Scottish Premiership) — Ambos anotan - Sí — cuota @1.92 — 52.2% prob."
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Historial completo público -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+   NO muestres ningún porcentaje de acierto ni cantidad de picks
+   liquidados en esta imagen -- ese dato no debe aparecer en ningún
+   lugar.
+
+RECORDATORIO FINAL DE IDIOMA: antes de generar, revisa que ningún texto
+de la imagen haya quedado en inglés. Si dudas de una palabra, déjala en
+español.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" del punto 4 -- no es opcional, debe verse en la
+  imagen, no solo en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
+
+Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
+serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
+jerarquía visual clara.
+
+
+=== PROMPT IMAGEN CUADRADA (Nano Banana Pro) — Facebook/Instagram feed ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA, LÉELA DOS VECES: esta imagen es para
+un público 100% hispanohablante. TODO el texto debe quedar en ESPAÑOL,
+sin excepción. Cada frase entre comillas más abajo (títulos, etiquetas
+y las 4 líneas de picks) es el texto FINAL, letra por letra -- no es
+una descripción para que tú traduzcas o adaptes, es el texto literal
+que debe aparecer renderizado en la imagen. NO generes ninguna palabra
+en inglés en ningún lugar: ni "WON", ni "GOALS", ni "CORNERS", ni
+"ODDS", ni "PROB", ni "LATEST PICKS", ni "HISTORY", ni "LINK IN BIO",
+ni ninguna otra traducción de las palabras españolas "GANADO", "goles",
+"córners", "cuota", "prob.", "Nuestros últimos picks ganados",
+"Historial completo público -- link en la bio". Copia el español tal
+cual está escrito, con tildes y todo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
+
+Formato cuadrado 1080x1080 (para feed de Facebook/Instagram). Las 4 tarjetas de picks en una cuadricula 2x2, para aprovechar el espacio cuadrado.
+
+Paleta EXACTA (respetar los códigos hex):
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (títulos y dato clave): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjetas: verde apenas más claro que el fondo #0f1f1b, borde sutil #1c332c
+
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
+
+1. Título grande en acento lima: "SPORTPICKS LIGAS"
+2. Subtítulo en blanco: "Nuestros últimos picks ganados"
+3. Cuatro tarjetas redondeadas, una por pick, cada una con: una etiqueta
+   pequeña a la izquierda ("GANADO" en lima sobre fondo oscuro -- en
+   español, nunca "WON"), el nombre del partido en blanco bold, el
+   nombre de la liga/competición en gris pequeño debajo del partido, y
+   debajo el mercado + cuota + probabilidad en gris claro, EN ESPAÑOL
+   (recuerda: nada de "goals", "corners", "odds", "prob" en inglés). Si
+   una tarjeta no trae cuota en el texto de abajo, NO escribas "s/d" ni
+   inventes un número -- en esa tarjeta muestra solo mercado +
+   probabilidad, sin el dato de cuota (es normal que no todas las
+   tarjetas tengan cuota). El texto entre comillas de cada línea es
+   literal, cópialo tal cual, no lo traduzcas:
+
+   Pick 1 (GANADO): "Aldosivi vs Gimnasia y Esgrima (Liga Profesional Argentina) — Más de 7.5 tiros al arco — cuota @2.1 — 53.0% prob."
+   Pick 2 (GANADO): "KFUM Oslo vs Kristiansund BK (Eliteserien) — Victoria KFUM Oslo — cuota @1.74 — 59.6% prob."
+   Pick 3 (GANADO): "Aalesunds FK vs Tromsø IL (Eliteserien) — Ambos anotan - Sí — cuota @1.71 — 58.6% prob."
+   Pick 4 (GANADO): "Hibernian vs Motherwell (Scottish Premiership) — Ambos anotan - Sí — cuota @1.92 — 52.2% prob."
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Historial completo público -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+   NO muestres ningún porcentaje de acierto ni cantidad de picks
+   liquidados en esta imagen -- ese dato no debe aparecer en ningún
+   lugar.
+
+RECORDATORIO FINAL DE IDIOMA: antes de generar, revisa que ningún texto
+de la imagen haya quedado en inglés. Si dudas de una palabra, déjala en
+español.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" del punto 4 -- no es opcional, debe verse en la
+  imagen, no solo en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
+
+Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
+serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
+jerarquía visual clara.
+
+
+=== CAPTION TIKTOK ===
+
+Repaso de nuestros últimos picks ganados 📊 Liga Profesional Argentina, Eliteserien y Scottish Premiership.
+
+Historial completo (con lo que sale bien y lo que sale mal) en el link de la bio ⚽
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos
+
+
+=== CAPTION INSTAGRAM ===
+
+📊 Así venimos: nuestros últimos 4 picks ganados en Liga Profesional Argentina, Eliteserien y Scottish Premiership.
+
+👉 Historial completo (transparente, con lo bueno y lo malo) en el link de la bio.
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+.
+.
+.
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos #LigaArgentina #JuegaResponsable
+
+
+=== CAPTION FACEBOOK ===
+
+📊 Nuestros últimos 4 picks ganados -- Liga Profesional Argentina, Eliteserien y Scottish Premiership.
+
+👉 Historial público completo: https://sportpicks-suscripcion.vercel.app/?utm_source=facebook&utm_medium=social&utm_campaign=picks_ganados_2026-08-03
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol
+
+
+=== TEXTO ALTERNATIVO (accesibilidad + SEO) ===
+
+Tarjetas de picks de fútbol ganados recientes del modelo estadístico SportPicks Ligas: Aldosivi vs Gimnasia y Esgrima (ganado), KFUM Oslo vs Kristiansund BK (ganado), Aalesunds FK vs Tromsø IL (ganado), Hibernian vs Motherwell (ganado), con cuotas y probabilidad de cada pick.
+
+
+############################################
+# PIEZA 3: VIDEOS TIKTOK (1 pick por video, formato titular)
+############################################
+
+--- Video 1: Aldosivi vs Gimnasia y Esgrima ---
+
+=== PROMPT IMAGEN (Nano Banana Pro) — fotograma inicial del video 1 ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA: todo el texto debe quedar en ESPAÑOL,
+sin excepción. Las frases entre comillas más abajo son el texto FINAL,
+letra por letra -- cópialas tal cual, no las traduzcas ni parafrasees.
+NO generes ninguna palabra en inglés ("WON", "GOALS", "CORNERS", "ODDS",
+"PROB", etc.).
+
+Diseña una imagen vertical 1080x1920 para un video corto de TikTok/
+Reels de la marca de análisis deportivo "SportPicks Ligas". Formato
+"titular deportivo" de una sola tarjeta -- NO un dashboard con varias
+tarjetas apiladas, es un solo pick, un solo momento.
+
+Paleta EXACTA:
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (etiqueta GANADO y detalles): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+
+Contenido exacto, EN ESPAÑOL:
+
+1. Centrado y OCUPANDO la mayor parte del frame (debe leerse de un
+   vistazo, como un titular de noticia deportiva, no como una tarjeta
+   de app): "Aldosivi vs Gimnasia y Esgrima"
+2. Etiqueta pequeña en acento lima sobre fondo oscuro, arriba del
+   titular: "GANADO ✅"
+3. Debajo del titular, en texto bastante más chico (subordinado, no
+   compite con el titular): "Liga Profesional Argentina"
+4. Al final, en texto pequeño gris claro: "Más de 7.5 tiros al arco — cuota @2.1 — 53.0% prob."
+5. En la esquina inferior, texto muy pequeño gris tenue: "+18 · Juega con responsabilidad."
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): NO logos ni nombres de
+casas de apuestas, NO la palabra "apuesta(s)"/"bet" (usa "pick" o
+"análisis"), NO lenguaje de "ganancia garantizada", disclaimer +18
+siempre visible, NO fotos de personas reales/rostros, NO marcas de agua.
+
+Tipografía sans-serif bold y muy grande para el titular (debe ser el
+elemento dominante del frame, no un texto más), estilo Inter/Poppins.
+Composición simple, sin ruido visual -- el objetivo es que se entienda
+el resultado en menos de 1 segundo de scroll.
+
+
+=== PROMPT VIDEO (Flow) — video 1 ===
+
+IDIOMA: si el modelo agrega cualquier texto, subtítulo o voz en off,
+debe estar en ESPAÑOL -- no en inglés. Preferible que no agregue texto
+nuevo en absoluto (ver abajo).
+
+Usa la imagen individual del pick "Aldosivi vs Gimnasia y Esgrima" (formato vertical
+1080x1920, tarjeta única tipo titular) como fotograma inicial --
+animación image-to-video, no generar desde cero.
+
+Genera un video vertical de 5 a 8 segundos, SIN audio ni voz, para
+TikTok/Reels. Un solo pick por video -- no combines varios picks en el
+mismo clip.
+
+Movimiento: a diferencia de un slide estático, el movimiento debe
+sentirse desde el primer fotograma (no un "hold" quieto al inicio) --
+un push-in (acercamiento) suave y continuo hacia el titular del
+partido, tipo Ken Burns pero más rápido y con más presencia que en un
+dashboard de datos, para que el primer segundo ya se sienta dinámico
+en el scroll. Sin cortes ni cambios de plano. No agregues elementos que
+no estén en la imagen original -- nada de personas, balones en
+movimiento, ni gráficos animados adicionales, ni texto nuevo que no
+estuviera ya en la imagen. Termina con un fundido a negro suave en el
+último medio segundo.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
+menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
+"bet" en ningún texto u overlay, no agregues lenguaje de "ganancia
+garantizada". El disclaimer "+18 · Juega con responsabilidad" que ya
+está en la imagen debe permanecer visible y legible durante todo el
+video, no lo tapes ni lo recortes con el zoom.
+
+
+--- Video 2: KFUM Oslo vs Kristiansund BK ---
+
+=== PROMPT IMAGEN (Nano Banana Pro) — fotograma inicial del video 2 ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA: todo el texto debe quedar en ESPAÑOL,
+sin excepción. Las frases entre comillas más abajo son el texto FINAL,
+letra por letra -- cópialas tal cual, no las traduzcas ni parafrasees.
+NO generes ninguna palabra en inglés ("WON", "GOALS", "CORNERS", "ODDS",
+"PROB", etc.).
+
+Diseña una imagen vertical 1080x1920 para un video corto de TikTok/
+Reels de la marca de análisis deportivo "SportPicks Ligas". Formato
+"titular deportivo" de una sola tarjeta -- NO un dashboard con varias
+tarjetas apiladas, es un solo pick, un solo momento.
+
+Paleta EXACTA:
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (etiqueta GANADO y detalles): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+
+Contenido exacto, EN ESPAÑOL:
+
+1. Centrado y OCUPANDO la mayor parte del frame (debe leerse de un
+   vistazo, como un titular de noticia deportiva, no como una tarjeta
+   de app): "KFUM Oslo vs Kristiansund BK"
+2. Etiqueta pequeña en acento lima sobre fondo oscuro, arriba del
+   titular: "GANADO ✅"
+3. Debajo del titular, en texto bastante más chico (subordinado, no
+   compite con el titular): "Eliteserien"
+4. Al final, en texto pequeño gris claro: "Victoria KFUM Oslo — cuota @1.74 — 59.6% prob."
+5. En la esquina inferior, texto muy pequeño gris tenue: "+18 · Juega con responsabilidad."
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): NO logos ni nombres de
+casas de apuestas, NO la palabra "apuesta(s)"/"bet" (usa "pick" o
+"análisis"), NO lenguaje de "ganancia garantizada", disclaimer +18
+siempre visible, NO fotos de personas reales/rostros, NO marcas de agua.
+
+Tipografía sans-serif bold y muy grande para el titular (debe ser el
+elemento dominante del frame, no un texto más), estilo Inter/Poppins.
+Composición simple, sin ruido visual -- el objetivo es que se entienda
+el resultado en menos de 1 segundo de scroll.
+
+
+=== PROMPT VIDEO (Flow) — video 2 ===
+
+IDIOMA: si el modelo agrega cualquier texto, subtítulo o voz en off,
+debe estar en ESPAÑOL -- no en inglés. Preferible que no agregue texto
+nuevo en absoluto (ver abajo).
+
+Usa la imagen individual del pick "KFUM Oslo vs Kristiansund BK" (formato vertical
+1080x1920, tarjeta única tipo titular) como fotograma inicial --
+animación image-to-video, no generar desde cero.
+
+Genera un video vertical de 5 a 8 segundos, SIN audio ni voz, para
+TikTok/Reels. Un solo pick por video -- no combines varios picks en el
+mismo clip.
+
+Movimiento: a diferencia de un slide estático, el movimiento debe
+sentirse desde el primer fotograma (no un "hold" quieto al inicio) --
+un push-in (acercamiento) suave y continuo hacia el titular del
+partido, tipo Ken Burns pero más rápido y con más presencia que en un
+dashboard de datos, para que el primer segundo ya se sienta dinámico
+en el scroll. Sin cortes ni cambios de plano. No agregues elementos que
+no estén en la imagen original -- nada de personas, balones en
+movimiento, ni gráficos animados adicionales, ni texto nuevo que no
+estuviera ya en la imagen. Termina con un fundido a negro suave en el
+último medio segundo.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
+menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
+"bet" en ningún texto u overlay, no agregues lenguaje de "ganancia
+garantizada". El disclaimer "+18 · Juega con responsabilidad" que ya
+está en la imagen debe permanecer visible y legible durante todo el
+video, no lo tapes ni lo recortes con el zoom.
+
+
+--- Video 3: Aalesunds FK vs Tromsø IL ---
+
+=== PROMPT IMAGEN (Nano Banana Pro) — fotograma inicial del video 3 ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA: todo el texto debe quedar en ESPAÑOL,
+sin excepción. Las frases entre comillas más abajo son el texto FINAL,
+letra por letra -- cópialas tal cual, no las traduzcas ni parafrasees.
+NO generes ninguna palabra en inglés ("WON", "GOALS", "CORNERS", "ODDS",
+"PROB", etc.).
+
+Diseña una imagen vertical 1080x1920 para un video corto de TikTok/
+Reels de la marca de análisis deportivo "SportPicks Ligas". Formato
+"titular deportivo" de una sola tarjeta -- NO un dashboard con varias
+tarjetas apiladas, es un solo pick, un solo momento.
+
+Paleta EXACTA:
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (etiqueta GANADO y detalles): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+
+Contenido exacto, EN ESPAÑOL:
+
+1. Centrado y OCUPANDO la mayor parte del frame (debe leerse de un
+   vistazo, como un titular de noticia deportiva, no como una tarjeta
+   de app): "Aalesunds FK vs Tromsø IL"
+2. Etiqueta pequeña en acento lima sobre fondo oscuro, arriba del
+   titular: "GANADO ✅"
+3. Debajo del titular, en texto bastante más chico (subordinado, no
+   compite con el titular): "Eliteserien"
+4. Al final, en texto pequeño gris claro: "Ambos anotan - Sí — cuota @1.71 — 58.6% prob."
+5. En la esquina inferior, texto muy pequeño gris tenue: "+18 · Juega con responsabilidad."
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): NO logos ni nombres de
+casas de apuestas, NO la palabra "apuesta(s)"/"bet" (usa "pick" o
+"análisis"), NO lenguaje de "ganancia garantizada", disclaimer +18
+siempre visible, NO fotos de personas reales/rostros, NO marcas de agua.
+
+Tipografía sans-serif bold y muy grande para el titular (debe ser el
+elemento dominante del frame, no un texto más), estilo Inter/Poppins.
+Composición simple, sin ruido visual -- el objetivo es que se entienda
+el resultado en menos de 1 segundo de scroll.
+
+
+=== PROMPT VIDEO (Flow) — video 3 ===
+
+IDIOMA: si el modelo agrega cualquier texto, subtítulo o voz en off,
+debe estar en ESPAÑOL -- no en inglés. Preferible que no agregue texto
+nuevo en absoluto (ver abajo).
+
+Usa la imagen individual del pick "Aalesunds FK vs Tromsø IL" (formato vertical
+1080x1920, tarjeta única tipo titular) como fotograma inicial --
+animación image-to-video, no generar desde cero.
+
+Genera un video vertical de 5 a 8 segundos, SIN audio ni voz, para
+TikTok/Reels. Un solo pick por video -- no combines varios picks en el
+mismo clip.
+
+Movimiento: a diferencia de un slide estático, el movimiento debe
+sentirse desde el primer fotograma (no un "hold" quieto al inicio) --
+un push-in (acercamiento) suave y continuo hacia el titular del
+partido, tipo Ken Burns pero más rápido y con más presencia que en un
+dashboard de datos, para que el primer segundo ya se sienta dinámico
+en el scroll. Sin cortes ni cambios de plano. No agregues elementos que
+no estén en la imagen original -- nada de personas, balones en
+movimiento, ni gráficos animados adicionales, ni texto nuevo que no
+estuviera ya en la imagen. Termina con un fundido a negro suave en el
+último medio segundo.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
+menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
+"bet" en ningún texto u overlay, no agregues lenguaje de "ganancia
+garantizada". El disclaimer "+18 · Juega con responsabilidad" que ya
+está en la imagen debe permanecer visible y legible durante todo el
+video, no lo tapes ni lo recortes con el zoom.
+
+
+--- Video 4: Hibernian vs Motherwell ---
+
+=== PROMPT IMAGEN (Nano Banana Pro) — fotograma inicial del video 4 ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA: todo el texto debe quedar en ESPAÑOL,
+sin excepción. Las frases entre comillas más abajo son el texto FINAL,
+letra por letra -- cópialas tal cual, no las traduzcas ni parafrasees.
+NO generes ninguna palabra en inglés ("WON", "GOALS", "CORNERS", "ODDS",
+"PROB", etc.).
+
+Diseña una imagen vertical 1080x1920 para un video corto de TikTok/
+Reels de la marca de análisis deportivo "SportPicks Ligas". Formato
+"titular deportivo" de una sola tarjeta -- NO un dashboard con varias
+tarjetas apiladas, es un solo pick, un solo momento.
+
+Paleta EXACTA:
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (etiqueta GANADO y detalles): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+
+Contenido exacto, EN ESPAÑOL:
+
+1. Centrado y OCUPANDO la mayor parte del frame (debe leerse de un
+   vistazo, como un titular de noticia deportiva, no como una tarjeta
+   de app): "Hibernian vs Motherwell"
+2. Etiqueta pequeña en acento lima sobre fondo oscuro, arriba del
+   titular: "GANADO ✅"
+3. Debajo del titular, en texto bastante más chico (subordinado, no
+   compite con el titular): "Scottish Premiership"
+4. Al final, en texto pequeño gris claro: "Ambos anotan - Sí — cuota @1.92 — 52.2% prob."
+5. En la esquina inferior, texto muy pequeño gris tenue: "+18 · Juega con responsabilidad."
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): NO logos ni nombres de
+casas de apuestas, NO la palabra "apuesta(s)"/"bet" (usa "pick" o
+"análisis"), NO lenguaje de "ganancia garantizada", disclaimer +18
+siempre visible, NO fotos de personas reales/rostros, NO marcas de agua.
+
+Tipografía sans-serif bold y muy grande para el titular (debe ser el
+elemento dominante del frame, no un texto más), estilo Inter/Poppins.
+Composición simple, sin ruido visual -- el objetivo es que se entienda
+el resultado en menos de 1 segundo de scroll.
+
+
+=== PROMPT VIDEO (Flow) — video 4 ===
+
+IDIOMA: si el modelo agrega cualquier texto, subtítulo o voz en off,
+debe estar en ESPAÑOL -- no en inglés. Preferible que no agregue texto
+nuevo en absoluto (ver abajo).
+
+Usa la imagen individual del pick "Hibernian vs Motherwell" (formato vertical
+1080x1920, tarjeta única tipo titular) como fotograma inicial --
+animación image-to-video, no generar desde cero.
+
+Genera un video vertical de 5 a 8 segundos, SIN audio ni voz, para
+TikTok/Reels. Un solo pick por video -- no combines varios picks en el
+mismo clip.
+
+Movimiento: a diferencia de un slide estático, el movimiento debe
+sentirse desde el primer fotograma (no un "hold" quieto al inicio) --
+un push-in (acercamiento) suave y continuo hacia el titular del
+partido, tipo Ken Burns pero más rápido y con más presencia que en un
+dashboard de datos, para que el primer segundo ya se sienta dinámico
+en el scroll. Sin cortes ni cambios de plano. No agregues elementos que
+no estén en la imagen original -- nada de personas, balones en
+movimiento, ni gráficos animados adicionales, ni texto nuevo que no
+estuviera ya en la imagen. Termina con un fundido a negro suave en el
+último medio segundo.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
+menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
+"bet" en ningún texto u overlay, no agregues lenguaje de "ganancia
+garantizada". El disclaimer "+18 · Juega con responsabilidad" que ya
+está en la imagen debe permanecer visible y legible durante todo el
+video, no lo tapes ni lo recortes con el zoom.
+
+
+
+############################################
+# PIEZA 2: PICKS DE HOY (pendientes de jugar)
+############################################
+
+=== PROMPT IMAGEN VERTICAL (Nano Banana Pro) — TikTok/Reels/Stories ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA, LÉELA DOS VECES: esta imagen es para
+un público 100% hispanohablante. TODO el texto debe quedar en ESPAÑOL,
+sin excepción. Cada frase entre comillas más abajo (títulos, etiquetas
+y las 3 líneas de picks) es el texto FINAL, letra por letra -- no es
+una descripción para que tú traduzcas o adaptes, es el texto literal
+que debe aparecer renderizado en la imagen. NO generes ninguna palabra
+en inglés en ningún lugar: ni "TODAY", ni "GOALS", ni "CORNERS", ni
+"ODDS", ni "PROB", ni "COMBINED", ni "FREE PICKS", ni "LINK IN BIO", ni
+ninguna otra traducción de las palabras españolas "HOY", "goles",
+"córners", "cuota", "prob.", "Combinada", "Picks de hoy", "Picks
+gratis todos los días -- link en la bio". Copia el español tal cual
+está escrito, con tildes y todo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
+
+Formato vertical 1080x1920 (para Instagram/TikTok Reels y Stories). Las 3 tarjetas apiladas en una sola columna, de arriba a abajo.
+
+Paleta EXACTA (respetar los códigos hex):
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (títulos, etiqueta "HOY" y dato clave): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjetas: verde apenas más claro que el fondo #0f1f1b, borde en acento lima #c8ff3d (más marcado que el borde gris normal, porque estos partidos todavía no se juegan)
+
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
+
+1. Título grande en acento lima: "SPORTPICKS LIGAS"
+2. Subtítulo en blanco: "Picks de hoy"
+3. 3 tarjetas redondeadas con borde en acento lima, una por pick, cada
+   una con: una etiqueta pequeña a la izquierda que diga "HOY" en acento
+   lima sobre fondo oscuro (nunca "GANADO"/"PERDIDO" -- estos partidos
+   todavía no se juegan), el nombre del partido (o de la combinada) en
+   blanco bold, el nombre de la liga/competición en gris pequeño debajo
+   del partido, y debajo el mercado + cuota + probabilidad en gris
+   claro, EN ESPAÑOL. El texto entre comillas de cada línea es literal,
+   cópialo tal cual, no lo traduzcas:
+
+   Pick 1: "Celtic vs Dundee FC (Scottish Premiership) — Más de 9.5 córners — cuota @1.54 — 69.7% prob."
+   Pick 2: "Odense Boldklub vs Sønderjyske Fodbold (Danish Superliga) — Más de 2.5 goles — cuota @1.57 — 68.1% prob."
+   Pick 3: "Combinada: Más de 8.5 córners @1.33 × Menos de 2.5 goles @1.48 — cuota @1.97 — 59.3% prob."
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Picks gratis todos los días -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+
+RECORDATORIO FINAL DE IDIOMA: antes de generar, revisa que ningún texto
+de la imagen haya quedado en inglés. Si dudas de una palabra, déjala en
+español.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" -- no es opcional, debe verse en la imagen, no solo
+  en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
+
+Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
+serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
+jerarquía visual clara.
+
+
+=== PROMPT IMAGEN CUADRADA (Nano Banana Pro) — Facebook/Instagram feed ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA, LÉELA DOS VECES: esta imagen es para
+un público 100% hispanohablante. TODO el texto debe quedar en ESPAÑOL,
+sin excepción. Cada frase entre comillas más abajo (títulos, etiquetas
+y las 3 líneas de picks) es el texto FINAL, letra por letra -- no es
+una descripción para que tú traduzcas o adaptes, es el texto literal
+que debe aparecer renderizado en la imagen. NO generes ninguna palabra
+en inglés en ningún lugar: ni "TODAY", ni "GOALS", ni "CORNERS", ni
+"ODDS", ni "PROB", ni "COMBINED", ni "FREE PICKS", ni "LINK IN BIO", ni
+ninguna otra traducción de las palabras españolas "HOY", "goles",
+"córners", "cuota", "prob.", "Combinada", "Picks de hoy", "Picks
+gratis todos los días -- link en la bio". Copia el español tal cual
+está escrito, con tildes y todo.
+
+Diseña una imagen para redes sociales de la marca de análisis deportivo
+"SportPicks Ligas". Estilo minimalista, oscuro, tipo dashboard/app de
+datos deportivos.
+
+Formato cuadrado 1080x1080 (para feed de Facebook/Instagram). Las 3 tarjetas en una cuadricula 2x2 (o la distribución más pareja posible para 3 elementos), para aprovechar el espacio cuadrado.
+
+Paleta EXACTA (respetar los códigos hex):
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (títulos, etiqueta "HOY" y dato clave): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjetas: verde apenas más claro que el fondo #0f1f1b, borde en acento lima #c8ff3d (más marcado que el borde gris normal, porque estos partidos todavía no se juegan)
+
+Contenido exacto a mostrar, de arriba a abajo, EN ESPAÑOL (no agregues
+texto que no esté en esta lista):
+
+1. Título grande en acento lima: "SPORTPICKS LIGAS"
+2. Subtítulo en blanco: "Picks de hoy"
+3. 3 tarjetas redondeadas con borde en acento lima, una por pick, cada
+   una con: una etiqueta pequeña a la izquierda que diga "HOY" en acento
+   lima sobre fondo oscuro (nunca "GANADO"/"PERDIDO" -- estos partidos
+   todavía no se juegan), el nombre del partido (o de la combinada) en
+   blanco bold, el nombre de la liga/competición en gris pequeño debajo
+   del partido, y debajo el mercado + cuota + probabilidad en gris
+   claro, EN ESPAÑOL. El texto entre comillas de cada línea es literal,
+   cópialo tal cual, no lo traduzcas:
+
+   Pick 1: "Celtic vs Dundee FC (Scottish Premiership) — Más de 9.5 córners — cuota @1.54 — 69.7% prob."
+   Pick 2: "Odense Boldklub vs Sønderjyske Fodbold (Danish Superliga) — Más de 2.5 goles — cuota @1.57 — 68.1% prob."
+   Pick 3: "Combinada: Más de 8.5 córners @1.33 × Menos de 2.5 goles @1.48 — cuota @1.97 — 59.3% prob."
+4. Al final, separado por una línea delgada horizontal: en blanco
+   "Picks gratis todos los días -- link en la bio", y en el texto más
+   pequeño de toda la imagen (última línea, gris tenue): "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+
+RECORDATORIO FINAL DE IDIOMA: antes de generar, revisa que ningún texto
+de la imagen haya quedado en inglés. Si dudas de una palabra, déjala en
+español.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias, para no violar las reglas
+de contenido de TikTok/Meta sobre juego/apuestas):
+- NO incluyas logos, nombres ni menciones de ninguna casa de apuestas o
+  plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
+  imagen.
+- NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
+  siempre "pick(s)", "análisis" o "probabilidad".
+- NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
+  texto que prometa un resultado seguro -- el enfoque es análisis
+  estadístico y transparencia de resultados, no promoción de apuestas.
+- NO incluyas ningún código promocional, link de registro ni llamado a
+  "deposita"/"regístrate" en una casa de apuestas.
+- Incluye siempre visible el disclaimer "+18" y "Juega con
+  responsabilidad" -- no es opcional, debe verse en la imagen, no solo
+  en el caption.
+- NO fotos de personas reales ni rostros, NO marcas de agua de ningún
+  tipo.
+
+Tipografía sans-serif bold y moderna (estilo Inter/Poppins), sin
+serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
+jerarquía visual clara.
+
+
+=== CAPTION TIKTOK ===
+
+🔥 Picks de hoy: Scottish Premiership y Danish Superliga.
+
+Análisis estadístico, no corazonadas. Picks gratis en el link de la bio ⚽
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos
+
+
+=== CAPTION INSTAGRAM ===
+
+🔥 Picks de hoy para Scottish Premiership y Danish Superliga.
+
+👉 Todos los picks gratis del día en el link de la bio.
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+.
+.
+.
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos #JuegaResponsable
+
+
+=== CAPTION FACEBOOK ===
+
+🔥 Picks de hoy -- Scottish Premiership y Danish Superliga.
+
+👉 Picks gratis del día: https://sportpicks-suscripcion.vercel.app/?utm_source=facebook&utm_medium=social&utm_campaign=picks_hoy_2026-08-03
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol
+
+
+=== TEXTO ALTERNATIVO (accesibilidad + SEO) ===
+
+Picks de fútbol pendientes de hoy del modelo estadístico SportPicks Ligas: Celtic vs Dundee FC, Odense Boldklub vs Sønderjyske Fodbold, Más de 8.5 córners @1.33 × Menos de 2.5 goles @1.48, con cuotas y probabilidad de cada pick.
