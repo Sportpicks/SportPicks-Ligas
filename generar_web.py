@@ -152,7 +152,8 @@ def archivar_historial(partidos, publicos, premium):
     entradas = {}
     ahora = datetime.now(PERU_TZ).isoformat()
 
-    def _desactivar_snapshots_previos(fecha, local, visitante, mercado, es_publico, es_premium):
+    def _desactivar_snapshots_previos(fecha, local, visitante, mercado, es_publico, es_premium,
+                                       es_mejor_apuesta=False):
         """
         El pipeline puede correr más de una vez el mismo día (ej. refresh de
         cuotas), y entre corridas el mercado elegido para el público/premium
@@ -167,8 +168,20 @@ def archivar_historial(partidos, publicos, premium):
         día que tenía ese flag prendido con OTRO mercado y sigue Pendiente
         (si ya se liquidó, la dejamos intacta -- no se debe reescribir
         historia ya cerrada).
+
+        es_mejor_apuesta se trata igual (bug detectado 03/08/2026): antes
+        SOLO se desactivaban es_publico/es_premium -- si mejor_apuesta()
+        cambiaba de mercado entre una corrida y otra del mismo partido (ej.
+        Cienciano vs Universitario: "Menos de 2.5 goles" el 31/07 -> "X2 --
+        Empate o Universitario" el 02/08, porque el modelo recalculó con
+        cuotas más cercanas al partido), la fila vieja se quedaba con
+        es_mejor_apuesta=True para siempre. Resultado: dos picks "mejor
+        apuesta" activos para el mismo partido, cada uno liquidado por su
+        cuenta con resultados distintos (uno Ganado, el otro Perdido) --
+        el historial mostraba un mercado que ya no era el vigente el día
+        del partido.
         """
-        if not (es_publico or es_premium):
+        if not (es_publico or es_premium or es_mejor_apuesta):
             return
         for k2, idx2 in existentes.items():
             f2, l2, v2, m2 = k2
@@ -179,6 +192,8 @@ def archivar_historial(partidos, publicos, premium):
                     df.loc[idx2, 'es_publico'] = False
                 if es_premium and bool(df.loc[idx2, 'es_premium']):
                     df.loc[idx2, 'es_premium'] = False
+                if es_mejor_apuesta and bool(df.loc[idx2, 'es_mejor_apuesta']):
+                    df.loc[idx2, 'es_mejor_apuesta'] = False
         for k2, e2 in entradas.items():
             f2, l2, v2, m2 = k2
             if f2 == fecha and l2 == local and v2 == visitante and m2 != mercado:
@@ -188,13 +203,16 @@ def archivar_historial(partidos, publicos, premium):
                     e2['es_publico'] = False
                 if es_premium and e2.get('es_premium'):
                     e2['es_premium'] = False
+                if es_mejor_apuesta and e2.get('es_mejor_apuesta'):
+                    e2['es_mejor_apuesta'] = False
 
     def registrar(fecha, hora, liga, liga_nombre, local, visitante, mercado, categoria,
                   prob, cuota, ev, es_publico=False, es_premium=False,
                   es_mejor_apuesta=False, es_combo=False, detalle=''):
         if not mercado:
             return
-        _desactivar_snapshots_previos(fecha, local, visitante, mercado, es_publico, es_premium)
+        _desactivar_snapshots_previos(fecha, local, visitante, mercado, es_publico, es_premium,
+                                       es_mejor_apuesta)
         k = (fecha, local, visitante, mercado)
         if k in existentes:
             idx = existentes[k]
