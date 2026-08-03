@@ -22,6 +22,12 @@ cada dia:
    ordenados por confianza (probabilidad) descendente -- gancho de
    "actua hoy", separado del recap para no mezclar resultados ya
    jugados con partidos que todavia no se juegan.
+3. Videos TikTok (ajustado 02/08/2026, tras auditar la pestana
+   Inspiracion de TikTok Studio): 1 video por pick de los 4 ganados,
+   formato "titular deportivo" (partido en texto grande centrado,
+   movimiento desde el frame 0) en vez de un solo video con el
+   dashboard de 4 tarjetas -- lo que escala en la categoria Deportes de
+   TikTok es contenido de un solo momento/hito, no un resumen de datos.
 
 Fuente: Data/historial_picks.csv y Data/picks_hoy.json, mismos datos
 que ya alimenta la web y el resto del pipeline de contenido -- no se
@@ -30,9 +36,9 @@ inventa nada.
 Uso:
     python social/generar_prompts_ia.py
 
-Salida: Data/social/<fecha>/prompts_ia.txt con las dos piezas
-completas (imagen vertical, imagen cuadrada, video solo para el recap,
-captions de las 3 plataformas y texto alternativo, para cada pieza).
+Salida: Data/social/<fecha>/prompts_ia.txt con las 3 piezas completas
+(imagen vertical + cuadrada del recap, 4 videos individuales para
+TikTok, captions de las 3 plataformas y texto alternativo).
 """
 import json
 import os
@@ -300,25 +306,93 @@ serifas. Composición limpia tipo app fintech/dashboard, buen espaciado,
 jerarquía visual clara."""
 
 
-def _prompt_video():
-    return """IDIOMA: si el modelo agrega cualquier texto, subtítulo o voz en off,
+def _titular_pick(row):
+    """Texto tipo titular deportivo ('PARTIDO -- resultado del pick'),
+    el hook grande que va centrado en los primeros 2s del video/imagen
+    individual -- estilo de los clips que sí funcionan en la categoria
+    Deportes de TikTok (momento/hito + nombres, no dashboard de datos)."""
+    return f"{row['local']} vs {row['visitante']}"
+
+
+def _prompt_imagen_pick_tiktok(row, indice):
+    """Imagen de UNA sola tarjeta (no las 4 apiladas) pensada como
+    fotograma inicial de un video individual de TikTok -- formato
+    'titular deportivo', con el partido en texto enorme centrado desde
+    el primer instante, en vez del dashboard de 4 tarjetas que no
+    funciona como gancho de video corto (ver auditoría de Inspiración
+    del 02/08/2026: lo que escala en la categoría Deportes es contenido
+    de un solo momento/hito con nombres grandes, no tarjetas de datos)."""
+    titular = _titular_pick(row)
+    cuota_txt = f" — cuota @{row['cuota']}" if pd.notna(row["cuota"]) else ""
+
+    return f"""IDIOMA -- INSTRUCCIÓN CRÍTICA: todo el texto debe quedar en ESPAÑOL,
+sin excepción. Las frases entre comillas más abajo son el texto FINAL,
+letra por letra -- cópialas tal cual, no las traduzcas ni parafrasees.
+NO generes ninguna palabra en inglés ("WON", "GOALS", "CORNERS", "ODDS",
+"PROB", etc.).
+
+Diseña una imagen vertical 1080x1920 para un video corto de TikTok/
+Reels de la marca de análisis deportivo "SportPicks Ligas". Formato
+"titular deportivo" de una sola tarjeta -- NO un dashboard con varias
+tarjetas apiladas, es un solo pick, un solo momento.
+
+Paleta EXACTA:
+- Fondo: verde muy oscuro casi negro {PALETA['bg']}
+- Acento (etiqueta GANADO y detalles): verde lima brillante {PALETA['accent']}
+- Texto secundario: blanco hueso {PALETA['fg']}
+
+Contenido exacto, EN ESPAÑOL:
+
+1. Centrado y OCUPANDO la mayor parte del frame (debe leerse de un
+   vistazo, como un titular de noticia deportiva, no como una tarjeta
+   de app): "{titular}"
+2. Etiqueta pequeña en acento lima sobre fondo oscuro, arriba del
+   titular: "GANADO ✅"
+3. Debajo del titular, en texto bastante más chico (subordinado, no
+   compite con el titular): "{row['liga_nombre']}"
+4. Al final, en texto pequeño gris claro: "{row['mercado']}{cuota_txt} — {row['prob']}% prob."
+5. En la esquina inferior, texto muy pequeño gris tenue: "+18 · Juega con responsabilidad."
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): NO logos ni nombres de
+casas de apuestas, NO la palabra "apuesta(s)"/"bet" (usa "pick" o
+"análisis"), NO lenguaje de "ganancia garantizada", disclaimer +18
+siempre visible, NO fotos de personas reales/rostros, NO marcas de agua.
+
+Tipografía sans-serif bold y muy grande para el titular (debe ser el
+elemento dominante del frame, no un texto más), estilo Inter/Poppins.
+Composición simple, sin ruido visual -- el objetivo es que se entienda
+el resultado en menos de 1 segundo de scroll."""
+
+
+def _prompt_video_pick_tiktok(row, indice):
+    """Video de 5-8s para UN solo pick (no el recap de 4) -- reemplaza
+    el video único del recap completo. Movimiento real desde el frame 0
+    y texto grande centrado en los primeros 2s, replicando el patrón de
+    los clips de hitos/momentos que dominan la categoría Deportes en
+    TikTok (ver auditoría de Inspiración del 02/08/2026)."""
+    titular = _titular_pick(row)
+    return f"""IDIOMA: si el modelo agrega cualquier texto, subtítulo o voz en off,
 debe estar en ESPAÑOL -- no en inglés. Preferible que no agregue texto
 nuevo en absoluto (ver abajo).
 
-Usa la imagen vertical del RECAP DE GANADOS (formato 1080x1920) como
-fotograma inicial -- animación image-to-video, no generar desde cero.
+Usa la imagen individual del pick "{titular}" (formato vertical
+1080x1920, tarjeta única tipo titular) como fotograma inicial --
+animación image-to-video, no generar desde cero.
 
-Genera un video vertical de 8 a 10 segundos, SIN audio ni voz, para
-TikTok/Reels.
+Genera un video vertical de 5 a 8 segundos, SIN audio ni voz, para
+TikTok/Reels. Un solo pick por video -- no combines varios picks en el
+mismo clip.
 
-Movimiento: zoom lento y constante hacia el título "SPORTPICKS LIGAS"
-(efecto Ken Burns), cámara estática salvo por ese zoom suave y continuo,
-sin cortes ni cambios de plano. No agregues elementos que no estén en la
-imagen original -- nada de personas, balones en movimiento, ni gráficos
-animados adicionales, ni texto nuevo que no estuviera ya en la imagen.
-El resultado debe sentirse como una pieza de datos/dashboard, sobria y
-profesional, no como un anuncio llamativo. Termina con un fundido a
-negro suave en el último medio segundo.
+Movimiento: a diferencia de un slide estático, el movimiento debe
+sentirse desde el primer fotograma (no un "hold" quieto al inicio) --
+un push-in (acercamiento) suave y continuo hacia el titular del
+partido, tipo Ken Burns pero más rápido y con más presencia que en un
+dashboard de datos, para que el primer segundo ya se sienta dinámico
+en el scroll. Sin cortes ni cambios de plano. No agregues elementos que
+no estén en la imagen original -- nada de personas, balones en
+movimiento, ni gráficos animados adicionales, ni texto nuevo que no
+estuviera ya en la imagen. Termina con un fundido a negro suave en el
+último medio segundo.
 
 RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
 menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
@@ -484,8 +558,19 @@ def main():
 
     prompt_vertical_g = _prompt_imagen_ganados(ganados, "vertical")
     prompt_cuadrado_g = _prompt_imagen_ganados(ganados, "cuadrado")
-    prompt_video = _prompt_video()
     tiktok_g, instagram_g, facebook_g, alt_g = generar_captions_ganados(ganados)
+
+    # Videos individuales para TikTok -- un pick por video, no el recap
+    # de 4 tarjetas (ver auditoría de Inspiración del 02/08/2026: lo que
+    # escala en la categoría Deportes de TikTok es un solo momento/hito
+    # por clip, no un dashboard de datos).
+    videos_tiktok = []
+    for i, (_, row) in enumerate(ganados.iterrows(), start=1):
+        videos_tiktok.append((
+            row,
+            _prompt_imagen_pick_tiktok(row, i),
+            _prompt_video_pick_tiktok(row, i),
+        ))
 
     prompt_vertical_h = _prompt_imagen_hoy(picks_hoy, "vertical")
     prompt_cuadrado_h = _prompt_imagen_hoy(picks_hoy, "cuadrado")
@@ -496,12 +581,10 @@ def main():
         f.write("############################################\n")
         f.write("# PIEZA 1: RECAP DE GANADOS (4 picks ya jugados)\n")
         f.write("############################################\n\n")
-        f.write("=== PROMPT IMAGEN VERTICAL (Nano Banana Pro) — TikTok/Reels/Stories ===\n\n")
+        f.write("=== PROMPT IMAGEN VERTICAL (Nano Banana Pro) — Instagram/Facebook feed, Stories ===\n\n")
         f.write(prompt_vertical_g)
         f.write("\n\n\n=== PROMPT IMAGEN CUADRADA (Nano Banana Pro) — Facebook/Instagram feed ===\n\n")
         f.write(prompt_cuadrado_g)
-        f.write("\n\n\n=== PROMPT VIDEO (Flow) — usar la imagen vertical del recap como fotograma inicial ===\n\n")
-        f.write(prompt_video)
         f.write("\n\n\n=== CAPTION TIKTOK ===\n\n")
         f.write(tiktok_g)
         f.write("\n\n\n=== CAPTION INSTAGRAM ===\n\n")
@@ -512,6 +595,17 @@ def main():
         f.write(alt_g)
 
         f.write("\n\n\n############################################\n")
+        f.write("# PIEZA 3: VIDEOS TIKTOK (1 pick por video, formato titular)\n")
+        f.write("############################################\n\n")
+        for i, (row, prompt_img, prompt_vid) in enumerate(videos_tiktok, start=1):
+            f.write(f"--- Video {i}: {_titular_pick(row)} ---\n\n")
+            f.write(f"=== PROMPT IMAGEN (Nano Banana Pro) — fotograma inicial del video {i} ===\n\n")
+            f.write(prompt_img)
+            f.write(f"\n\n\n=== PROMPT VIDEO (Flow) — video {i} ===\n\n")
+            f.write(prompt_vid)
+            f.write("\n\n\n")
+
+        f.write("\n############################################\n")
         f.write("# PIEZA 2: PICKS DE HOY (pendientes de jugar)\n")
         f.write("############################################\n\n")
         f.write("=== PROMPT IMAGEN VERTICAL (Nano Banana Pro) — TikTok/Reels/Stories ===\n\n")
