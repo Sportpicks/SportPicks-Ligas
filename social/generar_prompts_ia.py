@@ -402,6 +402,197 @@ está en la imagen debe permanecer visible y legible durante todo el
 video, no lo tapes ni lo recortes con el zoom."""
 
 
+def _stats_rendimiento_real(n_reciente=20):
+    """Estadisticas reales para la pieza 'Rendimiento real' (adaptada del
+    formato de anuncio de Pronostic.io, competidor -- ver auditoria del
+    03/08/2026). Usa SOLO picks es_publico/es_premium liquidados (las
+    recomendaciones reales que se publicaron, no el pool interno de
+    candidatos 'mejor_apuesta') -- el mismo universo que ya se muestra en
+    docs/index.html seccion 'Historial de resultados', para no introducir
+    un numero nuevo que contradiga lo que ya es publico.
+
+    IMPORTANTE -- hallazgo del 03/08/2026: el ROI real con cuota (estilo
+    '+7.9% ROI acumulado' de Pronostic.io) es ACTUALMENTE NEGATIVO
+    (-21% aprox, n=26 con cuota valida -- la mayoria del historial viejo
+    no tiene cuota registrada por el bug corregido hoy). Por eso esta
+    pieza usa WIN RATE (aciertos reales, no plata), no ROI -- adaptamos
+    el FORMATO del competidor (headline grande + curva + numero clave),
+    no inventamos una cifra de rendimiento que hoy no es verdad. Cuando
+    el ROI con cuota real acumule muestra suficiente y sea positivo, se
+    puede agregar como pieza adicional -- no antes.
+    """
+    df = pd.read_csv(HISTORIAL_CSV)
+    sub = df[(df["es_publico"] == True) | (df["es_premium"] == True)].copy()  # noqa: E712
+    liq = sub[sub["estado"].isin(["Ganado", "Perdido"])].copy()
+    if liq.empty:
+        return None
+    liq["fh"] = liq["fecha"] + " " + liq["hora"].astype(str)
+    liq = liq.sort_values("fh").reset_index(drop=True)
+
+    n_total = len(liq)
+    ganados_total = int((liq["estado"] == "Ganado").sum())
+    winrate_total = round(ganados_total / n_total * 100, 1)
+
+    reciente = liq.tail(min(n_reciente, n_total)).reset_index(drop=True)
+    n_rec = len(reciente)
+    ganados_rec = 0
+    curva = []
+    for i, row in reciente.iterrows():
+        if row["estado"] == "Ganado":
+            ganados_rec += 1
+        curva.append(round(ganados_rec / (i + 1) * 100, 1))
+    winrate_reciente = curva[-1] if curva else None
+
+    return {
+        "n_total": n_total,
+        "ganados_total": ganados_total,
+        "winrate_total": winrate_total,
+        "n_reciente": n_rec,
+        "ganados_reciente": ganados_rec,
+        "winrate_reciente": winrate_reciente,
+        "curva_reciente": curva,
+    }
+
+
+def _prompt_imagen_rendimiento_real(stats):
+    """Adaptacion directa del formato de anuncio 'RENDIMIENTO REAL' de
+    Pronostic.io (video de 12s visto el 03/08/2026): headline grande +
+    numero clave enorme + curva ascendente + boton 'Ver detalles'. Se
+    adapta el FORMATO (jerarquia visual, tipo de grafico, CTA), no el
+    copy ni la cifra -- la cifra es 100% real, tomada de historial_picks.csv."""
+    curva_txt = ", ".join(str(v) for v in stats["curva_reciente"])
+
+    return f"""IDIOMA -- INSTRUCCIÓN CRÍTICA: todo el texto debe quedar en ESPAÑOL,
+sin excepción. Las frases entre comillas son el texto FINAL, letra por
+letra -- cópialas tal cual, no las traduzcas. NO generes ninguna
+palabra en inglés ("REAL PERFORMANCE", "ACCURACY", "WIN RATE", etc.).
+
+Diseña una imagen vertical 1080x1920 (formato Story/Reel) para la marca
+de análisis deportivo "SportPicks Ligas". Es una pieza de tipo
+"rendimiento del modelo" -- estilo app fintech/dashboard mostrando una
+métrica clave con una gráfica de tendencia, similar a como una app de
+inversiones muestra el rendimiento de una cartera.
+
+Paleta EXACTA:
+- Fondo: verde muy oscuro casi negro {PALETA['bg']}
+- Acento (número clave y línea de la gráfica): verde lima brillante {PALETA['accent']}
+- Texto secundario: blanco hueso {PALETA['fg']}
+- Tarjeta del gráfico: {PALETA['surface']}, borde sutil {PALETA['border']}
+
+Contenido exacto, de arriba a abajo, EN ESPAÑOL:
+
+1. Texto pequeño superior en gris/lima tenue: "SPORTPICKS LIGAS · RENDIMIENTO REAL"
+2. Título grande en blanco bold: "ACIERTO REAL"
+3. Tarjeta con fondo {PALETA['surface']}: número ENORME en acento lima
+   "{stats['winrate_reciente']}%" y debajo, texto pequeño gris:
+   "de acierto en los últimos {stats['n_reciente']} picks públicos y premium liquidados"
+4. Debajo del número, una gráfica de línea simple mostrando la
+   evolución REAL del acierto acumulado pick a pick (no una curva
+   perfecta ni inventada -- debe fluctuar y estabilizarse, como una
+   racha real, no una línea recta ascendente de manual de marketing).
+   Los valores reales de la curva (uno por pick, en orden) son:
+   {curva_txt}
+   Dibuja la línea siguiendo esta forma con fidelidad razonable (sube y
+   baja donde los números suben y bajan), terminando en {stats['winrate_reciente']}%.
+5. Debajo de la gráfica, en texto blanco pequeño: "Histórico completo:
+   {stats['ganados_total']}G-{stats['n_total'] - stats['ganados_total']}P ({stats['winrate_total']}%) -- con lo que sale bien y lo que sale mal"
+6. Botón/pill en la parte inferior con borde blanco: "Ver historial completo →"
+7. En la esquina inferior, texto muy pequeño gris tenue: "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+
+RECORDATORIO FINAL DE IDIOMA: revisa que ningún texto haya quedado en
+inglés antes de generar.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): NO logos ni nombres de
+casas de apuestas, NO la palabra "apuesta(s)"/"bet" (usa "pick" o
+"análisis"), NO lenguaje de "ganancia garantizada" ni "rendimiento
+garantizado" -- esto es acierto de PRONÓSTICO (aciertos/fallos), NO es
+rendimiento financiero ni ROI de dinero apostado, no lo presentes como
+tal en ningún momento. Disclaimer +18 siempre visible. NO fotos de
+personas reales/rostros, NO marcas de agua.
+
+Tipografía sans-serif bold moderna (Inter/Poppins). Composición limpia
+tipo app fintech, el número grande es el elemento dominante, igual
+jerarquía que una app de inversiones mostrando rendimiento de cartera."""
+
+
+def _prompt_video_rendimiento_real(stats):
+    """Video corto (6-8s) animando la misma pieza -- adapta el formato
+    de 'story' del video de 12s de Pronostic.io: headline aparece,
+    número crece/cuenta hacia arriba, la línea se dibuja, termina en el
+    botón. Usa la imagen de _prompt_imagen_rendimiento_real como
+    fotograma final (no inicial, porque acá el efecto es de conteo)."""
+    return f"""IDIOMA: si agregas texto nuevo, debe estar en ESPAÑOL. Preferible no
+agregar texto nuevo (ver abajo).
+
+Genera un video vertical 1080x1920, 6 a 8 segundos, SIN audio ni voz,
+para Instagram/TikTok Stories. Usa la imagen "rendimiento real" de
+SportPicks Ligas como fotograma FINAL de la animación (no inicial).
+
+Secuencia:
+1. (0-1s) Fondo oscuro con el texto superior "SPORTPICKS LIGAS ·
+   RENDIMIENTO REAL" apareciendo con fade-in suave.
+2. (1-3s) El número grande "{stats['winrate_reciente']}%" hace un efecto de conteo
+   ascendente rápido desde 0% hasta {stats['winrate_reciente']}% (como un contador de
+   estadística deportiva en TV), sin rebote ni exageración.
+3. (3-6s) La línea de la gráfica se dibuja de izquierda a derecha
+   siguiendo su forma real (sube y baja, no es una línea recta), y el
+   resto de los elementos (histórico completo, botón "Ver historial
+   completo →", disclaimer) aparecen con fade-in suave, en el orden en
+   que están en la imagen.
+4. (6-8s) Frame final estático (la imagen completa), termina con
+   fundido a negro suave en el último medio segundo.
+
+No agregues elementos que no estén en la imagen original -- nada de
+personas, balones, ni gráficos adicionales.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
+menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
+"bet", no agregues lenguaje de "ganancia garantizada" ni presentes el
+acierto como rendimiento financiero/ROI. El disclaimer "+18 · Juega con
+responsabilidad" debe permanecer visible durante todo el video."""
+
+
+def generar_caption_rendimiento_real(stats):
+    campana = f"rendimiento_real_{date.today().isoformat()}"
+    link_fb = _link_utm("facebook", campana)
+
+    tiktok = (
+        f"📊 {stats['winrate_reciente']}% de acierto en nuestros últimos {stats['n_reciente']} picks "
+        f"públicos y premium.\n\n"
+        f"No es corazonada, es un modelo con XGBoost + Dixon-Coles + Monte Carlo. "
+        f"Histórico completo (lo bueno y lo malo) en el link de la bio ⚽\n\n"
+        f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
+        + " ".join(_hashtags([], 5))
+    )
+
+    instagram = (
+        f"📊 Rendimiento real: {stats['winrate_reciente']}% de acierto en los últimos "
+        f"{stats['n_reciente']} picks liquidados ({stats['ganados_reciente']}G-"
+        f"{stats['n_reciente'] - stats['ganados_reciente']}P).\n\n"
+        f"👉 Histórico completo y transparente (con lo que sale bien y lo que sale mal) en el link de la bio.\n\n"
+        f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
+        f".\n.\n.\n"
+        + " ".join(_hashtags([], 12) + ["#JuegaResponsable"])
+    )
+
+    facebook = (
+        f"📊 Rendimiento real -- {stats['winrate_reciente']}% de acierto en los últimos "
+        f"{stats['n_reciente']} picks liquidados.\n\n"
+        f"👉 Histórico público completo: {link_fb}\n\n"
+        f"⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.\n\n"
+        + " ".join(_hashtags([], 3))
+    )
+
+    alt = (
+        f"Gráfica de rendimiento real de SportPicks Ligas: {stats['winrate_reciente']}% de acierto "
+        f"en los últimos {stats['n_reciente']} picks públicos y premium liquidados, histórico total "
+        f"{stats['ganados_total']} ganados de {stats['n_total']}."
+    )
+
+    return tiktok, instagram, facebook, alt
+
+
 def _texto_ligas(ligas):
     if not ligas:
         return "varias ligas"
@@ -576,6 +767,17 @@ def main():
     prompt_cuadrado_h = _prompt_imagen_hoy(picks_hoy, "cuadrado")
     tiktok_h, instagram_h, facebook_h, alt_h = generar_captions_hoy(picks_hoy)
 
+    # Pieza 4: rendimiento real (adaptada del formato de anuncio de
+    # Pronostic.io) -- se omite en silencio si todavia no hay suficiente
+    # muestra liquidada (no tiene sentido publicar "rendimiento" con 2 o 3 picks).
+    stats_rr = _stats_rendimiento_real()
+    pieza_rendimiento = None
+    if stats_rr and stats_rr["n_reciente"] >= 10:
+        prompt_img_rr = _prompt_imagen_rendimiento_real(stats_rr)
+        prompt_vid_rr = _prompt_video_rendimiento_real(stats_rr)
+        tiktok_rr, instagram_rr, facebook_rr, alt_rr = generar_caption_rendimiento_real(stats_rr)
+        pieza_rendimiento = (stats_rr, prompt_img_rr, prompt_vid_rr, tiktok_rr, instagram_rr, facebook_rr, alt_rr)
+
     ruta = os.path.join(carpeta_salida, "prompts_ia.txt")
     with open(ruta, "w", encoding="utf-8") as f:
         f.write("############################################\n")
@@ -621,6 +823,31 @@ def main():
         f.write("\n\n\n=== TEXTO ALTERNATIVO (accesibilidad + SEO) ===\n\n")
         f.write(alt_h)
         f.write("\n")
+
+        if pieza_rendimiento:
+            stats_rr, prompt_img_rr, prompt_vid_rr, tiktok_rr, instagram_rr, facebook_rr, alt_rr = pieza_rendimiento
+            f.write("\n############################################\n")
+            f.write("# PIEZA 4: RENDIMIENTO REAL (adaptada del formato de anuncio de Pronostic.io)\n")
+            f.write(f"# Nota: {stats_rr['winrate_reciente']}% en los últimos {stats_rr['n_reciente']} picks "
+                    f"({stats_rr['ganados_reciente']}G-{stats_rr['n_reciente']-stats_rr['ganados_reciente']}P). "
+                    f"Histórico total: {stats_rr['winrate_total']}% ({stats_rr['ganados_total']}G-"
+                    f"{stats_rr['n_total']-stats_rr['ganados_total']}P). Cifra 100% real de historial_picks.csv.\n")
+            f.write("############################################\n\n")
+            f.write("=== PROMPT IMAGEN (Nano Banana Pro) — Story/Reel vertical ===\n\n")
+            f.write(prompt_img_rr)
+            f.write("\n\n\n=== PROMPT VIDEO (Flow) — animación de conteo ===\n\n")
+            f.write(prompt_vid_rr)
+            f.write("\n\n\n=== CAPTION TIKTOK ===\n\n")
+            f.write(tiktok_rr)
+            f.write("\n\n\n=== CAPTION INSTAGRAM ===\n\n")
+            f.write(instagram_rr)
+            f.write("\n\n\n=== CAPTION FACEBOOK ===\n\n")
+            f.write(facebook_rr)
+            f.write("\n\n\n=== TEXTO ALTERNATIVO (accesibilidad + SEO) ===\n\n")
+            f.write(alt_rr)
+            f.write("\n")
+        else:
+            f.write("\n[PIEZA 4 omitida: muestra liquidada todavía insuficiente para 'rendimiento real' (<10 picks)]\n")
 
     print(f"Generado: {ruta}")
 

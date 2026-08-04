@@ -713,3 +713,137 @@ Análisis estadístico, no corazonadas. Picks gratis en el link de la bio ⚽
 === TEXTO ALTERNATIVO (accesibilidad + SEO) ===
 
 Picks de fútbol pendientes de hoy del modelo estadístico SportPicks Ligas: Celtic vs Dundee FC, Odense Boldklub vs Sønderjyske Fodbold, Más de 8.5 córners @1.33 × Menos de 2.5 goles @1.48, con cuotas y probabilidad de cada pick.
+
+############################################
+# PIEZA 4: RENDIMIENTO REAL (adaptada del formato de anuncio de Pronostic.io)
+# Nota: 60.0% en los últimos 20 picks (12G-8P). Histórico total: 49.0% (24G-25P). Cifra 100% real de historial_picks.csv.
+############################################
+
+=== PROMPT IMAGEN (Nano Banana Pro) — Story/Reel vertical ===
+
+IDIOMA -- INSTRUCCIÓN CRÍTICA: todo el texto debe quedar en ESPAÑOL,
+sin excepción. Las frases entre comillas son el texto FINAL, letra por
+letra -- cópialas tal cual, no las traduzcas. NO generes ninguna
+palabra en inglés ("REAL PERFORMANCE", "ACCURACY", "WIN RATE", etc.).
+
+Diseña una imagen vertical 1080x1920 (formato Story/Reel) para la marca
+de análisis deportivo "SportPicks Ligas". Es una pieza de tipo
+"rendimiento del modelo" -- estilo app fintech/dashboard mostrando una
+métrica clave con una gráfica de tendencia, similar a como una app de
+inversiones muestra el rendimiento de una cartera.
+
+Paleta EXACTA:
+- Fondo: verde muy oscuro casi negro #081210
+- Acento (número clave y línea de la gráfica): verde lima brillante #c8ff3d
+- Texto secundario: blanco hueso #f4fff0
+- Tarjeta del gráfico: #0f1f1b, borde sutil #1c332c
+
+Contenido exacto, de arriba a abajo, EN ESPAÑOL:
+
+1. Texto pequeño superior en gris/lima tenue: "SPORTPICKS LIGAS · RENDIMIENTO REAL"
+2. Título grande en blanco bold: "ACIERTO REAL"
+3. Tarjeta con fondo #0f1f1b: número ENORME en acento lima
+   "60.0%" y debajo, texto pequeño gris:
+   "de acierto en los últimos 20 picks públicos y premium liquidados"
+4. Debajo del número, una gráfica de línea simple mostrando la
+   evolución REAL del acierto acumulado pick a pick (no una curva
+   perfecta ni inventada -- debe fluctuar y estabilizarse, como una
+   racha real, no una línea recta ascendente de manual de marketing).
+   Los valores reales de la curva (uno por pick, en orden) son:
+   100.0, 100.0, 100.0, 100.0, 100.0, 83.3, 85.7, 75.0, 66.7, 70.0, 63.6, 58.3, 53.8, 50.0, 53.3, 56.2, 52.9, 55.6, 57.9, 60.0
+   Dibuja la línea siguiendo esta forma con fidelidad razonable (sube y
+   baja donde los números suben y bajan), terminando en 60.0%.
+5. Debajo de la gráfica, en texto blanco pequeño: "Histórico completo:
+   24G-25P (49.0%) -- con lo que sale bien y lo que sale mal"
+6. Botón/pill en la parte inferior con borde blanco: "Ver historial completo →"
+7. En la esquina inferior, texto muy pequeño gris tenue: "+18 · Análisis
+   estadístico, no garantía de resultado. Juega con responsabilidad."
+
+RECORDATORIO FINAL DE IDIOMA: revisa que ningún texto haya quedado en
+inglés antes de generar.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): NO logos ni nombres de
+casas de apuestas, NO la palabra "apuesta(s)"/"bet" (usa "pick" o
+"análisis"), NO lenguaje de "ganancia garantizada" ni "rendimiento
+garantizado" -- esto es acierto de PRONÓSTICO (aciertos/fallos), NO es
+rendimiento financiero ni ROI de dinero apostado, no lo presentes como
+tal en ningún momento. Disclaimer +18 siempre visible. NO fotos de
+personas reales/rostros, NO marcas de agua.
+
+Tipografía sans-serif bold moderna (Inter/Poppins). Composición limpia
+tipo app fintech, el número grande es el elemento dominante, igual
+jerarquía que una app de inversiones mostrando rendimiento de cartera.
+
+
+=== PROMPT VIDEO (Flow) — animación de conteo ===
+
+IDIOMA: si agregas texto nuevo, debe estar en ESPAÑOL. Preferible no
+agregar texto nuevo (ver abajo).
+
+Genera un video vertical 1080x1920, 6 a 8 segundos, SIN audio ni voz,
+para Instagram/TikTok Stories. Usa la imagen "rendimiento real" de
+SportPicks Ligas como fotograma FINAL de la animación (no inicial).
+
+Secuencia:
+1. (0-1s) Fondo oscuro con el texto superior "SPORTPICKS LIGAS ·
+   RENDIMIENTO REAL" apareciendo con fade-in suave.
+2. (1-3s) El número grande "60.0%" hace un efecto de conteo
+   ascendente rápido desde 0% hasta 60.0% (como un contador de
+   estadística deportiva en TV), sin rebote ni exageración.
+3. (3-6s) La línea de la gráfica se dibuja de izquierda a derecha
+   siguiendo su forma real (sube y baja, no es una línea recta), y el
+   resto de los elementos (histórico completo, botón "Ver historial
+   completo →", disclaimer) aparecen con fade-in suave, en el orden en
+   que están en la imagen.
+4. (6-8s) Frame final estático (la imagen completa), termina con
+   fundido a negro suave en el último medio segundo.
+
+No agregues elementos que no estén en la imagen original -- nada de
+personas, balones, ni gráficos adicionales.
+
+RESTRICCIONES DE CUMPLIMIENTO (obligatorias): no agregues logos ni
+menciones de casas de apuestas, no agregues la palabra "apuesta(s)"/
+"bet", no agregues lenguaje de "ganancia garantizada" ni presentes el
+acierto como rendimiento financiero/ROI. El disclaimer "+18 · Juega con
+responsabilidad" debe permanecer visible durante todo el video.
+
+
+=== CAPTION TIKTOK ===
+
+📊 60.0% de acierto en nuestros últimos 20 picks públicos y premium.
+
+No es corazonada, es un modelo con XGBoost + Dixon-Coles + Monte Carlo. Histórico completo (lo bueno y lo malo) en el link de la bio ⚽
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos
+
+
+=== CAPTION INSTAGRAM ===
+
+📊 Rendimiento real: 60.0% de acierto en los últimos 20 picks liquidados (12G-8P).
+
+👉 Histórico completo y transparente (con lo que sale bien y lo que sale mal) en el link de la bio.
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+.
+.
+.
+#SportPicksLigas #Futbol #PronosticosFutbol #AnalisisDeportivo #DatosDeportivos #JuegaResponsable
+
+
+=== CAPTION FACEBOOK ===
+
+📊 Rendimiento real -- 60.0% de acierto en los últimos 20 picks liquidados.
+
+👉 Histórico público completo: https://sportpicks-suscripcion.vercel.app/?utm_source=facebook&utm_medium=social&utm_campaign=rendimiento_real_2026-08-03
+
+⚠️ Análisis estadístico, no garantía de resultado. Juega con responsabilidad. +18.
+
+#SportPicksLigas #Futbol #PronosticosFutbol
+
+
+=== TEXTO ALTERNATIVO (accesibilidad + SEO) ===
+
+Gráfica de rendimiento real de SportPicks Ligas: 60.0% de acierto en los últimos 20 picks públicos y premium liquidados, histórico total 24 ganados de 49.
