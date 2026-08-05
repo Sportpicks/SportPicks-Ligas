@@ -103,28 +103,46 @@ def _picks_de_hoy():
     return candidatos[:4]
 
 
-def _linea_pick(row):
-    cuota_txt = f" — cuota @{row['cuota']}" if pd.notna(row["cuota"]) else ""
+def _linea_pick(row, incluir_cuota=True):
+    # incluir_cuota=False para piezas destinadas a TikTok (ver nota del
+    # 05/08/2026 mas abajo: TikTok genero una advertencia de contenido
+    # por la palabra "cuota" -- su moderacion automatica la lee como
+    # lenguaje de casas de apuestas aunque el numero sea solo referencial).
+    cuota_txt = f" — cuota @{row['cuota']}" if (incluir_cuota and pd.notna(row["cuota"])) else ""
     return (
         f"{row['local']} vs {row['visitante']} ({row['liga_nombre']}) — "
         f"{row['mercado']}{cuota_txt} — {row['prob']}% prob."
     )
 
 
-def _linea_pick_hoy(item):
+def _linea_pick_hoy(item, incluir_cuota=True):
     cuota = item.get("cuota_display", item.get("cuota"))
+    cuota_txt = f" — cuota @{cuota}" if (incluir_cuota and cuota is not None) else ""
     if item.get("picks_combo"):
         # Combinada premium -- dos partidos distintos, no un solo local/visitante.
-        return f"Combinada: {item['descripcion']} — cuota @{cuota} — {item['prob']}% prob."
+        return f"Combinada: {item['descripcion']}{cuota_txt} — {item['prob']}% prob."
     return (
         f"{item['local']} vs {item['visitante']} ({item['liga_nombre']}) — "
-        f"{item['mercado']} — cuota @{cuota} — {item['prob']}% prob."
+        f"{item['mercado']}{cuota_txt} — {item['prob']}% prob."
     )
 
 
 def _prompt_imagen_ganados(ganados, formato):
+    # Vertical = Instagram/TikTok Reels y Stories -- SIN cuota (ver nota
+    # del 05/08/2026 en _linea_pick: TikTok marco advertencia de
+    # contenido por esa palabra). Cuadrado = feed de Facebook/Instagram,
+    # nunca se publica en TikTok, ahi si se mantiene la cuota.
+    incluir_cuota = formato != "vertical"
+    restr_cuota = (
+        ""
+        if incluir_cuota
+        else '\n- NO uses la palabra "cuota" en ningún texto de la imagen -- omite ese '
+             "dato por completo en este formato, muestra solo mercado y probabilidad "
+             "(TikTok marca advertencia de contenido con esa palabra)."
+    )
     lineas = "\n".join(
-        f'   Pick {i+1} (GANADO): "{_linea_pick(r)}"' for i, (_, r) in enumerate(ganados.iterrows())
+        f'   Pick {i+1} (GANADO): "{_linea_pick(r, incluir_cuota=incluir_cuota)}"'
+        for i, (_, r) in enumerate(ganados.iterrows())
     )
 
     if formato == "vertical":
@@ -199,7 +217,7 @@ de contenido de TikTok/Meta sobre juego/apuestas):
   plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
   imagen.
 - NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
-  siempre "pick(s)", "análisis" o "probabilidad".
+  siempre "pick(s)", "análisis" o "probabilidad".{restr_cuota}
 - NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
   texto que prometa un resultado seguro -- el enfoque es análisis
   estadístico y transparencia de resultados, no promoción de apuestas.
@@ -217,8 +235,17 @@ jerarquía visual clara."""
 
 
 def _prompt_imagen_hoy(picks_hoy, formato):
+    incluir_cuota = formato != "vertical"
+    restr_cuota = (
+        ""
+        if incluir_cuota
+        else '\n- NO uses la palabra "cuota" en ningún texto de la imagen -- omite ese '
+             "dato por completo en este formato, muestra solo mercado y probabilidad "
+             "(TikTok marca advertencia de contenido con esa palabra)."
+    )
     lineas = "\n".join(
-        f'   Pick {i+1}: "{_linea_pick_hoy(p)}"' for i, p in enumerate(picks_hoy)
+        f'   Pick {i+1}: "{_linea_pick_hoy(p, incluir_cuota=incluir_cuota)}"'
+        for i, p in enumerate(picks_hoy)
     )
     n = len(picks_hoy)
 
@@ -289,7 +316,7 @@ de contenido de TikTok/Meta sobre juego/apuestas):
   plataforma de apuestas (Bet365, Betano, etc.) en ningún lugar de la
   imagen.
 - NO uses la palabra "apuesta"/"apuestas"/"bet" en ningún texto -- usa
-  siempre "pick(s)", "análisis" o "probabilidad".
+  siempre "pick(s)", "análisis" o "probabilidad".{restr_cuota}
 - NO uses lenguaje de "ganancia garantizada", "dinero fácil" ni ningún
   texto que prometa un resultado seguro -- el enfoque es análisis
   estadístico y transparencia de resultados, no promoción de apuestas.
@@ -323,7 +350,11 @@ def _prompt_imagen_pick_tiktok(row, indice):
     del 02/08/2026: lo que escala en la categoría Deportes es contenido
     de un solo momento/hito con nombres grandes, no tarjetas de datos)."""
     titular = _titular_pick(row)
-    cuota_txt = f" — cuota @{row['cuota']}" if pd.notna(row["cuota"]) else ""
+    # Siempre TikTok -- SIN cuota (ver nota del 05/08/2026 en _linea_pick:
+    # TikTok marco advertencia de contenido por esa palabra). A diferencia
+    # de _prompt_imagen_ganados/_hoy (que si la incluyen en su version
+    # cuadrada para Facebook/Instagram), esta pieza es 100% TikTok, nunca
+    # se reusa para otra plataforma -- no hay version "con cuota".
 
     return f"""IDIOMA -- INSTRUCCIÓN CRÍTICA: todo el texto debe quedar en ESPAÑOL,
 sin excepción. Las frases entre comillas más abajo son el texto FINAL,
@@ -350,12 +381,14 @@ Contenido exacto, EN ESPAÑOL:
    titular: "GANADO ✅"
 3. Debajo del titular, en texto bastante más chico (subordinado, no
    compite con el titular): "{row['liga_nombre']}"
-4. Al final, en texto pequeño gris claro: "{row['mercado']}{cuota_txt} — {row['prob']}% prob."
+4. Al final, en texto pequeño gris claro: "{row['mercado']} — {row['prob']}% prob."
 5. En la esquina inferior, texto muy pequeño gris tenue: "+18 · Juega con responsabilidad."
 
 RESTRICCIONES DE CUMPLIMIENTO (obligatorias): NO logos ni nombres de
 casas de apuestas, NO la palabra "apuesta(s)"/"bet" (usa "pick" o
-"análisis"), NO lenguaje de "ganancia garantizada", disclaimer +18
+"análisis"), NO la palabra "cuota" en ningún texto de la imagen (TikTok
+marca advertencia de contenido con esa palabra -- muestra solo mercado y
+probabilidad), NO lenguaje de "ganancia garantizada", disclaimer +18
 siempre visible, NO fotos de personas reales/rostros, NO marcas de agua.
 
 Tipografía sans-serif bold y muy grande para el titular (debe ser el
@@ -650,14 +683,21 @@ def _hashtags(ligas, n_max):
 
 
 def _alt_text_ganados(ganados):
+    # Sin "cuota(s)" -- este alt text se sube tal cual con la imagen en
+    # TODOS los formatos, incluido el vertical de TikTok (ver nota del
+    # 05/08/2026 en _linea_pick: esa palabra genera advertencia de
+    # contenido ahi), asi que se omite para las 4 piezas por igual en vez
+    # de parametrizarlo por formato como el resto de las funciones.
     partes = [f"{r['local']} vs {r['visitante']} (ganado)" for _, r in ganados.iterrows()]
     return (
         "Tarjetas de picks de fútbol ganados recientes del modelo estadístico "
-        f"SportPicks Ligas: {', '.join(partes)}, con cuotas y probabilidad de cada pick."
+        f"SportPicks Ligas: {', '.join(partes)}, con probabilidad de cada pick."
     )
 
 
 def _alt_text_hoy(picks_hoy):
+    # Ver nota en _alt_text_ganados: sin "cuota(s)" tambien aca por la
+    # misma razon (se reusa en el formato vertical de TikTok).
     partes = []
     for p in picks_hoy:
         if p.get("picks_combo"):
@@ -666,7 +706,7 @@ def _alt_text_hoy(picks_hoy):
             partes.append(f"{p['local']} vs {p['visitante']}")
     return (
         "Picks de fútbol pendientes de hoy del modelo estadístico SportPicks Ligas: "
-        f"{', '.join(partes)}, con cuotas y probabilidad de cada pick."
+        f"{', '.join(partes)}, con probabilidad de cada pick."
     )
 
 
