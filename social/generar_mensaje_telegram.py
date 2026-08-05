@@ -99,14 +99,26 @@ def cargar_picks_hoy():
         return json.load(f)
 
 
-def _linea_pick(pick, html=False):
+def _linea_pick(pick, html=False, fecha_hoy=None):
     emoji = pick.get("emoji", "⚽")
     partido = pick["partido"]
     mercado = pick["mercado"]
     cuota = pick.get("cuota_display", pick.get("cuota"))
     prob = pick.get("prob")
     nombre = f"<b>{partido}</b>" if html else partido.upper()
-    return f"{emoji} {nombre}\n   {mercado} · cuota @{cuota} · {prob}% prob."
+    # BUG REAL (05/08/2026): cuando el fallback_multi_dia de
+    # generador_picks_ligas.py rellena "publicos" con partidos de otros
+    # dias (porque hoy ninguno paso el piso de EV), este mensaje decia
+    # "Picks gratis del <fecha_hoy>" sin aclarar que un partido en
+    # particular jugaba manana o pasado -- se publico asi por error al
+    # canal real de Telegram. Ahora se agrega la fecha real del partido
+    # en la linea cuando difiere de fecha_hoy, sin importar si el fallback
+    # esta activo o no (misma logica que PicksHoyScroll.tsx en el frontend).
+    pick_fecha = pick.get("fecha")
+    sufijo_fecha = ""
+    if fecha_hoy and pick_fecha and pick_fecha != fecha_hoy:
+        sufijo_fecha = f" ({_fecha_legible(pick_fecha)})"
+    return f"{emoji} {nombre}{sufijo_fecha}\n   {mercado} · cuota @{cuota} · {prob}% prob."
 
 
 def generar_mensaje(data, html=False):
@@ -115,11 +127,15 @@ def generar_mensaje(data, html=False):
     fecha_iso = data["fecha"]
     publicos = data.get("publicos", [])
     premium = data.get("premium", [])
+    # Ver _linea_pick() -- si el fallback trajo partidos de otro dia, el
+    # titulo tampoco debe decir "del <fecha_iso>" a secas (séria el mismo
+    # error, solo que en el encabezado en vez de por partido).
+    algun_otro_dia = any(p.get("fecha") and p["fecha"] != fecha_iso for p in publicos)
 
     campana = f"picks_diarios_{date.today().isoformat()}"
     link = _link_utm(campana)
 
-    lineas_picks = "\n\n".join(_linea_pick(p, html=html) for p in publicos)
+    lineas_picks = "\n\n".join(_linea_pick(p, html=html, fecha_hoy=fecha_iso) for p in publicos)
 
     n_premium = len(premium)
     if n_premium:
@@ -131,8 +147,13 @@ def generar_mensaje(data, html=False):
         bloque_premium = ""
 
     titulo = "<b>📊 SportPicks Ligas</b>" if html else "📊 SPORTPICKS LIGAS"
+    encabezado = (
+        f"{titulo} -- Picks gratis (próximos partidos, hoy sin picks que pasen el filtro)"
+        if algun_otro_dia
+        else f"{titulo} -- Picks gratis del {_fecha_legible(fecha_iso)}"
+    )
 
-    mensaje = f"""{titulo} -- Picks gratis del {_fecha_legible(fecha_iso)}
+    mensaje = f"""{encabezado}
 
 {lineas_picks}{bloque_premium}
 
