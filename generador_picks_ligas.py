@@ -307,6 +307,30 @@ def seleccionar_premium(todos, mercados_excluidos):
     # También se excluyen los mercados de CATEGORIAS_EXCLUIDAS (1X2, Tiros)
     # como patas -- misma auditoría, ambos por debajo del acierto promedio.
     PROB_MIN_PATA_PREMIUM = 68
+
+    # FACTOR_CALIBRACION_COMBO (auditoría 10/08/2026, n=19 combinadas
+    # liquidadas tras subir el piso de pata a 68%): la prob combinada
+    # sigue siendo un producto simple de las dos patas, sin descuento por
+    # correlación ni por el sesgo de sobreconfianza del modelo en el rango
+    # 60-75% (bucket 70-75%: predice 72.5% de prob, acierto real 56.5% --
+    # ver auditoría completa). Con las patas ya en >=68%, el acierto real
+    # de las combinadas siguió en 42.1% vs. una prob combinada promedio
+    # mostrada de 57.1% (gap de ~15pp, apenas mejor que el 20.6pp de antes
+    # de subir el piso) -- subir el piso de pata no ataca la causa, que es
+    # que el producto de dos probabilidades ya sobreconfiadas compone el
+    # error. Se aplica aquí un factor de corrección empírico
+    # (acierto_real / prob_mostrada = 42.11 / 57.06 = 0.738) directamente
+    # sobre prob_combo, mismo patrón que factor_correccion en
+    # calibracion.json para goles. Con n=19 esto es una primera
+    # aproximación, no un valor definitivo -- debe recalcularse cuando
+    # haya más combinadas liquidadas post-fix (ver logger_predicciones.py
+    # calibrar, mismo mecanismo). Efecto esperado: el EV de la mayoría de
+    # combinadas cae por debajo de EV_MIN_PREMIUM y el generador cae al
+    # Paso 2 (pick individual premium) con más frecuencia -- ese es el
+    # comportamiento correcto: es mejor no publicar una combinada que
+    # publicar una con probabilidad inflada.
+    FACTOR_CALIBRACION_COMBO = 0.738
+
     candidatos = sorted(
         [pk for pk in todos
          if pk['prob'] >= PROB_MIN_PATA_PREMIUM
@@ -340,7 +364,7 @@ def seleccionar_premium(todos, mercados_excluidos):
                 cuota_combo = round(pk1['cuota'] * pk2['cuota'], 2)
                 if cuota_combo < CUOTA_MIN_PREMIUM:
                     continue
-                prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
+                prob_combo = round(pk1['prob'] * pk2['prob'] / 100 * FACTOR_CALIBRACION_COMBO, 1)
                 if prob_combo < 40:
                     continue
                 ev_combo = round((prob_combo/100) * cuota_combo - 1, 3)
