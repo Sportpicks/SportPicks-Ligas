@@ -81,8 +81,20 @@ LIGAS = _construir_ligas()
 ZONA_PERU = -5  # UTC-5
 
 # ── Reglas de picks ──
-PROB_MIN_PUBLICO  = 60   # %
-PROB_MIN_PREMIUM  = 75   # %
+# PROB_MIN_PUBLICO/PROB_MIN_PREMIUM rebajados (10/08/2026, junto con la
+# calibración de probabilidad -- ver logger_predicciones.calcular_calibracion_prob
+# y generador_picks_ligas._calibrar_prob): la auditoría de modelo del
+# 10/08/2026 encontró que el modelo estaba sobreconfiado 10-17pp en el
+# rango 60-75%, y con la corrección aplicada el techo real de probabilidad
+# calibrada quedó en ~68% (nunca 90% como mostraba antes). Dejar estos
+# pisos en 60/75 sobre la escala calibrada habría dejado el sitio casi sin
+# picks públicos/premium la mayoría de los días (backtest contra 741 picks
+# históricos: de 158 candidatos que pasaban el piso viejo, solo 5 hubieran
+# pasado el mismo piso sobre la prob calibrada). Los valores nuevos son
+# _calibrar_prob(60)=55.4 y _calibrar_prob(75)=63.4 redondeados -- mismo
+# criterio de selectividad que antes, expresado en la escala honesta.
+PROB_MIN_PUBLICO  = 55   # %
+PROB_MIN_PREMIUM  = 63   # %
 CUOTA_MIN_PUBLICO = 1.50
 CUOTA_MIN_PREMIUM = 1.60
 MAX_PICKS_PUBLICO = 3

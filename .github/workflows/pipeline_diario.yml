@@ -57,6 +57,19 @@ jobs:
         run: python logger_predicciones.py calibrar
         continue-on-error: true
 
+      # Calibración de PROBABILIDAD (isotónica, PAVA) -- distinta de la de
+      # arriba (esa corrige el xG por liga; esta corrige la probabilidad
+      # final mostrada al usuario contra el acierto real, ver auditoría
+      # 10/08/2026 y _calibrar_prob() en generador_picks_ligas.py). Corre
+      # DESPUÉS de "Liquidar historial" (arriba) para usar los resultados
+      # recién liquidados, y ANTES de "Generar picks" del día siguiente --
+      # como esta corrida ya generó los picks de HOY más arriba, el efecto
+      # se aplica recién en la corrida de MAÑANA, mismo lag de un día que
+      # ya tiene el mecanismo de calibración de goles.
+      - name: Recalcular calibración de probabilidad (isotónica)
+        run: python logger_predicciones.py calibrar-prob
+        continue-on-error: true
+
       # Generar web AL FINAL: archiva los picks de hoy en historial_picks.csv
       # y ya refleja la liquidación de resultados pasados (sync-resultados +
       # liquidar-historial corrieron arriba) en la misma corrida -- si fuera
@@ -81,7 +94,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f docs/index.html Data/picks_hoy.json Data/partidos/proximos.csv Predicciones/predicciones_hoy.json \
-                     Data/predicciones_log.csv Data/resultados_log.csv Data/calibracion.json Data/historial_picks.csv
+                     Data/predicciones_log.csv Data/resultados_log.csv Data/calibracion.json Data/calibracion_prob.json Data/historial_picks.csv
           if git diff --staged --quiet; then
             echo "Sin cambios que commitear."
             exit 0

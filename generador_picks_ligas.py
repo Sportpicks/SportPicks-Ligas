@@ -61,9 +61,16 @@ PESO_MERCADO_EN_BLEND = 0.30
 # fix de CATEGORIAS_EXCLUIDAS) -- esto lo hace explícito y a prueba de
 # que un cambio futuro en los pisos genéricos vuelva a dejarla pasar.
 # margen_prob/margen_ev se suman encima del piso normal (público o
-# premium según corresponda).
+# premium según corresponda). margen_prob rebajado de 15 a 8 el
+# 10/08/2026, junto con la calibración de probabilidad: con el techo real
+# de prob calibrada en ~68% (ver PROB_MIN_PUBLICO en configuracion.py),
+# +15pp sobre el piso ya rebajado habría vuelto la barrera literalmente
+# inalcanzable (piso + margen > el máximo que el modelo puede mostrar) --
+# código muerto en la práctica. +8pp sigue siendo una barrera fuerte
+# (solo el bloque de prob calibrada más alto la alcanza) pero no
+# imposible por construcción.
 LIGAS_BAJO_VIGILANCIA = {
-    'comp_4795': {'margen_prob': 15, 'margen_ev': 0.05, 'nombre': 'Brasileirão Série A'},
+    'comp_4795': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Brasileirão Série A'},
 }
 
 def _pasa_vigilancia_liga(pk, prob_min_base, ev_min_base):
@@ -73,6 +80,54 @@ def _pasa_vigilancia_liga(pk, prob_min_base, ev_min_base):
     if not vig:
         return True
     return pk['prob'] >= prob_min_base + vig['margen_prob'] and pk['ev'] >= ev_min_base + vig['margen_ev']
+
+CALIB_PROB_JSON = os.path.join(RAIZ, 'Data', 'calibracion_prob.json')
+_CALIB_PROB_CACHE = None
+
+def _cargar_calibracion_prob():
+    """Carga (una sola vez por proceso) los breakpoints de calibración de
+    probabilidad generados por logger_predicciones.py calcular_calibracion_prob().
+    Devuelve [] si el archivo no existe todavía (primera corrida antes de
+    que el pipeline lo genere) -- en ese caso _calibrar_prob() es no-op."""
+    global _CALIB_PROB_CACHE
+    if _CALIB_PROB_CACHE is not None:
+        return _CALIB_PROB_CACHE
+    if not os.path.exists(CALIB_PROB_JSON):
+        _CALIB_PROB_CACHE = []
+        return _CALIB_PROB_CACHE
+    with open(CALIB_PROB_JSON, encoding='utf-8') as f:
+        data = json.load(f)
+    _CALIB_PROB_CACHE = data.get('breakpoints', [])
+    return _CALIB_PROB_CACHE
+
+def _calibrar_prob(prob):
+    """
+    Corrige la sobreconfianza del modelo (auditoría 10/08/2026: rango
+    60-75% sobreconfiado 10-17pp frente al acierto real, Brier score 0.253
+    -- ver nota larga en logger_predicciones.calcular_calibracion_prob).
+    Interpola linealmente entre los breakpoints (x=prob_modelo,
+    y=prob_calibrada) de Data/calibracion_prob.json. Por debajo del primer
+    breakpoint o encima del último, se usa el valor calibrado del extremo
+    más cercano (clamp) en vez de extrapolar -- no hay datos que respalden
+    una extrapolación más allá del rango observado.
+    Si no hay calibración disponible todavía, devuelve prob sin tocar.
+    """
+    breakpoints = _cargar_calibracion_prob()
+    if not breakpoints:
+        return prob
+    xs = [b['prob_modelo'] for b in breakpoints]
+    ys = [b['prob_calibrada'] for b in breakpoints]
+    if prob <= xs[0]:
+        return ys[0]
+    if prob >= xs[-1]:
+        return ys[-1]
+    for i in range(len(xs) - 1):
+        if xs[i] <= prob <= xs[i+1]:
+            if xs[i+1] == xs[i]:
+                return ys[i]
+            t = (prob - xs[i]) / (xs[i+1] - xs[i])
+            return round(ys[i] + t * (ys[i+1] - ys[i]), 1)
+    return prob  # inalcanzable en la práctica, por completitud
 
 def _prob_mercado_devigged(cuota_pick, cuotas_grupo):
     """
@@ -128,6 +183,19 @@ def generar_candidatos(pred, cuotas):
                     blend_aplicado = True
         if prob_efectiva < 50:
             return  # el blend puede bajar la prob por debajo del piso público
+
+        # Calibración de probabilidad (auditoría 10/08/2026) -- ver
+        # _calibrar_prob() más arriba. Se aplica DESPUÉS del blend con
+        # mercado (prob_efectiva ya incluye esa corrección) y ANTES del
+        # cálculo de EV, para que el EV mostrado refleje la probabilidad
+        # ya corregida y no la cruda sobreconfiada. prob_pre_calibracion
+        # se guarda para poder auditar el efecto de esta corrección más
+        # adelante sin perder el dato original.
+        prob_pre_calibracion = prob_efectiva
+        prob_efectiva = _calibrar_prob(prob_efectiva)
+        if prob_efectiva < 50:
+            return  # la calibración también puede bajar la prob del piso
+
         # BUG REAL encontrado en auditoria de modelo (24/07/2026): esta formula
         # era `prob - 1/cuota`, que NO es el valor esperado monetario estandar
         # de una apuesta (`prob*cuota - 1`) -- es ese mismo EV real dividido
@@ -155,6 +223,7 @@ def generar_candidatos(pred, cuotas):
             'mercado': mercado,
             'prob': prob_efectiva,
             'prob_modelo': prob,
+            'prob_pre_calibracion': prob_pre_calibracion,
             'blend_aplicado': blend_aplicado,
             'cuota': cuota,
             'cuota_display': cuota,
@@ -330,38 +399,13 @@ def seleccionar_picks(todos, max_publico=3):
 def seleccionar_premium(todos, mercados_excluidos):
     """Busca la mejor combinada para el premium"""
     # Picks con prob alta y cuota baja — candidatos para combinada.
-    # Piso de prob por pata subido de 60% a 68% (auditoría 31/07/2026,
-    # 410 picks liquidados): al multiplicar dos patas, la sobreconfianza
-    # del modelo se compone -- con patas de ~60% mostrado, el acierto real
-    # de la combinada terminó en 36.4% (n=11) vs. un 57% de prob combinada
-    # mostrada (gap de 20.6pp). Subir el piso reduce cuántas combinadas
-    # dependen de patas de calibración débil, sin eliminar el mecanismo.
-    # También se excluyen los mercados de CATEGORIAS_EXCLUIDAS (1X2, Tiros)
-    # como patas -- misma auditoría, ambos por debajo del acierto promedio.
-    PROB_MIN_PATA_PREMIUM = 68
-
-    # FACTOR_CALIBRACION_COMBO (auditoría 10/08/2026, n=19 combinadas
-    # liquidadas tras subir el piso de pata a 68%): la prob combinada
-    # sigue siendo un producto simple de las dos patas, sin descuento por
-    # correlación ni por el sesgo de sobreconfianza del modelo en el rango
-    # 60-75% (bucket 70-75%: predice 72.5% de prob, acierto real 56.5% --
-    # ver auditoría completa). Con las patas ya en >=68%, el acierto real
-    # de las combinadas siguió en 42.1% vs. una prob combinada promedio
-    # mostrada de 57.1% (gap de ~15pp, apenas mejor que el 20.6pp de antes
-    # de subir el piso) -- subir el piso de pata no ataca la causa, que es
-    # que el producto de dos probabilidades ya sobreconfiadas compone el
-    # error. Se aplica aquí un factor de corrección empírico
-    # (acierto_real / prob_mostrada = 42.11 / 57.06 = 0.738) directamente
-    # sobre prob_combo, mismo patrón que factor_correccion en
-    # calibracion.json para goles. Con n=19 esto es una primera
-    # aproximación, no un valor definitivo -- debe recalcularse cuando
-    # haya más combinadas liquidadas post-fix (ver logger_predicciones.py
-    # calibrar, mismo mecanismo). Efecto esperado: el EV de la mayoría de
-    # combinadas cae por debajo de EV_MIN_PREMIUM y el generador cae al
-    # Paso 2 (pick individual premium) con más frecuencia -- ese es el
-    # comportamiento correcto: es mejor no publicar una combinada que
-    # publicar una con probabilidad inflada.
-    FACTOR_CALIBRACION_COMBO = 0.738
+    # PROB_MIN_PATA_PREMIUM rebajado de 68 a 58 (10/08/2026, junto con la
+    # calibración de probabilidad -- ver nota larga en PROB_MIN_PUBLICO de
+    # configuracion.py): 68 era un piso sobre la prob CRUDA; ahora pk['prob']
+    # ya viene calibrada desde generar_candidatos(), así que el piso
+    # equivalente es _calibrar_prob(68)=58.4. Mismo criterio de
+    # selectividad, expresado en la escala honesta.
+    PROB_MIN_PATA_PREMIUM = 58
 
     candidatos = sorted(
         [pk for pk in todos
@@ -397,8 +441,29 @@ def seleccionar_premium(todos, mercados_excluidos):
                 cuota_combo = round(pk1['cuota'] * pk2['cuota'], 2)
                 if cuota_combo < CUOTA_MIN_PREMIUM:
                     continue
-                prob_combo = round(pk1['prob'] * pk2['prob'] / 100 * FACTOR_CALIBRACION_COMBO, 1)
-                if prob_combo < 40:
+                # Producto simple, SIN factor de corrección extra (a
+                # diferencia de una versión anterior de este fix, del
+                # 10/08/2026 más temprano ese mismo día -- ver historial de
+                # git): pk1/pk2['prob'] ya vienen calibradas desde
+                # generar_candidatos() (ver _calibrar_prob), así que la
+                # sobreconfianza que ese factor corregía manualmente
+                # (acierto real 42.1% vs 57.1% mostrado, n=19) ya está
+                # corregida en el origen. Verificación numérica antes de
+                # quitarlo: dos patas en el piso nuevo (58.4% calibrado
+                # c/u) dan prob_combo=34.1, casi idéntico a lo que daba el
+                # factor viejo sobre patas en el piso viejo
+                # (68*68/100*0.738=34.1) -- mismo resultado por la vía
+                # correcta en vez de un parche encima de probabilidades ya
+                # corregidas (que las sobre-corregiría). Sigue siendo una
+                # hipótesis a confirmar con combinadas liquidadas bajo este
+                # esquema -- si el acierto real de las próximas combinadas
+                # diverge de prob_combo, hay que revisar esto de nuevo.
+                prob_combo = round(pk1['prob'] * pk2['prob'] / 100, 1)
+                # Piso de prob_combo rebajado de 40 a 30 (mismo motivo: dos
+                # patas en el piso nuevo de PROB_MIN_PATA_PREMIUM dan ~34,
+                # un piso de 40 habría bloqueado la mayoría de las
+                # combinadas típicas, no solo las débiles).
+                if prob_combo < 30:
                     continue
                 ev_combo = round((prob_combo/100) * cuota_combo - 1, 3)
                 if ev_combo < EV_MIN_PREMIUM or ev_combo > EV_MAX_PREMIUM:
@@ -433,24 +498,28 @@ def seleccionar_premium(todos, mercados_excluidos):
                     }
 
     # Paso 2: pick individual premium — cualquier pick con buena prob y cuota >= 1.60
+    # Umbrales 65->57 y 62->56 rebajados el 10/08/2026 junto con la
+    # calibración de probabilidad (misma escala honesta que
+    # PROB_MIN_PATA_PREMIUM más arriba -- _calibrar_prob(65)=57.1,
+    # _calibrar_prob(62)=56.1).
     if not mejor:
         for pk in sorted(todos, key=lambda x: (x['prob'], x['ev']), reverse=True):
-            if (pk['prob'] >= 65
+            if (pk['prob'] >= 57
                 and pk['cuota'] >= CUOTA_MIN_PREMIUM
                 and EV_MIN_PREMIUM <= pk['ev'] <= EV_MAX_PREMIUM
                 and pk['mercado'] not in mercados_excluidos
                 and pk['categoria'] not in CATEGORIAS_EXCLUIDAS
-                and _pasa_vigilancia_liga(pk, 65, EV_MIN_PREMIUM)):
+                and _pasa_vigilancia_liga(pk, 57, EV_MIN_PREMIUM)):
                 pk['tipo'] = 'premium'
                 return [pk]
         # Último recurso — mejor pick disponible con cuota >= 1.50
         for pk in sorted(todos, key=lambda x: x['prob'], reverse=True):
-            if (pk['prob'] >= 62
+            if (pk['prob'] >= 56
                 and pk['cuota'] >= 1.50
                 and pk['categoria'] not in CATEGORIAS_EXCLUIDAS
                 and EV_MIN_PREMIUM <= pk['ev'] <= EV_MAX_PREMIUM
                 and pk['mercado'] not in mercados_excluidos
-                and _pasa_vigilancia_liga(pk, 62, EV_MIN_PREMIUM)):
+                and _pasa_vigilancia_liga(pk, 56, EV_MIN_PREMIUM)):
                 pk['tipo'] = 'premium'
                 return [pk]
 

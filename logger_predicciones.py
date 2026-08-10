@@ -19,6 +19,7 @@ PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
 LOG_PRED   = os.path.join(RAIZ, 'Data', 'predicciones_log.csv')
 LOG_RESULT = os.path.join(RAIZ, 'Data', 'resultados_log.csv')
 CALIB_JSON = os.path.join(RAIZ, 'Data', 'calibracion.json')
+CALIB_PROB_JSON = os.path.join(RAIZ, 'Data', 'calibracion_prob.json')
 
 # ── Columnas del log de predicciones ──
 COLS_PRED = [
@@ -303,6 +304,111 @@ def calcular_mse():
     print(f'\n✅ Calibración guardada en {CALIB_JSON}')
 
     return calibracion
+
+CALIBRACION_PROB_MIN_N = 20
+
+def _isotonica_pava(x, y):
+    """
+    Regresión isotónica (Pool Adjacent Violators Algorithm) implementada a
+    mano con numpy puro -- no se agrega scikit-learn como dependencia solo
+    para esto (requirements.txt de este repo nunca lo tuvo, ver
+    auditoría 10/08/2026). x debe venir ordenado ascendente; y son
+    resultados binarios (0/1). Devuelve una lista de bloques
+    [(x_medio, y_calibrada, n)] no decreciente en y_calibrada, donde
+    bloques con menos de CALIBRACION_PROB_MIN_N muestras se fusionan con
+    el siguiente (o el anterior, si es el último) para evitar sobreajuste
+    en zonas con pocos datos -- caso real detectado en la primera corrida:
+    bloques de n=1 en el extremo bajo de prob daban 0% o 100% de acierto
+    por una sola muestra, ruido puro, no señal.
+    """
+    stack = []  # cada elemento: [suma_y, count, xs]
+    for xi, yi in zip(x, y):
+        stack.append([float(yi), 1, [xi]])
+        while len(stack) > 1 and (stack[-2][0] / stack[-2][1]) > (stack[-1][0] / stack[-1][1]):
+            s2, c2, xs2 = stack.pop()
+            s1, c1, xs1 = stack.pop()
+            stack.append([s1 + s2, c1 + c2, xs1 + xs2])
+
+    fusionados = []
+    actual = None
+    for bloque in stack:
+        actual = bloque if actual is None else [actual[0] + bloque[0], actual[1] + bloque[1], actual[2] + bloque[2]]
+        if actual[1] >= CALIBRACION_PROB_MIN_N:
+            fusionados.append(actual)
+            actual = None
+    if actual is not None:
+        if fusionados:
+            prev = fusionados.pop()
+            actual = [prev[0] + actual[0], prev[1] + actual[1], prev[2] + actual[2]]
+        fusionados.append(actual)
+
+    return [
+        (round(float(np.mean(xs)), 2), round(s / c * 100, 2), c)
+        for s, c, xs in fusionados
+    ]
+
+def calcular_calibracion_prob():
+    """
+    Calibración de probabilidad global (isotónica) -- distinta de
+    calcular_mse()/calibracion.json, que corrige el xG predicho por liga.
+    Esta corrige la probabilidad final mostrada al usuario (prob_efectiva,
+    post-blend) contra el acierto real, agregando TODAS las ligas y
+    mercados individuales juntos.
+
+    Origen del hallazgo (auditoría de modelo 10/08/2026, 761 picks
+    liquidados de Data/historial_picks.csv): agrupando por bucket de
+    probabilidad, todo el rango 60-75% mostraba al modelo sobreconfiado
+    de 10 a 17 puntos porcentuales frente al acierto real (ej. bucket
+    70-75%: predice 72.5%, acierto real 56.5%). Brier score global 0.253,
+    prácticamente igual al de predecir siempre la tasa base (0.247) --
+    las probabilidades del modelo aportaban poca señal de calibración
+    pese a discriminar razonablemente bien en ranking.
+
+    Se usa Data/historial_picks.csv (no predicciones_log.csv) a propósito:
+    es la población exacta a la que se le va a aplicar esta calibración en
+    producción (generador_picks_ligas.py, después del blend con mercado,
+    antes de EV) -- mismo filtro cuota>=1.30/prob>=50 que ya aplica
+    generar_candidatos(). Se excluyen las combinadas (categoria=
+    'Combinada'): su probabilidad ya es un producto de dos patas con su
+    propio factor de corrección (FACTOR_CALIBRACION_COMBO), calibrarlas
+    aquí también compondría dos correcciones sobre el mismo sesgo.
+    """
+    if not os.path.exists(HISTORIAL_PATH):
+        print('⚠️ Sin Data/historial_picks.csv todavía -- corré generar_web.py primero')
+        return []
+
+    df = pd.read_csv(HISTORIAL_PATH)
+    liq = df[df['estado'].isin(['Ganado', 'Perdido'])].copy()
+    ind = liq[liq['categoria'] != 'Combinada'].copy()
+
+    if len(ind) < 200:
+        print(f'⚠️ Solo {len(ind)} picks individuales liquidados -- se necesitan >=200 para calibrar con confianza, se deja calibracion_prob.json como está')
+        return []
+
+    ind = ind.sort_values('prob').reset_index(drop=True)
+    ind['gano'] = (ind['estado'] == 'Ganado').astype(int)
+
+    bloques = _isotonica_pava(ind['prob'].values, ind['gano'].values)
+    breakpoints = [
+        {'prob_modelo': bx, 'prob_calibrada': by, 'n': n}
+        for bx, by, n in bloques
+    ]
+
+    print(f'\n📊 CALIBRACIÓN DE PROBABILIDAD ({len(ind)} picks individuales, {len(breakpoints)} bloques)')
+    print('='*60)
+    for bp in breakpoints:
+        gap = bp['prob_modelo'] - bp['prob_calibrada']
+        print(f"  prob_modelo~{bp['prob_modelo']:5.1f}  →  prob_calibrada={bp['prob_calibrada']:5.1f}  (n={bp['n']}, gap={gap:+.1f}pp)")
+
+    with open(CALIB_PROB_JSON, 'w', encoding='utf-8') as f:
+        json.dump({
+            'generado_en': datetime.now(PERU_TZ).isoformat(),
+            'n_total': len(ind),
+            'breakpoints': breakpoints,
+        }, f, ensure_ascii=False, indent=2)
+    print(f'\n✅ Calibración de probabilidad guardada en {CALIB_PROB_JSON}')
+
+    return breakpoints
 
 def sincronizar_resultados(dias_atras=4):
     """
@@ -679,6 +785,8 @@ if __name__ == '__main__':
             sincronizar_resultados(dias_atras=dias)
         elif cmd == 'calibrar':
             calcular_mse()
+        elif cmd == 'calibrar-prob':
+            calcular_calibracion_prob()
         elif cmd == 'registrar-cierre':
             registrar_cierre_desde_proximos()
         elif cmd == 'clv-resumen':

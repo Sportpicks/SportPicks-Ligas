@@ -1,0 +1,46 @@
+{
+  "generado_en": "2026-08-10T08:29:04.245987-05:00",
+  "n_total": 741,
+  "breakpoints": [
+    {
+      "prob_modelo": 46.34,
+      "prob_calibrada": 32.0,
+      "n": 25
+    },
+    {
+      "prob_modelo": 49.31,
+      "prob_calibrada": 43.24,
+      "n": 37
+    },
+    {
+      "prob_modelo": 50.81,
+      "prob_calibrada": 47.62,
+      "n": 21
+    },
+    {
+      "prob_modelo": 51.45,
+      "prob_calibrada": 50.0,
+      "n": 22
+    },
+    {
+      "prob_modelo": 57.6,
+      "prob_calibrada": 54.64,
+      "n": 377
+    },
+    {
+      "prob_modelo": 66.36,
+      "prob_calibrada": 57.55,
+      "n": 139
+    },
+    {
+      "prob_modelo": 72.29,
+      "prob_calibrada": 60.67,
+      "n": 89
+    },
+    {
+      "prob_modelo": 79.39,
+      "prob_calibrada": 67.74,
+      "n": 31
+    }
+  ]
+}
