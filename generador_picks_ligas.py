@@ -43,6 +43,37 @@ DIVERGENCIA_MAX_PP = 30
 DIVERGENCIA_BLEND_MIN_PP = 20
 PESO_MERCADO_EN_BLEND = 0.30
 
+# LIGAS_BAJO_VIGILANCIA: ligas donde el modelo demostró calibración
+# consistentemente mala en 3 métricas independientes (auditoría
+# 10/08/2026, 761 picks liquidados) y necesitan un piso más alto antes
+# de llegar a público/premium, en vez de confiar en que el filtro
+# genérico (PROB_MIN_PUBLICO/EV_MIN_PUBLICO) las bloquee por accidente.
+# Caso real: Brasileirão Série A (comp_4795) -- accuracy_1x2 36.4% y
+# accuracy_over25 39.4% en calibracion.json (los más bajos de las 15
+# ligas activas), sesgo_goles +0.63 (el más alto, ya con
+# factor_correccion=0.773 aplicado -- la corrección más fuerte del
+# sistema), y aun así el acierto real de sus picks de Goles (el único
+# mercado de esta liga elegible para público/premium, ver
+# CATEGORIAS_EXCLUIDAS) quedó en 48.3% (n=29) vs 57.1% del mismo mercado
+# en el resto de ligas. En la práctica el filtro genérico ya venía
+# bloqueando casi todo (solo 4 de 54 candidatos de Brasileirão llegaron
+# a público/premium en la ventana auditada, y esos 4 eran de antes del
+# fix de CATEGORIAS_EXCLUIDAS) -- esto lo hace explícito y a prueba de
+# que un cambio futuro en los pisos genéricos vuelva a dejarla pasar.
+# margen_prob/margen_ev se suman encima del piso normal (público o
+# premium según corresponda).
+LIGAS_BAJO_VIGILANCIA = {
+    'comp_4795': {'margen_prob': 15, 'margen_ev': 0.05, 'nombre': 'Brasileirão Série A'},
+}
+
+def _pasa_vigilancia_liga(pk, prob_min_base, ev_min_base):
+    """True si el pick pasa el piso reforzado de su liga (si aplica) o si
+    la liga no está en LIGAS_BAJO_VIGILANCIA (caso normal)."""
+    vig = LIGAS_BAJO_VIGILANCIA.get(pk.get('liga'))
+    if not vig:
+        return True
+    return pk['prob'] >= prob_min_base + vig['margen_prob'] and pk['ev'] >= ev_min_base + vig['margen_ev']
+
 def _prob_mercado_devigged(cuota_pick, cuotas_grupo):
     """
     Probabilidad "justa" que implica el mercado, normalizando el overround
@@ -255,7 +286,8 @@ def seleccionar_picks(todos, max_publico=3):
                if pk['prob'] >= PROB_MIN_PUBLICO
                and pk['cuota'] >= CUOTA_MIN_PUBLICO
                and EV_MIN_PUBLICO <= pk['ev'] <= EV_MAX_PUBLICO
-               and pk['categoria'] not in CATEGORIAS_EXCLUIDAS]
+               and pk['categoria'] not in CATEGORIAS_EXCLUIDAS
+               and _pasa_vigilancia_liga(pk, PROB_MIN_PUBLICO, EV_MIN_PUBLICO)]
 
     # Ordenar por EV
     validos.sort(key=lambda x: (x['prob'], x['ev']), reverse=True)
@@ -336,7 +368,8 @@ def seleccionar_premium(todos, mercados_excluidos):
          if pk['prob'] >= PROB_MIN_PATA_PREMIUM
          and 1.20 <= pk['cuota'] <= 3.00
          and pk['mercado'] not in mercados_excluidos
-         and pk['categoria'] not in CATEGORIAS_EXCLUIDAS],
+         and pk['categoria'] not in CATEGORIAS_EXCLUIDAS
+         and _pasa_vigilancia_liga(pk, PROB_MIN_PATA_PREMIUM, EV_MIN_PREMIUM)],
         key=lambda x: x['prob'], reverse=True
     )
 
@@ -406,7 +439,8 @@ def seleccionar_premium(todos, mercados_excluidos):
                 and pk['cuota'] >= CUOTA_MIN_PREMIUM
                 and EV_MIN_PREMIUM <= pk['ev'] <= EV_MAX_PREMIUM
                 and pk['mercado'] not in mercados_excluidos
-                and pk['categoria'] not in CATEGORIAS_EXCLUIDAS):
+                and pk['categoria'] not in CATEGORIAS_EXCLUIDAS
+                and _pasa_vigilancia_liga(pk, 65, EV_MIN_PREMIUM)):
                 pk['tipo'] = 'premium'
                 return [pk]
         # Último recurso — mejor pick disponible con cuota >= 1.50
@@ -415,7 +449,8 @@ def seleccionar_premium(todos, mercados_excluidos):
                 and pk['cuota'] >= 1.50
                 and pk['categoria'] not in CATEGORIAS_EXCLUIDAS
                 and EV_MIN_PREMIUM <= pk['ev'] <= EV_MAX_PREMIUM
-                and pk['mercado'] not in mercados_excluidos):
+                and pk['mercado'] not in mercados_excluidos
+                and _pasa_vigilancia_liga(pk, 62, EV_MIN_PREMIUM)):
                 pk['tipo'] = 'premium'
                 return [pk]
 
