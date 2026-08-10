@@ -46,9 +46,16 @@ def cargar_json(ruta, default):
 
 
 def _nivel_confianza(prob):
-    if prob >= 70:
+    # Umbrales rebajados (10/08/2026, junto con la calibración de
+    # probabilidad -- ver auditoría de modelo y _calibrar_prob() en
+    # generador_picks_ligas.py): prob acá ya viene calibrada desde
+    # todos_candidatos, con techo real de ~68% (nunca 90%+ como antes).
+    # Con los umbrales viejos (70/55), "Alta confianza" quedaba
+    # inalcanzable por construcción -- ningún pick podía mostrarla nunca.
+    # _calibrar_prob(70)=59.5 y _calibrar_prob(55)=52.7, redondeados.
+    if prob >= 60:
         return 'muy-alta', 'Alta confianza'
-    if prob >= 55:
+    if prob >= 53:
         return 'alta', 'Confianza media'
     return 'media', 'Especulativo'
 
