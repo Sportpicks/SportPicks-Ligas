@@ -1,0 +1,45 @@
+name: Backfill historico manual
+
+on:
+  workflow_dispatch:
+    inputs:
+      comp_ids:
+        description: 'competition_id(s) separados por coma'
+        required: true
+      session_minutos:
+        default: '300'
+        description: 'Minutos maximos de esta sesion'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Descargar historico (comp_ids especificados)
+        run: python descargar_partidos.py --historico --comp-ids "${{ inputs.comp_ids }}" --session-minutos "${{ inputs.session_minutos }}"
+
+      - name: Commit y push del historico + checkpoint
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f Data/partidos/historico.csv Data/descarga_checkpoint.json
+          git diff --staged --quiet && echo "Sin cambios que commitear." && exit 0
+          git commit -m "chore: backfill historico $(date -u +%Y-%m-%d)"
+          git push origin HEAD:main || (git fetch origin main && git rebase origin/main && git push origin HEAD:main)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
