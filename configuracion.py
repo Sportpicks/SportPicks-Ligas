@@ -27,6 +27,7 @@ THESTATS_LIGAS_PRIORITARIAS = {
     'LP1': {'id': 'comp_6981',   'nombre': 'Liga 1 Perú',                'emoji': '🇵🇪'},
     'MXA': {'id': 'comp_298265', 'nombre': 'Liga MX Apertura',           'emoji': '🇲🇽'},
     'ECU': {'id': 'comp_1917',   'nombre': 'LigaPro Serie A Ecuador',    'emoji': '🇪🇨'},
+    'ESP': {'id': 'comp_8814',   'nombre': 'LaLiga',                     'emoji': '🇪🇸'},
     'SCO': {'id': 'comp_6387',   'nombre': 'Scottish Premiership',       'emoji': '🏴󠁧󠁢󠁳󠁣󠁴󠁿'},
     'UCL': {'id': 'comp_3498',   'nombre': 'UEFA Champions League',      'emoji': '⭐'},
     'UEL': {'id': 'comp_7739',   'nombre': 'UEFA Europa League',         'emoji': '🥈'},
