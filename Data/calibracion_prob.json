@@ -1,51 +1,56 @@
 {
-  "generado_en": "2026-08-13T06:38:21.991187-05:00",
-  "n_total": 793,
+  "generado_en": "2026-08-14T06:07:13.118091-05:00",
+  "n_total": 859,
   "breakpoints": [
     {
-      "prob_modelo": 46.44,
-      "prob_calibrada": 31.03,
-      "n": 29
+      "prob_modelo": 46.43,
+      "prob_calibrada": 30.0,
+      "n": 30
     },
     {
-      "prob_modelo": 49.43,
-      "prob_calibrada": 43.18,
-      "n": 44
+      "prob_modelo": 49.7,
+      "prob_calibrada": 43.33,
+      "n": 60
     },
     {
-      "prob_modelo": 51.21,
-      "prob_calibrada": 48.84,
-      "n": 43
+      "prob_modelo": 51.26,
+      "prob_calibrada": 48.48,
+      "n": 33
     },
     {
-      "prob_modelo": 57.51,
-      "prob_calibrada": 55.1,
-      "n": 392
+      "prob_modelo": 53.66,
+      "prob_calibrada": 52.6,
+      "n": 154
     },
     {
-      "prob_modelo": 64.48,
-      "prob_calibrada": 57.41,
-      "n": 54
+      "prob_modelo": 59.33,
+      "prob_calibrada": 53.12,
+      "n": 288
     },
     {
-      "prob_modelo": 67.16,
-      "prob_calibrada": 58.42,
-      "n": 101
+      "prob_modelo": 64.46,
+      "prob_calibrada": 56.9,
+      "n": 58
     },
     {
-      "prob_modelo": 71.49,
-      "prob_calibrada": 59.46,
-      "n": 74
+      "prob_modelo": 66.83,
+      "prob_calibrada": 59.3,
+      "n": 86
     },
     {
-      "prob_modelo": 75.33,
-      "prob_calibrada": 64.0,
-      "n": 25
+      "prob_modelo": 70.99,
+      "prob_calibrada": 60.22,
+      "n": 93
     },
     {
-      "prob_modelo": 79.67,
-      "prob_calibrada": 67.74,
-      "n": 31
+      "prob_modelo": 75.18,
+      "prob_calibrada": 65.22,
+      "n": 23
+    },
+    {
+      "prob_modelo": 79.4,
+      "prob_calibrada": 67.65,
+      "n": 34
     }
   ]
 }
