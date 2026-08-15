@@ -167,7 +167,27 @@ def calcular_factor_local_liga(df_historico, liga_key, default=FACTOR_LOCAL_DEFA
 # pipeline diario, pero hasta ahora nadie lo leía de vuelta — quedaba
 # huérfano. CALIBRACION_MIN_PARTIDOS evita confiar en una muestra chica
 # (ej. 3 partidos): con eso, el factor es ruido, no señal.
-CALIBRACION_MIN_PARTIDOS = 30
+#
+# CAUSA RAÍZ REAL detectada en la auditoría de Brasileirão (15/08/2026,
+# ver task #144): con el piso viejo de 30 partidos, comp_4795 quedó con
+# factor_correccion=0.773 (calibracion.json, n=33) -- muy por fuera del
+# rango [0.88, 1.14] que muestran las demás 13 ligas calibradas ese mismo
+# día. El walk-forward completo (429 partidos históricos) mostró que la
+# media real de goles de Brasileirão (2.66) es prácticamente igual a la
+# de LaLiga (2.70) -- no hay nada estructural que justifique un recorte
+# del 22.7% al xG. La ventana de n=33 usada para ese factor_correccion
+# cayó en una racha baja en goles (media_goles_real=2.152 en esa muestra
+# puntual) que no representa la temporada completa, y al no tener piso ni
+# techo, ese ruido de muestra chica se propagó 1:1 a CADA predicción de
+# Over/Under 2.5 de la liga (probabilidad media de Over emitida: 33.3%
+# contra una frecuencia real de ~49.7% -- una brecha de -16.4pp explicada
+# casi por completo por este factor). Se aplican dos salvaguardas, mismo
+# patrón que FACTOR_LOCAL_MIN/MAX/MIN_PARTIDOS más arriba: subir el piso
+# de muestra (30→60) y acotar el factor a un rango razonable para que una
+# sola ventana ruidosa no pueda torcer el modelo un 20%+.
+CALIBRACION_MIN_PARTIDOS = 60
+CALIBRACION_FACTOR_MIN = 0.85
+CALIBRACION_FACTOR_MAX = 1.15
 _CALIBRACION_CACHE = None
 
 def _cargar_calibracion():
@@ -186,7 +206,10 @@ def factor_escala_dinamico(liga_key, factor_estatico_default):
     Prioridad de corrección de xG por liga:
     1. calibracion.json (factor_correccion recalculado a diario por
        logger_predicciones.py calcular_mse()) SI la liga ya acumuló al
-       menos CALIBRACION_MIN_PARTIDOS resultados reales.
+       menos CALIBRACION_MIN_PARTIDOS resultados reales -- acotado a
+       [CALIBRACION_FACTOR_MIN, CALIBRACION_FACTOR_MAX] para que una
+       ventana de muestra chica y ruidosa no pueda desviar el xG más de
+       ~15% en una sola corrida (ver nota de Brasileirão arriba).
     2. factor_escala_liga hardcodeado en predecir_partido (calibrado
        manualmente con una muestra histórica más grande, antes de tener
        el logger corriendo en producción).
@@ -194,7 +217,8 @@ def factor_escala_dinamico(liga_key, factor_estatico_default):
     """
     calib = _cargar_calibracion().get(liga_key)
     if calib and calib.get('partidos', 0) >= CALIBRACION_MIN_PARTIDOS:
-        return calib['factor_correccion']
+        factor = calib['factor_correccion']
+        return round(min(max(factor, CALIBRACION_FACTOR_MIN), CALIBRACION_FACTOR_MAX), 3)
     return factor_estatico_default
 
 def aplicar_shrinkage(stats, media_liga, k=None):
