@@ -12,7 +12,7 @@ from datetime import datetime, timezone, timedelta
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 os.chdir(RAIZ)
 sys.path.insert(0, RAIZ)
-from configuracion import ZONA_PERU, LIGAS
+from configuracion import ZONA_PERU, LIGAS, CATEGORIAS_EXCLUIDAS
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
 
@@ -372,6 +372,16 @@ def calcular_calibracion_prob():
     'Combinada'): su probabilidad ya es un producto de dos patas con su
     propio factor de corrección (FACTOR_CALIBRACION_COMBO), calibrarlas
     aquí también compondría dos correcciones sobre el mismo sesgo.
+
+    También se excluyen CATEGORIAS_EXCLUIDAS (1X2/Tiros/Tarjetas -- ver
+    auditoría de resultados 15/08/2026): esas categorías ya no se
+    publican (generador_picks_ligas.py) ni se eligen como es_mejor_apuesta
+    (generar_web.py), pero historial_picks.csv sigue teniendo filas viejas
+    de cuando sí se publicaban, con una curva de sesgo distinta (1X2 y
+    Tarjetas rinden 44.9%/35.7% de acierto real, muy por debajo del resto)
+    que antes se mezclaba en la misma curva isotónica que Goles/Córners/
+    Doble Op. -- distorsionando la calibración de las categorías que sí se
+    van a seguir mostrando.
     """
     if not os.path.exists(HISTORIAL_PATH):
         print('⚠️ Sin Data/historial_picks.csv todavía -- corré generar_web.py primero')
@@ -379,7 +389,8 @@ def calcular_calibracion_prob():
 
     df = pd.read_csv(HISTORIAL_PATH)
     liq = df[df['estado'].isin(['Ganado', 'Perdido'])].copy()
-    ind = liq[liq['categoria'] != 'Combinada'].copy()
+    excluidas = CATEGORIAS_EXCLUIDAS | {'Combinada'}
+    ind = liq[~liq['categoria'].isin(excluidas)].copy()
 
     if len(ind) < 200:
         print(f'⚠️ Solo {len(ind)} picks individuales liquidados -- se necesitan >=200 para calibrar con confianza, se deja calibracion_prob.json como está')
