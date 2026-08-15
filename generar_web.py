@@ -11,9 +11,19 @@ import pandas as pd
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 os.chdir(RAIZ)
 sys.path.insert(0, RAIZ)
-from configuracion import LIGAS, ZONA_PERU
+from configuracion import LIGAS, ZONA_PERU, CUOTA_MIN_PUBLICO, EV_MIN_PUBLICO
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
+
+# Auditoría de resultados (15/08/2026): 1X2 y Tarjetas son las categorías
+# de peor acierto histórico (44.9% y 35.7%, empeorando a 40.4%/27.3% en
+# las últimas 2 semanas) — ya estaban excluidas de público/premium
+# (generador_picks_ligas.py), pero mejor_apuesta() seguía pudiendo
+# elegirlas como "mejor apuesta" del partido, lo cual las mete en
+# es_mejor_apuesta (Data/historial_picks.csv) y de ahí al recap de
+# Telegram. Se excluyen acá también para que ese pool de tracking no
+# quede contaminado con los mercados más débiles.
+EXCLUIR_CATEGORIAS_MEJOR_APUESTA = {'1X2', 'Tarjetas'}
 
 # Claves = competition_id de TheStatsAPI (ver configuracion.THESTATS_LIGAS_PRIORITARIAS)
 LIGA_COLOR = {
@@ -74,17 +84,29 @@ def mejor_apuesta(p, candidatos_partido=None):
     cae al fallback anterior (1X2 + over/under 2.5 desde el propio pred).
     """
     if candidatos_partido:
-        con_ev = [c for c in candidatos_partido if c.get('ev') and c['ev'] > 0]
+        elegibles = [c for c in candidatos_partido
+                     if c.get('categoria') not in EXCLUIR_CATEGORIAS_MEJOR_APUESTA] or candidatos_partido
+        con_ev = [c for c in elegibles if c.get('ev') and c['ev'] > 0]
         elegido = max(con_ev, key=lambda c: c['ev']) if con_ev else \
-            max(candidatos_partido, key=lambda c: c.get('prob', 0))
+            max(elegibles, key=lambda c: c.get('prob', 0))
         prob = elegido.get('prob', 0)
         nivel, texto = _nivel_confianza(prob)
+        cuota = elegido.get('cuota_display', elegido.get('cuota'))
+        ev = round(elegido.get('ev', 0) or 0, 3)
+        # pasa_filtro_valor: el mismo piso que ya se exige para picks
+        # público/premium (CUOTA_MIN_PUBLICO/EV_MIN_PUBLICO). El frontend
+        # lo usa para diferenciar "pick de valor confirmado" (badge, cuota
+        # visible) de "predicción informativa" (atenuado, sin badge de EV)
+        # en la pestaña Partidos, que muestra TODOS los partidos del día
+        # sin filtrar — ver auditoría de resultados 15/08/2026.
+        pasa_filtro_valor = bool(cuota) and cuota >= CUOTA_MIN_PUBLICO and ev >= EV_MIN_PUBLICO
         return {
             'mercado': elegido.get('mercado', ''), 'prob': round(prob, 1),
-            'ev': round(elegido.get('ev', 0) or 0, 3),
+            'ev': ev,
             'emoji': elegido.get('emoji', '⚽'), 'categoria': elegido.get('categoria', ''),
             'nivel': nivel, 'texto': texto,
-            'cuota': elegido.get('cuota_display', elegido.get('cuota')),
+            'cuota': cuota,
+            'pasa_filtro_valor': pasa_filtro_valor,
         }
 
     # Fallback: sin candidatos con cuotas reales, usar solo lo que trae el
@@ -98,7 +120,12 @@ def mejor_apuesta(p, candidatos_partido=None):
         ('over25', 'Más de 2.5 goles', p.get('over_2.5', 0), p.get('ev_over25', 0), '🥅', 'Goles'),
         ('under25', 'Menos de 2.5 goles', p.get('under_2.5', 0), p.get('ev_under25', 0), '🔒', 'Goles'),
     ]
-    validos = [c for c in candidatos if c[2] >= 45] or candidatos
+    # Excluye 1X2 igual que arriba (Tarjetas no existe en este fallback,
+    # que solo cubre 1X2 + over/under 2.5). Si no queda nada tras excluir
+    # 1X2 (ambos over/under por debajo del piso de prob), se cae a los
+    # candidatos de Goles sin el piso de prob antes que reintroducir 1X2.
+    sin_1x2 = [c for c in candidatos if c[5] not in EXCLUIR_CATEGORIAS_MEJOR_APUESTA]
+    validos = [c for c in sin_1x2 if c[2] >= 45] or sin_1x2 or candidatos
     con_ev = [c for c in validos if c[3] > 0]
     elegido = max(con_ev, key=lambda c: c[3]) if con_ev else max(validos, key=lambda c: c[2])
     _, mercado, prob, ev, emoji, categoria = elegido
@@ -106,6 +133,10 @@ def mejor_apuesta(p, candidatos_partido=None):
     return {
         'mercado': mercado, 'prob': round(prob, 1), 'ev': round(ev, 3),
         'emoji': emoji, 'categoria': categoria, 'nivel': nivel, 'texto': texto,
+        # Este fallback no trae cuota de mercado real (solo corre cuando
+        # el partido no tiene candidatos con cuotas), así que nunca puede
+        # certificarse como "pick de valor".
+        'cuota': None, 'pasa_filtro_valor': False,
     }
 
 

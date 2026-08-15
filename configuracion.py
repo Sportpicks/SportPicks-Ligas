@@ -124,8 +124,11 @@ EV_MIN_PREMIUM  = 0.05   # 5%
 # debajo de la media mientras se investiga la causa, se descartan por
 # completo del panel público y como patas de combinadas premium. Revisar
 # cuando acumulen más muestra o se identifique y corrija la causa de la
-# sobreconfianza del modelo en estos dos mercados.
-CATEGORIAS_EXCLUIDAS = {'1X2', 'Tiros'}
+# sobreconfianza del modelo en estos mercados. 'Tarjetas' sumado el
+# 15/08/2026 (auditoría de resultados, 761 picks liquidados): 35.7% de
+# acierto real (n=14), 27.3% en las últimas 2 semanas -- mismo criterio
+# que 1X2/Tiros, ya excluida también de es_mejor_apuesta en generar_web.py.
+CATEGORIAS_EXCLUIDAS = {'1X2', 'Tiros', 'Tarjetas'}
 
 # Techo máximo de EV -- auditoría de modelo del 25/07/2026 (180 picks
 # liquidados, segunda vuelta tras la primera del 24/07 con 125): el bucket
