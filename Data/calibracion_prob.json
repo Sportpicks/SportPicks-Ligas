@@ -1,36 +1,31 @@
 {
-  "generado_en": "2026-08-15T11:30:35.572200-05:00",
-  "n_total": 713,
+  "generado_en": "2026-08-16T06:07:52.659390-05:00",
+  "n_total": 757,
   "breakpoints": [
     {
-      "prob_modelo": 48.5,
-      "prob_calibrada": 37.74,
-      "n": 53
+      "prob_modelo": 48.44,
+      "prob_calibrada": 36.84,
+      "n": 57
     },
     {
-      "prob_modelo": 57.75,
-      "prob_calibrada": 54.2,
-      "n": 452
+      "prob_modelo": 57.76,
+      "prob_calibrada": 53.62,
+      "n": 483
     },
     {
-      "prob_modelo": 66.89,
-      "prob_calibrada": 58.97,
-      "n": 78
+      "prob_modelo": 66.92,
+      "prob_calibrada": 58.02,
+      "n": 81
     },
     {
-      "prob_modelo": 70.98,
-      "prob_calibrada": 64.47,
-      "n": 76
+      "prob_modelo": 71.01,
+      "prob_calibrada": 65.0,
+      "n": 80
     },
     {
-      "prob_modelo": 75.25,
-      "prob_calibrada": 66.67,
-      "n": 21
-    },
-    {
-      "prob_modelo": 79.47,
-      "prob_calibrada": 66.67,
-      "n": 33
+      "prob_modelo": 77.76,
+      "prob_calibrada": 67.86,
+      "n": 56
     }
   ]
 }
