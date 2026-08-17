@@ -1,31 +1,31 @@
 {
-  "generado_en": "2026-08-16T06:11:32.346354-05:00",
-  "n_total": 757,
+  "generado_en": "2026-08-17T06:08:06.169741-05:00",
+  "n_total": 818,
   "breakpoints": [
     {
-      "prob_modelo": 48.44,
-      "prob_calibrada": 36.84,
-      "n": 57
+      "prob_modelo": 46.2,
+      "prob_calibrada": 20.0,
+      "n": 20
     },
     {
-      "prob_modelo": 57.76,
-      "prob_calibrada": 53.62,
-      "n": 483
+      "prob_modelo": 49.55,
+      "prob_calibrada": 40.48,
+      "n": 42
     },
     {
-      "prob_modelo": 66.92,
-      "prob_calibrada": 58.02,
-      "n": 81
+      "prob_modelo": 57.63,
+      "prob_calibrada": 53.85,
+      "n": 520
     },
     {
-      "prob_modelo": 71.01,
-      "prob_calibrada": 65.0,
-      "n": 80
+      "prob_modelo": 66.68,
+      "prob_calibrada": 58.89,
+      "n": 90
     },
     {
-      "prob_modelo": 77.76,
-      "prob_calibrada": 67.86,
-      "n": 56
+      "prob_modelo": 73.7,
+      "prob_calibrada": 65.75,
+      "n": 146
     }
   ]
 }
