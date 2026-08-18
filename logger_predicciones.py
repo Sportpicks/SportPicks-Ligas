@@ -347,22 +347,40 @@ def _isotonica_pava(x, y):
         for s, c, xs in fusionados
     ]
 
+CALIBRACION_PROB_MIN_N_CATEGORIA = 200
+
 def calcular_calibracion_prob():
     """
-    Calibración de probabilidad global (isotónica) -- distinta de
+    Calibración de probabilidad POR CATEGORÍA (isotónica) -- distinta de
     calcular_mse()/calibracion.json, que corrige el xG predicho por liga.
     Esta corrige la probabilidad final mostrada al usuario (prob_efectiva,
-    post-blend) contra el acierto real, agregando TODAS las ligas y
-    mercados individuales juntos.
+    post-blend) contra el acierto real.
 
-    Origen del hallazgo (auditoría de modelo 10/08/2026, 761 picks
-    liquidados de Data/historial_picks.csv): agrupando por bucket de
-    probabilidad, todo el rango 60-75% mostraba al modelo sobreconfiado
-    de 10 a 17 puntos porcentuales frente al acierto real (ej. bucket
-    70-75%: predice 72.5%, acierto real 56.5%). Brier score global 0.253,
-    prácticamente igual al de predecir siempre la tasa base (0.247) --
-    las probabilidades del modelo aportaban poca señal de calibración
-    pese a discriminar razonablemente bien en ranking.
+    Refactor 18/08/2026 (auditoría de ROI real por mercado, ver
+    CATEGORIAS_EXCLUIDAS en configuracion.py): hasta esta fecha se entrenaba
+    UNA sola curva isotónica pooleando TODAS las categorías juntas. Con
+    Goles aportando ~67% del volumen (700 de 1047 picks liquidados a la
+    fecha), esa curva única quedaba dominada por el sesgo de Goles y podía
+    calibrar mal categorías con distribución de acierto distinta (Córners,
+    Doble Op.) -- causa raíz probable de que Córners/Doble Op. mostraran
+    ROI real negativo pese a pasar el piso de EV.
+
+    Ahora se entrena una curva por categoría, con fallback a una curva
+    'Global' (la pooled de antes) para cualquier categoría que no alcance
+    CALIBRACION_PROB_MIN_N_CATEGORIA=200 muestras propias -- mismo umbral
+    que ya usaba la curva global antes de este refactor, aplicado ahora por
+    categoría para evitar sobreajuste en categorías con poca muestra (ej.
+    Doble Op. con ~34 picks liquidados a la fecha: entrenar una curva propia
+    con esa muestra sería más ruido que señal, así que usa Global hasta que
+    acumule 200). generador_picks_ligas._calibrar_prob(prob, categoria) hace
+    ese lookup con fallback en producción.
+
+    Origen del hallazgo original (auditoría de modelo 10/08/2026, 761 picks
+    liquidados): agrupando por bucket de probabilidad, todo el rango 60-75%
+    mostraba al modelo sobreconfiado de 10 a 17 puntos porcentuales frente
+    al acierto real (ej. bucket 70-75%: predice 72.5%, acierto real 56.5%).
+    Brier score global 0.253, prácticamente igual al de predecir siempre la
+    tasa base (0.247).
 
     Se usa Data/historial_picks.csv (no predicciones_log.csv) a propósito:
     es la población exacta a la que se le va a aplicar esta calibración en
@@ -373,19 +391,26 @@ def calcular_calibracion_prob():
     propio factor de corrección (FACTOR_CALIBRACION_COMBO), calibrarlas
     aquí también compondría dos correcciones sobre el mismo sesgo.
 
-    También se excluyen CATEGORIAS_EXCLUIDAS (1X2/Tiros/Tarjetas -- ver
-    auditoría de resultados 15/08/2026): esas categorías ya no se
-    publican (generador_picks_ligas.py) ni se eligen como es_mejor_apuesta
-    (generar_web.py), pero historial_picks.csv sigue teniendo filas viejas
-    de cuando sí se publicaban, con una curva de sesgo distinta (1X2 y
-    Tarjetas rinden 44.9%/35.7% de acierto real, muy por debajo del resto)
-    que antes se mezclaba en la misma curva isotónica que Goles/Córners/
-    Doble Op. -- distorsionando la calibración de las categorías que sí se
-    van a seguir mostrando.
+    También se excluyen CATEGORIAS_EXCLUIDAS (1X2/Tiros/Tarjetas/Córners --
+    ver auditorías de resultados 15/08/2026 y 18/08/2026): esas categorías
+    ya no se publican (generador_picks_ligas.py) ni se eligen como
+    es_mejor_apuesta (generar_web.py), pero historial_picks.csv sigue
+    teniendo filas viejas de cuando sí se publicaban, con una curva de
+    sesgo distinta que distorsionaría tanto la curva Global como cualquier
+    curva propia si se dejaran entrar.
+
+    No se aplica decaimiento temporal / límite de antigüedad a la muestra:
+    a la fecha de este refactor historial_picks.csv cubre apenas 27 días
+    (21/07 al 17/08/2026), muy por debajo de cualquier horizonte donde el
+    mercado podría considerarse 'obsoleto'. Filtrar por antigüedad ahora
+    reduciría aún más la muestra de categorías chicas justo cuando más la
+    necesitan para salir del fallback a Global -- iría en contra del propio
+    umbral de 200 que se acaba de introducir. Revisar cuando el histórico
+    acumule varios meses de datos (ver hueco arriba: CALIBRACION_PROB_MIN_N_CATEGORIA).
     """
     if not os.path.exists(HISTORIAL_PATH):
         print('⚠️ Sin Data/historial_picks.csv todavía -- corré generar_web.py primero')
-        return []
+        return {}
 
     df = pd.read_csv(HISTORIAL_PATH)
     liq = df[df['estado'].isin(['Ganado', 'Perdido'])].copy()
@@ -394,32 +419,52 @@ def calcular_calibracion_prob():
 
     if len(ind) < 200:
         print(f'⚠️ Solo {len(ind)} picks individuales liquidados -- se necesitan >=200 para calibrar con confianza, se deja calibracion_prob.json como está')
-        return []
+        return {}
 
     ind = ind.sort_values('prob').reset_index(drop=True)
     ind['gano'] = (ind['estado'] == 'Ganado').astype(int)
 
-    bloques = _isotonica_pava(ind['prob'].values, ind['gano'].values)
-    breakpoints = [
-        {'prob_modelo': bx, 'prob_calibrada': by, 'n': n}
-        for bx, by, n in bloques
-    ]
+    def _entrenar(sub_df):
+        bloques = _isotonica_pava(sub_df['prob'].values, sub_df['gano'].values)
+        return [
+            {'prob_modelo': bx, 'prob_calibrada': by, 'n': n}
+            for bx, by, n in bloques
+        ]
 
-    print(f'\n📊 CALIBRACIÓN DE PROBABILIDAD ({len(ind)} picks individuales, {len(breakpoints)} bloques)')
+    categorias_out = {}
+
+    # Curva Global -- pooled, como antes del refactor. Sirve de fallback
+    # para cualquier categoría sin muestra propia suficiente.
+    breakpoints_global = _entrenar(ind)
+    categorias_out['Global'] = {'n': len(ind), 'breakpoints': breakpoints_global}
+
+    print(f'\n📊 CALIBRACIÓN DE PROBABILIDAD POR CATEGORÍA ({len(ind)} picks individuales)')
     print('='*60)
-    for bp in breakpoints:
-        gap = bp['prob_modelo'] - bp['prob_calibrada']
-        print(f"  prob_modelo~{bp['prob_modelo']:5.1f}  →  prob_calibrada={bp['prob_calibrada']:5.1f}  (n={bp['n']}, gap={gap:+.1f}pp)")
+    print(f"  Global          n={len(ind):4d}  {len(breakpoints_global)} bloques")
+
+    for categoria, sub in ind.groupby('categoria'):
+        n = len(sub)
+        if n < CALIBRACION_PROB_MIN_N_CATEGORIA:
+            print(f"  {categoria:15s} n={n:4d}  <{CALIBRACION_PROB_MIN_N_CATEGORIA} -- usa fallback Global")
+            continue
+        sub = sub.sort_values('prob').reset_index(drop=True)
+        breakpoints_cat = _entrenar(sub)
+        categorias_out[categoria] = {'n': n, 'breakpoints': breakpoints_cat}
+        print(f"  {categoria:15s} n={n:4d}  {len(breakpoints_cat)} bloques  (curva propia)")
+        for bp in breakpoints_cat:
+            gap = bp['prob_modelo'] - bp['prob_calibrada']
+            print(f"      prob_modelo~{bp['prob_modelo']:5.1f}  →  prob_calibrada={bp['prob_calibrada']:5.1f}  (n={bp['n']}, gap={gap:+.1f}pp)")
 
     with open(CALIB_PROB_JSON, 'w', encoding='utf-8') as f:
         json.dump({
             'generado_en': datetime.now(PERU_TZ).isoformat(),
             'n_total': len(ind),
-            'breakpoints': breakpoints,
+            'min_n_categoria': CALIBRACION_PROB_MIN_N_CATEGORIA,
+            'categorias': categorias_out,
         }, f, ensure_ascii=False, indent=2)
     print(f'\n✅ Calibración de probabilidad guardada en {CALIB_PROB_JSON}')
 
-    return breakpoints
+    return categorias_out
 
 def sincronizar_resultados(dias_atras=4):
     """

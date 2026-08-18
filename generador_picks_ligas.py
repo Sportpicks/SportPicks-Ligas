@@ -85,34 +85,54 @@ CALIB_PROB_JSON = os.path.join(RAIZ, 'Data', 'calibracion_prob.json')
 _CALIB_PROB_CACHE = None
 
 def _cargar_calibracion_prob():
-    """Carga (una sola vez por proceso) los breakpoints de calibración de
-    probabilidad generados por logger_predicciones.py calcular_calibracion_prob().
-    Devuelve [] si el archivo no existe todavía (primera corrida antes de
-    que el pipeline lo genere) -- en ese caso _calibrar_prob() es no-op."""
+    """Carga (una sola vez por proceso) el dict {categoria: {n, breakpoints}}
+    generado por logger_predicciones.py calcular_calibracion_prob().
+    Devuelve {} si el archivo no existe todavía (primera corrida antes de
+    que el pipeline lo genere) -- en ese caso _calibrar_prob() es no-op.
+
+    Refactor 18/08/2026: antes el JSON era un array plano de breakpoints
+    (una sola curva pooled). Ahora está anidado por categoría con una
+    entrada 'Global' de fallback -- ver logger_predicciones.calcular_calibracion_prob
+    para el detalle completo. Si el archivo en disco todavía tiene el
+    formato viejo (plano, sin clave 'categorias' -- puede pasar en el
+    primer ciclo del pipeline tras este despliegue, antes de que
+    calibrar-prob regenere el archivo), se ignora y se trata como si no
+    hubiera calibración todavía (no-op) en vez de reventar."""
     global _CALIB_PROB_CACHE
     if _CALIB_PROB_CACHE is not None:
         return _CALIB_PROB_CACHE
     if not os.path.exists(CALIB_PROB_JSON):
-        _CALIB_PROB_CACHE = []
+        _CALIB_PROB_CACHE = {}
         return _CALIB_PROB_CACHE
     with open(CALIB_PROB_JSON, encoding='utf-8') as f:
         data = json.load(f)
-    _CALIB_PROB_CACHE = data.get('breakpoints', [])
+    _CALIB_PROB_CACHE = data.get('categorias', {})
     return _CALIB_PROB_CACHE
 
-def _calibrar_prob(prob):
+def _calibrar_prob(prob, categoria=None):
     """
     Corrige la sobreconfianza del modelo (auditoría 10/08/2026: rango
     60-75% sobreconfiado 10-17pp frente al acierto real, Brier score 0.253
     -- ver nota larga en logger_predicciones.calcular_calibracion_prob).
     Interpola linealmente entre los breakpoints (x=prob_modelo,
-    y=prob_calibrada) de Data/calibracion_prob.json. Por debajo del primer
-    breakpoint o encima del último, se usa el valor calibrado del extremo
-    más cercano (clamp) en vez de extrapolar -- no hay datos que respalden
-    una extrapolación más allá del rango observado.
-    Si no hay calibración disponible todavía, devuelve prob sin tocar.
+    y=prob_calibrada) de la curva de `categoria` en Data/calibracion_prob.json.
+    Por debajo del primer breakpoint o encima del último, se usa el valor
+    calibrado del extremo más cercano (clamp) en vez de extrapolar -- no
+    hay datos que respalden una extrapolación más allá del rango observado.
+
+    Refactor 18/08/2026 (per-categoría, ver calcular_calibracion_prob):
+    usa la curva propia de `categoria` si existe (>=200 muestras propias),
+    si no cae a la curva 'Global' (pooled, mismo criterio que antes del
+    refactor). Si tampoco hay 'Global' (archivo no generado todavía) o no
+    se pasa categoria, devuelve prob sin tocar.
     """
-    breakpoints = _cargar_calibracion_prob()
+    categorias = _cargar_calibracion_prob()
+    if not categorias:
+        return prob
+    entrada = categorias.get(categoria) or categorias.get('Global')
+    if not entrada:
+        return prob
+    breakpoints = entrada.get('breakpoints', [])
     if not breakpoints:
         return prob
     xs = [b['prob_modelo'] for b in breakpoints]
@@ -184,15 +204,17 @@ def generar_candidatos(pred, cuotas):
         if prob_efectiva < 50:
             return  # el blend puede bajar la prob por debajo del piso público
 
-        # Calibración de probabilidad (auditoría 10/08/2026) -- ver
-        # _calibrar_prob() más arriba. Se aplica DESPUÉS del blend con
-        # mercado (prob_efectiva ya incluye esa corrección) y ANTES del
-        # cálculo de EV, para que el EV mostrado refleje la probabilidad
-        # ya corregida y no la cruda sobreconfiada. prob_pre_calibracion
-        # se guarda para poder auditar el efecto de esta corrección más
-        # adelante sin perder el dato original.
+        # Calibración de probabilidad (auditoría 10/08/2026, refactor por
+        # categoría 18/08/2026) -- ver _calibrar_prob() más arriba. Se
+        # aplica DESPUÉS del blend con mercado (prob_efectiva ya incluye
+        # esa corrección) y ANTES del cálculo de EV, para que el EV
+        # mostrado refleje la probabilidad ya corregida y no la cruda
+        # sobreconfiada. prob_pre_calibracion se guarda para poder auditar
+        # el efecto de esta corrección más adelante sin perder el dato
+        # original. Se pasa `categoria` para usar su curva propia si tiene
+        # >=200 muestras liquidadas, si no cae a la curva Global.
         prob_pre_calibracion = prob_efectiva
-        prob_efectiva = _calibrar_prob(prob_efectiva)
+        prob_efectiva = _calibrar_prob(prob_efectiva, categoria)
         if prob_efectiva < 50:
             return  # la calibración también puede bajar la prob del piso
 
