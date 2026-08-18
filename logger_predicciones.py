@@ -20,6 +20,13 @@ LOG_PRED   = os.path.join(RAIZ, 'Data', 'predicciones_log.csv')
 LOG_RESULT = os.path.join(RAIZ, 'Data', 'resultados_log.csv')
 CALIB_JSON = os.path.join(RAIZ, 'Data', 'calibracion.json')
 CALIB_PROB_JSON = os.path.join(RAIZ, 'Data', 'calibracion_prob.json')
+# Log append-only (una línea por corrida del pipeline) para auditar cuándo
+# cada categoría cruza CALIBRACION_PROB_MIN_N_CATEGORIA y gana su propia
+# curva isotónica -- ver calcular_calibracion_prob() más abajo. Sin esto,
+# el único rastro del cruce quedaba enterrado en logs de GitHub Actions
+# que rotan; con esto queda en el repo, versionado, consultable con
+# pandas/jq en cualquier momento.
+CALIB_PROB_HISTORIAL_JSONL = os.path.join(RAIZ, 'Data', 'calibracion_prob_historial.jsonl')
 
 # ── Columnas del log de predicciones ──
 COLS_PRED = [
@@ -432,6 +439,30 @@ def calcular_calibracion_prob():
         ]
 
     categorias_out = {}
+    # n de CADA categoría del pool elegible (tenga curva propia o no) --
+    # para el log de auditoría de abajo, que necesita ver la progresión de
+    # las categorías que siguen en fallback, no solo las que ya cruzaron.
+    n_por_categoria = {cat: len(sub) for cat, sub in ind.groupby('categoria')}
+
+    # Categorías que YA tenían curva propia en la corrida anterior (leído
+    # de Data/calibracion_prob_historial.jsonl) -- para detectar el cruce
+    # exacto de hoy comparando contra el estado de ayer. Si el log no
+    # existe todavía (primera corrida de este mecanismo) o está vacío,
+    # se asume vacío: cualquier categoría con curva propia hoy se reporta
+    # como cruce (razonable -- es la primera vez que se audita).
+    categorias_con_curva_ayer = set()
+    if os.path.exists(CALIB_PROB_HISTORIAL_JSONL):
+        try:
+            with open(CALIB_PROB_HISTORIAL_JSONL, encoding='utf-8') as f:
+                lineas = [l for l in f if l.strip()]
+            if lineas:
+                ultimo = json.loads(lineas[-1])
+                categorias_con_curva_ayer = {
+                    cat for cat, info in ultimo.get('categorias', {}).items()
+                    if info.get('tiene_curva_propia')
+                }
+        except (json.JSONDecodeError, OSError):
+            pass  # log corrupto/inaccesible -- no bloquea la calibración, solo el log de auditoría
 
     # Curva Global -- pooled, como antes del refactor. Sirve de fallback
     # para cualquier categoría sin muestra propia suficiente.
@@ -445,7 +476,8 @@ def calcular_calibracion_prob():
     for categoria, sub in ind.groupby('categoria'):
         n = len(sub)
         if n < CALIBRACION_PROB_MIN_N_CATEGORIA:
-            print(f"  {categoria:15s} n={n:4d}  <{CALIBRACION_PROB_MIN_N_CATEGORIA} -- usa fallback Global")
+            faltan = CALIBRACION_PROB_MIN_N_CATEGORIA - n
+            print(f"  {categoria:15s} n={n:4d}  <{CALIBRACION_PROB_MIN_N_CATEGORIA} -- usa fallback Global (faltan {faltan})")
             continue
         sub = sub.sort_values('prob').reset_index(drop=True)
         breakpoints_cat = _entrenar(sub)
@@ -455,14 +487,45 @@ def calcular_calibracion_prob():
             gap = bp['prob_modelo'] - bp['prob_calibrada']
             print(f"      prob_modelo~{bp['prob_modelo']:5.1f}  →  prob_calibrada={bp['prob_calibrada']:5.1f}  (n={bp['n']}, gap={gap:+.1f}pp)")
 
+    # Cruces de hoy: categorías con curva propia AHORA que ayer todavía
+    # estaban en fallback Global -- el evento puntual que dispara la
+    # auditoría manual de su primera curva independiente.
+    categorias_con_curva_hoy = {c for c in categorias_out if c != 'Global'}
+    cruces_hoy = sorted(categorias_con_curva_hoy - categorias_con_curva_ayer)
+    if cruces_hoy:
+        print('\n🎯 CRUCE DE UMBRAL DETECTADO -- primera curva isotónica independiente:')
+        for cat in cruces_hoy:
+            print(f"   {cat}: n={n_por_categoria[cat]} (>= {CALIBRACION_PROB_MIN_N_CATEGORIA}) -- revisar sus breakpoints arriba antes de confiar ciegamente en la curva nueva")
+
+    generado_en = datetime.now(PERU_TZ).isoformat()
+
     with open(CALIB_PROB_JSON, 'w', encoding='utf-8') as f:
         json.dump({
-            'generado_en': datetime.now(PERU_TZ).isoformat(),
+            'generado_en': generado_en,
             'n_total': len(ind),
             'min_n_categoria': CALIBRACION_PROB_MIN_N_CATEGORIA,
             'categorias': categorias_out,
         }, f, ensure_ascii=False, indent=2)
     print(f'\n✅ Calibración de probabilidad guardada en {CALIB_PROB_JSON}')
+
+    # Log append-only de auditoría (una línea JSON por corrida) -- registra
+    # el n de TODAS las categorías del pool elegible (tengan curva propia o
+    # no) y la lista de cruces detectados hoy. Permite reconstruir, sin
+    # tocar logs de GitHub Actions, la fecha exacta en que cada categoría
+    # cruzó el umbral y auditar su primera curva desde ese momento.
+    entrada_historial = {
+        'generado_en': generado_en,
+        'n_total': len(ind),
+        'min_n_categoria': CALIBRACION_PROB_MIN_N_CATEGORIA,
+        'categorias': {
+            cat: {'n': n, 'tiene_curva_propia': cat in categorias_con_curva_hoy}
+            for cat, n in n_por_categoria.items()
+        },
+        'cruces_hoy': cruces_hoy,
+    }
+    with open(CALIB_PROB_HISTORIAL_JSONL, 'a', encoding='utf-8') as f:
+        f.write(json.dumps(entrada_historial, ensure_ascii=False) + '\n')
+    print(f'📝 Registro de auditoría anexado a {CALIB_PROB_HISTORIAL_JSONL}')
 
     return categorias_out
 
