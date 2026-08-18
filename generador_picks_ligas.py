@@ -385,7 +385,19 @@ def seleccionar_picks(todos, max_publico=3):
 
     # PREMIUM PRIMERO — seleccionar antes que el público
     premium = seleccionar_premium(todos, [])
-    mercados_premium = set(pk['mercado'] for pk in premium)
+    # BUG encontrado en auditoría de picks del 18/08/2026: esto era
+    # `set(pk['mercado'] for pk in premium)` -- comparaba solo el NOMBRE
+    # del mercado ("Menos de 2.5 goles"), no partido+mercado. Como ese
+    # nombre es una etiqueta genérica que se repite en decenas de partidos
+    # (Goles es ~95% del volumen elegible), en cuanto el premium del día
+    # salía con un mercado de Goles, la regla de "no usar el mercado exacto
+    # del premium" (pensada para evitar duplicar la MISMA pata en ambos
+    # paneles) terminaba excluyendo ese mercado de TODOS los partidos del
+    # público -- vació el panel público en días donde había candidatos
+    # válidos de sobra (caso real: São Paulo vs Bolívar, EV +11.5%,
+    # bloqueado solo porque el premium de ese día también era "Menos de
+    # 2.5 goles" de otro partido). Fix: comparar por (partido, mercado).
+    mercados_premium = set((pk['partido'], pk['mercado']) for pk in premium)
     partidos_premium = set(pk['partido'].split(' + ')[0] for pk in premium)
 
     # Panel público — max 3, diversidad, excluir mercados del premium
@@ -399,8 +411,8 @@ def seleccionar_picks(todos, max_publico=3):
         partido = pk['partido']
         cat = pk['categoria']
 
-        # No usar el mercado exacto del premium
-        if pk['mercado'] in mercados_premium:
+        # No usar la misma pata exacta (partido + mercado) del premium
+        if (partido, pk['mercado']) in mercados_premium:
             continue
         # Max 1 pick por partido
         if partidos_usados.get(partido, 0) >= 1:
