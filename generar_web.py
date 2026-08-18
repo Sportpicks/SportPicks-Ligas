@@ -23,7 +23,15 @@ PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
 # es_mejor_apuesta (Data/historial_picks.csv) y de ahí al recap de
 # Telegram. Se excluyen acá también para que ese pool de tracking no
 # quede contaminado con los mercados más débiles.
-EXCLUIR_CATEGORIAS_MEJOR_APUESTA = {'1X2', 'Tarjetas'}
+# 'Córners' y 'Doble Op.' sumados el 18/08/2026 (auditoría cruzando
+# historial_picks.csv contra cuota real, últimos 14-30 días): Córners
+# ROI real -14.9% a -20.6% (gana 46.9-50% vs 58.4-58.7% implícito por
+# cuota), Doble Op. ROI real -12.5% a -16.7% (gana 61.9-65% vs 74.4-74.5%
+# implícito) -- ambos perdiendo dinero real pese a acierto crudo
+# aparentemente decente en el caso de Doble Op. Córners además ya se
+# excluyó de CATEGORIAS_EXCLUIDAS (configuracion.py) por estar en el 41%
+# de los picks públicos recientes.
+EXCLUIR_CATEGORIAS_MEJOR_APUESTA = {'1X2', 'Tarjetas', 'Córners', 'Doble Op.'}
 
 # Claves = competition_id de TheStatsAPI (ver configuracion.THESTATS_LIGAS_PRIORITARIAS)
 LIGA_COLOR = {

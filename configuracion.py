@@ -128,7 +128,15 @@ EV_MIN_PREMIUM  = 0.05   # 5%
 # 15/08/2026 (auditoría de resultados, 761 picks liquidados): 35.7% de
 # acierto real (n=14), 27.3% en las últimas 2 semanas -- mismo criterio
 # que 1X2/Tiros, ya excluida también de es_mejor_apuesta en generar_web.py.
-CATEGORIAS_EXCLUIDAS = {'1X2', 'Tiros', 'Tarjetas'}
+# 'Córners' sumado el 18/08/2026 (auditoría de resultados, cruce contra
+# cuota real): ROI real de -14.9% a -20.6% en los últimos 14-30 días
+# (pool completo), ganando 46.9-50% cuando la cuota implícita exigía
+# 58.4-58.7% para empatar -- estaba en el 41% de los picks públicos de
+# las últimas 2 semanas (12 de 29), inyectando ROI negativo directo a
+# suscriptores. Causa probable: la calibración isotónica de probabilidad
+# (calcular_calibracion_prob) agrupa todas las categorías en una sola
+# curva dominada en volumen por Goles -- pendiente separar por mercado.
+CATEGORIAS_EXCLUIDAS = {'1X2', 'Tiros', 'Tarjetas', 'Córners'}
 
 # Techo máximo de EV -- auditoría de modelo del 25/07/2026 (180 picks
 # liquidados, segunda vuelta tras la primera del 24/07 con 125): el bucket
