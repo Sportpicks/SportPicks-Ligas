@@ -46,6 +46,27 @@ COLS_PRED = [
     'cuota_1_cierre', 'cuota_x_cierre', 'cuota_2_cierre',
     'cuota_over_25_cierre', 'cuota_under_25_cierre',
     'clv_1x2_pct', 'cierre_registrado_en',
+    # 18/08/2026: extensión de CLV a Goles (95.4% del volumen elegible,
+    # ver auditoría de calibración por categoría) -- cuota_over_25_cierre/
+    # cuota_under_25_cierre ya se capturaban desde el CLV original pero
+    # quedaban sin usar. clv_over25_pct y clv_under25_pct se calculan por
+    # separado (no un solo 'clv_ou25_pct' promediando lados) porque son
+    # dos lados de la misma línea con lecturas de CLV potencialmente
+    # distintas -- guardar ambos permite, más adelante, cruzar contra
+    # historial_picks.csv y usar el lado que corresponda al pick real
+    # (Más/Menos de 2.5), en vez de asumir un solo lado como proxy fijo
+    # (que es lo que hace clv_1x2_pct hoy con 'cuota_1', una limitación
+    # conocida y no resuelta en este cambio).
+    # bookmaker_1x2_cierre / bookmaker_ou25_cierre: de qué casa vino la
+    # cuota "de cierre" (ver descargar_partidos._buscar_precio_full) --
+    # permite filtrar el análisis de CLV por fuente ("solo Pinnacle") en
+    # vez de mezclar bookmakers sin dejar rastro. No se captura el
+    # bookmaker de PUBLICACIÓN todavía (auto_registrar_predicciones no lo
+    # trackea) -- queda en el backlog: sin eso, filtrar solo por
+    # bookmaker_cierre no garantiza "mismo libro en ambos extremos", solo
+    # "el cierre fue de una fuente confiable".
+    'clv_over25_pct', 'clv_under25_pct',
+    'bookmaker_1x2_cierre', 'bookmaker_ou25_cierre',
 ]
 
 # ── Columnas del log de resultados ──
@@ -637,6 +658,14 @@ def registrar_cierre_desde_proximos():
     pendientes = df_pred[(df_pred['fecha'] == hoy) & sin_cierre]
     actualizados = 0
 
+    # Columnas de texto -- si acaban de crearse (cargar_log las rellena con
+    # pd.NA), pandas les infiere dtype float64 por default y asignarles un
+    # string más abajo dispara FutureWarning (deprecado, será error en una
+    # versión futura de pandas). Cast explícito a object antes de escribir.
+    for col in ('bookmaker_1x2_cierre', 'bookmaker_ou25_cierre', 'cierre_registrado_en'):
+        if col in df_pred and df_pred[col].dtype != object:
+            df_pred[col] = df_pred[col].astype(object)
+
     for idx, row in pendientes.iterrows():
         mask = ((df_prox['local'] == row['local']) &
                 (df_prox['visitante'] == row['visitante']) &
@@ -647,11 +676,18 @@ def registrar_cierre_desde_proximos():
         c1c = prox.get('c1', 0) or None
         cxc = prox.get('cx', 0) or None
         c2c = prox.get('c2', 0) or None
+        overc = prox.get('over_2.5', 0) or None
+        underc = prox.get('under_2.5', 0) or None
         df_pred.loc[idx, 'cuota_1_cierre'] = c1c
         df_pred.loc[idx, 'cuota_x_cierre'] = cxc
         df_pred.loc[idx, 'cuota_2_cierre'] = c2c
-        df_pred.loc[idx, 'cuota_over_25_cierre'] = prox.get('over_2.5', 0) or None
-        df_pred.loc[idx, 'cuota_under_25_cierre'] = prox.get('under_2.5', 0) or None
+        df_pred.loc[idx, 'cuota_over_25_cierre'] = overc
+        df_pred.loc[idx, 'cuota_under_25_cierre'] = underc
+        # 18/08/2026: bookmaker de la cuota de cierre (ver
+        # descargar_partidos._buscar_precio_full / COLUMNAS_PROX) -- '' si
+        # proximos.csv es de antes de este cambio (columna ausente).
+        df_pred.loc[idx, 'bookmaker_1x2_cierre'] = prox.get('bookmaker_1x2') or None
+        df_pred.loc[idx, 'bookmaker_ou25_cierre'] = prox.get('bookmaker_ou25') or None
 
         c1_pub = row.get('cuota_1', 0)
         if c1_pub and c1c:
@@ -660,6 +696,22 @@ def registrar_cierre_desde_proximos():
             # capturó algo real antes de que el mercado terminara de
             # ajustarse. Negativo = el mercado se movió en contra.
             df_pred.loc[idx, 'clv_1x2_pct'] = round((float(c1_pub) / float(c1c) - 1) * 100, 2)
+
+        # 18/08/2026: mismo cálculo para Goles (Over/Under 2.5) -- 95.4%
+        # del volumen elegible tras las exclusiones de categorías (ver
+        # calcular_calibracion_prob). Dos columnas separadas, no un
+        # promedio: son dos lados de la misma línea, cada uno con su
+        # propio CLV; se cruzan más adelante contra el pick real
+        # (Más/Menos de 2.5) en historial_picks.csv en vez de asumir un
+        # solo lado fijo como proxy (limitación conocida de clv_1x2_pct,
+        # que siempre usa 'cuota_1' sin importar si el pick fue 1/X/2).
+        over_pub = row.get('cuota_over_25', 0)
+        if over_pub and overc:
+            df_pred.loc[idx, 'clv_over25_pct'] = round((float(over_pub) / float(overc) - 1) * 100, 2)
+        under_pub = row.get('cuota_under_25', 0)
+        if under_pub and underc:
+            df_pred.loc[idx, 'clv_under25_pct'] = round((float(under_pub) / float(underc) - 1) * 100, 2)
+
         df_pred.loc[idx, 'cierre_registrado_en'] = datetime.now(PERU_TZ).isoformat()
         actualizados += 1
 
@@ -818,18 +870,57 @@ def calcular_clv_resumen():
     consistente en el tiempo es la señal estándar de la industria de que un
     modelo tiene edge real, independiente de si los resultados puntuales
     salieron a favor o en contra (varianza de corto plazo).
+
+    18/08/2026: extendido de solo 1X2 a también Goles (Over 2.5 / Under
+    2.5) -- ver clv_over25_pct/clv_under25_pct en registrar_cierre_desde_proximos.
+    Además reporta el desglose 'solo Pinnacle' cuando hay columna
+    bookmaker_*_cierre disponible: mezclar Pinnacle/Bet365/fallback sin
+    distinguir inyecta ruido de selección de bookmaker en la métrica, así
+    que el corte por fuente es el número en el que más se puede confiar
+    (aunque tenga menos muestra que el agregado).
     """
     df_pred = cargar_log(LOG_PRED, COLS_PRED)
-    con_clv = df_pred.dropna(subset=['clv_1x2_pct']) if 'clv_1x2_pct' in df_pred else df_pred.iloc[0:0]
-    if len(con_clv) == 0:
+
+    def _resumen_mercado(nombre, col_clv, col_bookmaker=None):
+        if col_clv not in df_pred:
+            return None
+        con_clv = df_pred.dropna(subset=[col_clv])
+        if len(con_clv) == 0:
+            return None
+        clv_prom = float(con_clv[col_clv].mean())
+        pct_positivo = float((con_clv[col_clv] > 0).mean() * 100)
+        print(f'\n📈 CLV {nombre} ({len(con_clv)} picks con cierre registrado)')
+        print(f'   CLV promedio: {clv_prom:+.2f}%')
+        print(f'   % de picks con CLV positivo: {pct_positivo:.1f}%')
+        resultado = {'n': len(con_clv), 'clv_promedio_pct': round(clv_prom, 2), 'pct_clv_positivo': round(pct_positivo, 1)}
+
+        if col_bookmaker and col_bookmaker in con_clv:
+            solo_pinnacle = con_clv[con_clv[col_bookmaker] == 'Pinnacle']
+            if len(solo_pinnacle) > 0:
+                clv_prom_p = float(solo_pinnacle[col_clv].mean())
+                pct_pos_p = float((solo_pinnacle[col_clv] > 0).mean() * 100)
+                print(f'   -- solo Pinnacle (n={len(solo_pinnacle)}): CLV promedio {clv_prom_p:+.2f}%, {pct_pos_p:.1f}% positivo')
+                resultado['pinnacle'] = {
+                    'n': len(solo_pinnacle),
+                    'clv_promedio_pct': round(clv_prom_p, 2),
+                    'pct_clv_positivo': round(pct_pos_p, 1),
+                }
+        return resultado
+
+    out = {}
+    r_1x2 = _resumen_mercado('1X2', 'clv_1x2_pct', 'bookmaker_1x2_cierre')
+    if r_1x2:
+        out['1X2'] = r_1x2
+    r_over = _resumen_mercado('GOLES (Over 2.5)', 'clv_over25_pct', 'bookmaker_ou25_cierre')
+    if r_over:
+        out['Over25'] = r_over
+    r_under = _resumen_mercado('GOLES (Under 2.5)', 'clv_under25_pct', 'bookmaker_ou25_cierre')
+    if r_under:
+        out['Under25'] = r_under
+
+    if not out:
         print('⚠️ Sin datos de CLV todavía -- corré registrar-cierre unos días')
-        return {}
-    clv_prom = float(con_clv['clv_1x2_pct'].mean())
-    pct_positivo = float((con_clv['clv_1x2_pct'] > 0).mean() * 100)
-    print(f'\n📈 CLV RESUMEN ({len(con_clv)} picks con cierre registrado)')
-    print(f'   CLV promedio: {clv_prom:+.2f}%')
-    print(f'   % de picks con CLV positivo: {pct_positivo:.1f}%')
-    return {'n': len(con_clv), 'clv_promedio_pct': round(clv_prom, 2), 'pct_clv_positivo': round(pct_positivo, 1)}
+    return out
 
 def auto_registrar_predicciones(fecha=None):
     """

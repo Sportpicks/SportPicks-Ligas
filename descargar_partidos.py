@@ -93,6 +93,18 @@ COLUMNAS_PROX = [
     # una respuesta real de /odds. Si la clave real es otra, esto devuelve
     # vacío consistentemente (no rompe nada) hasta corregirla.
     'fouls_linea', 'fouls_over_precio',
+    # Bookmaker que aportó el precio de 1X2 (c1) y de Over/Under 2.5,
+    # respectivamente -- 18/08/2026, para poder filtrar el análisis de CLV
+    # (ver registrar_cierre_desde_proximos en logger_predicciones.py) por
+    # fuente ("solo cuando el cierre vino de Pinnacle") en vez de mezclar
+    # silenciosamente Pinnacle/Bet365/lo que haya, que inyecta ruido de
+    # selección de bookmaker en una métrica que debería medir solo
+    # movimiento de línea. Nota: 'over_2.5' y 'under_2.5' se buscan por
+    # separado (ver fila_proximos) y en teoría podrían resolver a
+    # bookmakers distintos si uno cotiza un lado y no el otro -- se guarda
+    # el bookmaker del lado 'over' como representativo del mercado O/U;
+    # caso borde de baja probabilidad, no se trackea por separado.
+    'bookmaker_1x2', 'bookmaker_ou25',
 ]
 
 BOOKMAKERS_PREFERIDOS = ('Pinnacle', 'Bet365')
@@ -234,12 +246,14 @@ def _precio(nodo):
         return ''
 
 
-def _buscar_precio(bookmakers, market_key, *path):
+def _buscar_precio_full(bookmakers, market_key, *path):
     """
-    Busca un precio en <market_key> siguiendo <path> (claves anidadas,
-    p.ej. 'home' o '2.5','over'), probando cada bookmaker en orden de
-    preferencia (Pinnacle > Bet365 > resto) hasta encontrar un valor.
-    No asume que un solo bookmaker cubre todos los mercados/lineas.
+    Como _buscar_precio() de abajo, pero además devuelve qué bookmaker
+    aportó el precio -- 18/08/2026, necesario para poder filtrar el
+    análisis de CLV por fuente (ver COLUMNAS_PROX y
+    registrar_cierre_desde_proximos en logger_predicciones.py) en vez de
+    mezclar Pinnacle/Bet365/lo que haya sin dejar rastro.
+    Devuelve (precio, bookmaker) -- bookmaker es None si no encuentra nada.
     """
     por_nombre, orden = _orden_bookmakers(bookmakers)
     for nombre in orden:
@@ -251,8 +265,21 @@ def _buscar_precio(bookmakers, market_key, *path):
             nodo = nodo.get(clave)
         precio = _precio(nodo) if isinstance(nodo, dict) else ''
         if precio != '':
-            return precio
-    return ''
+            return precio, nombre
+    return '', None
+
+
+def _buscar_precio(bookmakers, market_key, *path):
+    """
+    Busca un precio en <market_key> siguiendo <path> (claves anidadas,
+    p.ej. 'home' o '2.5','over'), probando cada bookmaker en orden de
+    preferencia (Pinnacle > Bet365 > resto) hasta encontrar un valor.
+    No asume que un solo bookmaker cubre todos los mercados/lineas.
+    Wrapper sobre _buscar_precio_full() que descarta el bookmaker -- usado
+    donde no hace falta saber la fuente (cx, c2, under_2.5, btts, corners).
+    """
+    precio, _ = _buscar_precio_full(bookmakers, market_key, *path)
+    return precio
 
 
 def _buscar_precio_linea_dinamica(bookmakers, market_key, lado='over'):
@@ -290,6 +317,11 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
     sot_linea, sot_precio = _buscar_precio_linea_dinamica(bookmakers, 'match_shots_on_target', 'over')
     cards_linea, cards_precio = _buscar_precio_linea_dinamica(bookmakers, 'total_cards', 'over')
     fouls_linea, fouls_precio = _buscar_precio_linea_dinamica(bookmakers, 'total_fouls', 'over')
+    # 18/08/2026: usamos la variante _full() solo donde nos interesa saber
+    # la fuente (1X2 y Over/Under 2.5, los mercados con CLV activo) -- ver
+    # comentario en COLUMNAS_PROX.
+    c1_precio, bookmaker_1x2 = _buscar_precio_full(bookmakers, 'match_odds', 'home')
+    over25_precio, bookmaker_ou25 = _buscar_precio_full(bookmakers, 'total_goals', '2.5', 'over')
 
     return {
         'liga': liga_id, 'liga_nombre': liga_cfg['nombre'],
@@ -300,7 +332,7 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
         'jornada': _num(m.get('matchday')),
         'fase': m.get('stage_name') or '',
         'fuente': 'thestatsapi',
-        'c1': _buscar_precio(bookmakers, 'match_odds', 'home'),
+        'c1': c1_precio,
         'cx': _buscar_precio(bookmakers, 'match_odds', 'draw'),
         'c2': _buscar_precio(bookmakers, 'match_odds', 'away'),
         'shots_linea': shots_linea if shots_linea is not None else '',
@@ -311,7 +343,9 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
         'cards_over_precio': cards_precio,
         'fouls_linea': fouls_linea if fouls_linea is not None else '',
         'fouls_over_precio': fouls_precio,
-        'over_2.5': _buscar_precio(bookmakers, 'total_goals', '2.5', 'over'),
+        'bookmaker_1x2': bookmaker_1x2 or '',
+        'bookmaker_ou25': bookmaker_ou25 or '',
+        'over_2.5': over25_precio,
         'under_2.5': _buscar_precio(bookmakers, 'total_goals', '2.5', 'under'),
         'btts_si': _buscar_precio(bookmakers, 'btts', 'yes'),
         'btts_no': _buscar_precio(bookmakers, 'btts', 'no'),
