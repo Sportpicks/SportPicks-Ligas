@@ -1,14 +1,14 @@
 {
   "comp_1917": {
-    "partidos": 39,
-    "mse_goles": 1.63,
-    "mae_goles": 0.995,
-    "sesgo_goles": -0.033,
-    "accuracy_1x2": 56.4,
-    "accuracy_over25": 53.8,
-    "media_xg_pred": 2.403,
-    "media_goles_real": 2.436,
-    "factor_correccion": 1.014
+    "partidos": 40,
+    "mse_goles": 1.609,
+    "mae_goles": 0.992,
+    "sesgo_goles": -0.009,
+    "accuracy_1x2": 55.0,
+    "accuracy_over25": 52.5,
+    "media_xg_pred": 2.416,
+    "media_goles_real": 2.425,
+    "factor_correccion": 1.004
   },
   "comp_3498": {
     "partidos": 48,
@@ -33,26 +33,26 @@
     "factor_correccion": 1.11
   },
   "comp_4795": {
-    "partidos": 42,
-    "mse_goles": 3.097,
-    "mae_goles": 1.35,
-    "sesgo_goles": 0.183,
-    "accuracy_1x2": 31.0,
-    "accuracy_over25": 38.1,
-    "media_xg_pred": 2.612,
-    "media_goles_real": 2.429,
-    "factor_correccion": 0.93
+    "partidos": 43,
+    "mse_goles": 3.026,
+    "mae_goles": 1.323,
+    "sesgo_goles": 0.184,
+    "accuracy_1x2": 30.2,
+    "accuracy_over25": 39.5,
+    "media_xg_pred": 2.602,
+    "media_goles_real": 2.419,
+    "factor_correccion": 0.929
   },
   "comp_298265": {
-    "partidos": 25,
-    "mse_goles": 3.12,
-    "mae_goles": 1.391,
-    "sesgo_goles": 0.379,
-    "accuracy_1x2": 40.0,
-    "accuracy_over25": 56.0,
-    "media_xg_pred": 3.019,
-    "media_goles_real": 2.64,
-    "factor_correccion": 0.874
+    "partidos": 27,
+    "mse_goles": 3.07,
+    "mae_goles": 1.375,
+    "sesgo_goles": 0.274,
+    "accuracy_1x2": 37.0,
+    "accuracy_over25": 59.3,
+    "media_xg_pred": 3.015,
+    "media_goles_real": 2.741,
+    "factor_correccion": 0.909
   },
   "comp_408698": {
     "partidos": 158,
@@ -88,15 +88,15 @@
     "factor_correccion": 1.046
   },
   "comp_4540": {
-    "partidos": 71,
-    "mse_goles": 1.58,
-    "mae_goles": 1.054,
-    "sesgo_goles": -0.016,
-    "accuracy_1x2": 42.3,
-    "accuracy_over25": 63.4,
-    "media_xg_pred": 1.97,
-    "media_goles_real": 1.986,
-    "factor_correccion": 1.008
+    "partidos": 75,
+    "mse_goles": 1.655,
+    "mae_goles": 1.075,
+    "sesgo_goles": -0.062,
+    "accuracy_1x2": 42.7,
+    "accuracy_over25": 62.7,
+    "media_xg_pred": 1.965,
+    "media_goles_real": 2.027,
+    "factor_correccion": 1.031
   },
   "comp_720692": {
     "partidos": 31,
@@ -110,15 +110,15 @@
     "factor_correccion": 1.047
   },
   "comp_7938": {
-    "partidos": 21,
-    "mse_goles": 3.012,
-    "mae_goles": 1.404,
-    "sesgo_goles": 0.327,
-    "accuracy_1x2": 42.9,
-    "accuracy_over25": 38.1,
-    "media_xg_pred": 2.66,
-    "media_goles_real": 2.333,
-    "factor_correccion": 0.877
+    "partidos": 22,
+    "mse_goles": 3.103,
+    "mae_goles": 1.442,
+    "sesgo_goles": 0.21,
+    "accuracy_1x2": 45.5,
+    "accuracy_over25": 40.9,
+    "media_xg_pred": 2.665,
+    "media_goles_real": 2.455,
+    "factor_correccion": 0.921
   },
   "comp_6981": {
     "partidos": 36,
@@ -165,26 +165,26 @@
     "factor_correccion": 0.639
   },
   "comp_8814": {
-    "partidos": 4,
-    "mse_goles": 1.344,
-    "mae_goles": 0.964,
-    "sesgo_goles": -0.964,
-    "accuracy_1x2": 75.0,
-    "accuracy_over25": 25.0,
-    "media_xg_pred": 2.286,
-    "media_goles_real": 3.25,
-    "factor_correccion": 1.422
+    "partidos": 5,
+    "mse_goles": 1.076,
+    "mae_goles": 0.787,
+    "sesgo_goles": -0.787,
+    "accuracy_1x2": 60.0,
+    "accuracy_over25": 40.0,
+    "media_xg_pred": 2.213,
+    "media_goles_real": 3.0,
+    "factor_correccion": 1.355
   },
   "comp_8385": {
-    "partidos": 3,
-    "mse_goles": 1.25,
-    "mae_goles": 1.109,
-    "sesgo_goles": -0.241,
-    "accuracy_1x2": 33.3,
-    "accuracy_over25": 33.3,
-    "media_xg_pred": 2.759,
-    "media_goles_real": 3.0,
-    "factor_correccion": 1.087
+    "partidos": 4,
+    "mse_goles": 5.299,
+    "mae_goles": 1.876,
+    "sesgo_goles": -1.225,
+    "accuracy_1x2": 50.0,
+    "accuracy_over25": 50.0,
+    "media_xg_pred": 2.775,
+    "media_goles_real": 4.0,
+    "factor_correccion": 1.442
   },
   "comp_3809": {
     "partidos": 3,
