@@ -1,10 +1,10 @@
 {
-  "generado_en": "2026-08-18T09:49:54.075816-05:00",
-  "n_total": 734,
+  "generado_en": "2026-08-19T06:07:25.500802-05:00",
+  "n_total": 744,
   "min_n_categoria": 200,
   "categorias": {
     "Global": {
-      "n": 734,
+      "n": 744,
       "breakpoints": [
         {
           "prob_modelo": 46.25,
@@ -12,34 +12,34 @@
           "n": 22
         },
         {
-          "prob_modelo": 49.52,
-          "prob_calibrada": 44.19,
-          "n": 43
+          "prob_modelo": 49.51,
+          "prob_calibrada": 43.18,
+          "n": 44
         },
         {
-          "prob_modelo": 52.2,
+          "prob_modelo": 51.91,
           "prob_calibrada": 52.38,
-          "n": 105
+          "n": 84
         },
         {
-          "prob_modelo": 58.98,
-          "prob_calibrada": 54.7,
-          "n": 362
+          "prob_modelo": 58.64,
+          "prob_calibrada": 54.81,
+          "n": 385
         },
         {
-          "prob_modelo": 66.22,
-          "prob_calibrada": 58.06,
-          "n": 62
+          "prob_modelo": 66.19,
+          "prob_calibrada": 56.06,
+          "n": 66
         },
         {
-          "prob_modelo": 72.9,
-          "prob_calibrada": 65.71,
-          "n": 140
+          "prob_modelo": 72.86,
+          "prob_calibrada": 65.73,
+          "n": 143
         }
       ]
     },
     "Goles": {
-      "n": 700,
+      "n": 708,
       "breakpoints": [
         {
           "prob_modelo": 46.25,
@@ -47,24 +47,24 @@
           "n": 22
         },
         {
-          "prob_modelo": 49.46,
-          "prob_calibrada": 43.9,
-          "n": 41
+          "prob_modelo": 49.51,
+          "prob_calibrada": 43.18,
+          "n": 44
         },
         {
-          "prob_modelo": 51.87,
-          "prob_calibrada": 51.76,
-          "n": 85
+          "prob_modelo": 51.91,
+          "prob_calibrada": 52.38,
+          "n": 84
         },
         {
-          "prob_modelo": 59.68,
-          "prob_calibrada": 54.44,
-          "n": 417
+          "prob_modelo": 59.72,
+          "prob_calibrada": 54.29,
+          "n": 420
         },
         {
-          "prob_modelo": 73.09,
-          "prob_calibrada": 65.93,
-          "n": 135
+          "prob_modelo": 73.05,
+          "prob_calibrada": 65.94,
+          "n": 138
         }
       ]
     }
