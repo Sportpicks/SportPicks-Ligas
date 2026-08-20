@@ -71,6 +71,41 @@ PESO_MERCADO_EN_BLEND = 0.30
 # imposible por construcción.
 LIGAS_BAJO_VIGILANCIA = {
     'comp_4795': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Brasileirão Série A'},
+
+    # Sumadas el 19/08/2026 (auditoría de rendimiento, caída de acierto en
+    # mejor_apuesta 55.8%→47.1% en las últimas 2 semanas, ver hilo del
+    # 19/08 y tarea #154). Desglose por liga_nombre en Goles/mejor_apuesta
+    # mostró que UEFA Conference League, UEFA Europa League y CONMEBOL
+    # Sudamericana concentran la caída, con el mercado 'Menos de 2.5
+    # goles' derrumbándose específicamente ahí (55.7%→40.0%, n=70→30)
+    # mientras 'Más de 2.5' se mantuvo estable. Hipótesis con evidencia
+    # coherente (no solo estadística: mecanismo futbolístico identificado):
+    # julio/inicios de agosto son las rondas CLASIFICATORIAS de estas
+    # copas -- equipos grandes vs semiprofesionales, partidos desparejos y
+    # predeciblemente bajos en goles. A mediados de agosto avanzan a
+    # rondas con rivales más parejos (playoff/fase de grupos), los
+    # partidos se abren, y esa ventaja se evapora. La calibración por liga
+    # (Bloque B, ver tarea #152) no distingue todavía "misma liga, etapa
+    # distinta" -- ver Fase 2 pendiente (particionar por stage/round
+    # cuando se confirme qué campos expone TheStatsAPI). Mientras tanto,
+    # piso reforzado como torniquete, mismo margen que Brasileirão.
+    'comp_408698': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'UEFA Conference League'},
+    'comp_7739':   {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'UEFA Europa League'},
+    'comp_1615':   {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'CONMEBOL Sudamericana'},
+
+    # Ligas nuevas (LaLiga 13/08, Saudi/Eredivisie/Portugal 15/08) --
+    # vigilancia PREVENTIVA, no por mala calibración confirmada (la
+    # muestra es todavía mínima: 3-6 picks liquidados cada una a la
+    # fecha, ver tarea #154). Mismo criterio que se aplicó a Brasileirão
+    # en su momento: mejor pagar el costo de un piso más alto mientras
+    # acumulan muestra propia que dejarlas competir en igualdad de
+    # condiciones sin evidencia todavía de que su calibración sea buena.
+    # Revisar y sacar de esta lista cuando cada una acumule >=30-50
+    # picks liquidados propios y el acierto real sostenga el piso normal.
+    'comp_8814':  {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'LaLiga'},
+    'comp_45025': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Saudi Pro League'},
+    'comp_3809':  {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Eredivisie'},
+    'comp_8385':  {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Liga Portugal'},
 }
 
 def _pasa_vigilancia_liga(pk, prob_min_base, ev_min_base):
