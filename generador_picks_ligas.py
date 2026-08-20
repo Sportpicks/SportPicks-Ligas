@@ -106,6 +106,22 @@ LIGAS_BAJO_VIGILANCIA = {
     'comp_45025': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Saudi Pro League'},
     'comp_3809':  {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Eredivisie'},
     'comp_8385':  {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Liga Portugal'},
+
+    # 20/08/2026: CAF Champions League -- DORMIDA, no evidencia-driven como
+    # las de arriba. comp_08478 NO está en Data/partidos/proximos.csv (no
+    # se generan candidatos para ella hoy) y tiene 0 filas en
+    # historial_picks.csv (nunca produjo un pick público/premium/mejor_
+    # apuesta) -- este margen no tiene ningún efecto mientras siga así, es
+    # precaución estructural pura. Se agrega ahora porque el análisis de
+    # la columna `fase` de historico.csv (ver tarea Bloque B) mostró que
+    # tiene la MISMA firma qualifying-pesada que motivó esta lista (92/154
+    # partidos con fase='qualifying', 59.7% -- proporción más alta que
+    # incluso Conference League). Sin esto, el día que vuelva a aparecer
+    # en proximos.csv (temporada CAF suele reactivarse en el año) quedaría
+    # compitiendo con el piso normal hasta que otra auditoría manual la
+    # detecte semanas después -- exactamente el patrón que causó la Fase 1
+    # de este parche. Revisar cuando acumule muestra propia real.
+    'comp_08478': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'CAF Champions League'},
 }
 
 def _pasa_vigilancia_liga(pk, prob_min_base, ev_min_base):
