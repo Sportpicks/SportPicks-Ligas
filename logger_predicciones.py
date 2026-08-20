@@ -792,7 +792,49 @@ def registrar_cierre_desde_proximos():
     if actualizados:
         guardar_log(df_pred, LOG_PRED)
     print(f'✅ CLV: {actualizados} cierre(s) registrado(s) para partidos de hoy')
+    verificar_umbral_clv_goles()
     return actualizados
+
+# ── Alerta de umbral CLV de Goles (Tarea #152) ──
+# 20/08/2026: hasta este commit, el gate n>=30 para arrancar el análisis
+# de CLV como detector de señal/ruido (Track C) se chequeaba a mano --
+# nadie corría clv-resumen todos los días. Mismo patrón idempotente que
+# calcular_calibracion_prob() (Tarea #150): un JSONL append-only que solo
+# escribe un evento nuevo la primera vez que n cruza el umbral, para no
+# repetir el aviso en cada corrida diaria una vez notificado.
+CLV_GOLES_MIN_N = 30
+CLV_GOLES_HISTORIAL_JSONL = os.path.join(RAIZ, 'Data', 'clv_umbral_historial.jsonl')
+
+def verificar_umbral_clv_goles():
+    """
+    n = filas de predicciones_log.csv con clv_over25_pct o
+    clv_under25_pct no nulo (unión, no suma -- un partido puede tener
+    ambos lados poblados y cuenta una sola vez). Se llama automáticamente
+    al final de registrar_cierre_desde_proximos(), que ya corre a diario
+    en el pipeline (paso 'registrar-cierre') -- no requiere un paso nuevo
+    en pipeline_diario.yml.
+    """
+    df = cargar_log(LOG_PRED, COLS_PRED)
+    n = int(((df['clv_over25_pct'].notna()) | (df['clv_under25_pct'].notna())).sum())
+    cruzado = n >= CLV_GOLES_MIN_N
+
+    ya_notificado = False
+    if os.path.exists(CLV_GOLES_HISTORIAL_JSONL):
+        with open(CLV_GOLES_HISTORIAL_JSONL, encoding='utf-8') as f:
+            lineas = [l for l in f if l.strip()]
+        if lineas:
+            ya_notificado = json.loads(lineas[-1]).get('cruzado', False)
+
+    if cruzado and not ya_notificado:
+        registro = {
+            'generado_en': datetime.now(PERU_TZ).isoformat(),
+            'n_clv_goles': n, 'umbral': CLV_GOLES_MIN_N, 'cruzado': True,
+        }
+        os.makedirs(os.path.dirname(CLV_GOLES_HISTORIAL_JSONL), exist_ok=True)
+        with open(CLV_GOLES_HISTORIAL_JSONL, 'a', encoding='utf-8') as f:
+            f.write(json.dumps(registro, ensure_ascii=False) + '\n')
+        print(f'🎯 UMBRAL CLV DE GOLES CRUZADO: n={n} >= {CLV_GOLES_MIN_N} -- Tarea #152 lista para arrancar')
+    return n, cruzado
 
 HISTORIAL_PATH = os.path.join(RAIZ, 'Data', 'historial_picks.csv')
 
@@ -1075,6 +1117,8 @@ if __name__ == '__main__':
             registrar_cierre_desde_proximos()
         elif cmd == 'clv-resumen':
             calcular_clv_resumen()
+        elif cmd == 'verificar-clv-goles':
+            verificar_umbral_clv_goles()
         elif cmd == 'liquidar-historial':
             liquidar_historial()
         elif cmd == 'resumen':
