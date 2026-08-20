@@ -107,6 +107,23 @@ LIGAS_BAJO_VIGILANCIA = {
     'comp_3809':  {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Eredivisie'},
     'comp_8385':  {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Liga Portugal'},
 
+    # 20/08/2026: Premier League, Bundesliga, Serie A -- vigilancia
+    # PREVENTIVA, mismo criterio que LaLiga/Saudi/Eredivisie/Portugal en
+    # su momento: cero historial propio en este sistema (backfill recien
+    # pendiente de ejecutarse), sin curva de calibracion isotonica propia
+    # madura (Goles ya tiene curva propia a nivel Global/categoria, pero
+    # eso no filtra sobreestimaciones especificas de UNA liga nueva). A
+    # diferencia de las ligas periféricas del panel, estas 3 son de las
+    # más liquidas y eficientes del mundo -- un EV crudo grande aqui es
+    # mas probablemente error de modelo que ineficiencia real de mercado,
+    # asi que el piso reforzado + el filtro de divergencia (que compara
+    # contra el mercado) hacen doble trabajo de contencion. Revisar y
+    # sacar de esta lista cuando cada una acumule >=30-50 picks
+    # liquidados propios y el acierto real sostenga el piso normal.
+    'comp_3039': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Premier League'},
+    'comp_4643': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Bundesliga'},
+    'comp_5840': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Serie A'},
+
     # 20/08/2026: CAF Champions League -- DORMIDA, no evidencia-driven como
     # las de arriba. comp_08478 NO está en Data/partidos/proximos.csv (no
     # se generan candidatos para ella hoy) y tiene 0 filas en

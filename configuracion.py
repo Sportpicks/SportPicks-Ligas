@@ -36,6 +36,19 @@ THESTATS_LIGAS_PRIORITARIAS = {
     'UEL': {'id': 'comp_7739',   'nombre': 'UEFA Europa League',         'emoji': '🥈'},
     'UCO': {'id': 'comp_408698', 'nombre': 'UEFA Conference League',     'emoji': '🇪🇺'},
     'MLS': {'id': 'comp_9799',   'nombre': 'MLS',                       'emoji': '🇺🇸'},
+
+    # 20/08/2026: Premier League, Bundesliga, Serie A -- IDs verificados
+    # contra Data/thestats_ligas.csv (catalogo real de 149 competiciones,
+    # no adivinados), confirmando ademas que las copas domesticas de estas
+    # 3 ligas tienen competition_id PROPIO y separado en TheStatsAPI (FA
+    # Cup=comp_7428, EFL Cup=comp_2504, DFB Pokal=comp_3620, Coppa
+    # Italia=comp_8525) -- no hay riesgo de que descargar_partidos.py
+    # mezcle partidos de copa (con rotacion de plantilla) bajo estos IDs
+    # de liga regular. Las 3 tienen has_team_stats/xg_available/
+    # odds_available=True en el catalogo.
+    'ENG': {'id': 'comp_3039', 'nombre': 'Premier League', 'emoji': '🏴󠁧󠁢󠁥󠁮󠁧󠁿'},
+    'GER': {'id': 'comp_4643', 'nombre': 'Bundesliga',     'emoji': '🇩🇪'},
+    'ITA': {'id': 'comp_5840', 'nombre': 'Serie A',        'emoji': '🇮🇹'},
 }
 
 # LIGAS: clave = competition_id de TheStatsAPI (p.ej. 'comp_9799'), para
