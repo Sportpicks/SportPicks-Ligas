@@ -777,6 +777,13 @@ def predecir_jornada(fecha=None):
         pred['fecha'] = p['fecha']
         pred['hora'] = p.get('hora_peru', '')
         pred['liga_nombre'] = p.get('liga_nombre', liga)
+        # Fase cruda de la API (stage_name de TheStatsAPI, ya presente en
+        # proximos.csv/historico.csv: 'qualifying', 'round_of_16', '' si no
+        # aplica). Distinta de la variable local `fase` de arriba (criterio
+        # binario eliminatoria/regular usado para el modelo) -- esta es la
+        # fase real, sin transformar, para trazabilidad en los logs
+        # (Bloque B la bucketizará en el momento de la lectura, no aquí).
+        pred['fase'] = p.get('fase', '')
         predicciones.append(pred)
 
         print(f'\n  {p.get("liga_nombre", liga)} — {p["fecha"]} {p.get("hora_peru","")}')

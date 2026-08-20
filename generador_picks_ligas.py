@@ -275,6 +275,7 @@ def generar_candidatos(pred, cuotas):
             'visitante': visitante,
             'liga': pred.get('liga', ''),
             'liga_nombre': pred.get('liga_nombre', ''),
+            'fase': pred.get('fase', ''),
             'fecha': pred.get('fecha', ''),
             'hora': pred.get('hora', ''),
             'mercado': mercado,

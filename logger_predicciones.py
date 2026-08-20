@@ -67,6 +67,13 @@ COLS_PRED = [
     # "el cierre fue de una fuente confiable".
     'clv_over25_pct', 'clv_under25_pct',
     'bookmaker_1x2_cierre', 'bookmaker_ou25_cierre',
+    # 20/08/2026: fase cruda de la API (stage_name vía proximos.csv ->
+    # pred['fase'] en modelo_prediccion.py), sin bucketizar. La lógica de
+    # agrupar en 'qualifying' vs 'main_draw' vive en el futuro motor de
+    # calibración por fase (Bloque B), no aquí -- este log guarda la
+    # verdad cruda tal cual viene de TheStatsAPI ('qualifying',
+    # 'round_of_16', '' si no aplica).
+    'fase',
 ]
 
 # ── Columnas del log de resultados ──
@@ -149,6 +156,7 @@ def registrar_prediccion(pred, cuotas=None):
         'cuota_over_25': cuotas.get('over_2.5', 0),
         'cuota_under_25':cuotas.get('under_2.5', 0),
         'generado_en':   datetime.now(PERU_TZ).isoformat(),
+        'fase':          pred.get('fase', ''),
     }
 
     df = pd.concat([df, pd.DataFrame([nueva_fila])], ignore_index=True)

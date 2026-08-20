@@ -169,6 +169,9 @@ COLS_HISTORIAL = [
     'mercado', 'categoria', 'prob', 'cuota', 'ev',
     'es_publico', 'es_premium', 'es_mejor_apuesta', 'es_combo',
     'estado', 'resultado_detalle', 'registrado_en', 'liquidado_en',
+    # 20/08/2026: fase cruda de la API (stage_name), sin bucketizar --
+    # ver comentario equivalente en logger_predicciones.COLS_PRED.
+    'fase',
 ]
 
 
@@ -254,7 +257,7 @@ def archivar_historial(partidos, publicos, premium):
 
     def registrar(fecha, hora, liga, liga_nombre, local, visitante, mercado, categoria,
                   prob, cuota, ev, es_publico=False, es_premium=False,
-                  es_mejor_apuesta=False, es_combo=False, detalle=''):
+                  es_mejor_apuesta=False, es_combo=False, detalle='', fase=''):
         if not mercado:
             return
         _desactivar_snapshots_previos(fecha, local, visitante, mercado, es_publico, es_premium,
@@ -285,6 +288,7 @@ def archivar_historial(partidos, publicos, premium):
             'es_mejor_apuesta': es_mejor_apuesta, 'es_combo': es_combo,
             'estado': 'Pendiente', 'resultado_detalle': detalle,
             'registrado_en': ahora, 'liquidado_en': '',
+            'fase': fase,
         }
 
     for p in partidos:
@@ -292,12 +296,14 @@ def archivar_historial(partidos, publicos, premium):
         if ma.get('mercado'):
             registrar(p.get('fecha', ''), p.get('hora', ''), p.get('liga', ''), p.get('liga_nombre', ''),
                       p.get('local', ''), p.get('visitante', ''), ma['mercado'], ma.get('categoria', ''),
-                      ma.get('prob', 0), ma.get('cuota'), ma.get('ev', 0), es_mejor_apuesta=True)
+                      ma.get('prob', 0), ma.get('cuota'), ma.get('ev', 0), es_mejor_apuesta=True,
+                      fase=p.get('fase', ''))
 
     for pk in publicos:
         registrar(pk.get('fecha', ''), pk.get('hora', ''), pk.get('liga', ''), pk.get('liga_nombre', ''),
                   pk.get('local', ''), pk.get('visitante', ''), pk.get('mercado', ''), pk.get('categoria', ''),
-                  pk.get('prob', 0), pk.get('cuota', 0), pk.get('ev', 0), es_publico=True)
+                  pk.get('prob', 0), pk.get('cuota', 0), pk.get('ev', 0), es_publico=True,
+                  fase=pk.get('fase', ''))
 
     for pk in premium:
         es_combo = bool(pk.get('picks_combo'))
@@ -305,7 +311,7 @@ def archivar_historial(partidos, publicos, premium):
         registrar(pk.get('fecha', ''), pk.get('hora', ''), pk.get('liga', ''), pk.get('liga_nombre', ''),
                   pk.get('local', ''), pk.get('visitante', ''), pk.get('mercado', ''), pk.get('categoria', ''),
                   pk.get('prob', 0), pk.get('cuota', 0), pk.get('ev', 0), es_premium=True,
-                  es_combo=es_combo, detalle=detalle)
+                  es_combo=es_combo, detalle=detalle, fase=pk.get('fase', ''))
 
     nuevas = len(entradas)
     if nuevas and len(df) > 0:
