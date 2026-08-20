@@ -805,17 +805,62 @@ def registrar_cierre_desde_proximos():
 CLV_GOLES_MIN_N = 30
 CLV_GOLES_HISTORIAL_JSONL = os.path.join(RAIZ, 'Data', 'clv_umbral_historial.jsonl')
 
+def _muestra_clv_goles_valida():
+    """
+    Devuelve solo las filas de Goles útiles para validar CLV-vs-resultado
+    (Tarea #152 / Track C): publicadas de verdad (es_publico, es_premium
+    o es_mejor_apuesta en True), resueltas (Ganado/Perdido), y con CLV
+    capturado para el lado exacto que se publicó (Más/Menos).
+
+    CORRECCIÓN 20/08/2026: la versión anterior de verificar_umbral_clv_goles
+    contaba predicciones_log['clv_over25_pct'].notna() |
+    ['clv_under25_pct'].notna() a secas y llegó a n=69 -- sobreestimación
+    severa por 3 motivos, descubiertos al intentar correr el cruce real
+    para Track C:
+      1. registrar_cierre_desde_proximos() captura AMBOS lados de la
+         línea de Goles para cualquier partido con predicción registrada,
+         tenga o no un pick publicado en ese mercado -- 25 de 69 filas
+         eran captura informativa sin ningún pick real detrás.
+      2. historial_picks.csv acumula filas "fantasma" de snapshots
+         superados por _desactivar_snapshots_previos() (los 3 flags en
+         False, nunca fueron el pick vigente el día del partido) --
+         sin filtrar por fue_publicado se cuentan picks que nadie vio.
+      3. Partidos ya con CLV capturado pero todavía sin jugar siguen
+         'Pendiente' -- no aportan al cruce CLV-vs-resultado hasta
+         liquidarse.
+    n real verificado 20/08/2026: 13, no 69 -- y concentrado en un solo
+    día (19/08), la única fecha con tiempo suficiente para tener CLV
+    capturado Y ya liquidado desde que se desplegó CLV-para-Goles.
+    """
+    df_pred = cargar_log(LOG_PRED, COLS_PRED)
+    hist = pd.read_csv(HISTORIAL_PATH)
+
+    goles = hist[hist['mercado'].isin(['Más de 2.5 goles', 'Menos de 2.5 goles'])].copy()
+    fue_publicado = goles['es_publico'] | goles['es_premium'] | goles['es_mejor_apuesta']
+    resueltos = goles[goles['estado'].isin(['Ganado', 'Perdido']) & fue_publicado].copy()
+
+    m = resueltos.merge(
+        df_pred[['fecha', 'local', 'visitante', 'clv_over25_pct', 'clv_under25_pct']],
+        on=['fecha', 'local', 'visitante'], how='left'
+    )
+    m['clv_pick'] = m.apply(
+        lambda r: r['clv_over25_pct'] if r['mercado'] == 'Más de 2.5 goles'
+        else (r['clv_under25_pct'] if r['mercado'] == 'Menos de 2.5 goles' else None),
+        axis=1
+    )
+    return m[m['clv_pick'].notna()].copy()
+
+
 def verificar_umbral_clv_goles():
     """
-    n = filas de predicciones_log.csv con clv_over25_pct o
-    clv_under25_pct no nulo (unión, no suma -- un partido puede tener
-    ambos lados poblados y cuenta una sola vez). Se llama automáticamente
-    al final de registrar_cierre_desde_proximos(), que ya corre a diario
-    en el pipeline (paso 'registrar-cierre') -- no requiere un paso nuevo
-    en pipeline_diario.yml.
+    Se llama automáticamente al final de registrar_cierre_desde_proximos(),
+    que ya corre a diario en el pipeline (paso 'registrar-cierre') -- no
+    requiere un paso nuevo en pipeline_diario.yml. Mismo patrón idempotente
+    que calcular_calibracion_prob() (Tarea #150): solo escribe un evento
+    nuevo en el JSONL la primera vez que n cruza el umbral.
     """
-    df = cargar_log(LOG_PRED, COLS_PRED)
-    n = int(((df['clv_over25_pct'].notna()) | (df['clv_under25_pct'].notna())).sum())
+    muestra = _muestra_clv_goles_valida()
+    n = len(muestra)
     cruzado = n >= CLV_GOLES_MIN_N
 
     ya_notificado = False
