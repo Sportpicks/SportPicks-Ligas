@@ -871,14 +871,38 @@ def verificar_umbral_clv_goles():
             ya_notificado = json.loads(lineas[-1]).get('cruzado', False)
 
     if cruzado and not ya_notificado:
+        # Diagnóstico de dispersión -- 20/08/2026: NO es un segundo gate
+        # (ver rationale en el hilo de la Tarea #152: un umbral de días
+        # distintos, ej. d>=5, es una medida indirecta de independencia,
+        # no la independencia misma -- se puede pasar con 5 días siempre
+        # dominados por la misma liga, o fallar con 3 días bien repartidos
+        # entre competiciones distintas). Se registra como metadata para
+        # que el juicio de independencia se haga con el diagnóstico ya
+        # servido, sin tener que reconstruir esta investigación desde
+        # cero -- pero la decisión de si la muestra es válida para sacar
+        # conclusiones sigue siendo manual.
+        dias_distintos = int(muestra['fecha'].nunique())
+        liga_top = None
+        liga_top_pct = None
+        if 'liga' in muestra.columns and len(muestra):
+            conteo_liga = muestra['liga'].value_counts(normalize=True)
+            liga_top = conteo_liga.index[0]
+            liga_top_pct = round(float(conteo_liga.iloc[0]) * 100, 1)
+
         registro = {
             'generado_en': datetime.now(PERU_TZ).isoformat(),
             'n_clv_goles': n, 'umbral': CLV_GOLES_MIN_N, 'cruzado': True,
+            'dias_distintos': dias_distintos,
+            'liga_mas_concentrada': liga_top,
+            'liga_mas_concentrada_pct': liga_top_pct,
         }
         os.makedirs(os.path.dirname(CLV_GOLES_HISTORIAL_JSONL), exist_ok=True)
         with open(CLV_GOLES_HISTORIAL_JSONL, 'a', encoding='utf-8') as f:
             f.write(json.dumps(registro, ensure_ascii=False) + '\n')
-        print(f'🎯 UMBRAL CLV DE GOLES CRUZADO: n={n} >= {CLV_GOLES_MIN_N} -- Tarea #152 lista para arrancar')
+        print(f'🎯 UMBRAL CLV DE GOLES CRUZADO: n={n} >= {CLV_GOLES_MIN_N} '
+              f'-- {dias_distintos} día(s) distinto(s), '
+              f'liga más concentrada: {liga_top} ({liga_top_pct}%) '
+              f'-- revisar independencia a mano antes de concluir nada (Tarea #152)')
     return n, cruzado
 
 HISTORIAL_PATH = os.path.join(RAIZ, 'Data', 'historial_picks.csv')
