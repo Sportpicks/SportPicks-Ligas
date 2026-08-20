@@ -385,6 +385,72 @@ def _isotonica_pava(x, y):
 
 CALIBRACION_PROB_MIN_N_CATEGORIA = 200
 
+# ── Bloque B: bucketing de fase (ETL, no wireado a calcular_calibracion_prob
+# todavía -- ver tarea #152, gateada a n>=30 en CLV de Goles) ──
+#
+# Copas continentales donde se documentó (auditoría 19/08/2026, tarea #154:
+# caída de acierto 55.8%→47.1% en mejor_apuesta, concentrada en Conference/
+# Europa/Sudamericana) o se infirió por firma estructural (CAF, 20/08/2026:
+# 59.7% de sus partidos en fase='qualifying', misma forma que las de arriba)
+# la dinámica "ronda clasificatoria = rival semiprofesional, alta varianza"
+# vs "cuadro principal = rivales parejos". Ligas domésticas fuera de esta
+# lista IGNORAN su columna 'fase' por completo -- sus playoffs de fin de
+# temporada (quarter_final/semi_final/final en Brasileirão, Liga 1 Perú,
+# MLS, etc., ver auditoría 20/08/2026) son un fenómeno distinto: equipos
+# fuertes enfrentándose en instancia decisiva, no un desbalance de nivel.
+# Mezclarlos con 'fase_previa'/'cuadro_principal' de copa introduciría
+# sesgo direccional, no ruido de media cero -- destruiría el propósito de
+# la calibración en vez de mejorarla.
+COMPETICIONES_FASE_RELEVANTE = {
+    'comp_3498',    # UEFA Champions League
+    'comp_408698',  # UEFA Conference League
+    'comp_7739',    # UEFA Europa League
+    'comp_0499',    # CONMEBOL Libertadores
+    'comp_1615',    # CONMEBOL Sudamericana
+    'comp_08478',   # CAF Champions League
+}
+
+def bucketizar_fase(liga, fase):
+    """
+    Deriva el bucket de calibración de Bloque B a partir de (liga, fase)
+    crudos. Mapeo binario dentro de la whitelist:
+      - fase == 'qualifying'            -> 'fase_previa'   (alta varianza)
+      - cualquier otro valor, incl. NaN -> 'cuadro_principal' (estable)
+    NaN dentro de una liga de la whitelist se interpreta como fase de
+    grupos: TheStatsAPI no le pone stage_name explícito a esa etapa (a
+    diferencia de las rondas de eliminación directa), y esos equipos ya
+    superaron la clasificatoria -- más parejos entre sí que 'fase_previa'.
+    Supuesto explícito, no confirmado contra resultado real; revisar si
+    Bloque B ya corriendo muestra evidencia en contra.
+
+    Liga fuera de COMPETICIONES_FASE_RELEVANTE (doméstica): 'regular',
+    sin importar el valor de fase -- ver rationale arriba.
+
+    NO muta ni sobreescribe la columna 'fase' original de
+    historial_picks.csv/predicciones_log.csv, que se preserva intacta
+    para auditoría/re-derivación futura (decisión 20/08/2026: guardar la
+    verdad cruda, bucketizar solo en lectura).
+    """
+    if liga not in COMPETICIONES_FASE_RELEVANTE:
+        return 'regular'
+    if fase == 'qualifying':
+        return 'fase_previa'
+    return 'cuadro_principal'
+
+
+def agregar_fase_calibracion(df, col_liga='liga', col_fase='fase',
+                              col_salida='fase_calibracion'):
+    """
+    Aplica bucketizar_fase() vectorizado sobre un DataFrame (ej. el
+    resultado de cargar_log(LOG_PRED, COLS_PRED) o pd.read_csv sobre
+    historial_picks.csv), agregando col_salida sin tocar col_fase.
+    Devuelve una copia -- no muta el df de entrada.
+    """
+    df = df.copy()
+    df[col_salida] = [bucketizar_fase(l, f) for l, f in zip(df[col_liga], df[col_fase])]
+    return df
+
+
 def calcular_calibracion_prob():
     """
     Calibración de probabilidad POR CATEGORÍA (isotónica) -- distinta de
