@@ -139,6 +139,13 @@ LIGAS_BAJO_VIGILANCIA = {
     # detecte semanas después -- exactamente el patrón que causó la Fase 1
     # de este parche. Revisar cuando acumule muestra propia real.
     'comp_08478': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'CAF Champions League'},
+
+    # 21/08/2026: Ligue 1 -- mismo criterio y mismo margen que Premier
+    # League/Bundesliga/Serie A del 20/08 (bloque de arriba): cero
+    # historial propio, alta liquidez/eficiencia de mercado, backfill
+    # recien disparado. Revisar junto con esas 3 cuando acumule
+    # >=30-50 picks liquidados propios.
+    'comp_0256': {'margen_prob': 8, 'margen_ev': 0.05, 'nombre': 'Ligue 1'},
 }
 
 def _pasa_vigilancia_liga(pk, prob_min_base, ev_min_base):

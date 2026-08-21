@@ -49,6 +49,14 @@ THESTATS_LIGAS_PRIORITARIAS = {
     'ENG': {'id': 'comp_3039', 'nombre': 'Premier League', 'emoji': '🏴󠁧󠁢󠁥󠁮󠁧󠁿'},
     'GER': {'id': 'comp_4643', 'nombre': 'Bundesliga',     'emoji': '🇩🇪'},
     'ITA': {'id': 'comp_5840', 'nombre': 'Serie A',        'emoji': '🇮🇹'},
+
+    # 21/08/2026: Ligue 1 -- mismo tratamiento que ENG/GER/ITA de arriba.
+    # ID verificado contra Data/thestats_ligas.csv: comp_0256, tipo=league,
+    # has_team_stats/has_player_stats/xg_available/odds_available=True.
+    # Copa domestica (Coupe de France) tiene ID propio y separado
+    # (comp_4750) -- mismo patron de no-contaminacion ya confirmado para
+    # las otras 3 ligas europeas.
+    'FRA': {'id': 'comp_0256', 'nombre': 'Ligue 1', 'emoji': '🇫🇷'},
 }
 
 # LIGAS: clave = competition_id de TheStatsAPI (p.ej. 'comp_9799'), para
