@@ -87,12 +87,12 @@ COLUMNAS_PROX = [
     'shots_linea', 'shots_over_precio',
     'sot_linea', 'sot_over_precio',
     'cards_linea', 'cards_over_precio',
-    # Faltas -- clave de mercado 'total_fouls' es una suposición por
-    # analogía con 'total_cards' (mismo proveedor Bet365, mismo patrón de
-    # nomenclatura para mercados totales del partido); no confirmada con
-    # una respuesta real de /odds. Si la clave real es otra, esto devuelve
-    # vacío consistentemente (no rompe nada) hasta corregirla.
-    'fouls_linea', 'fouls_over_precio',
+    # Faltas -- AMPUTADO 22/08/2026: dump real contra TheStatsAPI (5
+    # partidos, 5 ligas) confirmó que ningún bookmaker de la fuente ofrece
+    # mercado de faltas totales -- no era una clave equivocada, el
+    # producto no existe. Ver historial de git si algún día aparece un
+    # mercado real que valga la pena recablear.
+    'doble_op_1x', 'doble_op_x2', 'doble_op_12',
     # Bookmaker que aportó el precio de 1X2 (c1) y de Over/Under 2.5,
     # respectivamente -- 18/08/2026, para poder filtrar el análisis de CLV
     # (ver registrar_cierre_desde_proximos en logger_predicciones.py) por
@@ -316,7 +316,6 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
     shots_linea, shots_precio = _buscar_precio_linea_dinamica(bookmakers, 'match_shots', 'over')
     sot_linea, sot_precio = _buscar_precio_linea_dinamica(bookmakers, 'match_shots_on_target', 'over')
     cards_linea, cards_precio = _buscar_precio_linea_dinamica(bookmakers, 'total_cards', 'over')
-    fouls_linea, fouls_precio = _buscar_precio_linea_dinamica(bookmakers, 'total_fouls', 'over')
     # 18/08/2026: usamos la variante _full() solo donde nos interesa saber
     # la fuente (1X2 y Over/Under 2.5, los mercados con CLV activo) -- ver
     # comentario en COLUMNAS_PROX.
@@ -341,8 +340,6 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
         'sot_over_precio': sot_precio,
         'cards_linea': cards_linea if cards_linea is not None else '',
         'cards_over_precio': cards_precio,
-        'fouls_linea': fouls_linea if fouls_linea is not None else '',
-        'fouls_over_precio': fouls_precio,
         'bookmaker_1x2': bookmaker_1x2 or '',
         'bookmaker_ou25': bookmaker_ou25 or '',
         'over_2.5': over25_precio,
@@ -351,6 +348,16 @@ def fila_proximos(liga_id, liga_cfg, m, odds):
         'btts_no': _buscar_precio(bookmakers, 'btts', 'no'),
         'corners_over_8.5': _buscar_precio(bookmakers, 'match_corners', '8.5', 'over'),
         'corners_over_9.5': _buscar_precio(bookmakers, 'match_corners', '9.5', 'over'),
+        # Doble oportunidad -- 22/08/2026, recableado a cuota REAL del
+        # mercado 'double_chance' (confirmado via dump directo contra
+        # TheStatsAPI en 5 ligas distintas). Reemplaza la cuota sintética
+        # 1/prob*0.90 que generador_picks_ligas.py usaba antes -- esa nunca
+        # comparaba contra mercado real, el EV colapsaba cerca de -10% por
+        # construccion. home_away ('12', sin empate) es nuevo: no se
+        # generaba antes, lo agrega este recableo.
+        'doble_op_1x': _buscar_precio(bookmakers, 'double_chance', 'home_draw'),
+        'doble_op_x2': _buscar_precio(bookmakers, 'double_chance', 'draw_away'),
+        'doble_op_12': _buscar_precio(bookmakers, 'double_chance', 'home_away'),
     }
 
 

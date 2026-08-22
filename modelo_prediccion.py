@@ -484,7 +484,7 @@ def monte_carlo_partido(xg_l, xg_v, n=10000, shrinkage=0.10):
 
 def predecir_partido(local, visitante, df_historico, liga_key,
                      cuotas=None, fase='regular', cache_sos=None, cache_corners=None,
-                     cache_cards=None, cache_shots=None, cache_sot=None, cache_fouls=None):
+                     cache_cards=None, cache_shots=None, cache_sot=None):
     """Genera predicción completa para un partido"""
     # Media de goles de la liga (promedio por EQUIPO, no total del partido)
     # Medias por liga — representan goles promedio POR EQUIPO
@@ -613,12 +613,10 @@ def predecir_partido(local, visitante, df_historico, liga_key,
     linea_cards_real = _linea_valida((cuotas or {}).get('cards_linea'))
     linea_shots_real = _linea_valida((cuotas or {}).get('shots_linea'))
     linea_sot_real = _linea_valida((cuotas or {}).get('sot_linea'))
-    linea_fouls_real = _linea_valida((cuotas or {}).get('fouls_linea'))
 
     lineas_cards = tuple(sorted({4.5} | ({linea_cards_real} if linea_cards_real else set())))
     lineas_shots = tuple(sorted({24.5} | ({linea_shots_real} if linea_shots_real else set())))
     lineas_sot = tuple(sorted({8.5} | ({linea_sot_real} if linea_sot_real else set())))
-    lineas_fouls = tuple(sorted({22.5} | ({linea_fouls_real} if linea_fouls_real else set())))
 
     esp_cards_l, esp_cards_v, probs_cards = predecir_stat_generica(
         df_historico, local, visitante, liga_key, 'yellow_cards_l', 'yellow_cards_v',
@@ -632,15 +630,15 @@ def predecir_partido(local, visitante, df_historico, liga_key,
         df_historico, local, visitante, liga_key, 'shots_on_target_l', 'shots_on_target_v',
         media_default=4.25, piso=1.0, techo=9.0, factor_local=1.10,
         cache=cache_sot, lineas=lineas_sot)
-    # Faltas — misma infraestructura SoS+shrinkage. factor_local=1.0: a
-    # diferencia de goles/tiros, la data agregada (historico.csv) no muestra
-    # sesgo local/visitante relevante en faltas (11.93 vs 11.92 promedio).
-    # Validado por retrodicción (backtest_stat_generica.py STAT=fouls,
-    # n=775, línea 22.5): Brier -0.0101, MAE -0.188 vs promedio simple.
-    esp_fouls_l, esp_fouls_v, probs_fouls = predecir_stat_generica(
-        df_historico, local, visitante, liga_key, 'fouls_l', 'fouls_v',
-        media_default=11.75, piso=4.0, techo=22.0, factor_local=1.0,
-        cache=cache_fouls, lineas=lineas_fouls)
+    # Faltas -- AMPUTADO 22/08/2026: dump real de TheStatsAPI (5 partidos,
+    # 5 ligas distintas, via javascript_tool contra la API real) confirmó
+    # que ningún bookmaker de la fuente ofrece mercado de faltas totales
+    # -- no era una clave de mercado equivocada ('total_fouls'), es que el
+    # producto no existe en la fuente de datos. La predicción en sí estaba
+    # validada por backtest (Brier -0.0101, MAE -0.188, n=775, línea 22.5)
+    # pero sin cuota real nunca pudo generar un pick -- código muerto por
+    # diseño. Ver historial de git para el bloque completo si algún día
+    # aparece un mercado de faltas real que valga la pena recablear.
 
     resultado = {
         'local': local,
@@ -669,11 +667,6 @@ def predecir_partido(local, visitante, df_historico, liga_key,
         'sot_over_8.5': probs_sot[8.5],
         'sot_linea_real': linea_sot_real,
         'sot_over_real': probs_sot.get(float(linea_sot_real)) if linea_sot_real else None,
-        'fouls_l_esperado': esp_fouls_l,
-        'fouls_v_esperado': esp_fouls_v,
-        'fouls_over_22.5': probs_fouls[22.5],
-        'fouls_linea_real': linea_fouls_real,
-        'fouls_over_real': probs_fouls.get(float(linea_fouls_real)) if linea_fouls_real else None,
         'factor_local_liga': factor_local_liga,
         'stats_l': stats_l,
         'stats_v': stats_v,
@@ -703,8 +696,6 @@ def predecir_partido(local, visitante, df_historico, liga_key,
             resultado['ev_shots_over_real'] = round((resultado['shots_over_real']/100) - (1/cuotas['shots_over_precio']), 3)
         if cuotas.get('sot_over_precio', 0) > 0 and resultado.get('sot_over_real') is not None:
             resultado['ev_sot_over_real'] = round((resultado['sot_over_real']/100) - (1/cuotas['sot_over_precio']), 3)
-        if cuotas.get('fouls_over_precio', 0) > 0 and resultado.get('fouls_over_real') is not None:
-            resultado['ev_fouls_over_real'] = round((resultado['fouls_over_real']/100) - (1/cuotas['fouls_over_precio']), 3)
 
     return resultado
 
@@ -734,7 +725,6 @@ def predecir_jornada(fecha=None):
     cache_cards = {}
     cache_shots = {}
     cache_sot = {}
-    cache_fouls = {}
 
     for _, p in partidos_hoy.iterrows():
         local = p['local']
@@ -757,8 +747,6 @@ def predecir_jornada(fecha=None):
             'shots_over_precio': p.get('shots_over_precio', 0),
             'sot_linea': p.get('sot_linea', ''),
             'sot_over_precio': p.get('sot_over_precio', 0),
-            'fouls_linea': p.get('fouls_linea', ''),
-            'fouls_over_precio': p.get('fouls_over_precio', 0),
         }
 
         # Determinar fase (mismo criterio que antes, con los IDs nuevos:
@@ -770,8 +758,7 @@ def predecir_jornada(fecha=None):
         visit_hist = normalizar_nombre(visitante)
         pred = predecir_partido(local_hist, visit_hist, df_hist, liga, cuotas, fase,
                                  cache_sos=cache_sos, cache_corners=cache_corners,
-                                 cache_cards=cache_cards, cache_shots=cache_shots, cache_sot=cache_sot,
-                                 cache_fouls=cache_fouls)
+                                 cache_cards=cache_cards, cache_shots=cache_shots, cache_sot=cache_sot)
         pred['local'] = local
         pred['visitante'] = visitante
         pred['fecha'] = p['fecha']

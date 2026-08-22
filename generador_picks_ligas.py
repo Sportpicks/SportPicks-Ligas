@@ -206,6 +206,29 @@ def _registrar_sombra_tarjetas(pred, cuota, prob, ev, linea, esperado_total):
     with open(TARJETAS_SOMBRA_JSONL, 'a', encoding='utf-8') as f:
         f.write(json.dumps(registro, ensure_ascii=False) + '\n')
 
+# Doble Oportunidad -- recableado 22/08/2026 con cuota REAL del mercado
+# 'double_chance' (ver descargar_partidos.py), reemplaza la cuota sintética
+# 1/prob*0.90 que colapsaba el EV cerca de -10% por construcción (44
+# candidatos/día medidos, 0 con EV positivo). Igual que Tarjetas: modo
+# SOMBRA, mismo log aislado, misma razón (no hay forma de backtestear esto
+# retroactivamente -- nunca se guardó una cuota real de doble oportunidad
+# en ningún log histórico).
+DOBLE_OP_SOMBRA_JSONL = os.path.join(RAIZ, 'Data', 'doble_op_sombra.jsonl')
+
+def _registrar_sombra_doble_op(pred, mercado, cuota, prob, ev):
+    """Append-only, misma arquitectura que _registrar_sombra_tarjetas()."""
+    registro = {
+        'generado_en': datetime.now(PERU_TZ).isoformat(),
+        'fecha': pred.get('fecha', ''), 'hora': pred.get('hora', ''),
+        'liga': pred.get('liga', ''), 'liga_nombre': pred.get('liga_nombre', ''),
+        'local': pred.get('local', ''), 'visitante': pred.get('visitante', ''),
+        'mercado': mercado, 'cuota': cuota, 'prob': prob, 'ev': ev,
+        'estado': 'Pendiente',
+    }
+    os.makedirs(os.path.dirname(DOBLE_OP_SOMBRA_JSONL), exist_ok=True)
+    with open(DOBLE_OP_SOMBRA_JSONL, 'a', encoding='utf-8') as f:
+        f.write(json.dumps(registro, ensure_ascii=False) + '\n')
+
 CALIB_PROB_JSON = os.path.join(RAIZ, 'Data', 'calibracion_prob.json')
 _CALIB_PROB_CACHE = None
 
@@ -461,15 +484,9 @@ def generar_candidatos(pred, cuotas):
         add(f'Más de {linea} tiros al arco', pred['sot_over_real'], cuotas['sot_over_precio'], '🎯', 'Tiros',
             f'Tiros al arco esperados: {pred.get("sot_l_esperado",0):.1f} + {pred.get("sot_v_esperado",0):.1f}',
             cuotas_grupo=[cuotas.get('sot_over_precio', 0)])
-    # Faltas — DORMIDO igual que tarjetas/tiros: la clave de mercado
-    # 'total_fouls' en descargar_partidos.py es una suposición sin
-    # confirmar; hasta que la próxima corrida en vivo confirme (o corrija)
-    # esa clave, 'fouls_over_precio' llega vacío y este bloque nunca dispara.
-    if cuotas.get('fouls_over_precio', 0) > 1.30 and pred.get('fouls_over_real') is not None:
-        linea = pred['fouls_linea_real']
-        add(f'Más de {linea} faltas', pred['fouls_over_real'], cuotas['fouls_over_precio'], '🟥', 'Faltas',
-            f'Faltas esperadas: {pred.get("fouls_l_esperado",0):.1f} + {pred.get("fouls_v_esperado",0):.1f}',
-            cuotas_grupo=[cuotas.get('fouls_over_precio', 0)])
+    # Faltas -- AMPUTADO 22/08/2026 (ver nota en configuracion.py y
+    # modelo_prediccion.py): confirmado via dump real contra TheStatsAPI
+    # que ningun bookmaker de la fuente ofrece mercado de faltas totales.
 
     # ── BTTS ──
     btts_si = pred.get('btts_si', 0)
@@ -492,22 +509,22 @@ def generar_candidatos(pred, cuotas):
             add('Ambos anotan - No', btts_no, cuota_btts_no, '🔒', 'Goles',
                 f'Prob BTTS No: {btts_no}%', cuotas_grupo=grupo_btts)
 
-    # ── Doble oportunidad ──
-    p1x = round(pred['p1'] + pred['px'], 1)
-    px2 = round(pred['px'] + pred['p2'], 1)
-    cuota_1x = round(1/(p1x/100) * 0.90, 2) if p1x > 0 else 0
-    cuota_x2 = round(1/(px2/100) * 0.90, 2) if px2 > 0 else 0
+    # ── Doble oportunidad ── modo sombra con cuota real, ver
+    # _registrar_sombra_doble_op() más arriba. Nunca llama a add(): igual
+    # que Tarjetas, estructuralmente no puede terminar como candidato
+    # público/premium/mejor_apuesta mientras acumulamos muestra real.
     if not liga_alta_eficiencia:
-        if cuota_1x > 1.30 and p1x > 60:
-            add(f'1X — {local} o Empate', p1x, cuota_1x, '🛡️', 'Doble Op.',
-                f'Sin derrota {local}: {p1x}%')
-        if cuota_x2 > 1.30 and px2 > 60:
-            add(f'X2 — Empate o {visitante}', px2, cuota_x2, '🛡️', 'Doble Op.',
-                f'Sin derrota {visitante}: {px2}%')
-    # NOTA: 1X/X2 usan una cuota sintética derivada del propio modelo
-    # (1/prob * 0.90), no una cuota real de mercado — el filtro de
-    # divergencia no aplica aquí porque compararía el modelo contra sí
-    # mismo. Es una limitación conocida, distinta a la de este fix.
+        p1x = round(pred['p1'] + pred['px'], 1)
+        px2 = round(pred['px'] + pred['p2'], 1)
+        p12 = round(pred['p1'] + pred['p2'], 1)
+        for mercado, prob, cuota in (
+            (f'1X — {local} o Empate', p1x, cuotas.get('doble_op_1x', 0)),
+            (f'X2 — Empate o {visitante}', px2, cuotas.get('doble_op_x2', 0)),
+            (f'12 — {local} o {visitante} (sin empate)', p12, cuotas.get('doble_op_12', 0)),
+        ):
+            if cuota and cuota > 1.30 and prob > 0:
+                ev = round((prob/100) * cuota - 1, 3)
+                _registrar_sombra_doble_op(pred, mercado, cuota, prob, ev)
 
     for aviso in descartados_divergencia:
         print(f'  ⚠️ Descartado por divergencia vs mercado: {aviso}')
@@ -760,7 +777,7 @@ def main(fecha=None, dias=3, solo_hoy=False):
             'cards_over_precio': 0,   # dormido — ver nota en generar_candidatos
             'shots_over_precio': 0,
             'sot_over_precio': 0,
-            'fouls_over_precio': 0,
+            'doble_op_1x': 0, 'doble_op_x2': 0, 'doble_op_12': 0,
         }
 
         # Buscar en df_prox si hay cuotas
@@ -783,8 +800,9 @@ def main(fecha=None, dias=3, solo_hoy=False):
                     'shots_over_precio': row.get('shots_over_precio', 0),
                     'sot_linea': row.get('sot_linea', ''),
                     'sot_over_precio': row.get('sot_over_precio', 0),
-                    'fouls_linea': row.get('fouls_linea', ''),
-                    'fouls_over_precio': row.get('fouls_over_precio', 0),
+                    'doble_op_1x': row.get('doble_op_1x', 0),
+                    'doble_op_x2': row.get('doble_op_x2', 0),
+                    'doble_op_12': row.get('doble_op_12', 0),
                 }
 
         candidatos = generar_candidatos(pred, cuotas)
