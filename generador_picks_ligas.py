@@ -13,7 +13,7 @@ sys.path.insert(0, RAIZ)
 from configuracion import (ZONA_PERU, CUOTA_MIN_PUBLICO, CUOTA_MIN_PREMIUM,
                             PROB_MIN_PUBLICO, PROB_MIN_PREMIUM, MAX_PICKS_PUBLICO, LIGAS,
                             EV_MIN_PUBLICO, EV_MIN_PREMIUM, EV_MAX_PUBLICO, EV_MAX_PREMIUM,
-                            CATEGORIAS_EXCLUIDAS)
+                            CATEGORIAS_EXCLUIDAS, LIGAS_ALTA_EFICIENCIA)
 from modelo_prediccion import predecir_jornada, normalizar_nombre
 
 PERU_TZ = timezone(timedelta(hours=ZONA_PERU))
@@ -155,6 +155,56 @@ def _pasa_vigilancia_liga(pk, prob_min_base, ev_min_base):
     if not vig:
         return True
     return pk['prob'] >= prob_min_base + vig['margen_prob'] and pk['ev'] >= ev_min_base + vig['margen_ev']
+
+# 22/08/2026: se probó un _ev_min_efectivo() con piso propio para 1X2
+# (EV_MIN_1X2=0.08) y se revirtió -- el backtest de ROI real (no de
+# acierto) sobre 131 picks históricos mostró que TODOS los buckets de EV
+# pierden dinero, incluido el bucket alto (EV>=15%: ROI -28.1%, el peor de
+# todos). No hay umbral de EV que rescate 1X2 -- ver CATEGORIAS_EXCLUIDAS
+# en configuracion.py para el detalle completo. Queda excluido de forma
+# permanente.
+
+# Tarjetas -- sin dato de árbitro (confirmado: no se captura en ningún
+# punto de descargar_partidos.py), la proyección del modelo no puede
+# afinarse más que el promedio de tarjetas por equipo. Como muro de
+# contención mientras eso siga así, solo se genera el pick cuando la
+# proyección total (cards_l_esperado + cards_v_esperado) diverge >=1.5
+# tarjetas de la línea REAL propuesta por la casa -- nunca se opera línea
+# ajustada, donde cualquier ventaja aparente es más ruido que edge.
+# Reactivado en MODO SOMBRA (22/08/2026): sigue en CATEGORIAS_EXCLUIDAS
+# (nunca es_publico/es_premium, no aparece en la web ni en Telegram), pero
+# cada candidato que pasa este filtro se registra en un log aislado
+# (Data/tarjetas_sombra.jsonl, ver _registrar_sombra_tarjetas() más abajo)
+# para poder auditar el ROI real en unas semanas antes de decidir si se
+# abre la puerta de verdad -- deliberadamente NO se escribe en
+# historial_picks.csv/predicciones_log.csv para este primer despliegue:
+# esos archivos alimentan la pestaña "Partidos" pública vía mejor_apuesta()
+# en generar_web.py, y sacar 'Tarjetas' de EXCLUIR_CATEGORIAS_MEJOR_APUESTA
+# ahí arriesgaba que un candidato de tarjetas apareciera como "mejor
+# apuesta" visible de algún partido -- justo lo que el modo sombra tiene
+# que evitar.
+DESVIACION_MIN_TARJETAS = 1.5
+TARJETAS_SOMBRA_JSONL = os.path.join(RAIZ, 'Data', 'tarjetas_sombra.jsonl')
+
+def _registrar_sombra_tarjetas(pred, cuota, prob, ev, linea, esperado_total):
+    """Append-only, igual que el resto de logs de auditoría de este
+    proyecto (JSONL, nunca se reescribe). Un registro por candidato de
+    Tarjetas que pasó DESVIACION_MIN_TARJETAS, independientemente de si
+    ese partido termina generando otro pick público/premium por otro
+    mercado."""
+    registro = {
+        'generado_en': datetime.now(PERU_TZ).isoformat(),
+        'fecha': pred.get('fecha', ''), 'hora': pred.get('hora', ''),
+        'liga': pred.get('liga', ''), 'liga_nombre': pred.get('liga_nombre', ''),
+        'local': pred.get('local', ''), 'visitante': pred.get('visitante', ''),
+        'linea': linea, 'cuota': cuota, 'prob': prob, 'ev': ev,
+        'esperado_total': round(esperado_total, 2),
+        'desviacion': round(abs(esperado_total - linea), 2),
+        'estado': 'Pendiente',
+    }
+    os.makedirs(os.path.dirname(TARJETAS_SOMBRA_JSONL), exist_ok=True)
+    with open(TARJETAS_SOMBRA_JSONL, 'a', encoding='utf-8') as f:
+        f.write(json.dumps(registro, ensure_ascii=False) + '\n')
 
 CALIB_PROB_JSON = os.path.join(RAIZ, 'Data', 'calibracion_prob.json')
 _CALIB_PROB_CACHE = None
@@ -340,6 +390,11 @@ def generar_candidatos(pred, cuotas):
     grupo_1x2 = [cuotas.get('c1', 0), cuotas.get('cx', 0), cuotas.get('c2', 0)]
     grupo_ou25 = [cuotas.get('over_2.5', 0), cuotas.get('under_2.5', 0)]
 
+    # 1X2 excluido de forma permanente (ver nota larga arriba de
+    # DESVIACION_MIN_TARJETAS y CATEGORIAS_EXCLUIDAS en configuracion.py) --
+    # se sigue generando como candidato informativo (aparece en
+    # todos_candidatos/pestaña Partidos) pero nunca puede ser público,
+    # premium ni ganar mejor_apuesta.
     if cuotas.get('c1', 0) > 1.30:
         add(f'Victoria {local}', pred['p1'], cuotas['c1'], '⚽', '1X2',
             f'xG {pred["xg_l"]:.2f} — modelo {pred["p1"]}%', cuotas_grupo=grupo_1x2)
@@ -349,6 +404,13 @@ def generar_candidatos(pred, cuotas):
     if cuotas.get('c2', 0) > 1.30:
         add(f'Victoria {visitante}', pred['p2'], cuotas['c2'], '⚽', '1X2',
             f'xG {pred["xg_v"]:.2f} — modelo {pred["p2"]}%', cuotas_grupo=grupo_1x2)
+
+    # Doble Op. queda fuera de raíz en las ligas de mercado más eficiente
+    # (Premier League, Bundesliga, Serie A) -- 22/08/2026, ver
+    # LIGAS_ALTA_EFICIENCIA en configuracion.py. Reservado para cuando (si)
+    # se recablee con cuota real de un mercado 'double_chance' confirmado.
+    liga_alta_eficiencia = pred.get('liga') in LIGAS_ALTA_EFICIENCIA
+
     if cuotas.get('over_2.5', 0) > 1.30:
         add('Más de 2.5 goles', pred['over_2.5'], cuotas['over_2.5'], '🥅', 'Goles',
             f'xG total {pred["xg_l"]+pred["xg_v"]:.2f}', cuotas_grupo=grupo_ou25)
@@ -377,9 +439,18 @@ def generar_candidatos(pred, cuotas):
     # datos reales, estos `if` nunca se disparan.
     if cuotas.get('cards_over_precio', 0) > 1.30 and pred.get('cards_over_real') is not None:
         linea = pred['cards_linea_real']
-        add(f'Más de {linea} tarjetas', pred['cards_over_real'], cuotas['cards_over_precio'], '🟨', 'Tarjetas',
-            f'Tarjetas esperadas: {pred.get("cards_l_esperado",0):.1f} + {pred.get("cards_v_esperado",0):.1f}',
-            cuotas_grupo=[cuotas.get('cards_over_precio', 0)])
+        esperado_cards = pred.get('cards_l_esperado', 0) + pred.get('cards_v_esperado', 0)
+        # Muro de contención de Tarjetas (22/08/2026, ver DESVIACION_MIN_TARJETAS
+        # más arriba): sin dato de árbitro, solo se opera cuando el modelo
+        # diverge fuerte de la línea propuesta -- nunca línea ajustada.
+        # Modo sombra: se registra en log aislado, NUNCA se llama add() --
+        # así queda estructuralmente imposible que termine como candidato
+        # público/premium/mejor_apuesta mientras estemos recolectando muestra.
+        if abs(esperado_cards - linea) >= DESVIACION_MIN_TARJETAS:
+            _registrar_sombra_tarjetas(
+                pred, cuotas['cards_over_precio'], pred['cards_over_real'],
+                round((pred['cards_over_real']/100) * cuotas['cards_over_precio'] - 1, 3),
+                linea, esperado_cards)
     if cuotas.get('shots_over_precio', 0) > 1.30 and pred.get('shots_over_real') is not None:
         linea = pred['shots_linea_real']
         add(f'Más de {linea} tiros', pred['shots_over_real'], cuotas['shots_over_precio'], '🎯', 'Tiros',
@@ -426,12 +497,13 @@ def generar_candidatos(pred, cuotas):
     px2 = round(pred['px'] + pred['p2'], 1)
     cuota_1x = round(1/(p1x/100) * 0.90, 2) if p1x > 0 else 0
     cuota_x2 = round(1/(px2/100) * 0.90, 2) if px2 > 0 else 0
-    if cuota_1x > 1.30 and p1x > 60:
-        add(f'1X — {local} o Empate', p1x, cuota_1x, '🛡️', 'Doble Op.',
-            f'Sin derrota {local}: {p1x}%')
-    if cuota_x2 > 1.30 and px2 > 60:
-        add(f'X2 — Empate o {visitante}', px2, cuota_x2, '🛡️', 'Doble Op.',
-            f'Sin derrota {visitante}: {px2}%')
+    if not liga_alta_eficiencia:
+        if cuota_1x > 1.30 and p1x > 60:
+            add(f'1X — {local} o Empate', p1x, cuota_1x, '🛡️', 'Doble Op.',
+                f'Sin derrota {local}: {p1x}%')
+        if cuota_x2 > 1.30 and px2 > 60:
+            add(f'X2 — Empate o {visitante}', px2, cuota_x2, '🛡️', 'Doble Op.',
+                f'Sin derrota {visitante}: {px2}%')
     # NOTA: 1X/X2 usan una cuota sintética derivada del propio modelo
     # (1/prob * 0.90), no una cuota real de mercado — el filtro de
     # divergencia no aplica aquí porque compararía el modelo contra sí

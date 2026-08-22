@@ -157,7 +157,39 @@ EV_MIN_PREMIUM  = 0.05   # 5%
 # suscriptores. Causa probable: la calibración isotónica de probabilidad
 # (calcular_calibracion_prob) agrupa todas las categorías en una sola
 # curva dominada en volumen por Goles -- pendiente separar por mercado.
+# 22/08/2026 -- INTENTO DE REACTIVACIÓN DE 1X2, MATADO DEFINITIVAMENTE POR
+# BACKTEST DE ROI (no de acierto): se probó un piso propio (EV>=0.08) sobre
+# los 131 picks de 1X2 liquidados históricamente, recuperando la cuota real
+# vía join contra predicciones_log.csv (125 de 131 filas tenían cuota=NaN
+# en historial_picks.csv -- bug de _pasa_vigilancia_liga/mejor_apuesta ya
+# documentado, no afecta esta cuenta porque se hizo el backfill). Resultado:
+# TODOS los buckets de EV pierden dinero real, incluido el bucket alto
+# (EV>=15%, cuota media 4.84): ROI -28.1%, el peor de todos en pérdida
+# absoluta. EV>=0.08 dio ROI -19.4%, prácticamente igual al pool sin
+# filtrar (-18.8%) -- no existe ningún punto de corte de EV que rescate
+# este mercado, el modelo no tiene edge real en 1X2 en ningún régimen de
+# cuota. Se descarta la hipótesis de sesgo favorito-longshot (que sí
+# explicaría un bucket de EV alto con bajo acierto pero ROI positivo) --
+# aquí el bucket de EV alto tiene bajo acierto Y ROI negativo, ambas
+# señales apuntan a error de calibración real, no a valor oculto en
+# underdogs. 1X2 se mantiene excluido de forma permanente salvo que
+# aparezca una remodelación completamente distinta (no un ajuste de
+# umbral) y backtestee positivo en ROI.
+# 'Tarjetas' reactivado en MODO SOMBRA (no público/premium todavía): sigue
+# en este set, pero DESVIACION_MIN_TARJETAS en generador_picks_ligas.py ya
+# filtra los candidatos y los registra en Data/tarjetas_sombra.jsonl (log
+# aislado, no toca historial_picks.csv/predicciones_log.csv ni ninguna
+# superficie pública) para auditar ROI real en unas semanas antes de
+# decidir si se abre la puerta de verdad.
 CATEGORIAS_EXCLUIDAS = {'1X2', 'Tiros', 'Tarjetas', 'Córners'}
+
+# Reservado para Doble Op. si el dump de TheStatsAPI (pendiente, ver
+# hilo de Faltas) confirma un mercado 'double_chance' con cuota real --
+# mientras Doble Op. siga con la cuota sintética 1/prob*0.90 no hay EV
+# real que filtrar, así que esta constante no tiene efecto hoy. Las 3
+# ligas de mercado más eficiente (Premier League, Bundesliga, Serie A)
+# quedan excluidas de raíz de Doble Op. en generador_picks_ligas.py.
+LIGAS_ALTA_EFICIENCIA = {'comp_3039', 'comp_4643', 'comp_5840'}  # ENG, GER, ITA
 
 # Techo máximo de EV -- auditoría de modelo del 25/07/2026 (180 picks
 # liquidados, segunda vuelta tras la primera del 24/07 con 125): el bucket
